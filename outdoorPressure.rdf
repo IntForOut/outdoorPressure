@@ -24,7 +24,7 @@
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/geodata"/>
+        <owl:imports rdf:resource="https://www.umr-lastig.fr/geodata"/>
         <rdfs:comment>This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems</rdfs:comment>
     </owl:Ontology>
     
@@ -263,7 +263,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport">
-        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/geodata#Geodataset"/>
+        <rdf:type rdf:resource="https://www.umr-lastig.fr/geodata#Geodataset"/>
         <rdfs:comment>Propriétaire des données : PRNSN. GPS traces from outdoorvison are cleaned and filtered.</rdfs:comment>
         <terms:title xml:lang="en">OutdoorVision export</terms:title>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
@@ -291,7 +291,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB">
-        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/geodata#Geodataset"/>
+        <rdf:type rdf:resource="https://www.umr-lastig.fr/geodata#Geodataset"/>
         <rdfs:comment>Dataset associated with IntForOut ETL framework</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -300,7 +300,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBone -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBone">
-        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/geodata#Geodataset"/>
+        <rdf:type rdf:resource="https://www.umr-lastig.fr/geodata#Geodataset"/>
         <rdfs:comment>Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks</rdfs:comment> 
     </owl:NamedIndividual>
 
