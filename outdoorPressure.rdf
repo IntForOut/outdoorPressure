@@ -24,6 +24,7 @@
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/dcat3"/>
         <owl:imports rdf:resource="http://purl.org/www.umr-lastig.fr/geodata"/>
         <rdfs:comment>This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems</rdfs:comment>
         <dc:creator>Bénédicte Bucher</dc:creator>
@@ -277,7 +278,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"/>
         <rdfs:comment>Propriétaire des données : PRNSN. GPS traces from outdoorvison are cleaned and filtered.</rdfs:comment>
         <terms:title xml:lang="en">OutdoorVision export</terms:title>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
@@ -305,7 +306,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"/>
         <rdfs:comment>Dataset associated with IntForOut ETL framework</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -314,13 +315,13 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBone -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBone">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"/>
         <rdfs:comment>Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks</rdfs:comment> 
     </owl:NamedIndividual>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset" />
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset" />
         <terms:description xml:lang="en">The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)</terms:description>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="Licence Ouverte v2.0 (Etalab)"/>
