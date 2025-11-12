@@ -187,6 +187,7 @@
         </rdfs:comment>
     </owl:Class>
 
+
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute -->
     <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route"/>
@@ -199,6 +200,7 @@
             Exemple : « Le chemin du Roy ».
         </rdfs:comment>
     </owl:Class>
+
 
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ResilientRoute -->
     <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ResilientRoute">
@@ -219,7 +221,8 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-<!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackbone -->
+    
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackbone -->
     <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackbone">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">
@@ -234,6 +237,7 @@
         </rdfs:comment>
     </owl:Class>
 
+
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EnhancedMobilityNetworkBackbone -->
     <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EnhancedMobilityNetworkBackbone">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackbone"/>
@@ -246,6 +250,7 @@
             nécessaires au calcul des itinéraires résilients.
         </rdfs:comment>
     </owl:Class>
+
 
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork -->
     <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork">
@@ -264,7 +269,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
+    // Individuals : Research geodataset
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -272,7 +277,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"/>
         <rdfs:comment>Propriétaire des données : PRNSN. GPS traces from outdoorvison are cleaned and filtered.</rdfs:comment>
         <terms:title xml:lang="en">OutdoorVision export</terms:title>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
@@ -300,7 +305,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"/>
         <rdfs:comment>Dataset associated with IntForOut ETL framework</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -309,9 +314,37 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBone -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBone">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"/>
         <rdfs:comment>Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks</rdfs:comment> 
     </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset" />
+        <terms:description xml:lang="en">The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)</terms:description>
+        <terms:language>English</terms:language>
+        <terms:license rdf:resource="Licence Ouverte v2.0 (Etalab)"/>
+        <terms:title xml:lang="en">Multi-sensors and Ground Truth Tracks</terms:title>
+        <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"/>
+        <dcat:isReferencedBy rdf:resource="https://doi.org/10.57745/MOUSLS" />
+        <terms:bibliographicCitation>Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, "Multi-sensors and Ground Truth Tracks", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1</terms:bibliographicCitation>
+    </owl:NamedIndividual>
+
+
+
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals citation  (dcterms:isReferencedBy)
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+    -->
+
+     
 
 
 
@@ -370,6 +403,15 @@
         <dcat:format>GeoJSON</dcat:format>
     </owl:NamedIndividual>
 
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals : organization
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
     <foaf:Organization rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#camptocamp">
         <foaf:name>Camptocamp Association</foaf:name>
