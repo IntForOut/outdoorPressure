@@ -22,6 +22,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
      xmlns:schema="http://schema.org/"
+     xmlns:datacite="http://purl.org/spar/datacite/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure">
         <dc:creator>Ana-Maria Raimond</dc:creator>
@@ -401,8 +402,88 @@
         <rdfs:comment xml:lang="en">A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024).</rdfs:comment>
         <rdfs:comment xml:lang="fr">La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024).</rdfs:comment>
     </owl:Class>
-    
 
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077  -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/Resource"/>
+        <datacite:resourceType rdf:resource="http://purl.org/spar/datacite/ConferenceProceeding" />
+        <terms:title>A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</terms:title>
+        <terms:creator>
+            <foaf:Person>
+                <foaf:name>Yann Méneroux</foaf:name>
+            </foaf:Person>
+        </terms:creator>
+        <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme" />
+        <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond" />
+        <datacite:publicationYear>2024</datacite:publicationYear>
+        <datacite:relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy" resourceTypeGeneral="ConferencePaper">10.1145/3678717.3691325</datacite:relatedIdentifier>
+        <datacite:relatedIdentifier relatedIdentifierType="URL" relationType="IsSourceOf">https://doi.org/10.1145/3678717.3691325</datacite:relatedIdentifier>
+        <terms:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</terms:isPartOf>
+        <terms:isPartOf>SIGSPATIAL '24</terms:isPartOf>
+        <terms:spatial>Atlanta, GA, USA</terms:spatial>
+        <terms:publisher>
+            <foaf:Organization>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+                <schema:address>New York, USA</schema:address>
+            </foaf:Organization>
+        </terms:publisher>
+        <datacite:firstPage>633</datacite:firstPage>
+        <datacite:lastPage>636</datacite:lastPage>
+        <datacite:subject>GNSS</datacite:subject>
+        <datacite:subject>trajectory aggregation</datacite:subject>
+        <datacite:subject>metrological analysis</datacite:subject>
+        <datacite:subject>synthetic and real world trajectories</datacite:subject>
+    </rdf:Description>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151  -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/Resource"/>
+        <datacite:resourceType rdf:resource="http://purl.org/spar/datacite/Journal" />
+        <terms:title>Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</terms:title>
+        <terms:creator>
+            <foaf:Person>
+                <foaf:name>Pascal Marchand</foaf:name>
+            </foaf:Person>
+        </terms:creator>
+        <terms:creator>
+            <foaf:Person>
+                <foaf:name>Nolwenn Risser</foaf:name>
+            </foaf:Person>
+        </terms:creator>
+        <terms:creator>
+            <foaf:Person>
+                <foaf:name>Elodie Petit</foaf:name>
+            </foaf:Person>
+        </terms:creator>
+        <terms:creator>
+            <foaf:Person>
+                <foaf:name>Mathieu Garel</foaf:name>
+            </foaf:Person>
+        </terms:creator>
+        <datacite:publicationYear>2025</datacite:publicationYear>
+        <datacite:relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy" resourceTypeGeneral="JournalArticle">10.1002/pan3.70151</datacite:relatedIdentifier>
+        <datacite:relatedIdentifier relatedIdentifierType="URL" relationType="IsSourceOf">https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1002/pan3.70151</datacite:relatedIdentifier>
+        <datacite:firstPage>3002</datacite:firstPage>
+        <datacite:lastPage>3016</datacite:lastPage>
+        <datacite:volume>7</datacite:volume>
+        <datacite:number>11</datacite:number>
+        <terms:isPartOf>Journal of People and Nature</terms:isPartOf>
+        <datacite:subject>activity</datacite:subject>
+        <datacite:subject>behaviour</datacite:subject>
+        <datacite:subject>cycling races</datacite:subject>
+        <datacite:subject>disturbance</datacite:subject>
+        <datacite:subject>movements</datacite:subject>
+        <datacite:subject>recreational ecology</datacite:subject>
+        <datacite:subject>trail running</datacite:subject>
+    </rdf:Description>
+
+    
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
@@ -845,6 +926,9 @@
     </owl:NamedIndividual>
     
 
+
+    
+   
 
     
 
