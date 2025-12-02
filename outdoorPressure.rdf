@@ -662,7 +662,27 @@
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
         <terms:spatial rdf:resource="http://sws.geonames.org/3032049/"/>
         <terms:title xml:lang="en">Multi-sensors and Ground Truth Tracks</terms:title>
-        <dcat:isReferencedBy rdf:resource="https://doi.org/10.57745/MOUSLS"/>
+        <dcat:isReferencedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"/>
+        <terms:bibliographicCitation>Marchand, P., Risser, N., Petit, E., &amp; Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197</terms:bibliographicCitation>
+        <terms:description xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
+        <terms:language>English</terms:language>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Office Français de la Biodiversité</terms:publisher>
+        <terms:spatial rdf:resource="http://sws.geonames.org/3001970/"/>
+        <terms:title xml:lang="en">Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex</terms:title>
+        <dcat:isReferencedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151"/>
+        <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#marchandetal-rdata"/>
+        <terms:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export" />
+        <terms:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export" />
     </owl:NamedIndividual>
     
 
@@ -787,6 +807,14 @@
         <dcat:accessService rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp"/>
         <dcat:format>GeoJSON</dcat:format>
     </owl:NamedIndividual>
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#marchandetal-rdata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#marchandetal-rdata">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:format>RData</dcat:format>
+    </owl:NamedIndividual>
     
 
 
@@ -801,6 +829,36 @@
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#camptocamp"/>
         <terms:title xml:lang="fr">Camptocamp.org-waypoints</terms:title>
         <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint-geojson"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <terms:description xml:lang="en">GPS locations</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
+        <terms:language>English</terms:language>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Office Français de la Biodiversité</terms:publisher>
+        <terms:title xml:lang="fr">locs-export</terms:title>
+        <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025" />
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <terms:description xml:lang="en">Activity data from gps collars</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
+        <terms:language>English</terms:language>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Office Français de la Biodiversité</terms:publisher>
+        <terms:title xml:lang="fr">act-export</terms:title>
+        <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025" />
     </owl:NamedIndividual>
     
 
@@ -893,6 +951,7 @@
         <datacite:subject>recreational ecology</datacite:subject>
         <datacite:subject>trail running</datacite:subject>
         <datacite:volume>7</datacite:volume>
+        <terms:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025" />
     </owl:NamedIndividual>
     
 
@@ -1081,6 +1140,7 @@
         <datacite:subject>synthetic and real world trajectories</datacite:subject>
         <datacite:subject>trajectory aggregation</datacite:subject>
         <dcat:theme rdf:resource="https://www.wikidata.org/wiki/Q179435"/>
+        <terms:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS" />
     </owl:NamedIndividual>
     
 
