@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/"
-     xml:base="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/"
+<rdf:RDF xmlns="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
+     xml:base="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
      xmlns:org="http://www.w3.org/ns/org#"
@@ -15,6 +15,9 @@
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:oor="http://purl.org/choucas.ign.fr/oor#"
+     xmlns:opo="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -25,11 +28,14 @@
      xmlns:schema="http://schema.org/"
      xmlns:datacite="http://purl.org/spar/datacite/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/1.0.0"/>
+        <ns:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:creator>Ana-Maria Raimond</dc:creator>
         <dc:creator>Bénédicte Bucher</dc:creator>
         <dc:creator>Marie-Dominique Van Damme</dc:creator>
         <rdfs:comment>This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems</rdfs:comment>
         <dc:title xml:lang="en">Outdoor Pressure Ontology</dc:title>
+        <vann:preferredNamespacePrefix>opo</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -354,7 +360,6 @@
 
     
 
-
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords">
@@ -369,6 +374,16 @@
         <rdfs:domain rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity"/>
     </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity"/>
+        <rdfs:range rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+    </owl:ObjectProperty>
+
     
 
 
@@ -860,6 +875,7 @@
         <dcat:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest"/>
         <dcat:isReferencedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
+        <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
     </owl:NamedIndividual>
     
 
@@ -1426,12 +1442,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <terms:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:name>Yann Méneroux</foaf:name>
-            </rdf:Description>
-        </terms:creator>
+        <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux" />
         <terms:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
         <terms:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</terms:isPartOf>
         <terms:isPartOf>SIGSPATIAL &apos;24</terms:isPartOf>
