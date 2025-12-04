@@ -381,6 +381,16 @@
      -->
 
     
+     
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Resource"/>
+        <rdfs:comment xml:lang="en">Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others.</rdfs:comment>
+        <skos:prefLabel xml:lang="fr">Papier scientifique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scientific Paper</skos:prefLabel>
+    </owl:Class>
+
 
 
     <!-- http://purl.org/choucas.ign.fr/oor#RoutePortion -->
@@ -397,12 +407,6 @@
     <!-- http://purl.org/dc/terms/Location -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/Location"/>
-    
-
-
-    <!-- http://purl.org/spar/datacite/Resource -->
-
-    <owl:Class rdf:about="http://purl.org/spar/datacite/Resource"/>
     
 
 
@@ -1191,7 +1195,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151">
-        <rdf:type rdf:resource="http://purl.org/spar/datacite/Resource"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper"/>
         <terms:creator>
             <rdf:Description>
                 <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -1419,7 +1423,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077">
-        <rdf:type rdf:resource="http://purl.org/spar/datacite/Resource"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <terms:creator>
