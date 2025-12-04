@@ -439,6 +439,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper
+:ScientificPaper rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/spar/datacite/Resource> ;
+                 rdfs:comment "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Papier scientifique"@fr ,
+                                                                 "Scientific Paper"@en .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing
 :Skiing rdf:type owl:Class ;
         rdfs:subClassOf :HumanActivity .
@@ -824,7 +832,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151
 :pan3.70151 rdf:type owl:NamedIndividual ,
-                     <http://purl.org/spar/datacite/Resource> ;
+                     :ScientificPaper ;
             <http://purl.org/dc/terms/creator> _:genid2 ,
                                                _:genid3 ,
                                                _:genid4 ,
@@ -999,7 +1007,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> rdf:type owl:NamedIndividual ,
-                                                                                              <http://purl.org/spar/datacite/Resource> ;
+                                                                                              :ScientificPaper ;
                                                                                      <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                                                                         <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
                                                                                                                         _:genid6 ;

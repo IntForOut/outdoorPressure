@@ -350,6 +350,13 @@
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
 # 
+# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/datacite/Resource> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others."@en .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> <http://www.w3.org/2004/02/skos/core#prefLabel> "Papier scientifique"@fr .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scientific Paper"@en .
+# 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> .
@@ -694,7 +701,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/datacite/Resource> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> _:genid2 .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "Pascal Marchand" .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
@@ -850,7 +857,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/datacite/Resource> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> <http://purl.org/dc/terms/creator> _:genid6 .
