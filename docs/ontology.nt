@@ -275,7 +275,7 @@
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -685,7 +685,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/ns/prov#used> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS> .
