@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Ontology for Geospatial Datasets</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/geodata#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/geodata#","name":"Ontology for Geospatial Datasets", "headline":"Document describing the ontology https://intforout.github.io/geodata#", "dateReleased":"Wed Nov 12 17:20:22 UTC 2025", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Ontology for Geospatial Datasets</h1>
+
+
+<dl>
+<dt>Authors:</dt>
+<dd>Ana-Maria Raimond</dd><dd>Bénédicte Bucher</dd><dd>Marie-Dominique Van Damme</dd>
+
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://www.w3.org/ns/dcat">dcat</a></dd><dd><a href="http://www.w3.org/ns/prov-o#">prov-o#</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Ana-Maria Raimond, Bénédicte Bucher, Marie-Dominique Van Damme. Ontology for Geospatial Datasets.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Ontology for Geospatial Datasets: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Collection">
+         <span>Collection</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"
+         title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">
+         <span>Collection Item</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodata_process"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process">
+         <span>Geodata process</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
+         <span>Geodataset</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
+         <span>Geodataset series</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Representation"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Representation">
+         <span>Representation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"
+         title="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset">
+         <span>Research geodataset</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasConcept"
+         title="http://purl.org/www.umr-lastig.fr/geodata#hasConcept">
+         <span>has Concept</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasData"
+         title="http://purl.org/www.umr-lastig.fr/geodata#hasData">
+         <span>has Data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member"
+         title="http://purl.org/www.umr-lastig.fr/geodata#has_member">
+         <span>has member</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction"
+         title="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction">
+         <span>has Method Of Instruction</span>
+      </a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#amraimond"
+         title="http://purl.org/www.umr-lastig.fr/geodata#amraimond">
+         <span>amraimond</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3"
+         title="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3">
+         <span>B D T O P O® V3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#bbucher"
+         title="http://purl.org/www.umr-lastig.fr/geodata#bbucher">
+         <span>bbucher</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"
+         title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">
+         <span>geodata paris</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#ign" title="http://purl.org/www.umr-lastig.fr/geodata#ign">
+         <span>ign</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+         title="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme">
+         <span>mdvandamme</span>
+      </a>
+   </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Ontology for Geospatial Datasets: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Ontology to describe geodatasets in support of knowledge production and transfer</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Ontology for Geospatial Datasets classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology for Geospatial Datasets.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection"> <span>Collection</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem" title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem"> <span>Collection Item</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodata_process" title="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process"> <span>Geodata process</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"> <span>Geodataset</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series"> <span>Geodataset series</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Representation" title="http://purl.org/www.umr-lastig.fr/geodata#Representation"> <span>Representation</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset"> <span>Research geodataset</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Collection">
+  <h3>Collection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Collection</p>
+  <div class="comment">
+   <span class="markdown">Collection of items that supports the usage of geodata for a pedagogic or learning purpose, in relationship with given concepts</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction" title="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction">has Method Of Instruction</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member">has member</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">
+  <h3>Collection Item<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#CollectionItem</p>
+  <div class="comment">
+   <span class="markdown">A collection item is composed of different pieces of data, usually selections from bigger datasets, associated with a proposed visualisation, and narratives that connect the visual items to the concepts of the collection. It has a spatial and temporal extent.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member">has member</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodata_process">
+  <h3>Geodata process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodata_process</p>
+  <div class="comment">
+   <span class="markdown">Process to derive data, that may combine data services but not necessarily</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">
+  <h3>Geodataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodataset</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset">Research geodataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3" title="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3">B D T O P O® V3</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series">
+  <h3>Geodataset series<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Geodataset_series</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Representation">
+  <h3>Representation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Representation</p>
+  <div class="comment">
+   <span class="markdown">Cette classe décrit la représentation d'un concept dans un jeu de données, dans un schéma de données, dans une collection. Elle permet de faire le lien entre des données et des concepts. C'est une classe plutôt qu'une propriété pour permettre de plus facilement lui ajouter des propriétés qui précisent le mode de représentation, par exemple si un jeu ReseauDeMobilité comporte des instances de réseaux de mobilité ou alors représente globalement un réseau de mobilité.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasConcept" title="http://purl.org/www.umr-lastig.fr/geodata#hasConcept">has Concept</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/www.umr-lastig.fr/geodata#hasData" title="http://purl.org/www.umr-lastig.fr/geodata#hasData">has Data</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset">
+  <h3>Research geodataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#Research_geodataset</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#hasConcept" title="http://purl.org/www.umr-lastig.fr/geodata#hasConcept"> <span>has Concept</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#hasData" title="http://purl.org/www.umr-lastig.fr/geodata#hasData"> <span>has Data</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#has_member" title="http://purl.org/www.umr-lastig.fr/geodata#has_member"> <span>has member</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction" title="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction"> <span>has Method Of Instruction</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#hasConcept">
+  <h3>has Concept<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#hasConcept</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.org/www.umr-lastig.fr/geodata#Representation" title="http://purl.org/www.umr-lastig.fr/geodata#Representation">Representation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#hasData">
+  <h3>has Data<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#hasData</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.org/www.umr-lastig.fr/geodata#Representation" title="http://purl.org/www.umr-lastig.fr/geodata#Representation">Representation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#has_member">
+  <h3>has member<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#has_member</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection">Collection</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://purl.org/www.umr-lastig.fr/geodata#CollectionItem" title="http://purl.org/www.umr-lastig.fr/geodata#CollectionItem">Collection Item</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction">
+  <h3>has Method Of Instruction<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#hasMethodOfInstruction</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.org/www.umr-lastig.fr/geodata#Collection" title="http://purl.org/www.umr-lastig.fr/geodata#Collection">Collection</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.org/dc/terms/MethodOfInstruction" target="_blank" title="http://purl.org/dc/terms/MethodOfInstruction">Method Of Instruction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#amraimond" title="http://purl.org/www.umr-lastig.fr/geodata#amraimond"> <span>amraimond</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3" title="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3"> <span>B D T O P O® V3</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#bbucher" title="http://purl.org/www.umr-lastig.fr/geodata#bbucher"> <span>bbucher</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris"> <span>geodata paris</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#ign" title="http://purl.org/www.umr-lastig.fr/geodata#ign"> <span>ign</span> </a></li>
+  <li><a href="#http://purl.org/www.umr-lastig.fr/geodata#mdvandamme" title="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"> <span>mdvandamme</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#amraimond">
+  <h3>amraimond<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#amraimond</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Person" target="_blank" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">geodata paris</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Olteanu-Raimond"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Ana-Maria"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/member" target="_blank" title="http://xmlns.com/foaf/0.1/member">member</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">geodata paris</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Ana-Maria Olteanu-Raimond"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/title" target="_blank" title="http://xmlns.com/foaf/0.1/title">title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Mme."</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3">
+  <h3>B D T O P O® V3<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://purl.org/www.umr-lastig.fr/geodata#Geodataset" title="http://purl.org/www.umr-lastig.fr/geodata#Geodataset">Geodataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://schema.org/alternateName" target="_blank" title="http://schema.org/alternateName">alternate Name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"BD TOPO® description vectorielle 3D ("</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/creator" target="_blank" title="http://schema.org/creator">creator</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://njh.me/contact.geoservices@ign.fr" target="_blank" title="http://njh.me/contact.geoservices@ign.fr">contact.geoservices@ign.fr</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="http://schema.org/dateCreated" target="_blank" title="http://schema.org/dateCreated">date Created</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2002-12-15"^^<a href="http://schema.org/Date" target="_blank" title="http://schema.org/Date">Date</a> <sup class="type-ep" title="external property">ep</sup> </span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/datePublished" target="_blank" title="http://schema.org/datePublished">date Published</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2025-06-15"^^<a href="http://schema.org/Date" target="_blank" title="http://schema.org/Date">Date</a> <sup class="type-ep" title="external property">ep</sup> </span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/description" target="_blank" title="http://schema.org/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique. Les objets de la BD TOPO® sont structurés en thèmes : - l'administratif ; - le bâti ; - l'hydrographie ; - les lieux nommés ; - l'occupation du sol ; - les services et activités ; - le transport ; - les zones réglementées. Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. Le relief est décrit sous forme de modèles numériques de terrain (MNT). Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps. Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"GPKG"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"PostGreSQL"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"SHP"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"TMS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WFS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WMS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/encodingFormat" target="_blank" title="http://schema.org/encodingFormat">encoding Format</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"WMTS"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Altitude"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bâtiments"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Dénominations géographiques"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Hydrographie"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Mobilité"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Réseaux de transport"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"activités"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"données ouvertes"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"eau"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"forêts"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"haies"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"routes"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"toponymie"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"transports"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/keywords" target="_blank" title="http://schema.org/keywords">keywords</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"végétation"</span>
+   </dd>
+   <dd>
+    <a href="http://schema.org/name" target="_blank" title="http://schema.org/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"BD TOPO®"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#language" target="_blank" title="http://www.w3.org/ns/dcat#language">language</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"fr-FR"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#title" target="_blank" title="http://www.w3.org/ns/dcat#title">title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#bbucher">
+  <h3>bbucher<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#bbucher</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Person" target="_blank" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#actedOnBehalfOf" target="_blank" title="http://www.w3.org/ns/prov#actedOnBehalfOf">acted On Behalf Of</a> <sup class="type-op" title="object property">op</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">geodata paris</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bucher"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bénédicte"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/member" target="_blank" title="http://xmlns.com/foaf/0.1/member">member</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">geodata paris</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Bénédicte Bucher"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/title" target="_blank" title="http://xmlns.com/foaf/0.1/title">title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Mme."</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">
+  <h3>geodata paris<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#geodata-paris</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/homepage" target="_blank" title="http://xmlns.com/foaf/0.1/homepage">homepage</a> <sup class="type-op" title="object property">op</sup> <a href="https://geodata-paris.fr" target="_blank" title="https://geodata-paris.fr">https://geodata-paris.fr</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Géodata Paris (ex ENSG-Géomatique)"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#ign">
+  <h3>ign<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#ign</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/homepage" target="_blank" title="http://xmlns.com/foaf/0.1/homepage">homepage</a> <sup class="type-op" title="object property">op</sup> <a href="https://www.ign.fr/" target="_blank" title="https://www.ign.fr/">https://www.ign.fr/</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Institut national de l'information géographique et forestière"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme">
+  <h3>mdvandamme<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/www.umr-lastig.fr/geodata#mdvandamme</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Person" target="_blank" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/family_name" target="_blank" title="http://xmlns.com/foaf/0.1/family_name">family name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Van Damme"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/givenname" target="_blank" title="http://xmlns.com/foaf/0.1/givenname">givenname</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Marie-Dominique"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/member" target="_blank" title="http://xmlns.com/foaf/0.1/member">member</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#http://purl.org/www.umr-lastig.fr/geodata#geodata-paris" title="http://purl.org/www.umr-lastig.fr/geodata#geodata-paris">geodata paris</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Marie-Dominique Van Damme"</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/title" target="_blank" title="http://xmlns.com/foaf/0.1/title">title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Mme."</span>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/workInfoHomepage" target="_blank" title="http://xmlns.com/foaf/0.1/workInfoHomepage">work Info Homepage</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://www.umr-lastig.fr/mdvandamme/"</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
