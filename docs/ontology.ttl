@@ -10,6 +10,7 @@
                                                                         <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" ,
                                                                                                                   "Bénédicte Bucher" ,
                                                                                                                   "Marie-Dominique Van Damme" ;
+                                                                        <http://purl.org/dc/elements/1.1/title> "Outdoor Pressure Ontology"@en ;
                                                                         rdfs:comment "This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems" .
 
 #################################################################
@@ -18,6 +19,10 @@
 
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/bibliographicCitation

@@ -85,6 +85,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/Location",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -210,6 +213,10 @@
     "@value" : "Bénédicte Bucher"
   }, {
     "@value" : "Marie-Dominique Van Damme"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Outdoor Pressure Ontology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems"
