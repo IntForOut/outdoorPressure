@@ -418,6 +418,25 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords">
         <rdfs:range rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity"/>
     </owl:ObjectProperty>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements">
+        <rdfs:domain rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Links a route instance to an instance of skos: Concept defined in the list &apos;rte&apos; which specifies its nature.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Relie une instance de route à une instance de skos:Concept définie dans la liste &apos;rte&apos; qui précise sa nature.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"/>
+        <rdfs:label xml:lang="fr">implémente</rdfs:label>
+        <rdfs:label xml:lang="en">implements</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -430,6 +449,8 @@
      -->
 
     
+    
+
 
 
     <!-- http://purl.org/choucas.ign.fr/oor#RoutePortion -->
@@ -885,7 +906,7 @@
         <rdf:comment xml:lang="en">This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS.</rdf:comment>
         <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv"/>
         <dcat:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"/>
     </owl:NamedIndividual>
     
 
@@ -904,7 +925,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geocatalog"/>
-        <dcat:themeTaxonomy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"/>
+        <dcat:themeTaxonomy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
         <dcat:dataset rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath"/>
         <dcat:dataset rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB"/>
         <dcat:dataset rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
@@ -1020,7 +1041,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MobilityNetwork"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MMobilityNetwork"/>
         <rdfs:comment>Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1030,7 +1051,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack"/>
         <terms:description xml:lang="en">A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered</terms:description>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN"/>
         <terms:spatial rdf:resource="https://data.ign.fr/id/geofla/commune/74056"/>
@@ -1053,7 +1074,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack"/>
         <rdf:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdf:comment>
         <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg"/>
         <dcat:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
@@ -1076,7 +1097,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTTrack"/>
         <terms:description xml:lang="en">Activity data from gps collars</terms:description>
         <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
@@ -1094,7 +1115,7 @@
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"/>
         <terms:description xml:lang="en">A set of routes issued from altituderando.com.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1160,7 +1181,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"/>
         <terms:description xml:lang="en">A set of Routes issued from Camptocamp.org API.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1186,7 +1207,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark"/>
         <terms:description xml:lang="en">A set of Waypoints issued from Camptocamp.org API.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1248,7 +1269,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTTrack"/>
         <terms:description xml:lang="en">GPS locations</terms:description>
         <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
@@ -1345,7 +1366,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark"/>
         <terms:description xml:lang="en">A set of POIs issued from Parcdesbauges.com.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1396,7 +1417,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"/>
         <terms:description xml:lang="en">A set of treks issued from Parcdesbauges.com.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1444,7 +1465,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark"/>
         <terms:description xml:lang="en">A set of Points issued from Refuges.info.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1485,7 +1506,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#vincennesfusion">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MergedTrack"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MergedTTrack"/>
         <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
         <terms:title xml:lang="fr">Traces fusionnées issues de la métrologie de l&apos;algorithme MIAA</terms:title>
         <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration"/>
@@ -1500,7 +1521,7 @@
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <dcat:theme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"/>
+        <opo:implements rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"/>
         <terms:description xml:lang="en">A set of routes issued from visorando.com.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
@@ -1556,64 +1577,104 @@
 
 
 
-    <skos:ConceptScheme rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy">
-        <dcat:title xml:lang="en">Taxonomy of themes for the catalog</dcat:title>
-        <skos:hasTopConcept rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"/>
-        <skos:hasTopConcept rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"/>
-        <skos:hasTopConcept rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"/>
-        <skos:hasTopConcept rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MobilityNetwork" />
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Group together all instances designating geocatalog taxonomy.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Regroupe l&apos;ensemble des instances désignant la taxonomie du géocatalogue.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"/>
+        <rdfs:label xml:lang="fr">Taxonomie du géocatalogue</rdfs:label>
+        <rdfs:label xml:lang="en">Geocatalog taxonomy</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy -->
+
+    <skos:ConceptScheme rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy">
+        <rdfs:label xml:lang="en">Taxonomy of IntForOut for the geocatalog</rdfs:label>
+        <rdfs:comment xml:lang="en">List of different types in IntForOut, represented as a hierarchy of SKOS concepts.</rdfs:comment>
     </skos:ConceptScheme>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track">
-        <skos:prefLabel xml:lang="en">Track</skos:prefLabel>
-        <skos:narrower rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack"/>
-        <skos:narrower rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack"/>
-        <skos:narrower rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MergedTrack"/>
-        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"/>
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <skos:prefLabel xml:lang="en">TTrack</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack">
-        <skos:prefLabel xml:lang="en">AnimalTrack</skos:prefLabel>
-        <skos:broader rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"/>
-        <skos:inScheme rdf:resource="https://example.org/theme-taxonomy"/>
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTTrack -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTrack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <skos:prefLabel xml:lang="en">AnimalTTrack</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"/>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack">
-        <skos:prefLabel xml:lang="en">HumanTrack</skos:prefLabel>
-        <skos:broader rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"/>
-        <skos:inScheme rdf:resource="https://example.org/theme-taxonomy"/>
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">HumanTTrack</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"/>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MergedTrack">
-        <skos:prefLabel xml:lang="en">MergedTrack</skos:prefLabel>
-        <skos:broader rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"/>
-        <skos:inScheme rdf:resource="https://example.org/theme-taxonomy"/>
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MergedTTrack -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MergedTTrack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">MergedTTrack</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"/>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route">
-        <skos:prefLabel xml:lang="en">Route</skos:prefLabel>
-        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"/>
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">RRoute</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark">
-        <skos:prefLabel xml:lang="en">Landmark</skos:prefLabel>
-        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"/>
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">LLandmark</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
 
-    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MobilityNetwork">
-        <skos:prefLabel xml:lang="en">MobilityNetwork</skos:prefLabel>
-        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"/>
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MMobilityNetwork -->
+
+    <skos:Concept rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MMobilityNetwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">MMobilityNetwork</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"/>
     </skos:Concept>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    
 
     
     
