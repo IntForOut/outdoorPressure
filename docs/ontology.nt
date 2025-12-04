@@ -213,11 +213,6 @@
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#describesFeatureType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#describesFeatureType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity> .
 # 
-# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
-# 
 # 
 # 
 # #################################################################

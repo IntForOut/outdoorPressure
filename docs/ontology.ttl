@@ -266,12 +266,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       rdfs:range :LandEntity .
 
 
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn
-:isImplementedIn rdf:type owl:ObjectProperty ;
-                 rdfs:domain :LandEntity ;
-                 rdfs:range <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
-
-
 #################################################################
 #    Classes
 #################################################################
