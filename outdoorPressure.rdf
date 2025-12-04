@@ -480,7 +480,7 @@
 
     <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-        <rdfs:label xml:lang="en">Research Geo Dataset</rdfs:label>
+        <rdfs:label xml:lang="en">ResearchGeodataset</rdfs:label>
     </owl:Class>
     
 
@@ -701,9 +701,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing -->
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing">
+    <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     </owl:Class>
     
@@ -1233,7 +1233,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration">
-        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing"/>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-06</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-05</prov:startedAtTime>
         <prov:used rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
