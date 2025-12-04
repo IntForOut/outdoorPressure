@@ -421,14 +421,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity"/>
-        <rdfs:range rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Geodataset"/>
-    </owl:ObjectProperty>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
