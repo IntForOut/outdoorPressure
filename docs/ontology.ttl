@@ -223,7 +223,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
-         rdfs:range <http://www.w3.org/ns/prov#Activity> .
+         rdfs:range :LivingActivity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#describesFeatureType
@@ -268,13 +268,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
                                                rdfs:subClassOf :LandEntity .
-
-
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity
-:Activity rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ,
-                          <http://www.w3.org/ns/prov#Activity> ;
-          rdfs:comment "Activity of a living creature, human or animal"@en .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Affordance
@@ -339,7 +332,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity
 :HumanActivity rdf:type owl:Class ;
-               rdfs:subClassOf :Activity .
+               rdfs:subClassOf :LivingActivity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
@@ -358,6 +351,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark
 :Landmark rdf:type owl:Class ;
           rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity
+:LivingActivity rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                <http://www.w3.org/ns/prov#Activity> ;
+                rdfs:comment "Activity of a living creature, human or animal"@en .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea
@@ -410,7 +410,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing
 :Processing rdf:type owl:Class ;
-            rdfs:subClassOf :Activity .
+            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork

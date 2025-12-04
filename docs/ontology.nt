@@ -180,7 +180,7 @@
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#describesFeatureType
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#describesFeatureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -223,12 +223,6 @@
 # http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity> .
-# 
-# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity of a living creature, human or animal"@en .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Affordance
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -277,7 +271,7 @@
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -293,6 +287,12 @@
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+# 
+# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity of a living creature, human or animal"@en .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -329,7 +329,7 @@
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
