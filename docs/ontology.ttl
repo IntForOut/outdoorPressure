@@ -267,7 +267,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity
 :Activity rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ,
+                          <http://www.w3.org/ns/prov#Activity> ;
           rdfs:comment "Activity of a living creature, human or animal"@en .
 
 
@@ -285,6 +286,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                           "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Cycling
+:Cycling rdf:type owl:Class ;
+         rdfs:subClassOf :HumanActivity .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EnhancedMobilityNetworkBackbone
 :EnhancedMobilityNetworkBackbone rdf:type owl:Class ;
                                  rdfs:subClassOf :MobilityNetworkBackbone ;
@@ -300,7 +306,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking
 :FastHiking rdf:type owl:Class ;
-            rdfs:subClassOf :Activity .
+            rdfs:subClassOf :Hiking .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FilteredTrack
@@ -319,6 +325,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Habitat rdf:type owl:Class ;
          rdfs:subClassOf :Affordance ;
          rdfs:comment "Place or land that support an essential activity of given living creatures, specified as an individual, or a species or a community"@en .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Hiking
+:Hiking rdf:type owl:Class ;
+        rdfs:subClassOf :HumanActivity .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity
+:HumanActivity rdf:type owl:Class ;
+               rdfs:subClassOf :Activity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
@@ -387,6 +403,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             Exemple : « Le chemin du Roy »."""@fr .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing
+:Processing rdf:type owl:Class ;
+            rdfs:subClassOf :Activity .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork
 :QualityAssessedMobilityNetwork rdf:type owl:Class ;
                                 rdfs:subClassOf :EnhancedMobilityNetworkBackbone ;
@@ -413,6 +434,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing
+:Skiing rdf:type owl:Class ;
+        rdfs:subClassOf :HumanActivity .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
 :Track rdf:type owl:Class ;
        rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
@@ -437,7 +463,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 
 ###  http://www.w3.org/ns/prov#Activity
-<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     rdfs:comment "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en .
 
 
 ###  http://www.w3.org/ns/prov#Agent

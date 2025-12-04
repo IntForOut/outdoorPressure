@@ -280,6 +280,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Affordance",
@@ -308,6 +310,12 @@
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Cycling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EnhancedMobilityNetworkBackbone",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -324,7 +332,7 @@
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity"
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Hiking"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FilteredTrack",
@@ -388,6 +396,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Affordance"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Hiking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack",
@@ -719,6 +739,12 @@
     "@value" : "GPS traces"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Activity"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -758,6 +784,12 @@
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   }, {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track",
@@ -1610,7 +1642,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Activity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
