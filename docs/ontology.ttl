@@ -108,12 +108,20 @@
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
+rdf:comment rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#accessService
 <http://www.w3.org/ns/dcat#accessService> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#distribution
@@ -126,6 +134,18 @@
 
 ###  http://www.w3.org/ns/dcat#format
 <http://www.w3.org/ns/dcat#format> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#hasPart
+<http://www.w3.org/ns/dcat#hasPart> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#identifier
+<http://www.w3.org/ns/dcat#identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#isPartOf
+<http://www.w3.org/ns/dcat#isPartOf> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#isReferencedBy
@@ -400,10 +420,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024)."@fr .
 
 
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/> rdf:type owl:Class .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
 
@@ -469,6 +485,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                   <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath
+:GroundTruthDenseForestPath rdf:type owl:NamedIndividual ,
+                                     <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+                            <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :Track ;
+                            rdf:comment "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en ;
+                            <http://www.w3.org/ns/dcat#distribution> :GroundTruthDenseForestPath-csv ;
+                            <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv
+:GroundTruthDenseForestPath-csv rdf:type owl:NamedIndividual ,
+                                         <http://www.w3.org/ns/dcat#Distribution> ;
+                                <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> ;
+                                <http://www.w3.org/ns/dcat#format> "csv" ;
+                                <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB
 :IntForOutETLDB rdf:type owl:NamedIndividual ,
                          <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
@@ -485,8 +518,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS
 :MOUSLS rdf:type owl:NamedIndividual ,
-                 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ,
-                 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/> ;
+                 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
         <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
         <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en ;
         <http://purl.org/dc/terms/issued> "2024-01-18"^^xsd:date ;
@@ -496,7 +528,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
         <http://purl.org/dc/terms/spatial> <http://sws.geonames.org/3032049/> ;
         <http://purl.org/dc/terms/title> "Multi-sensors and Ground Truth Tracks"@en ;
         <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" ;
-        <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :HumanTrack ;
+        <http://www.w3.org/ns/dcat#hasPart> :GroundTruthDenseForestPath ,
+                                            :MetadataGroundTruthPathVincennesForest ,
+                                            :MetadataTracksMultiSensorsVincennesForest ,
+                                            :TracksMultiSensorsVincennesForest ;
         <http://www.w3.org/ns/dcat#isReferencedBy> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> ;
         <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 
@@ -516,6 +551,38 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                   <http://purl.org/dc/terms/title> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en ;
                   <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
                   <http://www.w3.org/ns/dcat#isReferencedBy> :pan3.70151 .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest
+:MetadataGroundTruthPathVincennesForest rdf:type owl:NamedIndividual ,
+                                                 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+                                        rdf:comment "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"@en ;
+                                        <http://www.w3.org/ns/dcat#distribution> :MetadataGroundTruthPathVincennesForest-xml ;
+                                        <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest-xml
+:MetadataGroundTruthPathVincennesForest-xml rdf:type owl:NamedIndividual ,
+                                                     <http://www.w3.org/ns/dcat#Distribution> ;
+                                            <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> ;
+                                            <http://www.w3.org/ns/dcat#format> "xml" ;
+                                            <http://www.w3.org/ns/dcat#identifier> "Metadata_ground_truth_path_vincennes_forest.xml" .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest
+:MetadataTracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
+                                                    <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+                                           rdf:comment "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"@en ;
+                                           <http://www.w3.org/ns/dcat#distribution> :MetadataTracksMultiSensorsVincennesForest-xml ;
+                                           <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest-xml
+:MetadataTracksMultiSensorsVincennesForest-xml rdf:type owl:NamedIndividual ,
+                                                        <http://www.w3.org/ns/dcat#Distribution> ;
+                                               <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> ;
+                                               <http://www.w3.org/ns/dcat#format> "xml" ;
+                                               <http://www.w3.org/ns/dcat#identifier> "Metadata_tracks_multi_sensors_vincennes_forest.xml" .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBoneDB
@@ -541,6 +608,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
           <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest
+:TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
+                                            <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+                                   <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :HumanTrack ;
+                                   rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
+                                   <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
+                                   <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg
+:TracksMultiSensorsVincennesForest-gpkg rdf:type owl:NamedIndividual ,
+                                                 <http://www.w3.org/ns/dcat#Distribution> ;
+                                        <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> ;
+                                        <http://www.w3.org/ns/dcat#format> "gpkg" ;
+                                        <http://www.w3.org/ns/dcat#identifier> "tracks_multi_sensors_vincennes_forest.gpkg" .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export
