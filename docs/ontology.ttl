@@ -337,7 +337,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding
 :Finding rdf:type owl:Class ;
-         rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> .
+         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat
@@ -816,7 +816,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration
 :fusionCalibration rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/ns/prov#Activity> ;
+                            :Processing ;
                    <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
                    <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth ;
                    <http://www.w3.org/ns/prov#used> :MOUSLS ,
