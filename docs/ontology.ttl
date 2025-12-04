@@ -7,15 +7,22 @@
 @base <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#> .
 
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> rdf:type owl:Ontology ;
+                                                                        owl:versionIRI <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/1.0.0> ;
+                                                                        <http://creativecommons.org/ns#licence> <http://creativecommons.org/licenses/by/4.0/> ;
                                                                         <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" ,
                                                                                                                   "Bénédicte Bucher" ,
                                                                                                                   "Marie-Dominique Van Damme" ;
                                                                         <http://purl.org/dc/elements/1.1/title> "Outdoor Pressure Ontology"@en ;
+                                                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "opo" ;
                                                                         rdfs:comment "This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://creativecommons.org/ns#licence
+<http://creativecommons.org/ns#licence> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
@@ -105,8 +112,16 @@
 <http://purl.org/spar/datacite/volume> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/address
 <http://schema.org/address> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType
@@ -230,6 +245,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :describesFeatureType rdf:type owl:ObjectProperty ;
                       rdfs:domain <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
                       rdfs:range :LandEntity .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isImplementedIn
+:isImplementedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LandEntity ;
+                 rdfs:range <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
 
 
 #################################################################
@@ -528,7 +549,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath
 :GroundTruthDenseForestPath rdf:type owl:NamedIndividual ,
                                      <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
-                            <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :Track ;
+                            <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :Track ;
                             rdf:comment "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en ;
                             <http://www.w3.org/ns/dcat#distribution> :GroundTruthDenseForestPath-csv ;
                             <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
@@ -573,7 +594,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                             :MetadataTracksMultiSensorsVincennesForest ,
                                             :TracksMultiSensorsVincennesForest ;
         <http://www.w3.org/ns/dcat#isReferencedBy> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> ;
-        <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
+        <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
+                                                    <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025
@@ -628,7 +650,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkBackBoneDB
 :MobilityNetworkBackBoneDB rdf:type owl:NamedIndividual ,
                                     <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
-                           <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :MobilityNetworkBackbone ;
+                           <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :MobilityNetworkBackbone ;
                            rdfs:comment "Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks" .
 
 
@@ -643,7 +665,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                         <https://data.ign.fr/id/geofla/commune/74290> ,
                                                         _:genid1 ;
                      <http://purl.org/dc/terms/title> "OutdoorVision export"@en ;
-                     <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :HumanTrack ;
+                     <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :HumanTrack ;
                      <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
 
 _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
@@ -653,7 +675,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest
 :TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
                                             <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
-                                   <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :HumanTrack ;
+                                   <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :HumanTrack ;
                                    rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
                                    <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
                                    <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
@@ -677,7 +699,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
             <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
             <http://purl.org/dc/terms/title> "act-export"@fr ;
-            <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :AnimalTrack .
+            <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :AnimalTrack .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#altituderando
@@ -691,7 +713,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
                <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
                <http://purl.org/dc/terms/publisher> :altituderando ;
                <http://purl.org/dc/terms/title> "AltitudeRando routes"@fr ;
-               <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :NamedRoute ;
+               <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :NamedRoute ;
                <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> ;
                <http://xmlns.com/foaf/0.1/name> "Altituderando" .
 
@@ -745,7 +767,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
            <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
            <http://purl.org/dc/terms/publisher> :camptocamp ;
            <http://purl.org/dc/terms/title> "Camptocamp.org-routes"@fr ;
-           <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :NamedRoute ;
+           <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :NamedRoute ;
            <http://www.w3.org/ns/dcat#distribution> :c2c-route-geojson .
 
 
@@ -765,7 +787,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
               <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
               <http://purl.org/dc/terms/publisher> :camptocamp ;
               <http://purl.org/dc/terms/title> "Camptocamp.org-waypoints"@fr ;
-              <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> <http://purl.org/choucas.ign.fr/oor#objet_de_repère> ;
+              <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> <http://purl.org/choucas.ign.fr/oor#objet_de_repère> ;
               <http://www.w3.org/ns/dcat#distribution> :c2c-waypoint-geojson .
 
 
@@ -813,7 +835,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
              <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
              <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
              <http://purl.org/dc/terms/title> "locs-export"@fr ;
-             <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :AnimalTrack .
+             <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :AnimalTrack .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#marchandetal-rdata
@@ -886,7 +908,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                    <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                    <http://purl.org/dc/terms/publisher> :parcdesbauges ;
                    <http://purl.org/dc/terms/title> "Parcdesbauges.com - POI"@fr ;
-                   <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> <http://purl.org/choucas.ign.fr/oor#objet_de_repère> ;
+                   <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> <http://purl.org/choucas.ign.fr/oor#objet_de_repère> ;
                    <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-poi-geojson .
 
 
@@ -925,7 +947,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                     <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                     <http://purl.org/dc/terms/publisher> :parcdesbauges ;
                     <http://purl.org/dc/terms/title> "Parcdesbauges.com - trek"@fr ;
-                    <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :NamedRoute ;
+                    <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :NamedRoute ;
                     <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-trek-geojson .
 
 
@@ -961,7 +983,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                     <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> ;
                     <http://purl.org/dc/terms/publisher> :refugesinfo ;
                     <http://purl.org/dc/terms/title> "Refuges.info - points"@fr ;
-                    <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> <http://purl.org/choucas.ign.fr/oor#objet_de_repère> ;
+                    <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> <http://purl.org/choucas.ign.fr/oor#objet_de_repère> ;
                     <http://www.w3.org/ns/dcat#distribution> :refugesinfo-points-geojson .
 
 
@@ -984,7 +1006,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                           <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
                  <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
                  <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr ;
-                 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :MergedTrack ;
+                 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :MergedTrack ;
                  <http://www.w3.org/ns/prov#wasGeneratedBy> :fusionCalibration ;
                  <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> .
 
@@ -1000,7 +1022,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
            <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
            <http://purl.org/dc/terms/publisher> :visorando ;
            <http://purl.org/dc/terms/title> "Visorando routes"@fr ;
-           <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/describesFeatureType> :NamedRoute ;
+           <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressuredescribesFeatureType> :NamedRoute ;
            <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> ;
            <http://xmlns.com/foaf/0.1/name> "Visorando" .
 
@@ -1010,11 +1032,11 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                                                                                               :ScientificPaper ;
                                                                                      <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                                                                         <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
-                                                                                                                        _:genid6 ;
+                                                                                                                        <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
                                                                                      <http://purl.org/dc/terms/hasPart> :MOUSLS ;
                                                                                      <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" ,
                                                                                                                          "SIGSPATIAL '24" ;
-                                                                                     <http://purl.org/dc/terms/publisher> _:genid7 ;
+                                                                                     <http://purl.org/dc/terms/publisher> _:genid6 ;
                                                                                      <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" ;
                                                                                      <http://purl.org/dc/terms/title> "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories" ;
                                                                                      <http://purl.org/spar/datacite/firstPage> "633" ;
@@ -1028,10 +1050,7 @@ _:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                                                                                                                              "trajectory aggregation" ;
                                                                                      <http://www.w3.org/ns/dcat#theme> <https://www.wikidata.org/wiki/Q179435> .
 
-_:genid6 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Yann Méneroux" .
-
-_:genid7 rdf:type <http://xmlns.com/foaf/0.1/Organization> ;
+_:genid6 rdf:type <http://xmlns.com/foaf/0.1/Organization> ;
           <http://schema.org/address> "New York, USA" ;
           <http://xmlns.com/foaf/0.1/name> "Association for Computing Machinery" .
 
