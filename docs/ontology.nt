@@ -261,7 +261,7 @@
 # http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> .
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#label> "Research Geo Dataset"@en .
+<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> <http://www.w3.org/2000/01/rdf-schema#label> "ResearchGeodataset"@en .
 # 
 # http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -306,6 +306,10 @@
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -375,10 +379,6 @@
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). \n            Example: “Le chemin du Roy”."@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). \n            Exemple : « Le chemin du Roy »."@fr .
-# 
-# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -736,7 +736,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration> <http://www.w3.org/ns/prov#used> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS> .

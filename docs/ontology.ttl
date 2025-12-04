@@ -318,7 +318,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> rdf:type owl:Class ;
                                                                rdfs:subClassOf <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
-                                                               rdfs:label "Research Geo Dataset"@en .
+                                                               rdfs:label "ResearchGeodataset"@en .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
@@ -378,6 +378,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding
 :Finding rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing
+:GeoProcessing rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat
@@ -469,11 +474,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             Example: “Le chemin du Roy”."""@en ,
                          """Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). 
             Exemple : « Le chemin du Roy »."""@fr .
-
-
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Processing
-:Processing rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork
@@ -877,7 +877,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration
 :fusionCalibration rdf:type owl:NamedIndividual ,
-                            :Processing ;
+                            :GeoProcessing ;
                    <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
                    <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth ;
                    <http://www.w3.org/ns/prov#used> :MOUSLS ,
