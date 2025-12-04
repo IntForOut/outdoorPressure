@@ -2,6 +2,7 @@
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> <http://purl.org/dc/elements/1.1/creator> "Bénédicte Bucher" .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> <http://purl.org/dc/elements/1.1/creator> "Marie-Dominique Van Damme" .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> <http://purl.org/dc/elements/1.1/title> "Outdoor Pressure Ontology"@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology describes data and concepts relevant to study the pressure of human outdoor leisure in moutain on ecosystems" .
 # 
 # 
@@ -14,6 +15,9 @@
 # 
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
