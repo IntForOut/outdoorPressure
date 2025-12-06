@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/1.0.0> a prov:Entity;
+<..\index-en.html> a prov:Entity;
 	 dc:title "Outdoor Pressure Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
