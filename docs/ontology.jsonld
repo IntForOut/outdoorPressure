@@ -1,5 +1,14 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid2",
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Parc naturel régional du Massif des Bauges"
@@ -8,7 +17,7 @@
     "@id" : "http://purl.org/dc/terms/Location"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid3",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -16,7 +25,7 @@
     "@value" : "Pascal Marchand"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid4",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -24,7 +33,7 @@
     "@value" : "Nolwenn Risser"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid5",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -32,7 +41,7 @@
     "@value" : "Elodie Petit"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid6",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -40,7 +49,7 @@
     "@value" : "Mathieu Garel"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid7",
   "http://schema.org/address" : [ {
     "@value" : "New York, USA"
   } ],
@@ -254,7 +263,7 @@
     "@value" : "SIGSPATIAL '24"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid7"
   } ],
   "http://purl.org/dc/terms/spatial" : [ {
     "@value" : "Atlanta, GA, USA"
@@ -375,8 +384,34 @@
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Group together all instances designating geocatalog taxonomy."
+  }, {
+    "@language" : "fr",
+    "@value" : "Regroupe l'ensemble des instances désignant la taxonomie du géocatalogue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geocatalog taxonomy"
+  }, {
+    "@language" : "fr",
+    "@value" : "Taxonomie du géocatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."
@@ -389,9 +424,6 @@
   } ],
   "http://www.w3.org/ns/dcat#isPartOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv",
@@ -492,7 +524,7 @@
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest"
   } ],
   "http://www.w3.org/ns/dcat#themeTaxonomy" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
   } ],
   "http://www.w3.org/ns/dcat#title" : [ {
     "@language" : "fr",
@@ -766,14 +798,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MMobilityNetwork"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MobilityNetwork"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute",
@@ -807,11 +839,14 @@
   }, {
     "@id" : "https://data.ign.fr/id/geofla/commune/74290"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid2"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "OutdoorVision export"
+  } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
@@ -819,9 +854,6 @@
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "en",
     "@value" : "GPS traces"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork",
@@ -903,6 +935,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
@@ -915,9 +950,6 @@
   } ],
   "http://www.w3.org/ns/dcat#isPartOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg",
@@ -961,11 +993,11 @@
     "@language" : "fr",
     "@value" : "act-export"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords",
@@ -997,15 +1029,15 @@
     "@language" : "fr",
     "@value" : "AltitudeRando routes"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   }, {
     "@id" : "http://www.w3.org/ns/prov#Agent"
   }, {
     "@id" : "http://www.w3.org/ns/prov#Organization"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.altituderando.com"
@@ -1130,14 +1162,14 @@
     "@language" : "fr",
     "@value" : "Camptocamp.org-routes"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route-geojson"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route-geojson",
@@ -1175,14 +1207,14 @@
     "@language" : "fr",
     "@value" : "Camptocamp.org-waypoints"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint-geojson"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint-geojson",
@@ -1249,6 +1281,32 @@
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#tracklib"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a route instance to an instance of skos: Concept defined in the list 'rte' which specifies its nature."
+  }, {
+    "@language" : "fr",
+    "@value" : "Relie une instance de route à une instance de skos:Concept définie dans la liste 'rte' qui précise sa nature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "implements"
+  }, {
+    "@language" : "fr",
+    "@value" : "implémente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -1275,11 +1333,11 @@
     "@language" : "fr",
     "@value" : "locs-export"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#marchandetal-rdata",
@@ -1308,13 +1366,13 @@
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid2"
-  }, {
     "@id" : "_:genid3"
   }, {
     "@id" : "_:genid4"
   }, {
     "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
   } ],
   "http://purl.org/dc/terms/hasPart" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"
@@ -1404,14 +1462,14 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - POI"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi-geojson"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi-geojson",
@@ -1491,14 +1549,14 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - trek"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek-geojson"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek-geojson",
@@ -1564,14 +1622,14 @@
     "@language" : "fr",
     "@value" : "Refuges.info - points"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points-geojson"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points-geojson",
@@ -1624,11 +1682,11 @@
     "@language" : "fr",
     "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MergedTTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MergedTrack"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#fusionCalibration"
@@ -1660,15 +1718,15 @@
     "@language" : "fr",
     "@value" : "Visorando routes"
   } ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Geodataset"
   }, {
     "@id" : "http://www.w3.org/ns/prov#Agent"
   }, {
     "@id" : "http://www.w3.org/ns/prov#Organization"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.visorando.com/"
@@ -1677,130 +1735,135 @@
     "@value" : "Visorando"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://example.org/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "AnimalTrack"
-  } ]
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack",
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/AnimalTrack",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://example.org/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "HumanTrack"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Landmark"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MergedTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://example.org/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "MergedTrack"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MobilityNetwork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "MobilityNetwork"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Route"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/AnimalTrack"
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
   }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/HumanTrack"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MergedTrack"
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
-    "@value" : "Track"
+    "@value" : "AnimalTTrack"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/theme-taxonomy",
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/HumanTTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "HumanTTrack"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/LLandmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "LLandmark"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MMobilityNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "MMobilityNetwork"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/MergedTTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "MergedTTrack"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/RRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "RRoute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/TTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeocatTaxonomy"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "TTrack"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/OutdoorPressure/intforout/geocat-taxonomy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ],
-  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Landmark"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/MobilityNetwork"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Route"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Track"
-  } ],
-  "http://www.w3.org/ns/dcat#title" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Taxonomy of themes for the catalog"
+    "@value" : "List of different types in IntForOut, represented as a hierarchy of SKOS concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Taxonomy of IntForOut for the geocatalog"
   } ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
@@ -1821,14 +1884,8 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#broader",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
