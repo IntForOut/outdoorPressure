@@ -311,7 +311,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Hiking> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FilteredTrack
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FilteredTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -339,6 +339,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q3769299" .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q61788060" .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -439,6 +441,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q12375604" .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
