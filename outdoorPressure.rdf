@@ -652,7 +652,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity"/>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q3769299</rdfs:seeAlso>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q61788060</rdfs:seeAlso>
     </owl:Class>
     
