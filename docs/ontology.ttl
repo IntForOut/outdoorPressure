@@ -381,7 +381,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking
 :FastHiking rdf:type owl:Class ;
-            rdfs:subClassOf :Hiking .
+            rdfs:subClassOf :HumanActivity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FilteredTrack
@@ -414,7 +414,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity
 :HumanActivity rdf:type owl:Class ;
-               rdfs:subClassOf :LivingActivity .
+               rdfs:subClassOf :LivingActivity ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q3769299" ,
+                            "https://www.wikidata.org/wiki/Q61788060" .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
@@ -543,7 +545,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing
 :Skiing rdf:type owl:Class ;
-        rdfs:subClassOf :HumanActivity .
+        rdfs:subClassOf :HumanActivity ;
+        rdfs:seeAlso "https://www.wikidata.org/wiki/Q12375604" .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
