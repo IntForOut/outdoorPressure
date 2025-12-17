@@ -7,6 +7,7 @@
 @base <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#> .
 
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> rdf:type owl:Ontology ;
+                                                                        owl:imports <http://purl.org/www.umr-lastig.fr/geodata> ;
                                                                         <http://creativecommons.org/ns#licence> <http://creativecommons.org/licenses/by/4.0/> ;
                                                                         <http://purl.org/dc/elements/1.1/creator> "Ana-Maria Raimond" ,
                                                                                                                   "Bénédicte Bucher" ,
@@ -278,12 +279,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
-         rdfs:range :LivingActivity .
+         rdfs:range :HumanOutdoorActivity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements
 :implements rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
             rdfs:range [ rdf:type owl:Restriction ;
                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
                          owl:hasValue <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType>
@@ -315,25 +315,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://purl.org/spar/datacite/Resource> rdf:type owl:Class .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#Geocatalog
-<http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ,
-                                                                       <http://www.w3.org/ns/dcat#Catalog> ;
-                                                       rdfs:comment "Geocatalog"@en ;
-                                                       rdfs:label "Geocatalog"@en .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#Geodataset
-<http://purl.org/www.umr-lastig.fr/geodata#Geodataset> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
-                                                       rdfs:comment "Geodataset"@en ;
-                                                       rdfs:label "Geodataset"@en .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset
-<http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
-                                                               rdfs:label "ResearchGeodataset"@en .
+###  http://purl.org/www.umr-lastig.fr/geodata#Process
+<http://purl.org/www.umr-lastig.fr/geodata#Process> rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
@@ -343,17 +326,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Affordance
 :Affordance rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
             rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially"@en ,
                          "Correspond à la relation \"affords\""@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack
 :AnimalTrack rdf:type owl:Class ;
-             rdfs:subClassOf :Track ;
-             rdfs:comment "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."@en ,
-                          "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr ;
-             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack> .
+             rdfs:subClassOf :Track .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area
@@ -363,7 +342,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Cycling
 :Cycling rdf:type owl:Class ;
-         rdfs:subClassOf :HumanActivity .
+         rdfs:subClassOf :HumanOutdoorActivity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EnhancedMobilityNetworkBackbone
@@ -381,7 +360,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FastHiking
 :FastHiking rdf:type owl:Class ;
-            rdfs:subClassOf :HumanActivity .
+            rdfs:subClassOf :HumanOutdoorActivity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FilteredTrack
@@ -389,16 +368,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                rdfs:subClassOf :Track ;
                rdfs:comment "Filtered traces represent a set of unstructured traces assumed to follow the network and used for a specific case study. They result from a user-defined filtering process (spatial, temporal, activity type, etc.)."@en ,
                             "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."@fr .
-
-
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Finding
-:Finding rdf:type owl:Class ;
-         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
-
-
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GeoProcessing
-:GeoProcessing rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Habitat
@@ -409,43 +378,27 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Hiking
 :Hiking rdf:type owl:Class ;
-        rdfs:subClassOf :HumanActivity .
+        rdfs:subClassOf :HumanOutdoorActivity .
 
 
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanActivity
-:HumanActivity rdf:type owl:Class ;
-               rdfs:subClassOf :LivingActivity ;
-               rdfs:seeAlso "https://www.wikidata.org/wiki/Q3769299" ,
-                            "https://www.wikidata.org/wiki/Q61788060" .
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanOutdoorActivity
+:HumanOutdoorActivity rdf:type owl:Class ;
+                      rdfs:comment "Activity of a living creature, human or animal"@en .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
 :HumanTrack rdf:type owl:Class ;
-            rdfs:subClassOf :Track ;
-            rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
-                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr ;
-            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack> .
+            rdfs:subClassOf :Track .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity
 :LandEntity rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
             rdfs:comment "EN: An entity located in land : an area, a land, a parcel, a network"@en .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark
 :Landmark rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
-          rdfs:comment "Landmark"@en ,
-                       "Objet de repère"@fr ;
-          <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark> .
-
-
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LivingActivity
-:LivingActivity rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                <http://www.w3.org/ns/prov#Activity> ;
-                rdfs:comment "Activity of a living creature, human or animal"@en .
+          rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea
@@ -465,10 +418,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack
 :MergedTrack rdf:type owl:Class ;
-             rdfs:subClassOf :Track ;
-             rdfs:comment "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en ,
-                          "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr ;
-             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack> .
+             rdfs:subClassOf :Track .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Mobility
@@ -478,27 +428,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetwork
 :MobilityNetwork rdf:type owl:Class ;
-                 rdfs:subClassOf :LandEntity ;
-                 rdfs:comment """
-            A underlying network represents an active mobility network (excluding cars and trains). 
-            It is characterized by a topology, a geometry where each edge is associated with a sequence of vertices (x, y, z), and attributes that can be numerical or textual, located at the edge level (with curvilinear abscissa) or at nodes when necessary.
-        """@en ,
-                              """
-            Un réseau support est un réseau de mobilité active (tout sauf voiture et trains) représenté par :
-            une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z),
-            et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.
-        """@fr ;
-                 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork> .
+                 rdfs:subClassOf :LandEntity .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute
 :NamedRoute rdf:type owl:Class ;
-            rdfs:subClassOf :Route ;
-            rdfs:comment """A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). 
-            Example: “Le chemin du Roy”."""@en ,
-                         """Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). 
-            Exemple : « Le chemin du Roy »."""@fr ;
-            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute> .
+            rdfs:subClassOf :Route .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#QualityAssessedMobilityNetwork
@@ -521,10 +456,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route
 :Route rdf:type owl:Class ;
-       rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
-       rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
-                    "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr ;
-       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTRoute> .
+       rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper
@@ -545,16 +477,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Skiing
 :Skiing rdf:type owl:Class ;
-        rdfs:subClassOf :HumanActivity ;
+        rdfs:subClassOf :HumanOutdoorActivity ;
         rdfs:seeAlso "https://www.wikidata.org/wiki/Q12375604" .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
 :Track rdf:type owl:Class ;
-       rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
-       rdfs:comment "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en ,
-                    "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024)."@fr ;
-       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack> .
+       rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -633,33 +562,41 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                   <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack
+:AnimalTrack rdf:type owl:NamedIndividual ;
+             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack> .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EncounterDetection
 :EncounterDetection rdf:type owl:NamedIndividual ,
-                             :GeoProcessing ;
-                    <http://www.w3.org/ns/prov#endedAtTime> "2025-04"^^xsd:gYearMonth ;
-                    <http://www.w3.org/ns/prov#startedAtTime> "2025-04"^^xsd:gYearMonth ;
+                             <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
                     <http://www.w3.org/ns/prov#used> :HumanChamoisRealEncounters ;
-                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
+                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
+                    <http://www.w3.org/ns/prov#endedAtTime> "2025-04"^^xsd:gYearMonth ;
+                    <http://www.w3.org/ns/prov#startedAtTime> "2025-04"^^xsd:gYearMonth .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FusionCalibration
 :FusionCalibration rdf:type owl:NamedIndividual ,
-                            :GeoProcessing ;
-                   <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
-                   <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth ;
+                            <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
                    <http://www.w3.org/ns/prov#used> :MOUSLS ,
                                                     <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> ;
                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
-                                                                 :Tracklib .
+                                                                 :Tracklib ;
+                   <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
+                   <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GHumanChamoisRealEncounters-csv
+:GHumanChamoisRealEncounters-csv rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath
-:GroundTruthDenseForestPath rdf:type owl:NamedIndividual ,
-                                     <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:GroundTruthDenseForestPath rdf:type owl:NamedIndividual ;
                             :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack> ;
+                            <http://www.w3.org/ns/dcat#distribution> :GroundTruthDenseForestPath-csv ;
                             rdf:comment "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en ;
                             <http://www.w3.org/ns/dcat#conformsTo> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType> ;
-                            <http://www.w3.org/ns/dcat#distribution> :GroundTruthDenseForestPath-csv ;
                             <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
 
 
@@ -672,17 +609,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters
-:HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
-                                     <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:HumanChamoisRealEncounters rdf:type owl:NamedIndividual ;
                             :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMeetingArea> ;
+                            <http://www.w3.org/ns/dcat#distribution> :GHumanChamoisRealEncounters-csv ;
+                            <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                             <http://purl.org/dc/terms/description> "185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates"@en ;
                             <http://purl.org/dc/terms/issued> "2025-04-25"^^xsd:date ;
                             <http://purl.org/dc/terms/language> "English" ;
                             <http://purl.org/dc/terms/license> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)> ;
                             <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ;
-                            <http://www.w3.org/ns/dcat#conformsTo> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType> ;
-                            <http://www.w3.org/ns/dcat#distribution> :GHumanChamoisRealEncounters-csv ;
-                            <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
+                            <http://www.w3.org/ns/dcat#conformsTo> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters-csv
@@ -692,9 +628,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 <http://www.w3.org/ns/dcat#identifier> "human_chamois_real_encounters.csv" .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
+:HumanTrack rdf:type owl:NamedIndividual ;
+            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack> .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog
 :IntForOutCatalog rdf:type owl:NamedIndividual ,
-                           <http://purl.org/www.umr-lastig.fr/geodata#Geocatalog> ;
+                           <http://www.w3.org/ns/dcat#Catalog> ;
                   <http://www.w3.org/ns/dcat#dataset> :GroundTruthDenseForestPath ,
                                                       :HumanChamoisRealEncounters ,
                                                       :IntForOutETLDB ,
@@ -722,8 +663,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB
-:IntForOutETLDB rdf:type owl:NamedIndividual ,
-                         <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:IntForOutETLDB rdf:type owl:NamedIndividual ;
                 <http://purl.org/dc/terms/language> "English" ;
                 <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ,
                                                      <http://purl.org/www.umr-lastig.fr/geodata#LIFAT> ;
@@ -731,9 +671,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                 rdfs:comment "Dataset associated with IntForOut ETL framework" .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark
+:Landmark rdf:type owl:NamedIndividual ;
+          <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark> .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS
-:MOUSLS rdf:type owl:NamedIndividual ,
-                 <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:MOUSLS rdf:type owl:NamedIndividual ;
+        <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
+                                                    <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
         <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
         <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en ;
         <http://purl.org/dc/terms/issued> "2024-01-18"^^xsd:date ;
@@ -745,63 +691,74 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
         <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" ;
         <http://www.w3.org/ns/dcat#hasPart> :GroundTruthDenseForestPath ,
                                             :TracksMultiSensorsVincennesForest ;
-        <http://www.w3.org/ns/dcat#isReferencedBy> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> ;
-        <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
-                                                    <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
+        <http://www.w3.org/ns/dcat#isReferencedBy> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025
-:Marchandetal2025 rdf:type owl:NamedIndividual ,
-                           <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
-                  <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E., & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
-                  <http://purl.org/dc/terms/description> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
+:Marchandetal2025 rdf:type owl:NamedIndividual ;
                   <http://purl.org/dc/terms/hasPart> :act-export ,
                                                      :locs-export ;
+                  <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
+                  <http://www.w3.org/ns/prov#wasAttributedTo> :pmarchand ;
+                  <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E., & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
+                  <http://purl.org/dc/terms/description> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
                   <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
                   <http://purl.org/dc/terms/language> "English" ;
                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                   <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
                   <http://purl.org/dc/terms/spatial> <http://sws.geonames.org/3001970/> ;
                   <http://purl.org/dc/terms/title> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en ;
-                  <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
-                  <http://www.w3.org/ns/dcat#isReferencedBy> :pan3.70151 ;
-                  <http://www.w3.org/ns/prov#wasAttributedTo> :pmarchand .
+                  <http://www.w3.org/ns/dcat#isReferencedBy> :pan3.70151 .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack
+:MergedTrack rdf:type owl:NamedIndividual ;
+             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest
 :MetadataGroundTruthPathVincennesForest rdf:type owl:NamedIndividual ,
                                                  <http://www.w3.org/ns/dcat#CatalogRecord> ;
-                                        rdf:comment "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"@en ;
                                         <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> ;
+                                        <http://xmlns.com/foaf/0.1/primaryTopic> :GroundTruthDenseForestPath ;
+                                        rdf:comment "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"@en ;
                                         <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> ;
                                         <http://www.w3.org/ns/dcat#format> "xml" ;
                                         <http://www.w3.org/ns/dcat#identifier> "Metadata_ground_truth_path_vincennes_forest.xml" ;
-                                        <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date ;
-                                        <http://xmlns.com/foaf/0.1/primaryTopic> :GroundTruthDenseForestPath .
+                                        <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest
 :MetadataTracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
                                                     <http://www.w3.org/ns/dcat#CatalogRecord> ;
-                                           rdf:comment "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"@en ;
                                            <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> ;
+                                           <http://xmlns.com/foaf/0.1/primaryTopic> :TracksMultiSensorsVincennesForest ;
+                                           rdf:comment "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"@en ;
                                            <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> ;
                                            <http://www.w3.org/ns/dcat#format> "xml" ;
                                            <http://www.w3.org/ns/dcat#identifier> "Metadata_tracks_multi_sensors_vincennes_forest.xml" ;
-                                           <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date ;
-                                           <http://xmlns.com/foaf/0.1/primaryTopic> :TracksMultiSensorsVincennesForest .
+                                           <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetwork
+:MobilityNetwork rdf:type owl:NamedIndividual ;
+                 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB
-:MobilityNetworkDB rdf:type owl:NamedIndividual ,
-                            <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:MobilityNetworkDB rdf:type owl:NamedIndividual ;
                    :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork> ;
                    rdfs:comment "Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks" .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute
+:NamedRoute rdf:type owl:NamedIndividual ;
+            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute> .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport
 :OutdoorVisionExport rdf:type owl:NamedIndividual ,
-                              <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                              <http://www.w3.org/ns/dcat#Dataset> ;
                      :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack> ;
                      <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
                      <http://purl.org/dc/terms/publisher> :PRNSN ;
@@ -817,6 +774,16 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
           <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route
+:Route rdf:type owl:NamedIndividual ;
+       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTRoute> .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
+:Track rdf:type owl:NamedIndividual ;
+       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack> .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Tracklib
 :Tracklib rdf:type owl:NamedIndividual ,
                    <http://www.w3.org/ns/prov#Agent> ,
@@ -830,11 +797,10 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest
-:TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
-                                            <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ;
                                    :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack> ;
-                                   rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
                                    <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
+                                   rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
                                    <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
 
 
@@ -847,8 +813,7 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export
-:act-export rdf:type owl:NamedIndividual ,
-                     <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:act-export rdf:type owl:NamedIndividual ;
             :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack> ;
             <http://purl.org/dc/terms/description> "Activity data from gps collars"@en ;
             <http://purl.org/dc/terms/isPartOf> :Marchandetal2025 ;
@@ -869,7 +834,7 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#altituderando-route
 :altituderando-route rdf:type owl:NamedIndividual ,
-                              <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                              <http://www.w3.org/ns/dcat#Dataset> ;
                      :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute> ;
                      <http://purl.org/dc/terms/description> "A set of routes issued from altituderando.com."@en ;
                      <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
@@ -882,54 +847,54 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp
 :api-camptocamp rdf:type owl:NamedIndividual ,
                          <http://www.w3.org/ns/dcat#DataService> ;
+                <http://www.w3.org/ns/dcat#endpointURL> <https://api.camptocamp.org/> ;
+                <http://www.w3.org/ns/dcat#servesDataset> :c2c-route ,
+                                                          :c2c-waypoint ;
                 <http://purl.org/dc/terms/description> """API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables 
         par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."""@fr ;
                 <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
                 <http://purl.org/dc/terms/publisher> :camptocamp ;
                 <http://purl.org/dc/terms/title> "API de Camptocamp.org (routes, waypoints, outings)"@en ;
-                <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service> ;
-                <http://www.w3.org/ns/dcat#endpointURL> <https://api.camptocamp.org/> ;
-                <http://www.w3.org/ns/dcat#servesDataset> :c2c-route ,
-                                                          :c2c-waypoint .
+                <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges
 :api-parcdesbauges rdf:type owl:NamedIndividual ,
                             <http://www.w3.org/ns/dcat#DataService> ;
+                   <http://www.w3.org/ns/dcat#endpointURL> <https://geotrek.parcdesbauges.com/api/v2/> ;
+                   <http://www.w3.org/ns/dcat#servesDataset> :parcdesbauges-poi ,
+                                                             :parcdesbauges-sensitivearea ,
+                                                             :parcdesbauges-trek ;
                    <http://purl.org/dc/terms/description> "L'API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données."@fr ;
                    <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                    <http://purl.org/dc/terms/publisher> :parcdesbauges ;
                    <http://purl.org/dc/terms/title> "API du PNR Massif des Bauges "@en ;
-                   <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service> ;
-                   <http://www.w3.org/ns/dcat#endpointURL> <https://geotrek.parcdesbauges.com/api/v2/> ;
-                   <http://www.w3.org/ns/dcat#servesDataset> :parcdesbauges-poi ,
-                                                             :parcdesbauges-sensitivearea ,
-                                                             :parcdesbauges-trek .
+                   <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo
 :api-refugesinfo rdf:type owl:NamedIndividual ,
                           <http://www.w3.org/ns/dcat#DataService> ;
+                 <http://www.w3.org/ns/dcat#endpointURL> <https://www.refuges.info/api/> ;
+                 <http://www.w3.org/ns/dcat#servesDataset> :refugesinfo-points ;
                  <http://purl.org/dc/terms/description> "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr ;
                  <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> ;
                  <http://purl.org/dc/terms/publisher> :refugesinfo ;
                  <http://purl.org/dc/terms/title> "API de Refuges.info (points)"@en ;
-                 <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service> ;
-                 <http://www.w3.org/ns/dcat#endpointURL> <https://www.refuges.info/api/> ;
-                 <http://www.w3.org/ns/dcat#servesDataset> :refugesinfo-points .
+                 <http://purl.org/dc/terms/type> <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service> .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route
 :c2c-route rdf:type owl:NamedIndividual ,
-                    <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                    <http://www.w3.org/ns/dcat#Dataset> ;
            :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute> ;
+           <http://www.w3.org/ns/dcat#distribution> :c2c-route-geojson ;
            <http://purl.org/dc/terms/description> "A set of Routes issued from Camptocamp.org API."@en ;
            <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
            <http://purl.org/dc/terms/language> "fr-FR" ;
            <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
            <http://purl.org/dc/terms/publisher> :camptocamp ;
-           <http://purl.org/dc/terms/title> "Camptocamp.org-routes"@fr ;
-           <http://www.w3.org/ns/dcat#distribution> :c2c-route-geojson .
+           <http://purl.org/dc/terms/title> "Camptocamp.org-routes"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route-geojson
@@ -940,16 +905,15 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint
-:c2c-waypoint rdf:type owl:NamedIndividual ,
-                       <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+:c2c-waypoint rdf:type owl:NamedIndividual ;
               :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark> ;
+              <http://www.w3.org/ns/dcat#distribution> :c2c-waypoint-geojson ;
               <http://purl.org/dc/terms/description> "A set of Waypoints issued from Camptocamp.org API."@en ;
               <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
               <http://purl.org/dc/terms/language> "fr-FR" ;
               <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
               <http://purl.org/dc/terms/publisher> :camptocamp ;
-              <http://purl.org/dc/terms/title> "Camptocamp.org-waypoints"@fr ;
-              <http://www.w3.org/ns/dcat#distribution> :c2c-waypoint-geojson .
+              <http://purl.org/dc/terms/title> "Camptocamp.org-waypoints"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint-geojson
@@ -976,8 +940,7 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export
-:locs-export rdf:type owl:NamedIndividual ,
-                      <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:locs-export rdf:type owl:NamedIndividual ;
              :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack> ;
              <http://purl.org/dc/terms/description> "GPS locations"@en ;
              <http://purl.org/dc/terms/isPartOf> :Marchandetal2025 ;
@@ -1013,11 +976,11 @@ _:genid2 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pan3.70151
 :pan3.70151 rdf:type owl:NamedIndividual ,
                      :ScientificPaper ;
+            <http://purl.org/dc/terms/hasPart> :Marchandetal2025 ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
                                                _:genid3 ,
                                                _:genid4 ;
-            <http://purl.org/dc/terms/hasPart> :Marchandetal2025 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1053,15 +1016,15 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi
 :parcdesbauges-poi rdf:type owl:NamedIndividual ,
-                            <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                            <http://www.w3.org/ns/dcat#Dataset> ;
                    :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark> ;
+                   <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-poi-geojson ;
                    <http://purl.org/dc/terms/description> "A set of POIs issued from Parcdesbauges.com."@en ;
                    <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                    <http://purl.org/dc/terms/language> "fr-FR" ;
                    <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                    <http://purl.org/dc/terms/publisher> :parcdesbauges ;
-                   <http://purl.org/dc/terms/title> "Parcdesbauges.com - POI"@fr ;
-                   <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-poi-geojson .
+                   <http://purl.org/dc/terms/title> "Parcdesbauges.com - POI"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi-geojson
@@ -1073,14 +1036,14 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-sensitivearea
 :parcdesbauges-sensitivearea rdf:type owl:NamedIndividual ,
-                                      <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                                      <http://www.w3.org/ns/dcat#Dataset> ;
+                             <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-sensitivearea-geojson ;
                              <http://purl.org/dc/terms/description> "A set of sensitive area issued from Parcdesbauges.com."@en ;
                              <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                              <http://purl.org/dc/terms/language> "fr-FR" ;
                              <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                              <http://purl.org/dc/terms/publisher> :parcdesbauges ;
-                             <http://purl.org/dc/terms/title> "Parcdesbauges.com - sensitivearea"@fr ;
-                             <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-sensitivearea-geojson .
+                             <http://purl.org/dc/terms/title> "Parcdesbauges.com - sensitivearea"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-sensitivearea-geojson
@@ -1092,15 +1055,15 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek
 :parcdesbauges-trek rdf:type owl:NamedIndividual ,
-                             <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                             <http://www.w3.org/ns/dcat#Dataset> ;
                     :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute> ;
+                    <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-trek-geojson ;
                     <http://purl.org/dc/terms/description> "A set of treks issued from Parcdesbauges.com."@en ;
                     <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                     <http://purl.org/dc/terms/language> "fr-FR" ;
                     <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                     <http://purl.org/dc/terms/publisher> :parcdesbauges ;
-                    <http://purl.org/dc/terms/title> "Parcdesbauges.com - trek"@fr ;
-                    <http://www.w3.org/ns/dcat#distribution> :parcdesbauges-trek-geojson .
+                    <http://purl.org/dc/terms/title> "Parcdesbauges.com - trek"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek-geojson
@@ -1136,15 +1099,15 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points
 :refugesinfo-points rdf:type owl:NamedIndividual ,
-                             <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                             <http://www.w3.org/ns/dcat#Dataset> ;
                     :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark> ;
+                    <http://www.w3.org/ns/dcat#distribution> :refugesinfo-points-geojson ;
                     <http://purl.org/dc/terms/description> "A set of Points issued from Refuges.info."@en ;
                     <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                     <http://purl.org/dc/terms/language> "fr-FR" ;
                     <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> ;
                     <http://purl.org/dc/terms/publisher> :refugesinfo ;
-                    <http://purl.org/dc/terms/title> "Refuges.info - points"@fr ;
-                    <http://www.w3.org/ns/dcat#distribution> :refugesinfo-points-geojson .
+                    <http://purl.org/dc/terms/title> "Refuges.info - points"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points-geojson
@@ -1155,13 +1118,12 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#vincennesfusion
-:vincennesfusion rdf:type owl:NamedIndividual ,
-                          <http://purl.org/www.umr-lastig.fr/geodata#ResearchGeodataset> ;
+:vincennesfusion rdf:type owl:NamedIndividual ;
                  :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack> ;
-                 <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
-                 <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr ;
                  <http://www.w3.org/ns/prov#wasGeneratedBy> :FusionCalibration ;
-                 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> .
+                 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> ;
+                 <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
+                 <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#visorando
@@ -1174,7 +1136,7 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#visorando-route
 :visorando-route rdf:type owl:NamedIndividual ,
-                          <http://purl.org/www.umr-lastig.fr/geodata#Geodataset> ;
+                          <http://www.w3.org/ns/dcat#Dataset> ;
                  :implements <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute> ;
                  <http://purl.org/dc/terms/description> "A set of routes issued from visorando.com."@en ;
                  <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
@@ -1187,10 +1149,11 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077> rdf:type owl:NamedIndividual ,
                                                                                               :ScientificPaper ;
+                                                                                     <http://purl.org/dc/terms/hasPart> :MOUSLS ;
+                                                                                     <http://www.w3.org/ns/dcat#theme> <https://www.wikidata.org/wiki/Q179435> ;
                                                                                      <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                                                                         <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
                                                                                                                         <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
-                                                                                     <http://purl.org/dc/terms/hasPart> :MOUSLS ;
                                                                                      <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" ,
                                                                                                                          "SIGSPATIAL '24" ;
                                                                                      <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" ;
@@ -1204,8 +1167,7 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                                                                                      <http://purl.org/spar/datacite/resourceType> <http://purl.org/spar/datacite/ConferenceProceeding> ;
                                                                                      <http://purl.org/spar/datacite/subject> "metrological analysis" ,
                                                                                                                              "synthetic and real world trajectories" ,
-                                                                                                                             "trajectory aggregation" ;
-                                                                                     <http://www.w3.org/ns/dcat#theme> <https://www.wikidata.org/wiki/Q179435> .
+                                                                                                                             "trajectory aggregation" .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType
@@ -1307,11 +1269,84 @@ _:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                                                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Track FeatureType"@en .
 
 
+###  https://api.camptocamp.org/
+<https://api.camptocamp.org/> rdf:type owl:NamedIndividual .
+
+
+###  https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> rdf:type owl:NamedIndividual .
+
+
+###  https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> rdf:type owl:NamedIndividual .
+
+
+###  https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> rdf:type owl:NamedIndividual .
+
+
+###  https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> rdf:type owl:NamedIndividual .
+
+
+###  https://geotrek.parcdesbauges.com/api/v2/
+<https://geotrek.parcdesbauges.com/api/v2/> rdf:type owl:NamedIndividual .
+
+
+###  https://www.refuges.info/api/
+<https://www.refuges.info/api/> rdf:type owl:NamedIndividual .
+
+
 ###  https://www.wikidata.org/wiki/Q179435
 <https://www.wikidata.org/wiki/Q179435> rdf:type owl:NamedIndividual ,
                                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "global navigation satellite system"@en ,
                                                                                         "système de positionnement par satellites"@fr .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:AnimalTrack rdfs:comment "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."@en ,
+                          "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr .
+
+
+:HumanTrack rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
+                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
+
+
+:Landmark rdfs:comment "Landmark"@en ,
+                       "Objet de repère"@fr .
+
+
+:MergedTrack rdfs:comment "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en ,
+                          "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
+
+
+:MobilityNetwork rdfs:comment """
+            A underlying network represents an active mobility network (excluding cars and trains). 
+            It is characterized by a topology, a geometry where each edge is associated with a sequence of vertices (x, y, z), and attributes that can be numerical or textual, located at the edge level (with curvilinear abscissa) or at nodes when necessary.
+        """@en ,
+                              """
+            Un réseau support est un réseau de mobilité active (tout sauf voiture et trains) représenté par :
+            une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z),
+            et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.
+        """@fr .
+
+
+:NamedRoute rdfs:comment """A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). 
+            Example: “Le chemin du Roy”."""@en ,
+                         """Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). 
+            Exemple : « Le chemin du Roy »."""@fr .
+
+
+:Route rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
+                    "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
+
+
+:Track rdfs:comment "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en ,
+                    "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024)."@fr .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
