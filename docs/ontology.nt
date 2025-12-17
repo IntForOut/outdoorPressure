@@ -221,6 +221,9 @@
 # #################################################################
 # 
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#represents
+<http://purl.org/www.umr-lastig.fr/geodata#represents> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> .
+# 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanOutdoorActivity> .
@@ -236,6 +239,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements"@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implémente"@fr .
+# 
+# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # 
 # 
@@ -457,6 +463,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/www.umr-lastig.fr/geodata#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#LIFAT> <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 # 
+# http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO®_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
+# 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack> .
@@ -494,7 +503,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> .
-<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/ns/dcat#format> "csv" .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 # 
@@ -519,34 +527,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack> .
-# 
-# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#altituderando-route> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-sensitivearea> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#vincennesfusion> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#dataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#visorando-route> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#record> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#record> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#themeTaxonomy> <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#title> "Catalogue des ressources IntForOut"@fr .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutCatalog> <http://www.w3.org/ns/dcat#title> "IntForOut Resource Catalog"@en .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -601,7 +581,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> .
-<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> <http://xmlns.com/foaf/0.1/primaryTopic> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest> <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> .
@@ -613,7 +592,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> .
-<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://xmlns.com/foaf/0.1/primaryTopic> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> .
@@ -680,7 +658,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> .
-<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/ns/dcat#format> "gpkg" .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/ns/dcat#identifier> "tracks_multi_sensors_vincennes_forest.gpkg" .
 # 
@@ -717,7 +694,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp> <http://www.w3.org/ns/dcat#endpointURL> <https://api.camptocamp.org/> .
-<https://api.camptocamp.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp> <http://www.w3.org/ns/dcat#servesDataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-route> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp> <http://www.w3.org/ns/dcat#servesDataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-camptocamp> <http://purl.org/dc/terms/description> "API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables \n        par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr .
@@ -730,7 +706,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#endpointURL> <https://geotrek.parcdesbauges.com/api/v2/> .
-<https://geotrek.parcdesbauges.com/api/v2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#servesDataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-poi> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#servesDataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-sensitivearea> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#servesDataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges-trek> .
@@ -744,7 +719,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo> <http://www.w3.org/ns/dcat#endpointURL> <https://www.refuges.info/api/> .
-<https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo> <http://www.w3.org/ns/dcat#servesDataset> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo-points> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo> <http://purl.org/dc/terms/description> "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#api-refugesinfo> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> .
@@ -1097,18 +1071,25 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack> <http://www.w3.org/2004/02/skos/core#prefLabel> "Track FeatureType"@en .
 # 
 # https://api.camptocamp.org/
+<https://api.camptocamp.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0
+<https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://geotrek.parcdesbauges.com/api/v2/
+<https://geotrek.parcdesbauges.com/api/v2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.refuges.info/api/
+<https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.wikidata.org/wiki/Q179435
 <https://www.wikidata.org/wiki/Q179435> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
