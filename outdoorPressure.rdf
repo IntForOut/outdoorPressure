@@ -4,6 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:gdata="http://purl.org/www.umr-lastig.fr/geodata"
      xmlns:oor="http://purl.org/choucas.ign.fr/oor#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -445,16 +446,6 @@
      -->
 
     
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#represents -->
-
-    <rdf:Description rdf:about="http://purl.org/www.umr-lastig.fr/geodata#represents">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords">
@@ -462,11 +453,6 @@
     </owl:ObjectProperty>
     
 
-
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy"/>
-    
 
 
     <!-- 
@@ -1201,6 +1187,7 @@
         <rdf:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdf:comment>
         <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg"/>
         <dcat:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
     </owl:NamedIndividual>
     
 
