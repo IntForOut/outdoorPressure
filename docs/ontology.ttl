@@ -118,6 +118,10 @@
 <http://purl.org/spar/datacite/volume> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodatarepresents
+<http://purl.org/www.umr-lastig.fr/geodatarepresents> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/address
 <http://schema.org/address> rdf:type owl:AnnotationProperty .
 
@@ -278,17 +282,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://purl.org/www.umr-lastig.fr/geodata#represents
-<http://purl.org/www.umr-lastig.fr/geodata#represents> owl:inverseOf :isRepresentedBy .
-
-
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
          rdfs:range :HumanOutdoorActivity .
-
-
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy
-:isRepresentedBy rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -802,6 +798,7 @@ _:genid1 rdf:type <http://purl.org/dc/terms/Location> ;
 :TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
                                             <http://www.w3.org/ns/dcat#Dataset> ;
                                    <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
+                                   <http://purl.org/www.umr-lastig.fr/geodatarepresents> :HumanTrack ;
                                    rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
                                    <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
 
