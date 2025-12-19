@@ -1,14 +1,5 @@
 [ {
   "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid2",
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Parc naturel régional du Massif des Bauges"
@@ -17,7 +8,7 @@
     "@id" : "http://purl.org/dc/terms/Location"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid2",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -25,7 +16,7 @@
     "@value" : "Nolwenn Risser"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid3",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -286,7 +277,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."
@@ -296,9 +287,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area",
@@ -394,15 +382,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."
-  } ],
-  "http://www.w3.org/ns/dcat#conformsTo" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv"
@@ -461,12 +443,6 @@
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
   } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMeetingArea"
-  } ],
-  "http://www.w3.org/ns/dcat#conformsTo" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GHumanChamoisRealEncounters-csv"
   } ],
@@ -494,7 +470,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."
@@ -504,9 +480,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB",
@@ -535,7 +508,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Landmark"
@@ -545,9 +518,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS",
@@ -671,7 +641,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."
@@ -681,9 +651,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest",
@@ -751,7 +718,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetwork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "\n            A underlying network represents an active mobility network (excluding cars and trains). \n            It is characterized by a topology, a geometry where each edge is associated with a sequence of vertices (x, y, z), and attributes that can be numerical or textual, located at the edge level (with curvilinear abscissa) or at nodes when necessary.\n        "
@@ -761,22 +728,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#LandEntity"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). \n            Example: “Le chemin du Roy”."
@@ -786,9 +747,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#OutdoorVisionExport",
@@ -809,14 +767,11 @@
   }, {
     "@id" : "https://data.ign.fr/id/geofla/commune/74290"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid1"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "OutdoorVision export"
-  } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -862,7 +817,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Route",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."
@@ -872,9 +827,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTRoute"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ScientificPaper",
@@ -963,7 +915,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."
@@ -973,9 +925,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Tracklib",
@@ -1008,9 +957,6 @@
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
@@ -1062,9 +1008,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "act-export"
-  } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords",
@@ -1109,9 +1052,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "AltitudeRando routes"
-  } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -1233,9 +1173,6 @@
     "@language" : "fr",
     "@value" : "Camptocamp.org-routes"
   } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1277,9 +1214,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Camptocamp.org-waypoints"
-  } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#c2c-waypoint-geojson"
@@ -1325,29 +1259,6 @@
     "@value" : "Cirkwi"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Links a route instance to an instance of skos: Concept defined in the list 'rte' which specifies its nature."
-  }, {
-    "@language" : "fr",
-    "@value" : "Relie une instance de route à une instance de skos:Concept définie dans la liste 'rte' qui précise sa nature."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "implements"
-  }, {
-    "@language" : "fr",
-    "@value" : "implémente"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#isRepresentedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -1376,9 +1287,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "locs-export"
-  } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#marchandetal-rdata",
@@ -1424,9 +1332,9 @@
   }, {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid2"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid3"
   } ],
   "http://purl.org/dc/terms/hasPart" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"
@@ -1516,9 +1424,6 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - POI"
   } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1603,9 +1508,6 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - trek"
   } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1689,9 +1591,6 @@
     "@language" : "fr",
     "@value" : "Refuges.info - points"
   } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1720,9 +1619,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
-  } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#FusionCalibration"
@@ -1768,204 +1664,8 @@
     "@language" : "fr",
     "@value" : "Visorando routes"
   } ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#implements" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTArea"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTRoute"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "AnimalTrack FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMeetingArea"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTSensitiveArea"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Area FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "HumanTrack FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTLandmark",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Landmark FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMeetingArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTArea"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "MeetingArea FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "MergedTrack FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMobilityNetwork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "MobilityNetwork FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTRoute"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "NamedRoute FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTRoute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTNamedRoute"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Route FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTSensitiveArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTArea"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "SensitiveArea FeatureType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTAnimalTrack"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTHumanTrack"
-  }, {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/scheme/list-FeatureType/FTMergedTrack"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Track FeatureType"
   } ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
