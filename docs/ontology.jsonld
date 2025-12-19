@@ -380,6 +380,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."
@@ -443,6 +446,9 @@
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -742,6 +748,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetwork"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -785,6 +794,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "OutdoorVision export"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -1028,6 +1040,9 @@
     "@language" : "fr",
     "@value" : "act-export"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ]
@@ -1074,6 +1089,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "AltitudeRando routes"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -1195,6 +1213,9 @@
     "@language" : "fr",
     "@value" : "Camptocamp.org-routes"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1306,6 +1327,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "locs-export"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -1446,6 +1470,9 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - POI"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1488,6 +1515,9 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - sensitivearea"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1529,6 +1559,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - trek"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -1613,6 +1646,9 @@
     "@language" : "fr",
     "@value" : "Refuges.info - points"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
@@ -1641,6 +1677,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -1688,6 +1727,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Visorando routes"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
