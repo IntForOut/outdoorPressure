@@ -167,7 +167,7 @@
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-39" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;" target="fbRVaOHvIbs2X0BEzBPC-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-40" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="is-a" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-40" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="subclassOf" vertex="1">
           <mxGeometry relative="1" x="-0.262" y="5" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -184,7 +184,7 @@
             <mxPoint x="640" y="599.9200000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-43" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="is-a" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-43" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="subclassOf" vertex="1">
           <mxGeometry relative="1" x="-0.1158" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -192,7 +192,7 @@
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-44" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.187;entryY=0.111;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-45" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-44" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="is-a" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-45" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-44" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="subclassOf" vertex="1">
           <mxGeometry relative="1" x="-0.339" y="-7" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
