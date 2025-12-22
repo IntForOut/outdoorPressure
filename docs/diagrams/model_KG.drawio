@@ -319,7 +319,7 @@
         <mxCell id="377RaPqsyI-Tu9e9tD1s-24" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Camera Trap" vertex="1">
           <mxGeometry height="60" width="109.65" x="120.7" y="951.52" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-25" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="DataCaptureInstrument" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-25" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="DataCollectionInstrument" vertex="1">
           <mxGeometry height="60" width="165" x="315" y="891.52" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-26" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="GPS tracking unit" vertex="1">
@@ -346,7 +346,7 @@
         <mxCell id="377RaPqsyI-Tu9e9tD1s-32" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Topometric Survey" vertex="1">
           <mxGeometry height="60" width="137.5" x="1315.25" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-34" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Station Location" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-34" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Total Station Location" vertex="1">
           <mxGeometry height="60" width="125" x="104.88" y="880" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-35" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-34" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.935;exitY=0.35;exitDx=0;exitDy=0;exitPerimeter=0;" target="377RaPqsyI-Tu9e9tD1s-25" value="">
@@ -416,7 +416,7 @@
         <mxCell id="377RaPqsyI-Tu9e9tD1s-57" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Distribution" vertex="1">
           <mxGeometry height="60" width="95" x="1344" y="549.02" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-58" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Survey" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-58" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Scientific Survey" vertex="1">
           <mxGeometry height="60" width="95" x="1104" y="760" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-61" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="CatalogRecord" vertex="1">
