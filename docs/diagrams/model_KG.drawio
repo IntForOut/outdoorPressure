@@ -228,7 +228,7 @@
           <mxGeometry height="10" width="368.8235294117647" x="11.176470588235293" y="12" as="geometry" />
         </mxCell>
         <mxCell id="aXyEUTBAimZGAxc6Vp0_-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div align=&quot;left&quot;&gt;Exemples de jeux de données qui représentent des activités humaines:&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Le jeu de données &lt;i&gt;TracksMultiSensorsVincennesForest&lt;/i&gt; &lt;b&gt;contient&amp;nbsp;&lt;/b&gt;des traces GPS de randonneurs dans le bois de Vincennes.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Le jeu de données HumanChamoisRealEncounters &lt;b&gt;contient&lt;/b&gt; des zones de rencontre entre des hommes et des animaux ce qui créent des conflits d&#39;usage du sol.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;L&#39;aricle de Marchand &lt;b&gt;représente&lt;/b&gt; des activités humaines en analysant les traces des animaux après le trail des Gypaètes dans les Bauges. C&#39;est le mot clé dans le papier qui indique que le sujet parle de l&#39;impact des activités humaines.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&#x9;&lt;br&gt;&#x9;&lt;br&gt;&#x9;&lt;br&gt;&#x9;&lt;br&gt;&lt;br&gt;&lt;p style=&quot;line-height: 100%; margin-bottom: 0cm&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;style type=&quot;text/css&quot;&gt;p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }a:link { color: #000080; text-decoration: underline }&lt;/style&gt;" vertex="1">
-          <mxGeometry height="250" width="400" x="620" y="1370" as="geometry" />
+          <mxGeometry height="250" width="760" x="80" y="1360" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Area" vertex="1">
           <mxGeometry height="60" width="95" x="239.53" y="653.9" as="geometry" />
@@ -361,7 +361,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-40" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;Questionnary&amp;nbsp;Survey&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="160" x="1370" y="980" as="geometry" />
+          <mxGeometry height="60" width="160" x="1370" y="970" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-42" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Observation" vertex="1">
           <mxGeometry height="60" width="95" x="342.03" y="940" as="geometry" />
@@ -404,7 +404,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-57" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Distribution" vertex="1">
-          <mxGeometry height="60" width="95" x="1327.5" y="749" as="geometry" />
+          <mxGeometry height="60" width="95" x="1410" y="749.02" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-58" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Survey" vertex="1">
           <mxGeometry height="60" width="95" x="1170" y="1000" as="geometry" />
@@ -419,7 +419,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-63" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="foaf:primaryTopic" vertex="1">
-          <mxGeometry x="957.5" y="843.02" as="geometry">
+          <mxGeometry x="940" y="840" as="geometry">
             <mxPoint x="-5" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
@@ -466,8 +466,8 @@
         <mxCell id="377RaPqsyI-Tu9e9tD1s-81" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(220, 138, 221), rgb(237, 237, 237));&quot;&gt;prov:wasQutotedFrom&lt;/span&gt;" vertex="1">
           <mxGeometry x="1430" y="875" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-82" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Légende" vertex="1">
-          <mxGeometry height="30" width="60" x="90" y="205" as="geometry" />
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-82" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Légende&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="105" y="190" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-83" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-8" style="endArrow=classic;html=1;rounded=0;exitX=0.707;exitY=0.945;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-11" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -561,6 +561,51 @@
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-102" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(220, 138, 221), rgb(237, 237, 237));&quot;&gt;prov:wasGeneratedBy&lt;/span&gt;" vertex="1">
           <mxGeometry x="1241" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-103" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" target="377RaPqsyI-Tu9e9tD1s-57" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1270" y="790" />
+            </Array>
+            <mxPoint x="1280" y="860" as="sourcePoint" />
+            <mxPoint x="1330" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-104" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(255, 242, 204), rgb(237, 237, 237));&quot;&gt;dcat:distribtion&lt;/span&gt;" vertex="1">
+          <mxGeometry x="1330" y="789.02" as="geometry">
+            <mxPoint x="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-105" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-57" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=1;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="720" />
+            </Array>
+            <mxPoint x="1210" y="820" as="sourcePoint" />
+            <mxPoint x="1260" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-106" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(255, 242, 204), rgb(237, 237, 237));&quot;&gt;dcat:accessService&lt;/span&gt;" vertex="1">
+          <mxGeometry x="1350" y="729.02" as="geometry">
+            <mxPoint x="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-107" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-8" style="endArrow=classic;html=1;rounded=0;exitX=0.232;exitY=0.145;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="800" />
+            </Array>
+            <mxPoint x="1210" y="820" as="sourcePoint" />
+            <mxPoint x="1260" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-108" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(255, 242, 204), rgb(237, 237, 237));&quot;&gt;dcat:servesDataset&lt;/span&gt;" vertex="1">
+          <mxGeometry x="1180" y="800" as="geometry">
+            <mxPoint x="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-110" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Tout ce qui est documenté ici, est instancié dans les ontologies geodata ou outdoorpressure&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="330.47" x="230.35" y="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
