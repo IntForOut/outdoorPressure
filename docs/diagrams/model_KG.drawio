@@ -722,6 +722,20 @@
             <mxPoint x="139" y="-51" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-135" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="SoftwareAgent" vertex="1">
+          <mxGeometry height="60" width="95" x="410" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-136" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-135" style="endArrow=block;html=1;rounded=0;endFill=0;dashed=1;" target="377RaPqsyI-Tu9e9tD1s-122" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="700" y="1040" as="sourcePoint" />
+            <mxPoint x="750" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-137" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="subClassOf" vertex="1">
+          <mxGeometry x="410" y="1330" as="geometry">
+            <mxPoint x="139" y="-51" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
