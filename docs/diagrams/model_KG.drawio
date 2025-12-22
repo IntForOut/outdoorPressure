@@ -368,7 +368,7 @@
           <mxGeometry height="60" width="95" x="-50" y="629.92" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-42" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Observation" vertex="1">
-          <mxGeometry height="60" width="95" x="-240" y="850" as="geometry" />
+          <mxGeometry height="60" width="95" x="-50" y="699.92" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-46" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-31" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="377RaPqsyI-Tu9e9tD1s-2" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -380,9 +380,6 @@
           <mxGeometry x="219.65" y="1190" as="geometry">
             <mxPoint x="-20" y="-11" as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-48" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Campaingn Collection" vertex="1">
-          <mxGeometry height="60" width="95" x="-50" y="709.92" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
