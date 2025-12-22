@@ -40,7 +40,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-11" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="Process" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-11" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Process" vertex="1">
           <mxGeometry height="40" width="105" x="1187.5" y="467.38000000000005" as="geometry" />
         </mxCell>
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-12" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-5" value="is-a">
@@ -73,7 +73,7 @@
             <mxPoint x="8" y="16" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-19" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="ReproducibleProcess" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-19" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="ReproducibleProcess" vertex="1">
           <mxGeometry height="65" width="140" x="1381.25" y="402.38" as="geometry" />
         </mxCell>
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-20" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.7;entryY=0.933;entryDx=0;entryDy=0;curved=1;entryPerimeter=0;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-5">
@@ -101,7 +101,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-25" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="UserFeedback" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-25" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="UserFeedback" vertex="1">
           <mxGeometry height="50" width="90" x="1210" y="637.4200000000001" as="geometry" />
         </mxCell>
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-26" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="CollectionItem" vertex="1">
@@ -170,10 +170,10 @@
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-36" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="owl:Thing" vertex="1">
           <mxGeometry height="67.5" width="110" x="640" y="569.9200000000001" as="geometry" />
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-37" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Affordance" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-37" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Affordance" vertex="1">
           <mxGeometry height="54.92" width="105" x="370" y="484.96000000000004" as="geometry" />
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-38" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="HumanOutdoorActivity" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-38" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="HumanOutdoorActivity" vertex="1">
           <mxGeometry height="60.08" width="150" x="355" y="574.88" as="geometry" />
         </mxCell>
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-39" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;" target="fbRVaOHvIbs2X0BEzBPC-36">
@@ -184,7 +184,7 @@
             <mxPoint x="-10" y="-54" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-41" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="LandEntity" vertex="1">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-41" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="LandEntity" vertex="1">
           <mxGeometry height="60" width="95" x="475" y="729.0200000000001" as="geometry" />
         </mxCell>
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-42" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;">
@@ -230,13 +230,13 @@
         <mxCell id="aXyEUTBAimZGAxc6Vp0_-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div align=&quot;left&quot;&gt;Exemples de jeux de données qui représentent des activités humaines:&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Le jeu de données &lt;i&gt;TracksMultiSensorsVincennesForest&lt;/i&gt; &lt;b&gt;contient&amp;nbsp;&lt;/b&gt;des traces GPS de randonneurs dans le bois de Vincennes.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Le jeu de données HumanChamoisRealEncounters &lt;b&gt;contient&lt;/b&gt; des zones de rencontre entre des hommes et des animaux ce qui créent des conflits d&#39;usage du sol.&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;L&#39;aricle de Marchand &lt;b&gt;représente&lt;/b&gt; des activités humaines en analysant les traces des animaux après le trail des Gypaètes dans les Bauges. C&#39;est le mot clé dans le papier qui indique que le sujet parle de l&#39;impact des activités humaines.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&#x9;&lt;br&gt;&#x9;&lt;br&gt;&#x9;&lt;br&gt;&#x9;&lt;br&gt;&lt;br&gt;&lt;p style=&quot;line-height: 100%; margin-bottom: 0cm&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;style type=&quot;text/css&quot;&gt;p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }a:link { color: #000080; text-decoration: underline }&lt;/style&gt;" vertex="1">
           <mxGeometry height="250" width="760" x="80" y="1360" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Area" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Area" vertex="1">
           <mxGeometry height="60" width="95" x="239.53" y="653.9" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-2" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Feature" vertex="1">
           <mxGeometry height="60" width="95" x="259.53" y="749.02" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="MobilityNetwork" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="MobilityNetwork" vertex="1">
           <mxGeometry height="60" width="109.53" x="270" y="845" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-4" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-1" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fbRVaOHvIbs2X0BEzBPC-41" value="">
@@ -377,10 +377,10 @@
             <mxPoint x="-52" y="-12" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-49" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Litterature Review" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-49" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;" value="Litterature Review" vertex="1">
           <mxGeometry height="60" width="120" x="1420" y="632.42" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-51" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="Map" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-51" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Map" vertex="1">
           <mxGeometry height="50" width="90" x="1340" y="1130" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-53" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-42" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.358;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" target="fbRVaOHvIbs2X0BEzBPC-41" value="">
@@ -423,7 +423,7 @@
             <mxPoint x="-5" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-65" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="GraphicRepresentation" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-65" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="GraphicRepresentation" vertex="1">
           <mxGeometry height="50" width="140" x="1100" y="1130" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-70" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-65" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;" target="fbRVaOHvIbs2X0BEzBPC-5" value="">
@@ -484,7 +484,7 @@
         <mxCell id="377RaPqsyI-Tu9e9tD1s-84" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;spacing=4;spacingLeft=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(220, 138, 221), rgb(237, 237, 237));&quot;&gt;prov:wasGeneratedBy&lt;/span&gt;" vertex="1">
           <mxGeometry x="1430" y="905" as="geometry" />
         </mxCell>
-        <mxCell id="377RaPqsyI-Tu9e9tD1s-85" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#b1ddf0;strokeColor=#10739e;" value="StoryMap" vertex="1">
+        <mxCell id="377RaPqsyI-Tu9e9tD1s-85" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="StoryMap" vertex="1">
           <mxGeometry height="50" width="90" x="1320" y="1200" as="geometry" />
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-87" edge="1" parent="1" source="377RaPqsyI-Tu9e9tD1s-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.925;entryY=0.725;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="377RaPqsyI-Tu9e9tD1s-65">
