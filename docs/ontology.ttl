@@ -578,6 +578,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                        <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
+<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EncounterDetection
 :EncounterDetection rdf:type owl:NamedIndividual ,
                              <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
@@ -798,6 +802,28 @@ _:genid3 rdf:type <http://purl.org/dc/terms/Location> ;
           <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes
+:TopometricSurveyGroundTruthPathVincennes rdf:type owl:NamedIndividual ,
+                                                   <http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> ,
+                                                   <http://www.w3.org/ns/prov#Activity> ;
+                                          <http://www.w3.org/ns/prov#generated> :GroundTruthDenseForestPath ;
+                                          <http://www.w3.org/ns/prov#used> <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> ;
+                                          <http://purl.org/dc/terms/creator> _:genid4 ,
+                                                                             _:genid5 ,
+                                                                             _:genid6 ;
+                                          <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
+                                          <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
+
+_:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
+
+_:genid5 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
+
+_:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest
 :TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
                                             <http://www.w3.org/ns/dcat#Dataset> ;
@@ -988,8 +1014,8 @@ _:genid3 rdf:type <http://purl.org/dc/terms/Location> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
-                                               _:genid4 ,
-                                               _:genid5 ;
+                                               _:genid7 ,
+                                               _:genid8 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1009,10 +1035,10 @@ _:genid3 rdf:type <http://purl.org/dc/terms/Location> ;
             <http://purl.org/spar/datacite/volume> "7" ;
             <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025 .
 
-_:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
 
-_:genid5 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid8 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
