@@ -860,6 +860,34 @@
         
 
     
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes -->
+
+    <prov:Activity rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01-18</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01-18</prov:startedAtTime>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath"/>
+        <prov:used rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#TotalStation"/>
+        <terms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+                <foaf:name>Brice Labbé</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+                <foaf:name>Paul Calloch</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+                <foaf:name>Lorine Peseux</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+    </prov:Activity>
+
 
 
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath -->
