@@ -455,6 +455,20 @@
         <skos:prefLabel xml:lang="fr">Portion de route</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Portion of route</skos:prefLabel>
     </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/choucas.ign.fr/oor#RoutePortion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"/>
+                <owl:hasValue rdf:resource="http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -852,9 +866,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GHumanChamoisRealEncounters-csv -->
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters-csv -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GHumanChamoisRealEncounters-csv">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters-csv">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     </owl:NamedIndividual>
         
@@ -863,11 +877,11 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes -->
 
     <prov:Activity rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01-18</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01-18</prov:startedAtTime>
         <prov:generated rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath"/>
-        <prov:used rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#TotalStation"/>
+        <prov:used rdf:resource="ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16"/>
         <terms:creator>
             <rdf:Description>
                 <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
@@ -923,7 +937,7 @@
         <terms:license rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)"/>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
         <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea"/>
-        <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GHumanChamoisRealEncounters-csv"/>
+        <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
     </owl:NamedIndividual>
     
@@ -974,9 +988,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025 -->
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025DB -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025DB">
         <terms:bibliographicCitation>Marchand, P., Risser, N., Petit, E., &amp; Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197</terms:bibliographicCitation>
         <terms:description xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. &apos;locs_export&apos; contains gps locations, whereas &apos;act_export&apos; contains activity data from gps collars. See Methods for details.</terms:description>
         <terms:hasPart rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export"/>
@@ -1089,7 +1103,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#act-export">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <terms:description xml:lang="en">Activity data from gps collars</terms:description>
-        <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"/>
+        <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025DB"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1255,7 +1269,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locs-export">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <terms:description xml:lang="en">GPS locations</terms:description>
-        <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"/>
+        <terms:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025DB"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1321,7 +1335,7 @@
                 <foaf:name>Elodie Petit</foaf:name>
             </rdf:Description>
         </terms:creator>
-        <prov:quotedAs rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025"/>
+        <prov:quotedAs rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025DB"/>
         <terms:isPartOf>Journal of People and Nature</terms:isPartOf>
         <terms:title>Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</terms:title>
         <datacite:firstPage>3002</datacite:firstPage>
@@ -1594,7 +1608,7 @@
     <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#KerouatonSurvey20142015 -->
 
     <prov:Activity rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#KerouatonSurvey20142015">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey"/>
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2014-01</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-12</prov:startedAtTime>
         <prov:generated rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#KerouatonTrack20142015"/>
@@ -1622,6 +1636,78 @@
         <terms:title xml:lang="fr">Tracks issued from PhD of Colin Kerouaton</terms:title>
         <prov:wasQuotedFrom rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#KEROUANTON2024100734"/>
     </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ComptageRemontéesMécaniques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ComptageRemontéesMécaniques">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:description xml:lang="en">Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year).</terms:description>
+        <terms:title xml:lang="en">Ski Lift Ridership Counts in the CMB Area.</terms:title>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EcoCompteurCMBDataset -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EcoCompteurCMBDataset">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:description xml:lang="en">Dataset derived from 12 eco-counters.</terms:description>
+        <terms:title xml:lang="fr">Eco-counters CMB</terms:title>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#CameraTrapSurveyCMB20242024 -->
+
+    <prov:Activity rdf:about="http://example.org/activity/CameraTrapSurveyCMB20242024">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-02</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-11</prov:startedAtTime>
+        <prov:used rdf:resource="ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EcoCompteurCMBDataset"/>
+        <terms:description xml:lang="en">Including the locations of each eco-counter.</terms:description>
+    </prov:Activity>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackIdentification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackIdentification">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-01</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-01</prov:startedAtTime>
+        <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
+        <prov:wasAssociatedWith rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
+        <prov:used rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#visorando-route"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#BalconyRouteIdentification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#BalconyRouteIdentification">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01</prov:startedAtTime>
+        <prov:used rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#visorando-route"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
+        <terms:title xml:lang="fr">Portions de route caractérisant une série de virages</terms:title>
+        <gdata:represents rdf:resource="http://purl.org/choucas.ign.fr/oor#PRI"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackIdentification"/>
+        <gdata:annotates rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion"/>
+    </owl:NamedIndividual>    
 
 
 
@@ -1724,6 +1810,10 @@
         <dcat:language>fr-FR</dcat:language>
         <dcat:title xml:lang="fr">BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l&apos;ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l&apos;aménagement et de l&apos;observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique</dcat:title>
     </owl:NamedIndividual>
+
+
+
+
 
 </rdf:RDF>
 
