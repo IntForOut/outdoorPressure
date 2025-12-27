@@ -116,6 +116,10 @@
 <http://purl.org/spar/datacite/volume> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodataannotates
+<http://purl.org/www.umr-lastig.fr/geodataannotates> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodatarepresents
 <http://purl.org/www.umr-lastig.fr/geodatarepresents> rdf:type owl:AnnotationProperty .
 
@@ -263,6 +267,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation
+<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> rdf:type owl:ObjectProperty .
+
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
@@ -506,6 +514,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
         rdfs:seeAlso "https://www.wikidata.org/wiki/Q12375604" .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion
+:SwitchbackRoutePortion rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/choucas.ign.fr/oor#RoutePortion> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> ;
+                                          owl:hasValue <http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets>
+                                        ] .
+
+
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
 :Track rdf:type owl:Class ;
        rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
@@ -520,6 +537,21 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://example.org/activity/CameraTrapSurveyCMB20242024
+<http://example.org/activity/CameraTrapSurveyCMB20242024> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> ,
+                                                                   <http://www.w3.org/ns/prov#Activity> ;
+                                                          <http://www.w3.org/ns/prov#generated> :EcoCompteurCMBDataset ;
+                                                          <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo> ;
+                                                          <http://purl.org/dc/terms/description> "Including the locations of each eco-counter."@en ;
+                                                          <http://www.w3.org/ns/prov#endedAtTime> "2024-02"^^xsd:gYearMonth ;
+                                                          <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^xsd:gYearMonth .
+
+
+###  http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets
+<http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> rdf:type owl:NamedIndividual .
+
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> rdf:type owl:NamedIndividual ,
@@ -578,8 +610,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                        <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#TotalStation
-<http://purl.org/www.umr-lastig.fr/geodata#TotalStation> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#BalconyRouteIdentification
+:BalconyRouteIdentification rdf:type owl:NamedIndividual ,
+                                     <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
+                            <http://www.w3.org/ns/prov#used> :visorando-route ;
+                            <http://www.w3.org/ns/prov#endedAtTime> "2024-01"^^xsd:gYearMonth ;
+                            <http://www.w3.org/ns/prov#startedAtTime> "2024-01"^^xsd:gYearMonth .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#ComptageRemontéesMécaniques
+:ComptageRemontéesMécaniques rdf:type owl:NamedIndividual ,
+                                      <http://www.w3.org/ns/dcat#Dataset> ;
+                             <http://purl.org/dc/terms/description> "Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year)."@en ;
+                             <http://purl.org/dc/terms/title> "Ski Lift Ridership Counts in the CMB Area."@en .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EcoCompteurCMBDataset
+:EcoCompteurCMBDataset rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/ns/dcat#Dataset> ;
+                       <http://purl.org/dc/terms/description> "Dataset derived from 12 eco-counters."@en ;
+                       <http://purl.org/dc/terms/title> "Eco-counters CMB"@fr .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#EncounterDetection
@@ -602,11 +652,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
 
 
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GHumanChamoisRealEncounters-csv
-:GHumanChamoisRealEncounters-csv rdf:type owl:NamedIndividual ,
-                                          <http://www.w3.org/ns/dcat#Distribution> .
-
-
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath
 :GroundTruthDenseForestPath rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
@@ -627,7 +672,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters
 :HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
-                            <http://www.w3.org/ns/dcat#distribution> :GHumanChamoisRealEncounters-csv ;
+                            <http://www.w3.org/ns/dcat#distribution> :HumanChamoisRealEncounters-csv ;
                             <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                             <http://purl.org/dc/terms/description> "185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates"@en ;
                             <http://purl.org/dc/terms/issued> "2025-04-25"^^xsd:date ;
@@ -659,8 +704,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
                       <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> ,
                                                          :aloison ,
-                                                         _:genid1 ,
-                                                         _:genid2 ;
+                                                         _:genid2 ,
+                                                         _:genid3 ;
                       <http://purl.org/dc/terms/publisher> "Journal of Outdoor Recreation and Tourism" ;
                       <http://purl.org/dc/terms/title> "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area" ;
                       <http://purl.org/spar/datacite/firstPage> "100734" ;
@@ -677,10 +722,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       <http://www.w3.org/ns/prov#quotedAs> :KerouatonSurvey20142015 ,
                                                            :KerouatonTrack20142015 .
 
-_:genid1 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
 
-_:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
 
 
@@ -694,7 +739,7 @@ _:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#KerouatonSurvey20142015
 :KerouatonSurvey20142015 rdf:type owl:NamedIndividual ,
-                                  <http://purl.org/www.umr-lastig.fr/geodata#QuestionnarySurvey> ,
+                                  <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> ,
                                   <http://www.w3.org/ns/prov#Activity> ;
                          <http://www.w3.org/ns/prov#generated> :KerouatonQuestionnaire20142015 ,
                                                                :KerouatonTrack20142015 ;
@@ -736,21 +781,21 @@ _:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                             :TracksMultiSensorsVincennesForest .
 
 
-###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025
-:Marchandetal2025 rdf:type owl:NamedIndividual ;
-                  <http://purl.org/dc/terms/hasPart> :act-export ,
-                                                     :locs-export ;
-                  <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
-                  <http://www.w3.org/ns/prov#wasAttributedTo> :pmarchand ;
-                  <http://www.w3.org/ns/prov#wasQuotedFrom> :pan3.70151 ;
-                  <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E., & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
-                  <http://purl.org/dc/terms/description> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
-                  <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
-                  <http://purl.org/dc/terms/language> "English" ;
-                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                  <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
-                  <http://purl.org/dc/terms/spatial> <http://sws.geonames.org/3001970/> ;
-                  <http://purl.org/dc/terms/title> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en .
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Marchandetal2025DB
+:Marchandetal2025DB rdf:type owl:NamedIndividual ;
+                    <http://purl.org/dc/terms/hasPart> :act-export ,
+                                                       :locs-export ;
+                    <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
+                    <http://www.w3.org/ns/prov#wasAttributedTo> :pmarchand ;
+                    <http://www.w3.org/ns/prov#wasQuotedFrom> :pan3.70151 ;
+                    <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E., & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
+                    <http://purl.org/dc/terms/description> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
+                    <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
+                    <http://purl.org/dc/terms/language> "English" ;
+                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                    <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
+                    <http://purl.org/dc/terms/spatial> <http://sws.geonames.org/3001970/> ;
+                    <http://purl.org/dc/terms/title> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MetadataGroundTruthPathVincennesForest
@@ -793,34 +838,56 @@ _:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                         <https://data.ign.fr/id/geofla/commune/74143> ,
                                                         <https://data.ign.fr/id/geofla/commune/74266> ,
                                                         <https://data.ign.fr/id/geofla/commune/74290> ,
-                                                        _:genid3 ;
+                                                        _:genid4 ;
                      <http://purl.org/dc/terms/title> "OutdoorVision export"@en ;
                      <http://purl.org/www.umr-lastig.fr/geodatarepresents> :HumanTrack ;
                      <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
 
-_:genid3 rdf:type <http://purl.org/dc/terms/Location> ;
+_:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
           <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackIdentification
+:SwitchbackIdentification rdf:type owl:NamedIndividual ,
+                                   <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
+                          <http://www.w3.org/ns/prov#generated> :SwitchbacksPortion ;
+                          <http://www.w3.org/ns/prov#used> :visorando-route ;
+                          <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> ;
+                          <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
+                          <http://www.w3.org/ns/prov#endedAtTime> "2025-01"^^xsd:gYearMonth ;
+                          <http://www.w3.org/ns/prov#startedAtTime> "2025-01"^^xsd:gYearMonth .
+
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion
+:SwitchbacksPortion rdf:type owl:NamedIndividual ,
+                             <http://www.w3.org/ns/dcat#Dataset> ;
+                    <http://www.w3.org/ns/prov#wasGeneratedBy> :SwitchbackIdentification ;
+                    <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
+                    <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr ;
+                    <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB ;
+                    <http://purl.org/www.umr-lastig.fr/geodatarepresents> <http://purl.org/choucas.ign.fr/oor#PRI> ,
+                                                                          :SwitchbackRoutePortion .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes
 :TopometricSurveyGroundTruthPathVincennes rdf:type owl:NamedIndividual ,
-                                                   <http://purl.org/www.umr-lastig.fr/geodata#TopometricSurvey> ,
+                                                   <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> ,
                                                    <http://www.w3.org/ns/prov#Activity> ;
                                           <http://www.w3.org/ns/prov#generated> :GroundTruthDenseForestPath ;
-                                          <http://www.w3.org/ns/prov#used> <http://purl.org/www.umr-lastig.fr/geodata#TotalStation> ;
-                                          <http://purl.org/dc/terms/creator> _:genid4 ,
-                                                                             _:genid5 ,
-                                                                             _:genid6 ;
+                                          <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> ;
+                                          <http://purl.org/dc/terms/creator> _:genid5 ,
+                                                                             _:genid6 ,
+                                                                             _:genid7 ;
                                           <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                           <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
 
-_:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid5 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
 
-_:genid5 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
 
-_:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 
 
@@ -845,7 +912,7 @@ _:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :act-export rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/dcat#Dataset> ;
             <http://purl.org/dc/terms/description> "Activity data from gps collars"@en ;
-            <http://purl.org/dc/terms/isPartOf> :Marchandetal2025 ;
+            <http://purl.org/dc/terms/isPartOf> :Marchandetal2025DB ;
             <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
             <http://purl.org/dc/terms/language> "English" ;
             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
@@ -981,7 +1048,7 @@ _:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :locs-export rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/dcat#Dataset> ;
              <http://purl.org/dc/terms/description> "GPS locations"@en ;
-             <http://purl.org/dc/terms/isPartOf> :Marchandetal2025 ;
+             <http://purl.org/dc/terms/isPartOf> :Marchandetal2025DB ;
              <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
              <http://purl.org/dc/terms/language> "English" ;
              <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
@@ -1014,8 +1081,8 @@ _:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
-                                               _:genid7 ,
-                                               _:genid8 ;
+                                               _:genid8 ,
+                                               _:genid9 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1033,12 +1100,12 @@ _:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                     "recreational ecology" ,
                                                     "trail running" ;
             <http://purl.org/spar/datacite/volume> "7" ;
-            <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025 .
-
-_:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
+            <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025DB .
 
 _:genid8 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
+
+_:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
