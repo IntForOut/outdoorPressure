@@ -415,15 +415,14 @@
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/choucas.ign.fr/oor#RoutePortion> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#hasValue> <http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> .
-<http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 _:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Output> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024)."@fr .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."@fr .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -448,6 +447,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://example.org/activity/CameraTrapSurveyCMB20242024> <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
 # http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets
+<http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
