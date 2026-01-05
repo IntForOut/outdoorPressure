@@ -802,6 +802,23 @@
         <mxCell id="mx3OBDRaoaZAX2Q4jreH-22" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Fréquentation ??" vertex="1">
           <mxGeometry height="60" width="95" x="25.69999999999999" y="624" as="geometry" />
         </mxCell>
+        <mxCell id="mx3OBDRaoaZAX2Q4jreH-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="DQV" vertex="1">
+          <mxGeometry height="80" width="120" x="1476.5" y="1295" as="geometry" />
+        </mxCell>
+        <mxCell id="mx3OBDRaoaZAX2Q4jreH-24" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Quality measurement" vertex="1">
+          <mxGeometry height="50.08" width="115" x="1120.36" y="314.88" as="geometry" />
+        </mxCell>
+        <mxCell id="mx3OBDRaoaZAX2Q4jreH-25" edge="1" parent="1" source="mx3OBDRaoaZAX2Q4jreH-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1299" y="360" as="sourcePoint" />
+            <mxPoint x="940" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mx3OBDRaoaZAX2Q4jreH-26" connectable="0" parent="mx3OBDRaoaZAX2Q4jreH-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="is-a" vertex="1">
+          <mxGeometry relative="1" x="-0.423" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
