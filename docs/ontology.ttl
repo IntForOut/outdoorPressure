@@ -278,6 +278,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#hasProfile
+:hasProfile rdf:type owl:DatatypeProperty ;
+            rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+            rdfs:range <http://purl.org/dc/terms/URI> ;
+            rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URI" .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -691,6 +702,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#IntForOutETLDB
 :IntForOutETLDB rdf:type owl:NamedIndividual ,
+                         <http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse> ,
                          <http://www.w3.org/ns/dcat#Dataset> ;
                 <http://purl.org/dc/terms/language> "English" ;
                 <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ,
