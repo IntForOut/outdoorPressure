@@ -46,7 +46,7 @@
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-8" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;" value="Jeu de données" vertex="1">
           <mxGeometry height="50" width="100" x="1134" y="634" as="geometry" />
         </mxCell>
-        <mxCell id="fbRVaOHvIbs2X0BEzBPC-9" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-5">
+        <mxCell id="fbRVaOHvIbs2X0BEzBPC-9" edge="1" parent="1" source="fbRVaOHvIbs2X0BEzBPC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;curved=1;dashed=1;" target="fbRVaOHvIbs2X0BEzBPC-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fbRVaOHvIbs2X0BEzBPC-10" connectable="0" parent="fbRVaOHvIbs2X0BEzBPC-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="is-a" vertex="1">
@@ -484,7 +484,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-91" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="is-a" vertex="1">
-          <mxGeometry x="1119" y="730" as="geometry">
+          <mxGeometry x="1119" y="700" as="geometry">
             <mxPoint x="-139" y="79" as="offset" />
           </mxGeometry>
         </mxCell>
@@ -627,7 +627,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-124" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;background-color: light-dark(rgb(225, 213, 231), rgb(237, 237, 237));&quot;&gt;prov:wasInfluencedBy&lt;/span&gt;" vertex="1">
-          <mxGeometry x="1274" y="432.42" as="geometry">
+          <mxGeometry x="1450" y="700" as="geometry">
             <mxPoint x="139" y="-51" as="offset" />
           </mxGeometry>
         </mxCell>
@@ -644,7 +644,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="377RaPqsyI-Tu9e9tD1s-126" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;background-color: light-dark(rgb(225, 213, 231), rgb(237, 237, 237));&quot;&gt;prov:wasInfluencedBy&lt;/span&gt;" vertex="1">
-          <mxGeometry x="1104" y="394.96000000000004" as="geometry">
+          <mxGeometry x="1440" y="630" as="geometry">
             <mxPoint x="139" y="-51" as="offset" />
           </mxGeometry>
         </mxCell>
