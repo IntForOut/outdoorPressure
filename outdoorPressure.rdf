@@ -1616,6 +1616,7 @@
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges"/>
         <terms:title xml:lang="fr">Parcdesbauges.com - sensitivearea</terms:title>
         <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area"/>
+        <gdata:annotates rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"/>
     </owl:NamedIndividual>
     
 
