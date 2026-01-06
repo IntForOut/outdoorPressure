@@ -198,18 +198,6 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodataannotates -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodataannotates"/>
-    
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodatarepresents -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/www.umr-lastig.fr/geodatarepresents"/>
-    
-
-
     <!-- http://schema.org/address -->
 
     <owl:AnnotationProperty rdf:about="http://schema.org/address"/>
@@ -994,7 +982,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#GroundTruthDenseForestPath-csv"/>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack"/>
         <rdf:comment xml:lang="en">This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS.</rdf:comment>
         <dcat:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
     </owl:NamedIndividual>
@@ -1023,7 +1011,8 @@
         <terms:language>English</terms:language>
         <terms:license rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)"/>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea"/>
+        <gdata:annotates rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"/>
     </owl:NamedIndividual>
     
 
@@ -1120,7 +1109,7 @@
         <prov:wasQuotedFrom rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#KEROUANTON2024100734"/>
         <terms:description xml:lang="en">A set of tracks. Compleed with questionnaires</terms:description>
         <terms:title xml:lang="fr">Tracks issued from PhD of Colin Kerouaton</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
     </owl:NamedIndividual>
     
 
@@ -1210,7 +1199,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetwork"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetwork"/>
         <rdfs:comment>Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1233,7 +1222,7 @@
             </rdf:Description>
         </terms:spatial>
         <terms:title xml:lang="en">OutdoorVision export</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
     </owl:NamedIndividual>
     
@@ -1260,9 +1249,8 @@
         <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackIdentification"/>
         <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
         <terms:title xml:lang="fr">Portions de route caractérisant une série de virages</terms:title>
-        <www:geodataannotates rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"/>
-        <www:geodatarepresents rdf:resource="http://purl.org/choucas.ign.fr/oor#PRI"/>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion"/>
+        <gdata:annotates rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion"/>
     </owl:NamedIndividual>
     
 
@@ -1303,7 +1291,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TracksMultiSensorsVincennesForest-gpkg"/>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanTrack"/>
         <rdf:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdf:comment>
         <dcat:isPartOf rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MOUSLS"/>
     </owl:NamedIndividual>
@@ -1332,7 +1320,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher>Office Français de la Biodiversité</terms:publisher>
         <terms:title xml:lang="fr">act-export</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack"/>
     </owl:NamedIndividual>
     
 
@@ -1366,7 +1354,7 @@
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#altituderando"/>
         <terms:title xml:lang="fr">AltitudeRando routes</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
     </owl:NamedIndividual>
     
 
@@ -1437,7 +1425,7 @@
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#camptocamp"/>
         <terms:title xml:lang="fr">Camptocamp.org-routes</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
     </owl:NamedIndividual>
     
 
@@ -1507,7 +1495,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher>Office Français de la Biodiversité</terms:publisher>
         <terms:title xml:lang="fr">locs-export</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#AnimalTrack"/>
     </owl:NamedIndividual>
     
 
@@ -1601,7 +1589,7 @@
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges"/>
         <terms:title xml:lang="fr">Parcdesbauges.com - POI</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark"/>
     </owl:NamedIndividual>
     
 
@@ -1627,7 +1615,7 @@
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges"/>
         <terms:title xml:lang="fr">Parcdesbauges.com - sensitivearea</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area"/>
     </owl:NamedIndividual>
     
 
@@ -1653,7 +1641,7 @@
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#parcdesbauges"/>
         <terms:title xml:lang="fr">Parcdesbauges.com - trek</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
     </owl:NamedIndividual>
     
 
@@ -1708,7 +1696,7 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/deed.fr"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#refugesinfo"/>
         <terms:title xml:lang="fr">Refuges.info - points</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Landmark"/>
     </owl:NamedIndividual>
     
 
@@ -1731,7 +1719,7 @@
         <prov:wasQuotedFrom rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#9798400711077"/>
         <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
         <terms:title xml:lang="fr">Traces fusionnées issues de la métrologie de l&apos;algorithme MIAA</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MergedTrack"/>
     </owl:NamedIndividual>
     
 
@@ -1756,7 +1744,7 @@
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#visorando"/>
         <terms:title xml:lang="fr">Visorando routes</terms:title>
-        <www:geodatarepresents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
+        <gdata:represents rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#NamedRoute"/>
     </owl:NamedIndividual>
     
 
