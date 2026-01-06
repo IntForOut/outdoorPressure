@@ -581,6 +581,9 @@
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea"
   } ],
@@ -1180,8 +1183,6 @@
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "http://purl.org/choucas.ign.fr/oor#PRI"
-  }, {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {

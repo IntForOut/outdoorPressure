@@ -690,6 +690,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             <http://purl.org/dc/terms/language> "English" ;
                             <http://purl.org/dc/terms/license> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)> ;
                             <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ;
+                            <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB ;
                             <http://purl.org/www.umr-lastig.fr/geodatarepresents> :MeetingArea .
 
 
@@ -877,8 +878,7 @@ _:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
                     <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
                     <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr ;
                     <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB ;
-                    <http://purl.org/www.umr-lastig.fr/geodatarepresents> <http://purl.org/choucas.ign.fr/oor#PRI> ,
-                                                                          :SwitchbackRoutePortion .
+                    <http://purl.org/www.umr-lastig.fr/geodatarepresents> :SwitchbackRoutePortion .
 
 
 ###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes

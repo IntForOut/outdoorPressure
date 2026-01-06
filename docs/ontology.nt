@@ -560,6 +560,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/language> "English" .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/license> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters> <http://purl.org/www.umr-lastig.fr/geodataannotates> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MeetingArea> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#HumanChamoisRealEncounters-csv
@@ -729,7 +730,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion> <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion> <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion> <http://purl.org/www.umr-lastig.fr/geodataannotates> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB> .
-<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <http://purl.org/choucas.ign.fr/oor#PRI> .
 <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbacksPortion> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#SwitchbackRoutePortion> .
 # 
 # http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#TopometricSurveyGroundTruthPathVincennes
