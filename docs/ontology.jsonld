@@ -1717,6 +1717,9 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - sensitivearea"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#MobilityNetworkDB"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
     "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#Area"
   } ],

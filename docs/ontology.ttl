@@ -1158,6 +1158,7 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
                              <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                              <http://purl.org/dc/terms/publisher> :parcdesbauges ;
                              <http://purl.org/dc/terms/title> "Parcdesbauges.com - sensitivearea"@fr ;
+                             <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB ;
                              <http://purl.org/www.umr-lastig.fr/geodatarepresents> :Area .
 
 
