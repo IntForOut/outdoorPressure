@@ -813,6 +813,7 @@ _:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#OutdoorVisionExport
 :OutdoorVisionExport rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/dcat#Dataset> ;
+                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :Hiking ;
                      <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
                      <http://purl.org/dc/terms/publisher> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN> ;
                      <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> ,
@@ -831,6 +832,13 @@ _:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  https://intforout.github.io/outdoorPressure#PlandEau
 :PlandEau rdf:type owl:NamedIndividual ,
                    :LandEntity .
+
+
+###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
+:ProfilageOutdoorVision rdf:type owl:NamedIndividual ,
+                                 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                        <http://purl.org/dc/elements/1.1/creator> "Abdassalam Naciri" ;
+                        <http://purl.org/dc/elements/1.1/description> "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)." .
 
 
 ###  https://intforout.github.io/outdoorPressure#Route
