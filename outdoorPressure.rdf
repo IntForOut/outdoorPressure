@@ -1194,6 +1194,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OutdoorVisionExport">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
         <terms:description xml:lang="en">A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered</terms:description>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN"/>
         <terms:spatial rdf:resource="https://data.ign.fr/id/geofla/commune/74056"/>
@@ -1217,6 +1218,16 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PlandEau">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <dc:creator>Abdassalam Naciri</dc:creator>
+        <dc:description>The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator).</dc:description>
     </owl:NamedIndividual>
     
 
