@@ -29,6 +29,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
      xmlns:schema="http://schema.org/"
+     xmlns:geodata="http://purl.org/www.umr-lastig.fr/geodata#"
      xmlns:datacite="http://purl.org/spar/datacite/"
      xmlns:outdoorPressure="https://intforout.github.io/outdoorPressure#">
     <owl:Ontology rdf:about="https://intforout.github.io/outdoorPressure">
@@ -337,6 +338,12 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#quotedAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#quotedAs"/>
+    
+
+
     <!-- http://www.w3.org/ns/prov#startedAtTime -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime"/>
@@ -556,22 +563,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:comment xml:lang="en">
-            An enriched backbone network that includes all attribute information (e.g. traffic, topography, and activity type) necessary 
-            to calculate resilient routes.
-        </rdfs:comment>
-        <rdfs:comment xml:lang="fr">
-            Un réseau support enrichi, complété avec toutes les informations attributaires (e.g. fréquentation, topographie et métier) 
-            nécessaires au calcul des itinéraires résilients.
-        </rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#FilteredTrack -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#FilteredTrack">
@@ -637,20 +628,6 @@
             Example: “Le chemin du Roy”.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). 
             Exemple : « Le chemin du Roy ».</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone"/>
-        <rdfs:comment xml:lang="en">
-            An enriched and qualified backbone network where uncertainties on topology, geometry, and attribute information have been quantified.
-        </rdfs:comment>
-        <rdfs:comment xml:lang="fr">
-            Un réseau support enrichi et qualifié dont les incertitudes sur la topologie, la géométrie et les informations attributaires ont été quantifiées.
-        </rdfs:comment>
     </owl:Class>
     
 
@@ -991,6 +968,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#EncounteringZone"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
         <terms:description xml:lang="en">185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates</terms:description>
@@ -1031,8 +1009,6 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KEROUANTON2024100734">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#KerouatonSurvey20142015"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#KerouatonTrack20142015"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ljolivet"/>
         <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#aloison"/>
         <terms:creator>
@@ -1060,6 +1036,8 @@
         <datacite:subject>Spatio-temporal pattern</datacite:subject>
         <datacite:subject>Time-geography</datacite:subject>
         <datacite:subject>global navigation satellite system</datacite:subject>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#KerouatonSurvey20142015"/>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#KerouatonTrack20142015"/>
     </owl:NamedIndividual>
     
 
@@ -1142,13 +1120,13 @@
     <!-- https://intforout.github.io/outdoorPressure#Marchandetal2025DB -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Marchandetal2025DB">
-        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#act-export"/>
-        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#locs-export"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#marchandetal-rdata"/>
         <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#pan3.70151"/>
         <terms:bibliographicCitation>Marchand, P., Risser, N., Petit, E., &amp; Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197</terms:bibliographicCitation>
         <terms:description xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. &apos;locs_export&apos; contains gps locations, whereas &apos;act_export&apos; contains activity data from gps collars. See Methods for details.</terms:description>
+        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#act-export"/>
+        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#locs-export"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1197,8 +1175,8 @@
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#FastHiking"/>
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#Skiing"/>
-        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
         <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1346,6 +1324,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"/>
         <www:geodatarepresents rdf:resource="https://intforout.github.io/outdoorPressure#HumanTrack"/>
         <rdf:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdf:comment>
@@ -1588,7 +1567,6 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#pan3.70151">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#Marchandetal2025DB"/>
         <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
         <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
         <terms:creator>
@@ -1620,6 +1598,7 @@
         <datacite:subject>recreational ecology</datacite:subject>
         <datacite:subject>trail running</datacite:subject>
         <datacite:volume>7</datacite:volume>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#Marchandetal2025DB"/>
     </owl:NamedIndividual>
     
 
@@ -1807,13 +1786,11 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#9798400711077">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#vincennesfusion"/>
         <prov:wasInfluencedBy rdf:resource="https://intforout.github.io/outdoorPressure#FusionCalibration"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
+        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
         <terms:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</terms:isPartOf>
         <terms:isPartOf>SIGSPATIAL &apos;24</terms:isPartOf>
         <terms:publisher>Association for Computing Machinery</terms:publisher>
@@ -1829,6 +1806,8 @@
         <datacite:subject>metrological analysis</datacite:subject>
         <datacite:subject>synthetic and real world trajectories</datacite:subject>
         <datacite:subject>trajectory aggregation</datacite:subject>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#vincennesfusion"/>
     </owl:NamedIndividual>
     
 
