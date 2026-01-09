@@ -289,12 +289,6 @@
 <https://intforout.github.io/outdoorPressure#AnimalTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."@en .
 <https://intforout.github.io/outdoorPressure#AnimalTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr .
 # 
-# https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone
-<https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            An enriched backbone network that includes all attribute information (e.g. traffic, topography, and activity type) necessary \n            to calculate resilient routes.\n        "@en .
-<https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Un réseau support enrichi, complété avec toutes les informations attributaires (e.g. fréquentation, topographie et métier) \n            nécessaires au calcul des itinéraires résilients.\n        "@fr .
-# 
 # https://intforout.github.io/outdoorPressure#FilteredTrack
 <https://intforout.github.io/outdoorPressure#FilteredTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#FilteredTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Track> .
@@ -333,12 +327,6 @@
 <https://intforout.github.io/outdoorPressure#NamedRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Route> .
 <https://intforout.github.io/outdoorPressure#NamedRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). \n            Example: “Le chemin du Roy”."@en .
 <https://intforout.github.io/outdoorPressure#NamedRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). \n            Exemple : « Le chemin du Roy »."@fr .
-# 
-# https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork
-<https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone> .
-<https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            An enriched and qualified backbone network where uncertainties on topology, geometry, and attribute information have been quantified.\n        "@en .
-<https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Un réseau support enrichi et qualifié dont les incertitudes sur la topologie, la géométrie et les informations attributaires ont été quantifiées.\n        "@fr .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -536,6 +524,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#EncounteringZone> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/description> "185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates"@en .
@@ -773,6 +762,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#Hiking> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#HumanTrack> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en .

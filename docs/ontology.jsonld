@@ -585,19 +585,6 @@
     "@value" : "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing."
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "\n            An enriched backbone network that includes all attribute information (e.g. traffic, topography, and activity type) necessary \n            to calculate resilient routes.\n        "
-  }, {
-    "@language" : "fr",
-    "@value" : "\n            Un réseau support enrichi, complété avec toutes les informations attributaires (e.g. fréquentation, topographie et métier) \n            nécessaires au calcul des itinéraires résilients.\n        "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#FastHiking",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -692,6 +679,9 @@
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#EncounteringZone"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB"
@@ -1115,19 +1105,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#QualityAssessedMobilityNetwork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "\n            An enriched and qualified backbone network where uncertainties on topology, geometry, and attribute information have been quantified.\n        "
-  }, {
-    "@language" : "fr",
-    "@value" : "\n            Un réseau support enrichi et qualifié dont les incertitudes sur la topologie, la géométrie et les informations attributaires ont été quantifiées.\n        "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#EnhancedMobilityNetworkBackbone"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ResilientRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1304,6 +1281,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack"
   } ],
