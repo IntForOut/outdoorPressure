@@ -274,7 +274,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#activity
 :activity rdf:type owl:ObjectProperty ;
-          rdfs:domain :Affordance ;
           rdfs:range :Activity .
 
 
@@ -286,7 +285,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#landEntity
 :landEntity rdf:type owl:ObjectProperty ;
-            rdfs:domain :Affordance ;
             rdfs:range :LandEntity .
 
 
@@ -327,12 +325,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           rdfs:comment "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output." .
 
 
-###  https://intforout.github.io/outdoorPressure#Affordance
-:Affordance rdf:type owl:Class ;
-            rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially"@en ,
-                         "Correspond à la relation \"affords\""@fr .
-
-
 ###  https://intforout.github.io/outdoorPressure#AnimalActivity
 :AnimalActivity rdf:type owl:Class ;
                 rdfs:subClassOf :Activity .
@@ -370,6 +362,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             rdfs:comment "An entity located in land : an area, a land, a parcel, a network, an observation."@en .
 
 
+###  https://intforout.github.io/outdoorPressure#LivingCreature
+:LivingCreature rdf:type owl:Class ;
+                rdfs:comment "Living creature, animal or human" .
+
+
 ###  https://intforout.github.io/outdoorPressure#MergedAccurateTrack
 :MergedAccurateTrack rdf:type owl:Class ;
                      rdfs:subClassOf :MergedTrack ;
@@ -403,28 +400,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#Route
 :Route rdf:type owl:Class ;
        rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
-
-
-###  https://intforout.github.io/outdoorPressure#Sentier_botanique
-:Sentier_botanique rdf:type owl:Class ;
-                   rdfs:comment "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
-
-
-###  https://intforout.github.io/outdoorPressure#Sentier_de_découverte
-:Sentier_de_découverte rdf:type owl:Class ;
-                       rdfs:comment "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
-
-
-###  https://intforout.github.io/outdoorPressure#Sentier_entomologique
-:Sentier_entomologique rdf:type owl:Class ;
-                       rdfs:subClassOf :Sentier_de_découverte ;
-                       rdfs:comment "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
-
-
-###  https://intforout.github.io/outdoorPressure#Sentier_écologique
-:Sentier_écologique rdf:type owl:Class ;
-                    rdfs:subClassOf :Sentier_de_découverte ;
-                    rdfs:comment "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion

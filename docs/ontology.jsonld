@@ -476,16 +476,6 @@
     "@value" : "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Affordance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Capacity of a place, or land, to support a given activity, effectively or potentially"
-  }, {
-    "@language" : "fr",
-    "@value" : "Correspond à la relation \"affords\""
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#AireCampingCar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -859,6 +849,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#LivingCreature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Living creature, animal or human"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
@@ -1167,36 +1163,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Sentier_botanique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Sentier_de_découverte",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Sentier_entomologique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Sentier_de_découverte"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Sentier_écologique",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Sentier_de_découverte"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#Skiing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1354,9 +1320,6 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Affordance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Activity"
   } ]
@@ -1618,9 +1581,6 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#landEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Affordance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]

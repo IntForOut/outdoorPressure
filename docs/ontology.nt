@@ -219,7 +219,6 @@
 # 
 # https://intforout.github.io/outdoorPressure#activity
 <https://intforout.github.io/outdoorPressure#activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#activity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#Affordance> .
 <https://intforout.github.io/outdoorPressure#activity> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Activity> .
 # 
 # https://intforout.github.io/outdoorPressure#affords
@@ -229,7 +228,6 @@
 # 
 # https://intforout.github.io/outdoorPressure#landEntity
 <https://intforout.github.io/outdoorPressure#landEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#landEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#Affordance> .
 <https://intforout.github.io/outdoorPressure#landEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#LandEntity> .
 # 
 # 
@@ -274,11 +272,6 @@
 <https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output." .
 # 
-# https://intforout.github.io/outdoorPressure#Affordance
-<https://intforout.github.io/outdoorPressure#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Affordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a place, or land, to support a given activity, effectively or potentially"@en .
-<https://intforout.github.io/outdoorPressure#Affordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Correspond à la relation \"affords\""@fr .
-# 
 # https://intforout.github.io/outdoorPressure#AnimalActivity
 <https://intforout.github.io/outdoorPressure#AnimalActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#AnimalActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Activity> .
@@ -310,6 +303,10 @@
 <https://intforout.github.io/outdoorPressure#LandEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#LandEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity located in land : an area, a land, a parcel, a network, an observation."@en .
 # 
+# https://intforout.github.io/outdoorPressure#LivingCreature
+<https://intforout.github.io/outdoorPressure#LivingCreature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#LivingCreature> <http://www.w3.org/2000/01/rdf-schema#comment> "Living creature, animal or human" .
+# 
 # https://intforout.github.io/outdoorPressure#MergedAccurateTrack
 <https://intforout.github.io/outdoorPressure#MergedAccurateTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#MergedAccurateTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#MergedTrack> .
@@ -337,24 +334,6 @@
 # https://intforout.github.io/outdoorPressure#Route
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-# 
-# https://intforout.github.io/outdoorPressure#Sentier_botanique
-<https://intforout.github.io/outdoorPressure#Sentier_botanique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Sentier_botanique> <http://www.w3.org/2000/01/rdf-schema#comment> "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
-# 
-# https://intforout.github.io/outdoorPressure#Sentier_de_découverte
-<https://intforout.github.io/outdoorPressure#Sentier_de_découverte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Sentier_de_découverte> <http://www.w3.org/2000/01/rdf-schema#comment> "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
-# 
-# https://intforout.github.io/outdoorPressure#Sentier_entomologique
-<https://intforout.github.io/outdoorPressure#Sentier_entomologique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Sentier_entomologique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Sentier_de_découverte> .
-<https://intforout.github.io/outdoorPressure#Sentier_entomologique> <http://www.w3.org/2000/01/rdf-schema#comment> "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
-# 
-# https://intforout.github.io/outdoorPressure#Sentier_écologique
-<https://intforout.github.io/outdoorPressure#Sentier_écologique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Sentier_écologique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Sentier_de_découverte> .
-<https://intforout.github.io/outdoorPressure#Sentier_écologique> <http://www.w3.org/2000/01/rdf-schema#comment> "Objet géographique représenté dans la BDTopo (https://bdtopoexplorer.ign.fr/recherche.php)" .
 # 
 # https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion
 <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
