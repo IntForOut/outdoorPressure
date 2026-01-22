@@ -311,11 +311,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                                                                   "Portion of route"@en .
 
 
-###  http://www.opengis.net/ont/geosparql#Feature
-<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
-                                               rdfs:subClassOf :LandEntity .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
 
@@ -323,6 +318,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
           rdfs:comment "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output." .
+
+
+###  https://intforout.github.io/outdoorPressure#AireCampingCar
+:AireCampingCar rdf:type owl:Class ;
+                rdfs:subClassOf :LandEntity .
+
+
+###  https://intforout.github.io/outdoorPressure#AireDeDetente
+:AireDeDetente rdf:type owl:Class ;
+               rdfs:subClassOf :LandEntity .
 
 
 ###  https://intforout.github.io/outdoorPressure#AnimalActivity
@@ -335,6 +340,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
              rdfs:subClassOf :Track ;
              rdfs:comment "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."@en ,
                           "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#EncounteringZone
+:EncounteringZone rdf:type owl:Class ;
+                  rdfs:subClassOf :LandEntity ;
+                  rdfs:comment "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing." .
 
 
 ###  https://intforout.github.io/outdoorPressure#FilteredTrack
@@ -352,14 +363,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#HumanTrack
 :HumanTrack rdf:type owl:Class ;
-            rdfs:subClassOf :Track ;
-            rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
-                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
+            rdfs:subClassOf :Track .
 
 
 ###  https://intforout.github.io/outdoorPressure#LandEntity
 :LandEntity rdf:type owl:Class ;
             rdfs:comment "An entity located in land : an area, a land, a parcel, a network, an observation."@en .
+
+
+###  https://intforout.github.io/outdoorPressure#Landmark
+:Landmark rdf:type owl:Class ;
+          rdfs:subClassOf :LandEntity .
 
 
 ###  https://intforout.github.io/outdoorPressure#LivingCreature
@@ -381,6 +395,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                           "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#MobilityNetwork
+:MobilityNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :LandEntity ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :affords ;
+                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                       owl:oneOf ( :Cycling
+                                                                   :FastHiking
+                                                                   :Hiking
+                                                                   :Skiing
+                                                                 )
+                                                     ]
+                                 ] ;
+                 rdfs:comment "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr ,
+                              "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
+
+
 ###  https://intforout.github.io/outdoorPressure#NamedRoute
 :NamedRoute rdf:type owl:Class ;
             rdfs:subClassOf :Route ;
@@ -388,6 +419,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             Example: “Le chemin du Roy”."""@en ,
                          """Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). 
             Exemple : « Le chemin du Roy »."""@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#PlandEau
+:PlandEau rdf:type owl:Class ;
+          rdfs:subClassOf :LandEntity .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
@@ -399,7 +435,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Route
 :Route rdf:type owl:Class ;
-       rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
+       rdfs:subClassOf :LandEntity ;
+       rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
+                    "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#SensitiveArea
+:SensitiveArea rdf:type owl:Class ;
+               rdfs:subClassOf :LandEntity ;
+               rdfs:comment "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.." .
+
+
+###  https://intforout.github.io/outdoorPressure#Sentier
+:Sentier rdf:type owl:Class ;
+         rdfs:subClassOf :LandEntity .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion
@@ -518,16 +567,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <https://geotrek.parcdesbauges.com/api/v2/> rdf:type owl:NamedIndividual .
 
 
-###  https://intforout.github.io/outdoorPressure#AireCampingCar
-:AireCampingCar rdf:type owl:NamedIndividual ,
-                         :LandEntity .
-
-
-###  https://intforout.github.io/outdoorPressure#AireDeDetente
-:AireDeDetente rdf:type owl:NamedIndividual ,
-                        :LandEntity .
-
-
 ###  https://intforout.github.io/outdoorPressure#BalconyRouteIdentification
 :BalconyRouteIdentification rdf:type owl:NamedIndividual ,
                                      <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
@@ -562,12 +601,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                     <http://www.w3.org/ns/prov#endedAtTime> "2025-04"^^xsd:gYearMonth ;
                     <http://www.w3.org/ns/prov#startedAtTime> "2025-04"^^xsd:gYearMonth .
-
-
-###  https://intforout.github.io/outdoorPressure#EncounteringZone
-:EncounteringZone rdf:type owl:NamedIndividual ,
-                           :LandEntity ;
-                  rdfs:comment "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing." .
 
 
 ###  https://intforout.github.io/outdoorPressure#FastHiking
@@ -611,7 +644,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 :HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
-                            <http://purl.org/www.umr-lastig.fr/geodata#represents> :EncounteringZone ;
                             <http://www.w3.org/ns/dcat#distribution> :HumanChamoisRealEncounters-csv ;
                             <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                             <http://purl.org/dc/terms/description> "185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates"@en ;
@@ -627,6 +659,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                          <http://www.w3.org/ns/dcat#Distribution> ;
                                 <http://www.w3.org/ns/dcat#format> "csv" ;
                                 <http://www.w3.org/ns/dcat#identifier> "human_chamois_real_encounters.csv" .
+
+
+###  https://intforout.github.io/outdoorPressure#HumanTrack
+:HumanTrack rdf:type owl:NamedIndividual .
 
 
 ###  https://intforout.github.io/outdoorPressure#IntForOutETLDB
@@ -645,8 +681,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
                       <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> ,
                                                          :aloison ,
-                                                         _:genid2 ,
-                                                         _:genid3 ;
+                                                         _:genid8 ,
+                                                         _:genid9 ;
                       <http://purl.org/dc/terms/publisher> "Journal of Outdoor Recreation and Tourism" ;
                       <http://purl.org/dc/terms/title> "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area" ;
                       <http://purl.org/spar/datacite/firstPage> "100734" ;
@@ -663,10 +699,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       <http://www.w3.org/ns/prov#quotedAs> :KerouatonSurvey20142015 ,
                                                            :KerouatonTrack20142015 .
 
-_:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid8 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
 
-_:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
 
 
@@ -691,21 +727,16 @@ _:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#KerouatonTrack20142015
 :KerouatonTrack20142015 rdf:type owl:NamedIndividual ,
                                  <http://www.w3.org/ns/dcat#Dataset> ;
+                        <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanTrack ;
                         <http://www.w3.org/ns/prov#wasQuotedFrom> :KEROUANTON2024100734 ;
                         <http://purl.org/dc/terms/description> "A set of tracks. Compleed with questionnaires"@en ;
-                        <http://purl.org/dc/terms/title> "Tracks issued from PhD of Colin Kerouaton"@fr ;
-                        <http://purl.org/www.umr-lastig.fr/geodatarepresents> :HumanTrack .
+                        <http://purl.org/dc/terms/title> "Tracks issued from PhD of Colin Kerouaton"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#LIFAT
 :LIFAT rdf:type owl:NamedIndividual ,
                 <http://www.w3.org/ns/prov#Organization> ;
        <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
-
-
-###  https://intforout.github.io/outdoorPressure#Landmark
-:Landmark rdf:type owl:NamedIndividual ,
-                   :LandEntity .
 
 
 ###  https://intforout.github.io/outdoorPressure#MOUSLS
@@ -768,17 +799,6 @@ _:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                            <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
 
 
-###  https://intforout.github.io/outdoorPressure#MobilityNetwork
-:MobilityNetwork rdf:type owl:NamedIndividual ,
-                          :LandEntity ;
-                 :affords :Cycling ,
-                          :FastHiking ,
-                          :Hiking ,
-                          :Skiing ;
-                 rdfs:comment "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr ,
-                              "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
-
-
 ###  https://intforout.github.io/outdoorPressure#MobilityNetworkDB
 :MobilityNetworkDB rdf:type owl:NamedIndividual ,
                             <http://www.w3.org/ns/dcat#Dataset> ;
@@ -788,25 +808,20 @@ _:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#OutdoorVisionExport
 :OutdoorVisionExport rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/dcat#Dataset> ;
-                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :Hiking ;
+                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :Hiking ,
+                                                                            :HumanTrack ;
                      <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
                      <http://purl.org/dc/terms/publisher> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN> ;
                      <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> ,
                                                         <https://data.ign.fr/id/geofla/commune/74143> ,
                                                         <https://data.ign.fr/id/geofla/commune/74266> ,
                                                         <https://data.ign.fr/id/geofla/commune/74290> ,
-                                                        _:genid4 ;
+                                                        _:genid10 ;
                      <http://purl.org/dc/terms/title> "OutdoorVision export"@en ;
-                     <http://purl.org/www.umr-lastig.fr/geodatarepresents> :HumanTrack ;
                      <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
 
-_:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
-          <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#PlandEau
-:PlandEau rdf:type owl:NamedIndividual ,
-                   :LandEntity .
+_:genid10 rdf:type <http://purl.org/dc/terms/Location> ;
+           <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
@@ -814,27 +829,6 @@ _:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
                                  <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
                         <http://purl.org/dc/elements/1.1/creator> "Abdassalam Naciri" ;
                         <http://purl.org/dc/elements/1.1/description> "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)." .
-
-
-###  https://intforout.github.io/outdoorPressure#Route
-:Route rdf:type owl:NamedIndividual ,
-                :LandEntity .
-
-
-###  https://intforout.github.io/outdoorPressure#RoutePortion
-:RoutePortion rdf:type owl:NamedIndividual ,
-                       :LandEntity .
-
-
-###  https://intforout.github.io/outdoorPressure#SensitiveArea
-:SensitiveArea rdf:type owl:NamedIndividual ,
-                        :LandEntity ;
-               rdfs:comment "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.." .
-
-
-###  https://intforout.github.io/outdoorPressure#Sentier
-:Sentier rdf:type owl:NamedIndividual ,
-                  :LandEntity .
 
 
 ###  https://intforout.github.io/outdoorPressure#Skiing
@@ -853,14 +847,18 @@ _:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
                           <http://www.w3.org/ns/prov#startedAtTime> "2025-01"^^xsd:gYearMonth .
 
 
+###  https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion
+:SwitchbackRoutePortion rdf:type owl:NamedIndividual .
+
+
 ###  https://intforout.github.io/outdoorPressure#SwitchbacksPortion
 :SwitchbacksPortion rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/dcat#Dataset> ;
+                    <http://purl.org/www.umr-lastig.fr/geodata#represents> :SwitchbackRoutePortion ;
                     <http://www.w3.org/ns/prov#wasGeneratedBy> :SwitchbackIdentification ;
                     <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
                     <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr ;
-                    <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB ;
-                    <http://purl.org/www.umr-lastig.fr/geodatarepresents> :SwitchbackRoutePortion .
+                    <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB .
 
 
 ###  https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes
@@ -869,20 +867,20 @@ _:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
                                                    <http://www.w3.org/ns/prov#Activity> ;
                                           <http://www.w3.org/ns/prov#generated> :GroundTruthDenseForestPath ;
                                           <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> ;
-                                          <http://purl.org/dc/terms/creator> _:genid5 ,
-                                                                             _:genid6 ,
-                                                                             _:genid7 ;
+                                          <http://purl.org/dc/terms/creator> _:genid11 ,
+                                                                             _:genid12 ,
+                                                                             _:genid13 ;
                                           <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                           <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
 
-_:genid5 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
+_:genid11 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
 
-_:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
+_:genid12 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
 
-_:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
+_:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 
 
 ###  https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
@@ -1076,8 +1074,8 @@ _:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
-                                               _:genid8 ,
-                                               _:genid9 ;
+                                               _:genid14 ,
+                                               _:genid15 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1097,11 +1095,11 @@ _:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
             <http://purl.org/spar/datacite/volume> "7" ;
             <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025DB .
 
-_:genid8 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
+_:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
 
-_:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
+_:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
 ###  https://intforout.github.io/outdoorPressure#parcdesbauges
@@ -1273,8 +1271,8 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
 #    Annotations
 #################################################################
 
-:Route rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
-                    "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
+:HumanTrack rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
+                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

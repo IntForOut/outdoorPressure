@@ -1,6 +1,66 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#affords"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://purl.org/dc/terms/Location" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Parc naturel régional du Massif des Bauges"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Brice Labbé"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Paul Calloch"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lorine Peseux"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Nolwenn Risser"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Elodie Petit"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://intforout.github.io/outdoorPressure#Cycling"
+    }, {
+      "@id" : "https://intforout.github.io/outdoorPressure#FastHiking"
+    }, {
+      "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
+    }, {
+      "@id" : "https://intforout.github.io/outdoorPressure#Skiing"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"
   } ],
@@ -8,53 +68,16 @@
     "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Colin Kerouanton"
   } ]
 }, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Clémence Perrin-Malterre"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://purl.org/dc/terms/Location" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Parc naturel régional du Massif des Bauges"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Brice Labbé"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Paul Calloch"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lorine Peseux"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Nolwenn Risser"
-  } ]
-}, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Elodie Petit"
+    "@value" : "Clémence Perrin-Malterre"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#licence",
@@ -257,12 +280,6 @@
 }, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -477,14 +494,14 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#AireCampingCar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#AireDeDetente",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
@@ -567,12 +584,12 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#EncounteringZone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FastHiking",
@@ -670,9 +687,6 @@
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#EncounteringZone"
-  } ],
   "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB"
   } ],
@@ -703,7 +717,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."
@@ -740,9 +754,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#aloison"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid8"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid9"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Journal of Outdoor Recreation and Tourism"
@@ -823,7 +837,7 @@
     "@language" : "fr",
     "@value" : "Tracks issued from PhD of Colin Kerouaton"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack"
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
@@ -844,8 +858,8 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Landmark",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
@@ -1024,24 +1038,17 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetwork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
     "@value" : "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."
   }, {
     "@value" : "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary"
   } ],
-  "https://intforout.github.io/outdoorPressure#affords" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Cycling"
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#FastHiking"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#Skiing"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB",
@@ -1081,7 +1088,7 @@
   }, {
     "@id" : "https://data.ign.fr/id/geofla/commune/74290"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid10"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -1089,8 +1096,7 @@
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
+  }, {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack"
   } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
@@ -1099,8 +1105,8 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
@@ -1127,10 +1133,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Route",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."
@@ -1139,27 +1142,21 @@
     "@value" : "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#RoutePortion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Sentier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
@@ -1193,11 +1190,11 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortion",
@@ -1210,11 +1207,11 @@
     "@language" : "fr",
     "@value" : "Portions de route caractérisant une série de virages"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification"
@@ -1223,11 +1220,11 @@
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid11"
   }, {
-    "@id" : "_:genid6"
+    "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1643,9 +1640,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid14"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid15"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"
