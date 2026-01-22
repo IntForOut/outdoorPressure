@@ -289,6 +289,18 @@
 # https://intforout.github.io/outdoorPressure#EncounteringZone
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#AnimalActivity> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://intforout.github.io/outdoorPressure#affords> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing." .
 # 
 # https://intforout.github.io/outdoorPressure#FilteredTrack
@@ -333,24 +345,24 @@
 # https://intforout.github.io/outdoorPressure#MobilityNetwork
 <https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#Skiing> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#Hiking> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#FastHiking> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#Cycling> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://intforout.github.io/outdoorPressure#affords> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#Skiing> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#Hiking> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#FastHiking> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#Cycling> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://intforout.github.io/outdoorPressure#affords> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr .
 <https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
 # 
@@ -388,10 +400,10 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion
 <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/choucas.ign.fr/oor#RoutePortion> .
-<https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://intforout.github.io/outdoorPressure#Track
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -573,12 +585,12 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
 <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> .
 <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/creator> <https://intforout.github.io/outdoorPressure#aloison> .
-<https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/creator> _:genid8 .
-_:genid8 <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/creator> _:genid9 .
-_:genid9 <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/creator> _:genid12 .
+_:genid12 <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/creator> _:genid13 .
+_:genid13 <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
 <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/publisher> "Journal of Outdoor Recreation and Tourism" .
 <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/dc/terms/title> "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area" .
 <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> <http://purl.org/spar/datacite/firstPage> "100734" .
@@ -696,9 +708,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74143> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74266> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74290> .
-<https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> _:genid10 .
-_:genid10 <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> _:genid14 .
+_:genid14 <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/title> "OutdoorVision export"@en .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
 # 
@@ -740,15 +752,15 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://www.w3.org/ns/prov#generated> <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> .
-<https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://purl.org/dc/terms/creator> _:genid11 .
-_:genid11 <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://purl.org/dc/terms/creator> _:genid12 .
-_:genid12 <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://purl.org/dc/terms/creator> _:genid13 .
-_:genid13 <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://purl.org/dc/terms/creator> _:genid15 .
+_:genid15 <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://purl.org/dc/terms/creator> _:genid16 .
+_:genid16 <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://purl.org/dc/terms/creator> _:genid17 .
+_:genid17 <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
@@ -923,12 +935,12 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#pan3.70151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
 <https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> <https://intforout.github.io/outdoorPressure#mgarel> .
 <https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> <https://intforout.github.io/outdoorPressure#pmarchand> .
-<https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> _:genid14 .
-_:genid14 <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
-<https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> _:genid15 .
-_:genid15 <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> _:genid18 .
+_:genid18 <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/creator> _:genid19 .
+_:genid19 <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
 <https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" .
 <https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" .
 <https://intforout.github.io/outdoorPressure#pan3.70151> <http://purl.org/spar/datacite/firstPage> "3002" .

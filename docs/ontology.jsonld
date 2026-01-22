@@ -8,44 +8,84 @@
     "@id" : "https://intforout.github.io/outdoorPressure#affords"
   } ]
 }, {
-  "@id" : "_:genid10",
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Colin Kerouanton"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Clémence Perrin-Malterre"
+  } ]
+}, {
+  "@id" : "_:genid14",
   "@type" : [ "http://purl.org/dc/terms/Location" ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Parc naturel régional du Massif des Bauges"
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Brice Labbé"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Paul Calloch"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Lorine Peseux"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Nolwenn Risser"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Elodie Petit"
   } ]
 }, {
   "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://intforout.github.io/outdoorPressure#AnimalActivity"
+    }, {
+      "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#affords"
+  } ]
+}, {
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -57,27 +97,6 @@
     }, {
       "@id" : "https://intforout.github.io/outdoorPressure#Skiing"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Colin Kerouanton"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Clémence Perrin-Malterre"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#licence",
@@ -590,6 +609,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  }, {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FastHiking",
@@ -754,9 +775,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#aloison"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid13"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Journal of Outdoor Recreation and Tourism"
@@ -1048,7 +1069,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB",
@@ -1088,7 +1109,7 @@
   }, {
     "@id" : "https://data.ign.fr/id/geofla/commune/74290"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid14"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -1194,7 +1215,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortion",
@@ -1220,11 +1241,11 @@
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid11"
+    "@id" : "_:genid15"
   }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid16"
   }, {
-    "@id" : "_:genid13"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1640,9 +1661,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid14"
+    "@id" : "_:genid18"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid19"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"

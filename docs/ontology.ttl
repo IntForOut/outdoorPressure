@@ -344,7 +344,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#EncounteringZone
 :EncounteringZone rdf:type owl:Class ;
-                  rdfs:subClassOf :LandEntity ;
+                  rdfs:subClassOf :LandEntity ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :affords ;
+                                    owl:allValuesFrom [ rdf:type owl:Class ;
+                                                        owl:unionOf ( :AnimalActivity
+                                                                      :HumanOutdoorActivity
+                                                                    )
+                                                      ]
+                                  ] ;
                   rdfs:comment "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing." .
 
 
@@ -681,8 +689,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
                       <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> ,
                                                          :aloison ,
-                                                         _:genid8 ,
-                                                         _:genid9 ;
+                                                         _:genid12 ,
+                                                         _:genid13 ;
                       <http://purl.org/dc/terms/publisher> "Journal of Outdoor Recreation and Tourism" ;
                       <http://purl.org/dc/terms/title> "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area" ;
                       <http://purl.org/spar/datacite/firstPage> "100734" ;
@@ -699,11 +707,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       <http://www.w3.org/ns/prov#quotedAs> :KerouatonSurvey20142015 ,
                                                            :KerouatonTrack20142015 .
 
-_:genid8 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
+_:genid12 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
 
-_:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
-          <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
+_:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
 
 
 ###  https://intforout.github.io/outdoorPressure#KerouatonQuestionnaire20142015
@@ -816,11 +824,11 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                         <https://data.ign.fr/id/geofla/commune/74143> ,
                                                         <https://data.ign.fr/id/geofla/commune/74266> ,
                                                         <https://data.ign.fr/id/geofla/commune/74290> ,
-                                                        _:genid10 ;
+                                                        _:genid14 ;
                      <http://purl.org/dc/terms/title> "OutdoorVision export"@en ;
                      <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
 
-_:genid10 rdf:type <http://purl.org/dc/terms/Location> ;
+_:genid14 rdf:type <http://purl.org/dc/terms/Location> ;
            <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
 
 
@@ -867,19 +875,19 @@ _:genid10 rdf:type <http://purl.org/dc/terms/Location> ;
                                                    <http://www.w3.org/ns/prov#Activity> ;
                                           <http://www.w3.org/ns/prov#generated> :GroundTruthDenseForestPath ;
                                           <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> ;
-                                          <http://purl.org/dc/terms/creator> _:genid11 ,
-                                                                             _:genid12 ,
-                                                                             _:genid13 ;
+                                          <http://purl.org/dc/terms/creator> _:genid15 ,
+                                                                             _:genid16 ,
+                                                                             _:genid17 ;
                                           <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                           <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
 
-_:genid11 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
 
-_:genid12 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
 
-_:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 
 
@@ -1074,8 +1082,8 @@ _:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
-                                               _:genid14 ,
-                                               _:genid15 ;
+                                               _:genid18 ,
+                                               _:genid19 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1095,10 +1103,10 @@ _:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
             <http://purl.org/spar/datacite/volume> "7" ;
             <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025DB .
 
-_:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid18 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
 
-_:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid19 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
