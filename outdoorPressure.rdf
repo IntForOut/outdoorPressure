@@ -512,14 +512,6 @@
     
 
 
-    <!-- http://www.opengis.net/ont/geosparql#Feature -->
-
-    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -586,7 +578,90 @@
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#LandEntity">
         <rdfs:comment xml:lang="en">An entity located in land : an area, a land, a parcel, a network, an observation.</rdfs:comment>
     </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Landmark -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Landmark">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Sentier -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Sentier">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#AireCampingCar -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AireCampingCar">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
     
+
+
+    <!-- https://intforout.github.io/outdoorPressure#AireDeDetente -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AireDeDetente">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#PlandEau -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#PlandEau">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#SensitiveArea -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#SensitiveArea">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:comment>Zone naturelle sensible où l&apos;environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d&apos;introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc..</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#EncounteringZone -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:comment>Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#MobilityNetwork -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#MobilityNetwork">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#Cycling"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#FastHiking"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#Hiking"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#Skiing"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
+    </owl:Class>
+
 
 
     <!-- https://intforout.github.io/outdoorPressure#LivingCreature -->
@@ -642,7 +717,7 @@
     <!-- https://intforout.github.io/outdoorPressure#Route -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Route">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
     </owl:Class>
     
 
@@ -798,22 +873,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#AireCampingCar -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#AireCampingCar">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#AireDeDetente -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#AireDeDetente">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#BalconyRouteIdentification -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#BalconyRouteIdentification">
@@ -861,15 +920,6 @@
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-04</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-04</prov:startedAtTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#EncounteringZone -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment>Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -931,7 +981,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#EncounteringZone"/>
+        <!-- <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#EncounteringZone"/> -->
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
         <terms:description xml:lang="en">185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates</terms:description>
@@ -1036,7 +1086,7 @@
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#KEROUANTON2024100734"/>
         <terms:description xml:lang="en">A set of tracks. Compleed with questionnaires</terms:description>
         <terms:title xml:lang="fr">Tracks issued from PhD of Colin Kerouaton</terms:title>
-        <www:geodatarepresents rdf:resource="https://intforout.github.io/outdoorPressure#HumanTrack"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanTrack"/>
     </owl:NamedIndividual>
     
 
@@ -1046,14 +1096,6 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#LIFAT">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:name>Laboratoire d&apos;Informatique Fondamentale et Appliquée de Tours (LIFAT)</foaf:name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#Landmark -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Landmark">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
     </owl:NamedIndividual>
     
 
@@ -1130,20 +1172,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#MobilityNetwork -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MobilityNetwork">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#Cycling"/>
-        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#FastHiking"/>
-        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
-        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#Skiing"/>
-        <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#MobilityNetworkDB -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MobilityNetworkDB">
@@ -1158,6 +1186,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OutdoorVisionExport">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanTrack"/>
         <terms:description xml:lang="en">A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered</terms:description>
         <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN"/>
         <terms:spatial rdf:resource="https://data.ign.fr/id/geofla/commune/74056"/>
@@ -1171,16 +1200,7 @@
             </rdf:Description>
         </terms:spatial>
         <terms:title xml:lang="en">OutdoorVision export</terms:title>
-        <www:geodatarepresents rdf:resource="https://intforout.github.io/outdoorPressure#HumanTrack"/>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#PlandEau -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PlandEau">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
     </owl:NamedIndividual>
     
 
@@ -1195,36 +1215,7 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Route -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Route">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:NamedIndividual>
     
-
-
-    <!-- https://intforout.github.io/outdoorPressure#RoutePortion -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#RoutePortion">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#SensitiveArea -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SensitiveArea">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment>Zone naturelle sensible où l&apos;environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d&apos;introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc..</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#Sentier -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Sentier">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:NamedIndividual>
     
 
 
@@ -1258,7 +1249,7 @@
         <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
         <terms:title xml:lang="fr">Portions de route caractérisant une série de virages</terms:title>
         <www:geodataannotates rdf:resource="https://intforout.github.io/outdoorPressure#MobilityNetworkDB"/>
-        <www:geodatarepresents rdf:resource="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion"/>
     </owl:NamedIndividual>
     
 
