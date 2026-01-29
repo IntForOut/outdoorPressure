@@ -1,15 +1,6 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid2"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#affords"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"
   } ],
@@ -17,86 +8,53 @@
     "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Colin Kerouanton"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Clémence Perrin-Malterre"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid4",
   "@type" : [ "http://purl.org/dc/terms/Location" ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Parc naturel régional du Massif des Bauges"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Brice Labbé"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Paul Calloch"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Lorine Peseux"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Nolwenn Risser"
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Elodie Petit"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://intforout.github.io/outdoorPressure#AnimalActivity"
-    }, {
-      "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid6"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#affords"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@id" : "https://intforout.github.io/outdoorPressure#Cycling"
-    }, {
-      "@id" : "https://intforout.github.io/outdoorPressure#FastHiking"
-    }, {
-      "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-    }, {
-      "@id" : "https://intforout.github.io/outdoorPressure#Skiing"
-    } ]
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#licence",
@@ -390,6 +348,12 @@
   "@id" : "http://www.w3.org/ns/prov#wasQuotedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.wikidata.org/entity/Q2625603",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Population"
+  } ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homePage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -609,8 +573,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  }, {
-    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FastHiking",
@@ -630,6 +592,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Track"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Footprint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Région spatiale représe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration",
@@ -681,6 +653,16 @@
   } ],
   "http://www.w3.org/ns/dcat#identifier" : [ {
     "@value" : "ground_truth_dense_forest_path.txt"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Footprint"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
@@ -775,9 +757,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#aloison"
   }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid2"
   }, {
-    "@id" : "_:genid13"
+    "@id" : "_:genid3"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Journal of Outdoor Recreation and Tourism"
@@ -875,7 +857,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An entity located in land : an area, a land, a parcel, a network, an observation."
+    "@value" : "An entity located in land : an area, a land, a parcel, a footprint, an observation."
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Landmark",
@@ -1068,8 +1050,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  }, {
-    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB",
@@ -1109,7 +1089,7 @@
   }, {
     "@id" : "https://data.ign.fr/id/geofla/commune/74290"
   }, {
-    "@id" : "_:genid14"
+    "@id" : "_:genid4"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -1129,6 +1109,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Ensemble d'individus d'une espèce dans une aire."
+  }, {
+    "@language" : "en",
+    "@value" : "Ensemble of individuals of a species in an area, or their number."
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision",
@@ -1215,7 +1205,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
   }, {
-    "@id" : "_:genid11"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortion",
@@ -1241,11 +1231,11 @@
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid5"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid6"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1661,9 +1651,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid8"
   }, {
-    "@id" : "_:genid19"
+    "@id" : "_:genid9"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"

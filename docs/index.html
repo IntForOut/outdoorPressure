@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Thu Jan 22 16:54:31 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Thu Jan 29 08:11:48 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -149,6 +149,18 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#Footprint"
+         title="https://intforout.github.io/outdoorPressure#Footprint">
+         <span>Footprint</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HikerFootprint"
+         title="https://intforout.github.io/outdoorPressure#HikerFootprint">
+         <span>Hiker Footprint</span>
+      </a>
+   </li>
+   <li>
       <a href="#HumanOutdoorActivity"
          title="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity">
          <span>Human Outdoor Activity</span>
@@ -209,7 +221,18 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#Population"
+         title="https://intforout.github.io/outdoorPressure#Population">
+         <span>Population</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Portion of route</a>
+   </li>
+   <li>
+      <a href="#http://www.wikidata.org/entity/Q2625603" title="http://www.wikidata.org/entity/Q2625603">
+         <span>Q2625603</span>
+      </a>
    </li>
    <li>
       <a href="#ResilientRoute"
@@ -705,6 +728,8 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#AnimalTrack" title="https://intforout.github.io/outdoorPressure#AnimalTrack"> <span>Animal Track</span> </a></li>
   <li><a href="#EncounteringZone" title="https://intforout.github.io/outdoorPressure#EncounteringZone"> <span>Encountering Zone</span> </a></li>
   <li><a href="#FilteredTrack" title="https://intforout.github.io/outdoorPressure#FilteredTrack"> <span>Filtered Track</span> </a></li>
+  <li><a href="#Footprint" title="https://intforout.github.io/outdoorPressure#Footprint"> <span>Footprint</span> </a></li>
+  <li><a href="#HikerFootprint" title="https://intforout.github.io/outdoorPressure#HikerFootprint"> <span>Hiker Footprint</span> </a></li>
   <li><a href="#HumanOutdoorActivity" title="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"> <span>Human Outdoor Activity</span> </a></li>
   <li><a href="#HumanTrack" title="https://intforout.github.io/outdoorPressure#HumanTrack"> <span>Human Track</span> </a></li>
   <li><a href="#LandEntity" title="https://intforout.github.io/outdoorPressure#LandEntity"> <span>Land Entity</span> </a></li>
@@ -715,7 +740,9 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#MobilityNetwork" title="https://intforout.github.io/outdoorPressure#MobilityNetwork"> <span>Mobility Network</span> </a></li>
   <li><a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute"> <span>Named Route</span> </a></li>
   <li><a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau"> <span>Pland Eau</span> </a></li>
+  <li><a href="#Population" title="https://intforout.github.io/outdoorPressure#Population"> <span>Population</span> </a></li>
   <li><a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Portion of route</a></li>
+  <li><a href="#http://www.wikidata.org/entity/Q2625603" title="http://www.wikidata.org/entity/Q2625603"> <span>Q2625603</span> </a></li>
   <li><a href="#ResilientRoute" title="https://intforout.github.io/outdoorPressure#ResilientRoute"> <span>Resilient Route</span> </a></li>
   <li><a href="#Route" title="https://intforout.github.io/outdoorPressure#Route"> <span>Route</span> </a></li>
   <li><a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea"> <span>Sensitive Area</span> </a></li>
@@ -825,6 +852,42 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Footprint">
+  <h3>Footprint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#Footprint</p>
+  <div class="comment">
+   <span class="markdown">Région spatiale représe</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#LandEntity" title="https://intforout.github.io/outdoorPressure#LandEntity">Land Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#HikerFootprint" title="https://intforout.github.io/outdoorPressure#HikerFootprint">Hiker Footprint</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HikerFootprint">
+  <h3>Hiker Footprint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#HikerFootprint</p>
+  <div class="comment">
+   <span class="markdown">A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Footprint" title="https://intforout.github.io/outdoorPressure#Footprint">Footprint</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="HumanOutdoorActivity">
   <h3>Human Outdoor Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#HumanOutdoorActivity</p>
@@ -868,14 +931,14 @@ This section provides details for each class and property defined by Mountain ou
   <h3>Land Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#LandEntity</p>
   <div class="comment">
-   <span class="markdown">An entity located in land : an area, a land, a parcel, a network, an observation.</span>
+   <span class="markdown">An entity located in land : an area, a land, a parcel, a footprint, an observation.</span>
   </div>
   <dl class="description">
    <dt>
     has sub-classes
    </dt>
    <dd>
-    <a href="#AireCampingCar" title="https://intforout.github.io/outdoorPressure#AireCampingCar">Aire Camping Car</a> <sup class="type-c" title="class">c</sup>, <a href="#AireDeDetente" title="https://intforout.github.io/outdoorPressure#AireDeDetente">Aire De Detente</a> <sup class="type-c" title="class">c</sup>, <a href="#EncounteringZone" title="https://intforout.github.io/outdoorPressure#EncounteringZone">Encountering Zone</a> <sup class="type-c" title="class">c</sup>, <a href="#Landmark" title="https://intforout.github.io/outdoorPressure#Landmark">Landmark</a> <sup class="type-c" title="class">c</sup>, <a href="#MobilityNetwork" title="https://intforout.github.io/outdoorPressure#MobilityNetwork">Mobility Network</a> <sup class="type-c" title="class">c</sup>, <a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau">Pland Eau</a> <sup class="type-c" title="class">c</sup>, <a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a> <sup class="type-c" title="class">c</sup>, <a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea">Sensitive Area</a> <sup class="type-c" title="class">c</sup>, <a href="#Sentier" title="https://intforout.github.io/outdoorPressure#Sentier">Sentier</a> <sup class="type-c" title="class">c</sup>
+    <a href="#AireCampingCar" title="https://intforout.github.io/outdoorPressure#AireCampingCar">Aire Camping Car</a> <sup class="type-c" title="class">c</sup>, <a href="#AireDeDetente" title="https://intforout.github.io/outdoorPressure#AireDeDetente">Aire De Detente</a> <sup class="type-c" title="class">c</sup>, <a href="#EncounteringZone" title="https://intforout.github.io/outdoorPressure#EncounteringZone">Encountering Zone</a> <sup class="type-c" title="class">c</sup>, <a href="#Footprint" title="https://intforout.github.io/outdoorPressure#Footprint">Footprint</a> <sup class="type-c" title="class">c</sup>, <a href="#Landmark" title="https://intforout.github.io/outdoorPressure#Landmark">Landmark</a> <sup class="type-c" title="class">c</sup>, <a href="#MobilityNetwork" title="https://intforout.github.io/outdoorPressure#MobilityNetwork">Mobility Network</a> <sup class="type-c" title="class">c</sup>, <a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau">Pland Eau</a> <sup class="type-c" title="class">c</sup>, <a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a> <sup class="type-c" title="class">c</sup>, <a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea">Sensitive Area</a> <sup class="type-c" title="class">c</sup>, <a href="#Sentier" title="https://intforout.github.io/outdoorPressure#Sentier">Sentier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -988,6 +1051,14 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Population">
+  <h3>Population<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#Population</p>
+  <div class="comment">
+   <span class="markdown">Ensemble of individuals of a species in an area, or their number.</span>
+  </div>
+  <dl class="description"></dl>
+ </div>
  <div class="entity" id="http://purl.org/choucas.ign.fr/oor#RoutePortion">
   <h3>Portion of route<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/choucas.ign.fr/oor#RoutePortion</p>
@@ -1006,6 +1077,18 @@ This section provides details for each class and property defined by Mountain ou
    </dt>
    <dd>
     <a href="#SwitchbackRoutePortion" title="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion">Switchback Route Portion</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.wikidata.org/entity/Q2625603">
+  <h3>Q2625603<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.wikidata.org/entity/Q2625603</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Population" title="https://intforout.github.io/outdoorPressure#Population">Population</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

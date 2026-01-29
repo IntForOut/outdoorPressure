@@ -315,6 +315,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
 
 
+###  http://www.wikidata.org/entity/Q2625603
+<http://www.wikidata.org/entity/Q2625603> rdf:type owl:Class ;
+                                          owl:equivalentClass :Population .
+
+
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
           rdfs:comment "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output." .
@@ -344,15 +349,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#EncounteringZone
 :EncounteringZone rdf:type owl:Class ;
-                  rdfs:subClassOf :LandEntity ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :affords ;
-                                    owl:allValuesFrom [ rdf:type owl:Class ;
-                                                        owl:unionOf ( :AnimalActivity
-                                                                      :HumanOutdoorActivity
-                                                                    )
-                                                      ]
-                                  ] ;
+                  rdfs:subClassOf :LandEntity ;
                   rdfs:comment "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing." .
 
 
@@ -361,6 +358,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                rdfs:subClassOf :Track ;
                rdfs:comment "Filtered traces represent a set of unstructured traces assumed to follow the network and used for a specific case study. They result from a user-defined filtering process (spatial, temporal, activity type, etc.)."@en ,
                             "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#Footprint
+:Footprint rdf:type owl:Class ;
+           rdfs:subClassOf :LandEntity ;
+           rdfs:comment "Région spatiale représe"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#HikerFootprint
+:HikerFootprint rdf:type owl:Class ;
+                rdfs:subClassOf :Footprint ;
+                rdfs:comment "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
@@ -376,7 +385,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#LandEntity
 :LandEntity rdf:type owl:Class ;
-            rdfs:comment "An entity located in land : an area, a land, a parcel, a network, an observation."@en .
+            rdfs:comment "An entity located in land : an area, a land, a parcel, a footprint, an observation."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#Landmark
@@ -405,17 +414,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#MobilityNetwork
 :MobilityNetwork rdf:type owl:Class ;
-                 rdfs:subClassOf :LandEntity ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :affords ;
-                                   owl:allValuesFrom [ rdf:type owl:Class ;
-                                                       owl:oneOf ( :Cycling
-                                                                   :FastHiking
-                                                                   :Hiking
-                                                                   :Skiing
-                                                                 )
-                                                     ]
-                                 ] ;
+                 rdfs:subClassOf :LandEntity ;
                  rdfs:comment "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr ,
                               "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
 
@@ -432,6 +431,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#PlandEau
 :PlandEau rdf:type owl:Class ;
           rdfs:subClassOf :LandEntity .
+
+
+###  https://intforout.github.io/outdoorPressure#Population
+:Population rdf:type owl:Class ;
+            rdfs:comment "Ensemble d'individus d'une espèce dans une aire."@fr ,
+                         "Ensemble of individuals of a species in an area, or their number."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
@@ -689,8 +694,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
                       <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ljolivet> ,
                                                          :aloison ,
-                                                         _:genid12 ,
-                                                         _:genid13 ;
+                                                         _:genid2 ,
+                                                         _:genid3 ;
                       <http://purl.org/dc/terms/publisher> "Journal of Outdoor Recreation and Tourism" ;
                       <http://purl.org/dc/terms/title> "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area" ;
                       <http://purl.org/spar/datacite/firstPage> "100734" ;
@@ -707,11 +712,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       <http://www.w3.org/ns/prov#quotedAs> :KerouatonSurvey20142015 ,
                                                            :KerouatonTrack20142015 .
 
-_:genid12 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
+_:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
 
-_:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
+_:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Clémence Perrin-Malterre" .
 
 
 ###  https://intforout.github.io/outdoorPressure#KerouatonQuestionnaire20142015
@@ -824,12 +829,12 @@ _:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                         <https://data.ign.fr/id/geofla/commune/74143> ,
                                                         <https://data.ign.fr/id/geofla/commune/74266> ,
                                                         <https://data.ign.fr/id/geofla/commune/74290> ,
-                                                        _:genid14 ;
+                                                        _:genid4 ;
                      <http://purl.org/dc/terms/title> "OutdoorVision export"@en ;
                      <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
 
-_:genid14 rdf:type <http://purl.org/dc/terms/Location> ;
-           <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
+_:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
+          <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
@@ -875,20 +880,20 @@ _:genid14 rdf:type <http://purl.org/dc/terms/Location> ;
                                                    <http://www.w3.org/ns/prov#Activity> ;
                                           <http://www.w3.org/ns/prov#generated> :GroundTruthDenseForestPath ;
                                           <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> ;
-                                          <http://purl.org/dc/terms/creator> _:genid15 ,
-                                                                             _:genid16 ,
-                                                                             _:genid17 ;
+                                          <http://purl.org/dc/terms/creator> _:genid5 ,
+                                                                             _:genid6 ,
+                                                                             _:genid7 ;
                                           <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                           <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
 
-_:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
+_:genid5 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
 
-_:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
+_:genid6 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
 
-_:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
+_:genid7 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 
 
 ###  https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
@@ -1082,8 +1087,8 @@ _:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
-                                               _:genid18 ,
-                                               _:genid19 ;
+                                               _:genid8 ,
+                                               _:genid9 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1103,11 +1108,11 @@ _:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
             <http://purl.org/spar/datacite/volume> "7" ;
             <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025DB .
 
-_:genid18 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
+_:genid8 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
 
-_:genid19 rdf:type <http://www.w3.org/ns/prov#Person> ;
-           <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
+_:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
 ###  https://intforout.github.io/outdoorPressure#parcdesbauges
