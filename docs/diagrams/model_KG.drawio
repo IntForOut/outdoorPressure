@@ -346,7 +346,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="llSMe4mzq6sCKyXoZhfb" name="schema article">
+  <diagram id="llSMe4mzq6sCKyXoZhfb" name="schemas article">
     <mxGraphModel dx="2955" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -584,6 +584,64 @@
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-6" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="-1550" y="210.16" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="450" width="1070" x="-1560" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-8" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Activity&lt;/b&gt;" vertex="1">
+          <mxGeometry height="82.96" width="150" x="-1130" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-9" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;HumanOutdoor&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="145" x="-1125" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-10" edge="1" parent="1" source="9-Ii2cxU_c7QhBBOTGCk-9" style="edgeStyle=none;html=1;entryX=0.633;entryY=0.964;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;curved=1;dashed=1;" target="9-Ii2cxU_c7QhBBOTGCk-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1190" y="840" />
+            </Array>
+            <mxPoint x="-1310" y="476" as="sourcePoint" />
+            <mxPoint x="-1141" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-11" connectable="0" parent="9-Ii2cxU_c7QhBBOTGCk-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
+          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
+            <mxPoint x="32" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-13" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Hiking&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="145" x="-1125" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-14" edge="1" parent="1" source="9-Ii2cxU_c7QhBBOTGCk-13" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="9-Ii2cxU_c7QhBBOTGCk-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1280" y="950" />
+            </Array>
+            <mxPoint x="-1110" y="884" as="sourcePoint" />
+            <mxPoint x="-1024" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-15" connectable="0" parent="9-Ii2cxU_c7QhBBOTGCk-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
+          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
+            <mxPoint x="-24" y="-32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-16" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Catalogued &lt;br&gt;resource&lt;/b&gt;" vertex="1">
+          <mxGeometry height="117.92" width="160" x="-849.92" y="685.04" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-17" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;LandEntity&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="-1350" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-18" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="-1470" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-19" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="42" width="240" x="-1520" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-20" parent="9-Ii2cxU_c7QhBBOTGCk-19" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="42" width="210" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-21" parent="9-Ii2cxU_c7QhBBOTGCk-19" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=25;" value="Human Activities" vertex="1">
+          <mxGeometry height="10.5" width="233.88101983002832" x="6.118980169971674" y="13.565999999999988" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
