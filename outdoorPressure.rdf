@@ -576,7 +576,36 @@
     <!-- https://intforout.github.io/outdoorPressure#LandEntity -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#LandEntity">
-        <rdfs:comment xml:lang="en">An entity located in land : an area, a land, a parcel, a network, an observation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An entity located in land : an area, a land, a parcel, a footprint, an observation.</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Population -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Population">
+        <rdfs:comment xml:lang="en">Ensemble of individuals of a species in an area, or their number.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Ensemble d'individus d'une espèce dans une aire.</rdfs:comment>
+        <owl:equivalentClass
+            rdf:resource="http://www.wikidata.org/entity/Q2625603"/>
+    </owl:Class>
+
+    
+    
+    <!-- https://intforout.github.io/outdoorPressure#Footprint -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Footprint">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:comment xml:lang="en">Région spatiale représe</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#HikerFootprint -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HikerFootprint">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Footprint"/>
+        <rdfs:comment xml:lang="en">A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice.</rdfs:comment>
     </owl:Class>
 
 
@@ -634,19 +663,6 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#AnimalActivity"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
     </owl:Class>
 
@@ -656,21 +672,6 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#MobilityNetwork">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#Cycling"/>
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#FastHiking"/>
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#Hiking"/>
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#Skiing"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
         <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
     </owl:Class>
