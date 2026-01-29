@@ -626,13 +626,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-16" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Catalogued &lt;br&gt;resource&lt;/b&gt;" vertex="1">
-          <mxGeometry height="117.92" width="160" x="-849.92" y="685.04" as="geometry" />
+          <mxGeometry height="117.92" width="160" x="-689.92" y="662.0799999999999" as="geometry" />
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-17" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;LandEntity&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1350" y="690" as="geometry" />
+          <mxGeometry height="70" width="120" x="-1480.5" y="690" as="geometry" />
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-18" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1490" y="865" as="geometry" />
+          <mxGeometry height="70" width="120" x="-1270" y="662" as="geometry" />
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-19" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="42" width="240" x="-1520" y="620" as="geometry" />
@@ -644,10 +644,10 @@
           <mxGeometry height="10.5" width="233.88101983002832" x="6.118980169971674" y="13.565999999999988" as="geometry" />
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="HikersFootPrint" vertex="1">
-          <mxGeometry height="60" width="120" x="-770" y="870" as="geometry" />
+          <mxGeometry height="60" width="120" x="-670" y="820" as="geometry" />
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-23" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Footprint&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1350" y="780" as="geometry" />
+          <mxGeometry height="70" width="120" x="-1560" y="780" as="geometry" />
         </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-24" edge="1" parent="1" source="9-Ii2cxU_c7QhBBOTGCk-6" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HnWOWkFpi3NPROEjY7qN-31">
           <mxGeometry relative="1" as="geometry">
@@ -695,6 +695,12 @@
             <mxPoint x="-955" y="60" as="sourcePoint" />
             <mxPoint x="-1257" y="316" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-33" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Route&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="-1390" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-34" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Road or Path&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="-1480.5" y="850" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
