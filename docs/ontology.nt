@@ -22,11 +22,17 @@
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -217,18 +223,16 @@
 # http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation
 <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://intforout.github.io/outdoorPressure#activity
-<https://intforout.github.io/outdoorPressure#activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#activity> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Activity> .
-# 
 # https://intforout.github.io/outdoorPressure#affords
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Activity> .
+<https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 # 
-# https://intforout.github.io/outdoorPressure#landEntity
-<https://intforout.github.io/outdoorPressure#landEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#landEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#LandEntity> .
+# https://intforout.github.io/outdoorPressure#profile
+<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/URI> .
 # 
 # 
 # 
@@ -239,11 +243,8 @@
 # #################################################################
 # 
 # 
-# https://intforout.github.io/outdoorPressure#hasProfile
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/URI> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URI" .
+# https://intforout.github.io/outdoorPressure#profile
+<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # 
 # 
@@ -260,6 +261,12 @@
 <http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2000/01/rdf-schema#comment> "A portion of a route representing channels along which people move, potentially heterogeneous in its surface or structure. It may or may not be paved or vehicle-accessible."@fr .
 <http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Portion de route"@fr .
 <http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Portion of route"@en .
+# 
+# http://purl.org/dc/terms/URI
+<http://purl.org/dc/terms/URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse
+<http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -310,6 +317,10 @@
 <https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Footprint> .
 <https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/2000/01/rdf-schema#comment> "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."@en .
+# 
+# https://intforout.github.io/outdoorPressure#Hiking
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
 # 
 # https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -362,8 +373,7 @@
 # 
 # https://intforout.github.io/outdoorPressure#Population
 <https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble d'individus d'une espèce dans une aire."@fr .
-<https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble of individuals of a species in an area, or their number."@en .
+<https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble of individuals of a species in an land entity."@en .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -630,7 +640,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
-<https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#9798400711077> .
+<https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#sigspatial24vandamme> .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://purl.org/dc/terms/issued> "2024-01-18"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -1042,11 +1052,37 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson> <http://www.w3.org/ns/dcat#accessService> <https://intforout.github.io/outdoorPressure#api-refugesinfo> .
 <https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson> <http://www.w3.org/ns/dcat#format> "GeoJSON" .
 # 
+# https://intforout.github.io/outdoorPressure#sigspatial24vandamme
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#MOUSLS> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://intforout.github.io/outdoorPressure#FusionCalibration> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/isPartOf> "SIGSPATIAL '24" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/dc/terms/title> "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/firstPage> "633" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/lastPage> "636" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/publicationYear> "2024" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/relatedIdentifier> "10.1145/3678717.3691325" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.1145/3678717.3691325" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/resourceType> <http://purl.org/spar/datacite/ConferenceProceeding> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/subject> "global navigation satellite system" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/subject> "metrological analysis" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/subject> "synthetic and real world trajectories" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://purl.org/spar/datacite/subject> "trajectory aggregation" .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#MOUSLS> .
+<https://intforout.github.io/outdoorPressure#sigspatial24vandamme> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#vincennesfusion> .
+# 
 # https://intforout.github.io/outdoorPressure#vincennesfusion
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#FusionCalibration> .
-<https://intforout.github.io/outdoorPressure#vincennesfusion> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#9798400711077> .
+<https://intforout.github.io/outdoorPressure#vincennesfusion> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#sigspatial24vandamme> .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#MergedTrack> .
@@ -1068,32 +1104,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#visorando-route> <http://purl.org/dc/terms/title> "Visorando routes"@fr .
 <https://intforout.github.io/outdoorPressure#visorando-route> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#NamedRoute> .
 # 
-# https://intforout.github.io/outdoorPressure#9798400711077
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#MOUSLS> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://intforout.github.io/outdoorPressure#FusionCalibration> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/isPartOf> "SIGSPATIAL '24" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/dc/terms/title> "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/firstPage> "633" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/lastPage> "636" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/publicationYear> "2024" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/relatedIdentifier> "10.1145/3678717.3691325" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.1145/3678717.3691325" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/resourceType> <http://purl.org/spar/datacite/ConferenceProceeding> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/subject> "global navigation satellite system" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/subject> "metrological analysis" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/subject> "synthetic and real world trajectories" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://purl.org/spar/datacite/subject> "trajectory aggregation" .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#MOUSLS> .
-<https://intforout.github.io/outdoorPressure#9798400711077> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#vincennesfusion> .
-# 
 # https://www.refuges.info/api/
 <https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -1108,5 +1118,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en .
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
+# 
+<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

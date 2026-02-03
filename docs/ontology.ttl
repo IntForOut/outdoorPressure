@@ -28,12 +28,20 @@
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
@@ -272,31 +280,25 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> rdf:type owl:ObjectProperty .
 
 
-###  https://intforout.github.io/outdoorPressure#activity
-:activity rdf:type owl:ObjectProperty ;
-          rdfs:range :Activity .
-
-
 ###  https://intforout.github.io/outdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
          rdfs:domain :LandEntity ;
-         rdfs:range :Activity .
+         rdfs:range :Activity ;
+         rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 
 
-###  https://intforout.github.io/outdoorPressure#landEntity
-:landEntity rdf:type owl:ObjectProperty ;
-            rdfs:range :LandEntity .
+###  https://intforout.github.io/outdoorPressure#profile
+:profile rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+         rdfs:range <http://purl.org/dc/terms/URI> .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://intforout.github.io/outdoorPressure#hasProfile
-:hasProfile rdf:type owl:DatatypeProperty ;
-            rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
-            rdfs:range <http://purl.org/dc/terms/URI> ;
-            rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URI" .
+###  https://intforout.github.io/outdoorPressure#profile
+:profile rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -309,6 +311,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                   rdfs:comment "A portion of a route representing channels along which people move, potentially heterogeneous in its surface or structure. It may or may not be paved or vehicle-accessible."@fr ;
                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Portion de route"@fr ,
                                                                                                   "Portion of route"@en .
+
+
+###  http://purl.org/dc/terms/URI
+<http://purl.org/dc/terms/URI> rdf:type owl:Class .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse
+<http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -370,6 +380,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :HikerFootprint rdf:type owl:Class ;
                 rdfs:subClassOf :Footprint ;
                 rdfs:comment "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."@en .
+
+
+###  https://intforout.github.io/outdoorPressure#Hiking
+:Hiking rdf:type owl:Class ;
+        rdfs:subClassOf :HumanOutdoorActivity .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
@@ -435,8 +450,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Population
 :Population rdf:type owl:Class ;
-            rdfs:comment "Ensemble d'individus d'une espèce dans une aire."@fr ,
-                         "Ensemble of individuals of a species in an area, or their number."@en .
+            rdfs:comment "Ensemble of individuals of a species in an land entity."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
@@ -757,7 +771,7 @@ _:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
                  <http://www.w3.org/ns/dcat#Dataset> ;
         <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                     <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
-        <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#9798400711077> ;
+        <http://www.w3.org/ns/prov#wasQuotedFrom> :sigspatial24vandamme ;
         <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
         <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en ;
         <http://purl.org/dc/terms/issued> "2024-01-18"^^xsd:date ;
@@ -1220,11 +1234,38 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
                             <http://www.w3.org/ns/dcat#format> "GeoJSON" .
 
 
+###  https://intforout.github.io/outdoorPressure#sigspatial24vandamme
+:sigspatial24vandamme rdf:type owl:NamedIndividual ,
+                               <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
+                      <http://purl.org/dc/terms/hasPart> :MOUSLS ;
+                      <http://www.w3.org/ns/prov#wasInfluencedBy> :FusionCalibration ;
+                      <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
+                                                         <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
+                                                         <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
+                      <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" ,
+                                                          "SIGSPATIAL '24" ;
+                      <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" ;
+                      <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" ;
+                      <http://purl.org/dc/terms/title> "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories" ;
+                      <http://purl.org/spar/datacite/firstPage> "633" ;
+                      <http://purl.org/spar/datacite/lastPage> "636" ;
+                      <http://purl.org/spar/datacite/publicationYear> "2024" ;
+                      <http://purl.org/spar/datacite/relatedIdentifier> "10.1145/3678717.3691325" ,
+                                                                        "https://doi.org/10.1145/3678717.3691325" ;
+                      <http://purl.org/spar/datacite/resourceType> <http://purl.org/spar/datacite/ConferenceProceeding> ;
+                      <http://purl.org/spar/datacite/subject> "global navigation satellite system" ,
+                                                              "metrological analysis" ,
+                                                              "synthetic and real world trajectories" ,
+                                                              "trajectory aggregation" ;
+                      <http://www.w3.org/ns/prov#quotedAs> :MOUSLS ,
+                                                           :vincennesfusion .
+
+
 ###  https://intforout.github.io/outdoorPressure#vincennesfusion
 :vincennesfusion rdf:type owl:NamedIndividual ,
                           <http://www.w3.org/ns/dcat#Dataset> ;
                  <http://www.w3.org/ns/prov#wasGeneratedBy> :FusionCalibration ;
-                 <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#9798400711077> ;
+                 <http://www.w3.org/ns/prov#wasQuotedFrom> :sigspatial24vandamme ;
                  <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
                  <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr ;
                  <http://purl.org/www.umr-lastig.fr/geodatarepresents> :MergedTrack .
@@ -1249,33 +1290,6 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
                  <http://purl.org/www.umr-lastig.fr/geodatarepresents> :NamedRoute .
 
 
-###  https://intforout.github.io/outdoorPressure#9798400711077
-<https://intforout.github.io/outdoorPressure#9798400711077> rdf:type owl:NamedIndividual ,
-                                                                     <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
-                                                            <http://purl.org/dc/terms/hasPart> :MOUSLS ;
-                                                            <http://www.w3.org/ns/prov#wasInfluencedBy> :FusionCalibration ;
-                                                            <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
-                                                                                               <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
-                                                                                               <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
-                                                            <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" ,
-                                                                                                "SIGSPATIAL '24" ;
-                                                            <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" ;
-                                                            <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" ;
-                                                            <http://purl.org/dc/terms/title> "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories" ;
-                                                            <http://purl.org/spar/datacite/firstPage> "633" ;
-                                                            <http://purl.org/spar/datacite/lastPage> "636" ;
-                                                            <http://purl.org/spar/datacite/publicationYear> "2024" ;
-                                                            <http://purl.org/spar/datacite/relatedIdentifier> "10.1145/3678717.3691325" ,
-                                                                                                              "https://doi.org/10.1145/3678717.3691325" ;
-                                                            <http://purl.org/spar/datacite/resourceType> <http://purl.org/spar/datacite/ConferenceProceeding> ;
-                                                            <http://purl.org/spar/datacite/subject> "global navigation satellite system" ,
-                                                                                                    "metrological analysis" ,
-                                                                                                    "synthetic and real world trajectories" ,
-                                                                                                    "trajectory aggregation" ;
-                                                            <http://www.w3.org/ns/prov#quotedAs> :MOUSLS ,
-                                                                                                 :vincennesfusion .
-
-
 ###  https://www.refuges.info/api/
 <https://www.refuges.info/api/> rdf:type owl:NamedIndividual .
 
@@ -1286,6 +1300,9 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 :HumanTrack rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
                          "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
+
+
+:profile rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

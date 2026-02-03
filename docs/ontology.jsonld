@@ -107,10 +107,19 @@
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/URI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/conformsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
@@ -248,6 +257,9 @@
     "@language" : "fr",
     "@value" : "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"
   } ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodataannotates",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -407,67 +419,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#9798400711077",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond"
-  }, {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  }, {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
-  } ],
-  "http://purl.org/dc/terms/hasPart" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
-  } ],
-  "http://purl.org/dc/terms/isPartOf" : [ {
-    "@value" : "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems"
-  }, {
-    "@value" : "SIGSPATIAL '24"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Association for Computing Machinery"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@value" : "Atlanta, GA, USA"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories"
-  } ],
-  "http://purl.org/spar/datacite/firstPage" : [ {
-    "@value" : "633"
-  } ],
-  "http://purl.org/spar/datacite/lastPage" : [ {
-    "@value" : "636"
-  } ],
-  "http://purl.org/spar/datacite/publicationYear" : [ {
-    "@value" : "2024"
-  } ],
-  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
-    "@value" : "10.1145/3678717.3691325"
-  }, {
-    "@value" : "https://doi.org/10.1145/3678717.3691325"
-  } ],
-  "http://purl.org/spar/datacite/resourceType" : [ {
-    "@id" : "http://purl.org/spar/datacite/ConferenceProceeding"
-  } ],
-  "http://purl.org/spar/datacite/subject" : [ {
-    "@value" : "global navigation satellite system"
-  }, {
-    "@value" : "metrological analysis"
-  }, {
-    "@value" : "synthetic and real world trajectories"
-  }, {
-    "@value" : "trajectory aggregation"
-  } ],
-  "http://www.w3.org/ns/prov#quotedAs" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#vincennesfusion"
-  } ],
-  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Activity",
@@ -666,8 +617,11 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
   } ]
 }, {
@@ -733,7 +687,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#IntForOutETLDB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse", "http://www.w3.org/ns/dcat#Dataset" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"
   } ],
@@ -745,6 +699,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "Dataset associated with IntForOut ETL framework"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Dataset associated with IntForOut ETL framework"
@@ -915,7 +872,7 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#9798400711077"
+    "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Marchandetal2025DB",
@@ -1114,11 +1071,8 @@
   "@id" : "https://intforout.github.io/outdoorPressure#Population",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Ensemble d'individus d'une espèce dans une aire."
-  }, {
     "@language" : "en",
-    "@value" : "Ensemble of individuals of a species in an area, or their number."
+    "@value" : "Ensemble of individuals of a species in an land entity."
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision",
@@ -1326,14 +1280,11 @@
     "@id" : "https://intforout.github.io/outdoorPressure#AnimalTrack"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#activity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#affords",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Capacity of a place, or land, to support a given activity, effectively or potentially"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ],
@@ -1573,24 +1524,6 @@
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Cirkwi"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#hasProfile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URI"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/dc/terms/URI"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#landEntity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#locs-export",
@@ -1841,6 +1774,18 @@
     "@value" : "Pôle ressources national sports de nature (PRNSN)"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/URI"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
@@ -1886,6 +1831,67 @@
     "@value" : "GeoJSON"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond"
+  }, {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  }, {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
+  } ],
+  "http://purl.org/dc/terms/isPartOf" : [ {
+    "@value" : "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems"
+  }, {
+    "@value" : "SIGSPATIAL '24"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Association for Computing Machinery"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@value" : "Atlanta, GA, USA"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories"
+  } ],
+  "http://purl.org/spar/datacite/firstPage" : [ {
+    "@value" : "633"
+  } ],
+  "http://purl.org/spar/datacite/lastPage" : [ {
+    "@value" : "636"
+  } ],
+  "http://purl.org/spar/datacite/publicationYear" : [ {
+    "@value" : "2024"
+  } ],
+  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
+    "@value" : "10.1145/3678717.3691325"
+  }, {
+    "@value" : "https://doi.org/10.1145/3678717.3691325"
+  } ],
+  "http://purl.org/spar/datacite/resourceType" : [ {
+    "@id" : "http://purl.org/spar/datacite/ConferenceProceeding"
+  } ],
+  "http://purl.org/spar/datacite/subject" : [ {
+    "@value" : "global navigation satellite system"
+  }, {
+    "@value" : "metrological analysis"
+  }, {
+    "@value" : "synthetic and real world trajectories"
+  }, {
+    "@value" : "trajectory aggregation"
+  } ],
+  "http://www.w3.org/ns/prov#quotedAs" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#vincennesfusion"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#vincennesfusion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -1903,7 +1909,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#9798400711077"
+    "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#visorando",
