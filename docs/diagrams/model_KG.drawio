@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.6" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.6" pages="3">
   <diagram name="Page-1" id="pobyN1H7GCeraHC8iTM_">
     <mxGraphModel dx="2340" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -573,70 +573,6 @@
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-6" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="-1360.5" y="170" as="geometry" />
         </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="450" width="1070" x="-1560" y="600" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-8" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Activity&lt;/b&gt;" vertex="1">
-          <mxGeometry height="82.96" width="150" x="-1130" y="720" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-9" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;HumanOutdoor&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="145" x="-1125" y="840" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-10" edge="1" parent="1" source="9-Ii2cxU_c7QhBBOTGCk-9" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;rounded=0;curved=1;dashed=1;" target="9-Ii2cxU_c7QhBBOTGCk-8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-1190" y="840" />
-            </Array>
-            <mxPoint x="-1310" y="476" as="sourcePoint" />
-            <mxPoint x="-1141" y="390" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-11" connectable="0" parent="9-Ii2cxU_c7QhBBOTGCk-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
-          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
-            <mxPoint x="32" y="-16" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-13" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Hiking&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="145" x="-1125" y="950" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-14" edge="1" parent="1" source="9-Ii2cxU_c7QhBBOTGCk-13" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="9-Ii2cxU_c7QhBBOTGCk-9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-1280" y="950" />
-            </Array>
-            <mxPoint x="-1110" y="884" as="sourcePoint" />
-            <mxPoint x="-1024" y="800" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-15" connectable="0" parent="9-Ii2cxU_c7QhBBOTGCk-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
-          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
-            <mxPoint x="-24" y="-32" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-16" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Catalogued &lt;br&gt;resource&lt;/b&gt;" vertex="1">
-          <mxGeometry height="117.92" width="160" x="-689.92" y="662.0799999999999" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-17" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;LandEntity&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1480.5" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-18" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1270" y="662" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-19" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="42" width="240" x="-1520" y="620" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-20" parent="9-Ii2cxU_c7QhBBOTGCk-19" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="42" width="210" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-21" parent="9-Ii2cxU_c7QhBBOTGCk-19" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=25;" value="Human Activities" vertex="1">
-          <mxGeometry height="10.5" width="233.88101983002832" x="6.118980169971674" y="13.565999999999988" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="HikersFootPrint" vertex="1">
-          <mxGeometry height="60" width="120" x="-670" y="820" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-23" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Footprint&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1560" y="780" as="geometry" />
-        </mxCell>
         <mxCell id="9-Ii2cxU_c7QhBBOTGCk-24" edge="1" parent="1" source="9-Ii2cxU_c7QhBBOTGCk-6" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HnWOWkFpi3NPROEjY7qN-31">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -679,14 +615,86 @@
             <mxPoint x="30" y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-33" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Route&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1390" y="780" as="geometry" />
-        </mxCell>
-        <mxCell id="9-Ii2cxU_c7QhBBOTGCk-34" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Road or Path&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-1480.5" y="850" as="geometry" />
-        </mxCell>
         <mxCell id="ge8Xt-Mdg0QFQEYzAe-k-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#36393d;fillColor=#eeeeee;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;DCAT,&amp;nbsp;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="-480" y="447.96" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DkG_Ew4qQ62zcml-1EjA" name="Schéma 2 article">
+    <mxGraphModel dx="1301" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KATThzN7frratckhB8-l-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="450" width="1070" x="70" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-2" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Activity&lt;/b&gt;" vertex="1">
+          <mxGeometry height="82.96" width="150" x="500" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;HumanOutdoor&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="145" x="505" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-4" edge="1" parent="1" source="KATThzN7frratckhB8-l-3" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;rounded=0;curved=1;dashed=1;" target="KATThzN7frratckhB8-l-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="350" />
+            </Array>
+            <mxPoint x="320" y="-14" as="sourcePoint" />
+            <mxPoint x="489" y="-100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-5" connectable="0" parent="KATThzN7frratckhB8-l-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
+          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
+            <mxPoint x="32" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-6" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Hiking&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="145" x="505" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-7" edge="1" parent="1" source="KATThzN7frratckhB8-l-6" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="KATThzN7frratckhB8-l-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="460" />
+            </Array>
+            <mxPoint x="520" y="394" as="sourcePoint" />
+            <mxPoint x="606" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-8" connectable="0" parent="KATThzN7frratckhB8-l-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
+          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
+            <mxPoint x="-24" y="-32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-9" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Catalogued &lt;br&gt;resource&lt;/b&gt;" vertex="1">
+          <mxGeometry height="117.92" width="160" x="940.0799999999999" y="172.07999999999993" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-10" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;LandEntity&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="149.5" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-11" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="360" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-12" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="42" width="240" x="110" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-13" parent="KATThzN7frratckhB8-l-12" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="42" width="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-14" parent="KATThzN7frratckhB8-l-12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=25;" value="Human Activities" vertex="1">
+          <mxGeometry height="10.5" width="233.88101983002832" x="6.118980169971674" y="13.565999999999988" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="HikersFootPrint" vertex="1">
+          <mxGeometry height="60" width="120" x="960" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-16" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Footprint&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="70" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-17" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Route&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="240" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="KATThzN7frratckhB8-l-18" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Road or Path&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="149.5" y="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
