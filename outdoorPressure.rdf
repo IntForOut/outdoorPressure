@@ -31,7 +31,8 @@
      xmlns:schema="http://schema.org/"
      xmlns:geodata="http://purl.org/www.umr-lastig.fr/geodata#"
      xmlns:datacite="http://purl.org/spar/datacite/"
-     xmlns:outdoorPressure="https://intforout.github.io/outdoorPressure#">
+     xmlns:outdoorPressure="https://intforout.github.io/outdoorPressure#"
+     xmlns:guf="http://www.opengis.net/guf/1.0">
     <owl:Ontology rdf:about="https://intforout.github.io/outdoorPressure">
         <owl:imports rdf:resource="http://purl.org/www.umr-lastig.fr/geodata"/>
         <ns:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
@@ -1272,15 +1273,17 @@
         <dc:creator>Abdassalam Naciri</dc:creator>
         <dc:description>The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator).</dc:description>
     </owl:NamedIndividual>
-    
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Skiing -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Skiing">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+    <!-- https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <dc:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
     </owl:NamedIndividual>
     
+
 
 
     <!-- https://intforout.github.io/outdoorPressure#SwitchbackIdentification -->
@@ -1842,6 +1845,13 @@
     <!-- https://www.refuges.info/api/ -->
 
     <owl:NamedIndividual rdf:about="https://www.refuges.info/api/"/>
+    
+
+
+    
+
+    
+
     
 
 
