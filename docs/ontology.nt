@@ -725,9 +725,10 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/t
 <https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://purl.org/dc/elements/1.1/creator> "Abdassalam Naciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://purl.org/dc/elements/1.1/description> "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)." .
 # 
-# https://intforout.github.io/outdoorPressure#Skiing
-<https://intforout.github.io/outdoorPressure#Skiing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#Skiing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+# https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion
+<https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/dc/elements/1.1/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 # 
 # https://intforout.github.io/outdoorPressure#SwitchbackIdentification
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

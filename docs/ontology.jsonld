@@ -1098,6 +1098,12 @@
     "@value" : "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)."
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ResilientRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1137,12 +1143,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Skiing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification",

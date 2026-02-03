@@ -866,9 +866,10 @@ _:genid4 rdf:type <http://purl.org/dc/terms/Location> ;
                         <http://purl.org/dc/elements/1.1/description> "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)." .
 
 
-###  https://intforout.github.io/outdoorPressure#Skiing
-:Skiing rdf:type owl:NamedIndividual ,
-                 :HumanOutdoorActivity .
+###  https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion
+:ReplicabiliteTrackCollectionFusion rdf:type owl:NamedIndividual ,
+                                             <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                                    <http://purl.org/dc/elements/1.1/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackIdentification
