@@ -691,8 +691,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 
 ###  https://intforout.github.io/outdoorPressure#Hiking
-:Hiking rdf:type owl:NamedIndividual ,
-                 :HumanOutdoorActivity .
+:Hiking rdf:type owl:NamedIndividual .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters

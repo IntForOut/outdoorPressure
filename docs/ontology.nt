@@ -574,7 +574,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://intforout.github.io/outdoorPressure#Hiking
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
 # 
 # https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
