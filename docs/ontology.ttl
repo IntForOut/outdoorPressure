@@ -216,6 +216,10 @@ rdf:comment rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/prov#endedAtTime> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/prov#quotedAs
 <http://www.w3.org/ns/prov#quotedAs> rdf:type owl:AnnotationProperty .
 
@@ -238,6 +242,10 @@ rdf:comment rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#wasQuotedFrom
@@ -1297,6 +1305,10 @@ _:genid9 rdf:type <http://www.w3.org/ns/prov#Person> ;
 #################################################################
 #    Annotations
 #################################################################
+
+:Hiking rdfs:comment "activité de plein air consistant à se promener de façon ludique ou sportive"@fr ;
+        rdfs:label "randonnées pédestres"@fr .
+
 
 :HumanTrack rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
                          "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
