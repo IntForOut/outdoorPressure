@@ -484,6 +484,7 @@
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#profile">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/URI"/>
+        <rdfs:comment>Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -686,7 +687,7 @@
         </rdfs:comment>
     </owl:Class>
 
-    
+
 
      <!-- https://intforout.github.io/outdoorPressure#Cycling -->
 
@@ -700,6 +701,8 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HumanTrack">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Track"/>
+        <rdfs:comment xml:lang="en">A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones).</rdfs:comment>
+        <rdfs:comment xml:lang="fr">La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones).</rdfs:comment>
     </owl:Class>
     
 
@@ -1058,14 +1061,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Hiking -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Hiking">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
@@ -1089,12 +1084,6 @@
         <dcat:format>csv</dcat:format>
         <dcat:identifier>human_chamois_real_encounters.csv</dcat:identifier>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#HumanTrack -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanTrack"/>
     
 
 
@@ -1880,30 +1869,6 @@
     <owl:NamedIndividual rdf:about="https://www.refuges.info/api/"/>
     
 
-
-    
-
-    
-
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-    <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanTrack">
-        <rdfs:comment xml:lang="en">A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones).</rdfs:comment>
-        <rdfs:comment xml:lang="fr">La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones).</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#profile">
-        <rdfs:comment>Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
-    </rdf:Description>
 </rdf:RDF>
 
 
