@@ -163,6 +163,9 @@
 # http://www.w3.org/ns/prov#endedAtTime
 <http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/prov#quotedAs
 <http://www.w3.org/ns/prov#quotedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -180,6 +183,9 @@
 # 
 # http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/prov#wasQuotedFrom
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -1115,6 +1121,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # #
 # #################################################################
 # 
+# 
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#comment> "activité de plein air consistant à se promener de façon ludique ou sportive"@fr .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "randonnées pédestres"@fr .
 # 
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en .
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
