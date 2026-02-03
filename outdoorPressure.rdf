@@ -599,6 +599,19 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#AnimalActivity"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
     </owl:Class>
     
@@ -627,6 +640,18 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HikerFootprint">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Footprint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice.</rdfs:comment>
     </owl:Class>
     
@@ -647,6 +672,26 @@
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Activity"/>
         <rdfs:comment xml:lang="en">Human activity taking place outdoor</rdfs:comment>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#FastHiking -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#FastHiking">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+        <rdfs:comment xml:lang="fr">
+        Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.
+        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique.
+        </rdfs:comment>
+    </owl:Class>
+
+    
+
+     <!-- https://intforout.github.io/outdoorPressure#Cycling -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Cycling">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
     </owl:Class>
     
 
@@ -950,14 +995,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Cycling -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Cycling">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset">
@@ -980,11 +1017,7 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#FastHiking -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#FastHiking">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
-    </owl:NamedIndividual>
+    
     
 
 
