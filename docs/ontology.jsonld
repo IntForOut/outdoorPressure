@@ -1,6 +1,85 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#affords"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Clémence Perrin-Malterre"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://purl.org/dc/terms/Location" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Parc naturel régional du Massif des Bauges"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Brice Labbé"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Paul Calloch"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lorine Peseux"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Nolwenn Risser"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Elodie Petit"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://intforout.github.io/outdoorPressure#AnimalActivity"
+    }, {
+      "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#affords"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"
   } ],
@@ -8,53 +87,10 @@
     "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
   } ]
 }, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Colin Kerouanton"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Clémence Perrin-Malterre"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://purl.org/dc/terms/Location" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Parc naturel régional du Massif des Bauges"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Brice Labbé"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Paul Calloch"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lorine Peseux"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Nolwenn Risser"
-  } ]
-}, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Elodie Petit"
+    "@value" : "Colin Kerouanton"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#licence",
@@ -490,8 +526,8 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Cycling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
   } ]
 }, {
@@ -530,12 +566,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  }, {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FastHiking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "\n        Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.\n        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique.\n        "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FilteredTrack",
@@ -620,6 +662,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Footprint"
+  }, {
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
@@ -728,9 +772,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#aloison"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid9"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid10"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Journal of Outdoor Recreation and Tourism"
@@ -1060,7 +1104,7 @@
   }, {
     "@id" : "https://data.ign.fr/id/geofla/commune/74290"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid11"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -1173,7 +1217,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortion",
@@ -1199,11 +1243,11 @@
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid6"
+    "@id" : "_:genid13"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid14"
   } ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1598,9 +1642,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid15"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid16"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"
