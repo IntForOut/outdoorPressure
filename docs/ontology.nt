@@ -336,7 +336,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#Footprint
 <https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#comment> "Région spatiale représe"@en .
+<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#comment> "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr .
+<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#comment> "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
 # 
 # https://intforout.github.io/outdoorPressure#HikerFootprint
 <https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -392,12 +393,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Track> .
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en .
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
-# 
-# https://intforout.github.io/outdoorPressure#MobilityNetwork
-<https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr .
-<https://intforout.github.io/outdoorPressure#MobilityNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
 # 
 # https://intforout.github.io/outdoorPressure#NamedRoute
 <https://intforout.github.io/outdoorPressure#NamedRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
