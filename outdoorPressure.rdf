@@ -1309,7 +1309,15 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <dc:creator>Abdassalam Naciri</dc:creator>
-        <dc:description>The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator).</dc:description>
+        <dc:description>Un article qui parle de fusion de traces appliquée à des traces simulées dans le bois de vincennes et qui pourrait être refait sur les traces Outdoorvision dans les Bauges et la zone du Mont-Blanc</dc:description>
+        <dcat:theme rdf:resource="https://intforout.github.io/outdoorPressure#HikerFootprint" />
+        <dcat:theme rdf:resource="https://intforout.github.io/outdoorPressure#MergedTrack" />
+        <terms:spatial>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+                <terms:title xml:lang="fr">Bois de Vincennes</terms:title>
+            </rdf:Description>
+        </terms:spatial>
     </owl:NamedIndividual>
     
 
@@ -1318,8 +1326,9 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <dc:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#sigspatial24vandamme"/>  
+        <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#sigspatial24vandamme" />  
+        <terms:description xml:lang="en">blabla</terms:description>
     </owl:NamedIndividual>
     
 
