@@ -304,6 +304,9 @@
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodatatarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1162,6 +1165,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodatatarget" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles",

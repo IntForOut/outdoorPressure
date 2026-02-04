@@ -94,6 +94,9 @@
 # http://purl.org/spar/datacite/volume
 <http://purl.org/spar/datacite/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/www.umr-lastig.fr/geodatatarget
+<http://purl.org/www.umr-lastig.fr/geodatatarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://schema.org/address
 <http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -233,7 +236,6 @@
 # https://intforout.github.io/locatedIn#locatedIn
 <https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Population> .
-<http://www.w3.org/ns/dcat#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#LandEntity> .
 # 
 # https://intforout.github.io/outdoorPressure#affords
@@ -274,6 +276,7 @@
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/dcat#Population
+<http://www.w3.org/ns/dcat#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.wikidata.org/entity/Q2625603
 <http://www.wikidata.org/entity/Q2625603> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -754,6 +757,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/dc/elements/1.1/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
+<https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/www.umr-lastig.fr/geodatatarget> <https://intforout.github.io/outdoorPressure#sigspatial24vandamme> .
 # 
 # https://intforout.github.io/outdoorPressure#SwitchbackIdentification
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

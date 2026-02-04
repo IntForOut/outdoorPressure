@@ -124,6 +124,10 @@
 <http://purl.org/spar/datacite/volume> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodatatarget
+<http://purl.org/www.umr-lastig.fr/geodatatarget> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/address
 <http://schema.org/address> rdf:type owl:AnnotationProperty .
 
@@ -897,7 +901,8 @@ _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion
 :ReplicabiliteTrackCollectionFusion rdf:type owl:NamedIndividual ,
                                              <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                    <http://purl.org/dc/elements/1.1/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
+                                    <http://purl.org/dc/elements/1.1/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
+                                    <http://purl.org/www.umr-lastig.fr/geodatatarget> :sigspatial24vandamme .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackIdentification
