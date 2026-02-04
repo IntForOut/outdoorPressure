@@ -424,8 +424,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                       owl:unionOf ( :HumanOutdoorActivity
                                                                   )
                                                     ]
-                                ] ;
-                rdfs:comment "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."@en .
+                                ] .
 
 
 ###  https://intforout.github.io/outdoorPressure#Hiking
@@ -472,9 +471,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#MergedTrack
 :MergedTrack rdf:type owl:Class ;
-             rdfs:subClassOf :Track ;
-             rdfs:comment "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en ,
-                          "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
+             rdfs:subClassOf :Track .
 
 
 ###  https://intforout.github.io/outdoorPressure#NamedRoute
@@ -701,6 +698,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 
 
+###  https://intforout.github.io/outdoorPressure#HikerFootprint
+:HikerFootprint rdf:type owl:NamedIndividual .
+
+
 ###  https://intforout.github.io/outdoorPressure#HikersBauges2024
 :HikersBauges2024 rdf:type owl:NamedIndividual ,
                            :Population ;
@@ -844,6 +845,10 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
                  rdfs:comment "Massif des Bauges"@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#MergedTrack
+:MergedTrack rdf:type owl:NamedIndividual .
+
+
 ###  https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest
 :MetadataGroundTruthPathVincennesForest rdf:type owl:NamedIndividual ,
                                                  <http://www.w3.org/ns/dcat#CatalogRecord> ;
@@ -894,14 +899,21 @@ _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
 :ProfilageOutdoorVision rdf:type owl:NamedIndividual ,
                                  <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                        <http://www.w3.org/ns/dcat#theme> :HikerFootprint ,
+                                                          :MergedTrack ;
                         <http://purl.org/dc/elements/1.1/creator> "Abdassalam Naciri" ;
-                        <http://purl.org/dc/elements/1.1/description> "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)." .
+                        <http://purl.org/dc/elements/1.1/description> "Un article qui parle de fusion de traces appliquée à des traces simulées dans le bois de vincennes et qui pourrait être refait sur les traces Outdoorvision dans les Bauges et la zone du Mont-Blanc" ;
+                        <http://purl.org/dc/terms/spatial> _:genid12 .
+
+_:genid12 rdf:type <http://purl.org/dc/terms/Location> ;
+           <http://purl.org/dc/terms/title> "Bois de Vincennes"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion
 :ReplicabiliteTrackCollectionFusion rdf:type owl:NamedIndividual ,
                                              <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                    <http://purl.org/dc/elements/1.1/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
+                                    <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
+                                    <http://purl.org/dc/terms/description> "blabla"@en ;
                                     <http://purl.org/www.umr-lastig.fr/geodatatarget> :sigspatial24vandamme .
 
 
@@ -930,19 +942,19 @@ _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
                                                    <http://www.w3.org/ns/prov#Activity> ;
                                           <http://www.w3.org/ns/prov#generated> :GroundTruthDenseForestPath ;
                                           <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> ;
-                                          <http://purl.org/dc/terms/creator> _:genid12 ,
-                                                                             _:genid13 ,
-                                                                             _:genid14 ;
+                                          <http://purl.org/dc/terms/creator> _:genid13 ,
+                                                                             _:genid14 ,
+                                                                             _:genid15 ;
                                           <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                           <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
 
-_:genid12 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
 
-_:genid13 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
 
-_:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 
 
@@ -1132,8 +1144,8 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
             <http://purl.org/dc/terms/creator> :mgarel ,
                                                :pmarchand ,
-                                               _:genid15 ,
-                                               _:genid16 ;
+                                               _:genid16 ,
+                                               _:genid17 ;
             <http://purl.org/dc/terms/isPartOf> "Journal of People and Nature" ;
             <http://purl.org/dc/terms/title> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex" ;
             <http://purl.org/spar/datacite/firstPage> "3002" ;
@@ -1153,10 +1165,10 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
             <http://purl.org/spar/datacite/volume> "7" ;
             <http://www.w3.org/ns/prov#quotedAs> :Marchandetal2025DB .
 
-_:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
 
-_:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
+_:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
@@ -1319,6 +1331,17 @@ _:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://www.refuges.info/api/
 <https://www.refuges.info/api/> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:HikerFootprint rdfs:comment "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."@en .
+
+
+:MergedTrack rdfs:comment "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en ,
+                          "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

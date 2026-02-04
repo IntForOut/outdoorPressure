@@ -22,30 +22,37 @@
   } ]
 }, {
   "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Brice Labbé"
+  "@type" : [ "http://purl.org/dc/terms/Location" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Bois de Vincennes"
   } ]
 }, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Paul Calloch"
+    "@value" : "Brice Labbé"
   } ]
 }, {
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lorine Peseux"
+    "@value" : "Paul Calloch"
   } ]
 }, {
   "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Nolwenn Risser"
+    "@value" : "Lorine Peseux"
   } ]
 }, {
   "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Nolwenn Risser"
+  } ]
+}, {
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Elodie Petit"
@@ -673,7 +680,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."
@@ -1027,7 +1034,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."
@@ -1158,13 +1165,25 @@
     "@value" : "Abdassalam Naciri"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator)."
+    "@value" : "Un article qui parle de fusion de traces appliquée à des traces simulées dans le bois de vincennes et qui pourrait être refait sur les traces Outdoorvision dans les Bauges et la zone du Mont-Blanc"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
+  "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "blabla"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodatatarget" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
@@ -1268,11 +1287,11 @@
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid12"
-  }, {
     "@id" : "_:genid13"
   }, {
     "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
   } ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1658,9 +1677,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid15"
-  }, {
     "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"
