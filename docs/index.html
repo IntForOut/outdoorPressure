@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Wed Feb 04 06:21:48 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Wed Feb 04 06:58:20 UTC 2026", "author":[{"@type":"Person","name":"Ana-Maria Raimond"},{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -239,18 +239,13 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Portion of route</a>
-   </li>
-   <li>
       <a href="#http://www.wikidata.org/entity/Q2625603" title="http://www.wikidata.org/entity/Q2625603">
          <span>Q2625603</span>
       </a>
    </li>
    <li>
       <a href="#Hiking"
-         title="https://intforout.github.io/outdoorPressure#Hiking">
-         <span>randonnées pédestres</span>
-      </a>
+         title="https://intforout.github.io/outdoorPressure#Hiking">randonnées pédestres</a>
    </li>
    <li>
       <a href="#ResilientRoute"
@@ -262,6 +257,11 @@ This ontology has the following classes and properties.</span>
       <a href="#Route"
          title="https://intforout.github.io/outdoorPressure#Route">
          <span>Route</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">
+         <span>Route Portion</span>
       </a>
    </li>
    <li>
@@ -306,6 +306,10 @@ This ontology has the following classes and properties.</span>
          title="https://intforout.github.io/outdoorPressure#hasProfile">
          <span>has Profile</span>
       </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
+         title="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation">hasSemanticRouteAnnotation</a>
    </li>
    <li>
       <a href="#https://intforout.github.io/locatedIn#locatedIn" title="https://intforout.github.io/locatedIn#locatedIn">
@@ -670,9 +674,14 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#SwitchbacksPortion"
-         title="https://intforout.github.io/outdoorPressure#SwitchbacksPortion">
-         <span>Switchbacks Portion</span>
+      <a href="#http://purl.org/choucas.ign.fr/oor#Switchbacks" title="http://purl.org/choucas.ign.fr/oor#Switchbacks">
+         <span>Switchbacks</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SwitchbacksPortionBauges"
+         title="https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges">
+         <span>Switchbacks Portion Bauges</span>
       </a>
    </li>
    <li>
@@ -749,11 +758,11 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute"> <span>Named Route</span> </a></li>
   <li><a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau"> <span>Pland Eau</span> </a></li>
   <li><a href="#Population" title="https://intforout.github.io/outdoorPressure#Population"> <span>Population</span> </a></li>
-  <li><a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Portion of route</a></li>
   <li><a href="#http://www.wikidata.org/entity/Q2625603" title="http://www.wikidata.org/entity/Q2625603"> <span>Q2625603</span> </a></li>
-  <li><a href="#Hiking" title="https://intforout.github.io/outdoorPressure#Hiking"> <span>randonnées pédestres</span> </a></li>
+  <li><a href="#Hiking" title="https://intforout.github.io/outdoorPressure#Hiking">randonnées pédestres</a></li>
   <li><a href="#ResilientRoute" title="https://intforout.github.io/outdoorPressure#ResilientRoute"> <span>Resilient Route</span> </a></li>
   <li><a href="#Route" title="https://intforout.github.io/outdoorPressure#Route"> <span>Route</span> </a></li>
+  <li><a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion"> <span>Route Portion</span> </a></li>
   <li><a href="#ReservesNaturelles" title="https://intforout.github.io/outdoorPressure#ReservesNaturelles">Réserves naturelles</a></li>
   <li><a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea"> <span>Sensitive Area</span> </a></li>
   <li><a href="#Sentier" title="https://intforout.github.io/outdoorPressure#Sentier"> <span>Sentier</span> </a></li>
@@ -949,18 +958,15 @@ This section provides details for each class and property defined by Mountain ou
  <div class="entity" id="HumanTrack">
   <h3>Human Track<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#HumanTrack</p>
+  <div class="comment">
+   <span class="markdown">A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones).</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
     <a href="#Track" title="https://intforout.github.io/outdoorPressure#Track">Track</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    named individual
    </dd>
   </dl>
  </div>
@@ -975,7 +981,7 @@ This section provides details for each class and property defined by Mountain ou
     has sub-classes
    </dt>
    <dd>
-    <a href="#AireCampingCar" title="https://intforout.github.io/outdoorPressure#AireCampingCar">Aire Camping Car</a> <sup class="type-c" title="class">c</sup>, <a href="#AireDeDetente" title="https://intforout.github.io/outdoorPressure#AireDeDetente">Aire De Detente</a> <sup class="type-c" title="class">c</sup>, <a href="#EncounteringZone" title="https://intforout.github.io/outdoorPressure#EncounteringZone">Encountering Zone</a> <sup class="type-c" title="class">c</sup>, <a href="#Footprint" title="https://intforout.github.io/outdoorPressure#Footprint">Footprint</a> <sup class="type-c" title="class">c</sup>, <a href="#Landmark" title="https://intforout.github.io/outdoorPressure#Landmark">Landmark</a> <sup class="type-c" title="class">c</sup>, <a href="#MobilityNetwork" title="https://intforout.github.io/outdoorPressure#MobilityNetwork">Mobility Network</a> <sup class="type-c" title="class">c</sup>, <a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau">Pland Eau</a> <sup class="type-c" title="class">c</sup>, <a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a> <sup class="type-c" title="class">c</sup>, <a href="#ReservesNaturelles" title="https://intforout.github.io/outdoorPressure#ReservesNaturelles">Réserves naturelles</a> <sup class="type-c" title="class">c</sup>, <a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea">Sensitive Area</a> <sup class="type-c" title="class">c</sup>, <a href="#Sentier" title="https://intforout.github.io/outdoorPressure#Sentier">Sentier</a> <sup class="type-c" title="class">c</sup>
+    <a href="#AireCampingCar" title="https://intforout.github.io/outdoorPressure#AireCampingCar">Aire Camping Car</a> <sup class="type-c" title="class">c</sup>, <a href="#AireDeDetente" title="https://intforout.github.io/outdoorPressure#AireDeDetente">Aire De Detente</a> <sup class="type-c" title="class">c</sup>, <a href="#EncounteringZone" title="https://intforout.github.io/outdoorPressure#EncounteringZone">Encountering Zone</a> <sup class="type-c" title="class">c</sup>, <a href="#Footprint" title="https://intforout.github.io/outdoorPressure#Footprint">Footprint</a> <sup class="type-c" title="class">c</sup>, <a href="#Landmark" title="https://intforout.github.io/outdoorPressure#Landmark">Landmark</a> <sup class="type-c" title="class">c</sup>, <a href="#MobilityNetwork" title="https://intforout.github.io/outdoorPressure#MobilityNetwork">Mobility Network</a> <sup class="type-c" title="class">c</sup>, <a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau">Pland Eau</a> <sup class="type-c" title="class">c</sup>, <a href="#ReservesNaturelles" title="https://intforout.github.io/outdoorPressure#ReservesNaturelles">Réserves naturelles</a> <sup class="type-c" title="class">c</sup>, <a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea">Sensitive Area</a> <sup class="type-c" title="class">c</sup>, <a href="#Sentier" title="https://intforout.github.io/outdoorPressure#Sentier">Sentier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -1103,27 +1109,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
- <div class="entity" id="http://purl.org/choucas.ign.fr/oor#RoutePortion">
-  <h3>Portion of route<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/choucas.ign.fr/oor#RoutePortion</p>
-  <div class="comment">
-   <span class="markdown">A portion of a route representing channels along which people move, potentially heterogeneous in its surface or structure. It may or may not be paved or vehicle-accessible.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#SwitchbackRoutePortion" title="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion">Switchback Route Portion</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="http://www.wikidata.org/entity/Q2625603">
   <h3>Q2625603<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.wikidata.org/entity/Q2625603</p>
@@ -1139,6 +1124,9 @@ This section provides details for each class and property defined by Mountain ou
  <div class="entity" id="Hiking">
   <h3>randonnées pédestres<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#Hiking</p>
+  <div class="comment">
+   <span class="markdown">activité de plein air consistant à se promener de façon ludique ou sportive</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1151,12 +1139,6 @@ This section provides details for each class and property defined by Mountain ou
    </dt>
    <dd>
     <a href="#FastHiking" title="https://intforout.github.io/outdoorPressure#FastHiking">Fast Hiking</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    named individual
    </dd>
   </dl>
  </div>
@@ -1183,16 +1165,34 @@ This section provides details for each class and property defined by Mountain ou
   </div>
   <dl class="description">
    <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>, <a href="#ResilientRoute" title="https://intforout.github.io/outdoorPressure#ResilientRoute">Resilient Route</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Route Portion</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/choucas.ign.fr/oor#RoutePortion">
+  <h3>Route Portion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/choucas.ign.fr/oor#RoutePortion</p>
+  <dl class="description">
+   <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="#LandEntity" title="https://intforout.github.io/outdoorPressure#LandEntity">Land Entity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
    </dt>
    <dd>
-    <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Portion of route</a> <sup class="type-c" title="class">c</sup>, <a href="#ResilientRoute" title="https://intforout.github.io/outdoorPressure#ResilientRoute">Resilient Route</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SwitchbackRoutePortion" title="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion">Switchback Route Portion</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation" title="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation">hasSemanticRouteAnnotation</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1252,13 +1252,7 @@ This section provides details for each class and property defined by Mountain ou
     has super-classes
    </dt>
    <dd>
-    <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Portion of route</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    named individual
+    <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Route Portion</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1282,6 +1276,7 @@ This section provides details for each class and property defined by Mountain ou
  <ul class="hlist">
   <li><a href="#affords" title="https://intforout.github.io/outdoorPressure#affords"> <span>affords</span> </a></li>
   <li><a href="#hasProfile" title="https://intforout.github.io/outdoorPressure#hasProfile"> <span>has Profile</span> </a></li>
+  <li><a href="#http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation" title="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation">hasSemanticRouteAnnotation</a></li>
   <li><a href="#https://intforout.github.io/locatedIn#locatedIn" title="https://intforout.github.io/locatedIn#locatedIn"> <span>located In</span> </a></li>
  </ul>
  <div class="entity" id="affords">
@@ -1326,6 +1321,29 @@ This section provides details for each class and property defined by Mountain ou
     </dt>
     <dd>
      <a href="http://purl.org/dc/terms/URI" target="_blank" title="http://purl.org/dc/terms/URI">U R I</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation">
+  <h3>hasSemanticRouteAnnotation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation</p>
+  <div class="comment">
+   <span class="markdown">Pour modéliser les annotations sémantiques des itinéraires.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.org/choucas.ign.fr/oor#RoutePortion" title="http://purl.org/choucas.ign.fr/oor#RoutePortion">Route Portion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation" target="_blank" title="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation">Semantic Route Annotation</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1412,7 +1430,8 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#ReplicabiliteTrackCollectionFusion" title="https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion"> <span>Replicabilite Track Collection Fusion</span> </a></li>
   <li><a href="#sigspatial24vandamme" title="https://intforout.github.io/outdoorPressure#sigspatial24vandamme"> <span>sigspatial24vandamme</span> </a></li>
   <li><a href="#SwitchbackIdentification" title="https://intforout.github.io/outdoorPressure#SwitchbackIdentification"> <span>Switchback Identification</span> </a></li>
-  <li><a href="#SwitchbacksPortion" title="https://intforout.github.io/outdoorPressure#SwitchbacksPortion"> <span>Switchbacks Portion</span> </a></li>
+  <li><a href="#http://purl.org/choucas.ign.fr/oor#Switchbacks" title="http://purl.org/choucas.ign.fr/oor#Switchbacks"> <span>Switchbacks</span> </a></li>
+  <li><a href="#SwitchbacksPortionBauges" title="https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges"> <span>Switchbacks Portion Bauges</span> </a></li>
   <li><a href="#TopometricSurveyGroundTruthPathVincennes" title="https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes"> <span>Topometric Survey Ground Truth Path Vincennes</span> </a></li>
   <li><a href="#TracksMultiSensorsVincennesForest" title="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest"> <span>Tracks Multi Sensors Vincennes Forest</span> </a></li>
   <li><a href="#TracksMultiSensorsVincennesForest-gpkg" title="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"> <span>Tracks Multi Sensors Vincennes Forest gpkg</span> </a></li>
@@ -1453,9 +1472,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"act-export"@fr</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#AnimalTrack" title="https://intforout.github.io/outdoorPressure#AnimalTrack">Animal Track</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1528,9 +1544,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"AltitudeRando routes"@fr</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1832,9 +1845,6 @@ This section provides details for each class and property defined by Mountain ou
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Camptocamp.org-routes"@fr</span>
    </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="c2c-route-geojson">
@@ -1861,6 +1871,38 @@ This section provides details for each class and property defined by Mountain ou
  <div class="entity" id="c2c-waypoint">
   <h3>c2c waypoint<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#c2c-waypoint</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#distribution" target="_blank" title="http://www.w3.org/ns/dcat#distribution">distribution</a> <sup class="type-op" title="object property">op</sup> <a href="#c2c-waypoint-geojson" title="https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson">c2c waypoint geojson</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"A set of Waypoints issued from Camptocamp.org API."@en</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">issued</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2025-05-01"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/language" target="_blank" title="http://purl.org/dc/terms/language">language</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"fr-FR"</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/license" target="_blank" title="http://purl.org/dc/terms/license">license</a> <sup class="type-ni" title="named individual">ni</sup> <a href="https://opendatacommons.org/licenses/odbl/" target="_blank" title="https://opendatacommons.org/licenses/odbl/">https://opendatacommons.org/licenses/odbl/</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/publisher" target="_blank" title="http://purl.org/dc/terms/publisher">publisher</a> <sup class="type-ni" title="named individual">ni</sup> <a href="#camptocamp" title="https://intforout.github.io/outdoorPressure#camptocamp">camptocamp</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Camptocamp.org-waypoints"@fr</span>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="c2c-waypoint-geojson">
   <h3>c2c waypoint geojson<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
@@ -2077,9 +2119,6 @@ This section provides details for each class and property defined by Mountain ou
     <a href="http://www.w3.org/ns/dcat#distribution" target="_blank" title="http://www.w3.org/ns/dcat#distribution">distribution</a> <sup class="type-op" title="object property">op</sup> <a href="#GroundTruthDenseForestPath-csv" title="https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv">Ground Truth Dense Forest Path csv</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#MergedTrack" title="https://intforout.github.io/outdoorPressure#MergedTrack">Merged Track</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dd>
     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#comment">comment</a> <span class="literal">"This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en</span>
    </dd>
    <dd>
@@ -2168,9 +2207,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/publisher" target="_blank" title="http://purl.org/dc/terms/publisher">publisher</a> <sup class="type-ni" title="named individual">ni</sup> <a href="http://purl.org/www.umr-lastig.fr/geodata#LASTIG" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#LASTIG">L A S T I G</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodataannotates" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodataannotates">geodataannotates</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#MobilityNetworkDB" title="https://intforout.github.io/outdoorPressure#MobilityNetworkDB">Mobility Network D B</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -2368,9 +2404,6 @@ This section provides details for each class and property defined by Mountain ou
     has facts
    </dt>
    <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodata#represents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#represents">represents</a> <sup class="type-op" title="object property">op</sup> <a href="#HumanTrack" title="https://intforout.github.io/outdoorPressure#HumanTrack">Human Track</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
     <a href="http://www.w3.org/ns/prov#wasQuotedFrom" target="_blank" title="http://www.w3.org/ns/prov#wasQuotedFrom">was Quoted From</a> <sup class="type-op" title="object property">op</sup> <a href="#KEROUANTON2024100734" title="https://intforout.github.io/outdoorPressure#KEROUANTON2024100734">K E R O U A N T O N2024100734</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
@@ -2432,9 +2465,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"locs-export"@fr</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#AnimalTrack" title="https://intforout.github.io/outdoorPressure#AnimalTrack">Animal Track</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -2516,6 +2546,56 @@ This section provides details for each class and property defined by Mountain ou
  <div class="entity" id="Marchandetal2025DB">
   <h3>Marchandetal2025 D B<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#Marchandetal2025DB</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper">Scientific Paper</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/hasPart" target="_blank" title="http://purl.org/dc/terms/hasPart">has Part</a> <sup class="type-op" title="object property">op</sup> <a href="#act-export" title="https://intforout.github.io/outdoorPressure#act-export">act export</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/hasPart" target="_blank" title="http://purl.org/dc/terms/hasPart">has Part</a> <sup class="type-op" title="object property">op</sup> <a href="#locs-export" title="https://intforout.github.io/outdoorPressure#locs-export">locs export</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#distribution" target="_blank" title="http://www.w3.org/ns/dcat#distribution">distribution</a> <sup class="type-op" title="object property">op</sup> <a href="#marchandetal-rdata" title="https://intforout.github.io/outdoorPressure#marchandetal-rdata">marchandetal rdata</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#wasAttributedTo" target="_blank" title="http://www.w3.org/ns/prov#wasAttributedTo">was Attributed To</a> <sup class="type-op" title="object property">op</sup> <a href="#pmarchand" title="https://intforout.github.io/outdoorPressure#pmarchand">pmarchand</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#wasQuotedFrom" target="_blank" title="http://www.w3.org/ns/prov#wasQuotedFrom">was Quoted From</a> <sup class="type-op" title="object property">op</sup> <a href="#pan3.70151" title="https://intforout.github.io/outdoorPressure#pan3.70151">pan3.70151</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/bibliographicCitation" target="_blank" title="http://purl.org/dc/terms/bibliographicCitation">bibliographic Citation</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Marchand, P., Risser, N., Petit, E., &amp; Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025 - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">issued</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2025-09-04"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/language" target="_blank" title="http://purl.org/dc/terms/language">language</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"English"</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/license" target="_blank" title="http://purl.org/dc/terms/license">license</a> <sup class="type-ni" title="named individual">ni</sup> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" title="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/publisher" target="_blank" title="http://purl.org/dc/terms/publisher">publisher</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"Office Français de la Biodiversité"</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/spatial" target="_blank" title="http://purl.org/dc/terms/spatial">spatial</a> <sup class="type-ni" title="named individual">ni</sup> <a href="http://sws.geonames.org/3001970/" target="_blank" title="http://sws.geonames.org/3001970/">http://sws.geonames.org/3001970/</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en</span>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="MassifDesBauges">
   <h3>Massif Des Bauges<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
@@ -2671,12 +2751,6 @@ This section provides details for each class and property defined by Mountain ou
    <dt>
     has facts
    </dt>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodata#represents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#represents">represents</a> <sup class="type-op" title="object property">op</sup> <a href="#Hiking" title="https://intforout.github.io/outdoorPressure#Hiking">randonnées pédestres</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodata#represents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#represents">represents</a> <sup class="type-op" title="object property">op</sup> <a href="#HumanTrack" title="https://intforout.github.io/outdoorPressure#HumanTrack">Human Track</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en</span>
    </dd>
@@ -2899,9 +2973,6 @@ This section provides details for each class and property defined by Mountain ou
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Parcdesbauges.com - sensitivearea"@fr</span>
    </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodataannotates" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodataannotates">geodataannotates</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#MobilityNetworkDB" title="https://intforout.github.io/outdoorPressure#MobilityNetworkDB">Mobility Network D B</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="parcdesbauges-sensitivearea-geojson">
@@ -2958,9 +3029,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Parcdesbauges.com - trek"@fr</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -3240,7 +3308,7 @@ This section provides details for each class and property defined by Mountain ou
     has facts
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/prov#generated" target="_blank" title="http://www.w3.org/ns/prov#generated">generated</a> <sup class="type-op" title="object property">op</sup> <a href="#SwitchbacksPortion" title="https://intforout.github.io/outdoorPressure#SwitchbacksPortion">Switchbacks Portion</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://www.w3.org/ns/prov#generated" target="_blank" title="http://www.w3.org/ns/prov#generated">generated</a> <sup class="type-op" title="object property">op</sup> <a href="#SwitchbacksPortionBauges" title="https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges">Switchbacks Portion Bauges</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://www.w3.org/ns/prov#used" target="_blank" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup> <a href="#visorando-route" title="https://intforout.github.io/outdoorPressure#visorando-route">visorando route</a> <sup class="type-ni" title="named individual">ni</sup>
@@ -3259,9 +3327,21 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
- <div class="entity" id="SwitchbacksPortion">
-  <h3>Switchbacks Portion<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#SwitchbacksPortion</p>
+ <div class="entity" id="http://purl.org/choucas.ign.fr/oor#Switchbacks">
+  <h3>Switchbacks<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/choucas.ign.fr/oor#Switchbacks</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation" target="_blank" title="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation">Semantic Route Annotation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SwitchbacksPortionBauges">
+  <h3>Switchbacks Portion Bauges<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges</p>
   <dl class="description">
    <dt>
     belongs to
@@ -3273,9 +3353,6 @@ This section provides details for each class and property defined by Mountain ou
     has facts
    </dt>
    <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodata#represents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#represents">represents</a> <sup class="type-op" title="object property">op</sup> <a href="#SwitchbackRoutePortion" title="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion">Switchback Route Portion</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
     <a href="http://www.w3.org/ns/prov#wasGeneratedBy" target="_blank" title="http://www.w3.org/ns/prov#wasGeneratedBy">was Generated By</a> <sup class="type-op" title="object property">op</sup> <a href="#SwitchbackIdentification" title="https://intforout.github.io/outdoorPressure#SwitchbackIdentification">Switchback Identification</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
@@ -3283,9 +3360,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Portions de route caractérisant une série de virages"@fr</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodataannotates" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodataannotates">geodataannotates</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#MobilityNetworkDB" title="https://intforout.github.io/outdoorPressure#MobilityNetworkDB">Mobility Network D B</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3342,13 +3416,7 @@ This section provides details for each class and property defined by Mountain ou
     has facts
    </dt>
    <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodata#represents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#represents">represents</a> <sup class="type-op" title="object property">op</sup> <a href="#Hiking" title="https://intforout.github.io/outdoorPressure#Hiking">randonnées pédestres</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
     <a href="http://www.w3.org/ns/dcat#distribution" target="_blank" title="http://www.w3.org/ns/dcat#distribution">distribution</a> <sup class="type-op" title="object property">op</sup> <a href="#TracksMultiSensorsVincennesForest-gpkg" title="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg">Tracks Multi Sensors Vincennes Forest gpkg</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#HumanTrack" title="https://intforout.github.io/outdoorPressure#HumanTrack">Human Track</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#comment">comment</a> <span class="literal">"This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en</span>
@@ -3407,9 +3475,6 @@ This section provides details for each class and property defined by Mountain ou
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr</span>
    </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#MergedTrack" title="https://intforout.github.io/outdoorPressure#MergedTrack">Merged Track</a> <sup class="type-c" title="class">c</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="visorando">
@@ -3463,9 +3528,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Visorando routes"@fr</span>
-   </dd>
-   <dd>
-    <a href="http://purl.org/www.umr-lastig.fr/geodatarepresents" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodatarepresents">geodatarepresents</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

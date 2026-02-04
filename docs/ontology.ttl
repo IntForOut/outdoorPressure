@@ -124,14 +124,6 @@
 <http://purl.org/spar/datacite/volume> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodataannotates
-<http://purl.org/www.umr-lastig.fr/geodataannotates> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodatarepresents
-<http://purl.org/www.umr-lastig.fr/geodatarepresents> rdf:type owl:AnnotationProperty .
-
-
 ###  http://schema.org/address
 <http://schema.org/address> rdf:type owl:AnnotationProperty .
 
@@ -289,7 +281,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation
-<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> rdf:type owl:ObjectProperty .
+<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://purl.org/choucas.ign.fr/oor#RoutePortion> ;
+                                                                rdfs:range <http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation> ;
+                                                                rdfs:comment "Pour modéliser les annotations sémantiques des itinéraires." ;
+                                                                rdfs:label "hasSemanticRouteAnnotation" .
 
 
 ###  https://intforout.github.io/locatedIn#locatedIn
@@ -318,10 +314,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://purl.org/choucas.ign.fr/oor#RoutePortion
 <http://purl.org/choucas.ign.fr/oor#RoutePortion> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Route ;
-                                                  rdfs:comment "A portion of a route representing channels along which people move, potentially heterogeneous in its surface or structure. It may or may not be paved or vehicle-accessible."@fr ;
-                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Portion de route"@fr ,
-                                                                                                  "Portion of route"@en .
+                                                  rdfs:subClassOf :Route .
+
+
+###  http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation
+<http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation> rdf:type owl:Class .
 
 
 ###  http://purl.org/dc/terms/URI
@@ -428,7 +425,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Hiking
 :Hiking rdf:type owl:Class ;
-        rdfs:subClassOf :HumanOutdoorActivity .
+        rdfs:subClassOf :HumanOutdoorActivity ;
+        rdfs:comment "activité de plein air consistant à se promener de façon ludique ou sportive"@fr ;
+        rdfs:label "randonnées pédestres"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
@@ -439,7 +438,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#HumanTrack
 :HumanTrack rdf:type owl:Class ;
-            rdfs:subClassOf :Track .
+            rdfs:subClassOf :Track ;
+            rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
+                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#LandEntity
@@ -513,7 +514,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Route
 :Route rdf:type owl:Class ;
-       rdfs:subClassOf :LandEntity ;
        rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
                     "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
 
@@ -534,7 +534,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         rdfs:subClassOf <http://purl.org/choucas.ign.fr/oor#RoutePortion> ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> ;
-                                          owl:hasValue <http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets>
+                                          owl:hasValue <http://purl.org/choucas.ign.fr/oor#Switchbacks>
                                         ] .
 
 
@@ -559,8 +559,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                           <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^xsd:gYearMonth .
 
 
-###  http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets
-<http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> rdf:type owl:NamedIndividual .
+###  http://purl.org/choucas.ign.fr/oor#Switchbacks
+<http://purl.org/choucas.ign.fr/oor#Switchbacks> rdf:type owl:NamedIndividual ,
+                                                          <http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation> .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
@@ -690,7 +691,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :GroundTruthDenseForestPath rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
                             <http://www.w3.org/ns/dcat#distribution> :GroundTruthDenseForestPath-csv ;
-                            <http://purl.org/www.umr-lastig.fr/geodatarepresents> :MergedTrack ;
                             rdf:comment "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en ;
                             <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
 
@@ -711,10 +711,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                   <http://www.w3.org/ns/prov#startedAtTime> "2024-01"^^xsd:gYearMonth .
 
 
-###  https://intforout.github.io/outdoorPressure#Hiking
-:Hiking rdf:type owl:NamedIndividual .
-
-
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 :HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
@@ -724,8 +720,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             <http://purl.org/dc/terms/issued> "2025-04-25"^^xsd:date ;
                             <http://purl.org/dc/terms/language> "English" ;
                             <http://purl.org/dc/terms/license> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)> ;
-                            <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ;
-                            <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB .
+                            <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv
@@ -733,10 +728,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                          <http://www.w3.org/ns/dcat#Distribution> ;
                                 <http://www.w3.org/ns/dcat#format> "csv" ;
                                 <http://www.w3.org/ns/dcat#identifier> "human_chamois_real_encounters.csv" .
-
-
-###  https://intforout.github.io/outdoorPressure#HumanTrack
-:HumanTrack rdf:type owl:NamedIndividual .
 
 
 ###  https://intforout.github.io/outdoorPressure#IntForOutETLDB
@@ -801,7 +792,6 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#KerouatonTrack20142015
 :KerouatonTrack20142015 rdf:type owl:NamedIndividual ,
                                  <http://www.w3.org/ns/dcat#Dataset> ;
-                        <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanTrack ;
                         <http://www.w3.org/ns/prov#wasQuotedFrom> :KEROUANTON2024100734 ;
                         <http://purl.org/dc/terms/description> "A set of tracks. Compleed with questionnaires"@en ;
                         <http://purl.org/dc/terms/title> "Tracks issued from PhD of Colin Kerouaton"@fr .
@@ -833,7 +823,8 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 
 ###  https://intforout.github.io/outdoorPressure#Marchandetal2025DB
-:Marchandetal2025DB rdf:type owl:NamedIndividual ;
+:Marchandetal2025DB rdf:type owl:NamedIndividual ,
+                             <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
                     <http://purl.org/dc/terms/hasPart> :act-export ,
                                                        :locs-export ;
                     <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
@@ -888,8 +879,6 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#OutdoorVisionExport
 :OutdoorVisionExport rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/dcat#Dataset> ;
-                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :Hiking ,
-                                                                            :HumanTrack ;
                      <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
                      <http://purl.org/dc/terms/publisher> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN> ;
                      <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> ,
@@ -920,7 +909,7 @@ _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  https://intforout.github.io/outdoorPressure#SwitchbackIdentification
 :SwitchbackIdentification rdf:type owl:NamedIndividual ,
                                    <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
-                          <http://www.w3.org/ns/prov#generated> :SwitchbacksPortion ;
+                          <http://www.w3.org/ns/prov#generated> :SwitchbacksPortionBauges ;
                           <http://www.w3.org/ns/prov#used> :visorando-route ;
                           <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> ;
                           <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
@@ -928,18 +917,12 @@ _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
                           <http://www.w3.org/ns/prov#startedAtTime> "2025-01"^^xsd:gYearMonth .
 
 
-###  https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion
-:SwitchbackRoutePortion rdf:type owl:NamedIndividual .
-
-
-###  https://intforout.github.io/outdoorPressure#SwitchbacksPortion
-:SwitchbacksPortion rdf:type owl:NamedIndividual ,
-                             <http://www.w3.org/ns/dcat#Dataset> ;
-                    <http://purl.org/www.umr-lastig.fr/geodata#represents> :SwitchbackRoutePortion ;
-                    <http://www.w3.org/ns/prov#wasGeneratedBy> :SwitchbackIdentification ;
-                    <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
-                    <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr ;
-                    <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB .
+###  https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges
+:SwitchbacksPortionBauges rdf:type owl:NamedIndividual ,
+                                   <http://www.w3.org/ns/dcat#Dataset> ;
+                          <http://www.w3.org/ns/prov#wasGeneratedBy> :SwitchbackIdentification ;
+                          <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
+                          <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes
@@ -967,9 +950,7 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
 :TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
                                             <http://www.w3.org/ns/dcat#Dataset> ;
-                                   <http://purl.org/www.umr-lastig.fr/geodata#represents> :Hiking ;
                                    <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
-                                   <http://purl.org/www.umr-lastig.fr/geodatarepresents> :HumanTrack ;
                                    rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
                                    <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
 
@@ -991,8 +972,7 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
             <http://purl.org/dc/terms/language> "English" ;
             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
             <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
-            <http://purl.org/dc/terms/title> "act-export"@fr ;
-            <http://purl.org/www.umr-lastig.fr/geodatarepresents> :AnimalTrack .
+            <http://purl.org/dc/terms/title> "act-export"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#aloison
@@ -1016,8 +996,7 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
                      <http://purl.org/dc/terms/language> "fr-FR" ;
                      <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
                      <http://purl.org/dc/terms/publisher> :altituderando ;
-                     <http://purl.org/dc/terms/title> "AltitudeRando routes"@fr ;
-                     <http://purl.org/www.umr-lastig.fr/geodatarepresents> :NamedRoute .
+                     <http://purl.org/dc/terms/title> "AltitudeRando routes"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#api-camptocamp
@@ -1075,8 +1054,7 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
            <http://purl.org/dc/terms/language> "fr-FR" ;
            <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
            <http://purl.org/dc/terms/publisher> :camptocamp ;
-           <http://purl.org/dc/terms/title> "Camptocamp.org-routes"@fr ;
-           <http://purl.org/www.umr-lastig.fr/geodatarepresents> :NamedRoute .
+           <http://purl.org/dc/terms/title> "Camptocamp.org-routes"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#c2c-route-geojson
@@ -1087,7 +1065,8 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 
 ###  https://intforout.github.io/outdoorPressure#c2c-waypoint
-:c2c-waypoint rdf:type owl:NamedIndividual ;
+:c2c-waypoint rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/ns/dcat#Dataset> ;
               <http://www.w3.org/ns/dcat#distribution> :c2c-waypoint-geojson ;
               <http://purl.org/dc/terms/description> "A set of Waypoints issued from Camptocamp.org API."@en ;
               <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
@@ -1127,8 +1106,7 @@ _:genid14 rdf:type <http://www.w3.org/ns/prov#Person> ;
              <http://purl.org/dc/terms/language> "English" ;
              <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
              <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
-             <http://purl.org/dc/terms/title> "locs-export"@fr ;
-             <http://purl.org/www.umr-lastig.fr/geodatarepresents> :AnimalTrack .
+             <http://purl.org/dc/terms/title> "locs-export"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#marchandetal-rdata
@@ -1218,8 +1196,7 @@ _:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
                              <http://purl.org/dc/terms/language> "fr-FR" ;
                              <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                              <http://purl.org/dc/terms/publisher> :parcdesbauges ;
-                             <http://purl.org/dc/terms/title> "Parcdesbauges.com - sensitivearea"@fr ;
-                             <http://purl.org/www.umr-lastig.fr/geodataannotates> :MobilityNetworkDB .
+                             <http://purl.org/dc/terms/title> "Parcdesbauges.com - sensitivearea"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson
@@ -1238,8 +1215,7 @@ _:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
                     <http://purl.org/dc/terms/language> "fr-FR" ;
                     <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
                     <http://purl.org/dc/terms/publisher> :parcdesbauges ;
-                    <http://purl.org/dc/terms/title> "Parcdesbauges.com - trek"@fr ;
-                    <http://purl.org/www.umr-lastig.fr/geodatarepresents> :NamedRoute .
+                    <http://purl.org/dc/terms/title> "Parcdesbauges.com - trek"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson
@@ -1321,8 +1297,7 @@ _:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
                  <http://www.w3.org/ns/prov#wasGeneratedBy> :FusionCalibration ;
                  <http://www.w3.org/ns/prov#wasQuotedFrom> :sigspatial24vandamme ;
                  <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
-                 <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr ;
-                 <http://purl.org/www.umr-lastig.fr/geodatarepresents> :MergedTrack .
+                 <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#visorando
@@ -1340,24 +1315,11 @@ _:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
                  <http://purl.org/dc/terms/language> "fr-FR" ;
                  <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
                  <http://purl.org/dc/terms/publisher> :visorando ;
-                 <http://purl.org/dc/terms/title> "Visorando routes"@fr ;
-                 <http://purl.org/www.umr-lastig.fr/geodatarepresents> :NamedRoute .
+                 <http://purl.org/dc/terms/title> "Visorando routes"@fr .
 
 
 ###  https://www.refuges.info/api/
 <https://www.refuges.info/api/> rdf:type owl:NamedIndividual .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:Hiking rdfs:comment "activité de plein air consistant à se promener de façon ludique ou sportive"@fr ;
-        rdfs:label "randonnées pédestres"@fr .
-
-
-:HumanTrack rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
-                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

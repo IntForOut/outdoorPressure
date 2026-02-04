@@ -94,12 +94,6 @@
 # http://purl.org/spar/datacite/volume
 <http://purl.org/spar/datacite/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/www.umr-lastig.fr/geodataannotates
-<http://purl.org/www.umr-lastig.fr/geodataannotates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/www.umr-lastig.fr/geodatarepresents
-<http://purl.org/www.umr-lastig.fr/geodatarepresents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://schema.org/address
 <http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -231,6 +225,10 @@
 # 
 # http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation
 <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/choucas.ign.fr/oor#RoutePortion> .
+<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation> .
+<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Pour modéliser les annotations sémantiques des itinéraires." .
+<http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "hasSemanticRouteAnnotation" .
 # 
 # https://intforout.github.io/locatedIn#locatedIn
 <https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -262,9 +260,9 @@
 # http://purl.org/choucas.ign.fr/oor#RoutePortion
 <http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Route> .
-<http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2000/01/rdf-schema#comment> "A portion of a route representing channels along which people move, potentially heterogeneous in its surface or structure. It may or may not be paved or vehicle-accessible."@fr .
-<http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Portion de route"@fr .
-<http://purl.org/choucas.ign.fr/oor#RoutePortion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Portion of route"@en .
+# 
+# http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation
+<http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/dc/terms/URI
 <http://purl.org/dc/terms/URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -357,6 +355,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#Hiking
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#comment> "activité de plein air consistant à se promener de façon ludique ou sportive"@fr .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "randonnées pédestres"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -366,6 +366,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#HumanTrack
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Track> .
+<https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en .
+<https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
 # 
 # https://intforout.github.io/outdoorPressure#LandEntity
 <https://intforout.github.io/outdoorPressure#LandEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -425,7 +427,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://intforout.github.io/outdoorPressure#Route
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en .
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
 # 
@@ -442,7 +443,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/choucas.ign.fr/oor#RoutePortion> .
 <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#hasValue> <http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> .
+_:genid8 <http://www.w3.org/2002/07/owl#hasValue> <http://purl.org/choucas.ign.fr/oor#Switchbacks> .
 _:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
@@ -470,8 +471,9 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://example.org/activity/CameraTrapSurveyCMB20242024> <http://www.w3.org/ns/prov#endedAtTime> "2024-02"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <http://example.org/activity/CameraTrapSurveyCMB20242024> <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
-# http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets
-<http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# http://purl.org/choucas.ign.fr/oor#Switchbacks
+<http://purl.org/choucas.ign.fr/oor#Switchbacks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/choucas.ign.fr/oor#Switchbacks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -566,7 +568,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv> .
-<https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#MergedTrack> .
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en .
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath> <http://www.w3.org/ns/dcat#isPartOf> <https://intforout.github.io/outdoorPressure#MOUSLS> .
 # 
@@ -584,9 +585,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.w3.org/ns/prov#endedAtTime> "2024-12"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.w3.org/ns/prov#startedAtTime> "2024-01"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
-# https://intforout.github.io/outdoorPressure#Hiking
-<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
 # https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -597,16 +595,12 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/license> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/www.umr-lastig.fr/geodataannotates> <https://intforout.github.io/outdoorPressure#MobilityNetworkDB> .
 # 
 # https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/ns/dcat#format> "csv" .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/ns/dcat#identifier> "human_chamois_real_encounters.csv" .
-# 
-# https://intforout.github.io/outdoorPressure#HumanTrack
-<https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://intforout.github.io/outdoorPressure#IntForOutETLDB
 <https://intforout.github.io/outdoorPressure#IntForOutETLDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -664,7 +658,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # https://intforout.github.io/outdoorPressure#KerouatonTrack20142015
 <https://intforout.github.io/outdoorPressure#KerouatonTrack20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#KerouatonTrack20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#KerouatonTrack20142015> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanTrack> .
 <https://intforout.github.io/outdoorPressure#KerouatonTrack20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#KEROUANTON2024100734> .
 <https://intforout.github.io/outdoorPressure#KerouatonTrack20142015> <http://purl.org/dc/terms/description> "A set of tracks. Compleed with questionnaires"@en .
 <https://intforout.github.io/outdoorPressure#KerouatonTrack20142015> <http://purl.org/dc/terms/title> "Tracks issued from PhD of Colin Kerouaton"@fr .
@@ -694,6 +687,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#Marchandetal2025DB
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#act-export> .
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#locs-export> .
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
@@ -743,8 +737,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # https://intforout.github.io/outdoorPressure#OutdoorVisionExport
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#Hiking> .
-<https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanTrack> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/publisher> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> .
@@ -771,24 +763,19 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 # https://intforout.github.io/outdoorPressure#SwitchbackIdentification
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
-<https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#generated> <https://intforout.github.io/outdoorPressure#SwitchbacksPortion> .
+<https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#generated> <https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges> .
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#used> <https://intforout.github.io/outdoorPressure#visorando-route> .
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> .
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#endedAtTime> "2025-01"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/ns/prov#startedAtTime> "2025-01"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
-# https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion
-<https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://intforout.github.io/outdoorPressure#SwitchbacksPortion
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion> .
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> .
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en .
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr .
-<https://intforout.github.io/outdoorPressure#SwitchbacksPortion> <http://purl.org/www.umr-lastig.fr/geodataannotates> <https://intforout.github.io/outdoorPressure#MobilityNetworkDB> .
+# https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges
+<https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> .
+<https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges> <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en .
+<https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges> <http://purl.org/dc/terms/title> "Portions de route caractérisant une série de virages"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -811,9 +798,7 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#Hiking> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> .
-<https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#HumanTrack> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#isPartOf> <https://intforout.github.io/outdoorPressure#MOUSLS> .
 # 
@@ -834,7 +819,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#act-export> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://intforout.github.io/outdoorPressure#act-export> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
 <https://intforout.github.io/outdoorPressure#act-export> <http://purl.org/dc/terms/title> "act-export"@fr .
-<https://intforout.github.io/outdoorPressure#act-export> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#AnimalTrack> .
 # 
 # https://intforout.github.io/outdoorPressure#aloison
 <https://intforout.github.io/outdoorPressure#aloison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -856,7 +840,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#altituderando-route> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
 <https://intforout.github.io/outdoorPressure#altituderando-route> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#altituderando> .
 <https://intforout.github.io/outdoorPressure#altituderando-route> <http://purl.org/dc/terms/title> "AltitudeRando routes"@fr .
-<https://intforout.github.io/outdoorPressure#altituderando-route> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#NamedRoute> .
 # 
 # https://intforout.github.io/outdoorPressure#api-camptocamp
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -910,7 +893,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#c2c-route> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
 <https://intforout.github.io/outdoorPressure#c2c-route> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#camptocamp> .
 <https://intforout.github.io/outdoorPressure#c2c-route> <http://purl.org/dc/terms/title> "Camptocamp.org-routes"@fr .
-<https://intforout.github.io/outdoorPressure#c2c-route> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#NamedRoute> .
 # 
 # https://intforout.github.io/outdoorPressure#c2c-route-geojson
 <https://intforout.github.io/outdoorPressure#c2c-route-geojson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -920,6 +902,7 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#c2c-waypoint
 <https://intforout.github.io/outdoorPressure#c2c-waypoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#c2c-waypoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#c2c-waypoint> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson> .
 <https://intforout.github.io/outdoorPressure#c2c-waypoint> <http://purl.org/dc/terms/description> "A set of Waypoints issued from Camptocamp.org API."@en .
 <https://intforout.github.io/outdoorPressure#c2c-waypoint> <http://purl.org/dc/terms/issued> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -956,7 +939,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#locs-export> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://intforout.github.io/outdoorPressure#locs-export> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
 <https://intforout.github.io/outdoorPressure#locs-export> <http://purl.org/dc/terms/title> "locs-export"@fr .
-<https://intforout.github.io/outdoorPressure#locs-export> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#AnimalTrack> .
 # 
 # https://intforout.github.io/outdoorPressure#marchandetal-rdata
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1037,7 +1019,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
 <https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#parcdesbauges> .
 <https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea> <http://purl.org/dc/terms/title> "Parcdesbauges.com - sensitivearea"@fr .
-<https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea> <http://purl.org/www.umr-lastig.fr/geodataannotates> <https://intforout.github.io/outdoorPressure#MobilityNetworkDB> .
 # 
 # https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson
 <https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1055,7 +1036,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#parcdesbauges> .
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek> <http://purl.org/dc/terms/title> "Parcdesbauges.com - trek"@fr .
-<https://intforout.github.io/outdoorPressure#parcdesbauges-trek> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#NamedRoute> .
 # 
 # https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1130,7 +1110,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#sigspatial24vandamme> .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en .
 <https://intforout.github.io/outdoorPressure#vincennesfusion> <http://purl.org/dc/terms/title> "Traces fusionnées issues de la métrologie de l'algorithme MIAA"@fr .
-<https://intforout.github.io/outdoorPressure#vincennesfusion> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#MergedTrack> .
 # 
 # https://intforout.github.io/outdoorPressure#visorando
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1147,24 +1126,8 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#visorando-route> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
 <https://intforout.github.io/outdoorPressure#visorando-route> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#visorando> .
 <https://intforout.github.io/outdoorPressure#visorando-route> <http://purl.org/dc/terms/title> "Visorando routes"@fr .
-<https://intforout.github.io/outdoorPressure#visorando-route> <http://purl.org/www.umr-lastig.fr/geodatarepresents> <https://intforout.github.io/outdoorPressure#NamedRoute> .
 # 
 # https://www.refuges.info/api/
 <https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#comment> "activité de plein air consistant à se promener de façon ludique ou sportive"@fr .
-<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "randonnées pédestres"@fr .
-# 
-<https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en .
-<https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

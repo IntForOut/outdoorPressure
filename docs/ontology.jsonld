@@ -81,7 +81,7 @@
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets"
+    "@id" : "http://purl.org/choucas.ign.fr/oor#Switchbacks"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
@@ -119,26 +119,33 @@
 }, {
   "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "A portion of a route representing channels along which people move, potentially heterogeneous in its surface or structure. It may or may not be paved or vehicle-accessible."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Route"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "fr",
-    "@value" : "Portion de route"
-  }, {
-    "@language" : "en",
-    "@value" : "Portion of route"
   } ]
 }, {
-  "@id" : "http://purl.org/choucas.ign.fr/oor#en_séries_de_virages_en_lacets",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@id" : "http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/choucas.ign.fr/oor#Switchbacks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"
+  } ]
 }, {
   "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pour modéliser les annotations sémantiques des itinéraires."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSemanticRouteAnnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"
+  } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -296,12 +303,6 @@
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodataannotates",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodatarepresents",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -643,9 +644,6 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."
@@ -699,7 +697,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
     "@value" : "activité de plein air consistant à se promener de façon ludique ou sportive"
@@ -731,9 +729,6 @@
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB"
-  } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"
   } ],
@@ -761,7 +756,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."
@@ -884,9 +879,6 @@
     "@language" : "fr",
     "@value" : "Tracks issued from PhD of Colin Kerouaton"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack"
-  } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#KEROUANTON2024100734"
   } ]
@@ -963,7 +955,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Marchandetal2025DB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@value" : "Marchand, P., Risser, N., Petit, E., & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"
   } ],
@@ -1149,11 +1141,6 @@
     "@language" : "en",
     "@value" : "OutdoorVision export"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack"
-  } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "en",
     "@value" : "GPS traces"
@@ -1220,9 +1207,6 @@
   }, {
     "@language" : "fr",
     "@value" : "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea",
@@ -1247,7 +1231,7 @@
     "@value" : "2025-01"
   } ],
   "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortion"
+    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges"
   } ],
   "http://www.w3.org/ns/prov#startedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1264,14 +1248,14 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
   }, {
     "@id" : "_:genid8"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortion",
+  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1280,12 +1264,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Portions de route caractérisant une série de virages"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification"
@@ -1327,12 +1305,6 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
@@ -1381,9 +1353,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "act-export"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#AnimalTrack"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#affords",
@@ -1435,9 +1404,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "AltitudeRando routes"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp",
@@ -1562,9 +1528,6 @@
     "@language" : "fr",
     "@value" : "Camptocamp.org-routes"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute"
-  } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#c2c-route-geojson"
   } ]
@@ -1579,7 +1542,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A set of Waypoints issued from Camptocamp.org API."
@@ -1669,9 +1632,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "locs-export"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#AnimalTrack"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata",
@@ -1822,9 +1782,6 @@
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - sensitivearea"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodataannotates" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB"
-  } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
   } ]
@@ -1860,9 +1817,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Parcdesbauges.com - trek"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson"
@@ -2008,9 +1962,6 @@
     "@language" : "fr",
     "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
-  } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"
   } ],
@@ -2049,9 +2000,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Visorando routes"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatarepresents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute"
   } ]
 }, {
   "@id" : "https://www.refuges.info/api/",
