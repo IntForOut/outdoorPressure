@@ -136,6 +136,10 @@
 <http://schema.org/address> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
 rdf:comment rdf:type owl:AnnotationProperty .
 
@@ -288,6 +292,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> rdf:type owl:ObjectProperty .
 
 
+###  https://intforout.github.io/locatedIn#locatedIn
+<https://intforout.github.io/locatedIn#locatedIn> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.w3.org/ns/dcat#Population> ;
+                                                  rdfs:range :LandEntity .
+
+
 ###  https://intforout.github.io/outdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
          rdfs:domain :LandEntity ;
@@ -295,18 +305,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 
 
-###  https://intforout.github.io/outdoorPressure#profile
-:profile rdf:type owl:ObjectProperty ;
-         rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
-         rdfs:range <http://purl.org/dc/terms/URI> .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  https://intforout.github.io/outdoorPressure#profile
-:profile rdf:type owl:DatatypeProperty .
+###  https://intforout.github.io/outdoorPressure#hasProfile
+:hasProfile rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+            rdfs:range <http://purl.org/dc/terms/URI> ;
+            rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
 
 
 #################################################################
@@ -331,6 +334,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Population
+<http://www.w3.org/ns/dcat#Population> rdf:type owl:Class .
 
 
 ###  http://www.wikidata.org/entity/Q2625603
@@ -490,6 +497,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             rdfs:comment "Ensemble of individuals of a species in an land entity."@en .
 
 
+###  https://intforout.github.io/outdoorPressure#ReservesNaturelles
+:ReservesNaturelles rdf:type owl:Class ;
+                    rdfs:subClassOf :LandEntity ;
+                    rdfs:comment "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.." ;
+                    rdfs:label "Réserves naturelles" .
+
+
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
 :ResilientRoute rdf:type owl:Class ;
                 rdfs:subClassOf :Route ;
@@ -526,7 +540,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Track
 :Track rdf:type owl:Class ;
-       rdfs:subClassOf <http://www.w3.org/ns/ssn/Output> ;
        rdfs:comment "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en ,
                     "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."@fr .
 
@@ -690,6 +703,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 
 
+###  https://intforout.github.io/outdoorPressure#HikersBauges2024
+:HikersBauges2024 rdf:type owl:NamedIndividual ,
+                           :Population ;
+                  <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn> :MassifDesBauges ;
+                  <http://www.w3.org/ns/prov#endedAtTime> "2024-12"^^xsd:gYearMonth ;
+                  <http://www.w3.org/ns/prov#startedAtTime> "2024-01"^^xsd:gYearMonth .
+
+
 ###  https://intforout.github.io/outdoorPressure#Hiking
 :Hiking rdf:type owl:NamedIndividual .
 
@@ -826,6 +847,12 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
                     <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
                     <http://purl.org/dc/terms/spatial> <http://sws.geonames.org/3001970/> ;
                     <http://purl.org/dc/terms/title> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#MassifDesBauges
+:MassifDesBauges rdf:type owl:NamedIndividual ,
+                          :ReservesNaturelles ;
+                 rdfs:comment "Massif des Bauges"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest
@@ -1331,9 +1358,6 @@ _:genid16 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 :HumanTrack rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
                          "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
-
-
-:profile rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

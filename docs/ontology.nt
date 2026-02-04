@@ -103,6 +103,9 @@
 # http://schema.org/address
 <http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn
+<http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -229,28 +232,23 @@
 # http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation
 <http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# https://intforout.github.io/locatedIn#locatedIn
+<https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Population> .
+<http://www.w3.org/ns/dcat#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/locatedIn#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#LandEntity> .
+# 
 # https://intforout.github.io/outdoorPressure#affords
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Activity> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 # 
-# https://intforout.github.io/outdoorPressure#profile
-<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/URI> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# https://intforout.github.io/outdoorPressure#profile
-<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# https://intforout.github.io/outdoorPressure#hasProfile
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/URI> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
 # 
 # 
 # 
@@ -276,6 +274,8 @@
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Population
 # 
 # http://www.wikidata.org/entity/Q2625603
 <http://www.wikidata.org/entity/Q2625603> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -411,6 +411,12 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble of individuals of a species in an land entity."@en .
 # 
+# https://intforout.github.io/outdoorPressure#ReservesNaturelles
+<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.." .
+<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/2000/01/rdf-schema#label> "Réserves naturelles" .
+# 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Route> .
@@ -442,7 +448,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://intforout.github.io/outdoorPressure#Track
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Output> .
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en .
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."@fr .
 # 
@@ -572,6 +577,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/ns/dcat#format> "csv" .
 <https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv> <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 # 
+# https://intforout.github.io/outdoorPressure#HikersBauges2024
+<https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Population> .
+<https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn> <https://intforout.github.io/outdoorPressure#MassifDesBauges> .
+<https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.w3.org/ns/prov#endedAtTime> "2024-12"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
+<https://intforout.github.io/outdoorPressure#HikersBauges2024> <http://www.w3.org/ns/prov#startedAtTime> "2024-01"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
+# 
 # https://intforout.github.io/outdoorPressure#Hiking
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -695,6 +707,11 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://purl.org/dc/terms/spatial> <http://sws.geonames.org/3001970/> .
 <https://intforout.github.io/outdoorPressure#Marchandetal2025DB> <http://purl.org/dc/terms/title> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en .
+# 
+# https://intforout.github.io/outdoorPressure#MassifDesBauges
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#ReservesNaturelles> .
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Massif des Bauges"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest
 <https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1149,7 +1166,5 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en .
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
-# 
-<https://intforout.github.io/outdoorPressure#profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

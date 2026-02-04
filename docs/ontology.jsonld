@@ -306,6 +306,9 @@
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -332,6 +335,9 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#Population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#accessService",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -434,6 +440,15 @@
 }, {
   "@id" : "https://geotrek.parcdesbauges.com/api/v2/",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://intforout.github.io/locatedIn#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Population"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -664,6 +679,23 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Footprint"
   }, {
     "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HikersBauges2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Population"
+  } ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-12"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-01"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
@@ -974,6 +1006,16 @@
     "@id" : "https://intforout.github.io/outdoorPressure#pan3.70151"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Massif des Bauges"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#MergedAccurateTrack",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1145,6 +1187,18 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Réserves naturelles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ResilientRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1269,9 +1323,6 @@
   }, {
     "@language" : "fr",
     "@value" : "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/ssn/Output"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest",
@@ -1581,6 +1632,18 @@
     "@value" : "Cirkwi"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#hasProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/URI"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#locs-export",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -1827,18 +1890,6 @@
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Pôle ressources national sports de nature (PRNSN)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#profile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/dc/terms/URI"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
