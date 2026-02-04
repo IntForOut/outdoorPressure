@@ -4,6 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:guf="http://www.opengis.net/guf/1.0"
      xmlns:oor="http://purl.org/choucas.ign.fr/oor#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -31,8 +32,7 @@
      xmlns:schema="http://schema.org/"
      xmlns:geodata="http://purl.org/www.umr-lastig.fr/geodata#"
      xmlns:datacite="http://purl.org/spar/datacite/"
-     xmlns:outdoorPressure="https://intforout.github.io/outdoorPressure#"
-     xmlns:guf="http://www.opengis.net/guf/1.0">
+     xmlns:outdoorPressure="https://intforout.github.io/outdoorPressure#">
     <owl:Ontology rdf:about="https://intforout.github.io/outdoorPressure">
         <owl:imports rdf:resource="http://purl.org/www.umr-lastig.fr/geodata"/>
         <ns:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
@@ -479,12 +479,21 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#profile -->
+    <!-- https://intforout.github.io/outdoorPressure#hasProfile -->
 
-    <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#profile">
+    <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasProfile">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/URI"/>
         <rdfs:comment>Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://intforout.github.io/locatedIn#locatedIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Population"/>
+        <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
     </owl:ObjectProperty>
     
 
@@ -500,9 +509,7 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#profile -->
-
-    <owl:DatatypeProperty rdf:about="https://intforout.github.io/outdoorPressure#profile"/>
+    
     
 
 
@@ -596,6 +603,14 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#Cycling -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Cycling">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+    </owl:Class>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#EncounteringZone -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
@@ -606,14 +621,26 @@
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
                             <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#AnimalActivity"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#FastHiking -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#FastHiking">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+        <rdfs:comment xml:lang="fr">
+        Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.
+        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique.
+        </rdfs:comment>
     </owl:Class>
     
 
@@ -658,6 +685,10 @@
     
 
 
+    
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#Hiking -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Hiking">
@@ -673,26 +704,6 @@
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Activity"/>
         <rdfs:comment xml:lang="en">Human activity taking place outdoor</rdfs:comment>
-    </owl:Class>
-
-
-
-    <!-- https://intforout.github.io/outdoorPressure#FastHiking -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#FastHiking">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
-        <rdfs:comment xml:lang="fr">
-        Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.
-        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique.
-        </rdfs:comment>
-    </owl:Class>
-
-
-
-     <!-- https://intforout.github.io/outdoorPressure#Cycling -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Cycling">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
     </owl:Class>
     
 
@@ -816,6 +827,17 @@
         <rdfs:comment>Zone naturelle sensible où l&apos;environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d&apos;introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc..</rdfs:comment>
     </owl:Class>
     
+    
+
+    <!-- https://intforout.github.io/outdoorPressure#ReservesNaturelles -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#ReservesNaturelles">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:comment>Zone naturelle sensible où l&apos;environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d&apos;introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc..</rdfs:comment>
+        <rdfs:label>Réserves naturelles</rdfs:label>
+    </owl:Class>
+
+
 
 
     <!-- https://intforout.github.io/outdoorPressure#Sentier -->
@@ -843,7 +865,6 @@
     <!-- https://intforout.github.io/outdoorPressure#Track -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Track">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Output"/>
         <rdfs:comment xml:lang="en">A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024).</rdfs:comment>
         <rdfs:comment xml:lang="fr">La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C&apos;est un résultat d&apos;une procédure : soit d&apos;une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d&apos;un retraitement d&apos;une trace brute, soit d&apos;une simulation.</rdfs:comment>
     </owl:Class>
@@ -1020,10 +1041,6 @@
     
 
 
-    
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#FusionCalibration -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#FusionCalibration">
@@ -1061,6 +1078,10 @@
     
 
 
+    
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
@@ -1084,6 +1105,10 @@
         <dcat:format>csv</dcat:format>
         <dcat:identifier>human_chamois_real_encounters.csv</dcat:identifier>
     </owl:NamedIndividual>
+    
+
+
+    
     
 
 
@@ -1295,7 +1320,7 @@
         <dc:creator>Abdassalam Naciri</dc:creator>
         <dc:description>The data values have been analysed to prepare the ETL warehouse and a report has been published (available from the creator).</dc:description>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion -->
@@ -1305,7 +1330,6 @@
         <dc:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
     </owl:NamedIndividual>
     
-
 
 
     <!-- https://intforout.github.io/outdoorPressure#SwitchbackIdentification -->
@@ -1867,8 +1891,26 @@
     <!-- https://www.refuges.info/api/ -->
 
     <owl:NamedIndividual rdf:about="https://www.refuges.info/api/"/>
+
+
+    <!-- https://intforout.github.io/outdoorPressure#HikersBauges2024 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersBauges2024">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Population"/>
+        <outp:locatedIn rdf:resource="https://intforout.github.io/outdoorPressure#MassifDesBauges"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-12</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01</prov:startedAtTime>
+    </owl:NamedIndividual>
     
 
+
+    <!-- https://intforout.github.io/outdoorPressure#MassifDesBauges -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MassifDesBauges">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#ReservesNaturelles"/>
+        <rdfs:comment xml:lang="fr">Massif des Bauges</rdfs:comment>
+    </owl:NamedIndividual>
+    
 </rdf:RDF>
 
 
