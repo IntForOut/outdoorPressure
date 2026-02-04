@@ -638,7 +638,8 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Footprint">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment xml:lang="en">Région spatiale représe</rdfs:comment>
+        <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
     </owl:Class>
     
 
@@ -733,16 +734,6 @@
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Track"/>
         <rdfs:comment xml:lang="en">A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024).</rdfs:comment>
         <rdfs:comment xml:lang="fr">La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024).</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#MobilityNetwork -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#MobilityNetwork">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
     </owl:Class>
     
 
