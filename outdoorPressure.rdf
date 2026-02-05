@@ -1095,6 +1095,23 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HikerFootprint"/>
+        <outdoorPressure:affordsHiking rdf:resource="https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
@@ -1886,6 +1903,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#vincennesfusion">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata1:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes"/>
         <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#FusionCalibration"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#sigspatial24vandamme"/>
         <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
