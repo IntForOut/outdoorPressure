@@ -683,11 +683,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Footprint"
   }, {
@@ -1183,8 +1179,6 @@
     "@id" : "_:genid12"
   } ],
   "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
-  }, {
     "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
   } ]
 }, {

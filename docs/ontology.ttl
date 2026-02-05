@@ -716,10 +716,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 
 
-###  https://intforout.github.io/outdoorPressure#HikerFootprint
-:HikerFootprint rdf:type owl:NamedIndividual .
-
-
 ###  https://intforout.github.io/outdoorPressure#HikersBauges2024
 :HikersBauges2024 rdf:type owl:NamedIndividual ,
                            :Population ;
@@ -922,8 +918,7 @@ _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
 ###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
 :ProfilageOutdoorVision rdf:type owl:NamedIndividual ,
                                  <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                        <http://www.w3.org/ns/dcat#theme> :HikerFootprint ,
-                                                          :MergedTrack ;
+                        <http://www.w3.org/ns/dcat#theme> :MergedTrack ;
                         <http://purl.org/dc/elements/1.1/creator> "Abdassalam Naciri" ;
                         <http://purl.org/dc/elements/1.1/description> "Un article qui parle de fusion de traces appliquée à des traces simulées dans le bois de vincennes et qui pourrait être refait sur les traces Outdoorvision dans les Bauges et la zone du Mont-Blanc" ;
                         <http://purl.org/dc/terms/spatial> _:genid12 .
@@ -1365,9 +1360,6 @@ _:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
 #################################################################
 #    Annotations
 #################################################################
-
-:HikerFootprint rdfs:comment "A footprint representing the common paths followed by all the individual sample human trajectories recording hiking activity practice."@en .
-
 
 :MergedTrack rdfs:comment "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en ,
                           "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
