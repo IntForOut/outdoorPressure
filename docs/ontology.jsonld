@@ -549,6 +549,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "Ski Lift Ridership Counts in the CMB Area."
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Cycling",
@@ -1357,9 +1360,6 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
   } ]

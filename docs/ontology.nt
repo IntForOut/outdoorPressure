@@ -547,6 +547,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques
 <https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> .
 <https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques> <http://purl.org/dc/terms/description> "Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year)."@en .
 <https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques> <http://purl.org/dc/terms/title> "Ski Lift Ridership Counts in the CMB Area."@en .
 # 
@@ -840,7 +841,6 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB
 <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
-<https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> .
 # 
 # https://intforout.github.io/outdoorPressure#act-export
 <https://intforout.github.io/outdoorPressure#act-export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

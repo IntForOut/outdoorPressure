@@ -668,6 +668,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques
 :ComptageRemontéesMécaniques rdf:type owl:NamedIndividual ,
                                       <http://www.w3.org/ns/dcat#Dataset> ;
+                             <http://purl.org/www.umr-lastig.fr/geodata#represents> :UsageRemonteeMecaniqueCMB ;
                              <http://purl.org/dc/terms/description> "Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year)."@en ;
                              <http://purl.org/dc/terms/title> "Ski Lift Ridership Counts in the CMB Area."@en .
 
@@ -999,8 +1000,7 @@ _:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB
 :UsageRemonteeMecaniqueCMB rdf:type owl:NamedIndividual ,
-                                    :HumanOutdoorActivity ;
-                           <http://purl.org/www.umr-lastig.fr/geodata#represents> :UsageRemonteeMecaniqueCMB .
+                                    :HumanOutdoorActivity .
 
 
 ###  https://intforout.github.io/outdoorPressure#act-export
