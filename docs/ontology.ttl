@@ -305,27 +305,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 
 
-###  https://intforout.github.io/outdoorPressure#affordsHiking
-:affordsHiking rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf :affords ;
-               rdfs:domain :LandEntity ;
-               rdfs:range :Hiking ;
-               rdfs:comment "Capacité d'entités à permettre un type d'activité humaine qui est la randonnée pédestre" .
-
-
 ###  https://intforout.github.io/outdoorPressure#hasProfile
 :hasProfile rdf:type owl:ObjectProperty ;
             rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
             rdfs:range <http://purl.org/dc/terms/URI> ;
             rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
-
-
-###  https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking
-:hikersFootprintAffordsHiking rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :affordsHiking ;
-                              rdfs:domain :HikerFootprint ;
-                              rdfs:range :Hiking ;
-                              rdfs:comment "Capacité des objets de type HikersFootprint à permettre la randonnée pédestre. On considère que d'autres randonneurs peuvent suivre la trajectoire reconstruite de telle façon qu'elle représente une trajectoire plausible et laissée par plusieurs randonneurs.." .
 
 
 #################################################################
@@ -727,7 +711,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes
 :HikersFootPrintBoisVincennes rdf:type owl:NamedIndividual ,
                                        :HikerFootprint ;
-                              :affordsHiking :HikingBoisdeVincennes .
+                              :affords :HikingBoisdeVincennes .
 
 
 ###  https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes

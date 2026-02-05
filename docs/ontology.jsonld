@@ -712,7 +712,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
   } ],
-  "https://intforout.github.io/outdoorPressure#affordsHiking" : [ {
+  "https://intforout.github.io/outdoorPressure#affords" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes"
   } ]
 }, {
@@ -1412,21 +1412,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Activity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#affordsHiking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Capacité d'entités à permettre un type d'activité humaine qui est la randonnée pédestre"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#affords"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#aloison",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
@@ -1665,21 +1650,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/dc/terms/URI"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Capacité des objets de type HikersFootprint à permettre la randonnée pédestre. On considère que d'autres randonneurs peuvent suivre la trajectoire reconstruite de telle façon qu'elle représente une trajectoire plausible et laissée par plusieurs randonneurs.."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#affordsHiking"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#locs-export",
