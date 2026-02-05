@@ -646,13 +646,13 @@
         <mxCell id="i8Rt25E_2ZIzhrYLte2F-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;dashed=1;dashPattern=8 8;" value="&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 204, 0);&quot;&gt;&lt;font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Procedure&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="59" width="97" x="951.83" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="q6JdsT4vZauQ0O8RymOa-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;dashed=1;dashPattern=8 8;" value="&lt;div&gt;&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;&lt;b&gt;Scientific&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;&lt;b&gt;Paper&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="q6JdsT4vZauQ0O8RymOa-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;dashed=1;dashPattern=8 8;fillColor=#00994D;" value="&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Scientific&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Paper&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60.16" width="150" x="790" y="90" as="geometry" />
         </mxCell>
         <mxCell id="rLUB1kU3DVEVd5vNwcsx-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;dashed=1;dashPattern=8 8;" value="&lt;span style=&quot;color: rgb(127, 212, 42);&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;SoftwareAgent&lt;/font&gt;&lt;/span&gt;" vertex="1">
           <mxGeometry height="65" width="88.83" x="960" y="307.5" as="geometry" />
         </mxCell>
-        <mxCell id="g0z6tUMh3_bawU6Q5PDi-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Observation&lt;br&gt;or Survey&lt;/b&gt;&lt;/font&gt;" vertex="1">
+        <mxCell id="g0z6tUMh3_bawU6Q5PDi-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;dashed=1;dashPattern=8 8;" value="&lt;font style=&quot;font-size: 11px; color: rgb(0, 204, 204);&quot;&gt;&lt;b&gt;Observation&lt;br&gt;or Survey&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="65" width="140" x="423" y="467.5" as="geometry" />
         </mxCell>
         <mxCell id="a8cQ3gnFqshiuR4w__ut-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#00CC00;strokeWidth=2;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Fusion Calibration&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;with Vincennes data&lt;/font&gt;&lt;/div&gt;" vertex="1">
@@ -684,10 +684,10 @@
         <mxCell id="UPIAPg2v9byUpVcYwyKK-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Paper Feedback&lt;/font&gt;" vertex="1">
           <mxGeometry height="40" width="140" x="460" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="SyYxOqDCPKjSJAQ8veLh-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Topometric Survey&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;in VincennesForest&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="SyYxOqDCPKjSJAQ8veLh-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#00CCCC;strokeWidth=2;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Topometric Survey&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;in VincennesForest&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="157" x="498" y="417.5" as="geometry" />
         </mxCell>
-        <mxCell id="a8cQ3gnFqshiuR4w__ut-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Collect with a protocol research&lt;/font&gt;" vertex="1">
+        <mxCell id="a8cQ3gnFqshiuR4w__ut-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#00CCCC;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Collect with a protocol research&lt;/font&gt;" vertex="1">
           <mxGeometry height="52.5" width="130" x="552" y="467.5" as="geometry" />
         </mxCell>
         <mxCell id="a8cQ3gnFqshiuR4w__ut-3" edge="1" parent="1" source="a8cQ3gnFqshiuR4w__ut-1" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="a8cQ3gnFqshiuR4w__ut-5" value="">
