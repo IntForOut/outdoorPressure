@@ -627,42 +627,8 @@
         <mxCell id="KATThzN7frratckhB8-l-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
           <mxGeometry height="450" width="1070" x="70" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="KATThzN7frratckhB8-l-2" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Activity&lt;/b&gt;" vertex="1">
-          <mxGeometry height="82.96" width="150" x="500" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="KATThzN7frratckhB8-l-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;HumanOutdoor&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="145" x="505" y="250" as="geometry" />
-        </mxCell>
-        <mxCell id="KATThzN7frratckhB8-l-4" edge="1" parent="1" source="KATThzN7frratckhB8-l-3" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;rounded=0;curved=1;dashed=1;" target="KATThzN7frratckhB8-l-2">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="440" y="250" />
-            </Array>
-            <mxPoint x="320" y="-114" as="sourcePoint" />
-            <mxPoint x="489" y="-200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="KATThzN7frratckhB8-l-5" connectable="0" parent="KATThzN7frratckhB8-l-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
-          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
-            <mxPoint x="25" y="-23" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="KATThzN7frratckhB8-l-6" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Hiking&lt;/b&gt;&lt;div&gt;&lt;b&gt;Activity&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="145" x="505" y="360" as="geometry" />
-        </mxCell>
-        <mxCell id="KATThzN7frratckhB8-l-7" edge="1" parent="1" source="KATThzN7frratckhB8-l-6" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="KATThzN7frratckhB8-l-3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="350" y="360" />
-            </Array>
-            <mxPoint x="520" y="294" as="sourcePoint" />
-            <mxPoint x="606" y="210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="KATThzN7frratckhB8-l-8" connectable="0" parent="KATThzN7frratckhB8-l-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="subclass" vertex="1">
-          <mxGeometry relative="1" x="-0.2965" y="4" as="geometry">
-            <mxPoint x="39" y="-15" as="offset" />
-          </mxGeometry>
+          <mxGeometry height="80" width="145" x="420" y="540" as="geometry" />
         </mxCell>
         <mxCell id="KATThzN7frratckhB8-l-9" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Catalogued &lt;br&gt;resource&lt;/b&gt;" vertex="1">
           <mxGeometry height="117.92" width="160" x="940.0799999999999" y="72.07999999999993" as="geometry" />
@@ -686,7 +652,7 @@
           <mxGeometry height="60" width="120" x="960" y="230" as="geometry" />
         </mxCell>
         <mxCell id="KATThzN7frratckhB8-l-16" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Footprint&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="269.5" y="590" as="geometry" />
+          <mxGeometry height="70" width="120" x="160" y="590" as="geometry" />
         </mxCell>
         <mxCell id="KATThzN7frratckhB8-l-17" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Route&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="240" y="190" as="geometry" />
@@ -700,17 +666,25 @@
         <mxCell id="UPIAPg2v9byUpVcYwyKK-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;HikersVincennes&lt;/div&gt;&lt;div&gt;FootPrint&lt;/div&gt;" vertex="1">
           <mxGeometry height="50" width="110" x="710" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="UPIAPg2v9byUpVcYwyKK-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Outdoorvision&lt;/div&gt;&lt;div&gt;Tracks&lt;/div&gt;" vertex="1">
+        <mxCell id="UPIAPg2v9byUpVcYwyKK-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="MOUSLS" vertex="1">
           <mxGeometry height="50" width="100" x="740" y="680" as="geometry" />
         </mxCell>
-        <mxCell id="UPIAPg2v9byUpVcYwyKK-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+        <mxCell id="UPIAPg2v9byUpVcYwyKK-5" edge="1" parent="1" source="SyYxOqDCPKjSJAQ8veLh-1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="UPIAPg2v9byUpVcYwyKK-4" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="770" y="410" as="sourcePoint" />
             <mxPoint x="820" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="SyYxOqDCPKjSJAQ8veLh-2" connectable="0" parent="UPIAPg2v9byUpVcYwyKK-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="generates" vertex="1">
+          <mxGeometry relative="1" x="0.1824" y="-1" as="geometry">
+            <mxPoint x="-19" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="UPIAPg2v9byUpVcYwyKK-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="UserFeedback" vertex="1">
           <mxGeometry height="60" width="120" x="1110" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="SyYxOqDCPKjSJAQ8veLh-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Topometric Survey&lt;/div&gt;&lt;div&gt;Vincennes&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="730" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
