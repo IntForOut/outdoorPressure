@@ -397,6 +397,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="aa1zbwz1ZVQa2VffgNIW-1" connectable="0" parent="bzN8eDsdvx3vpgtLOpkM-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;made by&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2197" y="-16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="HnWOWkFpi3NPROEjY7qN-25" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Observation&lt;br&gt;Or SurveyProcess&lt;/b&gt;" vertex="1">
           <mxGeometry height="82" width="170" x="-1445" y="475.96000000000004" as="geometry" />
         </mxCell>
@@ -620,7 +625,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="DkG_Ew4qQ62zcml-1EjA" name="Schéma 2 article">
-    <mxGraphModel dx="1301" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -724,17 +729,17 @@
         <mxCell id="rLUB1kU3DVEVd5vNwcsx-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Garmin watch" vertex="1">
           <mxGeometry height="30" width="100" x="360" y="870" as="geometry" />
         </mxCell>
-        <mxCell id="rLUB1kU3DVEVd5vNwcsx-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="- Garmin watch&lt;br&gt;- Polar watch&lt;br&gt;- Keymaza GPS&lt;br&gt;- Ublox GPS&lt;br&gt;- Visorando mobile phone application" vertex="1">
-          <mxGeometry height="90" width="130" x="540" y="950" as="geometry" />
+        <mxCell id="rLUB1kU3DVEVd5vNwcsx-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Polar watch" vertex="1">
+          <mxGeometry height="30" width="100" x="330" y="892" as="geometry" />
         </mxCell>
-        <mxCell id="rLUB1kU3DVEVd5vNwcsx-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="- Garmin watch&lt;br&gt;- Polar watch&lt;br&gt;- Keymaza GPS&lt;br&gt;- Ublox GPS&lt;br&gt;- Visorando mobile phone application" vertex="1">
-          <mxGeometry height="90" width="130" x="580" y="980" as="geometry" />
+        <mxCell id="rLUB1kU3DVEVd5vNwcsx-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Keymaza GPS" vertex="1">
+          <mxGeometry height="30" width="100" x="310" y="914" as="geometry" />
         </mxCell>
-        <mxCell id="rLUB1kU3DVEVd5vNwcsx-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="- Garmin watch&lt;br&gt;- Polar watch&lt;br&gt;- Keymaza GPS&lt;br&gt;- Ublox GPS&lt;br&gt;- Visorando mobile phone application" vertex="1">
-          <mxGeometry height="90" width="130" x="510" y="950" as="geometry" />
+        <mxCell id="rLUB1kU3DVEVd5vNwcsx-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ublox GPS" vertex="1">
+          <mxGeometry height="30" width="90" x="290" y="938" as="geometry" />
         </mxCell>
-        <mxCell id="rLUB1kU3DVEVd5vNwcsx-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="- Garmin watch&lt;br&gt;- Polar watch&lt;br&gt;- Keymaza GPS&lt;br&gt;- Ublox GPS&lt;br&gt;- Visorando mobile phone application" vertex="1">
-          <mxGeometry height="90" width="130" x="540" y="980" as="geometry" />
+        <mxCell id="rLUB1kU3DVEVd5vNwcsx-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Visorando mobile phone application" vertex="1">
+          <mxGeometry height="40" width="120" x="244" y="962" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
