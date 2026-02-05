@@ -707,6 +707,15 @@
     "@value" : "2024-01"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
+  } ],
+  "https://intforout.github.io/outdoorPressure#affordsHiking" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -722,6 +731,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters",
@@ -2021,6 +2036,9 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"

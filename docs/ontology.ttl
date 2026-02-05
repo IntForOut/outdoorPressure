@@ -724,6 +724,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                   <http://www.w3.org/ns/prov#startedAtTime> "2024-01"^^xsd:gYearMonth .
 
 
+###  https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes
+:HikersFootPrintBoisVincennes rdf:type owl:NamedIndividual ,
+                                       :HikerFootprint ;
+                              :affordsHiking :HikingBoisdeVincennes .
+
+
+###  https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes
+:HikingBoisdeVincennes rdf:type owl:NamedIndividual ,
+                                :Hiking .
+
+
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 :HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
@@ -1329,6 +1340,7 @@ _:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#vincennesfusion
 :vincennesfusion rdf:type owl:NamedIndividual ,
                           <http://www.w3.org/ns/dcat#Dataset> ;
+                 <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikersFootPrintBoisVincennes ;
                  <http://www.w3.org/ns/prov#wasGeneratedBy> :FusionCalibration ;
                  <http://www.w3.org/ns/prov#wasQuotedFrom> :sigspatial24vandamme ;
                  <http://purl.org/dc/terms/description> "Traces fusionnées du jeu de données sur Vincennes"@en ;
