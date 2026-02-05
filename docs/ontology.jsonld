@@ -715,8 +715,11 @@
     "@value" : "activité de plein air consistant à se promener de façon ludique ou sportive"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hiking"
+  }, {
     "@language" : "fr",
-    "@value" : "randonnées pédestres"
+    "@value" : "Randonnée pédestre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
@@ -1098,6 +1101,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1320,6 +1329,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
     "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
@@ -1341,6 +1353,15 @@
   } ],
   "http://www.w3.org/ns/dcat#identifier" : [ {
     "@value" : "tracks_multi_sensors_vincennes_forest.gpkg"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#act-export",
@@ -1380,6 +1401,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Activity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#affordsHiking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Capacité d'entités à permettre un type d'activité humaine qui est la randonnée pédestre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#affords"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#aloison",
@@ -1620,6 +1656,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/dc/terms/URI"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Capacité des objets de type HikersFootprint à permettre la randonnée pédestre. On considère que d'autres randonneurs peuvent suivre la trajectoire reconstruite de telle façon qu'elle représente une trajectoire plausible et laissée par plusieurs randonneurs.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#affordsHiking"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#locs-export",

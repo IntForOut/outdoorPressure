@@ -305,11 +305,27 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 
 
+###  https://intforout.github.io/outdoorPressure#affordsHiking
+:affordsHiking rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :affords ;
+               rdfs:domain :LandEntity ;
+               rdfs:range :Hiking ;
+               rdfs:comment "Capacité d'entités à permettre un type d'activité humaine qui est la randonnée pédestre" .
+
+
 ###  https://intforout.github.io/outdoorPressure#hasProfile
 :hasProfile rdf:type owl:ObjectProperty ;
             rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
             rdfs:range <http://purl.org/dc/terms/URI> ;
             rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
+
+
+###  https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking
+:hikersFootprintAffordsHiking rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :affordsHiking ;
+                              rdfs:domain :HikerFootprint ;
+                              rdfs:range :Hiking ;
+                              rdfs:comment "Capacité des objets de type HikersFootprint à permettre la randonnée pédestre. On considère que d'autres randonneurs peuvent suivre la trajectoire reconstruite de telle façon qu'elle représente une trajectoire plausible et laissée par plusieurs randonneurs.." .
 
 
 #################################################################
@@ -431,7 +447,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Hiking rdf:type owl:Class ;
         rdfs:subClassOf :HumanOutdoorActivity ;
         rdfs:comment "activité de plein air consistant à se promener de façon ludique ou sportive"@fr ;
-        rdfs:label "randonnées pédestres"@fr .
+        rdfs:label "Hiking"@en ,
+                   "Randonnée pédestre"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
@@ -873,6 +890,11 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                            <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
 
 
+###  https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes
+:MobiliteHumainsBoisVincennes rdf:type owl:NamedIndividual ,
+                                       :HumanOutdoorActivity .
+
+
 ###  https://intforout.github.io/outdoorPressure#MobilityNetworkDB
 :MobilityNetworkDB rdf:type owl:NamedIndividual ,
                             <http://www.w3.org/ns/dcat#Dataset> ;
@@ -961,6 +983,7 @@ _:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
 :TracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
                                             <http://www.w3.org/ns/dcat#Dataset> ;
+                                   <http://purl.org/www.umr-lastig.fr/geodata#represents> :MobiliteHumainsBoisVincennes ;
                                    <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
                                    rdf:comment "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
                                    <http://www.w3.org/ns/dcat#isPartOf> :MOUSLS .
@@ -972,6 +995,12 @@ _:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                         <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> ;
                                         <http://www.w3.org/ns/dcat#format> "gpkg" ;
                                         <http://www.w3.org/ns/dcat#identifier> "tracks_multi_sensors_vincennes_forest.gpkg" .
+
+
+###  https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB
+:UsageRemonteeMecaniqueCMB rdf:type owl:NamedIndividual ,
+                                    :HumanOutdoorActivity ;
+                           <http://purl.org/www.umr-lastig.fr/geodata#represents> :UsageRemonteeMecaniqueCMB .
 
 
 ###  https://intforout.github.io/outdoorPressure#act-export

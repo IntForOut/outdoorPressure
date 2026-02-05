@@ -244,11 +244,25 @@
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Activity> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a place, or land, to support a given activity, effectively or potentially" .
 # 
+# https://intforout.github.io/outdoorPressure#affordsHiking
+<https://intforout.github.io/outdoorPressure#affordsHiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://intforout.github.io/outdoorPressure#affordsHiking> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://intforout.github.io/outdoorPressure#affords> .
+<https://intforout.github.io/outdoorPressure#affordsHiking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#affordsHiking> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Hiking> .
+<https://intforout.github.io/outdoorPressure#affordsHiking> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacité d'entités à permettre un type d'activité humaine qui est la randonnée pédestre" .
+# 
 # https://intforout.github.io/outdoorPressure#hasProfile
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/URI> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL" .
+# 
+# https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking
+<https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://intforout.github.io/outdoorPressure#affordsHiking> .
+<https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#HikerFootprint> .
+<https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Hiking> .
+<https://intforout.github.io/outdoorPressure#hikersFootprintAffordsHiking> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacité des objets de type HikersFootprint à permettre la randonnée pédestre. On considère que d'autres randonneurs peuvent suivre la trajectoire reconstruite de telle façon qu'elle représente une trajectoire plausible et laissée par plusieurs randonneurs.." .
 # 
 # 
 # 
@@ -359,7 +373,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#comment> "activité de plein air consistant à se promener de façon ludique ou sportive"@fr .
-<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "randonnées pédestres"@fr .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "Hiking"@en .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "Randonnée pédestre"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -730,6 +745,10 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#identifier> "Metadata_tracks_multi_sensors_vincennes_forest.xml" .
 <https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
+# https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes
+<https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+# 
 # https://intforout.github.io/outdoorPressure#MobilityNetworkDB
 <https://intforout.github.io/outdoorPressure#MobilityNetworkDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#MobilityNetworkDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -806,6 +825,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#isPartOf> <https://intforout.github.io/outdoorPressure#MOUSLS> .
@@ -816,6 +836,11 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0> .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/ns/dcat#format> "gpkg" .
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/ns/dcat#identifier> "tracks_multi_sensors_vincennes_forest.gpkg" .
+# 
+# https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB
+<https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+<https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> .
 # 
 # https://intforout.github.io/outdoorPressure#act-export
 <https://intforout.github.io/outdoorPressure#act-export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
