@@ -408,16 +408,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#Footprint
-:Footprint rdf:type owl:Class ;
-           rdfs:subClassOf :LandEntity ;
-           rdfs:comment "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr ,
-                        "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
-
-
 ###  https://intforout.github.io/outdoorPressure#HikerFootprint
 :HikerFootprint rdf:type owl:Class ;
-                rdfs:subClassOf :Footprint ,
+                rdfs:subClassOf :LandEntity ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :affords ;
                                   owl:allValuesFrom [ rdf:type owl:Class ;
@@ -719,6 +712,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 :Hiking .
 
 
+###  https://intforout.github.io/outdoorPressure#HikingInLesBauges
+:HikingInLesBauges rdf:type owl:NamedIndividual ,
+                            :Hiking .
+
+
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 :HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
@@ -928,6 +926,12 @@ _:genid12 rdf:type <http://purl.org/dc/terms/Location> ;
                                     <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
                                     <http://purl.org/dc/terms/description> "blabla"@en ;
                                     <http://purl.org/www.umr-lastig.fr/geodatatarget> :sigspatial24vandamme .
+
+
+###  https://intforout.github.io/outdoorPressure#SentierDesBauges
+:SentierDesBauges rdf:type owl:NamedIndividual ,
+                           :Sentier ;
+                  :affords :HikingInLesBauges .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackIdentification
@@ -1253,6 +1257,14 @@ _:genid17 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                      <http://www.w3.org/ns/dcat#Distribution> ;
                             <http://www.w3.org/ns/dcat#accessService> :api-parcdesbauges ;
                             <http://www.w3.org/ns/dcat#format> "GeoJSON" .
+
+
+###  https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025
+:parcdesbaugesSentiersBDTopo2025 rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/ns/dcat#Dataset> ;
+                                 <http://purl.org/www.umr-lastig.fr/geodata#represents> :SentierDesBauges ;
+                                 <http://www.w3.org/ns/dcat#inSeries> <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> ;
+                                 rdfs:comment "Classe=Tronçon de route, Nature=Sentier" .
 
 
 ###  https://intforout.github.io/outdoorPressure#pmarchand

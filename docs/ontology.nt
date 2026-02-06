@@ -336,15 +336,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#FilteredTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Filtered traces represent a set of unstructured traces assumed to follow the network and used for a specific case study. They result from a user-defined filtering process (spatial, temporal, activity type, etc.)."@en .
 <https://intforout.github.io/outdoorPressure#FilteredTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."@fr .
 # 
-# https://intforout.github.io/outdoorPressure#Footprint
-<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#comment> "Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d'abscisse curviligne) ou au niveau des nœuds lorsque nécessaire."@fr .
-<https://intforout.github.io/outdoorPressure#Footprint> <http://www.w3.org/2000/01/rdf-schema#comment> "Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary" .
-# 
 # https://intforout.github.io/outdoorPressure#HikerFootprint
 <https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Footprint> .
+<https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#HikerFootprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
 _:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
 _:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
@@ -591,6 +585,10 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
 # 
+# https://intforout.github.io/outdoorPressure#HikingInLesBauges
+<https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
+# 
 # https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -778,6 +776,11 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/dc/terms/description> "blabla"@en .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/www.umr-lastig.fr/geodatatarget> <https://intforout.github.io/outdoorPressure#sigspatial24vandamme> .
+# 
+# https://intforout.github.io/outdoorPressure#SentierDesBauges
+<https://intforout.github.io/outdoorPressure#SentierDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#SentierDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Sentier> .
+<https://intforout.github.io/outdoorPressure#SentierDesBauges> <https://intforout.github.io/outdoorPressure#affords> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
 # 
 # https://intforout.github.io/outdoorPressure#SwitchbackIdentification
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1066,6 +1069,13 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson> <http://www.w3.org/ns/dcat#accessService> <https://intforout.github.io/outdoorPressure#api-parcdesbauges> .
 <https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson> <http://www.w3.org/ns/dcat#format> "GeoJSON" .
+# 
+# https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025
+<https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#SentierDesBauges> .
+<https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025> <http://www.w3.org/ns/dcat#inSeries> <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> .
+<https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe=Tronçon de route, Nature=Sentier" .
 # 
 # https://intforout.github.io/outdoorPressure#pmarchand
 <https://intforout.github.io/outdoorPressure#pmarchand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
