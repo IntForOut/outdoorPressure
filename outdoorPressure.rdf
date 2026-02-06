@@ -654,20 +654,10 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Footprint -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Footprint">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment>Land that supports active mobility (excluding cars and trains). It is usually represented as a graph, characterized by a topology, a geometry; attributes located at the edge level (with curvilinear abscissa) or at nodes when necessary</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Réseau géographique qui supporte une mobilité active (tout sauf voiture et trains). Il peut être représenté classiquement par un modèle de graphe topologique : une topologie, une géométrie où chaque arc est associé à une suite de sommets (x, y, z), et des attributs numériques ou textuels, localisés au niveau des arcs (avec mention d&apos;abscisse curviligne) ou au niveau des nœuds lorsque nécessaire.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#HikerFootprint -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HikerFootprint">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Footprint"/>
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
@@ -1090,6 +1080,14 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#HikingInLesBauges -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInLesBauges">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
@@ -1361,6 +1359,15 @@
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <terms:description xml:lang="en">blabla</terms:description>
         <www:geodatatarget rdf:resource="https://intforout.github.io/outdoorPressure#sigspatial24vandamme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#SentierDesBauges -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SentierDesBauges">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Sentier"/>
+        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
     </owl:NamedIndividual>
     
 
@@ -1789,6 +1796,17 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <dcat:accessService rdf:resource="https://intforout.github.io/outdoorPressure#api-parcdesbauges"/>
         <dcat:format>GeoJSON</dcat:format>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata1:represents rdf:resource="https://intforout.github.io/outdoorPressure#SentierDesBauges"/>
+        <dcat:inSeries rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"/>
+        <rdfs:comment>Classe=Tronçon de route, Nature=Sentier</rdfs:comment>
     </owl:NamedIndividual>
     
 
