@@ -639,6 +639,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <https://geotrek.parcdesbauges.com/api/v2/> rdf:type owl:NamedIndividual .
 
 
+###  https://intforout.github.io/outdoorPressure#ActivitesLesBauges2014-15
+:ActivitesLesBauges2014-15 rdf:type owl:NamedIndividual ,
+                                    :HumanActivity .
+
+
+###  https://intforout.github.io/outdoorPressure#ActivitesLesBauges2023-24
+:ActivitesLesBauges2023-24 rdf:type owl:NamedIndividual ,
+                                    :HumanActivity .
+
+
 ###  https://intforout.github.io/outdoorPressure#BalconyRouteIdentification
 :BalconyRouteIdentification rdf:type owl:NamedIndividual ,
                                      <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
@@ -899,6 +909,7 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#OutdoorVisionExport
 :OutdoorVisionExport rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/dcat#Dataset> ;
+                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :ActivitesLesBauges2023-24 ;
                      <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
                      <http://purl.org/dc/terms/publisher> :Outdoorvision ;
                      <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> ,
@@ -953,6 +964,13 @@ _:genid12 rdf:type <http://purl.org/dc/terms/Location> ;
         <http://purl.org/dc/elements/1.1/description> "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)" ;
         rdfs:seeAlso "https://www.wikidata.org/wiki/Q13884156" ;
         <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
+
+
+###  https://intforout.github.io/outdoorPressure#StravaBauges2014-15
+:StravaBauges2014-15 rdf:type owl:NamedIndividual ,
+                              <http://www.w3.org/ns/dcat#Dataset> ;
+                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :ActivitesLesBauges2014-15 ;
+                     <http://purl.org/dc/elements/1.1/publisher> :Strava .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackIdentification
