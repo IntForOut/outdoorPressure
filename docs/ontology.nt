@@ -306,7 +306,7 @@
 # 
 # https://intforout.github.io/outdoorPressure#Cycling
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+<https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 # 
 # https://intforout.github.io/outdoorPressure#EncounteringZone
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -316,7 +316,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid2 .
 _:genid2 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#AnimalActivity> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
@@ -343,7 +343,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
 _:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://intforout.github.io/outdoorPressure#affords> .
@@ -351,15 +351,15 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://intforout.github.io/outdoorPressure#Hiking
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+<https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#comment> "activité de plein air consistant à se promener de façon ludique ou sportive"@fr .
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "Hiking"@en .
 <https://intforout.github.io/outdoorPressure#Hiking> <http://www.w3.org/2000/01/rdf-schema#label> "Randonnée pédestre"@fr .
 # 
-# https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
-<https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Activity> .
-<https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Human activity taking place outdoor"@en .
+# https://intforout.github.io/outdoorPressure#HumanActivity
+<https://intforout.github.io/outdoorPressure#HumanActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Activity> .
+<https://intforout.github.io/outdoorPressure#HumanActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Human activity taking place outdoor"@en .
 # 
 # https://intforout.github.io/outdoorPressure#HumanTrack
 <https://intforout.github.io/outdoorPressure#HumanTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -402,6 +402,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://intforout.github.io/outdoorPressure#Population
 <https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble of individuals of a species in an land entity."@en .
+# 
+# https://intforout.github.io/outdoorPressure#Procedure
+<https://intforout.github.io/outdoorPressure#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
 # 
 # https://intforout.github.io/outdoorPressure#ReservesNaturelles
 <https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -738,7 +742,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes
 <https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+<https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 # 
 # https://intforout.github.io/outdoorPressure#MobilityNetworkDB
 <https://intforout.github.io/outdoorPressure#MobilityNetworkDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -749,7 +753,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en .
-<https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/publisher> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN> .
+<https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Outdoorvision> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74143> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74266> .
@@ -759,6 +763,12 @@ _:genid11 <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://purl.org/dc/terms/title> "OutdoorVision export"@en .
 <https://intforout.github.io/outdoorPressure#OutdoorVisionExport> <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
+# 
+# https://intforout.github.io/outdoorPressure#Outdoorvision
+<https://intforout.github.io/outdoorPressure#Outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#Outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://intforout.github.io/outdoorPressure#Outdoorvision> <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme." .
+<https://intforout.github.io/outdoorPressure#Outdoorvision> <http://xmlns.com/foaf/0.1/homePage> "https://outdoorvision.fr/;" .
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
 <https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -781,6 +791,14 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 <https://intforout.github.io/outdoorPressure#SentierDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#SentierDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Sentier> .
 <https://intforout.github.io/outdoorPressure#SentierDesBauges> <https://intforout.github.io/outdoorPressure#affords> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
+# 
+# https://intforout.github.io/outdoorPressure#Strava
+<https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization> .
+<https://intforout.github.io/outdoorPressure#Strava> <http://purl.org/dc/elements/1.1/description> "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)" .
+<https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q13884156" .
+<https://intforout.github.io/outdoorPressure#Strava> <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
 # 
 # https://intforout.github.io/outdoorPressure#SwitchbackIdentification
 <https://intforout.github.io/outdoorPressure#SwitchbackIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -834,7 +852,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB
 <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivity> .
+<https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 # 
 # https://intforout.github.io/outdoorPressure#act-export
 <https://intforout.github.io/outdoorPressure#act-export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
