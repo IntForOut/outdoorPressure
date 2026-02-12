@@ -64,7 +64,7 @@
     "@list" : [ {
       "@id" : "https://intforout.github.io/outdoorPressure#AnimalActivity"
     }, {
-      "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+      "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
     } ]
   } ]
 }, {
@@ -81,7 +81,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+      "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
     } ]
   } ]
 }, {
@@ -557,7 +557,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#Cycling",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset",
@@ -718,7 +718,7 @@
     "@value" : "Randonnée pédestre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes",
@@ -731,6 +731,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Human activity taking place outdoor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters",
@@ -766,16 +776,6 @@
   } ],
   "http://www.w3.org/ns/dcat#identifier" : [ {
     "@value" : "human_chamois_real_encounters.csv"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Human activity taking place outdoor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack",
@@ -1112,7 +1112,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB",
@@ -1141,7 +1141,7 @@
     "@value" : "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN"
+    "@id" : "https://intforout.github.io/outdoorPressure#Outdoorvision"
   } ],
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://data.ign.fr/id/geofla/commune/74056"
@@ -1163,6 +1163,15 @@
     "@value" : "GPS traces"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Outdoorvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Agent" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@value" : "https://outdoorvision.fr/;"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1174,6 +1183,12 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Ensemble of individuals of a species in an land entity."
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Process"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision",
@@ -1261,6 +1276,18 @@
   } ],
   "https://intforout.github.io/outdoorPressure#affords" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Strava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Agent", "http://www.w3.org/ns/org#Organization" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q13884156"
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@value" : "https://www.strava.com/about"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification",
@@ -1373,7 +1400,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#act-export",

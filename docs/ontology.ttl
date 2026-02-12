@@ -375,7 +375,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Cycling
 :Cycling rdf:type owl:Class ;
-         rdfs:subClassOf :HumanOutdoorActivity .
+         rdfs:subClassOf :HumanActivity .
 
 
 ###  https://intforout.github.io/outdoorPressure#EncounteringZone
@@ -385,7 +385,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                     owl:onProperty :affords ;
                                     owl:allValuesFrom [ rdf:type owl:Class ;
                                                         owl:unionOf ( :AnimalActivity
-                                                                      :HumanOutdoorActivity
+                                                                      :HumanActivity
                                                                     )
                                                       ]
                                   ] ;
@@ -414,7 +414,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :affords ;
                                   owl:allValuesFrom [ rdf:type owl:Class ;
-                                                      owl:unionOf ( :HumanOutdoorActivity
+                                                      owl:unionOf ( :HumanActivity
                                                                   )
                                                     ]
                                 ] .
@@ -422,16 +422,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Hiking
 :Hiking rdf:type owl:Class ;
-        rdfs:subClassOf :HumanOutdoorActivity ;
+        rdfs:subClassOf :HumanActivity ;
         rdfs:comment "activité de plein air consistant à se promener de façon ludique ou sportive"@fr ;
         rdfs:label "Hiking"@en ,
                    "Randonnée pédestre"@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivity
-:HumanOutdoorActivity rdf:type owl:Class ;
-                      rdfs:subClassOf :Activity ;
-                      rdfs:comment "Human activity taking place outdoor"@en .
+###  https://intforout.github.io/outdoorPressure#HumanActivity
+:HumanActivity rdf:type owl:Class ;
+               rdfs:subClassOf :Activity ;
+               rdfs:comment "Human activity taking place outdoor"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#HumanTrack
@@ -485,6 +485,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#Population
 :Population rdf:type owl:Class ;
             rdfs:comment "Ensemble of individuals of a species in an land entity."@en .
+
+
+###  https://intforout.github.io/outdoorPressure#Procedure
+:Procedure rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/www.umr-lastig.fr/geodata#Process> .
 
 
 ###  https://intforout.github.io/outdoorPressure#ReservesNaturelles
@@ -882,7 +887,7 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes
 :MobiliteHumainsBoisVincennes rdf:type owl:NamedIndividual ,
-                                       :HumanOutdoorActivity .
+                                       :HumanActivity .
 
 
 ###  https://intforout.github.io/outdoorPressure#MobilityNetworkDB
@@ -895,7 +900,7 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :OutdoorVisionExport rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/dcat#Dataset> ;
                      <http://purl.org/dc/terms/description> "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
-                     <http://purl.org/dc/terms/publisher> <http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN> ;
+                     <http://purl.org/dc/terms/publisher> :Outdoorvision ;
                      <http://purl.org/dc/terms/spatial> <https://data.ign.fr/id/geofla/commune/74056> ,
                                                         <https://data.ign.fr/id/geofla/commune/74143> ,
                                                         <https://data.ign.fr/id/geofla/commune/74266> ,
@@ -906,6 +911,13 @@ _:genid10 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 _:genid11 rdf:type <http://purl.org/dc/terms/Location> ;
            <http://purl.org/dc/terms/title> "Parc naturel régional du Massif des Bauges"@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#Outdoorvision
+:Outdoorvision rdf:type owl:NamedIndividual ,
+                        <http://purl.org/dc/terms/Agent> ;
+               <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme." ;
+               <http://xmlns.com/foaf/0.1/homePage> "https://outdoorvision.fr/;" .
 
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
@@ -932,6 +944,15 @@ _:genid12 rdf:type <http://purl.org/dc/terms/Location> ;
 :SentierDesBauges rdf:type owl:NamedIndividual ,
                            :Sentier ;
                   :affords :HikingInLesBauges .
+
+
+###  https://intforout.github.io/outdoorPressure#Strava
+:Strava rdf:type owl:NamedIndividual ,
+                 <http://purl.org/dc/terms/Agent> ,
+                 <http://www.w3.org/ns/org#Organization> ;
+        <http://purl.org/dc/elements/1.1/description> "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)" ;
+        rdfs:seeAlso "https://www.wikidata.org/wiki/Q13884156" ;
+        <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
 
 
 ###  https://intforout.github.io/outdoorPressure#SwitchbackIdentification
@@ -994,7 +1015,7 @@ _:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB
 :UsageRemonteeMecaniqueCMB rdf:type owl:NamedIndividual ,
-                                    :HumanOutdoorActivity .
+                                    :HumanActivity .
 
 
 ###  https://intforout.github.io/outdoorPressure#act-export
