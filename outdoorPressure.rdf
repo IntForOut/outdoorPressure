@@ -605,7 +605,7 @@
     <!-- https://intforout.github.io/outdoorPressure#Cycling -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Cycling">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
     </owl:Class>
     
 
@@ -621,7 +621,7 @@
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#AnimalActivity"/>
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanActivity"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -664,7 +664,7 @@
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanActivity"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -677,7 +677,7 @@
     <!-- https://intforout.github.io/outdoorPressure#Hiking -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Hiking">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
         <rdfs:comment xml:lang="fr">activité de plein air consistant à se promener de façon ludique ou sportive</rdfs:comment>
         <rdfs:label xml:lang="en">Hiking</rdfs:label>
         <rdfs:label xml:lang="fr">Randonnée pédestre</rdfs:label>
@@ -685,9 +685,9 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#HumanOutdoorActivity -->
+    <!-- https://intforout.github.io/outdoorPressure#HumanActivity -->
 
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity">
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#HumanActivity">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Activity"/>
         <rdfs:comment xml:lang="en">Human activity taking place outdoor</rdfs:comment>
     </owl:Class>
@@ -770,6 +770,14 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Population">
         <rdfs:comment xml:lang="en">Ensemble of individuals of a species in an land entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Procedure -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
     </owl:Class>
     
 
@@ -1299,7 +1307,7 @@
     <!-- https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
     </owl:NamedIndividual>
     
 
@@ -1318,7 +1326,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OutdoorVisionExport">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <terms:description xml:lang="en">A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered</terms:description>
-        <terms:publisher rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#PRNSN"/>
+        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Outdoorvision"/>
         <terms:spatial rdf:resource="https://data.ign.fr/id/geofla/commune/74056"/>
         <terms:spatial rdf:resource="https://data.ign.fr/id/geofla/commune/74143"/>
         <terms:spatial rdf:resource="https://data.ign.fr/id/geofla/commune/74266"/>
@@ -1331,6 +1339,16 @@
         </terms:spatial>
         <terms:title xml:lang="en">OutdoorVision export</terms:title>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Outdoorvision -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Outdoorvision">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <dc:description>Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme.</dc:description>
+        <foaf:homePage>https://outdoorvision.fr/;</foaf:homePage>
     </owl:NamedIndividual>
     
 
@@ -1368,6 +1386,18 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SentierDesBauges">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Sentier"/>
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Strava -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Strava">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <dc:description>american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user&apos;s activities, which can then be shared with the user&apos;s followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity&apos;s recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)</dc:description>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13884156</rdfs:seeAlso>
+        <foaf:homePage>https://www.strava.com/about</foaf:homePage>
     </owl:NamedIndividual>
     
 
@@ -1454,7 +1484,7 @@
     <!-- https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivity"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
     </owl:NamedIndividual>
     
 
