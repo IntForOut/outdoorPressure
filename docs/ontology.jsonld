@@ -489,6 +489,18 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2014-15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2023-24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1158,6 +1170,9 @@
     "@language" : "en",
     "@value" : "OutdoorVision export"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2023-24"
+  } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "en",
     "@value" : "GPS traces"
@@ -1288,6 +1303,15 @@
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@value" : "https://www.strava.com/about"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StravaBauges2014-15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2014-15"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification",
