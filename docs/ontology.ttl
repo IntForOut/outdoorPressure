@@ -1036,6 +1036,11 @@ _:genid15 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                     :HumanActivity .
 
 
+###  https://intforout.github.io/outdoorPressure#UsageRemonteesMecaniquesMontBlanc
+:UsageRemonteesMecaniquesMontBlanc rdf:type owl:NamedIndividual ,
+                                            :HumanActivity .
+
+
 ###  https://intforout.github.io/outdoorPressure#act-export
 :act-export rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/dcat#Dataset> ;

@@ -1427,6 +1427,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteesMecaniquesMontBlanc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#act-export",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {

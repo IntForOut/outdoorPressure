@@ -869,6 +869,10 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 # 
+# https://intforout.github.io/outdoorPressure#UsageRemonteesMecaniquesMontBlanc
+<https://intforout.github.io/outdoorPressure#UsageRemonteesMecaniquesMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#UsageRemonteesMecaniquesMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
+# 
 # https://intforout.github.io/outdoorPressure#act-export
 <https://intforout.github.io/outdoorPressure#act-export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#act-export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
