@@ -919,7 +919,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="DkG_Ew4qQ62zcml-1EjA" name="Schéma 2 article">
-    <mxGraphModel dx="3100" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2955" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1219,7 +1219,7 @@
             <mxPoint x="73.12" y="1185.49" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="h__MbOckbYP9tfKsduos-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;b&gt;Tracks&lt;/b&gt;" vertex="1">
+        <mxCell id="h__MbOckbYP9tfKsduos-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;b&gt;Trip&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="-964.58" y="769.24" as="geometry" />
         </mxCell>
         <mxCell id="h__MbOckbYP9tfKsduos-4" edge="1" parent="1" source="h__MbOckbYP9tfKsduos-3" style="endArrow=block;html=1;rounded=0;endFill=0;fontSize=16;" target="KATThzN7frratckhB8-l-10" value="">
@@ -1331,6 +1331,12 @@
           <mxGeometry relative="1" x="0.2296" y="3" as="geometry">
             <mxPoint x="13" y="34" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="iHL87065GuDLHp-q9dQN-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;b&gt;Track&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="-1200" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="iHL87065GuDLHp-q9dQN-2" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;b&gt;Route&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="-1200" y="870" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
