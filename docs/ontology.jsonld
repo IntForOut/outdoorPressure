@@ -8,56 +8,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#affords"
   } ]
 }, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Clémence Perrin-Malterre"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://purl.org/dc/terms/Location" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Parc naturel régional du Massif des Bauges"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://purl.org/dc/terms/Location" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Bois de Vincennes"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Brice Labbé"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Paul Calloch"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lorine Peseux"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Nolwenn Risser"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Elodie Petit"
-  } ]
-}, {
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
@@ -70,23 +20,6 @@
 }, {
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid6"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#affords"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#Switchbacks"
   } ],
@@ -94,20 +27,41 @@
     "@id" : "http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Colin Kerouanton"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Clémence Perrin-Malterre"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Nolwenn Risser"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Elodie Petit"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#licence",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://example.org/activity/CameraTrapSurveyCMB20242024",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Including the locations of each eco-counter."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
   } ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -124,6 +78,12 @@
     "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"
   } ]
 }, {
+  "@id" : "http://purl.org/choucas.ign.fr/oor#BalconyPath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"
+  } ]
+}, {
   "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -134,6 +94,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/choucas.ign.fr/oor#Switchbacks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"
+  } ]
+}, {
+  "@id" : "http://purl.org/choucas.ign.fr/oor#Visitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"
@@ -158,6 +124,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
@@ -249,7 +218,7 @@
     "@value" : "2025-06-15"
   } ],
   "http://schema.org/description" : [ {
-    "@value" : "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n    Les objets de la BD TOPO® sont structurés en thèmes : \n     - l'administratif ; \n     - le bâti ; \n     - l'hydrographie ; \n     - les lieux nommés ; \n     - l'occupation du sol ; \n     - les services et activités ; \n     - le transport ; \n     - les zones réglementées. \n\n    Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n    Le relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n    Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n    Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n    Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n    Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."
+    "@value" : "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n\t    Les objets de la BD TOPO® sont structurés en thèmes : \n\t     - l'administratif ; \n\t     - le bâti ; \n\t     - l'hydrographie ; \n\t     - les lieux nommés ; \n\t     - l'occupation du sol ; \n\t     - les services et activités ; \n\t     - le transport ; \n\t     - les zones réglementées. \n\n\t    Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n\t    Le relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n\t    Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n\t    Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n\t    Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n\t    Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."
   } ],
   "http://schema.org/encodingFormat" : [ {
     "@value" : "GPKG"
@@ -308,14 +277,30 @@
     "@value" : "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@language" : "fr",
+    "@value" : "Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#DataService"
+  } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodatatarget",
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mgarel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#pmarchand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#target",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -323,32 +308,14 @@
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/dcat#Population",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#accessService",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -359,7 +326,7 @@
   "@id" : "http://www.w3.org/ns/dcat#conformsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/ns/dcat#endpointURL",
+  "@id" : "http://www.w3.org/ns/dcat#dataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#format",
@@ -384,6 +351,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#servesDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#theme",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#title",
@@ -419,12 +392,6 @@
   "@id" : "http://www.w3.org/ns/prov#wasQuotedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.wikidata.org/entity/Q2625603",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Population"
-  } ]
-}, {
   "@id" : "http://xmlns.com/foaf/0.1/homePage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -455,7 +422,7 @@
   "@id" : "https://intforout.github.io/locatedIn#locatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Population"
+    "@id" : "https://intforout.github.io/outdoorPressure#Population"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
@@ -472,6 +439,8 @@
     "@value" : "Bénédicte Bucher"
   }, {
     "@value" : "Marie-Dominique Van Damme"
+  }, {
+    "@value" : "Vanessa Pech"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
@@ -487,18 +456,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2014-15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2023-24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Activity",
@@ -517,6 +474,44 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#AireProtegee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@language" : "fr",
+    "@value" : "Une aire protégée (AP) (de l'anglais protected area, PA) est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés »"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Aire protégée"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#AltitudeRandoRoutesBauges2025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of routes issued from altituderando.com."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-05-01"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "fr-FR"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://opendatacommons.org/licenses/odbl/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#altituderando"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "AltitudeRando Hiking Routes in the Bauges Massif (2025)"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#AnimalActivity",
@@ -538,6 +533,18 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Track"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SentierDesBauges"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classe=Tronçon de route, Nature=Sentier"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#BalconyRouteIdentification",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
   "http://www.w3.org/ns/prov#endedAtTime" : [ {
@@ -549,27 +556,82 @@
     "@value" : "2024-01"
   } ],
   "http://www.w3.org/ns/prov#used" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#visorando-route"
+    "@id" : "https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ComptageRemontéesMécaniques",
+  "@id" : "https://intforout.github.io/outdoorPressure#BoisVincennes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Zone de test dans le Bois de Vincennes"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year)."
+    "@value" : "A set of Waypoints issued from Camptocamp.org API."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-05-01"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "fr-FR"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://opendatacommons.org/licenses/odbl/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Ski Lift Ridership Counts in the CMB Area."
+    "@language" : "fr",
+    "@value" : "Camptocamp.org-waypoints"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB"
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of Routes issued from Camptocamp.org API."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-05-01"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "fr-FR"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://opendatacommons.org/licenses/odbl/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Camptocamp.org-routes"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#c2c-route-geojson"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Cycling",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "DeepFaune"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeepFaune"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset",
@@ -581,6 +643,25 @@
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
     "@value" : "Eco-counters CMB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "12 éco-compteurs (issus de conventions avec CD et Communauté de Communes de la Vallée de Chamonix-Mont-Blanc (CCVCMB) avec les localisations de chaque éco-compteur, qui serviront probablement plus au WP2 (pour la représentativité, notamment). Ces éco-compteurs sont tous des Pyro-Evo"
+  }, {
+    "@value" : "12 éco-compteurs (issus de conventions avec CD et Communauté de Communes de la Vallée de Chamonix-Mont-Blanc (CCVCMB) avec les localisations de chaque éco-compteur. Ces éco-compteurs sont tous des Pyro-Evo"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#EcoCompteurUTMBDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Dataset derived from 12 eco-counters."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Eco-counters CMB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "10 éco-compteurs UTMB (avec des propriétaires différents), utilisables uniquement par le GT représentativité du WP2 dans un premier temps. Sinon pas d'autorisation. Certains de ces éco-compteurs sont uniquement piétons, d’autres distinguent piétons / cyclistes / voitures."
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#EncounterDetection",
@@ -611,11 +692,33 @@
     "@id" : "_:genid1"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Catalog" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l'entrepôt pluridisciplinaire Recherche Data Gouv."
+  } ],
+  "http://www.w3.org/ns/dcat#dataset" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest"
+  } ],
+  "http://www.w3.org/ns/dcat#record" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest"
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@value" : "https://entrepot.recherche.data.gouv.fr/dataverse/intforout"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#FastHiking",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
-    "@value" : "\n        Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.\n        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique.\n        "
+    "@value" : "Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.\n\t        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
@@ -634,42 +737,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Track"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-06"
-  } ],
-  "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#vincennesfusion"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-05"
-  } ],
-  "http://www.w3.org/ns/prov#used" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
-  } ],
-  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
-    "@language" : "en",
-    "@value" : "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv"
-  } ],
-  "http://www.w3.org/ns/dcat#isPartOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
@@ -682,35 +749,10 @@
     "@value" : "ground_truth_dense_forest_path.txt"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  }, {
-    "@id" : "_:genid5"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HikersBauges2024",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Population"
-  } ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-12"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-01"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes",
+  "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HikerFootprint"
+    "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprint"
   } ],
   "https://intforout.github.io/outdoorPressure#affords" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes"
@@ -790,6 +832,30 @@
     "@value" : "human_chamois_real_encounters.csv"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBoisVincennes2022",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -803,14 +869,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Track"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#IntForOutETLDB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "@id" : "https://intforout.github.io/outdoorPressure#IntForOutDB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
-  }, {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LIFAT"
   } ],
   "http://purl.org/dc/terms/title" : [ {
@@ -818,22 +882,22 @@
     "@value" : "Dataset associated with IntForOut ETL framework"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ETL-Warehouse"
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Dataset associated with IntForOut ETL framework"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KEROUANTON2024100734",
+  "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ljolivet"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#aloison"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid6"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid7"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Journal of Outdoor Recreation and Tourism"
@@ -869,907 +933,21 @@
     "@value" : "global navigation satellite system"
   } ],
   "http://www.w3.org/ns/prov#quotedAs" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouatonSurvey20142015"
+    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouatonTrack20142015"
+    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonTrack20142015"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KerouatonQuestionnaire20142015",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of answers issued from a questionnaire. Compleed with tracks"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Tracks issued from PhD of Colin Kerouaton"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KEROUANTON2024100734"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KerouatonSurvey20142015",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2014-01"
-  } ],
-  "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouatonQuestionnaire20142015"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouatonTrack20142015"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2015-12"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KerouatonTrack20142015",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of tracks. Compleed with questionnaires"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Tracks issued from PhD of Colin Kerouaton"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KEROUANTON2024100734"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#LIFAT",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#LandEntity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An entity located in land : an area, a land, a parcel, a footprint, an observation."
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Landmark",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#LivingCreature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Living creature, animal or human"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-01-18"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@id" : "http://sws.geonames.org/3032049/"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Multi-sensors and Ground Truth Tracks"
-  } ],
-  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
-    "@value" : "https://doi.org/10.57745/MOUSLS"
-  } ],
-  "http://www.w3.org/ns/dcat#hasPart" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond"
-  }, {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Marchandetal2025DB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Marchand, P., Risser, N., Petit, E., & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."
-  } ],
-  "http://purl.org/dc/terms/hasPart" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#act-export"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#locs-export"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-09-04"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Office Français de la Biodiversité"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@id" : "http://sws.geonames.org/3001970/"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#pan3.70151"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Massif des Bauges"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MergedAccurateTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An accurate merged trace is a merged trace that optimizes a quality criterion Q with respect to the ground truth GT (Van Damme et al., 2024)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace fusionnée exacte est une trace fusionnée qui optimise un critère de qualité Q par rapport à la vérité terrain VT (Van Damme et al., 2024)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Track"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#CatalogRecord" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
-    "@language" : "en",
-    "@value" : "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0"
-  } ],
-  "http://www.w3.org/ns/dcat#conformsTo" : [ {
-    "@id" : "https://www.iso.org/fr/standard/53798.html"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "xml"
-  } ],
-  "http://www.w3.org/ns/dcat#identifier" : [ {
-    "@value" : "Metadata_ground_truth_path_vincennes_forest.xml"
-  } ],
-  "http://www.w3.org/ns/dcat#issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-08-13"
-  } ],
-  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#CatalogRecord" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
-    "@language" : "en",
-    "@value" : "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0"
-  } ],
-  "http://www.w3.org/ns/dcat#conformsTo" : [ {
-    "@id" : "https://www.iso.org/fr/standard/53798.html"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "xml"
-  } ],
-  "http://www.w3.org/ns/dcat#identifier" : [ {
-    "@value" : "Metadata_tracks_multi_sensors_vincennes_forest.xml"
-  } ],
-  "http://www.w3.org/ns/dcat#issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-08-13"
-  } ],
-  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MobilityNetworkDB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Dataset that corresponds to active human mobility (i.e. all mobility modes of transport less car and trains), pedestrian and during leisure, in two specific moutainous areas, derived from the agregation and analysis of GPS tracks"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). \n            Example: “Le chemin du Roy”."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). \n            Exemple : « Le chemin du Roy »."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Route"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#OutdoorVisionExport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of tracks issued from outdoorvision. GPS traces from outdoorvison are cleaned and filtered"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Outdoorvision"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@id" : "https://data.ign.fr/id/geofla/commune/74056"
-  }, {
-    "@id" : "https://data.ign.fr/id/geofla/commune/74143"
-  }, {
-    "@id" : "https://data.ign.fr/id/geofla/commune/74266"
-  }, {
-    "@id" : "https://data.ign.fr/id/geofla/commune/74290"
-  }, {
-    "@id" : "_:genid11"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "OutdoorVision export"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2023-24"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@language" : "en",
-    "@value" : "GPS traces"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Outdoorvision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Agent" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
-  } ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@value" : "https://outdoorvision.fr/;"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Population",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Ensemble of individuals of a species in an land entity."
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Procedure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Process"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Abdassalam Naciri"
-  } ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Un article qui parle de fusion de traces appliquée à des traces simulées dans le bois de vincennes et qui pourrait être refait sur les traces Outdoorvision dans les Bauges et la zone du Mont-Blanc"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@id" : "_:genid12"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "blabla"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodatatarget" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Réserves naturelles"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ResilientRoute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A resilient itinerary is a route that minimizes its environmental impact, exerting no pressure on wildlife or vegetation."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un itinéraire résilient est un itinéraire qui n exerce pas de pression sur la faune et la flore."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Route"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Route",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Sentier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#SentierDesBauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Sentier"
-  } ],
-  "https://intforout.github.io/outdoorPressure#affords" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Strava",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Agent", "http://www.w3.org/ns/org#Organization" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://www.wikidata.org/wiki/Q13884156"
-  } ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@value" : "https://www.strava.com/about"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#StravaBauges2014-15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/elements/1.1/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ActivitesLesBauges2014-15"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2025-01"
-  } ],
-  "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2025-01"
-  } ],
-  "http://www.w3.org/ns/prov#used" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#visorando-route"
-  } ],
-  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
-  }, {
-    "@id" : "_:genid8"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksPortionBauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Traces fusionnées du jeu de données sur Vincennes"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Portions de route caractérisant une série de virages"
-  } ],
-  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey", "http://www.w3.org/ns/prov#Activity" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid13"
-  }, {
-    "@id" : "_:genid14"
-  }, {
-    "@id" : "_:genid15"
-  } ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-01-18"
-  } ],
-  "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-01-18"
-  } ],
-  "http://www.w3.org/ns/prov#used" : [ {
-    "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Track",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MobiliteHumainsBoisVincennes"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
-    "@language" : "en",
-    "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"
-  } ],
-  "http://www.w3.org/ns/dcat#isPartOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "gpkg"
-  } ],
-  "http://www.w3.org/ns/dcat#identifier" : [ {
-    "@value" : "tracks_multi_sensors_vincennes_forest.gpkg"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteeMecaniqueCMB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#UsageRemonteesMecaniquesMontBlanc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#act-export",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "Activity data from gps collars"
-  } ],
-  "http://purl.org/dc/terms/isPartOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Marchandetal2025DB"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-09-04"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Office Français de la Biodiversité"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "act-export"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#affords",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Capacity of a place, or land, to support a given activity, effectively or potentially"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#aloison",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Anne Loison"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#altituderando",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.altituderando.com"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Altituderando"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#altituderando-route",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of routes issued from altituderando.com."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-05-01"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "fr-FR"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://opendatacommons.org/licenses/odbl/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#altituderando"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "AltitudeRando routes"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
-  "http://purl.org/dc/terms/conformsTo" : [ {
-    "@id" : "https://developers.arcgis.com/rest/"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "fr",
-    "@value" : "API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables \n        par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://opendatacommons.org/licenses/odbl/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "API de Camptocamp.org (routes, waypoints, outings)"
-  } ],
-  "http://purl.org/dc/terms/type" : [ {
-    "@id" : "http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service"
-  }, {
-    "@id" : "http://purl.org/dc/dcmitype/Service"
-  } ],
-  "http://www.w3.org/ns/dcat#endpointURL" : [ {
-    "@id" : "https://api.camptocamp.org/"
-  } ],
-  "http://www.w3.org/ns/dcat#servesDataset" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#c2c-route"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
-  "http://purl.org/dc/terms/conformsTo" : [ {
-    "@id" : "https://developers.arcgis.com/rest/"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "fr",
-    "@value" : "L'API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "API du PNR Massif des Bauges "
-  } ],
-  "http://purl.org/dc/terms/type" : [ {
-    "@id" : "http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service"
-  }, {
-    "@id" : "http://purl.org/dc/dcmitype/Service"
-  } ],
-  "http://www.w3.org/ns/dcat#endpointURL" : [ {
-    "@id" : "https://geotrek.parcdesbauges.com/api/v2/"
-  } ],
-  "http://www.w3.org/ns/dcat#servesDataset" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-trek"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#api-refugesinfo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
-  "http://purl.org/dc/terms/conformsTo" : [ {
-    "@id" : "https://developers.arcgis.com/rest/"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "fr",
-    "@value" : "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by-sa/2.0/deed.fr"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "API de Refuges.info (points)"
-  } ],
-  "http://purl.org/dc/terms/type" : [ {
-    "@id" : "http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service"
-  }, {
-    "@id" : "http://purl.org/dc/dcmitype/Service"
-  } ],
-  "http://www.w3.org/ns/dcat#endpointURL" : [ {
-    "@id" : "https://www.refuges.info/api/"
-  } ],
-  "http://www.w3.org/ns/dcat#servesDataset" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#c2c-route",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of Routes issued from Camptocamp.org API."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-05-01"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "fr-FR"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://opendatacommons.org/licenses/odbl/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Camptocamp.org-routes"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#c2c-route-geojson"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#c2c-route-geojson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessService" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "GeoJSON"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of Waypoints issued from Camptocamp.org API."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-05-01"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "fr-FR"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://opendatacommons.org/licenses/odbl/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Camptocamp.org-waypoints"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessService" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "GeoJSON"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#camptocamp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.camptocamp.org/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Camptocamp Association"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#cirkwi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.cirkwi.com/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Cirkwi"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#hasProfile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/dc/terms/URI"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#locs-export",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "GPS locations"
-  } ],
-  "http://purl.org/dc/terms/isPartOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Marchandetal2025DB"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-09-04"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Office Français de la Biodiversité"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "locs-export"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "RData"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#mgarel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Mathieu Garel"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#openstreetmap",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.openstreetmap.org"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "OpenStreetMap (OSM)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#pan3.70151",
+  "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#mgarel"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid8"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid9"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"
@@ -1816,19 +994,511 @@
     "@value" : "7"
   } ],
   "http://www.w3.org/ns/prov#quotedAs" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Marchandetal2025DB"
+    "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://parcdesbauges.com"
+  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of answers issued from a questionnaire. Compleed with tracks"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Parc Naturel Régional du Massif des Bauges"
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Tracks issued from PhD of Colin Kerouanton"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi",
+  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
+  } ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2014-01"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2015-12"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DatasetSeries" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2015-08-31"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "French"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "LECA et l’EDYTEM"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRDesBauges"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Questionnaires de campagnes de terrain complétés par des traces GNSS"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonTrack20142015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of tracks. Compleed with questionnaires"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Tracks issued from PhD of Colin Kerouanton"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#LIFAT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#LandEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An entity located in land : an area, a land, a parcel, a footprint, an observation."
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Landmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#LivingCreature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Living creature, animal or human"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DatasetSeries" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-01-18"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#BoisVincennes"
+  } ],
+  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
+    "@value" : "https://doi.org/10.57745/MOUSLS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MOUSLS: Multi-sensors and Ground Truth Tracks in Vincennes (2025)"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond"
+  }, {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBoisVincennes2022"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Activity data from gps collars"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-09-04"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Office Français de la Biodiversité"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "act-export"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "GPS locations"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-09-04"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Office Français de la Biodiversité"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "locs-export"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DatasetSeries" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-09-04"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Office Français de la Biodiversité"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"
+  } ],
+  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
+    "@value" : "https://doi.org/10.5281/zenodo.17052197"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mgarel"
+  }, {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#pmarchand"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Massif des Bauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MergedAccurateTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An accurate merged trace is a merged trace that optimizes a quality criterion Q with respect to the ground truth GT (Van Damme et al., 2024)."
+  }, {
+    "@language" : "fr",
+    "@value" : "La trace fusionnée exacte est une trace fusionnée qui optimise un critère de qualité Q par rapport à la vérité terrain VT (Van Damme et al., 2024)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."
+  }, {
+    "@language" : "fr",
+    "@value" : "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Track"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Traces fusionnées du jeu de données sur Vincennes"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#CatalogRecord" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#conformsTo" : [ {
+    "@id" : "https://www.iso.org/fr/standard/53798.html"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "xml"
+  } ],
+  "http://www.w3.org/ns/dcat#identifier" : [ {
+    "@value" : "Metadata_ground_truth_path_vincennes_forest.xml"
+  } ],
+  "http://www.w3.org/ns/dcat#issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-08-13"
+  } ],
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#CatalogRecord" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#conformsTo" : [ {
+    "@id" : "https://www.iso.org/fr/standard/53798.html"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "xml"
+  } ],
+  "http://www.w3.org/ns/dcat#identifier" : [ {
+    "@value" : "Metadata_tracks_multi_sensors_vincennes_forest.xml"
+  } ],
+  "http://www.w3.org/ns/dcat#issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-08-13"
+  } ],
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Movebank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Movebank is a free, online database of animal tracking data"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. "
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). \n\t            Example: “Le chemin du Roy”."
+  }, {
+    "@language" : "fr",
+    "@value" : "Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). \n\t            Exemple : « Le chemin du Roy »."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Route"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Flux de pratiquants"
+  }, {
+    "@language" : "en",
+    "@value" : "Recreational User Map Service"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "OutdoorVision export"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "en",
+    "@value" : "GPS traces"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An observation is an act associated with a discrete time instant or period through which a number, term or\n\tother symbol is assigned to a phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observation or SurveyProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#OutdoorvisionDB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "French"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Datawarehouse of outdoorvision"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Datawarehouse of outdoorvision"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1855,52 +1525,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessService" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "GeoJSON"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "A set of sensitive area issued from Parcdesbauges.com."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-05-01"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "fr-FR"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "fr",
-    "@value" : "Parcdesbauges.com - sensitivearea"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessService" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "GeoJSON"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-trek",
+  "@id" : "https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1927,52 +1552,131 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessService" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "GeoJSON"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbaugesSentiersBDTopo2025",
+  "@id" : "https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SentierDesBauges"
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A set of sensitive area issued from Parcdesbauges.com."
   } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-05-01"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "fr-FR"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Parcdesbauges.com - sensitivearea"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PNRDesBauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@language" : "fr",
+    "@value" : "Le parc naturel régional du Massif des Bauges est une aire protégée"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parc naturel régional du Massif des Bauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Classe=Tronçon de route, Nature=Sentier"
+    "@language" : "en",
+    "@value" : "Ensemble of individuals of a species in an land entity."
   } ],
-  "http://www.w3.org/ns/dcat#inSeries" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q2625603"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#pmarchand",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Pascal Marchand"
+  "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#prnsn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://outdoorvision.fr"
+  "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@language" : "en",
+    "@value" : "A modular and iterative aggregation algorithm (MIAA)"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Pôle ressources national sports de nature (PRNSN)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.refuges.info/"
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-06"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Refuges.info"
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-05"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
+  } ],
+  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points",
+  "@id" : "https://intforout.github.io/outdoorPressure#Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Process"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#anaciri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "Profil des données outdoorvision dans un format PDF pour le projet IntForOut"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "des artefacts dans l’affichage des flux de données en zone urbaine dense existent à partir d’un certain niveau de zoom. En effet, la qualité de la précision des traces GPS est moindre dans ces zones, l’information spatiale affichée est moins pertinente."
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@language" : "fr",
+    "@value" : "La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "La Réserve nationale de chasse et de faune sauvage des Bauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1999,16 +1703,58 @@
     "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
-  "http://www.w3.org/ns/dcat#accessService" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#api-refugesinfo"
+  "@id" : "https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "GeoJSON"
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "blabla"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme",
+  "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Réserves naturelles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ResilientRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A resilient itinerary is a route that minimizes its environmental impact, exerting no pressure on wildlife or vegetation."
+  }, {
+    "@language" : "fr",
+    "@value" : "Un itinéraire résilient est un itinéraire qui n exerce pas de pression sur la faune et la flore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Route"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Route",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."
+  }, {
+    "@language" : "fr",
+    "@value" : "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond"
@@ -2063,13 +1809,166 @@
   "http://www.w3.org/ns/prov#quotedAs" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MOUSLS"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#vincennesfusion"
+    "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"
+    "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#vincennesfusion",
+  "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Sentier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SentierDesBauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Sentier"
+  } ],
+  "https://intforout.github.io/outdoorPressure#affords" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SkiLiftCountersMontBlanc2008To2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year)."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Ski Lift Ridership Counts in the CMB Area."
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Strava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q13884156"
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@value" : "https://www.strava.com/about"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StravaMetro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Strava Metro data set"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregated and de-identified Strava data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q114074281"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "Montre les activités publiques agrégées au cours de l'année passée dans Strava"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "fr",
+    "@value" : "Carte mondiale des activités Strava"
+  }, {
+    "@language" : "en",
+    "@value" : "Strava Global Heatmap"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q114074364"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StravaTracksBauges2014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2025-01"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksRoutePortionBauges2025"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2025-01"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025"
+  } ],
+  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/choucas.ign.fr/oor#RoutePortion"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#SwitchbacksRoutePortionBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2077,28 +1976,68 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
-    "@value" : "Traces fusionnées issues de la métrologie de l'algorithme MIAA"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HikersFootPrintBoisVincennes"
+    "@value" : "Portions de route caractérisant une série de virages"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#FusionCalibration"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#sigspatial24vandamme"
+    "@id" : "https://intforout.github.io/outdoorPressure#SwitchbackIdentification"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#visorando",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.visorando.com/"
+  "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#blabbe"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#lpeseux"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#pcalloch"
   } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Visorando"
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
+  } ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-01-18"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-01-18"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#visorando-route",
+  "@id" : "https://intforout.github.io/outdoorPressure#Track",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."
+  }, {
+    "@language" : "fr",
+    "@value" : "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/NSMUWN&version=1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "gpkg"
+  } ],
+  "http://www.w3.org/ns/dcat#identifier" : [ {
+    "@value" : "tracks_multi_sensors_vincennes_forest.gpkg"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Trajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2119,7 +2058,317 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "fr",
-    "@value" : "Visorando routes"
+    "@value" : "Visorando Hiking Routes in the Bauges Massif (2025)"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@language" : "en",
+    "@value" : "Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)"
+  } ],
+  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Massif du Mont Blanc, côté France"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#affords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Capacity of a place, or land, to support a given activity, effectively or potentially"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#aloison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Anne Loison"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#altituderando",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.altituderando.com"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Altituderando"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#anaciri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Abdassalam Naciri"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables \n\t        par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://opendatacommons.org/licenses/odbl/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "API de Camptocamp.org (routes, waypoints, outings)"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://api.camptocamp.org/"
+  } ],
+  "http://www.w3.org/ns/dcat#servesDataset" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025"
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.camptocamp.org/"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "L'API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "API du PNR Massif des Bauges"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://geotrek.parcdesbauges.com/api/v2/"
+  } ],
+  "http://www.w3.org/ns/dcat#servesDataset" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#api-refugesinfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/2.0/deed.fr"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "API de Refuges.info (points)"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@id" : "https://www.refuges.info/api/"
+  } ],
+  "http://www.w3.org/ns/dcat#servesDataset" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#blabbe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Brice Labbé"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#c2c-route-geojson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessService" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "GeoJSON"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessService" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "GeoJSON"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#camptocamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.camptocamp.org/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Camptocamp Association"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#cirkwi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.cirkwi.com/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Cirkwi"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#hasProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/URI"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#lpeseux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lorine Peseux"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "RData"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#mgarel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Mathieu Garel"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#openstreetmap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.openstreetmap.org"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "OpenStreetMap (OSM)"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#outdoorvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Catalog" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
+  } ],
+  "http://www.w3.org/ns/dcat#dataset" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
+  } ],
+  "http://www.w3.org/ns/dcat#service" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#OutdoorvisionDB"
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@value" : "https://outdoorvision.fr/"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://parcdesbauges.com"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Parc Naturel Régional du Massif des Bauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessService" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "GeoJSON"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessService" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "GeoJSON"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessService" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "GeoJSON"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#pcalloch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Paul Calloch"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#pmarchand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Pascal Marchand"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#prnsn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pôle ressources national sports de nature (PRNSN)"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.refuges.info/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Refuges.info"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/ns/dcat#accessService" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-refugesinfo"
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "GeoJSON"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#visorando",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://www.visorando.com/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Visorando"
   } ]
 }, {
   "@id" : "https://www.refuges.info/api/",
