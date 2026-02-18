@@ -872,7 +872,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
-<https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#OVExportChamonixGeoPackage> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#OVExportLesHouchesGeoPackage> .
@@ -969,6 +968,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion> <http://www.w3.org/2000/01/rdf-schema#comment> "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
