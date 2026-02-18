@@ -1397,9 +1397,6 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered"
@@ -1646,6 +1643,8 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
+  }, {
     "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {

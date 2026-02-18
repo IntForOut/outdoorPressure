@@ -1034,7 +1034,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                       <http://www.w3.org/ns/dcat#Dataset> ;
                              <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2024 ,
                                                                                     :HumanOutdoorActivitiesMontBlanc2024 ;
-                             <http://purl.org/www.umr-lastig.fr/geodata#target> :OVTracksMontBlancBauges2024 ;
                              <http://www.w3.org/ns/dcat#distribution> :OVExportBaugesGeoPackage ,
                                                                       :OVExportChamonixGeoPackage ,
                                                                       :OVExportLesHouchesGeoPackage ,
@@ -1141,7 +1140,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion
 :ReplicabiliteTrackCollectionFusion rdf:type owl:NamedIndividual ,
                                              <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                    <http://purl.org/www.umr-lastig.fr/geodata#target> :SIGSPATIAL24VanDammeEtAl2024 ;
+                                    <http://purl.org/www.umr-lastig.fr/geodata#target> :OVTracksMontBlancBauges2024 ,
+                                                                                       :SIGSPATIAL24VanDammeEtAl2024 ;
                                     <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
                                     rdfs:comment "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
 
