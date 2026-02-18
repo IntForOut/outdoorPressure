@@ -241,8 +241,8 @@
 # 
 # https://intforout.github.io/outdoorPressure#Activity
 <https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en .
-<https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity of a living creature"@en .
+<https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en .
+<https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity"@en .
 # 
 # https://intforout.github.io/outdoorPressure#AireCampingCar
 <https://intforout.github.io/outdoorPressure#AireCampingCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -338,7 +338,7 @@
 # https://intforout.github.io/outdoorPressure#Observation
 <https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Activity> .
-<https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation is an act associated with a discrete time instant or period through which a number, term or\n\tother symbol is assigned to a phenomenon." .
+<https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation is an act associated with a discrete time instant or period through which a number, term or other symbol is assigned to a phenomenon." .
 <https://intforout.github.io/outdoorPressure#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation or SurveyProcess" .
 # 
 # https://intforout.github.io/outdoorPressure#PlandEau

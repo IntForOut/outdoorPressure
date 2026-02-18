@@ -293,8 +293,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
-          rdfs:comment "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en ;
-          rdfs:label "Activity of a living creature"@en .
+          rdfs:comment "Activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en ;
+          rdfs:label "Activity"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#AireCampingCar
@@ -412,8 +412,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#Observation
 :Observation rdf:type owl:Class ;
              rdfs:subClassOf :Activity ;
-             rdfs:comment """An observation is an act associated with a discrete time instant or period through which a number, term or
-	other symbol is assigned to a phenomenon.""" ;
+             rdfs:comment "An observation is an act associated with a discrete time instant or period through which a number, term or other symbol is assigned to a phenomenon." ;
              rdfs:label "Observation or SurveyProcess" .
 
 

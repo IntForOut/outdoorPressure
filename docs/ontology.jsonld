@@ -366,11 +366,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."
+    "@value" : "Activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Activity of a living creature"
+    "@value" : "Activity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#AireCampingCar",
@@ -1424,7 +1424,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#Observation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An observation is an act associated with a discrete time instant or period through which a number, term or\n\tother symbol is assigned to a phenomenon."
+    "@value" : "An observation is an act associated with a discrete time instant or period through which a number, term or other symbol is assigned to a phenomenon."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Observation or SurveyProcess"
