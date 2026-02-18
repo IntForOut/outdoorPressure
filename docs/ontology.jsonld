@@ -434,13 +434,9 @@
     "@id" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Ana-Maria Raimond"
-  }, {
     "@value" : "Bénédicte Bucher"
   }, {
     "@value" : "Marie-Dominique Van Damme"
-  }, {
-    "@value" : "Vanessa Pech"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
@@ -1461,6 +1457,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
+  } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "en",
     "@value" : "GPS traces"
@@ -1710,7 +1709,7 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "blabla"
+    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
