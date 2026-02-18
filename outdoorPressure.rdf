@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
-     xml:base="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure"
+<rdf:RDF xmlns="https://intforout.github.io/outdoorPressure"
+     xml:base="https://intforout.github.io/outdoorPressure"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
@@ -19,10 +19,8 @@
      xmlns:dcam="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:outp="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcam1="http://purl.org/dc/dcam/"
@@ -103,12 +101,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
     <!-- http://purl.org/dc/terms/hasPart -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasPart"/>
@@ -154,12 +146,6 @@
     <!-- http://purl.org/dc/terms/spatial -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -226,12 +212,6 @@
     <!-- http://schema.org/address -->
 
     <owl:AnnotationProperty rdf:about="http://schema.org/address"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure#locatedIn"/>
     
 
 
@@ -328,12 +308,6 @@
     <!-- http://www.w3.org/ns/dcat#theme -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#title -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#title"/>
     
 
 
@@ -454,21 +428,9 @@
 
     
 
+    <!-- https://intforout.github.io/outdoorPressure#locatedIn -->
 
-    <!-- http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation">
-        <rdfs:domain rdf:resource="http://purl.org/choucas.ign.fr/oor#RoutePortion"/>
-        <rdfs:range rdf:resource="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"/>
-        <rdfs:comment>Pour modéliser les annotations sémantiques des itinéraires.</rdfs:comment>
-        <rdfs:label>hasSemanticRouteAnnotation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://intforout.github.io/locatedIn#locatedIn -->
-
-    <owl:ObjectProperty rdf:about="https://intforout.github.io/locatedIn#locatedIn">
+    <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#locatedIn">
         <rdfs:domain rdf:resource="https://intforout.github.io/outdoorPressure#Population"/>
         <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
     </owl:ObjectProperty>
@@ -480,7 +442,7 @@
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#affords">
         <rdfs:domain rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#Activity"/>
-        <rdfs:comment>Capacity of a place, or land, to support a given activity, effectively or potentially</rdfs:comment>
+        <rdfs:comment xml:lang="en">Capacity of a place, or land, to support a given activity, effectively or potentially</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -490,7 +452,7 @@
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasProfile">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/URI"/>
-        <rdfs:comment>Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
+        <rdfs:comment xml:lang="en">Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -506,39 +468,17 @@
     
 
 
-    <!-- http://purl.org/choucas.ign.fr/oor#RoutePortion -->
-
-    <owl:Class rdf:about="http://purl.org/choucas.ign.fr/oor#RoutePortion">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Route"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation -->
-
-    <owl:Class rdf:about="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"/>
-    
-
-
     <!-- http://purl.org/dc/terms/URI -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/URI"/>
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse -->
-
-    <owl:Class rdf:about="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
-        <rdfs:description xml:lang="fr">Un data warehouse permet de stocker des datasets, d’y accéder via requêtes et expose parfois une API.</rdfs:description>
-    </owl:Class>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#Activity -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Activity">
-        <rdfs:comment>Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output.</rdfs:comment>
+        <rdfs:label xml:lang="en">Activity of a living creature</rdfs:label>
+        <rdfs:comment xml:lang="en">Activity of a living creature, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output.</rdfs:comment>
     </owl:Class>
     
 
@@ -563,7 +503,7 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AireProtegee">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:description xml:lang="fr">Une aire protégée (AP) (de l&apos;anglais protected area, PA) est, selon la définition de l&apos;Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d&apos;assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés »</rdfs:description>
+        <rdfs:comment xml:lang="fr">Une aire protégée (AP) (de l&apos;anglais protected area, PA) est, selon la définition de l&apos;Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d&apos;assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés »</rdfs:comment>
         <rdfs:label xml:lang="fr">Aire protégée</rdfs:label>
     </owl:Class>
     
@@ -599,20 +539,8 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://intforout.github.io/outdoorPressure#affords"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#AnimalActivity"/>
-                            <rdf:Description rdf:about="https://intforout.github.io/outdoorPressure#HumanActivity"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Encountering zone</rdfs:label>
+        <rdfs:comment xml:lang="en">Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
     </owl:Class>
     
 
@@ -758,11 +686,11 @@
 
 
     <!-- https://intforout.github.io/outdoorPressure#Procedure -->
-
+<!--
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Procedure">
         <rdfs:subClassOf rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
     </owl:Class>
-    
+-->
 
 
     <!-- https://intforout.github.io/outdoorPressure#ReservesNaturelles -->
@@ -812,19 +740,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#SwitchbackRoutePortion">
-        <rdfs:subClassOf rdf:resource="http://purl.org/choucas.ign.fr/oor#RoutePortion"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/choucas.ign.fr/oor#hasSemanticRouteAnnotation"/>
-                <owl:hasValue rdf:resource="http://purl.org/choucas.ign.fr/oor#Switchbacks"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
 
     <!-- https://intforout.github.io/outdoorPressure#Track -->
 
@@ -854,39 +769,16 @@
     
 
 
-    <!-- http://example.org/activity/CameraTrapSurveyCMB20242024 -->
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025 -->
 
-    <owl:NamedIndividual rdf:about="http://example.org/activity/CameraTrapSurveyCMB20242024">
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Observation"/>
         <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset"/>
         <prov:used rdf:resource="ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"/>
-        <terms:description xml:lang="en">Including the locations of each eco-counter.</terms:description>
+        <rdfs:label xml:lang="en">Camera trap survey from Chamonix Community of Communes in 2024-2025.</rdfs:label>
+        <rdfs:comment xml:lang="en">Including the locations of each eco-counter.</rdfs:comment>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-02</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-11</prov:startedAtTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/choucas.ign.fr/oor#BalconyPath -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/choucas.ign.fr/oor#BalconyPath">
-        <rdf:type rdf:resource="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/choucas.ign.fr/oor#Switchbacks -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/choucas.ign.fr/oor#Switchbacks">
-        <rdf:type rdf:resource="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/choucas.ign.fr/oor#Visitation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/choucas.ign.fr/oor#Visitation">
-        <rdf:type rdf:resource="http://purl.org/choucas.ign.fr/oor#SemanticRouteAnnotation"/>
     </owl:NamedIndividual>
     
 
@@ -947,6 +839,8 @@
         <schema:name>BD TOPO®</schema:name>
         <dcat:language>fr-FR</dcat:language>
         <dcat:title xml:lang="fr">BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l&apos;ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l&apos;aménagement et de l&apos;observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique</dcat:title>
+        <rdfs:label xml:lang="en">BD TOPO® V3.</rdfs:label>
+        <rdfs:comment xml:lang="en">BD TOPO covers whole French territory, is captured at scale 1/ 10 000, exists since 1990 and aims to provide reference data for mapping and spatial analysis.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -960,12 +854,6 @@
     <!-- http://purl.org/www.umr-lastig.fr/geodata#pmarchand -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#pmarchand"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
     
 
 
@@ -1009,12 +897,12 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#AltitudeRandoRoutesBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <terms:description xml:lang="en">A set of routes issued from altituderando.com.</terms:description>
+        <rdfs:label xml:lang="en">AltitudeRando Hiking Routes in the Bauges Massif (2025)</rdfs:label>
+        <rdfs:comment xml:lang="en">A set of routes issued from altituderando.com in 2025 in the Bauges area.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#altituderando"/>
-        <terms:title xml:lang="fr">AltitudeRando Hiking Routes in the Bauges Massif (2025)</terms:title>
     </owl:NamedIndividual>
     
 
@@ -1025,18 +913,9 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#SentierDesBauges"/>
         <dcat:inSeries rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"/>
-        <rdfs:comment>Classe=Tronçon de route, Nature=Sentier</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#BalconyRouteIdentification -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#BalconyRouteIdentification">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
-        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025"/>
-        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01</prov:endedAtTime>
-        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-01</prov:startedAtTime>
+        <rdfs:comment xml:lang="fr">Classe=Tronçon de route, Nature=Sentier</rdfs:comment>
+        <rdfs:label xml:lang="en">Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)</rdfs:label>
+        <rdfs:comment xml:lang="en">This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1045,7 +924,8 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#BoisVincennes">
         <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-        <rdfs:label>Zone de test dans le Bois de Vincennes</rdfs:label>
+        <rdfs:label xml:lang="fr">Zone de test dans le Bois de Vincennes</rdfs:label>
+        <rdfs:label xml:lang="en">Test area located in the Bois de Vincennes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1055,12 +935,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson"/>
-        <terms:description xml:lang="en">A set of Waypoints issued from Camptocamp.org API.</terms:description>
+        <rdfs:comment xml:lang="en">A set of Waypoints issued from Camptocamp.org API.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#camptocamp"/>
-        <terms:title xml:lang="fr">Camptocamp.org-waypoints</terms:title>
+        <rdfs:label xml:lang="en">Camptocamp.org-waypoints</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1070,12 +950,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#c2c-route-geojson"/>
-        <terms:description xml:lang="en">A set of Routes issued from Camptocamp.org API.</terms:description>
+        <rdfs:comment xml:lang="en">A set of Routes issued from Camptocamp.org API.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#camptocamp"/>
-        <terms:title xml:lang="fr">Camptocamp.org-routes</terms:title>
+        <rdfs:label xml:lang="en">Camptocamp.org-routes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1085,7 +965,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DeepFaune">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
         <terms:identifier>DeepFaune</terms:identifier>
-        <rdfs:label>DeepFaune</rdfs:label>
+        <rdfs:label xml:lang="en">DeepFaune</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1094,10 +974,9 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <terms:description xml:lang="en">Dataset derived from 12 eco-counters.</terms:description>
-        <terms:title xml:lang="fr">Eco-counters CMB</terms:title>
-        <rdfs:description>12 éco-compteurs (issus de conventions avec CD et Communauté de Communes de la Vallée de Chamonix-Mont-Blanc (CCVCMB) avec les localisations de chaque éco-compteur, qui serviront probablement plus au WP2 (pour la représentativité, notamment). Ces éco-compteurs sont tous des Pyro-Evo</rdfs:description>
-        <rdfs:description>12 éco-compteurs (issus de conventions avec CD et Communauté de Communes de la Vallée de Chamonix-Mont-Blanc (CCVCMB) avec les localisations de chaque éco-compteur. Ces éco-compteurs sont tous des Pyro-Evo</rdfs:description>
+        <rdfs:label xml:lang="en">Dataset derived from 12 CCVCMB eco-counters.</rdfs:label>
+        <rdfs:comment xml:lang="fr">12 éco-compteurs (issus de conventions avec CD et Communauté de Communes de la Vallée de Chamonix-Mont-Blanc (CCVCMB) avec les localisations de chaque éco-compteur. Ces éco-compteurs sont tous des Pyro-Evo</rdfs:comment>
+        <rdfs:comment xml:lang="en">This dataset includes 12 eco-counters (implemented through agreements with the Departmental Council and the Chamonix-Mont-Blanc Valley Community of Communes (CCVCMB)), together with the geographic location of each device. All counters are Pyro-Evo units.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1106,21 +985,9 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#EcoCompteurUTMBDataset">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <terms:description xml:lang="en">Dataset derived from 12 eco-counters.</terms:description>
-        <terms:title xml:lang="fr">Eco-counters CMB</terms:title>
-        <rdfs:description>10 éco-compteurs UTMB (avec des propriétaires différents), utilisables uniquement par le GT représentativité du WP2 dans un premier temps. Sinon pas d&apos;autorisation. Certains de ces éco-compteurs sont uniquement piétons, d’autres distinguent piétons / cyclistes / voitures.</rdfs:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#EncounterDetection -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#EncounterDetection">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
-        <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
-        <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-04</prov:endedAtTime>
-        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-04</prov:startedAtTime>
+        <rdfs:label xml:lang="en">Dataset derived from 12 UTMB eco-counters.</rdfs:label>
+        <rdfs:comment xml:lang="fr">10 éco-compteurs UTMB (avec des propriétaires différents), utilisables uniquement par le GT représentativité du WP2 dans un premier temps. Sinon pas d&apos;autorisation. Certains de ces éco-compteurs sont uniquement piétons, d’autres distinguent piétons / cyclistes / voitures.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This dataset comprises 10 UTMB eco-counters (with different ownership). They are initially accessible solely to the WP2 Representativeness Working Group; no additional authorization is granted. Some counters record pedestrian traffic only, while others distinguish between pedestrians, cyclists, and motor vehicles.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1134,7 +1001,9 @@
         <dcat:dataset rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest"/>
         <dcat:record rdf:resource="https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest"/>
         <dcat:record rdf:resource="https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest"/>
-        <terms:description xml:lang="fr">Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l&apos;entrepôt pluridisciplinaire Recherche Data Gouv.</terms:description>
+        <rdfs:label xml:lang="en">Dataverse dedicated to the IntForOut project</rdfs:label>
+        <rdfs:comment xml:lang="fr">Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l&apos;entrepôt pluridisciplinaire Recherche Data Gouv.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform.</rdfs:comment>
         <foaf:homePage>https://entrepot.recherche.data.gouv.fr/dataverse/intforout</foaf:homePage>
     </owl:NamedIndividual>
     
@@ -1155,14 +1024,14 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#PopulationFootprint"/>
-        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes"/>
+        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes -->
+    <!-- https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingBoisdeVincennes">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
     </owl:NamedIndividual>
     
@@ -1182,10 +1051,10 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-        <terms:description xml:lang="en">185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates</terms:description>
+        <rdfs:comment xml:lang="en">185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-25</terms:issued>
         <terms:language>English</terms:language>
-        <terms:license rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)"/>
+        <terms:license>Licence Ouverte v2.0 (Etalab)</terms:license>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
     </owl:NamedIndividual>
     
@@ -1239,7 +1108,7 @@
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"/>
         <terms:language>English</terms:language>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LIFAT"/>
-        <terms:title xml:lang="en">Dataset associated with IntForOut ETL framework</terms:title>
+        <rdfs:label xml:lang="en">Dataset associated with IntForOut ETL framework</rdfs:label>
         <rdfs:comment>Dataset associated with IntForOut ETL framework</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1264,7 +1133,7 @@
             </rdf:Description>
         </terms:creator>
         <terms:publisher>Journal of Outdoor Recreation and Tourism</terms:publisher>
-        <terms:title>Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area</terms:title>
+        <rdfs:label xml:lang="en">Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area</rdfs:label>
         <datacite:firstPage>100734</datacite:firstPage>
         <datacite:publicationYear>2024</datacite:publicationYear>
         <datacite:relatedIdentifier>10.1016/j.jort.2024.100734</datacite:relatedIdentifier>
@@ -1301,7 +1170,7 @@
             </rdf:Description>
         </terms:creator>
         <terms:isPartOf>Journal of People and Nature</terms:isPartOf>
-        <terms:title>Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</terms:title>
+        <rdfs:label xml:lang="en">Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</rdfs:label>
         <datacite:firstPage>3002</datacite:firstPage>
         <datacite:lastPage>3016</datacite:lastPage>
         <datacite:number>11</datacite:number>
@@ -1326,10 +1195,10 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <dcat:inSeries rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
+        <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
-        <terms:description xml:lang="en">A set of answers issued from a questionnaire. Compleed with tracks</terms:description>
-        <terms:title xml:lang="fr">Tracks issued from PhD of Colin Kerouanton</terms:title>
+        <rdfs:comment xml:lang="en">A set of answers issued from a questionnaire. Compleed with tracks</rdfs:comment>
+        <rdfs:label xml:lang="en">Tracks issued from PhD of Colin Kerouanton</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1350,12 +1219,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
-        <terms:description xml:lang="fr">Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS</terms:description>
+        <rdfs:comment xml:lang="fr">Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-08-31</terms:issued>
         <terms:language>French</terms:language>
         <terms:publisher>LECA et l’EDYTEM</terms:publisher>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#PNRDesBauges"/>
-        <terms:title xml:lang="fr">Questionnaires de campagnes de terrain complétés par des traces GNSS</terms:title>
+        <rdfs:label xml:lang="fr">Questionnaires de campagnes de terrain complétés par des traces GNSS</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1364,10 +1233,10 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonTrack20142015">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <dcat:inSeries rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
+        <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
-        <terms:description xml:lang="en">A set of tracks. Compleed with questionnaires</terms:description>
-        <terms:title xml:lang="fr">Tracks issued from PhD of Colin Kerouanton</terms:title>
+        <rdfs:comment xml:lang="en">A set of tracks. Compleed with questionnaires</rdfs:comment>
+        <rdfs:label xml:lang="en">Tracks issued from PhD of Colin Kerouanton</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1389,10 +1258,10 @@
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
         <terms:bibliographicCitation>Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, &quot;Multi-sensors and Ground Truth Tracks&quot;, https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1</terms:bibliographicCitation>
-        <terms:description xml:lang="en">The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)</terms:description>
+        <rdfs:comment xml:lang="en">The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-18</terms:issued>
         <terms:language>English</terms:language>
-        <terms:license rdf:resource="http://www.semanticweb.org/bbucher/ontologies/2025/9/OutdoorPressure/Licence%20Ouverte%20v2.0%20(Etalab)"/>
+        <terms:license>Licence Ouverte v2.0 (Etalab)</terms:license>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#BoisVincennes"/>
         <datacite:relatedIdentifier>https://doi.org/10.57745/MOUSLS</datacite:relatedIdentifier>
@@ -1407,7 +1276,7 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv"/>
         <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
-        <rdf:comment xml:lang="en">This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS.</rdf:comment>
+        <rdfs:comment xml:lang="en">This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1419,7 +1288,7 @@
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBoisVincennes2022"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"/>
         <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
-        <rdf:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdf:comment>
+        <rdfs:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1430,12 +1299,12 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#marchandetal-rdata"/>
         <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"/>
-        <terms:description xml:lang="en">Activity data from gps collars</terms:description>
+        <rdfs:comment xml:lang="en">Activity data from gps collars</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher>Office Français de la Biodiversité</terms:publisher>
-        <terms:title xml:lang="fr">act-export</terms:title>
+        <rdfs:label xml:lang="fr">act-export</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1446,12 +1315,12 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#marchandetal-rdata"/>
         <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"/>
-        <terms:description xml:lang="en">GPS locations</terms:description>
+        <rdfs:comment xml:lang="en">GPS locations</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher>Office Français de la Biodiversité</terms:publisher>
-        <terms:title xml:lang="fr">locs-export</terms:title>
+        <rdfs:label xml:lang="fr">locs-export</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1465,13 +1334,13 @@
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#pmarchand"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"/>
         <terms:bibliographicCitation>Marchand, P., Risser, N., Petit, E. &amp; Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197</terms:bibliographicCitation>
-        <terms:description xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. &apos;locs_export&apos; contains gps locations, whereas &apos;act_export&apos; contains activity data from gps collars. See Methods for details.</terms:description>
+        <rdfs:comment xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. &apos;locs_export&apos; contains gps locations, whereas &apos;act_export&apos; contains activity data from gps collars. See Methods for details.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</terms:issued>
         <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:publisher>Office Français de la Biodiversité</terms:publisher>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
-        <terms:title xml:lang="en">Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex</terms:title>
+        <rdfs:label xml:lang="en">Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex</rdfs:label>
         <datacite:relatedIdentifier>https://doi.org/10.5281/zenodo.17052197</datacite:relatedIdentifier>
     </owl:NamedIndividual>
     
@@ -1499,8 +1368,8 @@
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"/>
         <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
-        <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
-        <terms:title xml:lang="fr">Traces fusionnées issues de la métrologie de l&apos;algorithme MIAA</terms:title>
+        <rdfs:comment xml:lang="en">Merged tracks generated with the Track collection from Vincennes in 2024 by the MIAA algorithm</rdfs:comment>
+        <rdfs:label xml:lang="en">Merged tracks in Vincennes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1511,7 +1380,7 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
         <dcat:accessURL rdf:resource="https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&amp;version=1.0"/>
         <foaf:primaryTopic rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath"/>
-        <rdf:comment xml:lang="en">Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)</rdf:comment>
+        <rdfs:comment xml:lang="en">Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)</rdfs:comment>
         <dcat:conformsTo rdf:resource="https://www.iso.org/fr/standard/53798.html"/>
         <dcat:format>xml</dcat:format>
         <dcat:identifier>Metadata_ground_truth_path_vincennes_forest.xml</dcat:identifier>
@@ -1526,7 +1395,7 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
         <dcat:accessURL rdf:resource="https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&amp;version=1.0"/>
         <foaf:primaryTopic rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest"/>
-        <rdf:comment xml:lang="en">Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)</rdf:comment>
+        <rdfs:comment xml:lang="en">Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)</rdfs:comment>
         <dcat:conformsTo rdf:resource="https://www.iso.org/fr/standard/53798.html"/>
         <dcat:format>xml</dcat:format>
         <dcat:identifier>Metadata_tracks_multi_sensors_vincennes_forest.xml</dcat:identifier>
@@ -1540,8 +1409,8 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Movebank">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"/>
         <terms:language>English</terms:language>
-        <terms:title xml:lang="en">Movebank is a free, online database of animal tracking data</terms:title>
-        <rdfs:comment>Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. </rdfs:comment>
+        <rdfs:label xml:lang="en">Movebank is a free, online database of animal tracking data</rdfs:label>
+        <rdfs:comment xml:lang="en">Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. </rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1552,12 +1421,13 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
-        <terms:description xml:lang="fr">Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier.</terms:description>
+        <rdfs:comment xml:lang="fr">Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes.</rdfs:comment>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"/>
-        <terms:title xml:lang="fr">Flux de pratiquants</terms:title>
-        <terms:title xml:lang="en">Recreational User Map Service</terms:title>
+        <rdfs:label xml:lang="fr">Service diffusant des cartes de flux des pratiquants outdoor</rdfs:label>
+        <rdfs:label xml:lang="en">Recreational User Map Service</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1569,26 +1439,62 @@
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
-        <terms:description xml:lang="en">A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered</terms:description>
+        <rdfs:comment xml:lang="en">A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered</rdfs:comment>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"/>
-        <terms:title xml:lang="en">OutdoorVision export</terms:title>
+        <rdfs:label xml:lang="en">OutdoorVision export in Bauges and Mont Blanc in 2024</rdfs:label>
         <dcat:keyword xml:lang="en">GPS traces</dcat:keyword>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage"/>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage"/>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#OVExportServozGeoPackage"/>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#OVExportLesHouchesGeoPackage"/>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#OVExportChamonixGeoPackage"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- https://intforout.github.io/outdoorPressure#OutdoorvisionDB -->
+    <!-- https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OutdoorvisionDB">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"/>
-        <terms:language>French</terms:language>
-        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
-        <terms:title xml:lang="en">Datawarehouse of outdoorvision</terms:title>
-        <rdfs:comment xml:lang="en">Datawarehouse of outdoorvision</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:format>geopackage</dcat:format>
+        <dcat:identifier>Export_RNCFS_0.gpkg</dcat:identifier>
     </owl:NamedIndividual>
-    
+
+    <!-- https://intforout.github.io/outdoorPressure#OVExportChamonixGeoPackage -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OVExportChamonixGeoPackage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:format>geopackage</dcat:format>
+        <dcat:identifier>Export_Chamonix_0.gpkg</dcat:identifier>
+    </owl:NamedIndividual>
+
+
+    <!-- https://intforout.github.io/outdoorPressure#OVExportLesHouchesGeoPackage -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OVExportLesHouchesGeoPackage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:format>geopackage</dcat:format>
+        <dcat:identifier>Export_Les_Houches_0.gpkg</dcat:identifier>
+    </owl:NamedIndividual>
+
+    <!-- https://intforout.github.io/outdoorPressure#OVExportServozGeoPackage -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OVExportServozGeoPackage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:format>geopackage</dcat:format>
+        <dcat:identifier>Export_Servoz_0.gpkg</dcat:identifier>
+    </owl:NamedIndividual>
+
+    <!-- https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dcat:format>geopackage</dcat:format>
+        <dcat:identifier>Export_Vallorcine_0.gpkg</dcat:identifier>
+    </owl:NamedIndividual>
+
+
 
 
     <!-- https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025 -->
@@ -1596,12 +1502,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson"/>
-        <terms:description xml:lang="en">A set of POIs issued from Parcdesbauges.com.</terms:description>
+        <rdfs:comment xml:lang="en">A set of POIs issued from Parcdesbauges.com.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
-        <terms:title xml:lang="fr">Parcdesbauges.com - POI</terms:title>
+        <rdfs:label xml:lang="fr">Parcdesbauges.com - POI</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1611,12 +1517,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson"/>
-        <terms:description xml:lang="en">A set of treks issued from Parcdesbauges.com.</terms:description>
+        <rdfs:comment xml:lang="en">A set of treks issued from Parcdesbauges.com.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
-        <terms:title xml:lang="fr">Parcdesbauges.com - trek</terms:title>
+        <rdfs:label xml:lang="fr">Parcdesbauges.com - trek</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1626,12 +1532,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"/>
-        <terms:description xml:lang="en">A set of sensitive area issued from Parcdesbauges.com.</terms:description>
+        <rdfs:comment xml:lang="en">A set of sensitive area issued from Parcdesbauges.com.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
-        <terms:title xml:lang="fr">Parcdesbauges.com - sensitivearea</terms:title>
+        <rdfs:label xml:lang="fr">Parcdesbauges.com - sensitivearea</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1640,7 +1546,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRDesBauges">
         <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-        <rdfs:description xml:lang="fr">Le parc naturel régional du Massif des Bauges est une aire protégée</rdfs:description>
+        <rdfs:comment xml:lang="fr">Le parc naturel régional du Massif des Bauges est une aire protégée</rdfs:comment>
         <rdfs:label>Parc naturel régional du Massif des Bauges</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1654,9 +1560,10 @@
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
         <prov:wasAssociatedWith rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <rdfs:description xml:lang="en">A modular and iterative aggregation algorithm (MIAA)</rdfs:description>
+        <rdfs:comment xml:lang="en">A modular and iterative aggregation algorithm (MIAA)</rdfs:comment>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-06</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-05</prov:startedAtTime>
+        <rdfs:label xml:lang="en">Population footprint from a tracks collection</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1666,7 +1573,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#anaciri"/>
-        <rdfs:description>Profil des données outdoorvision dans un format PDF pour le projet IntForOut</rdfs:description>
+        <rdfs:comment xml:lang="fr">Profil des données outdoorvision dans un format PDF pour le projet IntForOut</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1677,7 +1584,7 @@
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <terms:description xml:lang="fr">des artefacts dans l’affichage des flux de données en zone urbaine dense existent à partir d’un certain niveau de zoom. En effet, la qualité de la précision des traces GPS est moindre dans ces zones, l’information spatiale affichée est moins pertinente.</terms:description>
+        <rdfs:comment xml:lang="fr">des artefacts dans l’affichage des flux de données en zone urbaine dense existent à partir d’un certain niveau de zoom. En effet, la qualité de la précision des traces GPS est moindre dans ces zones, l’information spatiale affichée est moins pertinente.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1686,7 +1593,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#RNCFSBauges">
         <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-        <rdfs:description xml:lang="fr">La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%).</rdfs:description>
+        <rdfs:comment xml:lang="fr">La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%).</rdfs:comment>
         <rdfs:label>La Réserve nationale de chasse et de faune sauvage des Bauges</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1697,12 +1604,12 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson"/>
-        <terms:description xml:lang="en">A set of Points issued from Refuges.info.</terms:description>
+        <rdfs:comment xml:lang="en">A set of Points issued from Refuges.info.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/deed.fr"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#refugesinfo"/>
-        <terms:title xml:lang="fr">Refuges.info - points</terms:title>
+        <rdfs:label xml:lang="en">Refuges.info - points</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1713,7 +1620,7 @@
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <terms:description xml:lang="en">The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input</terms:description>
+        <rdfs:comment xml:lang="en">The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1731,7 +1638,7 @@
         <terms:isPartOf>SIGSPATIAL &apos;24</terms:isPartOf>
         <terms:publisher>Association for Computing Machinery</terms:publisher>
         <terms:spatial>Atlanta, GA, USA</terms:spatial>
-        <terms:title>A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</terms:title>
+        <rdfs:label xml:lang="en">A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</rdfs:label>
         <datacite:firstPage>633</datacite:firstPage>
         <datacite:lastPage>636</datacite:lastPage>
         <datacite:publicationYear>2024</datacite:publicationYear>
@@ -1762,8 +1669,8 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SkiLiftCountersMontBlanc2008To2024">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024"/>
-        <terms:description xml:lang="en">Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year).</terms:description>
-        <terms:title xml:lang="en">Ski Lift Ridership Counts in the CMB Area.</terms:title>
+        <rdfs:comment xml:lang="en">Counting data for each ski lift, including their locations (start and end points), over a 10-year period (one file per year).</rdfs:comment>
+        <rdfs:label xml:lang="en">Ski Lift Ridership Counts in the CMB Area.</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1780,7 +1687,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Strava">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <dc:description>american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user&apos;s activities, which can then be shared with the user&apos;s followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity&apos;s recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)</dc:description>
+        <rdfs:comment xml:lang="en">american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user&apos;s activities, which can then be shared with the user&apos;s followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity&apos;s recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)</rdfs:comment>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13884156</rdfs:seeAlso>
         <foaf:homePage>https://www.strava.com/about</foaf:homePage>
     </owl:NamedIndividual>
@@ -1793,7 +1700,7 @@
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse"/>
         <terms:language>English</terms:language>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
-        <terms:title xml:lang="en">Strava Metro data set</terms:title>
+        <rdfs:label xml:lang="en">Strava Metro data set</rdfs:label>
         <rdfs:comment xml:lang="en">Aggregated and de-identified Strava data</rdfs:comment>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q114074281</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -1816,10 +1723,11 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
-        <terms:description xml:lang="fr">Montre les activités publiques agrégées au cours de l&apos;année passée dans Strava</terms:description>
+        <rdfs:comment xml:lang="fr">Montre les activités publiques agrégées au cours de l&apos;année passée dans Strava</rdfs:comment>
+        <rdfs:comment xml:lang="en">Displays the aggregated public activities recorded in Strava over the past year</rdfs:comment>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
-        <terms:title xml:lang="fr">Carte mondiale des activités Strava</terms:title>
-        <terms:title xml:lang="en">Strava Global Heatmap</terms:title>
+        <rdfs:label xml:lang="fr">Carte mondiale des activités Strava</rdfs:label>
+        <rdfs:label xml:lang="en">Strava Global Heatmap</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q114074364</rdfs:seeAlso>
     </owl:NamedIndividual>
     
@@ -1834,30 +1742,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- https://intforout.github.io/outdoorPressure#SwitchbackIdentification -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SwitchbackIdentification">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
-        <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#SwitchbacksRoutePortionBauges2025"/>
-        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025"/>
-        <prov:wasAssociatedWith rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
-        <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-01</prov:endedAtTime>
-        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-01</prov:startedAtTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#SwitchbacksRoutePortionBauges2025 -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SwitchbacksRoutePortionBauges2025">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#SwitchbackIdentification"/>
-        <terms:description xml:lang="en">Traces fusionnées du jeu de données sur Vincennes</terms:description>
-        <terms:title xml:lang="fr">Portions de route caractérisant une série de virages</terms:title>
-    </owl:NamedIndividual>
-    
 
 
     <!-- https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024 -->
@@ -1890,12 +1774,12 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <terms:description xml:lang="en">A set of routes issued from visorando.com.</terms:description>
+        <rdfs:comment xml:lang="en">A set of routes issued from visorando.com.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#visorando"/>
-        <terms:title xml:lang="fr">Visorando Hiking Routes in the Bauges Massif (2025)</terms:title>
+        <rdfs:label xml:lang="en">Visorando Hiking Routes in the Bauges Massif (2025)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1905,7 +1789,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
         <prov:wasAssociatedWith rdf:resource="https://intforout.github.io/outdoorPressure#DeepFaune"/>
-        <rdfs:description xml:lang="en">Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)</rdfs:description>
+        <rdfs:comment xml:lang="en">Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1954,11 +1838,10 @@
         <dcat:accessURL rdf:resource="https://api.camptocamp.org/"/>
         <dcat:servesDataset rdf:resource="https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025"/>
         <dcat:servesDataset rdf:resource="https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025"/>
-        <terms:description xml:lang="fr">API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables 
-	        par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger.</terms:description>
+        <rdfs:comment xml:lang="fr">API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger.</rdfs:comment>
         <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#camptocamp"/>
-        <terms:title xml:lang="en">API de Camptocamp.org (routes, waypoints, outings)</terms:title>
+        <rdfs:label xml:lang="en">API de Camptocamp.org (routes, waypoints, outings)</rdfs:label>
         <foaf:homePage rdf:resource="https://www.camptocamp.org/"/>
     </owl:NamedIndividual>
     
@@ -1972,10 +1855,10 @@
         <dcat:servesDataset rdf:resource="https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"/>
         <dcat:servesDataset rdf:resource="https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"/>
         <dcat:servesDataset rdf:resource="https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"/>
-        <terms:description xml:lang="fr">L&apos;API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données.</terms:description>
+        <rdfs:comment xml:lang="fr">L&apos;API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données.</rdfs:comment>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
-        <terms:title xml:lang="en">API du PNR Massif des Bauges</terms:title>
+        <rdfs:label xml:lang="en">API du PNR Massif des Bauges</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1986,10 +1869,10 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
         <dcat:accessURL rdf:resource="https://www.refuges.info/api/"/>
         <dcat:servesDataset rdf:resource="https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025"/>
-        <terms:description xml:lang="fr">L&apos;API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points.</terms:description>
+        <rdfs:comment xml:lang="fr">L&apos;API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points.</rdfs:comment>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/deed.fr"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#refugesinfo"/>
-        <terms:title xml:lang="en">API de Refuges.info (points)</terms:title>
+        <rdfs:label xml:lang="en">API de Refuges.info (points)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2086,10 +1969,10 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
         <dcat:dataset rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <dcat:service rdf:resource="https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"/>
-        <dcat:service rdf:resource="https://intforout.github.io/outdoorPressure#OutdoorvisionDB"/>
-        <terms:description xml:lang="en">Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme.</terms:description>
+        <rdfs:comment xml:lang="en">Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme.</rdfs:comment>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <foaf:homePage>https://outdoorvision.fr/</foaf:homePage>
+        <rdfs:label xml:lang="en">OutdoorVision Catalog</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2213,5 +2096,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
 
