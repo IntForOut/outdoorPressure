@@ -837,17 +837,6 @@
     
 
 
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#mgarel -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#mgarel"/>
-    
-
-
-    <!-- http://purl.org/www.umr-lastig.fr/geodata#pmarchand -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#pmarchand"/>
-    
-
 
     <!-- https://api.camptocamp.org/ -->
 
@@ -1331,8 +1320,8 @@
         <rdfs:comment xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. &apos;locs_export&apos; contains gps locations, whereas &apos;act_export&apos; contains activity data from gps collars. See Methods for details.</rdfs:comment>
         <rdfs:label xml:lang="en">Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex</rdfs:label>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#marchandetal-rdata"/>
-        <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mgarel"/>
-        <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#pmarchand"/>
+        <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
+        <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"/>
     </owl:NamedIndividual>
     
@@ -1613,9 +1602,9 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation -->
+    <!-- https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
@@ -1948,6 +1937,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#mgarel">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
         <foaf:name>Mathieu Garel</foaf:name>
+        <rdfs:label xml:lang="en">Mathieu Garel</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2030,6 +2020,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#pmarchand">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
         <foaf:name>Pascal Marchand</foaf:name>
+        <rdfs:label xml:lang="en">Pascal Marchand</rdfs:label>
     </owl:NamedIndividual>
     
 
