@@ -946,6 +946,9 @@
     "@language" : "fr",
     "@value" : "Questionnaires de campagnes de terrain complétés par des traces GNSS"
   } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"
+  } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
   } ]

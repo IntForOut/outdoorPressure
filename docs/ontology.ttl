@@ -817,6 +817,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
 :KerouantonSurveyFieldCampaignTracksGNSS20142015 rdf:type owl:NamedIndividual ,
                                                           <http://www.w3.org/ns/dcat#DatasetSeries> ;
+                                                 <http://www.w3.org/ns/prov#wasGeneratedBy> :KerouantonSurvey20142015 ;
                                                  <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024 ;
                                                  <http://purl.org/dc/terms/issued> "2015-08-31"^^xsd:date ;
                                                  <http://purl.org/dc/terms/language> "French" ;
