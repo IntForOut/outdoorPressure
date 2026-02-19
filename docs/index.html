@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Thu Feb 19 12:20:24 UTC 2026", "author":[{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Thu Feb 19 14:46:50 UTC 2026", "author":[{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -403,10 +403,6 @@ This ontology has the following classes and properties.</span>
          title="https://intforout.github.io/outdoorPressure#EcoCompteurUTMBDataset">Dataset derived from 12 UTMB eco-counters.</a>
    </li>
    <li>
-      <a href="#EntrepotRechercheIntForOut"
-         title="https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut">Dataverse dedicated to the IntForOut project</a>
-   </li>
-   <li>
       <a href="#DeepFaune"
          title="https://intforout.github.io/outdoorPressure#DeepFaune">DeepFaune</a>
    </li>
@@ -477,6 +473,10 @@ This ontology has the following classes and properties.</span>
          title="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024">
          <span>Human Outdoor Activities Mont Blanc2024</span>
       </a>
+   </li>
+   <li>
+      <a href="#EntrepotRechercheIntForOut"
+         title="https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut">IntForOut Dataverse</a>
    </li>
    <li>
       <a href="#KerouantonSurvey20142015"
@@ -1431,7 +1431,6 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#IntForOutDB" title="https://intforout.github.io/outdoorPressure#IntForOutDB">Dataset associated with IntForOut ETL framework</a></li>
   <li><a href="#EcoCompteurCMBDataset" title="https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset">Dataset derived from 12 CCVCMB eco-counters.</a></li>
   <li><a href="#EcoCompteurUTMBDataset" title="https://intforout.github.io/outdoorPressure#EcoCompteurUTMBDataset">Dataset derived from 12 UTMB eco-counters.</a></li>
-  <li><a href="#EntrepotRechercheIntForOut" title="https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut">Dataverse dedicated to the IntForOut project</a></li>
   <li><a href="#DeepFaune" title="https://intforout.github.io/outdoorPressure#DeepFaune">DeepFaune</a></li>
   <li><a href="#JournalOfPeopleAndNatureMarchandEtAl2025" title="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025">Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</a></li>
   <li><a href="#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024" title="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024">Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area</a></li>
@@ -1445,6 +1444,7 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#HumanOutdoorActivitiesBauges2024" title="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"> <span>Human Outdoor Activities Bauges2024</span> </a></li>
   <li><a href="#HumanOutdoorActivitiesBoisVincennes2022" title="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBoisVincennes2022"> <span>Human Outdoor Activities Bois Vincennes2022</span> </a></li>
   <li><a href="#HumanOutdoorActivitiesMontBlanc2024" title="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"> <span>Human Outdoor Activities Mont Blanc2024</span> </a></li>
+  <li><a href="#EntrepotRechercheIntForOut" title="https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut">IntForOut Dataverse</a></li>
   <li><a href="#KerouantonSurvey20142015" title="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"> <span>Kerouanton Survey20142015</span> </a></li>
   <li><a href="#LIFAT" title="https://intforout.github.io/outdoorPressure#LIFAT"> <span>L I F A T</span> </a></li>
   <li><a href="#RNCFSBauges" title="https://intforout.github.io/outdoorPressure#RNCFSBauges">La Réserve nationale de chasse et de faune sauvage des Bauges</a></li>
@@ -1913,9 +1913,6 @@ This section provides details for each class and property defined by Mountain ou
    <dd>
     <a href="http://www.w3.org/ns/dcat#language" target="_blank" title="http://www.w3.org/ns/dcat#language">language</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"fr-FR"</span>
    </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#title" target="_blank" title="http://www.w3.org/ns/dcat#title">title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr</span>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="blabbe">
@@ -2127,7 +2124,7 @@ This section provides details for each class and property defined by Mountain ou
     belongs to
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -2218,42 +2215,6 @@ This section provides details for each class and property defined by Mountain ou
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="EntrepotRechercheIntForOut">
-  <h3>Dataverse dedicated to the IntForOut project<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut</p>
-  <div class="comment">
-   <span class="markdown">Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    belongs to
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#Catalog" target="_blank" title="http://www.w3.org/ns/dcat#Catalog">Catalog</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has facts
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#dataset" target="_blank" title="http://www.w3.org/ns/dcat#dataset">dataset</a> <sup class="type-op" title="object property">op</sup> <a href="#MOUSLS" title="https://intforout.github.io/outdoorPressure#MOUSLS">MOUSLS: Multi-sensors and Ground Truth Tracks in Vincennes (2025)</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#dataset" target="_blank" title="http://www.w3.org/ns/dcat#dataset">dataset</a> <sup class="type-op" title="object property">op</sup> <a href="#MOUSLSGroundTruthDenseForestPath" title="https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath">M O U S L S Ground Truth Dense Forest Path</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#dataset" target="_blank" title="http://www.w3.org/ns/dcat#dataset">dataset</a> <sup class="type-op" title="object property">op</sup> <a href="#MOUSLSTracksMultiSensorsVincennesForest" title="https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest">M O U S L S Tracks Multi Sensors Vincennes Forest</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#record" target="_blank" title="http://www.w3.org/ns/dcat#record">record</a> <sup class="type-op" title="object property">op</sup> <a href="#MetadataGroundTruthPathVincennesForest" title="https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest">Metadata Ground Truth Path Vincennes Forest</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#record" target="_blank" title="http://www.w3.org/ns/dcat#record">record</a> <sup class="type-op" title="object property">op</sup> <a href="#MetadataTracksMultiSensorsVincennesForest" title="https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest">Metadata Tracks Multi Sensors Vincennes Forest</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dd>
-    <a href="http://xmlns.com/foaf/0.1/homePage" target="_blank" title="http://xmlns.com/foaf/0.1/homePage">home Page</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://entrepot.recherche.data.gouv.fr/dataverse/intforout"</span>
    </dd>
   </dl>
  </div>
@@ -2593,6 +2554,42 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
+ <div class="entity" id="EntrepotRechercheIntForOut">
+  <h3>IntForOut Dataverse<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut</p>
+  <div class="comment">
+   <span class="markdown">Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Catalog" target="_blank" title="http://www.w3.org/ns/dcat#Catalog">Catalog</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#dataset" target="_blank" title="http://www.w3.org/ns/dcat#dataset">dataset</a> <sup class="type-op" title="object property">op</sup> <a href="#MOUSLS" title="https://intforout.github.io/outdoorPressure#MOUSLS">MOUSLS: Multi-sensors and Ground Truth Tracks in Vincennes (2025)</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#dataset" target="_blank" title="http://www.w3.org/ns/dcat#dataset">dataset</a> <sup class="type-op" title="object property">op</sup> <a href="#MOUSLSGroundTruthDenseForestPath" title="https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath">M O U S L S Ground Truth Dense Forest Path</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#dataset" target="_blank" title="http://www.w3.org/ns/dcat#dataset">dataset</a> <sup class="type-op" title="object property">op</sup> <a href="#MOUSLSTracksMultiSensorsVincennesForest" title="https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest">M O U S L S Tracks Multi Sensors Vincennes Forest</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#record" target="_blank" title="http://www.w3.org/ns/dcat#record">record</a> <sup class="type-op" title="object property">op</sup> <a href="#MetadataGroundTruthPathVincennesForest" title="https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest">Metadata Ground Truth Path Vincennes Forest</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#record" target="_blank" title="http://www.w3.org/ns/dcat#record">record</a> <sup class="type-op" title="object property">op</sup> <a href="#MetadataTracksMultiSensorsVincennesForest" title="https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest">Metadata Tracks Multi Sensors Vincennes Forest</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/homePage" target="_blank" title="http://xmlns.com/foaf/0.1/homePage">home Page</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://entrepot.recherche.data.gouv.fr/dataverse/intforout"</span>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="KerouantonSurvey20142015">
   <h3>Kerouanton Survey20142015<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015</p>
@@ -2928,7 +2925,7 @@ This section provides details for each class and property defined by Mountain ou
     belongs to
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -3531,7 +3528,7 @@ This section provides details for each class and property defined by Mountain ou
     belongs to
    </dt>
    <dd>
-    <a href="http://www.w3.org/ns/dcat#DatasetSeries" target="_blank" title="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts

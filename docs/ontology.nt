@@ -431,9 +431,9 @@
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/keywords> "végétation" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://schema.org/name> "BD TOPO®" .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/2000/01/rdf-schema#comment> "BD TOPO covers whole French territory, is captured at scale 1/ 10 000, exists since 1990 and aims to provide reference data for mapping and spatial analysis."@en .
+<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/2000/01/rdf-schema#comment> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/2000/01/rdf-schema#label> "BD TOPO® V3."@en .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#language> "fr-FR" .
-<http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#title> "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"@fr .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -540,7 +540,7 @@
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/ns/dcat#record> <https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest> .
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform."@en .
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l'entrepôt pluridisciplinaire Recherche Data Gouv."@fr .
-<https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#label> "Dataverse dedicated to the IntForOut project"@en .
+<https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#label> "IntForOut Dataverse"@en .
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://xmlns.com/foaf/0.1/homePage> "https://entrepot.recherche.data.gouv.fr/dataverse/intforout" .
 # 
 # https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv
@@ -678,7 +678,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/issued> "2015-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -703,7 +703,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#MOUSLS
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
 <https://intforout.github.io/outdoorPressure#MOUSLS> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
@@ -758,7 +758,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
+<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#mgarel> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#pmarchand> .
