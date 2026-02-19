@@ -1480,10 +1480,7 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
-<<<<<<< HEAD
         <rdfs:comment xml:lang="en">A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered</rdfs:comment>
-=======
->>>>>>> 5d025f856a4a904c02da22a3fc71b871e95bee47
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"/>
