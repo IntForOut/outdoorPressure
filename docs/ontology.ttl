@@ -549,14 +549,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                                         <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^xsd:gYearMonth .
 
 
-###  http://purl.org/www.umr-lastig.fr/geodata#mgarel
-<http://purl.org/www.umr-lastig.fr/geodata#mgarel> rdf:type owl:NamedIndividual .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata#pmarchand
-<http://purl.org/www.umr-lastig.fr/geodata#pmarchand> rdf:type owl:NamedIndividual .
-
-
 ###  https://api.camptocamp.org/
 <https://api.camptocamp.org/> rdf:type owl:NamedIndividual .
 
@@ -913,8 +905,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :MarchandEtAl2025MSEPeopleNatureDataZenodo rdf:type owl:NamedIndividual ,
                                                     <http://www.w3.org/ns/dcat#DatasetSeries> ;
                                            <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
-                                           <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mgarel> ,
-                                                                                       <http://purl.org/www.umr-lastig.fr/geodata#pmarchand> ;
+                                           <http://www.w3.org/ns/prov#wasAttributedTo> :mgarel ,
+                                                                                       :pmarchand ;
                                            <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfPeopleAndNatureMarchandEtAl2025 ;
                                            <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
                                            <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
@@ -1136,15 +1128,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                           rdfs:label "Refuges.info - points"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation
-:ReplicabilityTrackCollectionAggregation rdf:type owl:NamedIndividual ,
-                                                  <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                         <http://purl.org/www.umr-lastig.fr/geodata#target> :OVTracksMontBlancBauges2024 ,
-                                                                                            :SIGSPATIAL24VanDammeEtAl2024 ;
-                                         <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
-                                         rdfs:comment "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
-
-
 ###  https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024
 :SIGSPATIAL24VanDammeEtAl2024 rdf:type owl:NamedIndividual ,
                                        <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
@@ -1246,6 +1229,15 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                                                  :pcalloch ;
                                               <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                               <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
+
+
+###  https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability
+:TrackCollectionMergeForReplicability rdf:type owl:NamedIndividual ,
+                                               <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                                      <http://purl.org/www.umr-lastig.fr/geodata#target> :OVTracksMontBlancBauges2024 ,
+                                                                                         :SIGSPATIAL24VanDammeEtAl2024 ;
+                                      <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
+                                      rdfs:comment "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg
@@ -1385,6 +1377,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#mgarel
 :mgarel rdf:type owl:NamedIndividual ,
                  <http://www.w3.org/ns/prov#Person> ;
+        rdfs:label "Mathieu Garel"@en ;
         <http://xmlns.com/foaf/0.1/name> "Mathieu Garel" .
 
 
@@ -1443,6 +1436,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#pmarchand
 :pmarchand rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/prov#Person> ;
+           rdfs:label "Pascal Marchand"@en ;
            <http://xmlns.com/foaf/0.1/name> "Pascal Marchand" .
 
 

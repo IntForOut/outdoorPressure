@@ -213,12 +213,6 @@
     "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"
   } ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mgarel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#pmarchand",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#target",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1164,9 +1158,9 @@
     "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
   } ],
   "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mgarel"
+    "@id" : "https://intforout.github.io/outdoorPressure#mgarel"
   }, {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#pmarchand"
+    "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
@@ -1637,21 +1631,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1912,6 +1891,21 @@
     "@value" : "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
@@ -2160,6 +2154,10 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#mgarel",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mathieu Garel"
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Mathieu Garel"
   } ]
@@ -2240,6 +2238,10 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#pmarchand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pascal Marchand"
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Pascal Marchand"
   } ]
