@@ -1438,7 +1438,6 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <rdfs:comment xml:lang="en">A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered</rdfs:comment>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
@@ -1614,11 +1613,12 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion -->
+    <!-- https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReplicabiliteTrackCollectionFusion">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <rdfs:comment xml:lang="en">The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input</rdfs:comment>
     </owl:NamedIndividual>
