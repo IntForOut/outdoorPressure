@@ -445,12 +445,6 @@
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025> <http://www.w3.org/ns/prov#endedAtTime> "2024-02"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025> <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
-# http://purl.org/www.umr-lastig.fr/geodata#mgarel
-<http://purl.org/www.umr-lastig.fr/geodata#mgarel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# http://purl.org/www.umr-lastig.fr/geodata#pmarchand
-<http://purl.org/www.umr-lastig.fr/geodata#pmarchand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
 # https://api.camptocamp.org/
 <https://api.camptocamp.org/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -765,8 +759,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DatasetSeries> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mgarel> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#pmarchand> .
+<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#mgarel> .
+<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#pmarchand> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" .
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/issued> "2025-09-04"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -965,14 +959,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of Points issued from Refuges.info."@en .
 <https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Refuges.info - points"@en .
 # 
-# https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation
-<https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
-<https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
-<https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
-<https://intforout.github.io/outdoorPressure#ReplicabilityTrackCollectionAggregation> <http://www.w3.org/2000/01/rdf-schema#comment> "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
-# 
 # https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
@@ -1065,6 +1051,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> <http://purl.org/dc/terms/creator> <https://intforout.github.io/outdoorPressure#pcalloch> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
+# 
+# https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability
+<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
+<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
+<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
+<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/2000/01/rdf-schema#comment> "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
 # 
 # https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1186,6 +1180,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#mgarel
 <https://intforout.github.io/outdoorPressure#mgarel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#mgarel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#mgarel> <http://www.w3.org/2000/01/rdf-schema#label> "Mathieu Garel"@en .
 <https://intforout.github.io/outdoorPressure#mgarel> <http://xmlns.com/foaf/0.1/name> "Mathieu Garel" .
 # 
 # https://intforout.github.io/outdoorPressure#openstreetmap
@@ -1236,6 +1231,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#pmarchand
 <https://intforout.github.io/outdoorPressure#pmarchand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#pmarchand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<https://intforout.github.io/outdoorPressure#pmarchand> <http://www.w3.org/2000/01/rdf-schema#label> "Pascal Marchand"@en .
 <https://intforout.github.io/outdoorPressure#pmarchand> <http://xmlns.com/foaf/0.1/name> "Pascal Marchand" .
 # 
 # https://intforout.github.io/outdoorPressure#prnsn
