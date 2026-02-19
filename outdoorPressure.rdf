@@ -1206,6 +1206,7 @@
         <rdfs:comment xml:lang="fr">Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS</rdfs:comment>
         <rdfs:label xml:lang="fr">Questionnaires de campagnes de terrain complétés par des traces GNSS</rdfs:label>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
+        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015" />
     </owl:NamedIndividual>
     
 
