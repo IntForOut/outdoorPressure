@@ -920,7 +920,7 @@
         <mxCell id="Pmp9Iupr3VuTFy_raJh2-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#E8E8E8;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Real world&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;phenomena&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="-2907" y="-764" as="geometry" />
         </mxCell>
-        <mxCell id="CjkbBF4xDZKwI-zm5NWj-1" edge="1" parent="1" source="Pmp9Iupr3VuTFy_raJh2-18" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="Pmp9Iupr3VuTFy_raJh2-15" value="">
+        <mxCell id="CjkbBF4xDZKwI-zm5NWj-1" edge="1" parent="1" source="Pmp9Iupr3VuTFy_raJh2-18" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;dashed=1;" target="Pmp9Iupr3VuTFy_raJh2-15" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
               <mxPoint x="-3190" y="-640" />
@@ -929,16 +929,16 @@
             <mxPoint x="-2790" y="-460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CjkbBF4xDZKwI-zm5NWj-2" connectable="0" parent="CjkbBF4xDZKwI-zm5NWj-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;hasSTFootprint&lt;/font&gt;" vertex="1">
+        <mxCell id="CjkbBF4xDZKwI-zm5NWj-2" connectable="0" parent="CjkbBF4xDZKwI-zm5NWj-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;hasSTFootprint&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="0.1254" y="2" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="15" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="DkG_Ew4qQ62zcml-1EjA" name="Schéma 2 article">
-    <mxGraphModel dx="3010" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3249" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
