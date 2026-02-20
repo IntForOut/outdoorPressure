@@ -222,6 +222,11 @@
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/URI> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 # 
+# https://intforout.github.io/outdoorPressure#hasSTFootprint
+<https://intforout.github.io/outdoorPressure#hasSTFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://intforout.github.io/outdoorPressure#hasSTFootprint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#Activity> .
+<https://intforout.github.io/outdoorPressure#hasSTFootprint> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#LandEntity> .
+# 
 # https://intforout.github.io/outdoorPressure#locatedIn
 <https://intforout.github.io/outdoorPressure#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#Population> .
@@ -554,6 +559,7 @@
 <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#PopulationFootprint> .
 <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <https://intforout.github.io/outdoorPressure#affords> <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> .
+<https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <https://intforout.github.io/outdoorPressure#hasSTFootprint> <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> .
 # 
 # https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes
 <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

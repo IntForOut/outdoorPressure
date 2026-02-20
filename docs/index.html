@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Fri Feb 20 12:47:12 UTC 2026", "author":[{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://intforout.github.io/outdoorPressure","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://intforout.github.io/outdoorPressure","name":"Mountain outdoor pressure KG", "headline":"Document describing the ontology https://intforout.github.io/outdoorPressure", "dateReleased":"Fri Feb 20 14:04:58 UTC 2026", "author":[{"@type":"Person","name":"Bénédicte Bucher"},{"@type":"Person","name":"Marie-Dominique Van Damme"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -287,6 +287,12 @@ This ontology has the following classes and properties.</span>
       <a href="#hasProfile"
          title="https://intforout.github.io/outdoorPressure#hasProfile">
          <span>has Profile</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasSTFootprint"
+         title="https://intforout.github.io/outdoorPressure#hasSTFootprint">
+         <span>has S T Footprint</span>
       </a>
    </li>
    <li>
@@ -851,6 +857,12 @@ This section provides details for each class and property defined by Mountain ou
     <a href="#AnimalActivity" title="https://intforout.github.io/outdoorPressure#AnimalActivity">Animal Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#HumanActivity" title="https://intforout.github.io/outdoorPressure#HumanActivity">Human Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Observation" title="https://intforout.github.io/outdoorPressure#Observation">Observation or SurveyProcess</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasSTFootprint" title="https://intforout.github.io/outdoorPressure#hasSTFootprint">has S T Footprint</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
     is in range of
    </dt>
    <dd>
@@ -1073,7 +1085,7 @@ This section provides details for each class and property defined by Mountain ou
     is in range of
    </dt>
    <dd>
-    <a href="#locatedIn" title="https://intforout.github.io/outdoorPressure#locatedIn">located In</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasSTFootprint" title="https://intforout.github.io/outdoorPressure#hasSTFootprint">has S T Footprint</a> <sup class="type-op" title="object property">op</sup>, <a href="#locatedIn" title="https://intforout.github.io/outdoorPressure#locatedIn">located In</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1338,6 +1350,7 @@ This section provides details for each class and property defined by Mountain ou
  <ul class="hlist">
   <li><a href="#affords" title="https://intforout.github.io/outdoorPressure#affords"> <span>affords</span> </a></li>
   <li><a href="#hasProfile" title="https://intforout.github.io/outdoorPressure#hasProfile"> <span>has Profile</span> </a></li>
+  <li><a href="#hasSTFootprint" title="https://intforout.github.io/outdoorPressure#hasSTFootprint"> <span>has S T Footprint</span> </a></li>
   <li><a href="#locatedIn" title="https://intforout.github.io/outdoorPressure#locatedIn"> <span>located In</span> </a></li>
  </ul>
  <div class="entity" id="affords">
@@ -1382,6 +1395,26 @@ This section provides details for each class and property defined by Mountain ou
     </dt>
     <dd>
      <a href="http://purl.org/dc/terms/URI" target="_blank" title="http://purl.org/dc/terms/URI">U R I</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSTFootprint">
+  <h3>has S T Footprint<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#hasSTFootprint</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="https://intforout.github.io/outdoorPressure#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#LandEntity" title="https://intforout.github.io/outdoorPressure#LandEntity">Land Entity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -2422,6 +2455,9 @@ This section provides details for each class and property defined by Mountain ou
    </dt>
    <dd>
     <a href="#affords" title="https://intforout.github.io/outdoorPressure#affords">affords</a> <sup class="type-op" title="object property">op</sup> <a href="#HikingInBoisdeVincennes" title="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes">Hiking In Boisde Vincennes</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasSTFootprint" title="https://intforout.github.io/outdoorPressure#hasSTFootprint">has S T Footprint</a> <sup class="type-op" title="object property">op</sup> <a href="#HikersFootprintBoisVincennes" title="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes">Hikers Footprint Bois Vincennes</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>

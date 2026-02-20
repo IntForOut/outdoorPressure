@@ -648,6 +648,9 @@
   } ],
   "https://intforout.github.io/outdoorPressure#affords" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes"
+  } ],
+  "https://intforout.github.io/outdoorPressure#hasSTFootprint" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
@@ -2131,6 +2134,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/dc/terms/URI"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#hasSTFootprint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#locatedIn",

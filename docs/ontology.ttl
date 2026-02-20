@@ -277,6 +277,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 
 
+###  https://intforout.github.io/outdoorPressure#hasSTFootprint
+:hasSTFootprint rdf:type owl:ObjectProperty ;
+                rdfs:domain :Activity ;
+                rdfs:range :LandEntity .
+
+
 ###  https://intforout.github.io/outdoorPressure#locatedIn
 :locatedIn rdf:type owl:ObjectProperty ;
            rdfs:domain :Population ;
@@ -673,7 +679,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes
 :HikersFootprintBoisVincennes rdf:type owl:NamedIndividual ,
                                        :PopulationFootprint ;
-                              :affords :HikingInBoisdeVincennes .
+                              :affords :HikingInBoisdeVincennes ;
+                              :hasSTFootprint :HikersFootprintBoisVincennes .
 
 
 ###  https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes
