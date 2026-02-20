@@ -450,6 +450,15 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#hasSTFootprint -->
+
+    <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasSTFootprint">
+        <rdfs:domain rdf:resource="https://intforout.github.io/outdoorPressure#Activity"/>
+        <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#locatedIn -->
 
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#locatedIn">
@@ -1005,6 +1014,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#PopulationFootprint"/>
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes"/>
+        <outdoorPressure:hasSTFootprint rdf:resource="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"/>
     </owl:NamedIndividual>
     
 
