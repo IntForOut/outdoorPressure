@@ -658,7 +658,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                                :MetadataTracksMultiSensorsVincennesForest ;
                             rdfs:comment "Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform."@en ,
                                          "Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l'entrepôt pluridisciplinaire Recherche Data Gouv."@fr ;
-                            rdfs:label "IntForOut Dataverse"@en ;
+                            rdfs:label "IntForOut published Dataverse"@en ;
                             <http://xmlns.com/foaf/0.1/homePage> "https://entrepot.recherche.data.gouv.fr/dataverse/intforout" .
 
 

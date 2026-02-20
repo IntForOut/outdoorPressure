@@ -540,7 +540,7 @@
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/ns/dcat#record> <https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest> .
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform."@en .
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l'entrepôt pluridisciplinaire Recherche Data Gouv."@fr .
-<https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#label> "IntForOut Dataverse"@en .
+<https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://www.w3.org/2000/01/rdf-schema#label> "IntForOut published Dataverse"@en .
 <https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut> <http://xmlns.com/foaf/0.1/homePage> "https://entrepot.recherche.data.gouv.fr/dataverse/intforout" .
 # 
 # https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv
