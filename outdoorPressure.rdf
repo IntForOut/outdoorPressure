@@ -1565,16 +1565,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#anaciri"/>
-        <rdfs:comment xml:lang="fr">Profil des données outdoorvision dans un format PDF pour le projet IntForOut</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService">
