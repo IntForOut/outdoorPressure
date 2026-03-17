@@ -1,10 +1,9 @@
 {
-    "id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVisionANaciri",
-    "creator" : "https://intforout.github.io/outdoorPressure#anaciri",
+    "id" : "outdoorPressure#ProfilageOutdoorVisionANaciri",
+    "creator" : "outdoorPressure#anaciri",
     "comment" : "Profil des données outdoorvision (target 1) dans un rapport (target 2) pour le projet IntForOut",
     "target" : {
-        "1": "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024",
-        "2": "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
-        }
+        "1": "outdoorPressure#OVTracksMontBlancBauges2024",
+        "2": "expertsfeedback/reports/Test.txt"        }
     
 }
