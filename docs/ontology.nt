@@ -936,12 +936,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
-# https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
-<https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://purl.org/dc/terms/creator> <https://intforout.github.io/outdoorPressure#anaciri> .
-<https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision> <http://www.w3.org/2000/01/rdf-schema#comment> "Profil des données outdoorvision dans un format PDF pour le projet IntForOut"@fr .
-# 
 # https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .

@@ -1576,16 +1576,6 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#anaciri"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Profil des données outdoorvision dans un format PDF pour le projet IntForOut"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/terms/creator" : [ {
