@@ -1102,13 +1102,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                          <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
 
 
-###  https://intforout.github.io/outdoorPressure#ProfilageOutdoorVision
-:ProfilageOutdoorVision rdf:type owl:NamedIndividual ,
-                                 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                        <http://purl.org/dc/terms/creator> :anaciri ;
-                        rdfs:comment "Profil des données outdoorvision dans un format PDF pour le projet IntForOut"@fr .
-
-
 ###  https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 :QualityOfOVRecreationalUserMapService rdf:type owl:NamedIndividual ,
                                                 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
