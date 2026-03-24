@@ -351,6 +351,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."""@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#File
+:File rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+
+
 ###  https://intforout.github.io/outdoorPressure#FilteredTrack
 :FilteredTrack rdf:type owl:Class ;
                rdfs:subClassOf :Track ;
@@ -468,11 +473,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#Sentier
 :Sentier rdf:type owl:Class ;
          rdfs:subClassOf :LandEntity .
-
-
-###  https://intforout.github.io/outdoorPressure#TechnicalReport
-:TechnicalReport rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
 
 
 ###  https://intforout.github.io/outdoorPressure#Track
@@ -1109,8 +1109,9 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 :ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
-                                         :TechnicalReport ;
-                                <http://purl.org/www.umr-lastig.fr/geodata#target> :ProfilageDataPhDKerouanton.pdf .
+                                         :File ;
+                                <http://purl.org/www.umr-lastig.fr/geodata#target> :ProfilageDataPhDKerouanton.pdf ;
+                                <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
