@@ -470,6 +470,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:subClassOf :LandEntity .
 
 
+###  https://intforout.github.io/outdoorPressure#TechnicalReport
+:TechnicalReport rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+
+
 ###  https://intforout.github.io/outdoorPressure#Track
 :Track rdf:type owl:Class ;
        rdfs:comment "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en ,
@@ -1100,6 +1105,21 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                          rdfs:label "Population footprint from a tracks collection"@en ;
                                          <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
                                          <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
+
+
+###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
+:ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
+                                         :TechnicalReport ;
+                                <http://purl.org/www.umr-lastig.fr/geodata#target> :ProfilageDataPhDKerouanton.pdf .
+
+
+###  https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
+:ProfilageDonneesKerouantonANaciri rdf:type owl:NamedIndividual ,
+                                            <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                                   <http://purl.org/www.umr-lastig.fr/geodata#target> :KerouantonSurvey20142015 ,
+                                                                                      :ProfilageDataPhDKerouanton.pdf ;
+                                   <http://purl.org/dc/elements/1.1/creator> "ANaciri" ;
+                                   rdfs:comment "Profilage des données de la thèse de Kerouanton (target 1) dans un rapport (target 2) pour le projet IntForOut" .
 
 
 ###  https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService

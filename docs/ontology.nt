@@ -386,6 +386,10 @@
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 # 
+# https://intforout.github.io/outdoorPressure#TechnicalReport
+<https://intforout.github.io/outdoorPressure#TechnicalReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#TechnicalReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+# 
 # https://intforout.github.io/outdoorPressure#Track
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en .
@@ -935,6 +939,19 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Population footprint from a tracks collection"@en .
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
+# 
+# https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#TechnicalReport> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
+# 
+# https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/dc/elements/1.1/creator> "ANaciri" .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage des données de la thèse de Kerouanton (target 1) dans un rapport (target 2) pour le projet IntForOut" .
 # 
 # https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
