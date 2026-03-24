@@ -566,6 +566,14 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#File -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#File">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:Class>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#FilteredTrack -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#FilteredTrack">
@@ -738,14 +746,6 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Sentier">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-    </owl:Class>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#TechnicalReport -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#TechnicalReport">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
     </owl:Class>
     
 
@@ -1576,8 +1576,9 @@
     <!-- https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#TechnicalReport"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#File"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
+        <dcat:accessURL>https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf</dcat:accessURL>
     </owl:NamedIndividual>
     
 
