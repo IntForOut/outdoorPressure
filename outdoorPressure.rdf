@@ -742,6 +742,14 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#TechnicalReport -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#TechnicalReport">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:Class>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#Track -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Track">
@@ -1561,6 +1569,27 @@
         <rdfs:label xml:lang="en">Population footprint from a tracks collection</rdfs:label>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-06</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-05</prov:startedAtTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#TechnicalReport"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
+        <dc:creator>ANaciri</dc:creator>
+        <rdfs:comment>Profilage des données de la thèse de Kerouanton (target 1) dans un rapport (target 2) pour le projet IntForOut</rdfs:comment>
     </owl:NamedIndividual>
     
 
