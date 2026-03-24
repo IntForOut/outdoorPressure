@@ -1,9 +1,9 @@
 {
-    "id" : "outdoorPressure#ProfilageOutdoorVisionANaciri",
+    "id" : "outdoorPressure#ProfilageDonneesKerouantonANaciri",
     "creator" : "outdoorPressure#anaciri",
-    "comment" : "Profil des données outdoorvision (target 1) dans un rapport (target 2) pour le projet IntForOut",
+    "comment" : "Profil des données de la thèse de Kerouanton (target 1) dans un rapport (target 2) pour le projet IntForOut",
     "target" : {
-        "1": "outdoorPressure#OVTracksMontBlancBauges2024",
-        "2": "expertsfeedback/reports/Test.txt"        }
+        "1": "outdoorPressure#KerouantonTrack20142015",
+        "2": "expertsfeedback/reports/ProfilageDataPhDKerouanton.pdf"        }
     
 }
