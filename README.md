@@ -2,7 +2,7 @@
 
 OutdoorPressure Knowledge Graph is a proof of concept KG to improve the way we can study the pressure of human outdoor leisure on moutain ecosystems. A particular task is the discovery and proper reuse of data, ranging from GPS collar to camera trap and land cover data. The KG aims at embedding concepts relevant to express users interests in real world phenomena, like "human activities". It also catalogues different assets relevant to investigate these questions with data, like datasets, reproducible processes, scientific papers, or the experience and feedback from other users. 
 
-![Overview of the OutdoorPressure KG main concepts](https://intforout.github.io/outdoorPressure/ODKG-schemaGeneral-horizontal.png)
+![Overview of the OutdoorPressure KG main concepts](ODKG-schemaGeneral-horizontal.png)
 
 
 ## How to explore the Knowledge Graph
