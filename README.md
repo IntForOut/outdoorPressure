@@ -5,6 +5,9 @@ OutdoorPressure Knowledge Graph is a proof of concept KG to improve the way we c
 ![Overview of the OutdoorPressure KG main concepts](https://intforout.github.io/outdoorPressure/ODKG-schemaGeneral-horizontal.png)
 
 
+## How to explore the Knowledge Graph
+
+The KG is in the rdf file outdoorPressure.rdf in this git. A companion to the OutdoorPressure KG is being designed here  https://github.com/IntForOut/sham-wah/blob/main/README.md to ease the way people who are not Knowledge Graph experts can query and explore visually the KG. Alternatively, you may also look at the documentation or use Protégé software.  
 Documentation: **[OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html)**
 
 ## How to contribute
