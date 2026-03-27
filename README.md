@@ -1,6 +1,6 @@
 # OutdoorPressure Knowledge Graph
 
-This knowledge graph supports the study of the pressure of human outdoor leisure on moutain ecosystems. It embeds concepts relevant to express questions about the ecological pression caused by human activities on wildlife in mountains, and a catalogue of different assets relevant to investigate these questions, like datasets, reproducible processes, scientific papers, or pedagogic materials. Documentation: **[OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html)**
+OutdoorPressure Knowledge Graph is dedicated to different tasks related to the study of the pressure of human outdoor leisure on moutain ecosystems. A particular task is the discovery and proper reuse of data during such studies.  The KG embeds concepts relevant to express questions, like hiking or habitat. It also catalogues different assets relevant to investigate these questions with data, like datasets, reproducible processes, scientific papers, or the experience and feedback from other users. Documentation: **[OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html)**
 
 ## How to contribute
 
