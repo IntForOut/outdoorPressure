@@ -12,8 +12,35 @@ Documentation: **[OutdoorPressure ontology](https://intforout.github.io/outdoorP
 
 ## How to contribute
 
-See tutos.md in this repository 
+The philosophy of the KG is to be an open and collaborative platform. 
 
+### Editing concepts 
+Intforout participants can contribute to the edition/revision of concepts (classes, object properties, data properties) during webinars organized by the KG moderators.  
+
+### Editing instances of user feedbacks
+You are welcome to propose new instances to describe new data, new papers, processes or feedbacks. ​To create a new user feedback :
+- firstly gather the identifier for your feedback, in the example below https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
+- then get the existing identifier for the author of the feedback, in the example http://purl.org/www.umr-lastig.fr/geodata#mdvandamme , 
+- the identifiers of targeted ressources that your feedback relates to (like a specific data, a specific paper, or even a specific feedback you want to comment on), in the example below it is https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService, there may be more than one
+- then write down a file that should look like
+  
+<owl:NamedIndividual rdf:about="FeedbackIdentifier">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <geodata:target rdf:resource="FeedbackIdentifier"/>
+        <terms:creator rdf:resource="TargetedRessourcesIdentifier"/>
+        <rdfs:comment xml:lang="en"> Your free text comment here</rdfs:comment>
+</owl:NamedIndividual> 
+
+For example :   
+<owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"/>
+        <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
+        <rdfs:comment xml:lang="en">Artifacts exist in dense urban areas above a certain zoom level. This is because the accuracy of GPS tracks is lower in these areas, making the spatial information displayed less relevant.</rdfs:comment>
+</owl:NamedIndividual> 
+
+Puis prévenez un modérateur pour intégration au graph global​
+​
 ## Acknowledgements
 This work was supported by the ANR research project **[IntForOut](https://www.umr-lastig.fr/intforout/)**: Multisource spatial data INTegration FOR the Monitoring of Ecosystems under the pressure of OUTdoor recreation (ANR-23-CE55-0003).
 
