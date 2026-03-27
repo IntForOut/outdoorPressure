@@ -14,15 +14,15 @@ Documentation: **[OutdoorPressure ontology](https://intforout.github.io/outdoorP
 
 The philosophy of the KG is to be an open and collaborative platform. 
 
-### Editing concepts 
-Intforout participants can contribute to the edition/revision of concepts (classes, object properties, data properties) during webinars organized by the KG moderators.  
+### Adding or revising concepts and properties in the KG 
+Currently, Intforout participants can contribute to the edition/revision of concepts (classes, object properties, data properties) during webinars organized by the KG moderators.  
 
-### Editing instances of user feedbacks
-You are welcome to propose new instances to describe new data, new papers, processes or feedbacks. ​To create a new user feedback :
-- firstly gather the identifier for your feedback, in the example below https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
-- then get the existing identifier for the author of the feedback, in the example http://purl.org/www.umr-lastig.fr/geodata#mdvandamme , 
-- the identifiers of targeted ressources that your feedback relates to (like a specific data, a specific paper, or even a specific feedback you want to comment on), in the example below it is https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService, there may be more than one
-- then write down a file that should look like
+### Adding or revising instances of user feedbacks in the KG
+You are welcome to propose new instances of the concept of user feedback to share your expertise :
+- firstly create the identifier for your feedback, using the path of the KG and adding a specific name for your feedback, as in the example below "https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService"
+- then check if you have an identifier for the author of the feedback, in the example "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme", 
+- then get the identifiers of targeted ressources that your feedback relates to (like a specific data, a specific paper, or even a specific feedback you want to comment on), in the example below it is https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService, there may be more than one
+- then write down a file that should look like : 
   
 <owl:NamedIndividual rdf:about="FeedbackIdentifier">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
