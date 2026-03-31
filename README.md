@@ -7,8 +7,7 @@ This is a proof of concept of a KG to improve the way we can study the pressure 
 
 ## How to explore the Knowledge Graph
 
-The KG is in the rdf file outdoorPressure.rdf in this git. A companion to the OutdoorPressure KG is being designed here  https://github.com/IntForOut/sham-wah/blob/main/README.md to ease the way people who are not Knowledge Graph experts can query and explore visually the KG. Alternatively, you may also look at the documentation   
- **[OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html)** or use Protégé software.
+The KG is in the rdf file outdoorPressure.rdf in this git. A companion to the OutdoorPressure KG is being designed here  https://github.com/IntForOut/sham-wah/blob/main/README.md to ease the way people who are not Knowledge Graph experts can query and explore visually the KG. Alternatively, you may also look at the documentation   [OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html) or use Protégé software.
 
 ## How to contribute
 
