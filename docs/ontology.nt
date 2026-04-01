@@ -287,6 +287,8 @@
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Hiking> .
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#comment> "Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.\n\t        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."@fr .
+<https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#label> "Fast hiking"@en .
+<https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#label> "Fast hiking"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#File
 <https://intforout.github.io/outdoorPressure#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

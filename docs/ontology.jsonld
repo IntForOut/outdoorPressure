@@ -612,6 +612,13 @@
     "@language" : "fr",
     "@value" : "Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.\n\t        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fast hiking"
+  }, {
+    "@language" : "fr",
+    "@value" : "Fast hiking"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
   } ]
