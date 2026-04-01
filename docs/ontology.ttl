@@ -299,7 +299,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
-          rdfs:comment "Activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en ;
+          rdfs:comment "activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en ;
           rdfs:label "Activity"@en .
 
 
