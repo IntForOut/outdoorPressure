@@ -966,6 +966,17 @@
         <terms:identifier>DeepFaune</terms:identifier>
         <rdfs:label xml:lang="en">DeepFaune</rdfs:label>
     </owl:NamedIndividual>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#OFNP -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#OFNP">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <terms:identifier>OFNP</terms:identifier>
+        <rdfs:label xml:lang="en">OutdoorFootprintNetworkPipeline</rdfs:label>
+        <rdfs:comment xml:lang="en">OFNP is an open-source Python processing pipeline (MIT license) for generating outdoor activity footprint networks from GNSS trajectories, representing, for example, hikers’ or runners’ footprints within a defined spatial and temporal extent.</rdfs:comment>
+    </owl:NamedIndividual>
     
 
 
