@@ -488,7 +488,7 @@
     <!-- https://intforout.github.io/outdoorPressure#Activity -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Activity">
-        <rdfs:comment xml:lang="en">Activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output.</rdfs:comment>
+        <rdfs:comment xml:lang="en">activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output.</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
