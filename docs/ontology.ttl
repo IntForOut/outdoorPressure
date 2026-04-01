@@ -348,7 +348,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :FastHiking rdf:type owl:Class ;
             rdfs:subClassOf :Hiking ;
             rdfs:comment """Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.
-	        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."""@fr .
+	        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."""@fr ;
+            rdfs:label "Fast hiking"@en ,
+                       "Fast hiking"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#File
