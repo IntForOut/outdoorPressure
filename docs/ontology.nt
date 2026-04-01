@@ -831,6 +831,13 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/2000/01/rdf-schema#comment> "Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. "@en .
 <https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/2000/01/rdf-schema#label> "Movebank is a free, online database of animal tracking data"@en .
 # 
+# https://intforout.github.io/outdoorPressure#OFNP
+<https://intforout.github.io/outdoorPressure#OFNP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#OFNP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<https://intforout.github.io/outdoorPressure#OFNP> <http://purl.org/dc/terms/identifier> "OFNP" .
+<https://intforout.github.io/outdoorPressure#OFNP> <http://www.w3.org/2000/01/rdf-schema#comment> "OFNP is an open-source Python processing pipeline (MIT license) for generating outdoor activity footprint networks from GNSS trajectories, representing, for example, hikers’ or runners’ footprints within a defined spatial and temporal extent."@en .
+<https://intforout.github.io/outdoorPressure#OFNP> <http://www.w3.org/2000/01/rdf-schema#label> "OutdoorFootprintNetworkPipeline"@en .
+# 
 # https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage
 <https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .

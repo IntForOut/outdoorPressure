@@ -1319,6 +1319,20 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Route"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#OFNP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "OFNP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "OFNP is an open-source Python processing pipeline (MIT license) for generating outdoor activity footprint networks from GNSS trajectories, representing, for example, hikers’ or runners’ footprints within a defined spatial and temporal extent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OutdoorFootprintNetworkPipeline"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
   "http://www.w3.org/ns/dcat#format" : [ {

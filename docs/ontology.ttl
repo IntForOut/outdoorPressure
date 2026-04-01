@@ -986,6 +986,14 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
           rdfs:label "Movebank is a free, online database of animal tracking data"@en .
 
 
+###  https://intforout.github.io/outdoorPressure#OFNP
+:OFNP rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/ns/prov#SoftwareAgent> ;
+      <http://purl.org/dc/terms/identifier> "OFNP" ;
+      rdfs:comment "OFNP is an open-source Python processing pipeline (MIT license) for generating outdoor activity footprint networks from GNSS trajectories, representing, for example, hikers’ or runners’ footprints within a defined spatial and temporal extent."@en ;
+      rdfs:label "OutdoorFootprintNetworkPipeline"@en .
+
+
 ###  https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage
 :OVExportBaugesGeoPackage rdf:type owl:NamedIndividual ,
                                    <http://www.w3.org/ns/dcat#Distribution> ;
