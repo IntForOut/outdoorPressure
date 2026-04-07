@@ -1124,6 +1124,12 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                 <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 
 
+###  https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri
+:ProfilageDeepFauneANaciri rdf:type owl:NamedIndividual ,
+                                    <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                           <http://purl.org/dc/terms/creator> "Abdessalam Naciri" .
+
+
 ###  https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 :ProfilageDonneesKerouantonANaciri rdf:type owl:NamedIndividual ,
                                             <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;

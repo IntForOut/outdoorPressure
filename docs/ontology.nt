@@ -955,6 +955,11 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 # 
+# https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://purl.org/dc/terms/creator> "Abdessalam Naciri" .
+# 
 # https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .

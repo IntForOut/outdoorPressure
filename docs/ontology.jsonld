@@ -1615,6 +1615,12 @@
     "@value" : "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Abdessalam Naciri"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
