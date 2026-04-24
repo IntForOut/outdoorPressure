@@ -1,4 +1,4 @@
-name: Add User Feedback Instance
+name: Request to enrich the knowledge graph with a new user feedback instance
 description: Propose a new user feedback instance in the knowledge graph.
 title: "[UserFeedback]: "
 labels: ["user-feedback"]
@@ -13,13 +13,22 @@ body:
         Please follow the steps below to propose a new user feedback instance.
 
   - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+
+  - type: input
     id: feedback-identifier
     attributes:
       label: Feedback Identifier (URI)
       description: |
-        Provide the full IRI of the feedback instance you want to add.  
+        Provide the full URI of the feedback instance you want to add. (Feedback name + Author name)
         Example: `https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri`
-      placeholder: https://intforout.github.io/outdoorPressure#YourFeedbackName
+      placeholder: https://intforout.github.io/outdoorPressure#YourFeedbackNameAuthorName
     validations:
       required: true
 
@@ -39,7 +48,7 @@ body:
     attributes:
       label: Targeted Resources
       description: |
-        List the URIs of the resources this feedback refers to.  
+        List the URIs of the resources this feedback refers to. To find the URI of a resource, refer to the [documentation page](https://intforout.github.io/outdoorPressure/index.html) and copy the URI. 
         Example:  
         - `https://intforout.github.io/outdoorPressure#KerouantonTrack20142015`
         - `https://https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKerouanton.pdf`
