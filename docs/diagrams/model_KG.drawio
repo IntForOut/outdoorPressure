@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="3">
     <diagram name="Page-1" id="pobyN1H7GCeraHC8iTM_">
-        <mxGraphModel dx="2398" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2740" dy="414" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -347,7 +347,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="llSMe4mzq6sCKyXoZhfb" name="schemas article">
-        <mxGraphModel dx="4251" dy="1537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="4593" dy="1486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -939,10 +939,10 @@
                         <mxPoint x="-3" y="11" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="o20NnjoG75LDHFAABAa7-1" value="&lt;b&gt;Population&lt;br&gt;Footprint&lt;/b&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                <mxCell id="o20NnjoG75LDHFAABAa7-1" value="&lt;b&gt;Population&lt;br&gt;Footprint&lt;/b&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="-3290.0000000000005" y="-704" width="120" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="o20NnjoG75LDHFAABAa7-2" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;curved=1;dashed=1;endArrow=block;endFill=0;fontSize=15;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o20NnjoG75LDHFAABAa7-1" target="Pmp9Iupr3VuTFy_raJh2-15">
+                <mxCell id="o20NnjoG75LDHFAABAa7-2" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;curved=1;dashed=1;endArrow=block;endFill=0;fontSize=15;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="o20NnjoG75LDHFAABAa7-1" target="Pmp9Iupr3VuTFy_raJh2-15" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="-3213" y="-736"/>
@@ -951,7 +951,7 @@
                         <mxPoint x="-3243" y="-756" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="o20NnjoG75LDHFAABAa7-3" value="subclass" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" connectable="0" vertex="1" parent="o20NnjoG75LDHFAABAa7-2">
+                <mxCell id="o20NnjoG75LDHFAABAa7-3" value="subclass" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" parent="o20NnjoG75LDHFAABAa7-2" connectable="0" vertex="1">
                     <mxGeometry x="-0.2965" y="4" relative="1" as="geometry">
                         <mxPoint x="-6" y="9" as="offset"/>
                     </mxGeometry>
@@ -960,7 +960,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="schemas article" id="2la9OYnSZ4h5q63rvIW7">
-        <mxGraphModel dx="4251" dy="1537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="4593" dy="1486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="DAXzIRMGTy3tekobJNK2-0"/>
                 <mxCell id="DAXzIRMGTy3tekobJNK2-1" parent="DAXzIRMGTy3tekobJNK2-0"/>
@@ -1551,7 +1551,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="DkG_Ew4qQ62zcml-1EjA" name="Schéma 2 article">
-        <mxGraphModel dx="2398" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2740" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1891,7 +1891,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="17ZH-Puc6lB0KdcFkP3N" name="Page-4">
-        <mxGraphModel dx="744" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1086" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
