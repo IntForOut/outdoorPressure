@@ -1,0 +1,63 @@
+name: Add User Feedback Instance
+description: Propose a new user feedback instance in the knowledge graph.
+title: "[UserFeedback]: "
+labels: ["user-feedback"]
+assignees:
+  - benedictebucher
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the knowledge graph!  
+        Please follow the steps below to propose a new user feedback instance.
+
+  - type: input
+    id: feedback-identifier
+    attributes:
+      label: Feedback Identifier (URI)
+      description: |
+        Provide the full IRI of the feedback instance you want to add.  
+        Example: `https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri`
+      placeholder: https://intforout.github.io/outdoorPressure#YourFeedbackName
+    validations:
+      required: true
+
+  - type: input
+    id: author-identifier
+    attributes:
+      label: Author Identifier (URI)
+      description: |
+        Provide the URI of the author of the feedback.  
+        Example: `http://purl.org/www.umr-lastig.fr/geodata#mdvandamme`
+      placeholder: http://example.org/kg#Author
+    validations:
+      required: true
+
+  - type: textarea
+    id: targeted-resources
+    attributes:
+      label: Targeted Resources
+      description: |
+        List the URIs of the resources this feedback refers to.  
+        Example:  
+        - `https://intforout.github.io/outdoorPressure#KerouantonTrack20142015`
+        - `https://https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKerouanton.pdf`
+      placeholder: |
+        https://example.org/kg#Resource1
+        https://example.org/kg#Resource2
+
+    validations:
+      required: true
+
+  - type: textarea
+    id: comment
+    attributes:
+      label: Feedback Comment
+      description: |
+        Provide the textual content of the feedback.
+        Example:
+          - Profil des données de la thèse de Kerouanton (target 1) dans un rapport (target 2) pour le projet IntForOut
+      placeholder: Describe your feedback here…
+    validations:
+      required: true
