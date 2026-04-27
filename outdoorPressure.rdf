@@ -1289,7 +1289,8 @@
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBoisVincennes2022"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"/>
         <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#MOUSLS"/>
-        <rdfs:comment xml:lang="en">This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This dataset was collected by two researchers by following the data collection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris).</rdfs:comment>
+     <rdfs:label>GPS multisensors Vincennes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1707,6 +1708,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
+         <rdfs:label>Skilift ridership MontBlanc 2008 to 2024</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1741,6 +1743,7 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"/>
         <dc:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
+         <rdfs:label>Strava MontBlanc 2024</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1767,6 +1770,7 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"/>
         <dc:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
+         <rdfs:label>Strava Bauges 2014</rdfs:label>
     </owl:NamedIndividual>
     
 
