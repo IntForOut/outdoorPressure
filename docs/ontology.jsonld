@@ -1071,7 +1071,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
+    "@value" : "This dataset was collected by two researchers by following the data collection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GPS multisensors Vincennes"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg"
@@ -1827,6 +1830,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Skilift ridership MontBlanc 2008 to 2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Strava",
@@ -1869,6 +1875,9 @@
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Strava MontBlanc 2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService",
@@ -1906,6 +1915,9 @@
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Strava Bauges 2014"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024",

@@ -742,7 +742,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBoisVincennes2022> .
 <https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> .
 <https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest> <http://www.w3.org/ns/dcat#inSeries> <https://intforout.github.io/outdoorPressure#MOUSLS> .
-<https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest> <http://www.w3.org/2000/01/rdf-schema#comment> "This dataset was collected by two researchers by following the data colection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en .
+<https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest> <http://www.w3.org/2000/01/rdf-schema#comment> "This dataset was collected by two researchers by following the data collection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en .
+<https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest> <http://www.w3.org/2000/01/rdf-schema#label> "GPS multisensors Vincennes" .
 # 
 # https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport
 <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1033,6 +1034,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024
 <https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
+<https://intforout.github.io/outdoorPressure#SkiLiftUsageMontBlanc2008To2024> <http://www.w3.org/2000/01/rdf-schema#label> "Skilift ridership MontBlanc 2008 to 2024" .
 # 
 # https://intforout.github.io/outdoorPressure#Strava
 <https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1055,6 +1057,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/dc/elements/1.1/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
+<https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://www.w3.org/2000/01/rdf-schema#label> "Strava MontBlanc 2024" .
 # 
 # https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService
 <https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1073,6 +1076,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014> .
 <https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://purl.org/dc/elements/1.1/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
+<https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://www.w3.org/2000/01/rdf-schema#label> "Strava Bauges 2014" .
 # 
 # https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
