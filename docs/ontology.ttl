@@ -844,6 +844,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#KerouantonTrack20142015
 :KerouantonTrack20142015 rdf:type owl:NamedIndividual ,
                                   <http://www.w3.org/ns/dcat#Dataset> ;
+                         <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
                          <http://www.w3.org/ns/dcat#inSeries> :KerouantonSurveyFieldCampaignTracksGNSS20142015 ;
                          <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024 ;
                          rdfs:comment "A set of tracks. Compleed with questionnaires"@en ;

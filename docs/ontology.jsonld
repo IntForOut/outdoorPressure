@@ -970,6 +970,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#KerouantonTrack20142015",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A set of tracks. Compleed with questionnaires"
