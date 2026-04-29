@@ -1144,9 +1144,7 @@
         <datacite:subject>Spatio-temporal pattern</datacite:subject>
         <datacite:subject>Time-geography</datacite:subject>
         <datacite:subject>global navigation satellite system</datacite:subject>
-        <rdfs:label xml:lang="en">Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area</rdfs:label>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonTrack20142015"/>
+        <rdfs:label xml:lang="en">Kerouanton et al 2024</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1191,41 +1189,18 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015 -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Observation"/>
-        <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
-        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2014-01</prov:endedAtTime>
-        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-12</prov:startedAtTime>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015 -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-08-31</terms:issued>
         <terms:language>French</terms:language>
         <terms:publisher>LECA et l’EDYTEM</terms:publisher>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#PNRDesBauges"/>
-        <rdfs:comment xml:lang="fr">Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS</rdfs:comment>
-        <rdfs:label xml:lang="fr">Questionnaires de campagnes de terrain complétés par des traces GNSS</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#KerouantonTrack20142015 -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonTrack20142015">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
-        <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
-        <rdfs:comment xml:lang="en">A set of tracks completed with questionnaires</rdfs:comment>
-        <rdfs:label xml:lang="en">Rsearch dataset from Colin Kerouanton&apos;s Phd</rdfs:label>
+        <rdfs:comment xml:lang="fr">Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges</rdfs:comment>
+        <rdfs:label xml:lang="fr">Data PhD Kerouanton</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1598,7 +1573,6 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
         <dc:creator>ANaciri</dc:creator>
         <rdfs:comment>Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l&apos;analyse est partagé dans un rapport (target 2)</rdfs:comment>
