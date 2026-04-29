@@ -673,14 +673,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/2000/01/rdf-schema#label> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex"@en .
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> .
 # 
-# https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015
-<https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015> <http://www.w3.org/ns/dcat#inSeries> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
-<https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
-<https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of answers issued from a questionnaire. Compleed with tracks"@en .
-<https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015> <http://www.w3.org/2000/01/rdf-schema#label> "Tracks issued from PhD of Colin Kerouanton"@en .
-# 
 # https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015
 <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Observation> .
@@ -704,10 +696,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/ns/dcat#inSeries> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
 <https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of tracks. Compleed with questionnaires"@en .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/2000/01/rdf-schema#label> "Tracks issued from PhD of Colin Kerouanton"@en .
+<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of tracks completed with questionnaires"@en .
+<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/2000/01/rdf-schema#label> "Rsearch dataset from Colin Kerouanton's Phd"@en .
 # 
 # https://intforout.github.io/outdoorPressure#LIFAT
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

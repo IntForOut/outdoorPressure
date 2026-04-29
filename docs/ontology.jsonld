@@ -904,23 +904,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A set of answers issued from a questionnaire. Compleed with tracks"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Tracks issued from PhD of Colin Kerouanton"
-  } ],
-  "http://www.w3.org/ns/dcat#inSeries" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -975,14 +958,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A set of tracks. Compleed with questionnaires"
+    "@value" : "A set of tracks completed with questionnaires"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Tracks issued from PhD of Colin Kerouanton"
-  } ],
-  "http://www.w3.org/ns/dcat#inSeries" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
+    "@value" : "Rsearch dataset from Colin Kerouanton's Phd"
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
