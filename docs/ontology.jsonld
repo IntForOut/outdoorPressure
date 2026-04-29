@@ -535,6 +535,12 @@
     "@value" : "DeepFaune"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -621,12 +627,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#File",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#FilteredTrack",
@@ -1595,7 +1595,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#File"
+    "@id" : "https://intforout.github.io/outdoorPressure#Document"
   } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
     "@value" : "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf"

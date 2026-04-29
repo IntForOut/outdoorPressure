@@ -277,6 +277,10 @@
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 # 
+# https://intforout.github.io/outdoorPressure#Document
+<https://intforout.github.io/outdoorPressure#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+# 
 # https://intforout.github.io/outdoorPressure#EncounteringZone
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
@@ -289,10 +293,6 @@
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#comment> "Le Fast hiking est une randonnée rapide qui se pratique à allure soutenue en toute autonomie sur un parcours présentant du dénivelé et/ou des difficultés techniques.\n\t        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."@fr .
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#label> "Fast hiking"@en .
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/2000/01/rdf-schema#label> "Fast hiking"@fr .
-# 
-# https://intforout.github.io/outdoorPressure#File
-<https://intforout.github.io/outdoorPressure#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#File> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 # 
 # https://intforout.github.io/outdoorPressure#FilteredTrack
 <https://intforout.github.io/outdoorPressure#FilteredTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -944,7 +944,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#File> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Document> .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 # 
