@@ -1191,18 +1191,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015 -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
-        <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
-        <rdfs:comment xml:lang="en">A set of answers issued from a questionnaire. Compleed with tracks</rdfs:comment>
-        <rdfs:label xml:lang="en">Tracks issued from PhD of Colin Kerouanton</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015 -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015">
@@ -1235,10 +1223,9 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#KerouantonTrack20142015">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
-        <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"/>
-        <rdfs:comment xml:lang="en">A set of tracks. Compleed with questionnaires</rdfs:comment>
-        <rdfs:label xml:lang="en">Tracks issued from PhD of Colin Kerouanton</rdfs:label>
+        <rdfs:comment xml:lang="en">A set of tracks completed with questionnaires</rdfs:comment>
+        <rdfs:label xml:lang="en">Rsearch dataset from Colin Kerouanton&apos;s Phd</rdfs:label>
     </owl:NamedIndividual>
     
 
