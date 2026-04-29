@@ -836,12 +836,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area"
-  } ],
-  "http://www.w3.org/ns/prov#quotedAs" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonTrack20142015"
+    "@value" : "Kerouanton et al 2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025",
@@ -904,23 +899,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
-  } ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2014-01"
-  } ],
-  "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2015-12"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/issued" : [ {
@@ -936,33 +914,16 @@
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#PNRDesBauges"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fr",
-    "@value" : "Questionnaires de campagnes de terrain complétés par des traces GNSS"
-  } ],
-  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#KerouantonTrack20142015",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A set of tracks completed with questionnaires"
+    "@language" : "fr",
+    "@value" : "Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Rsearch dataset from Colin Kerouanton's Phd"
+    "@language" : "fr",
+    "@value" : "Data PhD Kerouanton"
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
@@ -1613,7 +1574,7 @@
     "@value" : "ANaciri"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015"
+    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"
   } ],

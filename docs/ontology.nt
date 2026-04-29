@@ -639,9 +639,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://purl.org/spar/datacite/subject> "Spatio-temporal pattern" .
 <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://purl.org/spar/datacite/subject> "Time-geography" .
 <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://purl.org/spar/datacite/subject> "global navigation satellite system" .
-<https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://www.w3.org/2000/01/rdf-schema#label> "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area"@en .
-<https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> .
-<https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> .
+<https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://www.w3.org/2000/01/rdf-schema#label> "Kerouanton et al 2024"@en .
 # 
 # https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -673,32 +671,17 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/2000/01/rdf-schema#label> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex"@en .
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> .
 # 
-# https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015
-<https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Observation> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/ns/prov#generated> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/ns/prov#endedAtTime> "2014-01"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> <http://www.w3.org/ns/prov#startedAtTime> "2015-12"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
-# 
 # https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> .
+<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/issued> "2015-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/language> "French" .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/publisher> "LECA et l’EDYTEM" .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#PNRDesBauges> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/2000/01/rdf-schema#comment> "Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS"@fr .
-<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/2000/01/rdf-schema#label> "Questionnaires de campagnes de terrain complétés par des traces GNSS"@fr .
-# 
-# https://intforout.github.io/outdoorPressure#KerouantonTrack20142015
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of tracks completed with questionnaires"@en .
-<https://intforout.github.io/outdoorPressure#KerouantonTrack20142015> <http://www.w3.org/2000/01/rdf-schema#label> "Rsearch dataset from Colin Kerouanton's Phd"@en .
+<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/2000/01/rdf-schema#comment> "Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges"@fr .
+<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/2000/01/rdf-schema#label> "Data PhD Kerouanton"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#LIFAT
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -956,7 +939,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/dc/elements/1.1/creator> "ANaciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/2000/01/rdf-schema#comment> "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)" .

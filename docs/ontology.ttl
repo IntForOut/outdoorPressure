@@ -767,9 +767,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                                                                 "Spatio-temporal pattern" ,
                                                                                                 "Time-geography" ,
                                                                                                 "global navigation satellite system" ;
-                                                        rdfs:label "Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area"@en ;
-                                                        <http://www.w3.org/ns/prov#quotedAs> :KerouantonSurvey20142015 ,
-                                                                                             :KerouantonTrack20142015 .
+                                                        rdfs:label "Kerouanton et al 2024"@en .
 
 _:genid1 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Colin Kerouanton" .
@@ -811,34 +809,17 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
-###  https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015
-:KerouantonSurvey20142015 rdf:type owl:NamedIndividual ,
-                                   :Observation ;
-                          <http://www.w3.org/ns/prov#generated> :KerouantonSurveyFieldCampaignTracksGNSS20142015 ;
-                          <http://www.w3.org/ns/prov#endedAtTime> "2014-01"^^xsd:gYearMonth ;
-                          <http://www.w3.org/ns/prov#startedAtTime> "2015-12"^^xsd:gYearMonth .
-
-
 ###  https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
 :KerouantonSurveyFieldCampaignTracksGNSS20142015 rdf:type owl:NamedIndividual ,
                                                           <http://www.w3.org/ns/dcat#Dataset> ;
-                                                 <http://www.w3.org/ns/prov#wasGeneratedBy> :KerouantonSurvey20142015 ;
+                                                 <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
                                                  <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024 ;
                                                  <http://purl.org/dc/terms/issued> "2015-08-31"^^xsd:date ;
                                                  <http://purl.org/dc/terms/language> "French" ;
                                                  <http://purl.org/dc/terms/publisher> "LECA et l’EDYTEM" ;
                                                  <http://purl.org/dc/terms/spatial> :PNRDesBauges ;
-                                                 rdfs:comment "Questionnaires de campagnes de terrain ciblant la pratique de la randonnée dans le PNR du Massif des Bauges accompagnés de traces GNSS"@fr ;
-                                                 rdfs:label "Questionnaires de campagnes de terrain complétés par des traces GNSS"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#KerouantonTrack20142015
-:KerouantonTrack20142015 rdf:type owl:NamedIndividual ,
-                                  <http://www.w3.org/ns/dcat#Dataset> ;
-                         <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
-                         <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024 ;
-                         rdfs:comment "A set of tracks completed with questionnaires"@en ;
-                         rdfs:label "Rsearch dataset from Colin Kerouanton's Phd"@en .
+                                                 rdfs:comment "Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges"@fr ;
+                                                 rdfs:label "Data PhD Kerouanton"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#LIFAT
@@ -1125,7 +1106,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 :ProfilageDonneesKerouantonANaciri rdf:type owl:NamedIndividual ,
                                             <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                   <http://purl.org/www.umr-lastig.fr/geodata#target> :KerouantonSurvey20142015 ,
+                                   <http://purl.org/www.umr-lastig.fr/geodata#target> :KerouantonSurveyFieldCampaignTracksGNSS20142015 ,
                                                                                       :ProfilageDataPhDKerouanton.pdf ;
                                    <http://purl.org/dc/elements/1.1/creator> "ANaciri" ;
                                    rdfs:comment "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)" .
