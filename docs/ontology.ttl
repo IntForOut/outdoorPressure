@@ -811,15 +811,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Elodie Petit" .
 
 
-###  https://intforout.github.io/outdoorPressure#KerouantonQuestionnaire20142015
-:KerouantonQuestionnaire20142015 rdf:type owl:NamedIndividual ,
-                                          <http://www.w3.org/ns/dcat#Dataset> ;
-                                 <http://www.w3.org/ns/dcat#inSeries> :KerouantonSurveyFieldCampaignTracksGNSS20142015 ;
-                                 <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024 ;
-                                 rdfs:comment "A set of answers issued from a questionnaire. Compleed with tracks"@en ;
-                                 rdfs:label "Tracks issued from PhD of Colin Kerouanton"@en .
-
-
 ###  https://intforout.github.io/outdoorPressure#KerouantonSurvey20142015
 :KerouantonSurvey20142015 rdf:type owl:NamedIndividual ,
                                    :Observation ;
@@ -845,10 +836,9 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :KerouantonTrack20142015 rdf:type owl:NamedIndividual ,
                                   <http://www.w3.org/ns/dcat#Dataset> ;
                          <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
-                         <http://www.w3.org/ns/dcat#inSeries> :KerouantonSurveyFieldCampaignTracksGNSS20142015 ;
                          <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024 ;
-                         rdfs:comment "A set of tracks. Compleed with questionnaires"@en ;
-                         rdfs:label "Tracks issued from PhD of Colin Kerouanton"@en .
+                         rdfs:comment "A set of tracks completed with questionnaires"@en ;
+                         rdfs:label "Rsearch dataset from Colin Kerouanton's Phd"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#LIFAT
