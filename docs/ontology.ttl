@@ -337,6 +337,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:subClassOf :HumanActivity .
 
 
+###  https://intforout.github.io/outdoorPressure#Document
+:Document rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+
+
 ###  https://intforout.github.io/outdoorPressure#EncounteringZone
 :EncounteringZone rdf:type owl:Class ;
                   rdfs:subClassOf :LandEntity ;
@@ -351,11 +356,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."""@fr ;
             rdfs:label "Fast hiking"@en ,
                        "Fast hiking"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#File
-:File rdf:type owl:Class ;
-      rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
 
 
 ###  https://intforout.github.io/outdoorPressure#FilteredTrack
@@ -1111,7 +1111,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 :ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
-                                         :File ;
+                                         :Document ;
                                 <http://purl.org/www.umr-lastig.fr/geodata#target> :ProfilageDataPhDKerouanton.pdf ;
                                 <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 
