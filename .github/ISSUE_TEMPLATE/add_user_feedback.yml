@@ -43,6 +43,17 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: pdf-identifier
+    attributes:
+      label: PDF DataProfiling Report Identifier (URI)
+      description: |
+        Provide the URI of the PDF DataProfiling Report.  
+        Example: `https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf`
+      placeholder: http://example.org/kg#YourReport.pdf
+    validations:
+      required: false
+
   - type: textarea
     id: targeted-resources
     attributes:
