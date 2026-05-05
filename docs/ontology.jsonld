@@ -302,6 +302,11 @@
   "@id" : "http://www.w3.org/ns/prov#wasQuotedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Document"
+  } ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homePage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -537,6 +542,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Document",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]

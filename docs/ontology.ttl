@@ -297,6 +297,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://purl.org/dc/terms/URI> rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> owl:equivalentClass :Document .
+
+
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
           rdfs:comment "activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en ;
@@ -339,7 +343,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Document
 :Document rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
+          rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+          rdfs:comment "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document" .
 
 
 ###  https://intforout.github.io/outdoorPressure#EncounteringZone
