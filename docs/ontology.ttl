@@ -1093,7 +1093,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 :ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
                                          :Document ;
-                                <http://purl.org/www.umr-lastig.fr/geodata#target> :ProfilageDataPhDKerouanton.pdf ;
                                 <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 
 
