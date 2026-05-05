@@ -1554,7 +1554,6 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Document"/>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
         <dcat:accessURL>https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf</dcat:accessURL>
     </owl:NamedIndividual>
     
