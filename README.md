@@ -36,6 +36,11 @@ If you have encounters bugs or problemes in the KG such as:
 
 Please open a GitHub issue (using either the bug-report issue template or a blank issue) so the moderators can review and take the appropriate action.
 ​
+Open the Github Issue tab as shown below:
+
+<p align='left' style="margin-top: 20px;">
+<img src="docs/img/issue_github.png" alt="issue github" width="500">
+</p>
 
 ## Acknowledgements
 

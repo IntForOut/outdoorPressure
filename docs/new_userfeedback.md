@@ -12,7 +12,7 @@ To integrate your feedback into the Knowledge Graph, we create a User Feedback n
 
 - **Author**: Your name or identifier, ensuring transparency and traceability.
 
-- **Targets**: The elements your feedback refers to, such as: One or more data (datasets, services, processes, etc.) mentioned in your feedback and/or a PDF file or report you are commenting on
+- **Targets**: The elements your feedback refers to, such as one or more data (datasets, services, processes, etc.) mentioned in your feedback and/or a file (eg. PDF file report) you are commenting on
 
 ## How to share your UserFeedback with us ?
 
