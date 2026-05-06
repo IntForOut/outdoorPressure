@@ -20,13 +20,9 @@ Currently, Intforout participants can contribute to the edition/revision of conc
 
 If you want to contribute to the Knowledge Graph by proposing new instances, you can:
 
-- Add a UserFeedback instance
+- Add a **UserFeedback** instance for sharing your expertise, experience, or observations about data. Follow the steps described [here](./docs/new_userfeedback.md)
 
-  For sharing your expertise, experience, or observations about data. Follow the steps described [here](./docs/new_userfeedback.md)
-
-- Add new data
-
-  Such as datasets, data services, catalogs, papers, or any other resource you have produced, encountered, or identified as relevant to the KG.
+- Add **new data** such as datasets, data services, catalogs, papers, or any other resource you have produced, encountered, or identified as relevant to the KG.
   Follow the steps described here
 
 #### Reporting issues or proposing improvements

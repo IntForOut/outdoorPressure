@@ -71,11 +71,10 @@ body:
     validations:
       required: true
 
-  - type: file
+  - type: upload
     id: upload-file
     attributes:
       label: Upload a File
-      description: Upload File to support you comment
-      multiple: true
+      description: Upload File to support your comment (if the file is too big, please send it to us by email at benedicte.bucher@ign.fr).
     validations:
       required: false
