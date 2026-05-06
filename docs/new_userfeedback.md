@@ -67,7 +67,19 @@ If you have performed data profiling on resources that are represented in the Kn
 
 ## Examples of UserFeedbacks
 
-### Quality Of O V Recreational User Map Service
+### UserFeedback of Data-Profiling
+
+- IRI: https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
+- Author IRI: https://intforout.github.io/outdoorPressure#anaciri
+- Comment:
+
+  "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs, (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"
+
+- Target IRI:
+  - Target 1: https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
+  - Target 2: https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
+
+### Quality Of OV Recreational User Map Service
 
 - IRI: https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 - Author: http://purl.org/www.umr-lastig.fr/geodata#mdvandamme
@@ -89,17 +101,16 @@ If you have performed data profiling on resources that are represented in the Kn
   - Target 1: https://intforout.github.io/outdoorPressure/index.html#OVTracksMontBlancBauges2024
   - Target 2: https://intforout.github.io/outdoorPressure/index.html#SIGSPATIAL24VanDammeEtAl2024
 
-### Profilage Donnees Kerouanton A Nacirini
+### Ask for clarity about data
 
-- IRI: https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
-- Author IRI: https://intforout.github.io/outdoorPressure#anaciri
+- IRI: outdoorPressure#LectureRapportProfilageKerouanton
+- Author: https://orcid.org/0000-0002-5797-5170
 - Comment:
 
-  "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs, (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"
+  "I didn’t understand what the profiling was about"
 
 - Target IRI:
-  - Target 1: https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
-  - Target 2: https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
+  - Target 1: https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 
 ### Userfeedback about territorial transformations
 
