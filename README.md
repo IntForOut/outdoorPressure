@@ -4,23 +4,23 @@ This is research Knowledge Graph (KG) to support the study of human outdoor leis
 
 ![Overview of the OutdoorPressure KG main concepts](docs/img/ODKG-schemaGeneral-horizontal.png)
 
-## Want to explore the Knowledge Graph?
+### Want to explore the Knowledge Graph?
 
 The KG is in the rdf file outdoorPressure.rdf in this github repository. There is a documentation attached to it [OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html). 
 
 We recommand you use/test a companion software to explore it [here](https://github.com/intForOut/sham-wah). Sham-Wah is a work in progress to ease the way people who are not Knowledge Graph experts can query and explore visually the KG. 
 
-## Want to contribute? Adding or revising concepts
+### Contribute with concepts 
 
 The philosophy of the KG is to be open. Currently, Intforout participants can contribute to the edition/revision of concepts (classes, object properties, data properties) during webinars organized by the KG moderators, or by creating issues on this git. 
 
-### Propose new instances in the KG
+### Contribute with instances 
 
 The easiest way to contribute is with new instances:
 - create one or more **UserFeedback** instances for sharing your expertise, experience, or observations about data or about papers you read. Follow the steps described [here](./docs/new_userfeedback.md)
 - create one or more **Dataset** to describe data that is relevant to the scope. A dataset is "a coherent collection of information or resources (data files, explanatory files, APIs, links, etc.) and metadata (description, publication date, keywords, geographical/temporal coverage, etc.)." Follow the steps described  [here](./docs/new_dataset.md)  
   
-#### Reporting issues or proposing improvements
+### Report issues or propose improvements
 
 If you have encounters bugs or problemes in the KG such as:
 
@@ -37,6 +37,6 @@ Open the Github Issue tab as shown below:
 <img src="docs/img/issue_github.png" alt="issue github" width="500">
 </p>
 
-## Acknowledgements
+### Acknowledgements
 
 This work was supported by the ANR research project **[IntForOut](https://www.umr-lastig.fr/intforout/)**: Multisource spatial data INTegration FOR the Monitoring of Ecosystems under the pressure of OUTdoor recreation (ANR-23-CE55-0003).
