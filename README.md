@@ -1,30 +1,25 @@
-# A Knowledge Graph to support the study of the impact of human recreational activities in the French Alps
+# A Knowledge Graph to support the study of human recreational activities in the French Alps and their impact
 
-This is a proof of concept of a Knowledge Graph (KG) to improve the way we can study the pressure of human outdoor leisure on moutain ecosystems. A particular task is the discovery and proper reuse of data, ranging from GPS collar to camera trap and land cover data. The KG aims at embedding concepts relevant to express users interests in real world phenomena, like "human activities". It also catalogues different assets relevant to investigate these questions with data, like datasets, reproducible processes, scientific papers, or the experience and feedback from other users.
+This is research Knowledge Graph (KG) to support the study of human outdoor leisure in the French Alps and its impact. It aims at supporting the discovery and proper reuse of data, ranging from GPS collar to camera trap and land cover data. It embeds concepts relevant to express users interests in real world phenomena, like "human activities". It also catalogues different assets relevant to their study like datasets, reproducible processes, scientific papers, or the experience and feedback from other users.
 
 ![Overview of the OutdoorPressure KG main concepts](docs/img/ODKG-schemaGeneral-horizontal.png)
 
-## How to explore the Knowledge Graph
+## Want to explore the Knowledge Graph?
 
-The KG is in the rdf file outdoorPressure.rdf in this github repository. A companion to the OutdoorPressure KG is being designed [here](https://github.com/intForOut/sham-wah) to ease the way people who are not Knowledge Graph experts can query and explore visually the KG. Alternatively, you may also look at the documentation [OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html) or use [Protégé software](https://protege.stanford.edu/).
+The KG is in the rdf file outdoorPressure.rdf in this github repository. There is a documentation attached to it [OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html). 
 
-## How to contribute
+We recommand you use/test a companion software to explore it [here](https://github.com/intForOut/sham-wah). Sham-Wah is a work in progress to ease the way people who are not Knowledge Graph experts can query and explore visually the KG. 
 
-The philosophy of the KG is to be an open and collaborative platform.
+## Want to contribute? Adding or revising concepts
 
-### Adding or revising concepts and properties in the KG
+The philosophy of the KG is to be open. Currently, Intforout participants can contribute to the edition/revision of concepts (classes, object properties, data properties) during webinars organized by the KG moderators, or by creating issues on this git. 
 
-Currently, Intforout participants can contribute to the edition/revision of concepts (classes, object properties, data properties) during webinars organized by the KG moderators.
+### Propose new instances in the KG
 
-#### Propose new instances in the KG
-
-If you want to contribute to the Knowledge Graph by proposing new instances, you can:
-
-- Add a **UserFeedback** instance for sharing your expertise, experience, or observations about data. Follow the steps described [here](./docs/new_userfeedback.md)
-
-- Add **new data** such as datasets, data services, catalogs, papers, or any other resource you have produced, encountered, or identified as relevant to the KG.
-  Follow the steps described here
-
+The easiest way to contribute is with new instances:
+- create one or more **UserFeedback** instances for sharing your expertise, experience, or observations about data or about papers you read. Follow the steps described [here](./docs/new_userfeedback.md)
+- create one or more **Dataset** to describe data that is relevant to the scope. A dataset is "a coherent collection of information or resources (data files, explanatory files, APIs, links, etc.) and metadata (description, publication date, keywords, geographical/temporal coverage, etc.)." Follow the steps described  [here](./docs/new_dataset.md)  
+  
 #### Reporting issues or proposing improvements
 
 If you have encounters bugs or problemes in the KG such as:
