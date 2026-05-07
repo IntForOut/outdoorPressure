@@ -1058,11 +1058,11 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-25</terms:issued>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-07</terms:issued>
         <terms:language>English</terms:language>
         <terms:license>Licence Ouverte v2.0 (Etalab)</terms:license>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
-        <rdfs:comment xml:lang="en">185 real encounters. The geometries are saved as WKT. Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates</rdfs:comment>
+        <rdfs:comment xml:lang="en">718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates.</rdfs:comment>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
     </owl:NamedIndividual>
