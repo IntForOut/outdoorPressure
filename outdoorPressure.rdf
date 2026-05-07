@@ -1073,6 +1073,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:comment xml:lang="en">Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. </rdfs:comment >
         <dcat:format>csv</dcat:format>
         <dcat:identifier>human_chamois_real_encounters.csv</dcat:identifier>
     </owl:NamedIndividual>
