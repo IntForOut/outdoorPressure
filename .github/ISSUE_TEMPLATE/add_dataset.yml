@@ -1,0 +1,101 @@
+name: Propose a Dataset instance
+description: Propose a new dataset instance in the knowledge graph.
+title: "[Dataset]: "
+labels: ["dataset"]
+assignees:
+  - benedictebucher
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the knowledge graph!  
+        Please follow the steps below to propose a new dataset instance.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+
+  - type: input
+    id: dataset-identifier
+    attributes:
+      label: Dataset Identifier (URI)
+      description: |
+        please suggest a short name that makes sense for human beyond a too specific context, so avoid "CarlsData" or "myowndata".
+      placeholder: https://intforout.github.io/outdoorPressure#YourDatasetNameAuthorName
+    validations:
+      required: true
+
+  - type: input
+    id: label
+    attributes:
+      label: Label
+      description: Provide a human-readable label for the dataset.
+      placeholder: your label here
+    validations:
+      required: true
+
+  - type: input
+    id: author-identifier
+    attributes:
+      label: Author Identifier (URI)
+      description: |
+        Check whether the corresponding Person node already exists in the Knowledge Graph. If not, propose an IRI and we will add it.
+        Example: `http://purl.org/www.umr-lastig.fr/geodata#mdvandamme`
+      placeholder: http://example.org/kg#Author
+    validations:
+      required: true
+
+  - type: textarea
+    id: comment
+    attributes:
+      label: Dataset Comment
+      description: |
+        Provide the textual content of the dataset description.
+        you can also express here if it comes with specific metadata or documentation apart from the attributes and properties that will be edited in the KG (that you can describe in the distribution)
+      placeholder: Describe your dataset here…
+    validations:
+      required: true
+
+  - type: input
+    id: Distribution
+    attributes:
+      label: Distribution
+      description: tell if it is on the ftp with a specific file name (or folder), if it is available through a download service or dataservice
+      placeholder: distribution details here
+    validations:
+      required: true
+
+  - type: input
+    id: Location
+    attributes:
+      label: Location
+      description: |
+        Spatial extent of the dataset (e.g., geographic area covered by the dataset).
+        If the dataset covers a specific geographic area, please provide the spatial extent (e.g., bounding box coordinates, region name) to help users understand the geographic scope of the dataset.
+      placeholder: location details here
+    validations:
+      required: true
+
+  - type: input
+    id: Date
+    attributes:
+      label: Date
+      description: date of last update of the dataset
+      placeholder: date
+    validations:
+      required: true
+
+  - type: input
+    id: represents
+    attributes:
+      label: Represents
+      description: please express if your dataset represents Land entities, animal or human activities
+      placeholder: Land entities, animal or human activities
+    validations:
+      required: true
