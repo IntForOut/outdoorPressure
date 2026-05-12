@@ -12,13 +12,13 @@ Collect the description items listed in the section below and send it to us usin
 
 # Description items we need to create the KG instances 
 
-1. **URI**: please suggest a short name that makes sense for human beyond a too specific context, so avoid "CarlsData" or "myowndata". 
+1. **URI**: please suggest a short name that makes sense for human beyond a too specific context, so avoid "CarlsData" or "myowndata", whenever it is possible use words that indicate : theme, place, years. 
 
 2. **Label**: short name for your dataset
 
-3. **Comment**: description of your dataset, you can also express here if it comes with specific metadata or documentation apart from the attributes and properties that will be edited in the KG (that you can describe in the distribution)
+3. **Comment**: description of your dataset, you can also express here if it comes with specific metadata or documentation.
 
-4. **Distribution**: tell if it is on the ftp with a specific file name (or folder), if it is available through a download service or dataservice
+4. **Distribution**: tell if it is on the ftp with a specific file name (or folder), if it is available through a download service or dataservice, if it comes with specific documentation and structured metadata. Note that we won't necessary load as KG nodes and edges these metadata, they can remain in their native format.
 
 5. **Location** : Spatial extent of the dataset
 
