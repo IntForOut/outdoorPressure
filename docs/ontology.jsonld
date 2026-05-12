@@ -530,6 +530,50 @@
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-09-04"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Office Français de la Biodiversité"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
+  } ],
+  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
+    "@value" : "https://doi.org/10.5281/zenodo.17052197"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#mgarel"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
+  } ],
+  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
   "http://purl.org/dc/terms/identifier" : [ {
@@ -902,7 +946,7 @@
     "@value" : "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex"
   } ],
   "http://www.w3.org/ns/prov#quotedAs" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
+    "@id" : "https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015",
@@ -958,110 +1002,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Living creature, animal or human"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-09-04"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Office Français de la Biodiversité"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Activity data from gps collars"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fr",
-    "@value" : "act-export"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
-  } ],
-  "http://www.w3.org/ns/dcat#inSeries" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-09-04"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Office Français de la Biodiversité"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "GPS locations"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fr",
-    "@value" : "locs-export"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
-  } ],
-  "http://www.w3.org/ns/dcat#inSeries" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-09-04"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Office Français de la Biodiversité"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
-  } ],
-  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
-    "@value" : "https://doi.org/10.5281/zenodo.17052197"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#mgarel"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
@@ -2109,6 +2049,10 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This distribution, provided as an R package, consists of two datasets: the GPS locations (locs-export) and the Activity data from gps collars (act-export)."
+  } ],
   "http://www.w3.org/ns/dcat#format" : [ {
     "@value" : "RData"
   } ]

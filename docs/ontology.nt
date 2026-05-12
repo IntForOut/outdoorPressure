@@ -525,6 +525,23 @@
 <https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of Routes issued from Camptocamp.org API."@en .
 <https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Camptocamp.org-routes"@en .
 # 
+# https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#mgarel> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#pmarchand> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/issued> "2025-09-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/language> "English" .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5281/zenodo.17052197" .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/2000/01/rdf-schema#comment> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/2000/01/rdf-schema#label> "Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)"@en .
+# 
 # https://intforout.github.io/outdoorPressure#DeepFaune
 <https://intforout.github.io/outdoorPressure#DeepFaune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#DeepFaune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .
@@ -671,7 +688,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://purl.org/spar/datacite/subject> "trail running" .
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://purl.org/spar/datacite/volume> "7" .
 <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/2000/01/rdf-schema#label> "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex"@en .
-<https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> .
+<https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> .
 # 
 # https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -689,47 +706,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
-# 
-# https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/ns/dcat#inSeries> <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://purl.org/dc/terms/issued> "2025-09-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://purl.org/dc/terms/language> "English" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity data from gps collars"@en .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport> <http://www.w3.org/2000/01/rdf-schema#label> "act-export"@fr .
-# 
-# https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://www.w3.org/ns/dcat#inSeries> <https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://purl.org/dc/terms/issued> "2025-09-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://purl.org/dc/terms/language> "English" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://www.w3.org/2000/01/rdf-schema#comment> "GPS locations"@en .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport> <http://www.w3.org/2000/01/rdf-schema#label> "locs-export"@fr .
-# 
-# https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#mgarel> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#pmarchand> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/issued> "2025-09-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/language> "English" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5281/zenodo.17052197" .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/2000/01/rdf-schema#comment> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en .
-<https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo> <http://www.w3.org/2000/01/rdf-schema#label> "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en .
 # 
 # https://intforout.github.io/outdoorPressure#MassifDesBauges
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1160,6 +1136,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#marchandetal-rdata
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/2000/01/rdf-schema#comment> "This distribution, provided as an R package, consists of two datasets: the GPS locations (locs-export) and the Activity data from gps collars (act-export)."@en .
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/ns/dcat#format> "RData" .
 # 
 # https://intforout.github.io/outdoorPressure#mgarel

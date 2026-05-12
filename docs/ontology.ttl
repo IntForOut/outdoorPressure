@@ -643,6 +643,24 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             rdfs:label "Camptocamp.org-routes"@en .
 
 
+###  https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo
+:DataMarchandEtAl2025MSEPeopleNatureZenodo rdf:type owl:NamedIndividual ,
+                                                    <http://www.w3.org/ns/dcat#Dataset> ;
+                                           <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
+                                           <http://www.w3.org/ns/prov#wasAttributedTo> :mgarel ,
+                                                                                       :pmarchand ;
+                                           <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfPeopleAndNatureMarchandEtAl2025 ;
+                                           <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
+                                           <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
+                                           <http://purl.org/dc/terms/language> "English" ;
+                                           <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                           <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
+                                           <http://purl.org/dc/terms/spatial> :RNCFSBauges ;
+                                           <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5281/zenodo.17052197" ;
+                                           rdfs:comment "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
+                                           rdfs:label "Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)"@en .
+
+
 ###  https://intforout.github.io/outdoorPressure#DeepFaune
 :DeepFaune rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/prov#SoftwareAgent> ;
@@ -803,7 +821,7 @@ _:genid2 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                                                   "trail running" ;
                                           <http://purl.org/spar/datacite/volume> "7" ;
                                           rdfs:label "Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex"@en ;
-                                          <http://www.w3.org/ns/prov#quotedAs> :MarchandEtAl2025MSEPeopleNatureDataZenodo .
+                                          <http://www.w3.org/ns/prov#quotedAs> :DataMarchandEtAl2025MSEPeopleNatureZenodo .
 
 _:genid3 rdf:type <http://www.w3.org/ns/prov#Person> ;
           <http://xmlns.com/foaf/0.1/name> "Nolwenn Risser" .
@@ -829,50 +847,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :LIFAT rdf:type owl:NamedIndividual ,
                 <http://www.w3.org/ns/prov#Organization> ;
        <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
-
-
-###  https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport
-:MarchandEtAl2025MSEPeopleNatureDataActExport rdf:type owl:NamedIndividual ,
-                                                       <http://www.w3.org/ns/dcat#Dataset> ;
-                                              <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
-                                              <http://www.w3.org/ns/dcat#inSeries> :MarchandEtAl2025MSEPeopleNatureDataZenodo ;
-                                              <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
-                                              <http://purl.org/dc/terms/language> "English" ;
-                                              <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                              <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
-                                              rdfs:comment "Activity data from gps collars"@en ;
-                                              rdfs:label "act-export"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataLocsExport
-:MarchandEtAl2025MSEPeopleNatureDataLocsExport rdf:type owl:NamedIndividual ,
-                                                        <http://www.w3.org/ns/dcat#Dataset> ;
-                                               <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
-                                               <http://www.w3.org/ns/dcat#inSeries> :MarchandEtAl2025MSEPeopleNatureDataZenodo ;
-                                               <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
-                                               <http://purl.org/dc/terms/language> "English" ;
-                                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                               <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
-                                               rdfs:comment "GPS locations"@en ;
-                                               rdfs:label "locs-export"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataZenodo
-:MarchandEtAl2025MSEPeopleNatureDataZenodo rdf:type owl:NamedIndividual ,
-                                                    <http://www.w3.org/ns/dcat#Dataset> ;
-                                           <http://www.w3.org/ns/dcat#distribution> :marchandetal-rdata ;
-                                           <http://www.w3.org/ns/prov#wasAttributedTo> :mgarel ,
-                                                                                       :pmarchand ;
-                                           <http://www.w3.org/ns/prov#wasQuotedFrom> :JournalOfPeopleAndNatureMarchandEtAl2025 ;
-                                           <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" ;
-                                           <http://purl.org/dc/terms/issued> "2025-09-04"^^xsd:date ;
-                                           <http://purl.org/dc/terms/language> "English" ;
-                                           <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                           <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
-                                           <http://purl.org/dc/terms/spatial> :RNCFSBauges ;
-                                           <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5281/zenodo.17052197" ;
-                                           rdfs:comment "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
-                                           rdfs:label "Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#MassifDesBauges
@@ -1356,6 +1330,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#marchandetal-rdata
 :marchandetal-rdata rdf:type owl:NamedIndividual ,
                              <http://www.w3.org/ns/dcat#Distribution> ;
+                    rdfs:comment "This distribution, provided as an R package, consists of two datasets: the GPS locations (locs-export) and the Activity data from gps collars (act-export)."@en ;
                     <http://www.w3.org/ns/dcat#format> "RData" .
 
 
