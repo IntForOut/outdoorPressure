@@ -57,6 +57,7 @@ jobs:
         git add docs/ontology.nt
         git add docs/ontology.ttl
         git add docs/provenance/
+        git add docs/sections/
         git add docs/resources/
         git add generated.txt
         git commit -m "Automatically generate documentation from geodata OWL ontology file using Widoco."
