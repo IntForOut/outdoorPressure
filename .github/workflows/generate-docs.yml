@@ -40,9 +40,8 @@ jobs:
 
     - name: Generate docs with Widoco
       run: |
-        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -webVowl -pathToIntro docs/introduction.html 
-        # -getOntologyMetadata -includeImportedOntologies
-        #
+        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -webVowl 
+        # -getOntologyMetadata -includeImportedOntologies -uniteSections
         mv docs/index-en.html docs/index.html
         run: cp docs/introduction.html docs/sections/description-en.html
 
