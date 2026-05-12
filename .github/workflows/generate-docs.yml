@@ -41,9 +41,8 @@ jobs:
     - name: Generate docs with Widoco
       run: |
         java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -rewriteAll
-        ls -R docs/
         mv docs/index-en.html docs/index.html
-        cp docs/introduction.html docs/sections/description-en.html
+        cp docs/introduction.html docs/sections/introduction-en.html
         # -getOntologyMetadata -includeImportedOntologies -uniteSections
 
     - name: Commit and push
