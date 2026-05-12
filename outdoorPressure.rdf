@@ -485,14 +485,6 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Document -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
-        <owl:equivalentClass rdf:resource="https://intforout.github.io/outdoorPressure#Document"/>
-    </rdf:Description>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#Activity -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Activity">
