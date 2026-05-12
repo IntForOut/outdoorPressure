@@ -40,10 +40,10 @@ jobs:
 
     - name: Generate docs with Widoco
       run: |
-        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder website/ -rewriteAll
-        mv website/index-en.html website/index.html
-        cp docs/introduction.html website/sections/introduction-en.html
-        cp docs/abstract.html website/sections/
+        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -rewriteAll
+        mv docs/index-en.html docs/index.html
+        cp docs/introduction.html docs/sections/introduction-en.html
+        cp docs/abstract.html docs/sections/abstract-en.html
         # -getOntologyMetadata -includeImportedOntologies -uniteSections
 
     - name: Commit and push
@@ -53,13 +53,13 @@ jobs:
         date > generated.txt
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add website/index.html
-        git add website/ontology.jsonld
-        git add website/ontology.nt
-        git add website/ontology.ttl
-        git add website/provenance/
-        git add website/sections/
-        git add website/resources/
+        git add docs/index.html
+        git add docs/ontology.jsonld
+        git add docs/ontology.nt
+        git add docs/ontology.ttl
+        git add docs/provenance/
+        git add docs/sections/
+        git add docs/resources/
         git add generated.txt
         git commit -m "Automatically generate documentation from geodata OWL ontology file using Widoco."
         git push || exit 0
