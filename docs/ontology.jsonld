@@ -302,11 +302,6 @@
   "@id" : "http://www.w3.org/ns/prov#wasQuotedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://xmlns.com/foaf/0.1/Document",
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Document"
-  } ]
-}, {
   "@id" : "http://xmlns.com/foaf/0.1/homePage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
