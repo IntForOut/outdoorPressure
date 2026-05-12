@@ -12,7 +12,7 @@ Collect the description items listed in the section below and send it to us usin
 
 # Description items we need to create the KG instances 
 
-1. **URI**: please suggest a short name that makes sense for human beyond a too specific context, so avoid "CarlsData" or "myowndata", whenever it is possible use words that indicate : theme, place, years. 
+1. **URI**: please suggest a short name that makes sense for human beyond a too specific context, so avoid "CarlsData" or "myowndata", whenever it is possible use words that combine : product or provider (like BDTopo, Strava, etc), theme (like HumanIbexEncounter, Tracks, etc), place, years. 
 
 2. **Label**: short name for your dataset
 
