@@ -669,23 +669,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut
 :EntrepotRechercheIntForOut rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Catalog> ;
-                            <http://www.w3.org/ns/dcat#dataset> :MOUSLS ,
-                                                                :MOUSLSGroundTruthDenseForestPath ,
-                                                                :MOUSLSTracksMultiSensorsVincennesForest ;
-                            <http://www.w3.org/ns/dcat#record> :MetadataGroundTruthPathVincennesForest ,
-                                                               :MetadataTracksMultiSensorsVincennesForest ;
+                            <http://www.w3.org/ns/dcat#dataset> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
+                            <http://www.w3.org/ns/dcat#record> :MetadataTracesAcquisitionGroundTruthPathVincennesForest ;
                             rdfs:comment "Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform."@en ,
                                          "Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l'entrepôt pluridisciplinaire Recherche Data Gouv."@fr ;
                             rdfs:label "IntForOut published Dataverse"@en ;
                             <http://xmlns.com/foaf/0.1/homePage> "https://entrepot.recherche.data.gouv.fr/dataverse/intforout" .
 
 
-###  https://intforout.github.io/outdoorPressure#GroundTruthDenseForestPath-csv
-:GroundTruthDenseForestPath-csv rdf:type owl:NamedIndividual ,
-                                         <http://www.w3.org/ns/dcat#Distribution> ;
-                                <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> ;
-                                <http://www.w3.org/ns/dcat#format> "csv" ;
-                                <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
+###  https://intforout.github.io/outdoorPressure#GroundTruthPathVincennesForest-csv
+:GroundTruthPathVincennesForest-csv rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/ns/dcat#Distribution> ;
+                                    <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/P0PXVN&version=1.0> ;
+                                    <http://www.w3.org/ns/dcat#format> "csv" ;
+                                    <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 
 
 ###  https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes
@@ -834,41 +831,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
        <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 
 
-###  https://intforout.github.io/outdoorPressure#MOUSLS
-:MOUSLS rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/ns/dcat#Dataset> ;
-        <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
-                                                    <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
-        <http://www.w3.org/ns/prov#wasQuotedFrom> :SIGSPATIAL24VanDammeEtAl2024 ;
-        <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
-        <http://purl.org/dc/terms/issued> "2025-01-18"^^xsd:date ;
-        <http://purl.org/dc/terms/language> "English" ;
-        <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" ;
-        <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ;
-        <http://purl.org/dc/terms/spatial> :BoisVincennes ;
-        <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" ;
-        rdfs:comment "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This is a dataset series composed by two linked datasets. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en ;
-        rdfs:label "MOUSLS: Multi-sensors and Ground Truth Tracks in Vincennes (2025)"@en .
-
-
-###  https://intforout.github.io/outdoorPressure#MOUSLSGroundTruthDenseForestPath
-:MOUSLSGroundTruthDenseForestPath rdf:type owl:NamedIndividual ,
-                                           <http://www.w3.org/ns/dcat#Dataset> ;
-                                  <http://www.w3.org/ns/dcat#distribution> :GroundTruthDenseForestPath-csv ;
-                                  <http://www.w3.org/ns/dcat#inSeries> :MOUSLS ;
-                                  rdfs:comment "This dataset was collected on-site by a group of students using a defined methodology. It contains precise station locations along a real-world path through dense forest, after reordering in the south–north direction of travel. The goal of these reference data is to obtain a very precise ground truth in order to assess the accuracy of GNSS tracks produced by following exactly the same path with five sensors: a Garmin watch, a Polar watch, the Visorando mobile application, a Keymaza GPS, and a Ublox GPS."@en .
-
-
-###  https://intforout.github.io/outdoorPressure#MOUSLSTracksMultiSensorsVincennesForest
-:MOUSLSTracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
-                                                  <http://www.w3.org/ns/dcat#Dataset> ;
-                                         <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBoisVincennes2022 ;
-                                         <http://www.w3.org/ns/dcat#distribution> :TracksMultiSensorsVincennesForest-gpkg ;
-                                         <http://www.w3.org/ns/dcat#inSeries> :MOUSLS ;
-                                         rdfs:comment "This dataset was collected by two researchers by following the data collection protocol and using five sensors Garmin watch, Polar watch, Visorando mobile phone application, Keymaza GPS, Ublox GPS. The study area covers dense forect in Vincennes forest (Paris)."@en ;
-                                         rdfs:label "GPS multisensors Vincennes" .
-
-
 ###  https://intforout.github.io/outdoorPressure#MarchandEtAl2025MSEPeopleNatureDataActExport
 :MarchandEtAl2025MSEPeopleNatureDataActExport rdf:type owl:NamedIndividual ,
                                                        <http://www.w3.org/ns/dcat#Dataset> ;
@@ -933,28 +895,14 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                            rdfs:label "Merged tracks in Vincennes"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#MetadataGroundTruthPathVincennesForest
-:MetadataGroundTruthPathVincennesForest rdf:type owl:NamedIndividual ,
-                                                 <http://www.w3.org/ns/dcat#CatalogRecord> ;
-                                        <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/TRYLX1&version=1.0> ;
-                                        <http://xmlns.com/foaf/0.1/primaryTopic> :MOUSLSGroundTruthDenseForestPath ;
-                                        rdfs:comment "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"@en ;
-                                        <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> ;
-                                        <http://www.w3.org/ns/dcat#format> "xml" ;
-                                        <http://www.w3.org/ns/dcat#identifier> "Metadata_ground_truth_path_vincennes_forest.xml" ;
-                                        <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
-
-
-###  https://intforout.github.io/outdoorPressure#MetadataTracksMultiSensorsVincennesForest
-:MetadataTracksMultiSensorsVincennesForest rdf:type owl:NamedIndividual ,
-                                                    <http://www.w3.org/ns/dcat#CatalogRecord> ;
-                                           <http://www.w3.org/ns/dcat#accessURL> <https://entrepot.recherche.data.gouv.fr/file.xhtml?persistentId=doi:10.57745/Q6OT0J&version=1.0> ;
-                                           <http://xmlns.com/foaf/0.1/primaryTopic> :MOUSLSTracksMultiSensorsVincennesForest ;
-                                           rdfs:comment "Associated metadata (ISO 19115/19139 XML format, contains spatial extent, attributes description, collection method, and quality information)"@en ;
-                                           <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> ;
-                                           <http://www.w3.org/ns/dcat#format> "xml" ;
-                                           <http://www.w3.org/ns/dcat#identifier> "Metadata_tracks_multi_sensors_vincennes_forest.xml" ;
-                                           <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
+###  https://intforout.github.io/outdoorPressure#MetadataTracesAcquisitionGroundTruthPathVincennesForest
+:MetadataTracesAcquisitionGroundTruthPathVincennesForest rdf:type owl:NamedIndividual ,
+                                                                  <http://www.w3.org/ns/dcat#CatalogRecord> ;
+                                                         <http://xmlns.com/foaf/0.1/primaryTopic> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
+                                                         rdfs:comment "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"@en ;
+                                                         <http://www.w3.org/ns/dcat#conformsTo> <https://www.iso.org/fr/standard/53798.html> ;
+                                                         <http://www.w3.org/ns/dcat#format> "xml" ;
+                                                         <http://www.w3.org/ns/dcat#issued> "2025-08-13"^^xsd:date .
 
 
 ###  https://intforout.github.io/outdoorPressure#Movebank
@@ -1087,7 +1035,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual ,
                                                   <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
                                          <http://www.w3.org/ns/prov#generated> :MergedTracksVincennes2024 ;
-                                         <http://www.w3.org/ns/prov#used> :MOUSLS ;
+                                         <http://www.w3.org/ns/prov#used> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
                                          <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> ;
                                          <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
                                          rdfs:comment "A modular and iterative aggregation algorithm (MIAA)"@en ;
@@ -1147,7 +1095,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024
 :SIGSPATIAL24VanDammeEtAl2024 rdf:type owl:NamedIndividual ,
                                        <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
-                              <http://purl.org/dc/terms/hasPart> :MOUSLS ;
+                              <http://purl.org/dc/terms/hasPart> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
                               <http://www.w3.org/ns/prov#wasInfluencedBy> :PopulationFootprintFromTracksCollection ;
                               <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                  <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
@@ -1167,8 +1115,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                                       "synthetic and real world trajectories" ,
                                                                       "trajectory aggregation" ;
                               rdfs:label "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories"@en ;
-                              <http://www.w3.org/ns/prov#quotedAs> :MOUSLS ,
-                                                                   :MergedTracksVincennes2024 .
+                              <http://www.w3.org/ns/prov#quotedAs> :MergedTracksVincennes2024 .
 
 
 ###  https://intforout.github.io/outdoorPressure#SentierDesBauges
@@ -1241,13 +1188,32 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024
 :TopometricSurveyGroundTruthPathVincennes2024 rdf:type owl:NamedIndividual ,
                                                        :Observation ;
-                                              <http://www.w3.org/ns/prov#generated> :MOUSLSGroundTruthDenseForestPath ;
+                                              <http://www.w3.org/ns/prov#generated> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
                                               <http://www.w3.org/ns/prov#used> <ttp://purl.org/www.umr-lastig.fr/geodata#LeicaTS16> ;
                                               <http://purl.org/dc/terms/creator> :blabbe ,
                                                                                  :lpeseux ,
                                                                                  :pcalloch ;
                                               <http://www.w3.org/ns/prov#endedAtTime> "2024-01-18"^^xsd:gYearMonth ;
                                               <http://www.w3.org/ns/prov#startedAtTime> "2024-01-18"^^xsd:gYearMonth .
+
+
+###  https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest
+:TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest rdf:type owl:NamedIndividual ,
+                                                                       <http://www.w3.org/ns/dcat#Dataset> ;
+                                                              <http://www.w3.org/ns/dcat#distribution> :GroundTruthPathVincennesForest-csv ,
+                                                                                                       :TracksMultiSensorsVincennesForest-gpkg ;
+                                                              <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
+                                                                                                          <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
+                                                              <http://www.w3.org/ns/prov#wasQuotedFrom> :SIGSPATIAL24VanDammeEtAl2024 ;
+                                                              <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
+                                                              <http://purl.org/dc/terms/issued> "2025-01-18"^^xsd:date ;
+                                                              <http://purl.org/dc/terms/language> "English" ;
+                                                              <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" ;
+                                                              <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ;
+                                                              <http://purl.org/dc/terms/spatial> :BoisVincennes ;
+                                                              <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" ;
+                                                              rdfs:comment "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en ;
+                                                              rdfs:label "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability
