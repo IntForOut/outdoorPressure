@@ -40,10 +40,11 @@ jobs:
 
     - name: Generate docs with Widoco
       run: |
-        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/
-        # -getOntologyMetadata -includeImportedOntologies -uniteSections
+        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -rewriteAll
+        ls -R docs/
         mv docs/index-en.html docs/index.html
         cp docs/introduction.html docs/sections/description-en.html
+        # -getOntologyMetadata -includeImportedOntologies -uniteSections
 
     - name: Commit and push
       env:
