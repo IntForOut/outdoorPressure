@@ -948,9 +948,9 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#BoisVincennes -->
+    <!-- https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#BoisVincennes">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Bois"/>
         <rdfs:label xml:lang="en">Test area located in the Bois de Vincennes</rdfs:label>
         <rdfs:label xml:lang="fr">Zone de test dans le Bois de Vincennes</rdfs:label>
@@ -1948,7 +1948,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#maisonparcdesbauges">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://parcdesbauges.com"/>
-        <rdf:label xml:lang="fr">Maison du Parc Naturel Régional du Massif des Bauges</foaf:name>
+        <rdf:label xml:lang="fr">Maison du Parc Naturel Régional du Massif des Bauges</rdf:label>
     </owl:NamedIndividual>
     
 
