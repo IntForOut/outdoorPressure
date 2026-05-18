@@ -1541,6 +1541,25 @@
             <mxPoint x="-10" y="29" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="R59-Vf4MuanBq9-9EarK-0" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Profilage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50.16" width="77" x="-1360" y="-670" as="geometry" />
+        </mxCell>
+        <mxCell id="R59-Vf4MuanBq9-9EarK-1" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-57" style="edgeStyle=none;html=1;entryX=0.039;entryY=0.399;entryDx=0;entryDy=0;rounded=0;curved=1;dashed=1;entryPerimeter=0;exitX=0.355;exitY=0.053;exitDx=0;exitDy=0;exitPerimeter=0;" target="R59-Vf4MuanBq9-9EarK-0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1390" y="-620" />
+              <mxPoint x="-1380" y="-610" />
+              <mxPoint x="-1410" y="-640" />
+            </Array>
+            <mxPoint x="-1242" y="-433" as="sourcePoint" />
+            <mxPoint x="-1400" y="-414" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R59-Vf4MuanBq9-9EarK-2" connectable="0" parent="R59-Vf4MuanBq9-9EarK-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hasProfile" vertex="1">
+          <mxGeometry relative="1" x="-0.0918" y="-7" as="geometry">
+            <mxPoint x="-15" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
