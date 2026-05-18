@@ -71,6 +71,9 @@
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/dc/terms/spatial",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -343,12 +346,12 @@
   "http://creativecommons.org/ns#licence" : [ {
     "@id" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
+  "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Bénédicte Bucher"
   }, {
     "@value" : "Marie-Dominique Van Damme"
   } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
+  "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "Mountain outdoor pressure KG"
   } ],
@@ -587,15 +590,6 @@
     "@value" : "DeepFaune"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Document",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Resource"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#EcoCompteurCMBDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -713,6 +707,9 @@
   } ],
   "https://intforout.github.io/outdoorPressure#affords" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes"
+  } ],
+  "https://intforout.github.io/outdoorPressure#hasSTFootprint" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Hiking",
@@ -1369,6 +1366,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/dc/terms/source"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1440,15 +1443,6 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Document"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@value" : "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -1457,16 +1451,17 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
+  "http://purl.org/dc/terms/creator" : [ {
     "@value" : "ANaciri"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"
+  } ],
+  "https://intforout.github.io/outdoorPressure#hasProfile" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService",
@@ -1705,7 +1700,7 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/elements/1.1/publisher" : [ {
+  "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Strava"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
@@ -1745,7 +1740,7 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#StravaTracksBauges2014",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/elements/1.1/publisher" : [ {
+  "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Strava"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
@@ -2114,7 +2109,7 @@
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/dc/terms/URI"
+    "@id" : "http://purl.org/dc/terms/source"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#hasSTFootprint",
