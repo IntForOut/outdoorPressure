@@ -301,7 +301,7 @@
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing."@en .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#label> "Encountering zone"@en .
-<https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de rencontre"@en .
+<https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de rencontre"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#FastHiking
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -401,6 +401,8 @@
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en .
 <https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
+<https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#label> "Itinéraire"@fr .
+<https://intforout.github.io/outdoorPressure#Route> <http://www.w3.org/2000/01/rdf-schema#label> "Route"@en .
 # 
 # https://intforout.github.io/outdoorPressure#SensitiveArea
 <https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
