@@ -558,7 +558,7 @@
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:comment xml:lang="en">Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
         <rdfs:label xml:lang="en">Encountering zone</rdfs:label>
-        <rdfs:label xml:lang="en">Zone de rencontre</rdfs:label>
+        <rdfs:label xml:lang="fr">Zone de rencontre</rdfs:label>
     </owl:Class>
     
 
@@ -733,6 +733,8 @@
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:comment xml:lang="en">A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description.</rdfs:comment>
+        <rdfs:label xml:lang="en">Route</rdfs:label>
+        <rdfs:label xml:lang="fr">Itinéraire</rdfs:label>
     </owl:Class>
     
 
