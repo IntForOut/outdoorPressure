@@ -382,11 +382,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
-    "@value" : "Une aire protégée (AP) (de l'anglais protected area, PA) est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés »"
+    "@value" : "Une Aire Protégée est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés ». "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
-    "@value" : "Aire protégée"
+    "@value" : "Aire Protégée"
+  }, {
+    "@language" : "en",
+    "@value" : "Protected Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
@@ -455,8 +458,17 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Bois",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#BoisVincennes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Bois"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Test area located in the Bois de Vincennes"
@@ -625,6 +637,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Encountering zone"
+  }, {
+    "@language" : "en",
+    "@value" : "Zone de rencontre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
@@ -1002,11 +1017,32 @@
   "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles"
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
+    "@value" : "Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
     "@value" : "Massif des Bauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "une montagne ou un massif de manière globale et non un sommet en particulier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Massif montagneux"
+  }, {
+    "@language" : "en",
+    "@value" : "Mountain Massif"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MergedAccurateTrack",
@@ -1255,7 +1291,7 @@
     "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
+    "@id" : "https://intforout.github.io/outdoorPressure#maisonparcdesbauges"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1282,7 +1318,7 @@
     "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
+    "@id" : "https://intforout.github.io/outdoorPressure#maisonparcdesbauges"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1309,7 +1345,7 @@
     "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
+    "@id" : "https://intforout.github.io/outdoorPressure#maisonparcdesbauges"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1323,18 +1359,15 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#PNRDesBauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Le parc naturel régional du Massif des Bauges est une aire protégée"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Parc naturel régional du Massif des Bauges"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Plan d'eau"
+  }, {
+    "@language" : "en",
+    "@value" : "Water Body"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
@@ -1429,13 +1462,16 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#AireProtegee"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
     "@value" : "La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "La Réserve nationale de chasse et de faune sauvage des Bauges"
+    "@value" : "Réserve nationale de chasse et de faune sauvage des Bauges"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025",
@@ -1463,18 +1499,6 @@
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ReservesNaturelles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Réserves naturelles"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ResilientRoute",
@@ -1861,17 +1885,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "wildlife quiet area"
+    "@value" : "Wildlife Quiet Area"
   }, {
     "@language" : "fr",
-    "@value" : "zone de quiétude"
+    "@value" : "Zone de quiétude"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea"
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/terms/Location" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Massif du Mont Blanc, côté France"
   } ]
@@ -1944,7 +1971,7 @@
     "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges"
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
@@ -2067,6 +2094,15 @@
     "@value" : "Lorine Peseux"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#maisonparcdesbauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@id" : "https://parcdesbauges.com"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Maison du Parc Naturel Régional du Massif des Bauges"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2117,15 +2153,6 @@
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@value" : "https://outdoorvision.fr/"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://parcdesbauges.com"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Parc Naturel Régional du Massif des Bauges"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson",

@@ -260,8 +260,9 @@
 # https://intforout.github.io/outdoorPressure#AireProtegee
 <https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/2000/01/rdf-schema#comment> "Une aire protégée (AP) (de l'anglais protected area, PA) est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés »"@fr .
-<https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/2000/01/rdf-schema#label> "Aire protégée"@fr .
+<https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/2000/01/rdf-schema#comment> "Une Aire Protégée est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés ». "@fr .
+<https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/2000/01/rdf-schema#label> "Aire Protégée"@fr .
+<https://intforout.github.io/outdoorPressure#AireProtegee> <http://www.w3.org/2000/01/rdf-schema#label> "Protected Area"@en .
 # 
 # https://intforout.github.io/outdoorPressure#AnimalActivity
 <https://intforout.github.io/outdoorPressure#AnimalActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -272,6 +273,10 @@
 <https://intforout.github.io/outdoorPressure#AnimalTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Track> .
 <https://intforout.github.io/outdoorPressure#AnimalTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."@en .
 <https://intforout.github.io/outdoorPressure#AnimalTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr .
+# 
+# https://intforout.github.io/outdoorPressure#Bois
+<https://intforout.github.io/outdoorPressure#Bois> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#Bois> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 # 
 # https://intforout.github.io/outdoorPressure#Cycling
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -287,6 +292,7 @@
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing."@en .
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#label> "Encountering zone"@en .
+<https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de rencontre"@en .
 # 
 # https://intforout.github.io/outdoorPressure#FastHiking
 <https://intforout.github.io/outdoorPressure#FastHiking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -331,6 +337,13 @@
 <https://intforout.github.io/outdoorPressure#LivingCreature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#LivingCreature> <http://www.w3.org/2000/01/rdf-schema#comment> "Living creature, animal or human" .
 # 
+# https://intforout.github.io/outdoorPressure#MassifMontagneux
+<https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/2000/01/rdf-schema#comment> "une montagne ou un massif de manière globale et non un sommet en particulier"@fr .
+<https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/2000/01/rdf-schema#label> "Massif montagneux"@fr .
+<https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/2000/01/rdf-schema#label> "Mountain Massif"@en .
+# 
 # https://intforout.github.io/outdoorPressure#MergedAccurateTrack
 <https://intforout.github.io/outdoorPressure#MergedAccurateTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#MergedAccurateTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#MergedTrack> .
@@ -356,6 +369,8 @@
 # https://intforout.github.io/outdoorPressure#PlandEau
 <https://intforout.github.io/outdoorPressure#PlandEau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#PlandEau> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#PlandEau> <http://www.w3.org/2000/01/rdf-schema#label> "Plan d'eau"@fr .
+<https://intforout.github.io/outdoorPressure#PlandEau> <http://www.w3.org/2000/01/rdf-schema#label> "Water Body"@en .
 # 
 # https://intforout.github.io/outdoorPressure#Population
 <https://intforout.github.io/outdoorPressure#Population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -365,12 +380,6 @@
 # https://intforout.github.io/outdoorPressure#PopulationFootprint
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-# 
-# https://intforout.github.io/outdoorPressure#ReservesNaturelles
-<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.." .
-<https://intforout.github.io/outdoorPressure#ReservesNaturelles> <http://www.w3.org/2000/01/rdf-schema#label> "Réserves naturelles" .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -406,10 +415,10 @@
 # 
 # https://intforout.github.io/outdoorPressure#WildlifeQuietArea
 <https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#SensitiveArea> .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 <https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Le terme « zone de quiétude » définit un territoire, volontairement aménagé ou réglementé, qui vise à limiter les dérangements humains sur la faune sauvage. Ces zones offrent un refuge aux espèces sensibles, notamment en période critique comme la reproduction, l’hivernage ou l’élevage des jeunes. En réduisant les perturbations liées aux activités humaines (promenades, sports de nature, circulation…), elles favorisent le maintien de comportements naturels et contribuent à la préservation de la biodiversité. Cependant, des sentiers spécialement balisés sont ouverts au public durant ces période et ont été étudiés pour limiter le dérangement et permettent ainsi de concilier les activités de loisirs et la préservation de la faune."@fr .
-<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#label> "wildlife quiet area"@en .
-<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#label> "zone de quiétude"@fr .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#label> "Wildlife Quiet Area"@en .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de quiétude"@fr .
 # 
 # 
 # 
@@ -505,7 +514,7 @@
 # 
 # https://intforout.github.io/outdoorPressure#BoisVincennes
 <https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Bois> .
 <https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/2000/01/rdf-schema#label> "Test area located in the Bois de Vincennes"@en .
 <https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de test dans le Bois de Vincennes"@fr .
 # 
@@ -715,8 +724,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#MassifDesBauges
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#ReservesNaturelles> .
-<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Massif des Bauges"@fr .
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie."@fr .
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Massif des Bauges"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#MergedTrack
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -820,7 +830,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://purl.org/dc/terms/issued> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://purl.org/dc/terms/language> "fr-FR" .
 <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
-<https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#parcdesbauges> .
+<https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> .
 <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of POIs issued from Parcdesbauges.com."@en .
 <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Parcdesbauges.com - POI"@fr .
 # 
@@ -831,7 +841,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://purl.org/dc/terms/issued> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://purl.org/dc/terms/language> "fr-FR" .
 <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
-<https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#parcdesbauges> .
+<https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> .
 <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of treks issued from Parcdesbauges.com."@en .
 <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Parcdesbauges.com - trek"@fr .
 # 
@@ -842,15 +852,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://purl.org/dc/terms/issued> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://purl.org/dc/terms/language> "fr-FR" .
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
-<https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#parcdesbauges> .
+<https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> .
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of sensitive area issued from Parcdesbauges.com."@en .
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Parcdesbauges.com - sensitivearea"@fr .
-# 
-# https://intforout.github.io/outdoorPressure#PNRDesBauges
-<https://intforout.github.io/outdoorPressure#PNRDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#PNRDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
-<https://intforout.github.io/outdoorPressure#PNRDesBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Le parc naturel régional du Massif des Bauges est une aire protégée"@fr .
-<https://intforout.github.io/outdoorPressure#PNRDesBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Parc naturel régional du Massif des Bauges" .
 # 
 # https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -891,9 +895,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#RNCFSBauges
 <https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#AireProtegee> .
 <https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%)."@fr .
-<https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/2000/01/rdf-schema#label> "La Réserve nationale de chasse et de faune sauvage des Bauges" .
+<https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Réserve nationale de chasse et de faune sauvage des Bauges" .
 # 
 # https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025
 <https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1052,7 +1056,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc
 <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
 <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/2000/01/rdf-schema#label> "Massif du Mont Blanc, côté France" .
 # 
 # https://intforout.github.io/outdoorPressure#aloison
@@ -1091,7 +1095,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#servesDataset> <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> .
 <https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#servesDataset> <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> .
 <https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#parcdesbauges> .
+<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#MassifDesBauges> .
 <https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/2000/01/rdf-schema#comment> "L'API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données."@fr .
 <https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/2000/01/rdf-schema#label> "API du PNR Massif des Bauges"@en .
 # 
@@ -1139,6 +1143,12 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#lpeseux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
 <https://intforout.github.io/outdoorPressure#lpeseux> <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 # 
+# https://intforout.github.io/outdoorPressure#maisonparcdesbauges
+<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
+<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://xmlns.com/foaf/0.1/name> "Maison du Parc Naturel Régional du Massif des Bauges" .
+# 
 # https://intforout.github.io/outdoorPressure#marchandetal-rdata
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -1166,12 +1176,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/2000/01/rdf-schema#comment> "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en .
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/2000/01/rdf-schema#label> "OutdoorVision Catalog"@en .
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://xmlns.com/foaf/0.1/homePage> "https://outdoorvision.fr/" .
-# 
-# https://intforout.github.io/outdoorPressure#parcdesbauges
-<https://intforout.github.io/outdoorPressure#parcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#parcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
-<https://intforout.github.io/outdoorPressure#parcdesbauges> <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
-<https://intforout.github.io/outdoorPressure#parcdesbauges> <http://xmlns.com/foaf/0.1/name> "Parc Naturel Régional du Massif des Bauges" .
 # 
 # https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson
 <https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
