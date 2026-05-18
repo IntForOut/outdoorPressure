@@ -228,8 +228,7 @@
 # https://intforout.github.io/outdoorPressure#hasProfile
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/source> .
-<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Profilage> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 # 
 # https://intforout.github.io/outdoorPressure#hasSTFootprint
@@ -250,8 +249,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/terms/source
 # 
 # https://intforout.github.io/outdoorPressure#Activity
 <https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -386,6 +383,8 @@
 # 
 # https://intforout.github.io/outdoorPressure#Profilage
 <https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical reports concerning dataset or software"@en .
+<https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"@en .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

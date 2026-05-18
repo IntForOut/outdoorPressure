@@ -285,7 +285,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  https://intforout.github.io/outdoorPressure#hasProfile
 :hasProfile rdf:type owl:ObjectProperty ;
             rdfs:domain <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-            rdfs:range <http://purl.org/dc/terms/source> ;
+            rdfs:range :Profilage ;
             rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 
 
@@ -304,10 +304,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://purl.org/dc/terms/source
-<http://purl.org/dc/terms/source> rdf:type owl:Class .
-
 
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
@@ -470,7 +466,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 
 ###  https://intforout.github.io/outdoorPressure#Profilage
-:Profilage rdf:type owl:Class .
+:Profilage rdf:type owl:Class ;
+           rdf:label "Technical reports concerning dataset or software"@en ;
+           rdfs:comment "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
