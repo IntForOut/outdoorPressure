@@ -1178,7 +1178,7 @@
         <mxCell id="DAXzIRMGTy3tekobJNK2-47" parent="DAXzIRMGTy3tekobJNK2-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;DCAT&lt;/div&gt;&lt;div&gt;PROV&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;SOSA&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;GUF&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="70.31" x="-2560" y="-721.04" as="geometry" />
         </mxCell>
-        <mxCell id="DAXzIRMGTy3tekobJNK2-48" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
+        <mxCell id="DAXzIRMGTy3tekobJNK2-48" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="-2052" y="-600" as="geometry" />
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-49" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-48" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="DAXzIRMGTy3tekobJNK2-17">
@@ -1542,8 +1542,8 @@
             <mxPoint x="-10" y="29" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="R59-Vf4MuanBq9-9EarK-0" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Profilage&lt;/b&gt;" vertex="1">
-          <mxGeometry height="50.16" width="77" x="-1360" y="-670" as="geometry" />
+        <mxCell id="R59-Vf4MuanBq9-9EarK-0" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Data Profiling Report&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="110" x="-1360" y="-670" as="geometry" />
         </mxCell>
         <mxCell id="R59-Vf4MuanBq9-9EarK-1" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-57" style="edgeStyle=none;html=1;entryX=0.039;entryY=0.399;entryDx=0;entryDy=0;rounded=0;curved=1;dashed=1;entryPerimeter=0;exitX=0.355;exitY=0.053;exitDx=0;exitDy=0;exitPerimeter=0;" target="R59-Vf4MuanBq9-9EarK-0">
           <mxGeometry relative="1" as="geometry">
