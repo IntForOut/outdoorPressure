@@ -2175,7 +2175,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="nZIgAWXz0_lhZ2ALVbUF" name="Fig 2 - Step 2 (User Feedback)">
-    <mxGraphModel dx="1721" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1540" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2408,6 +2408,20 @@
         </mxCell>
         <mxCell id="vOEZxgTUSBLAmS5_oJPY-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=0;" value="" vertex="1">
           <mxGeometry height="20" width="29.5" x="663.5" y="1228" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrPbcnVe0Aaep5w-B47-1" edge="1" parent="1" source="vOEZxgTUSBLAmS5_oJPY-51" style="endArrow=classic;html=1;rounded=0;fontSize=16;curved=1;exitX=0.649;exitY=0.937;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.093;entryY=0.08;entryDx=0;entryDy=0;entryPerimeter=0;" target="vOEZxgTUSBLAmS5_oJPY-42" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1150" />
+            </Array>
+            <mxPoint x="1063" y="1260" as="sourcePoint" />
+            <mxPoint x="1044" y="1459" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nZrPbcnVe0Aaep5w-B47-2" connectable="0" parent="nZrPbcnVe0Aaep5w-B47-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" value="&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;represents&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3349" y="-2" as="geometry">
+            <mxPoint x="25" y="29" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
