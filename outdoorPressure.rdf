@@ -1290,6 +1290,17 @@
         <rdfs:comment xml:lang="fr">Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie.</rdfs:comment>
         <rdfs:label xml:lang="fr">Massif des Bauges</rdfs:label>
     </owl:NamedIndividual>
+
+
+    <!-- https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#MassifMontagneux"/>
+        <rdfs:comment xml:lang="fr">Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Massif du Mont-Blanc</rdfs:label>
+        <geo:sfContains rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"/>
+    </owl:NamedIndividual>
+    
     
 
 
@@ -1751,6 +1762,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#MassifMontagneux"/>
         <rdfs:label>Massif du Mont Blanc, côté France</rdfs:label>
+        <geo:sfWithin rdf:resource="https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc"/>
     </owl:NamedIndividual>
     
 
