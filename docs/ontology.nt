@@ -228,7 +228,7 @@
 # https://intforout.github.io/outdoorPressure#hasProfile
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Profilage> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#DataProfilingReport> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 # 
 # https://intforout.github.io/outdoorPressure#hasSTFootprint
@@ -287,6 +287,11 @@
 # https://intforout.github.io/outdoorPressure#Cycling
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanActivity> .
+# 
+# https://intforout.github.io/outdoorPressure#DataProfilingReport
+<https://intforout.github.io/outdoorPressure#DataProfilingReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#DataProfilingReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical reports concerning dataset or software"@en .
+<https://intforout.github.io/outdoorPressure#DataProfilingReport> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"@en .
 # 
 # https://intforout.github.io/outdoorPressure#EncounteringZone
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -350,6 +355,8 @@
 # https://intforout.github.io/outdoorPressure#MergedTrack
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#Track> .
+<https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en .
+<https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
 # 
 # https://intforout.github.io/outdoorPressure#NamedRoute
 <https://intforout.github.io/outdoorPressure#NamedRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -380,11 +387,6 @@
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#comment> "The population footprint is the trajectory aggregated of a population. More concretely, it is a network defined by:\n        • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented\n        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."@en .
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#label> "Empreinte d'une population"@fr .
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#label> "Population Footprint"@en .
-# 
-# https://intforout.github.io/outdoorPressure#Profilage
-<https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical reports concerning dataset or software"@en .
-<https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"@en .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -599,11 +601,11 @@
 <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#PopulationFootprint> .
 <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <https://intforout.github.io/outdoorPressure#affords> <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> .
-<https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> <https://intforout.github.io/outdoorPressure#hasSTFootprint> <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> .
 # 
 # https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes
 <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
+<https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> <https://intforout.github.io/outdoorPressure#hasSTFootprint> <https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> .
 # 
 # https://intforout.github.io/outdoorPressure#HikingInLesBauges
 <https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -735,9 +737,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.opengis.net/ont/geosparql#sfContains> <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> .
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/2000/01/rdf-schema#comment> "Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres."@fr .
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/2000/01/rdf-schema#label> "Massif du Mont-Blanc"@fr .
-# 
-# https://intforout.github.io/outdoorPressure#MergedTrack
-<https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -878,14 +877,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Profilage> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#DataProfilingReport> .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/dc/terms/creator> "ANaciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Rapport de profilage des données de thèse Kerouanton en PDF"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Profilage> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#DataProfilingReport> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://purl.org/dc/terms/creator> "ANaciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf" .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Rapport de profilage du logiciel DeepFaune"@fr .
@@ -1043,7 +1042,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
-<https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#BoisVincennes> .
+<https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/2000/01/rdf-schema#comment> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/2000/01/rdf-schema#label> "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en .
@@ -1257,17 +1256,5 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://www.refuges.info/api/
 <https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en .
-<https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
