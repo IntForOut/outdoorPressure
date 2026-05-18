@@ -472,7 +472,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#PopulationFootprint
 :PopulationFootprint rdf:type owl:Class ;
-                     rdfs:subClassOf :LandEntity .
+                     rdfs:subClassOf :LandEntity ;
+                     rdfs:comment """The population footprint is the aggregation of the trajectories of a population. More concretely, it is a network defined by:
+        • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented
+        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."""@en ;
+                     rdfs:label "Empreinte d'une population"@fr ,
+                                "Population Footprint"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
