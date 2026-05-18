@@ -1781,7 +1781,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#altituderando">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://www.altituderando.com"/>
-        <foaf:name>Altituderando</foaf:name>
+        <rdf:label xml:lang="fr">Altituderando</rdf:label>
     </owl:NamedIndividual>
     
 
@@ -1875,7 +1875,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#camptocamp">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://www.camptocamp.org/"/>
-        <foaf:name>Camptocamp Association</foaf:name>
+        <rdf:label xml:lang="fr">Camptocamp Association</rdf:label>
     </owl:NamedIndividual>
     
 
@@ -1885,7 +1885,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#cirkwi">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://www.cirkwi.com/"/>
-        <foaf:name>Cirkwi</foaf:name>
+        <rdf:label xml:lang="fr">Cirkwi</rdf:label>
     </owl:NamedIndividual>
     
 
@@ -1924,7 +1924,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#openstreetmap">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://www.openstreetmap.org"/>
-        <foaf:name>OpenStreetMap (OSM)</foaf:name>
+        <rdf:label xml:lang="fr">OpenStreetMap (OSM)</rdf:label>
     </owl:NamedIndividual>
     
 
@@ -1948,7 +1948,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#maisonparcdesbauges">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://parcdesbauges.com"/>
-        <foaf:name>Maison du Parc Naturel Régional du Massif des Bauges</foaf:name>
+        <rdf:label xml:lang="fr">Maison du Parc Naturel Régional du Massif des Bauges</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2016,7 +2016,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#refugesinfo">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://www.refuges.info/"/>
-        <foaf:name>Refuges.info</foaf:name>
+        <rdf:label xml:lang="fr">Refuges.info</rdf:label>
     </owl:NamedIndividual>
     
 
@@ -2036,7 +2036,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#visorando">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://www.visorando.com/"/>
-        <foaf:name>Visorando</foaf:name>
+        <rdf:label xml:lang="fr">Visorando</rdf:label>
     </owl:NamedIndividual>
     
 
