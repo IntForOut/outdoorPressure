@@ -105,6 +105,9 @@
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#label
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2000/01/rdf-schema#description
 <http://www.w3.org/2000/01/rdf-schema#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -517,12 +520,6 @@
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe=Tronçon de route, Nature=Sentier"@fr .
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”."@en .
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en .
-# 
-# https://intforout.github.io/outdoorPressure#BoisVincennes
-<https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Bois> .
-<https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/2000/01/rdf-schema#label> "Test area located in the Bois de Vincennes"@en .
-<https://intforout.github.io/outdoorPressure#BoisVincennes> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de test dans le Bois de Vincennes"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025
 <https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1007,6 +1004,12 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://purl.org/dc/elements/1.1/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
 <https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://www.w3.org/2000/01/rdf-schema#label> "Strava Bauges 2014" .
 # 
+# https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes
+<https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Bois> .
+<https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> <http://www.w3.org/2000/01/rdf-schema#label> "Test area located in the Bois de Vincennes"@en .
+<https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> <http://www.w3.org/2000/01/rdf-schema#label> "Zone de test dans le Bois de Vincennes"@fr .
+# 
 # https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Observation> .
@@ -1081,8 +1084,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#altituderando
 <https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Altituderando"@fr .
 <https://intforout.github.io/outdoorPressure#altituderando> <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> .
-<https://intforout.github.io/outdoorPressure#altituderando> <http://xmlns.com/foaf/0.1/name> "Altituderando" .
 # 
 # https://intforout.github.io/outdoorPressure#anaciri
 <https://intforout.github.io/outdoorPressure#anaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1143,14 +1146,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#camptocamp
 <https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Camptocamp Association"@fr .
 <https://intforout.github.io/outdoorPressure#camptocamp> <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
-<https://intforout.github.io/outdoorPressure#camptocamp> <http://xmlns.com/foaf/0.1/name> "Camptocamp Association" .
 # 
 # https://intforout.github.io/outdoorPressure#cirkwi
 <https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Cirkwi"@fr .
 <https://intforout.github.io/outdoorPressure#cirkwi> <http://xmlns.com/foaf/0.1/homePage> <https://www.cirkwi.com/> .
-<https://intforout.github.io/outdoorPressure#cirkwi> <http://xmlns.com/foaf/0.1/name> "Cirkwi" .
 # 
 # https://intforout.github.io/outdoorPressure#lpeseux
 <https://intforout.github.io/outdoorPressure#lpeseux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1160,8 +1163,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#maisonparcdesbauges
 <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Maison du Parc Naturel Régional du Massif des Bauges"@fr .
 <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
-<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://xmlns.com/foaf/0.1/name> "Maison du Parc Naturel Régional du Massif des Bauges" .
 # 
 # https://intforout.github.io/outdoorPressure#marchandetal-rdata
 <https://intforout.github.io/outdoorPressure#marchandetal-rdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1178,8 +1181,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#openstreetmap
 <https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "OpenStreetMap (OSM)"@fr .
 <https://intforout.github.io/outdoorPressure#openstreetmap> <http://xmlns.com/foaf/0.1/homePage> <https://www.openstreetmap.org> .
-<https://intforout.github.io/outdoorPressure#openstreetmap> <http://xmlns.com/foaf/0.1/name> "OpenStreetMap (OSM)" .
 # 
 # https://intforout.github.io/outdoorPressure#outdoorvision
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1228,8 +1231,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#refugesinfo
 <https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Refuges.info"@fr .
 <https://intforout.github.io/outdoorPressure#refugesinfo> <http://xmlns.com/foaf/0.1/homePage> <https://www.refuges.info/> .
-<https://intforout.github.io/outdoorPressure#refugesinfo> <http://xmlns.com/foaf/0.1/name> "Refuges.info" .
 # 
 # https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson
 <https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1240,8 +1243,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#visorando
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Visorando"@fr .
 <https://intforout.github.io/outdoorPressure#visorando> <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
-<https://intforout.github.io/outdoorPressure#visorando> <http://xmlns.com/foaf/0.1/name> "Visorando" .
 # 
 # https://www.refuges.info/api/
 <https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

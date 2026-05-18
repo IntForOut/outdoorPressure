@@ -139,6 +139,10 @@
 rdf:comment rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#label
+rdf:label rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2000/01/rdf-schema#description
 rdfs:description rdf:type owl:AnnotationProperty .
 
@@ -634,13 +638,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                           rdfs:comment "Classe=Tronçon de route, Nature=Sentier"@fr ,
                                        "This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”."@en ;
                           rdfs:label "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en .
-
-
-###  https://intforout.github.io/outdoorPressure#BoisVincennes
-:BoisVincennes rdf:type owl:NamedIndividual ,
-                        :Bois ;
-               rdfs:label "Test area located in the Bois de Vincennes"@en ,
-                          "Zone de test dans le Bois de Vincennes"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025
@@ -1185,6 +1182,13 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                         rdfs:label "Strava Bauges 2014" .
 
 
+###  https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes
+:TestAreaBoisVincennes rdf:type owl:NamedIndividual ,
+                                :Bois ;
+                       rdfs:label "Test area located in the Bois de Vincennes"@en ,
+                                  "Zone de test dans le Bois de Vincennes"@fr .
+
+
 ###  https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024
 :TopometricSurveyGroundTruthPathVincennes2024 rdf:type owl:NamedIndividual ,
                                                        :Observation ;
@@ -1267,8 +1271,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#altituderando
 :altituderando rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/ns/prov#Organization> ;
-               <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> ;
-               <http://xmlns.com/foaf/0.1/name> "Altituderando" .
+               rdf:label "Altituderando"@fr ;
+               <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> .
 
 
 ###  https://intforout.github.io/outdoorPressure#anaciri
@@ -1337,15 +1341,15 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#camptocamp
 :camptocamp rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/prov#Organization> ;
-            <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> ;
-            <http://xmlns.com/foaf/0.1/name> "Camptocamp Association" .
+            rdf:label "Camptocamp Association"@fr ;
+            <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#cirkwi
 :cirkwi rdf:type owl:NamedIndividual ,
                  <http://www.w3.org/ns/prov#Organization> ;
-        <http://xmlns.com/foaf/0.1/homePage> <https://www.cirkwi.com/> ;
-        <http://xmlns.com/foaf/0.1/name> "Cirkwi" .
+        rdf:label "Cirkwi"@fr ;
+        <http://xmlns.com/foaf/0.1/homePage> <https://www.cirkwi.com/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#lpeseux
@@ -1357,8 +1361,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#maisonparcdesbauges
 :maisonparcdesbauges rdf:type owl:NamedIndividual ,
                               <http://www.w3.org/ns/prov#Organization> ;
-                     <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> ;
-                     <http://xmlns.com/foaf/0.1/name> "Maison du Parc Naturel Régional du Massif des Bauges" .
+                     rdf:label "Maison du Parc Naturel Régional du Massif des Bauges"@fr ;
+                     <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
 
 
 ###  https://intforout.github.io/outdoorPressure#marchandetal-rdata
@@ -1378,8 +1382,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#openstreetmap
 :openstreetmap rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/ns/prov#Organization> ;
-               <http://xmlns.com/foaf/0.1/homePage> <https://www.openstreetmap.org> ;
-               <http://xmlns.com/foaf/0.1/name> "OpenStreetMap (OSM)" .
+               rdf:label "OpenStreetMap (OSM)"@fr ;
+               <http://xmlns.com/foaf/0.1/homePage> <https://www.openstreetmap.org> .
 
 
 ###  https://intforout.github.io/outdoorPressure#outdoorvision
@@ -1436,8 +1440,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#refugesinfo
 :refugesinfo rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/prov#Organization> ;
-             <http://xmlns.com/foaf/0.1/homePage> <https://www.refuges.info/> ;
-             <http://xmlns.com/foaf/0.1/name> "Refuges.info" .
+             rdf:label "Refuges.info"@fr ;
+             <http://xmlns.com/foaf/0.1/homePage> <https://www.refuges.info/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson
@@ -1450,8 +1454,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#visorando
 :visorando rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/prov#Organization> ;
-           <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> ;
-           <http://xmlns.com/foaf/0.1/name> "Visorando" .
+           rdf:label "Visorando"@fr ;
+           <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
 
 
 ###  https://www.refuges.info/api/
