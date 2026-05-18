@@ -461,7 +461,7 @@
 
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasProfile">
         <rdfs:domain rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/source"/>
+        <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#Profilage"/>
         <rdfs:comment xml:lang="en">Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -732,7 +732,10 @@
 
     <!-- https://intforout.github.io/outdoorPressure#Profilage -->
 
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Profilage"/>
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Profilage">
+        <rdfs:comment xml:lang="en">A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document</rdfs:comment>
+        <rdf:label xml:lang="en">Technical reports concerning dataset or software</rdf:label>
+    </owl:Class>
     
 
 
