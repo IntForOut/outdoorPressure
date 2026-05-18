@@ -389,6 +389,9 @@
 # https://intforout.github.io/outdoorPressure#PopulationFootprint
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#comment> "The population footprint is the aggregation of the trajectories of a population. More concretely, it is a network defined by:\n        • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented\n        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."@en .
+<https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#label> "Empreinte d'une population"@fr .
+<https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#label> "Population Footprint"@en .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
