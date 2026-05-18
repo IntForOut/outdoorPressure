@@ -960,7 +960,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="schemas article" id="2la9OYnSZ4h5q63rvIW7">
-    <mxGraphModel dx="4539" dy="1422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="4677" dy="1422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="DAXzIRMGTy3tekobJNK2-0" />
         <mxCell id="DAXzIRMGTy3tekobJNK2-1" parent="DAXzIRMGTy3tekobJNK2-0" />
@@ -988,13 +988,13 @@
         <mxCell id="DAXzIRMGTy3tekobJNK2-7" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-9" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;curved=1;dashed=1;" target="DAXzIRMGTy3tekobJNK2-20">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-1792" y="-490" />
+              <mxPoint x="-1780" y="-440" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-8" connectable="0" parent="DAXzIRMGTy3tekobJNK2-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;fontColor=#FF0000;" value="&lt;font style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;represents&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="0.2966" y="13" as="geometry">
-            <mxPoint x="40" y="-26" as="offset" />
+            <mxPoint x="70" y="-47" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-9" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;" value="&lt;b&gt;Catalogued &lt;br&gt;resource&lt;/b&gt;" vertex="1">
@@ -1037,7 +1037,7 @@
         <mxCell id="DAXzIRMGTy3tekobJNK2-17" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;LandEntity&lt;/b&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="-2352.4700000000003" y="-580" as="geometry" />
         </mxCell>
-        <mxCell id="DAXzIRMGTy3tekobJNK2-18" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-20" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" target="DAXzIRMGTy3tekobJNK2-48">
+        <mxCell id="DAXzIRMGTy3tekobJNK2-18" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-20" style="edgeStyle=none;html=1;rounded=0;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" target="DAXzIRMGTy3tekobJNK2-48">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-2082" y="-480" />
@@ -1069,9 +1069,6 @@
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-24" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;" value="&lt;b&gt;Dataset&lt;/b&gt;" vertex="1">
           <mxGeometry height="53.92" width="120" x="-1517" y="-332" as="geometry" />
-        </mxCell>
-        <mxCell id="DAXzIRMGTy3tekobJNK2-25" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Living Creature&lt;/b&gt;" vertex="1">
-          <mxGeometry height="65.08" width="120" x="-1952" y="-590" as="geometry" />
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-26" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-28" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;endArrow=block;endFill=0;" target="DAXzIRMGTy3tekobJNK2-9">
           <mxGeometry relative="1" as="geometry">
@@ -1181,9 +1178,9 @@
           <mxGeometry height="30" width="70.31" x="-2560" y="-721.04" as="geometry" />
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-48" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Population&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="-2132.5" y="-590" as="geometry" />
+          <mxGeometry height="70" width="120" x="-2052" y="-600" as="geometry" />
         </mxCell>
-        <mxCell id="DAXzIRMGTy3tekobJNK2-49" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-48" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="DAXzIRMGTy3tekobJNK2-17">
+        <mxCell id="DAXzIRMGTy3tekobJNK2-49" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-48" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0.038;exitY=0.337;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" target="DAXzIRMGTy3tekobJNK2-17">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-2162" y="-580" />
@@ -1197,20 +1194,6 @@
             <mxPoint x="-15" y="33" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DAXzIRMGTy3tekobJNK2-51" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-48" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0.958;exitY=0.314;exitDx=0;exitDy=0;exitPerimeter=0;">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-1972" y="-580" />
-            </Array>
-            <mxPoint x="-2002" y="-550" as="sourcePoint" />
-            <mxPoint x="-1952" y="-560" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DAXzIRMGTy3tekobJNK2-52" connectable="0" parent="DAXzIRMGTy3tekobJNK2-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="population of" vertex="1">
-          <mxGeometry relative="1" x="0.0413" y="11" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-53" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-20" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.72;exitY=0.066;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
@@ -1222,7 +1205,7 @@
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-54" connectable="0" parent="DAXzIRMGTy3tekobJNK2-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;at same &lt;font&gt;time&lt;/font&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="0.6855" y="2" as="geometry">
-            <mxPoint x="30" y="-17" as="offset" />
+            <mxPoint x="43" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-55" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-14" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;dashed=1;" target="DAXzIRMGTy3tekobJNK2-24" value="">
@@ -1240,7 +1223,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-57" parent="DAXzIRMGTy3tekobJNK2-1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;User Feedback&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70.16" width="130" x="-1412" y="-629" as="geometry" />
+          <mxGeometry height="70.16" width="130" x="-1402.31" y="-590.51" as="geometry" />
         </mxCell>
         <mxCell id="DAXzIRMGTy3tekobJNK2-58" parent="DAXzIRMGTy3tekobJNK2-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;arcSize=16;fontSize=15;" value="" vertex="1">
           <mxGeometry height="400" width="620" x="-3380" y="-780" as="geometry" />
@@ -1545,20 +1528,6 @@
         <mxCell id="DAXzIRMGTy3tekobJNK2-115" connectable="0" parent="DAXzIRMGTy3tekobJNK2-114" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;hasSTFootprint&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="0.1254" y="2" as="geometry">
             <mxPoint x="15" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Lz2mLMkumUkyHza2jnge-0" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-25" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.668;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;" target="DAXzIRMGTy3tekobJNK2-20">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-1884" y="-520" />
-            </Array>
-            <mxPoint x="-1930" y="-508" as="sourcePoint" />
-            <mxPoint x="-1864" y="-500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Lz2mLMkumUkyHza2jnge-1" connectable="0" parent="Lz2mLMkumUkyHza2jnge-0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="participate" vertex="1">
-          <mxGeometry relative="1" x="0.0413" y="11" as="geometry">
-            <mxPoint x="44" y="-15" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3ph6ARMNkyzLZxneS6iv-0" edge="1" parent="DAXzIRMGTy3tekobJNK2-1" source="DAXzIRMGTy3tekobJNK2-20" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=0.007;exitY=0.447;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.572;entryY=0.966;entryDx=0;entryDy=0;entryPerimeter=0;" target="DAXzIRMGTy3tekobJNK2-17" value="">
