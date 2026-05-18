@@ -461,7 +461,7 @@
 
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasProfile">
         <rdfs:domain rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#Profilage"/>
+        <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#DataProfilingReport"/>
         <rdfs:comment xml:lang="en">Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -730,9 +730,9 @@
 
 
 
-    <!-- https://intforout.github.io/outdoorPressure#Profilage -->
+    <!-- https://intforout.github.io/outdoorPressure#DataProfilingReport -->
 
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Profilage">
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#DataProfilingReport">
         <rdfs:comment xml:lang="en">A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document</rdfs:comment>
         <rdf:label xml:lang="en">Technical reports concerning dataset or software</rdf:label>
     </owl:Class>
@@ -1071,7 +1071,6 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#PopulationFootprint"/>
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes"/>
-        <outdoorPressure:hasSTFootprint rdf:resource="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"/>
     </owl:NamedIndividual>
     
 
@@ -1080,6 +1079,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+        <outdoorPressure:hasSTFootprint rdf:resource="https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes"/>
     </owl:NamedIndividual>
     
 
@@ -1280,12 +1280,6 @@
         <rdfs:comment xml:lang="fr">Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l&apos;Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d&apos;Europe occidentale qui culmine à 4 806 mètres.</rdfs:comment>
         <rdfs:label xml:lang="fr">Massif du Mont-Blanc</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#MergedTrack -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MergedTrack"/>
     
 
 
@@ -1500,7 +1494,7 @@
     <!-- https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Profilage"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#DataProfilingReport"/>
         <terms:source>https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf</terms:source>
         <terms:creator>ANaciri</terms:creator>
         <rdf:label xml:lang="fr">Rapport de profilage du logiciel DeepFaune</rdf:label>
@@ -1523,7 +1517,7 @@
     <!-- https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Profilage"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#DataProfilingReport"/>
         <terms:source>https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf</terms:source>
         <terms:creator>ANaciri</terms:creator>
         <rdf:label xml:lang="fr">Rapport de profilage des données de thèse Kerouanton en PDF</rdf:label>
@@ -1721,7 +1715,7 @@
         <terms:language>English</terms:language>
         <terms:license>Licence Ouverte v2.0 (Etalab)</terms:license>
         <terms:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
-        <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#BoisVincennes"/>
+        <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes"/>
         <datacite:relatedIdentifier>https://doi.org/10.57745/MOUSLS</datacite:relatedIdentifier>
         <rdfs:comment xml:lang="en">The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)</rdfs:comment>
         <rdfs:label xml:lang="en">Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)</rdfs:label>
