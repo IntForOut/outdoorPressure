@@ -227,8 +227,9 @@
 # 
 # https://intforout.github.io/outdoorPressure#hasProfile
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/source> .
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 # 
 # https://intforout.github.io/outdoorPressure#hasSTFootprint
@@ -250,11 +251,7 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/terms/URI
-<http://purl.org/dc/terms/URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://purl.org/dc/terms/source
-<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://intforout.github.io/outdoorPressure#Activity
 <https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -340,10 +337,6 @@
 <https://intforout.github.io/outdoorPressure#Landmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Landmark> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 # 
-# https://intforout.github.io/outdoorPressure#LivingCreature
-<https://intforout.github.io/outdoorPressure#LivingCreature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#LivingCreature> <http://www.w3.org/2000/01/rdf-schema#comment> "Living creature, animal or human" .
-# 
 # https://intforout.github.io/outdoorPressure#MassifMontagneux
 <https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#MassifMontagneux> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
@@ -390,6 +383,9 @@
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#comment> "The population footprint is the trajectory aggregated of a population. More concretely, it is a network defined by:\n        • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented\n        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."@en .
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#label> "Empreinte d'une population"@fr .
 <https://intforout.github.io/outdoorPressure#PopulationFootprint> <http://www.w3.org/2000/01/rdf-schema#label> "Population Footprint"@en .
+# 
+# https://intforout.github.io/outdoorPressure#Profilage
+<https://intforout.github.io/outdoorPressure#Profilage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://intforout.github.io/outdoorPressure#ResilientRoute
 <https://intforout.github.io/outdoorPressure#ResilientRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -869,10 +865,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of sensitive area issued from Parcdesbauges.com."@en .
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Parcdesbauges.com - sensitivearea"@fr .
 # 
-# https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton
-<https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/source> .
-# 
 # https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
@@ -885,18 +877,34 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
+# https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Profilage> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/dc/terms/creator> "ANaciri" .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Rapport de profilage des données de thèse Kerouanton en PDF"@fr .
+# 
+# https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Profilage> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://purl.org/dc/terms/creator> "ANaciri" .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf" .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Rapport de profilage du logiciel DeepFaune"@fr .
+# 
 # https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#DeepFaune> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <https://intforout.github.io/outdoorPressure#hasProfile> <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://purl.org/dc/terms/creator> "Abdessalam Naciri" .
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
-<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <https://intforout.github.io/outdoorPressure#hasProfile> <https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <https://intforout.github.io/outdoorPressure#hasProfile> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/dc/terms/creator> "ANaciri" .
-<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/2000/01/rdf-schema#comment> "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)" .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/2000/01/rdf-schema#comment> "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -284,7 +284,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#hasProfile
 :hasProfile rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+            rdfs:domain <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
             rdfs:range <http://purl.org/dc/terms/source> ;
             rdfs:comment "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 
@@ -304,10 +304,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://purl.org/dc/terms/URI
-<http://purl.org/dc/terms/URI> rdf:type owl:Class .
-
 
 ###  http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> rdf:type owl:Class .
@@ -414,11 +410,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           rdfs:subClassOf :LandEntity .
 
 
-###  https://intforout.github.io/outdoorPressure#LivingCreature
-:LivingCreature rdf:type owl:Class ;
-                rdfs:comment "Living creature, animal or human" .
-
-
 ###  https://intforout.github.io/outdoorPressure#MassifMontagneux
 :MassifMontagneux rdf:type owl:Class ;
                   rdfs:subClassOf :LandEntity ;
@@ -476,6 +467,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
         • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."""@en ;
                      rdfs:label "Empreinte d'une population"@fr ,
                                 "Population Footprint"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#Profilage
+:Profilage rdf:type owl:Class .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
@@ -1033,11 +1028,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                              rdfs:label "Parcdesbauges.com - sensitivearea"@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton
-:PdfDuProfilageDataPhDKerouanton rdf:type owl:NamedIndividual ,
-                                          <http://purl.org/dc/terms/source> .
-
-
 ###  https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
 :PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual ,
                                                   <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
@@ -1051,9 +1041,27 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                          <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
 
 
+###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
+:ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
+                                         :Profilage ;
+                                <http://purl.org/dc/terms/creator> "ANaciri" ;
+                                <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" ;
+                                rdf:label "Rapport de profilage des données de thèse Kerouanton en PDF"@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf
+:ProfilageDeepFaune.pdf rdf:type owl:NamedIndividual ,
+                                 :Profilage ;
+                        <http://purl.org/dc/terms/creator> "ANaciri" ;
+                        <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf" ;
+                        rdf:label "Rapport de profilage du logiciel DeepFaune"@fr .
+
+
 ###  https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri
 :ProfilageDeepFauneANaciri rdf:type owl:NamedIndividual ,
                                     <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                           <http://purl.org/www.umr-lastig.fr/geodata#target> :DeepFaune ;
+                           :hasProfile :ProfilageDeepFaune.pdf ;
                            <http://purl.org/dc/terms/creator> "Abdessalam Naciri" .
 
 
@@ -1061,9 +1069,9 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :ProfilageDonneesKerouantonANaciri rdf:type owl:NamedIndividual ,
                                             <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
                                    <http://purl.org/www.umr-lastig.fr/geodata#target> :KerouantonSurveyFieldCampaignTracksGNSS20142015 ;
-                                   :hasProfile :PdfDuProfilageDataPhDKerouanton ;
+                                   :hasProfile :ProfilageDataPhDKerouanton.pdf ;
                                    <http://purl.org/dc/terms/creator> "ANaciri" ;
-                                   rdfs:comment "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)" .
+                                   rdfs:comment "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService

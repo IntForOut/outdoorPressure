@@ -38,9 +38,6 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/URI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -998,12 +995,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#LivingCreature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Living creature, animal or human"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1366,12 +1357,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://purl.org/dc/terms/source"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#PlandEau",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1443,10 +1428,51 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Profilage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "ANaciri"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Rapport de profilage des données de thèse Kerouanton en PDF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Profilage"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "ANaciri"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Rapport de profilage du logiciel DeepFaune"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Profilage"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Abdessalam Naciri"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune"
+  } ],
+  "https://intforout.github.io/outdoorPressure#hasProfile" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri",
@@ -1458,10 +1484,11 @@
     "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
     "@value" : "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"
   } ],
   "https://intforout.github.io/outdoorPressure#hasProfile" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#PdfDuProfilageDataPhDKerouanton"
+    "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService",
@@ -2106,7 +2133,7 @@
     "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/dc/terms/source"
