@@ -510,16 +510,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#AireProtegee -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AireProtegee">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment xml:lang="fr">Une aire protégée (AP) (de l&apos;anglais protected area, PA) est, selon la définition de l&apos;Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d&apos;assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés »</rdfs:comment>
-        <rdfs:label xml:lang="fr">Aire protégée</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#AnimalActivity -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AnimalActivity">
@@ -536,6 +526,13 @@
         <rdfs:comment xml:lang="fr">La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini.</rdfs:comment>
     </owl:Class>
     
+
+
+    <!-- https://intforout.github.io/outdoorPressure#Bois -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Bois">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
 
 
     <!-- https://intforout.github.io/outdoorPressure#Cycling -->
@@ -561,6 +558,7 @@
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:comment xml:lang="en">Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
         <rdfs:label xml:lang="en">Encountering zone</rdfs:label>
+        <rdfs:label xml:lang="en">Zone de rencontre</rdfs:label>
     </owl:Class>
     
 
@@ -685,6 +683,8 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#PlandEau">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:label xml:lang="fr">Plan d'eau</rdfs:label>
+        <rdfs:label xml:lang="en">Water Body</rdfs:label>
     </owl:Class>
     
 
@@ -706,12 +706,13 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ReservesNaturelles -->
+    <!-- https://intforout.github.io/outdoorPressure#AireProtegee -->
 
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#ReservesNaturelles">
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AireProtegee">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment>Zone naturelle sensible où l&apos;environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d&apos;introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc..</rdfs:comment>
-        <rdfs:label>Réserves naturelles</rdfs:label>
+        <rdfs:comment xml:lang="fr">Une Aire Protégée est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés ». </rdfs:comment>
+        <rdfs:label xml:lang="fr">Aire Protégée</rdfs:label>
+        <rdfs:label xml:lang="en">Protected Area</rdfs:label>
     </owl:Class>
     
 
@@ -749,10 +750,21 @@
     <!-- https://intforout.github.io/outdoorPressure#WildlifeQuietArea -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#WildlifeQuietArea">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#SensitiveArea"/>
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:comment xml:lang="fr">Le terme « zone de quiétude » définit un territoire, volontairement aménagé ou réglementé, qui vise à limiter les dérangements humains sur la faune sauvage. Ces zones offrent un refuge aux espèces sensibles, notamment en période critique comme la reproduction, l’hivernage ou l’élevage des jeunes. En réduisant les perturbations liées aux activités humaines (promenades, sports de nature, circulation…), elles favorisent le maintien de comportements naturels et contribuent à la préservation de la biodiversité. Cependant, des sentiers spécialement balisés sont ouverts au public durant ces période et ont été étudiés pour limiter le dérangement et permettent ainsi de concilier les activités de loisirs et la préservation de la faune.</rdfs:comment>
-        <rdfs:label xml:lang="en">wildlife quiet area</rdfs:label>
-        <rdfs:label xml:lang="fr">zone de quiétude</rdfs:label>
+        <rdfs:label xml:lang="en">Wildlife Quiet Area</rdfs:label>
+        <rdfs:label xml:lang="fr">Zone de quiétude</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#MassifMontagneux -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#MassifMontagneux">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:comment xml:lang="fr">une montagne ou un massif de manière globale et non un sommet en particulier</rdfs:comment>
+        <rdfs:label xml:lang="en">Mountain Massif</rdfs:label>
+        <rdfs:label xml:lang="fr">Massif montagneux</rdfs:label>
     </owl:Class>
     
 
@@ -939,7 +951,7 @@
     <!-- https://intforout.github.io/outdoorPressure#BoisVincennes -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#BoisVincennes">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Bois"/>
         <rdfs:label xml:lang="en">Test area located in the Bois de Vincennes</rdfs:label>
         <rdfs:label xml:lang="fr">Zone de test dans le Bois de Vincennes</rdfs:label>
     </owl:NamedIndividual>
@@ -1274,8 +1286,9 @@
     <!-- https://intforout.github.io/outdoorPressure#MassifDesBauges -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MassifDesBauges">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#ReservesNaturelles"/>
-        <rdfs:comment xml:lang="fr">Massif des Bauges</rdfs:comment>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#MassifMontagneux"/>
+        <rdfs:comment xml:lang="fr">Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Massif des Bauges</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1427,7 +1440,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
+        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#maisonparcdesbauges"/>
         <rdfs:comment xml:lang="en">A set of POIs issued from Parcdesbauges.com.</rdfs:comment>
         <rdfs:label xml:lang="fr">Parcdesbauges.com - POI</rdfs:label>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson"/>
@@ -1442,7 +1455,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
+        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#maisonparcdesbauges"/>
         <rdfs:comment xml:lang="en">A set of treks issued from Parcdesbauges.com.</rdfs:comment>
         <rdfs:label xml:lang="fr">Parcdesbauges.com - trek</rdfs:label>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges-trek-geojson"/>
@@ -1457,7 +1470,7 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</terms:issued>
         <terms:language>fr-FR</terms:language>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
+        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#maisonparcdesbauges"/>
         <rdfs:comment xml:lang="en">A set of sensitive area issued from Parcdesbauges.com.</rdfs:comment>
         <rdfs:label xml:lang="fr">Parcdesbauges.com - sensitivearea</rdfs:label>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"/>
@@ -1465,13 +1478,7 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#PNRDesBauges -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRDesBauges">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-        <rdfs:comment xml:lang="fr">Le parc naturel régional du Massif des Bauges est une aire protégée</rdfs:comment>
-        <rdfs:label>Parc naturel régional du Massif des Bauges</rdfs:label>
-    </owl:NamedIndividual>
+    
     
 
 
@@ -1535,9 +1542,9 @@
     <!-- https://intforout.github.io/outdoorPressure#RNCFSBauges -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#RNCFSBauges">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#AireProtegee"/>
         <rdfs:comment xml:lang="fr">La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%).</rdfs:comment>
-        <rdfs:label>La Réserve nationale de chasse et de faune sauvage des Bauges</rdfs:label>
+        <rdfs:label>Réserve nationale de chasse et de faune sauvage des Bauges</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1742,7 +1749,7 @@
     <!-- https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#MassifMontagneux"/>
         <rdfs:label>Massif du Mont Blanc, côté France</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1797,7 +1804,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#api-parcdesbauges">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
         <terms:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#parcdesbauges"/>
+        <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#MassifDesBauges"/>
         <rdfs:comment xml:lang="fr">L&apos;API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données.</rdfs:comment>
         <rdfs:label xml:lang="en">API du PNR Massif des Bauges</rdfs:label>
         <dcat:accessURL rdf:resource="https://geotrek.parcdesbauges.com/api/v2/"/>
@@ -1924,12 +1931,12 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#parcdesbauges -->
+    <!-- https://intforout.github.io/outdoorPressure#maisonparcdesbauges -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#parcdesbauges">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#maisonparcdesbauges">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <foaf:homePage rdf:resource="https://parcdesbauges.com"/>
-        <foaf:name>Parc Naturel Régional du Massif des Bauges</foaf:name>
+        <foaf:name>Maison du Parc Naturel Régional du Massif des Bauges</foaf:name>
     </owl:NamedIndividual>
     
 
