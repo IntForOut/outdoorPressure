@@ -218,6 +218,12 @@
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1026,6 +1032,23 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
     "@value" : "Massif des Bauges"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.opengis.net/ont/geosparql#sfContains" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Massif du Mont-Blanc"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux",
@@ -1896,6 +1919,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.opengis.net/ont/geosparql#sfWithin" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
   } ],

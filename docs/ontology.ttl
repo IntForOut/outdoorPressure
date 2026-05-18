@@ -127,6 +127,14 @@
 <http://schema.org/address> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
 rdf:comment rdf:type owl:AnnotationProperty .
 
@@ -872,6 +880,14 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                  rdfs:label "Massif des Bauges"@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc
+:MassifDuMont-Blanc rdf:type owl:NamedIndividual ,
+                             :MassifMontagneux ;
+                    <http://www.opengis.net/ont/geosparql#sfContains> :ZoneEtudeMontBlanc ;
+                    rdfs:comment "Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres."@fr ;
+                    rdfs:label "Massif du Mont-Blanc"@fr .
+
+
 ###  https://intforout.github.io/outdoorPressure#MergedTrack
 :MergedTrack rdf:type owl:NamedIndividual .
 
@@ -1238,6 +1254,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc
 :ZoneEtudeMontBlanc rdf:type owl:NamedIndividual ,
                              :MassifMontagneux ;
+                    <http://www.opengis.net/ont/geosparql#sfWithin> :MassifDuMont-Blanc ;
                     rdfs:label "Massif du Mont Blanc, côté France" .
 
 

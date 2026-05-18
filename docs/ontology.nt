@@ -96,6 +96,12 @@
 # http://schema.org/address
 <http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -728,6 +734,13 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie."@fr .
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Massif des Bauges"@fr .
 # 
+# https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc
+<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
+<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.opengis.net/ont/geosparql#sfContains> <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> .
+<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/2000/01/rdf-schema#comment> "Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres."@fr .
+<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/2000/01/rdf-schema#label> "Massif du Mont-Blanc"@fr .
+# 
 # https://intforout.github.io/outdoorPressure#MergedTrack
 <https://intforout.github.io/outdoorPressure#MergedTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -1057,6 +1070,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc
 <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.opengis.net/ont/geosparql#sfWithin> <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> .
 <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/2000/01/rdf-schema#label> "Massif du Mont Blanc, côté France" .
 # 
 # https://intforout.github.io/outdoorPressure#aloison
