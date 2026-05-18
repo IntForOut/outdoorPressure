@@ -1057,7 +1057,6 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#PopulationFootprint"/>
         <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes"/>
-        <outdoorPressure:hasSTFootprint rdf:resource="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"/>
     </owl:NamedIndividual>
     
 
