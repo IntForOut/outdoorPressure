@@ -227,6 +227,9 @@
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -468,19 +471,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#BoisVincennes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Bois"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Test area located in the Bois de Vincennes"
-  }, {
-    "@language" : "fr",
-    "@value" : "Zone de test dans le Bois de Vincennes"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025",
@@ -1750,6 +1740,19 @@
     "@value" : "Strava Bauges 2014"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Bois"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Test area located in the Bois de Vincennes"
+  }, {
+    "@language" : "fr",
+    "@value" : "Zone de test dans le Bois de Vincennes"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -1950,11 +1953,12 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#altituderando",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Altituderando"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.altituderando.com"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Altituderando"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#anaciri",
@@ -2067,20 +2071,22 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#camptocamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Camptocamp Association"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.camptocamp.org/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Camptocamp Association"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#cirkwi",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Cirkwi"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.cirkwi.com/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Cirkwi"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#hasProfile",
@@ -2122,11 +2128,12 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#maisonparcdesbauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Maison du Parc Naturel Régional du Massif des Bauges"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://parcdesbauges.com"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Maison du Parc Naturel Régional du Massif des Bauges"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#marchandetal-rdata",
@@ -2151,11 +2158,12 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#openstreetmap",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "OpenStreetMap (OSM)"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.openstreetmap.org"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "OpenStreetMap (OSM)"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#outdoorvision",
@@ -2232,11 +2240,12 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Refuges.info"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.refuges.info/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Refuges.info"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson",
@@ -2250,11 +2259,12 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#visorando",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Visorando"
+  } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.visorando.com/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Visorando"
   } ]
 }, {
   "@id" : "https://www.refuges.info/api/",
