@@ -421,6 +421,10 @@
 # https://intforout.github.io/outdoorPressure#Trajectory
 <https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "Ligne décrite par un objet en mouvement"@fr .
+<https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "Path of a moving object"@en .
+<https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/2000/01/rdf-schema#label> "Trajectoire"@fr .
+<https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/2000/01/rdf-schema#label> "Trajectory"@en .
 # 
 # https://intforout.github.io/outdoorPressure#WildlifeQuietArea
 <https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -989,7 +993,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014> .
+<https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://www.w3.org/2000/01/rdf-schema#label> "Strava MontBlanc 2024" .
 # 

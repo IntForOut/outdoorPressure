@@ -510,7 +510,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#Trajectory
 :Trajectory rdf:type owl:Class ;
-            rdfs:subClassOf :LandEntity .
+            rdfs:subClassOf :LandEntity ;
+            rdfs:comment "Ligne décrite par un objet en mouvement"@fr ,
+                         "Path of a moving object"@en ;
+            rdfs:label "Trajectoire"@fr ,
+                       "Trajectory"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#WildlifeQuietArea
@@ -1164,7 +1168,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024
 :StravaMetroTracksMontBlanc2024 rdf:type owl:NamedIndividual ,
                                          <http://www.w3.org/ns/dcat#Dataset> ;
-                                <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2014 ;
+                                <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesMontBlanc2024 ;
                                 <http://purl.org/dc/terms/publisher> :Strava ;
                                 rdfs:label "Strava MontBlanc 2024" .
 

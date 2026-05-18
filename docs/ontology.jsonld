@@ -1736,7 +1736,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Strava"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Strava MontBlanc 2024"
@@ -1907,6 +1907,20 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Trajectory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Ligne décrite par un objet en mouvement"
+  }, {
+    "@language" : "en",
+    "@value" : "Path of a moving object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Trajectoire"
+  }, {
+    "@language" : "en",
+    "@value" : "Trajectory"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
