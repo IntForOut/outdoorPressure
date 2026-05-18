@@ -387,7 +387,9 @@
 # https://intforout.github.io/outdoorPressure#SensitiveArea
 <https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
-<https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.." .
+<https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."@fr .
+<https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/2000/01/rdf-schema#label> "Sensitive Area"@en .
+<https://intforout.github.io/outdoorPressure#SensitiveArea> <http://www.w3.org/2000/01/rdf-schema#label> "Zone sensible"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#Sentier
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -401,6 +403,13 @@
 # https://intforout.github.io/outdoorPressure#Trajectory
 <https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Trajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+# 
+# https://intforout.github.io/outdoorPressure#WildlifeQuietArea
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#SensitiveArea> .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Le terme « zone de quiétude » définit un territoire, volontairement aménagé ou réglementé, qui vise à limiter les dérangements humains sur la faune sauvage. Ces zones offrent un refuge aux espèces sensibles, notamment en période critique comme la reproduction, l’hivernage ou l’élevage des jeunes. En réduisant les perturbations liées aux activités humaines (promenades, sports de nature, circulation…), elles favorisent le maintien de comportements naturels et contribuent à la préservation de la biodiversité. Cependant, des sentiers spécialement balisés sont ouverts au public durant ces période et ont été étudiés pour limiter le dérangement et permettent ainsi de concilier les activités de loisirs et la préservation de la faune."@fr .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#label> "wildlife quiet area"@en .
+<https://intforout.github.io/outdoorPressure#WildlifeQuietArea> <http://www.w3.org/2000/01/rdf-schema#label> "zone de quiétude"@fr .
 # 
 # 
 # 
