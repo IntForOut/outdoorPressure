@@ -793,6 +793,10 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Trajectory">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:label xml:lang="en">Trajectory</rdfs:label>
+        <rdfs:label xml:lang="fr">Trajectoire</rdfs:label>
+        <rdfs:comment xml:lang="en">Path of a moving object</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Ligne décrite par un objet en mouvement</rdfs:comment>
     </owl:Class>
     
 
@@ -1647,7 +1651,7 @@
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
         <rdfs:label>Strava MontBlanc 2024</rdfs:label>
     </owl:NamedIndividual>
