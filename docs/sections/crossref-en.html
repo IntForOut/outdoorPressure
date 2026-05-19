@@ -10,7 +10,6 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#AnimalTrack" title="https://intforout.github.io/outdoorPressure#AnimalTrack"> <span>Animal Track</span> </a></li>
   <li><a href="#Bois" title="https://intforout.github.io/outdoorPressure#Bois"> <span>Bois</span> </a></li>
   <li><a href="#Cycling" title="https://intforout.github.io/outdoorPressure#Cycling"> <span>Cycling</span> </a></li>
-  <li><a href="#DataProfilingReport" title="https://intforout.github.io/outdoorPressure#DataProfilingReport"> <span>Data Profiling Report</span> </a></li>
   <li><a href="#EncounteringZone" title="https://intforout.github.io/outdoorPressure#EncounteringZone">Encountering zone</a></li>
   <li><a href="#FastHiking" title="https://intforout.github.io/outdoorPressure#FastHiking">Fast hiking</a></li>
   <li><a href="#FilteredTrack" title="https://intforout.github.io/outdoorPressure#FilteredTrack"> <span>Filtered Track</span> </a></li>
@@ -31,6 +30,7 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a></li>
   <li><a href="#SensitiveArea" title="https://intforout.github.io/outdoorPressure#SensitiveArea">Sensitive Area</a></li>
   <li><a href="#Sentier" title="https://intforout.github.io/outdoorPressure#Sentier"> <span>Sentier</span> </a></li>
+  <li><a href="#TechnicalDocument" title="https://intforout.github.io/outdoorPressure#TechnicalDocument"> <span>Technical Document</span> </a></li>
   <li><a href="#Track" title="https://intforout.github.io/outdoorPressure#Track"> <span>Track</span> </a></li>
   <li><a href="#Trajectory" title="https://intforout.github.io/outdoorPressure#Trajectory">Trajectory</a></li>
   <li><a href="#PlandEau" title="https://intforout.github.io/outdoorPressure#PlandEau">Water Body</a></li>
@@ -141,27 +141,6 @@ This section provides details for each class and property defined by Mountain ou
    </dt>
    <dd>
     <a href="#HumanActivity" title="https://intforout.github.io/outdoorPressure#HumanActivity">Human Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="DataProfilingReport">
-  <h3>Data Profiling Report<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#DataProfilingReport</p>
-  <div class="comment">
-   <span class="markdown">A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasProfile" title="https://intforout.github.io/outdoorPressure#hasProfile">has Profile</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#ProfilageDataPhDKerouanton.pdf" title="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">Profilage Data Ph D Kerouanton.pdf</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ProfilageDeepFaune.pdf" title="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf">Profilage Deep Faune.pdf</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -537,6 +516,27 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
+ <div class="entity" id="TechnicalDocument">
+  <h3>Technical Document<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#TechnicalDocument</p>
+  <div class="comment">
+   <span class="markdown">A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasProfile" title="https://intforout.github.io/outdoorPressure#hasProfile">has Profile</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ProfilageDataPhDKerouanton.pdf" title="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">Profilage Data Ph D Kerouanton.pdf</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ProfilageDeepFaune.pdf" title="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf">Profilage Deep Faune.pdf</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Track">
   <h3>Track<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#Track</p>
@@ -643,7 +643,7 @@ This section provides details for each class and property defined by Mountain ou
      has range
     </dt>
     <dd>
-     <a href="#DataProfilingReport" title="https://intforout.github.io/outdoorPressure#DataProfilingReport">Data Profiling Report</a> <sup class="type-c" title="class">c</sup>
+     <a href="#TechnicalDocument" title="https://intforout.github.io/outdoorPressure#TechnicalDocument">Technical Document</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -2565,7 +2565,7 @@ This section provides details for each class and property defined by Mountain ou
     belongs to
    </dt>
    <dd>
-    <a href="#DataProfilingReport" title="https://intforout.github.io/outdoorPressure#DataProfilingReport">Data Profiling Report</a> <sup class="type-c" title="class">c</sup>
+    <a href="#TechnicalDocument" title="https://intforout.github.io/outdoorPressure#TechnicalDocument">Technical Document</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -2621,7 +2621,7 @@ This section provides details for each class and property defined by Mountain ou
     belongs to
    </dt>
    <dd>
-    <a href="#DataProfilingReport" title="https://intforout.github.io/outdoorPressure#DataProfilingReport">Data Profiling Report</a> <sup class="type-c" title="class">c</sup>
+    <a href="#TechnicalDocument" title="https://intforout.github.io/outdoorPressure#TechnicalDocument">Technical Document</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
