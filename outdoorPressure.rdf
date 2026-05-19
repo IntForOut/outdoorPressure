@@ -667,18 +667,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#NamedRoute -->
-
-    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#NamedRoute">
-        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#Route"/>
-        <rdfs:comment xml:lang="en">A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). 
-	            Example: “Le chemin du Roy”.</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). 
-	            Exemple : « Le chemin du Roy ».</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#Observation -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Observation">
@@ -712,7 +700,8 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#PopulationFootprint">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment xml:lang="en">The population footprint is the trajectory aggregated of a population. More concretely, it is a network defined by:
+        <rdfs:comment xml:lang="en">The footprint of a population is the agregation of the footprint of its individual, understood both as the specific traces they left on the different places they went through and were active in. Traces should be understood as impacts on land entities and are a complex notion to approach. We represent them as land entities themselves for the sake of simplicity and because ecological footprint is often represented that way.
+For example the footprint of a population of hikers is represented as their agregated trajectory. More concretely, it is a network defined by:
         • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented
         • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population.</rdfs:comment>
         <rdfs:label xml:lang="fr">Empreinte d&apos;une population</rdfs:label>
