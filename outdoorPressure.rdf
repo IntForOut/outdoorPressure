@@ -1773,6 +1773,16 @@ For example the footprint of a population of hikers is represented as their agre
         <rdfs:comment xml:lang="en">Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)</rdfs:comment>
         <prov:wasAssociatedWith rdf:resource="https://intforout.github.io/outdoorPressure#DeepFaune"/>
     </owl:NamedIndividual>
+
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#StudyArea"/>
+        <geo:sfEquals rdf:resource="https://intforout.github.io/outdoorPressure#MassifDesBauges"/>
+        <rdfs:label>Zone d étude IntForOut dans le Massif des Bauges</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
