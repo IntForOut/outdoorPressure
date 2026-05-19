@@ -1277,7 +1277,7 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#MassifMontagneux"/>
-        <geo:sfContains rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"/>
+        <geo:sfContains rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"/>
         <rdfs:comment xml:lang="fr">Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l&apos;Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d&apos;Europe occidentale qui culmine à 4 806 mètres.</rdfs:comment>
         <rdfs:label xml:lang="fr">Massif du Mont-Blanc</rdfs:label>
     </owl:NamedIndividual>
@@ -1390,7 +1390,7 @@ For example the footprint of a population of hikers is represented as their agre
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
-        <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"/>
+        <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"/>
         <rdfs:comment xml:lang="fr">Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier.</rdfs:comment>
         <rdfs:comment xml:lang="en">This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes.</rdfs:comment>
         <rdfs:label xml:lang="en">Recreational User Map Service</rdfs:label>
@@ -1407,7 +1407,7 @@ For example the footprint of a population of hikers is represented as their agre
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
         <terms:publisher rdf:resource="https://intforout.github.io/outdoorPressure#prnsn"/>
         <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
-        <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"/>
+        <terms:spatial rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"/>
         <rdfs:comment xml:lang="en">A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered</rdfs:comment>
         <rdfs:label xml:lang="en">OutdoorVision export in Bauges and Mont Blanc in 2024</rdfs:label>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage"/>
@@ -1786,12 +1786,12 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc -->
+    <!-- https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#StudyArea"/>
         <geo:sfWithin rdf:resource="https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc"/>
-        <rdfs:label>Zone d étude IntForOut dans la Massif du Mont Blanc</rdfs:label>
+        <rdfs:label>Zone d étude IntForOut dans la Massif du Mont-Blanc</rdfs:label>
     </owl:NamedIndividual>
     
 
