@@ -402,6 +402,13 @@
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
 # 
+# https://intforout.github.io/outdoorPressure#StudyArea
+<https://intforout.github.io/outdoorPressure#StudyArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#StudyArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+<https://intforout.github.io/outdoorPressure#StudyArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Study area defined within a specific project"@en .
+<https://intforout.github.io/outdoorPressure#StudyArea> <http://www.w3.org/2000/01/rdf-schema#label> "Study area"@en .
+<https://intforout.github.io/outdoorPressure#StudyArea> <http://www.w3.org/2000/01/rdf-schema#label> "Zone d'étude"@fr .
+# 
 # https://intforout.github.io/outdoorPressure#TechnicalDocument
 <https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical document"@en .

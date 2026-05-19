@@ -489,6 +489,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:subClassOf :LandEntity .
 
 
+###  https://intforout.github.io/outdoorPressure#StudyArea
+:StudyArea rdf:type owl:Class ;
+           rdfs:subClassOf :LandEntity ;
+           rdfs:comment "Study area defined within a specific project"@en ;
+           rdfs:label "Study area"@en ,
+                      "Zone d'étude"@fr .
+
+
 ###  https://intforout.github.io/outdoorPressure#TechnicalDocument
 :TechnicalDocument rdf:type owl:Class ;
                    rdf:label "Technical document"@en ;

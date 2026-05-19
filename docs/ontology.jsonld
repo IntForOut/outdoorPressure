@@ -1769,6 +1769,23 @@
     "@value" : "Strava Bauges 2014"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StudyArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Study area defined within a specific project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Study area"
+  }, {
+    "@language" : "fr",
+    "@value" : "Zone d'étude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#TechnicalDocument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
