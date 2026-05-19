@@ -1000,6 +1000,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.opengis.net/ont/geosparql#sfContains" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
   } ],
@@ -1491,6 +1494,12 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.opengis.net/ont/geosparql#sfEquals" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges"
+  } ],
+  "http://www.opengis.net/ont/geosparql#sfWithin" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#AireProtegee"
   } ],
@@ -1987,7 +1996,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.opengis.net/ont/geosparql#sfEquals" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges"
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#StudyArea"

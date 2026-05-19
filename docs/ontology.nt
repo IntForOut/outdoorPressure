@@ -733,6 +733,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#MassifDesBauges
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
+<https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.opengis.net/ont/geosparql#sfContains> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie."@fr .
 <https://intforout.github.io/outdoorPressure#MassifDesBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Massif des Bauges"@fr .
 # 
@@ -919,6 +920,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#RNCFSBauges
 <https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#AireProtegee> .
+<https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.opengis.net/ont/geosparql#sfEquals> <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> .
+<https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.opengis.net/ont/geosparql#sfWithin> <https://intforout.github.io/outdoorPressure#MassifDesBauges> .
 <https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/2000/01/rdf-schema#comment> "La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%)."@fr .
 <https://intforout.github.io/outdoorPressure#RNCFSBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Réserve nationale de chasse et de faune sauvage des Bauges" .
 # 
@@ -1086,7 +1089,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges
 <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#StudyArea> .
-<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.opengis.net/ont/geosparql#sfEquals> <https://intforout.github.io/outdoorPressure#MassifDesBauges> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.opengis.net/ont/geosparql#sfEquals> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
 <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Zone d étude IntForOut dans le Massif des Bauges" .
 # 
 # https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc
