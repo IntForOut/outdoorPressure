@@ -171,6 +171,10 @@ rdfs:description rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/dcat#dataset> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/dcat#format
 <http://www.w3.org/ns/dcat#format> rdf:type owl:AnnotationProperty .
 
@@ -181,6 +185,10 @@ rdfs:description rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/ns/dcat#identifier
 <http://www.w3.org/ns/dcat#identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#inSeries
+<http://www.w3.org/ns/dcat#inSeries> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/dcat#isPartOf
@@ -305,6 +313,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#CatalogRecord
+<http://www.w3.org/ns/dcat#CatalogRecord> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#DatasetSeries
+<http://www.w3.org/ns/dcat#DatasetSeries> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class .
+
 
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
