@@ -1464,8 +1464,7 @@
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune"
-  } ],
-  "https://intforout.github.io/outdoorPressure#hasProfile" : [ {
+  }, {
     "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf"
   } ]
 }, {
@@ -1476,13 +1475,12 @@
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fr",
     "@value" : "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"
-  } ],
-  "https://intforout.github.io/outdoorPressure#hasProfile" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService",
@@ -2143,19 +2141,6 @@
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.cirkwi.com/"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#hasProfile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#TechnicalDocument"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#hasSTFootprint",

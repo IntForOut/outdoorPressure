@@ -225,12 +225,6 @@
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#Activity> .
 <https://intforout.github.io/outdoorPressure#affords> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a place, or land, to support a given activity, effectively or potentially"@en .
 # 
-# https://intforout.github.io/outdoorPressure#hasProfile
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#TechnicalDocument> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
-# 
 # https://intforout.github.io/outdoorPressure#hasSTFootprint
 <https://intforout.github.io/outdoorPressure#hasSTFootprint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#hasSTFootprint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://intforout.github.io/outdoorPressure#Activity> .
@@ -897,14 +891,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#DeepFaune> .
-<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <https://intforout.github.io/outdoorPressure#hasProfile> <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri> <http://purl.org/dc/terms/creator> "Abdessalam Naciri" .
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
-<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <https://intforout.github.io/outdoorPressure#hasProfile> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
+<https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://purl.org/dc/terms/creator> "ANaciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri> <http://www.w3.org/2000/01/rdf-schema#comment> "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"@fr .
 # 
