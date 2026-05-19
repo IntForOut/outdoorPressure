@@ -762,6 +762,17 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#StudyArea -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#StudyArea">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+        <rdfs:comment xml:lang="en">Study area defined within a specific project</rdfs:comment>
+        <rdfs:label xml:lang="en">Study area</rdfs:label>
+        <rdfs:label xml:lang="fr">Zone d&apos;étude</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#TechnicalDocument -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#TechnicalDocument">
