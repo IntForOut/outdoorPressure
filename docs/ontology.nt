@@ -228,7 +228,7 @@
 # https://intforout.github.io/outdoorPressure#hasProfile
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#DataProfilingReport> .
+<https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://intforout.github.io/outdoorPressure#TechnicalDocument> .
 <https://intforout.github.io/outdoorPressure#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profilage de la source -ou du jeu- partagé sous forme d'un document référencé par une URL"@en .
 # 
 # https://intforout.github.io/outdoorPressure#hasSTFootprint
@@ -287,11 +287,6 @@
 # https://intforout.github.io/outdoorPressure#Cycling
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Cycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#HumanActivity> .
-# 
-# https://intforout.github.io/outdoorPressure#DataProfilingReport
-<https://intforout.github.io/outdoorPressure#DataProfilingReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://intforout.github.io/outdoorPressure#DataProfilingReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical reports concerning dataset or software"@en .
-<https://intforout.github.io/outdoorPressure#DataProfilingReport> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"@en .
 # 
 # https://intforout.github.io/outdoorPressure#EncounteringZone
 <https://intforout.github.io/outdoorPressure#EncounteringZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -412,6 +407,11 @@
 # https://intforout.github.io/outdoorPressure#Sentier
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://intforout.github.io/outdoorPressure#Sentier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://intforout.github.io/outdoorPressure#LandEntity> .
+# 
+# https://intforout.github.io/outdoorPressure#TechnicalDocument
+<https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical document"@en .
+<https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"@en .
 # 
 # https://intforout.github.io/outdoorPressure#Track
 <https://intforout.github.io/outdoorPressure#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -881,14 +881,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#DataProfilingReport> .
+<https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#TechnicalDocument> .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/dc/terms/creator> "ANaciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" .
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Rapport de profilage des données de thèse Kerouanton en PDF"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#DataProfilingReport> .
+<https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#TechnicalDocument> .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://purl.org/dc/terms/creator> "ANaciri" .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf" .
 <https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Rapport de profilage du logiciel DeepFaune"@fr .

@@ -574,17 +574,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#DataProfilingReport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
-    "@language" : "en",
-    "@value" : "Technical reports concerning dataset or software"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A generic class that can be used to describe technical reports -such as data profiling reports-, and that corresponds to the foaf:Document"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
   "http://purl.org/dc/terms/identifier" : [ {
@@ -1449,7 +1438,7 @@
     "@value" : "Rapport de profilage des données de thèse Kerouanton en PDF"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#DataProfilingReport"
+    "@id" : "https://intforout.github.io/outdoorPressure#TechnicalDocument"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf",
@@ -1465,7 +1454,7 @@
     "@value" : "Rapport de profilage du logiciel DeepFaune"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#DataProfilingReport"
+    "@id" : "https://intforout.github.io/outdoorPressure#TechnicalDocument"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri",
@@ -1780,6 +1769,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Strava Bauges 2014"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#TechnicalDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "en",
+    "@value" : "Technical document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes",
@@ -2155,7 +2155,7 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#DataProfilingReport"
+    "@id" : "https://intforout.github.io/outdoorPressure#TechnicalDocument"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#hasSTFootprint",
