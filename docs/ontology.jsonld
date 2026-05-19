@@ -1015,7 +1015,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.opengis.net/ont/geosparql#sfContains" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
@@ -1193,7 +1193,7 @@
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
@@ -1223,7 +1223,7 @@
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
@@ -1996,7 +1996,7 @@
     "@value" : "Zone d étude IntForOut dans le Massif des Bauges"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc",
+  "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.opengis.net/ont/geosparql#sfWithin" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc"
@@ -2005,7 +2005,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#StudyArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Zone d étude IntForOut dans la Massif du Mont Blanc"
+    "@value" : "Zone d étude IntForOut dans la Massif du Mont-Blanc"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#affords",
