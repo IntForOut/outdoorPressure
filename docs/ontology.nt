@@ -60,6 +60,9 @@
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/spatial
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -733,7 +736,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
-<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.opengis.net/ont/geosparql#sfContains> <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> .
+<https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.opengis.net/ont/geosparql#sfContains> <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> .
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/2000/01/rdf-schema#comment> "Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres."@fr .
 <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> <http://www.w3.org/2000/01/rdf-schema#label> "Massif du Mont-Blanc"@fr .
 # 
@@ -806,7 +809,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
 <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#prnsn> .
 <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> .
+<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> .
 <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier."@fr .
 <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes."@en .
 <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#label> "Recreational User Map Service"@en .
@@ -824,7 +827,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#prnsn> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
-<https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> .
+<https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/2000/01/rdf-schema#label> "OutdoorVision export in Bauges and Mont Blanc in 2024"@en .
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
@@ -1077,11 +1080,11 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage> <http://www.w3.org/ns/prov#wasAssociatedWith> <https://intforout.github.io/outdoorPressure#DeepFaune> .
 <https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)"@en .
 # 
-# https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc
-<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#MassifMontagneux> .
-<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.opengis.net/ont/geosparql#sfWithin> <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> .
-<https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc> <http://www.w3.org/2000/01/rdf-schema#label> "Massif du Mont Blanc, côté France" .
+# https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#StudyArea> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> <http://www.opengis.net/ont/geosparql#sfWithin> <https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> <http://www.w3.org/2000/01/rdf-schema#label> "Zone d étude IntForOut dans la Massif du Mont Blanc" .
 # 
 # https://intforout.github.io/outdoorPressure#aloison
 <https://intforout.github.io/outdoorPressure#aloison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

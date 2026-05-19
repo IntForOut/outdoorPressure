@@ -79,6 +79,10 @@
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/spatial
 <http://purl.org/dc/terms/spatial> rdf:type owl:AnnotationProperty .
 
@@ -877,7 +881,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc
 :MassifDuMont-Blanc rdf:type owl:NamedIndividual ,
                              :MassifMontagneux ;
-                    <http://www.opengis.net/ont/geosparql#sfContains> :ZoneEtudeMontBlanc ;
+                    <http://www.opengis.net/ont/geosparql#sfContains> :ZoneEtudeIntForOutMontBlanc ;
                     rdfs:comment "Le massif du Mont-Blanc est un massif des Alpes partagé entre la France, l'Italie et la Suisse. Il abrite le mont Blanc, plus haut sommet d'Europe occidentale qui culmine à 4 806 mètres."@fr ;
                     rdfs:label "Massif du Mont-Blanc"@fr .
 
@@ -960,7 +964,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                                                      :HumanOutdoorActivitiesMontBlanc2024 ;
                               <http://purl.org/dc/terms/publisher> :prnsn ;
                               <http://purl.org/dc/terms/spatial> :RNCFSBauges ,
-                                                                 :ZoneEtudeMontBlanc ;
+                                                                 :ZoneEtudeIntForOutMontBlanc ;
                               rdfs:comment "Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier."@fr ,
                                            "This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes."@en ;
                               rdfs:label "Recreational User Map Service"@en ,
@@ -979,7 +983,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                                       :OVExportVallorcineGeoPackage ;
                              <http://purl.org/dc/terms/publisher> :prnsn ;
                              <http://purl.org/dc/terms/spatial> :RNCFSBauges ,
-                                                                :ZoneEtudeMontBlanc ;
+                                                                :ZoneEtudeIntForOutMontBlanc ;
                              rdfs:comment "A set of tracks issued from Outdoorvision. GPS traces from outdoorvison are cleaned and filtered"@en ;
                              rdfs:label "OutdoorVision export in Bauges and Mont Blanc in 2024"@en ;
                              <http://www.w3.org/ns/dcat#keyword> "GPS traces"@en .
@@ -1260,11 +1264,11 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                        rdfs:comment "Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc
-:ZoneEtudeMontBlanc rdf:type owl:NamedIndividual ,
-                             :MassifMontagneux ;
-                    <http://www.opengis.net/ont/geosparql#sfWithin> :MassifDuMont-Blanc ;
-                    rdfs:label "Massif du Mont Blanc, côté France" .
+###  https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc
+:ZoneEtudeIntForOutMontBlanc rdf:type owl:NamedIndividual ,
+                                      :StudyArea ;
+                             <http://www.opengis.net/ont/geosparql#sfWithin> :MassifDuMont-Blanc ;
+                             rdfs:label "Zone d étude IntForOut dans la Massif du Mont Blanc" .
 
 
 ###  https://intforout.github.io/outdoorPressure#aloison

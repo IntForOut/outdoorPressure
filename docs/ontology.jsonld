@@ -68,6 +68,9 @@
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/spatial",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1009,7 +1012,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.opengis.net/ont/geosparql#sfContains" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
@@ -1187,7 +1190,7 @@
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
@@ -1217,7 +1220,7 @@
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
   }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc"
+    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
@@ -1978,16 +1981,16 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeMontBlanc",
+  "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.opengis.net/ont/geosparql#sfWithin" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MassifDuMont-Blanc"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MassifMontagneux"
+    "@id" : "https://intforout.github.io/outdoorPressure#StudyArea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Massif du Mont Blanc, côté France"
+    "@value" : "Zone d étude IntForOut dans la Massif du Mont Blanc"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#affords",
