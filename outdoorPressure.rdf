@@ -228,6 +228,12 @@
     
 
 
+    <!-- http://www.opengis.net/ont/geosparql#sfEquals -->
+
+    <owl:AnnotationProperty rdf:about="http://www.opengis.net/ont/geosparql#sfEquals"/>
+    
+
+
     <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
 
     <owl:AnnotationProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin"/>
@@ -276,6 +282,12 @@
     
 
 
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
     <!-- http://www.w3.org/ns/dcat#format -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#format"/>
@@ -291,6 +303,12 @@
     <!-- http://www.w3.org/ns/dcat#identifier -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#identifier"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#inSeries -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#inSeries"/>
     
 
 
@@ -490,6 +508,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Catalog"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#CatalogRecord -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#CatalogRecord"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DatasetSeries -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DatasetSeries"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
     
 
 
@@ -1267,9 +1309,9 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MassifDesBauges">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#MassifMontagneux"/>
+        <geo:sfContains rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <rdfs:comment xml:lang="fr">Le massif des Bauges, ou plus communément les Bauges, est un massif montagneux des Préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie.</rdfs:comment>
         <rdfs:label xml:lang="fr">Massif des Bauges</rdfs:label>
-        <geo:sfContains rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
     </owl:NamedIndividual>
     
 
@@ -1542,10 +1584,10 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#RNCFSBauges">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#AireProtegee"/>
-        <rdfs:comment xml:lang="fr">La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%).</rdfs:comment>
-        <rdfs:label>Réserve nationale de chasse et de faune sauvage des Bauges</rdfs:label>
         <geo:sfEquals rdf:resource="https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges"/>
         <geo:sfWithin rdf:resource="https://intforout.github.io/outdoorPressure#MassifDesBauges"/>
+        <rdfs:comment xml:lang="fr">La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%).</rdfs:comment>
+        <rdfs:label>Réserve nationale de chasse et de faune sauvage des Bauges</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1776,7 +1818,7 @@ For example the footprint of a population of hikers is represented as their agre
         <rdfs:comment xml:lang="en">Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)</rdfs:comment>
         <prov:wasAssociatedWith rdf:resource="https://intforout.github.io/outdoorPressure#DeepFaune"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges -->
