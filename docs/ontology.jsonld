@@ -221,6 +221,9 @@
   "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.opengis.net/ont/geosparql#sfEquals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1979,6 +1982,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.opengis.net/ont/geosparql#sfEquals" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MassifDesBauges"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#StudyArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Zone d étude IntForOut dans le Massif des Bauges"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc",

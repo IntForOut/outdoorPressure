@@ -135,6 +135,10 @@
 <http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.opengis.net/ont/geosparql#sfEquals
+<http://www.opengis.net/ont/geosparql#sfEquals> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.opengis.net/ont/geosparql#sfWithin
 <http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:AnnotationProperty .
 
@@ -1262,6 +1266,13 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                                 <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
                                        <http://www.w3.org/ns/prov#wasAssociatedWith> :DeepFaune ;
                                        rdfs:comment "Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges
+:ZoneEtudeIntForOutBauges rdf:type owl:NamedIndividual ,
+                                   :StudyArea ;
+                          <http://www.opengis.net/ont/geosparql#sfEquals> :MassifDesBauges ;
+                          rdfs:label "Zone d étude IntForOut dans le Massif des Bauges" .
 
 
 ###  https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc

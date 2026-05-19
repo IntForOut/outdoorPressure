@@ -102,6 +102,9 @@
 # http://www.opengis.net/ont/geosparql#sfContains
 <http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.opengis.net/ont/geosparql#sfEquals
+<http://www.opengis.net/ont/geosparql#sfEquals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.opengis.net/ont/geosparql#sfWithin
 <http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -1079,6 +1082,12 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
 <https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage> <http://www.w3.org/ns/prov#wasAssociatedWith> <https://intforout.github.io/outdoorPressure#DeepFaune> .
 <https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)"@en .
+# 
+# https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#StudyArea> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.opengis.net/ont/geosparql#sfEquals> <https://intforout.github.io/outdoorPressure#MassifDesBauges> .
+<https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges> <http://www.w3.org/2000/01/rdf-schema#label> "Zone d étude IntForOut dans le Massif des Bauges" .
 # 
 # https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc
 <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMontBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
