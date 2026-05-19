@@ -1120,19 +1120,6 @@
     "@value" : "Movebank is a free, online database of animal tracking data"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#NamedRoute",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). \n\t            Example: “Le chemin du Roy”."
-  }, {
-    "@language" : "fr",
-    "@value" : "Un itinéraire nommé est un itinéraire connu ayant un titre et une géométrie linéraire détaillée,  répertorié dans une base de données d autorité ou collaborative (par ex. Visorando). \n\t            Exemple : « Le chemin du Roy »."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Route"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#OFNP",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
   "http://purl.org/dc/terms/identifier" : [ {
@@ -1381,7 +1368,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The population footprint is the trajectory aggregated of a population. More concretely, it is a network defined by:\n        • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented\n        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."
+    "@value" : "The footprint of a population is the agregation of the footprint of its individual, understood both as the specific traces they left on the different places they went through and were active in. Traces should be understood as impacts on land entities and are a complex notion to approach. We represent them as land entities themselves for the sake of simplicity and because ecological footprint is often represented that way.\nFor example the footprint of a population of hikers is represented as their agregated trajectory. More concretely, it is a network defined by:\n        • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented\n        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",

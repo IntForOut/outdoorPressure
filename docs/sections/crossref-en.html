@@ -21,7 +21,6 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#MergedAccurateTrack" title="https://intforout.github.io/outdoorPressure#MergedAccurateTrack"> <span>Merged Accurate Track</span> </a></li>
   <li><a href="#MergedTrack" title="https://intforout.github.io/outdoorPressure#MergedTrack"> <span>Merged Track</span> </a></li>
   <li><a href="#MassifMontagneux" title="https://intforout.github.io/outdoorPressure#MassifMontagneux">Mountain Massif</a></li>
-  <li><a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute"> <span>Named Route</span> </a></li>
   <li><a href="#Observation" title="https://intforout.github.io/outdoorPressure#Observation">Observation or SurveyProcess</a></li>
   <li><a href="#Population" title="https://intforout.github.io/outdoorPressure#Population"> <span>Population</span> </a></li>
   <li><a href="#PopulationFootprint" title="https://intforout.github.io/outdoorPressure#PopulationFootprint">Population Footprint</a></li>
@@ -355,21 +354,6 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
- <div class="entity" id="NamedRoute">
-  <h3>Named Route<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#NamedRoute</p>
-  <div class="comment">
-   <span class="markdown">A named route is a known route with a name and a detailed linear geometry, listed in an authoritative or collaborative database (e.g., Visorando). Example: “Le chemin du Roy”.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Route" title="https://intforout.github.io/outdoorPressure#Route">Route</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="Observation">
   <h3>Observation or SurveyProcess<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#Observation</p>
@@ -410,7 +394,7 @@ This section provides details for each class and property defined by Mountain ou
   <h3>Population Footprint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#PopulationFootprint</p>
   <div class="comment">
-   <span class="markdown">The population footprint is the trajectory aggregated of a population. More concretely, it is a network defined by: • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population.</span>
+   <span class="markdown">The footprint of a population is the agregation of the footprint of its individual, understood both as the specific traces they left on the different places they went through and were active in. Traces should be understood as impacts on land entities and are a complex notion to approach. We represent them as land entities themselves for the sake of simplicity and because ecological footprint is often represented that way. For example the footprint of a population of hikers is represented as their agregated trajectory. More concretely, it is a network defined by: • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population.</span>
   </div>
   <dl class="description">
    <dt>
@@ -480,7 +464,7 @@ This section provides details for each class and property defined by Mountain ou
     has sub-classes
    </dt>
    <dd>
-    <a href="#NamedRoute" title="https://intforout.github.io/outdoorPressure#NamedRoute">Named Route</a> <sup class="type-c" title="class">c</sup>, <a href="#ResilientRoute" title="https://intforout.github.io/outdoorPressure#ResilientRoute">Resilient Route</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ResilientRoute" title="https://intforout.github.io/outdoorPressure#ResilientRoute">Resilient Route</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
