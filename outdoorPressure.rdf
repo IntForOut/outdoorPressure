@@ -458,16 +458,6 @@
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#hasProfile -->
-
-    <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasProfile">
-        <rdfs:domain rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <rdfs:range rdf:resource="https://intforout.github.io/outdoorPressure#TechnicalDocument"/>
-        <rdfs:comment xml:lang="en">Profilage de la source -ou du jeu- partagé sous forme d&apos;un document référencé par une URL</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://intforout.github.io/outdoorPressure#hasSTFootprint -->
 
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#hasSTFootprint">
@@ -1512,7 +1502,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#DeepFaune"/>
-        <outdoorPressure:hasProfile rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf"/>
         <terms:creator>Abdessalam Naciri</terms:creator>
     </owl:NamedIndividual>
     
@@ -1523,7 +1513,7 @@
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
-        <outdoorPressure:hasProfile rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
         <terms:creator>ANaciri</terms:creator>
         <rdfs:comment xml:lang="fr">Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l&apos;analyse est partagé dans un rapport (target 2)</rdfs:comment>
     </owl:NamedIndividual>
