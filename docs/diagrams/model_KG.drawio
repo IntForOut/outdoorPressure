@@ -1913,7 +1913,7 @@
           <mxGeometry height="243" width="800" x="510" y="1077" as="geometry" />
         </mxCell>
         <mxCell id="StAfwks-yWdgnL5H34nc-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="620" width="800" x="510" y="450" as="geometry" />
+          <mxGeometry height="600" width="800" x="510" y="470" as="geometry" />
         </mxCell>
         <mxCell id="StAfwks-yWdgnL5H34nc-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="SoftwareAgent" vertex="1">
           <mxGeometry height="82" width="125.5" x="1022.87" y="980" as="geometry" />
@@ -2150,7 +2150,7 @@
             <mxPoint x="1089" y="1241" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="StAfwks-yWdgnL5H34nc-56" connectable="0" parent="StAfwks-yWdgnL5H34nc-55" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;represents&lt;/font&gt;" vertex="1">
+        <mxCell id="StAfwks-yWdgnL5H34nc-56" connectable="0" parent="StAfwks-yWdgnL5H34nc-55" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px; color: rgb(255, 153, 51);&quot;&gt;represents&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.3349" y="-2" as="geometry">
             <mxPoint x="9" y="29" as="offset" />
           </mxGeometry>
@@ -2183,7 +2183,7 @@
           <mxGeometry height="243" width="800" x="600" y="1167" as="geometry" />
         </mxCell>
         <mxCell id="vOEZxgTUSBLAmS5_oJPY-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="510" width="800" x="600" y="650" as="geometry" />
+          <mxGeometry height="460" width="800" x="600" y="700" as="geometry" />
         </mxCell>
         <mxCell id="vOEZxgTUSBLAmS5_oJPY-3" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="SoftwareAgent" vertex="1">
           <mxGeometry height="82" width="125.5" x="1112.87" y="1070" as="geometry" />
@@ -2323,7 +2323,7 @@
           <mxGeometry height="60" width="159" x="831" y="915" as="geometry" />
         </mxCell>
         <mxCell id="vOEZxgTUSBLAmS5_oJPY-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;font&gt;Existing Vocabularies : DCAT, PROV, SOSA, GUF&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="400.5" x="799.75" y="660" as="geometry" />
+          <mxGeometry height="30" width="400.5" x="1430" y="739" as="geometry" />
         </mxCell>
         <mxCell id="vOEZxgTUSBLAmS5_oJPY-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fontSize=16;" value="&lt;div&gt;&lt;font&gt;HikersVincennes&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;FootPrint&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="163" x="851" y="965" as="geometry" />
@@ -2427,12 +2427,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="6pdUec4ph4nNoE5LbjZx" name="Fig 2 - Step 3 (Sham-Wah)">
-    <mxGraphModel dx="1393" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1721" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="d4BlDSLLVkqjuVo5mrTG-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="283" width="800" x="110" y="697" as="geometry" />
+          <mxGeometry height="253" width="800" x="110" y="697" as="geometry" />
         </mxCell>
         <mxCell id="d4BlDSLLVkqjuVo5mrTG-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
           <mxGeometry height="460" width="770" x="140" y="230" as="geometry" />
@@ -2552,13 +2552,13 @@
         <mxCell id="d4BlDSLLVkqjuVo5mrTG-57" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;div&gt;Individual&lt;/div&gt;&lt;div&gt;Trajectory&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="143.5" y="767" as="geometry" />
         </mxCell>
-        <mxCell id="d4BlDSLLVkqjuVo5mrTG-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fontSize=16;" value="&lt;div&gt;OVTracks&lt;/div&gt;&lt;div&gt;MontBlancBauges2024&lt;/div&gt;" vertex="1">
+        <mxCell id="d4BlDSLLVkqjuVo5mrTG-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=16;fillColor=#f8cecc;" value="&lt;div&gt;OVTracks&lt;/div&gt;&lt;div&gt;MontBlancBauges2024&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="179.5" x="390.5" y="430.62" as="geometry" />
         </mxCell>
-        <mxCell id="d4BlDSLLVkqjuVo5mrTG-59" edge="1" parent="1" source="d4BlDSLLVkqjuVo5mrTG-58" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontSize=16;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="d4BlDSLLVkqjuVo5mrTG-65" value="">
+        <mxCell id="d4BlDSLLVkqjuVo5mrTG-59" edge="1" parent="1" source="d4BlDSLLVkqjuVo5mrTG-58" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="d4BlDSLLVkqjuVo5mrTG-65" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="290" y="630" />
+              <mxPoint x="290" y="470" />
             </Array>
             <mxPoint x="357" y="580" as="sourcePoint" />
             <mxPoint x="312" y="908" as="targetPoint" />
@@ -2579,7 +2579,7 @@
             <mxPoint x="500" y="737" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="d4BlDSLLVkqjuVo5mrTG-63" edge="1" parent="1" source="d4BlDSLLVkqjuVo5mrTG-15" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" target="d4BlDSLLVkqjuVo5mrTG-58" value="">
+        <mxCell id="d4BlDSLLVkqjuVo5mrTG-63" edge="1" parent="1" source="d4BlDSLLVkqjuVo5mrTG-15" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.178;entryY=0.044;entryDx=0;entryDy=0;curved=1;entryPerimeter=0;" target="d4BlDSLLVkqjuVo5mrTG-58" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
               <mxPoint x="430" y="390" />
@@ -2590,7 +2590,7 @@
         </mxCell>
         <mxCell id="d4BlDSLLVkqjuVo5mrTG-64" connectable="0" parent="d4BlDSLLVkqjuVo5mrTG-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;target&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.6997" y="-8" as="geometry">
-            <mxPoint x="9" y="-19" as="offset" />
+            <mxPoint x="39" y="13" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="d4BlDSLLVkqjuVo5mrTG-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="" vertex="1">
@@ -2602,7 +2602,7 @@
         <mxCell id="uf-Z5AZxEYZbW9oxMDv4-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;HikersFootprint&lt;/div&gt;&lt;div&gt;MontBlancBauges&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="140" x="430" y="860.24" as="geometry" />
         </mxCell>
-        <mxCell id="kFMu3q1xO0CuIE3rbkHt-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;HikingIn&lt;/div&gt;&lt;div&gt;MontBlancBauges&lt;/div&gt;" vertex="1">
+        <mxCell id="kFMu3q1xO0CuIE3rbkHt-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;div&gt;HikingIn&lt;/div&gt;&lt;div&gt;MontBlancBauges&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="136" x="617.62" y="857" as="geometry" />
         </mxCell>
         <mxCell id="rPTGktoPMsouxY16wrO3-1" edge="1" parent="1" source="kFMu3q1xO0CuIE3rbkHt-1" style="endArrow=none;html=1;rounded=0;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=classic;startFill=1;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="uf-Z5AZxEYZbW9oxMDv4-1" value="">
@@ -2614,7 +2614,7 @@
             <mxPoint x="830" y="913" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rPTGktoPMsouxY16wrO3-2" connectable="0" parent="rPTGktoPMsouxY16wrO3-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;fontColor=#FFD966;" value="affords" vertex="1">
+        <mxCell id="rPTGktoPMsouxY16wrO3-2" connectable="0" parent="rPTGktoPMsouxY16wrO3-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;fontColor=#FFD966;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;affords&lt;/span&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.0451" y="3" as="geometry">
             <mxPoint x="-13" y="3" as="offset" />
           </mxGeometry>
@@ -2636,7 +2636,7 @@
             <mxPoint x="14" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ceTxstmoBgxKXx7mW0AH-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=16;fillColor=#f8cecc;" value="&lt;div&gt;Hikers&lt;/div&gt;&lt;div&gt;MontBlancBauges2024&lt;/div&gt;&lt;div&gt;Footprint&lt;/div&gt;" vertex="1">
+        <mxCell id="ceTxstmoBgxKXx7mW0AH-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#d79b00;strokeWidth=1;fontSize=16;fillColor=#ffe6cc;" value="&lt;div&gt;Hikers&lt;/div&gt;&lt;div&gt;MontBlancBauges2024&lt;/div&gt;&lt;div&gt;Footprint&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="179.5" x="370" y="490.62" as="geometry" />
         </mxCell>
       </root>
