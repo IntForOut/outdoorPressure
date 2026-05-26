@@ -1305,6 +1305,15 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <datacite:relatedIdentifier>https://doi.org/10.4000/166m2</datacite:relatedIdentifier>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#MassifDesBauges -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MassifDesBauges">
@@ -1614,6 +1623,16 @@ For example the footprint of a population of hikers is represented as their agre
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1101-1333"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#VenterEtAl.BiasActivityDataFromStrava.2022.LandUrbanPlan"/>
         <rdfs:comment>An interesting paper which can be used as baseline for comparison in IntForOut project</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ReviewPaperQuantifierFrequentationEspacesProteges -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperQuantifierFrequentationEspacesProteges">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-3090-5076"/>
+        <rdfs:comment>The article &quot;Quantifying visitor use in protected natural areas: comparison and limitations of three measurement methods&quot;, is interesting to put into perspective with the study of visitor use in the two study sites in IntForOut.</rdfs:comment>
     </owl:NamedIndividual>
     
 
