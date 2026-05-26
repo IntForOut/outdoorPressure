@@ -1616,9 +1616,9 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ReviewLidarHDPourExtraireArbres -->
+    <!-- https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewLidarHDPourExtraireArbres">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0009-7714-935X"/>
         <geodata:target rdf:resource="http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance"/>
