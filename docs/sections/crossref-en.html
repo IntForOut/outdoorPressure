@@ -742,7 +742,7 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#RefugesInfoPOIBauges2025" title="https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025">Refuges.info - points</a></li>
   <li><a href="#refugesinfo" title="https://intforout.github.io/outdoorPressure#refugesinfo"> <span>refugesinfo</span> </a></li>
   <li><a href="#refugesinfo-points-geojson" title="https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson"> <span>refugesinfo points geojson</span> </a></li>
-  <li><a href="#ReviewLidarHDPourExtraireArbres" title="https://intforout.github.io/outdoorPressure#ReviewLidarHDPourExtraireArbres"> <span>Review Lidar H D Pour Extraire Arbres</span> </a></li>
+  <li><a href="#ReviewExtractionVegetationDepuisLidarHD" title="https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD"> <span>Review Extraction Vegetation Depuis Lidar H D</span> </a></li>
   <li><a href="#ReviewPaperOnStravaData" title="https://intforout.github.io/outdoorPressure#ReviewPaperOnStravaData"> <span>Review Paper On Strava Data</span> </a></li>
   <li><a href="#ReviewPaperQuantifierFrequentationEspacesProteges" title="https://intforout.github.io/outdoorPressure#ReviewPaperQuantifierFrequentationEspacesProteges"> <span>Review Paper Quantifier Frequentation Espaces Proteges</span> </a></li>
   <li><a href="#RNCFSBauges" title="https://intforout.github.io/outdoorPressure#RNCFSBauges">Réserve nationale de chasse et de faune sauvage des Bauges</a></li>
@@ -2796,9 +2796,9 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
   </dl>
  </div>
- <div class="entity" id="ReviewLidarHDPourExtraireArbres">
-  <h3>Review Lidar H D Pour Extraire Arbres<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#ReviewLidarHDPourExtraireArbres</p>
+ <div class="entity" id="ReviewExtractionVegetationDepuisLidarHD">
+  <h3>Review Extraction Vegetation Depuis Lidar H D<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD</p>
   <div class="comment">
    <span class="markdown">LiDAR HD data (see target) contains points classified as vegetation (classes 3, 4, 5). Ski lifts typically features pylons, cables and stations at both end. They sometimes cut through vegetation and pylons height is often close to spruce trees found in mountains. Following my observation, I found that stations are rather correctly classified as "buildings", but some pylons are incorrectly classified as vegetation (instead of "Sursol pérenne", class 64, as specified in the LiDAR HD Documentation). It appears to only be the case for cable cars, and not for chair lifts, which might be explained by the time of acquisition of the data. If the cars are not on the cable, there is almost no point between the pylons, which makes the classification algorithm think they are individual trees rather than pylons connected by a cable. You can see it by yourself for example in the Gets ski station, where the cable car "Chavannes" (on the left) have pylons classified as vegetation, while the chair lift "Chavannes Express" (on the right) is correctly classified as "Sursol pérenne" (class 64). On the mountain on the other side of the valley (Mont Chéry), the cable car pylons also are classified as vegetation. https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.42210133123&amp;pz=4578316.542038901&amp;qx=0.4803727089013424&amp;qy=0.1779330623891262&amp;qz=-0.35281414468716665&amp;qw=0.7830096200943361 (move the view a little bit to trigger lidar data loading)</span>
   </div>

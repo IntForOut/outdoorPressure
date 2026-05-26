@@ -1608,7 +1608,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Route"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ReviewLidarHDPourExtraireArbres",
+  "@id" : "https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@id" : "https://orcid.org/0009-0009-7714-935X"

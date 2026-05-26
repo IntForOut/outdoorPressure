@@ -1139,12 +1139,12 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                           rdfs:label "Refuges.info - points"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#ReviewLidarHDPourExtraireArbres
-:ReviewLidarHDPourExtraireArbres rdf:type owl:NamedIndividual ,
-                                          <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                 <http://purl.org/www.umr-lastig.fr/geodata#target> <http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance> ;
-                                 <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0009-0009-7714-935X> ;
-                                 rdfs:comment """LiDAR HD data (see target) contains points classified as vegetation (classes 3, 4, 5).
+###  https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD
+:ReviewExtractionVegetationDepuisLidarHD rdf:type owl:NamedIndividual ,
+                                                  <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                                         <http://purl.org/www.umr-lastig.fr/geodata#target> <http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance> ;
+                                         <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0009-0009-7714-935X> ;
+                                         rdfs:comment """LiDAR HD data (see target) contains points classified as vegetation (classes 3, 4, 5).
 Ski lifts typically features pylons, cables and stations at both end. They sometimes cut through vegetation and pylons height is often close to spruce trees found in mountains.
 
 Following my observation, I found that stations are rather correctly classified as \"buildings\", but some pylons are incorrectly classified as vegetation (instead of \"Sursol pérenne\", class 64, as specified in the LiDAR HD Documentation). It appears to only be the case for cable cars, and not for chair lifts, which might be explained by the time of acquisition of the data. If the cars are not on the cable, there is almost no point between the pylons, which makes the classification algorithm think they are individual trees rather than pylons connected by a cable.
