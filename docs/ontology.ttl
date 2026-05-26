@@ -1064,6 +1064,12 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                              rdfs:label "Parcdesbauges.com - sensitivearea"@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology
+:PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
+                                                          <http://purl.org/spar/datacite/relatedIdentifier> <https://doi.org/10.1016/j.gecco.2025.e03994> .
+
+
 ###  https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
 :PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual ,
                                                   <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
@@ -1155,6 +1161,14 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 (move the view a little bit to trigger lidar data loading)""" .
 
 
+###  https://intforout.github.io/outdoorPressure#ReviewPaperHuntingAndWildlifeResponseToRecreationalActivities
+:ReviewPaperHuntingAndWildlifeResponseToRecreationalActivities rdf:type owl:NamedIndividual ,
+                                                                        <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
+                                                               <http://purl.org/www.umr-lastig.fr/geodata#target> :PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology ;
+                                                               <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0001-6491-9487> ;
+                                                               rdfs:comment "Effet de différentes intensités d'activités récréatives et de la chasse sur la probabilité de détecter certaines espèces (cerf, chevreuil, sanglier, renard, lynx)." .
+
+
 ###  https://intforout.github.io/outdoorPressure#ReviewPaperOnStravaData
 :ReviewPaperOnStravaData rdf:type owl:NamedIndividual ,
                                   <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
@@ -1200,6 +1214,14 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 :SentierDesBauges rdf:type owl:NamedIndividual ,
                            :Sentier ;
                   :affords :HikingInLesBauges .
+
+
+###  https://intforout.github.io/outdoorPressure#SeriesLacetsDansCheminsLesBauges
+:SeriesLacetsDansCheminsLesBauges rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/ns/dcat#Dataset> ;
+                                  <http://purl.org/www.umr-lastig.fr/geodata#represents> :SentierDesBauges ;
+                                  <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0007-5972> ;
+                                  rdfs:comment "Ce dataset est en cours de production et sa publication sera bientôt ajoutée ainsi que sa provenance. Il est créé à partir d'itinéraires de randonnées répertoriés dans des sources ouvertes avec un algorithme implanté dans la librairie tracklib (description à venir). Cet algo a une confiance de 80%" .
 
 
 ###  https://intforout.github.io/outdoorPressure#SkiLiftCountersMontBlanc2008To2024
