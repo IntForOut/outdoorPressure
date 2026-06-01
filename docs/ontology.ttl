@@ -523,6 +523,7 @@ For example the footprint of a population of hikers is represented as their agre
 
 ###  https://intforout.github.io/outdoorPressure#TechnicalDocument
 :TechnicalDocument rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
                    rdf:label "Technical document"@en ;
                    rdfs:comment "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"@en .
 

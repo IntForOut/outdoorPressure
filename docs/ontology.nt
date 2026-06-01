@@ -429,6 +429,7 @@
 # 
 # https://intforout.github.io/outdoorPressure#TechnicalDocument
 <https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 <https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Technical document"@en .
 <https://intforout.github.io/outdoorPressure#TechnicalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"@en .
 # 
