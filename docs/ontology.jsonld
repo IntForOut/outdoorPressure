@@ -1659,6 +1659,23 @@
     "@value" : "The article \"Quantifying visitor use in protected natural areas: comparison and limitations of three measurement methods\", is interesting to put into perspective with the study of visitor use in the two study sites in IntForOut."
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"
+  }, {
+    "@value" : "An interesting paper which can be used as baseline for comparison in IntForOut project"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#Route",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2016,23 +2033,6 @@
   }, {
     "@language" : "fr",
     "@value" : "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"
-  }, {
-    "@value" : "An interesting paper which can be used as baseline for comparison in IntForOut project"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg",

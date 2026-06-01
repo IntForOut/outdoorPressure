@@ -995,6 +995,15 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#ReviewPaperQuantifierFrequentationEspacesProteges> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-3090-5076> .
 <https://intforout.github.io/outdoorPressure#ReviewPaperQuantifierFrequentationEspacesProteges> <http://www.w3.org/2000/01/rdf-schema#comment> "The article \"Quantifying visitor use in protected natural areas: comparison and limitations of three measurement methods\", is interesting to put into perspective with the study of visitor use in the two study sites in IntForOut." .
 # 
+# https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://www.w3.org/2000/01/rdf-schema#comment> "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
+<https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial> <http://www.w3.org/2000/01/rdf-schema#comment> "An interesting paper which can be used as baseline for comparison in IntForOut project" .
+# 
 # https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
@@ -1120,15 +1129,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/2000/01/rdf-schema#comment> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"@en .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/2000/01/rdf-schema#label> "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en .
-# 
-# https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/2000/01/rdf-schema#comment> "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"@en .
-<https://intforout.github.io/outdoorPressure#TrackCollectionMergeForReplicability> <http://www.w3.org/2000/01/rdf-schema#comment> "An interesting paper which can be used as baseline for comparison in IntForOut project" .
 # 
 # https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
