@@ -1917,6 +1917,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Resource"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes",
