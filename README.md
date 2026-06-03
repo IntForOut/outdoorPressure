@@ -2,7 +2,7 @@
 
 This is research Knowledge Graph (KG) to support the study of human outdoor leisure in the French Alps and its impact. It aims at supporting the discovery and proper reuse of data, ranging from GPS collar to camera trap and land cover data. It embeds concepts relevant to express users interests in real world phenomena, like "human activities". It also catalogues different assets relevant to their study like datasets, reproducible processes, scientific papers, or the experience and feedback from other users.
 
-![Overview of the OutdoorPressure KG main concepts](docs/img/ODKG-schemaGeneral-horizontal.png)
+![Overview of the OutdoorPressure KG main concepts](docs/img/schema_modele_kg.png)
 
 ### Want to explore the Knowledge Graph?
 
