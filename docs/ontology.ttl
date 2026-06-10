@@ -1088,7 +1088,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
                                          :TechnicalDocument ;
                                 <http://purl.org/dc/terms/creator> "ANaciri" ;
-                                <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKeouranton.pdf" ;
+                                <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKerouanton.pdf" ;
                                 rdf:label "Rapport de profilage des données de thèse Kerouanton en PDF"@fr .
 
 
