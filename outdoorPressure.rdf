@@ -638,6 +638,14 @@
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#Haie -->
+
+    <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Haie">
+        <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
+    </owl:Class>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#Hiking -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#Hiking">
@@ -863,6 +871,14 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3">
@@ -941,7 +957,9 @@ For example the footprint of a population of hikers is represented as their agre
 
     <!-- http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    </owl:NamedIndividual>
     
 
 
@@ -992,6 +1010,12 @@ For example the footprint of a population of hikers is represented as their agre
         <rdfs:comment xml:lang="en">A set of routes issued from altituderando.com in 2025 in the Bauges area.</rdfs:comment>
         <rdfs:label xml:lang="en">AltitudeRando Hiking Routes in the Bauges Massif (2025)</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020"/>
     
 
 
@@ -1116,6 +1140,25 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#HaiesDesBauges2020 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HaiesDesBauges2020">
+        <outdoorPressure:affords rdf:resource="https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#HedgesLesBauges2020 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HedgesLesBauges2020">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HaiesDesBauges2020"/>
+        <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE"/>
+        <rdfs:comment>BDHaie v1 sur les Bauges millésime 2020</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes">
@@ -1200,6 +1243,14 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#IntForOutDB -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#IntForOutDB">
@@ -1251,7 +1302,6 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo"/>
         <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
         <terms:creator rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
         <terms:creator>
@@ -1283,6 +1333,7 @@ For example the footprint of a population of hikers is represented as their agre
         <datacite:subject>trail running</datacite:subject>
         <datacite:volume>7</datacite:volume>
         <rdfs:label xml:lang="en">Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</rdfs:label>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo"/>
     </owl:NamedIndividual>
     
 
@@ -1700,12 +1751,11 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
         <prov:wasInfluencedBy rdf:resource="https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <terms:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
+        <terms:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
         <terms:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</terms:isPartOf>
         <terms:isPartOf>SIGSPATIAL &apos;24</terms:isPartOf>
         <terms:publisher>Association for Computing Machinery</terms:publisher>
@@ -1721,6 +1771,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <datacite:subject>synthetic and real world trajectories</datacite:subject>
         <datacite:subject>trajectory aggregation</datacite:subject>
         <rdfs:label xml:lang="en">A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</rdfs:label>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
     </owl:NamedIndividual>
     
 
