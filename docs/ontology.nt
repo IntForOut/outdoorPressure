@@ -644,6 +644,7 @@
 <https://intforout.github.io/outdoorPressure#HedgesLesBauges2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#HedgesLesBauges2020> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HaiesDesBauges2020> .
 <https://intforout.github.io/outdoorPressure#HedgesLesBauges2020> <http://www.w3.org/ns/dcat#inSeries> <https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE> .
+<https://intforout.github.io/outdoorPressure#HedgesLesBauges2020> <http://purl.org/dc/elements/1.1/coverage> <https://intforout.github.io/outdoorPressure#2020> .
 <https://intforout.github.io/outdoorPressure#HedgesLesBauges2020> <http://www.w3.org/2000/01/rdf-schema#comment> "BDHaie v1 sur les Bauges millésime 2020" .
 # 
 # https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes
@@ -1365,6 +1366,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Visorando"@fr .
 <https://intforout.github.io/outdoorPressure#visorando> <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
+# 
+# https://intforout.github.io/outdoorPressure#2020
+<https://intforout.github.io/outdoorPressure#2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.refuges.info/api/
 <https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

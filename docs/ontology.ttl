@@ -782,6 +782,7 @@ For example the footprint of a population of hikers is represented as their agre
                               <http://www.w3.org/ns/dcat#Dataset> ;
                      <http://purl.org/www.umr-lastig.fr/geodata#represents> :HaiesDesBauges2020 ;
                      <http://www.w3.org/ns/dcat#inSeries> :IGNF_BD-HAIE ;
+                     <http://purl.org/dc/elements/1.1/coverage> <https://intforout.github.io/outdoorPressure#2020> ;
                      rdfs:comment "BDHaie v1 sur les Bauges millésime 2020" .
 
 
@@ -1606,6 +1607,10 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                     <http://www.w3.org/ns/prov#Organization> ;
            rdf:label "Visorando"@fr ;
            <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
+
+
+###  https://intforout.github.io/outdoorPressure#2020
+<https://intforout.github.io/outdoorPressure#2020> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.refuges.info/api/

@@ -391,6 +391,9 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#2020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -747,6 +750,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HedgesLesBauges2020",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/coverage" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#2020"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HaiesDesBauges2020"
   } ],
