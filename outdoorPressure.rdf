@@ -1154,6 +1154,7 @@ For example the footprint of a population of hikers is represented as their agre
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HaiesDesBauges2020"/>
         <dcat:inSeries rdf:resource="https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE"/>
+        <dc:coverage rdf:resource="https://intforout.github.io/outdoorPressure#2020"/>
         <rdfs:comment>BDHaie v1 sur les Bauges millésime 2020</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2260,6 +2261,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <rdf:label xml:lang="fr">Visorando</rdf:label>
         <foaf:homePage rdf:resource="https://www.visorando.com/"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#2020 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#2020"/>
     
 
 
