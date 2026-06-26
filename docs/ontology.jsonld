@@ -66,7 +66,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/ns/dcat#Dataset" ]
 }, {
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -219,7 +219,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ]
 }, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -460,6 +460,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Activity"
   } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#AnimalTrack",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -730,6 +733,30 @@
     "@value" : "ground_truth_dense_forest_path.txt"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Haie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HaiesDesBauges2020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://intforout.github.io/outdoorPressure#affords" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HedgesLesBauges2020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HaiesDesBauges2020"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "BDHaie v1 sur les Bauges millésime 2020"
+  } ],
+  "http://www.w3.org/ns/dcat#inSeries" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -858,6 +885,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Track"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#IntForOutDB",
