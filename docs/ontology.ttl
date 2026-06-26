@@ -400,6 +400,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#Haie
+:Haie rdf:type owl:Class ;
+      rdfs:subClassOf :LandEntity .
+
+
 ###  https://intforout.github.io/outdoorPressure#Hiking
 :Hiking rdf:type owl:Class ;
         rdfs:subClassOf :HumanActivity ;
@@ -555,6 +560,10 @@ For example the footprint of a population of hikers is represented as their agre
 #    Individuals
 #################################################################
 
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type <http://www.w3.org/ns/dcat#Dataset> .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> rdf:type owl:NamedIndividual ,
                                                                 <http://www.w3.org/ns/dcat#DatasetSeries> ;
@@ -626,7 +635,8 @@ For example the footprint of a population of hikers is represented as their agre
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance
-<http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance> rdf:type owl:NamedIndividual .
+<http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/ns/dcat#Dataset> .
 
 
 ###  https://api.camptocamp.org/
@@ -662,6 +672,10 @@ For example the footprint of a population of hikers is represented as their agre
                                <http://purl.org/dc/terms/publisher> :altituderando ;
                                rdfs:comment "A set of routes issued from altituderando.com in 2025 in the Bauges area."@en ;
                                rdfs:label "AltitudeRando Hiking Routes in the Bauges Massif (2025)"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020
+:AnimalLivingAroundHedgesLesBauges2020 rdf:type owl:NamedIndividual .
 
 
 ###  https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025
@@ -758,6 +772,19 @@ For example the footprint of a population of hikers is represented as their agre
                                     <http://www.w3.org/ns/dcat#identifier> "ground_truth_dense_forest_path.txt" .
 
 
+###  https://intforout.github.io/outdoorPressure#HaiesDesBauges2020
+:HaiesDesBauges2020 rdf:type owl:NamedIndividual ;
+                    :affords :AnimalLivingAroundHedgesLesBauges2020 .
+
+
+###  https://intforout.github.io/outdoorPressure#HedgesLesBauges2020
+:HedgesLesBauges2020 rdf:type owl:NamedIndividual ,
+                              <http://www.w3.org/ns/dcat#Dataset> ;
+                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :HaiesDesBauges2020 ;
+                     <http://www.w3.org/ns/dcat#inSeries> :IGNF_BD-HAIE ;
+                     rdfs:comment "BDHaie v1 sur les Bauges millésime 2020" .
+
+
 ###  https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes
 :HikersFootprintBoisVincennes rdf:type owl:NamedIndividual ,
                                        :PopulationFootprint ;
@@ -813,6 +840,11 @@ For example the footprint of a population of hikers is represented as their agre
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024
 :HumanOutdoorActivitiesMontBlanc2024 rdf:type owl:NamedIndividual ,
                                               :HumanActivity .
+
+
+###  https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE
+:IGNF_BD-HAIE rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/ns/dcat#DatasetSeries> .
 
 
 ###  https://intforout.github.io/outdoorPressure#IntForOutDB
