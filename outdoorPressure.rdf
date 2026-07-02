@@ -1062,6 +1062,32 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <terms:description>Workflow visant à dériver un graphe représentant de généralisée la mobilité effective de tous les randonneurs sur une zone donnée pendant une période donnée, à partir de traces GPS et de données géographiques de contexte. 
+Il est implémenté dans la librairie open source « footprint2graph », .
+Dépôt Logiciel : https://github.com/umrlastig/footprint2graph
+Notebooks associés : https://footprint2graph.readthedocs.io/en/latest/examples/index.html#reseaux-de-mobilite-pedestre
+Paramètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <prov:specializationOf rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"/>
+        <terms:description>Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges sur la période 2020-24. 
+Les paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml
+
+Les données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo">
@@ -1583,19 +1609,14 @@ For example the footprint of a population of hikers is represented as their agre
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution"/>
+        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0007-5972"/>
+        <terms:description>Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l&apos;espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin)
+
+Ce jeu de données est construit à partir d&apos;un ensemble de traces observées lors d’activités de plein air, données Outdoorvision, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». 
+
+Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/20800149</terms:description>
         <rdf:label xml:lang="fr">Réseau des mobilités effectives de randonneurs au Plan de la Limace</rdf:label>
-        <rdfs:comment>Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l&apos;espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin)
-
-Ce jeu de données est construit à partir d&apos;un ensemble de traces observées lors d’activités de plein air, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». 
-
-Les paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges ainsi que le notebook référençant l’implémentation sont dans le dépôt de la librairie (https://github.com/umrlastig/footprint2graph). Idem pour les 2 autres jeux de données.
-Dépôt Logiciel : https://github.com/umrlastig/footprint2graph
-Doi sur zenodo : https://zenodo.org/records/20800149
-Notebooks : https://footprint2graph.readthedocs.io/en/latest/examples/index.html#reseaux-de-mobilite-pedestre
-Paramètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml
-
-Les données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation.</rdfs:comment>
     </owl:NamedIndividual>
     
 
