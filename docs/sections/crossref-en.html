@@ -703,6 +703,8 @@ This section provides details for each class and property defined by Mountain ou
   <li><a href="#CamptocampRoutesBauges2025" title="https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025">Camptocamp.org-routes</a></li>
   <li><a href="#CamptocampPoisBauges2025" title="https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025">Camptocamp.org-waypoints</a></li>
   <li><a href="#cirkwi" title="https://intforout.github.io/outdoorPressure#cirkwi"> <span>cirkwi</span> </a></li>
+  <li><a href="#ComputePedestrianMobilityGraph" title="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"> <span>Compute Pedestrian Mobility Graph</span> </a></li>
+  <li><a href="#ComputePedestrianMobilityGraphBauges2020-24" title="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24"> <span>Compute Pedestrian Mobility Graph Bauges2020 24</span> </a></li>
   <li><a href="#DataMarchandEtAl2025MSEPeopleNatureZenodo" title="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo">Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)</a></li>
   <li><a href="#KerouantonSurveyFieldCampaignTracksGNSS20142015" title="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015">Data PhD Kerouanton</a></li>
   <li><a href="#IntForOutDB" title="https://intforout.github.io/outdoorPressure#IntForOutDB">Dataset associated with IntForOut ETL framework</a></li>
@@ -1359,6 +1361,45 @@ This section provides details for each class and property defined by Mountain ou
    </dd>
    <dd>
     <a href="http://xmlns.com/foaf/0.1/homePage" target="_blank" title="http://xmlns.com/foaf/0.1/homePage">home Page</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://www.cirkwi.com/" target="_blank" title="https://www.cirkwi.com/">https://www.cirkwi.com/</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ComputePedestrianMobilityGraph">
+  <h3>Compute Pedestrian Mobility Graph<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/www.umr-lastig.fr/geodata#Process" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#Process">Technical process</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"Workflow visant à dériver un graphe représentant de généralisée la mobilité effective de tous les randonneurs sur une zone donnée pendant une période donnée, à partir de traces GPS et de données géographiques de contexte. Il est implémenté dans la librairie open source « footprint2graph », . Dépôt Logiciel : https://github.com/umrlastig/footprint2graph Notebooks associés : https://footprint2graph.readthedocs.io/en/latest/examples/index.html#reseaux-de-mobilite-pedestre Paramètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ComputePedestrianMobilityGraphBauges2020-24">
+  <h3>Compute Pedestrian Mobility Graph Bauges2020 24<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/www.umr-lastig.fr/geodata#Process" target="_blank" title="http://purl.org/www.umr-lastig.fr/geodata#Process">Technical process</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#specializationOf" target="_blank" title="http://www.w3.org/ns/prov#specializationOf">specialization Of</a> <sup class="type-op" title="object property">op</sup> <a href="#ComputePedestrianMobilityGraph" title="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph">Compute Pedestrian Mobility Graph</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges sur la période 2020-24. Les paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml Les données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation."</span>
    </dd>
   </dl>
  </div>
@@ -2595,9 +2636,6 @@ This section provides details for each class and property defined by Mountain ou
  <div class="entity" id="PedestrianMobilityGraph-Bauges-2020-24">
   <h3>Pedestrian Mobility Graph Bauges 2020 24<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24</p>
-  <div class="comment">
-   <span class="markdown">Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l'espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin) Ce jeu de données est construit à partir d'un ensemble de traces observées lors d’activités de plein air, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». Les paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges ainsi que le notebook référençant l’implémentation sont dans le dépôt de la librairie (https://github.com/umrlastig/footprint2graph). Idem pour les 2 autres jeux de données. Dépôt Logiciel : https://github.com/umrlastig/footprint2graph Doi sur zenodo : https://zenodo.org/records/20800149 Notebooks : https://footprint2graph.readthedocs.io/en/latest/examples/index.html#reseaux-de-mobilite-pedestre Paramètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml Les données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation.</span>
-  </div>
   <dl class="description">
    <dt>
     belongs to
@@ -2615,7 +2653,13 @@ This section provides details for each class and property defined by Mountain ou
     <a href="http://www.w3.org/ns/dcat#distribution" target="_blank" title="http://www.w3.org/ns/dcat#distribution">distribution</a> <sup class="type-op" title="object property">op</sup> <a href="#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution" title="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution">Pedestrian Mobility Graph Bauges 2020 24 F T P Distribution</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
+    <a href="http://www.w3.org/ns/prov#wasGeneratedBy" target="_blank" title="http://www.w3.org/ns/prov#wasGeneratedBy">was Generated By</a> <sup class="type-op" title="object property">op</sup> <a href="#ComputePedestrianMobilityGraphBauges2020-24" title="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24">Compute Pedestrian Mobility Graph Bauges2020 24</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
     <a href="http://purl.org/dc/terms/creator" target="_blank" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-ni" title="named individual">ni</sup> <a href="https://orcid.org/0000-0002-0007-5972" target="_blank" title="https://orcid.org/0000-0002-0007-5972">0000 0002 0007 5972</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ni" title="named individual">ni</sup> <span class="literal">"Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l'espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin) Ce jeu de données est construit à partir d'un ensemble de traces observées lors d’activités de plein air, données Outdoorvision, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/20800149"</span>
    </dd>
    <dd>
     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#label" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#label">label</a> <span class="literal">"Réseau des mobilités effectives de randonneurs au Plan de la Limace"@fr</span>
