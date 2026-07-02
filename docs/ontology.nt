@@ -668,6 +668,10 @@
 <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
 <https://intforout.github.io/outdoorPressure#HikingInBoisdeVincennes> <https://intforout.github.io/outdoorPressure#hasSTFootprint> <https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> .
 # 
+# https://intforout.github.io/outdoorPressure#HikingInChamonix
+<https://intforout.github.io/outdoorPressure#HikingInChamonix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#HikingInChamonix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
+# 
 # https://intforout.github.io/outdoorPressure#HikingInLesBauges
 <https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
@@ -938,6 +942,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInChamonix> .
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution> .
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24> .

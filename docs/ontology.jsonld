@@ -813,6 +813,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HikingInChamonix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1473,6 +1479,8 @@
     "@value" : "Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l'espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin)\n\nCe jeu de données est construit à partir d'un ensemble de traces observées lors d’activités de plein air, données Outdoorvision, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». \n\nIl est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/20800149"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingInChamonix"
+  }, {
     "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {

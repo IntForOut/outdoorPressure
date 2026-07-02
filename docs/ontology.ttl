@@ -818,6 +818,11 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
                          :hasSTFootprint :TestAreaBoisVincennes .
 
 
+###  https://intforout.github.io/outdoorPressure#HikingInChamonix
+:HikingInChamonix rdf:type owl:NamedIndividual ,
+                           :Hiking .
+
+
 ###  https://intforout.github.io/outdoorPressure#HikingInLesBauges
 :HikingInLesBauges rdf:type owl:NamedIndividual ,
                             :Hiking .
@@ -1122,7 +1127,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24
 :PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24 rdf:type owl:NamedIndividual ,
                                                               <http://www.w3.org/ns/dcat#Dataset> ;
-                                                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
+                                                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInChamonix ,
+                                                                                                            :HikingInLesBauges ;
                                                      <http://www.w3.org/ns/dcat#distribution> :PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution ;
                                                      <http://www.w3.org/ns/prov#wasGeneratedBy> :ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24 ;
                                                      <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-0007-5972> ;
