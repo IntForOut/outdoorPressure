@@ -722,12 +722,12 @@ Notebooks associés : https://footprint2graph.readthedocs.io/en/latest/examples/
 Paramètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml""" .
 
 
-###  https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24
-:ComputePedestrianMobilityGraphBauges2020-24 rdf:type owl:NamedIndividual ,
-                                                      <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
-                                             <http://www.w3.org/ns/prov#specializationOf> :ComputePedestrianMobilityGraph ;
-                                             <http://purl.org/dc/terms/description> """Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges sur la période 2020-24. 
-Les paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml
+###  https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24
+:ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24 rdf:type owl:NamedIndividual ,
+                                                                    <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
+                                                           <http://www.w3.org/ns/prov#specializationOf> :ComputePedestrianMobilityGraph ;
+                                                           <http://purl.org/dc/terms/description> """Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges et de Chammonix sur la période 2020-24. 
+Les paramètres utilisés pour le pipeline sur les différentes zones sont indiquées dans les exemples : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml
 
 Les données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation.""" .
 
@@ -1119,25 +1119,25 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                              rdfs:label "Parcdesbauges.com - sensitivearea"@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24
-:PedestrianMobilityGraph-Bauges-2020-24 rdf:type owl:NamedIndividual ,
-                                                 <http://www.w3.org/ns/dcat#Dataset> ;
-                                        <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
-                                        <http://www.w3.org/ns/dcat#distribution> :PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution ;
-                                        <http://www.w3.org/ns/prov#wasGeneratedBy> :ComputePedestrianMobilityGraphBauges2020-24 ;
-                                        <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-0007-5972> ;
-                                        <http://purl.org/dc/terms/description> """Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l'espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin)
+###  https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24
+:PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24 rdf:type owl:NamedIndividual ,
+                                                              <http://www.w3.org/ns/dcat#Dataset> ;
+                                                     <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
+                                                     <http://www.w3.org/ns/dcat#distribution> :PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution ;
+                                                     <http://www.w3.org/ns/prov#wasGeneratedBy> :ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24 ;
+                                                     <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-0007-5972> ;
+                                                     <http://purl.org/dc/terms/description> """Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l'espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin)
 
 Ce jeu de données est construit à partir d'un ensemble de traces observées lors d’activités de plein air, données Outdoorvision, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». 
 
 Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/20800149""" ;
-                                        rdf:label "Réseau des mobilités effectives de randonneurs au Plan de la Limace"@fr .
+                                                     rdf:label "Réseau des mobilités effectives de randonneurs au Plan de la Limace"@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution
-:PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution rdf:type owl:NamedIndividual ,
-                                                                 <http://www.w3.org/ns/dcat#Distribution> ;
-                                                        <http://purl.org/dc/terms/description> "Le repertoire Reseau_de_mobilite du FTP INTFOROUT est organise en trois sous repertoire correspondant aux 3 zones plus precises couvertes par les donnees. Chaque sous repertoire comporte :  1) un fichier CSV qui contient la géométrie des arcs du graphe ainsi que la topologie avec les identifiants des nœuds entrants et sortants, 2) une grille de densite, aka carte de chaleur, fournie sous un format matriciel (ASC) et 3) la fiche de métadonnées détaillées XML préparée  pour le dépôt sur un entrepôt de recherche ouvert" .
+###  https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution
+:PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution rdf:type owl:NamedIndividual ,
+                                                                              <http://www.w3.org/ns/dcat#Distribution> ;
+                                                                     <http://purl.org/dc/terms/description> "Le repertoire Reseau_de_mobilite du FTP INTFOROUT est organise en trois sous repertoire correspondant aux 3 zones plus precises couvertes par les donnees. Chaque sous repertoire comporte :  1) un fichier CSV qui contient la géométrie des arcs du graphe ainsi que la topologie avec les identifiants des nœuds entrants et sortants, 2) une grille de densite, aka carte de chaleur, fournie sous un format matriciel (ASC) et 3) la fiche de métadonnées détaillées XML préparée  pour le dépôt sur un entrepôt de recherche ouvert" .
 
 
 ###  https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology
@@ -1150,6 +1150,7 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
 :PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual ,
                                                   <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
                                          <http://www.w3.org/ns/prov#generated> :MergedTracksVincennes2024 ;
+                                         <http://www.w3.org/ns/prov#specializationOf> :ComputePedestrianMobilityGraph ;
                                          <http://www.w3.org/ns/prov#used> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
                                          <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> ;
                                          <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
