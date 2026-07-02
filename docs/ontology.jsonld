@@ -1023,6 +1023,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Colin Kerouanton"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2015-08-31"
@@ -1444,6 +1447,34 @@
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0007-5972"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "fr",
+    "@value" : "Réseau des mobilités effectives de randonneurs au Plan de la Limace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Jeu qui retrace l’empreinte humaine liée à l’activité de randonnée sous la forme des chemins communément empruntés, sur 3 petites zones de la Réserve nationale de chasse et de faune sauvage (RNCFS) des Bauges et la vallée de Chamonix-Mont Blanc. Les données sont modélisées sous la forme d’un graphe où la géométrie des arcs correspond aux segments de chemin reconstruits à partir des trajectoires. Les grilles de densité caractérisent l'espace suivant le nombre distincts de traces brutes sur des cellules de 2m sur 2m (inférieure au niveau de détail du chemin)\n\nCe jeu de données est construit à partir d'un ensemble de traces observées lors d’activités de plein air, à l’aide d’un workflow dédié implémenté dans la librairie open source « footprint2graph ». \n\nLes paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges ainsi que le notebook référençant l’implémentation sont dans le dépôt de la librairie (https://github.com/umrlastig/footprint2graph). Idem pour les 2 autres jeux de données.\nDépôt Logiciel : https://github.com/umrlastig/footprint2graph\nDoi sur zenodo : https://zenodo.org/records/20800149\nNotebooks : https://footprint2graph.readthedocs.io/en/latest/examples/index.html#reseaux-de-mobilite-pedestre\nParamètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation."
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Le repertoire Reseau_de_mobilite du FTP INTFOROUT est organise en trois sous repertoire correspondant aux 3 zones plus precises couvertes par les donnees. Chaque sous repertoire comporte :  1) un fichier CSV qui contient la géométrie des arcs du graphe ainsi que la topologie avec les identifiants des nœuds entrants et sortants, 2) une grille de densite, aka carte de chaleur, fournie sous un format matriciel (ASC) et 3) la fiche de métadonnées détaillées XML préparée  pour le dépôt sur un entrepôt de recherche ouvert"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Distribution"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology",
