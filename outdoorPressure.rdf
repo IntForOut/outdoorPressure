@@ -1210,6 +1210,11 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
     </owl:NamedIndividual>
     
+    <!-- https://intforout.github.io/outdoorPressure#HikingInLesBauges -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInChamonix">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+    </owl:NamedIndividual>
 
 
     <!-- https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters -->
@@ -1608,6 +1613,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInChamonix"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution"/>
         <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0007-5972"/>
