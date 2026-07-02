@@ -566,10 +566,10 @@
     "@value" : "Workflow visant à dériver un graphe représentant de généralisée la mobilité effective de tous les randonneurs sur une zone donnée pendant une période donnée, à partir de traces GPS et de données géographiques de contexte. \nIl est implémenté dans la librairie open source « footprint2graph », .\nDépôt Logiciel : https://github.com/umrlastig/footprint2graph\nNotebooks associés : https://footprint2graph.readthedocs.io/en/latest/examples/index.html#reseaux-de-mobilite-pedestre\nParamètres : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24",
+  "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges sur la période 2020-24. \nLes paramètres utilisés pour le pipeline sur la zone « Plan de la limace » dans les Bauges : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation."
+    "@value" : "Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges et de Chammonix sur la période 2020-24. \nLes paramètres utilisés pour le pipeline sur les différentes zones sont indiquées dans les exemples : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation."
   } ],
   "http://www.w3.org/ns/prov#specializationOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"
@@ -1464,7 +1464,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24",
+  "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://orcid.org/0000-0002-0007-5972"
@@ -1480,13 +1480,13 @@
     "@value" : "Réseau des mobilités effectives de randonneurs au Plan de la Limace"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution"
+    "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution"
   } ],
   "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraphBauges2020-24"
+    "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph-Bauges-2020-24-FTPDistribution",
+  "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Le repertoire Reseau_de_mobilite du FTP INTFOROUT est organise en trois sous repertoire correspondant aux 3 zones plus precises couvertes par les donnees. Chaque sous repertoire comporte :  1) un fichier CSV qui contient la géométrie des arcs du graphe ainsi que la topologie avec les identifiants des nœuds entrants et sortants, 2) une grille de densite, aka carte de chaleur, fournie sous un format matriciel (ASC) et 3) la fiche de métadonnées détaillées XML préparée  pour le dépôt sur un entrepôt de recherche ouvert"
@@ -1557,6 +1557,9 @@
   } ],
   "http://www.w3.org/ns/prov#generated" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
+  } ],
+  "http://www.w3.org/ns/prov#specializationOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"
   } ],
   "http://www.w3.org/ns/prov#startedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
