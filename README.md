@@ -1,6 +1,6 @@
 ## A Knowledge Graph to support the study of human recreational activities in the French Alps and their impact
 
-This Knowledge Graph (KG), see outdoorPressure.rdf, supports the discovery and reuse of data, tools and related expertise to study the impact of recreational activities in the french Alps. 
+This Knowledge Graph (KG) supports the discovery and reuse of data, tools and related expertise to study the impact of recreational activities in the french Alps. 
 
 ![Overview of the OutdoorPressure KG main concepts](docs/img/schema_modele_kg.png)
 
