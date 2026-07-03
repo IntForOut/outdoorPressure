@@ -1094,6 +1094,12 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
+  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
+    "@id" : "https://link.springer.com/article/10.1007/s13280-022-01825-w"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
   "http://purl.org/spar/datacite/relatedIdentifier" : [ {
@@ -1744,6 +1750,9 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Article sur l'effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 \"Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping\""
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ReviewPaperOnStravaData",

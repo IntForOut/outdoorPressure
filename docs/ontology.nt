@@ -795,6 +795,11 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 # 
+# https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals
+<https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
+<https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals> <http://purl.org/spar/datacite/relatedIdentifier> <https://link.springer.com/article/10.1007/s13280-022-01825-w> .
+# 
 # https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme
 <https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
@@ -1044,6 +1049,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals
 <https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals> .
 <https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-6265-710X> .
 <https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals> <http://purl.org/dc/terms/description> "Article sur l'effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 \"Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping\"" .
 # 
