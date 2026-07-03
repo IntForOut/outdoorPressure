@@ -215,6 +215,11 @@
     "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#has_member",
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#target",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -247,6 +252,9 @@
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#Catalog",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -297,6 +305,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#seriesMember",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#servesDataset",
@@ -681,28 +692,22 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#EntrepotRechercheIntForOut",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Catalog"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Collection" ],
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Dataverse dedicated to the IntForOut project. This catalog is integrated into the multidisciplinary Recherche Data Gouv data warehouse platform."
+    "@value" : "Collection dedicated to INTFOROUT project on the french governmental research data portal"
   }, {
     "@language" : "fr",
-    "@value" : "Dataverse dédié au projet IntForOut. Ce catalogue est intégré dans la plateforme de l'entrepôt pluridisciplinaire Recherche Data Gouv."
+    "@value" : "Collection dédiée au projet IntForOut sur l'entrepôt recherche.data.gouv.fr"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "IntForOut published Dataverse"
+    "@language" : "fr",
+    "@value" : "Collection INTFOROUT sur l'entrepôt recherche data.gouv.fr"
   } ],
-  "http://www.w3.org/ns/dcat#dataset" : [ {
+  "http://www.w3.org/2004/02/skos/core#member" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"
   } ],
-  "http://www.w3.org/ns/dcat#record" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MetadataTracesAcquisitionGroundTruthPathVincennesForest"
-  } ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
     "@value" : "https://entrepot.recherche.data.gouv.fr/dataverse/intforout"
   } ]
 }, {
@@ -918,22 +923,28 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
+  } ],
+  "http://www.w3.org/ns/dcat#seriesMember" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HedgesLesBauges2020"
   } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#IntForOutDB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#LIFAT"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Datawarehouse associated with INTFOROUT ETL process and to be used for the dissemination prototypes. It is a work in progress. Contact : LIFAT"
+  } ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"
   } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LIFAT"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Dataset associated with IntForOut ETL framework"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Dataset associated with IntForOut ETL framework"
+    "@value" : "Datawarehouse designed for INTFOROUT dissemination (work in progress)"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024",
@@ -1201,29 +1212,6 @@
   } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MetadataTracesAcquisitionGroundTruthPathVincennesForest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#CatalogRecord"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Associated metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent)"
-  } ],
-  "http://www.w3.org/ns/dcat#conformsTo" : [ {
-    "@id" : "https://www.iso.org/fr/standard/53798.html"
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "xml"
-  } ],
-  "http://www.w3.org/ns/dcat#issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-08-13"
-  } ],
-  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Movebank",
@@ -2101,6 +2089,10 @@
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@value" : "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1"
   } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025). Within the research portal distribution, additional files correspond to standard metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent), some of which are not inserted in this KG"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2025-01-18"
@@ -2119,10 +2111,6 @@
   } ],
   "http://purl.org/spar/datacite/relatedIdentifier" : [ {
     "@value" : "https://doi.org/10.57745/MOUSLS"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2499,12 +2487,9 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#outdoorvision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Catalog"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2512,7 +2497,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "OutdoorVision Catalog"
+    "@value" : "OutdoorVision"
   } ],
   "http://www.w3.org/ns/dcat#dataset" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
