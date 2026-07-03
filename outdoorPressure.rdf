@@ -1204,17 +1204,20 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#HikingInChamonix -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInChamonix">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HikingInLesBauges -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInLesBauges">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
     </owl:NamedIndividual>
     
-    <!-- https://intforout.github.io/outdoorPressure#HikingInLesBauges -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInChamonix">
-        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
-    </owl:NamedIndividual>
 
 
     <!-- https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters -->
@@ -1612,8 +1615,8 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInChamonix"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24-FTPDistribution"/>
         <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0007-5972"/>
@@ -1771,6 +1774,15 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology"/>
         <dc:creator rdf:resource="https://orcid.org/0000-0001-6491-9487"/>
         <rdfs:comment>Effet de différentes intensités d&apos;activités récréatives et de la chasse sur la probabilité de détecter certaines espèces (cerf, chevreuil, sanglier, renard, lynx).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals">
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-6265-710X"/>
+        <terms:description>Article sur l&apos;effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 &quot;Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping&quot;</terms:description>
     </owl:NamedIndividual>
     
 
