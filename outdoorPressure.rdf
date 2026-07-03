@@ -1399,6 +1399,15 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <datacite:relatedIdentifier rdf:resource="https://link.springer.com/article/10.1007/s13280-022-01825-w"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme">
@@ -1781,6 +1790,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
     <!-- https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals">
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals"/>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-6265-710X"/>
         <terms:description>Article sur l&apos;effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 &quot;Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping&quot;</terms:description>
     </owl:NamedIndividual>
