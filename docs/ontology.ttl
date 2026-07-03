@@ -1252,6 +1252,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                                                rdfs:comment "Effet de différentes intensités d'activités récréatives et de la chasse sur la probabilité de détecter certaines espèces (cerf, chevreuil, sanglier, renard, lynx)." .
 
 
+###  https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals
+:ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals rdf:type owl:NamedIndividual ;
+                                                              <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-6265-710X> ;
+                                                              <http://purl.org/dc/terms/description> "Article sur l'effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 \"Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping\"" .
+
+
 ###  https://intforout.github.io/outdoorPressure#ReviewPaperOnStravaData
 :ReviewPaperOnStravaData rdf:type owl:NamedIndividual ,
                                   <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
