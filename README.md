@@ -7,7 +7,7 @@ This Knowledge Graph (KG) supports the discovery and reuse of data, tools and re
 ### Want to explore the Knowledge Graph?
 
 Classical ontology documentation : [OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html). 
-Dedicated companion software to explore catalogued assets through predefined queries : [here](https://github.com/intForOut/sham-wah).  
+Sham-Wah companion software to explore catalogued assets through predefined queries : [here](https://github.com/intForOut/sham-wah).  
 
 ### Contribute  
 
