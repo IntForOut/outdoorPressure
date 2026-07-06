@@ -842,6 +842,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 ###  https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 :HumanChamoisRealEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
+                            <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
                             <http://www.w3.org/ns/dcat#distribution> :HumanChamoisRealEncounters-csv ;
                             <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                             <http://purl.org/dc/terms/issued> "2026-05-07"^^xsd:date ;

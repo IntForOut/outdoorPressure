@@ -687,6 +687,7 @@
 # https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
 <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/issued> "2026-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .

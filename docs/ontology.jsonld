@@ -855,6 +855,9 @@
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
   } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."
