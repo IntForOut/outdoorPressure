@@ -18,6 +18,9 @@
 # http://creativecommons.org/ns#licence
 <http://creativecommons.org/ns#licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/coverage
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -476,6 +479,7 @@
 # 
 # 
 # http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 # 
 # http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
@@ -558,6 +562,7 @@
 # 
 # https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020
 <https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#AnimalActivity> .
 # 
 # https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

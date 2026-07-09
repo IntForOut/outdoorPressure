@@ -23,6 +23,10 @@
 <http://creativecommons.org/ns#licence> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/coverage
+<http://purl.org/dc/elements/1.1/coverage> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
@@ -573,7 +577,8 @@ For example the footprint of a population of hikers is represented as their agre
 #################################################################
 
 ###  http://purl.org/dc/terms/publisher
-<http://purl.org/dc/terms/publisher> rdf:type <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/dc/terms/publisher> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/ns/dcat#Dataset> .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3
@@ -687,7 +692,8 @@ For example the footprint of a population of hikers is represented as their agre
 
 
 ###  https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020
-:AnimalLivingAroundHedgesLesBauges2020 rdf:type owl:NamedIndividual .
+:AnimalLivingAroundHedgesLesBauges2020 rdf:type owl:NamedIndividual ,
+                                                :AnimalActivity .
 
 
 ###  https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025
