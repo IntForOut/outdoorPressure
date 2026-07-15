@@ -1144,6 +1144,18 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-15T02:00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-03T02:00:00</dct:modified>
 
+
+        <!-- <dct:provenance>
+            <dct:ProvenanceStatement>
+            <dct:description xml:lang="">La géométrie des objets de la BD TOPO® provient de sources différentes ; l'objet aura une précision relative à sa méthode d'acquisition. La restitution photogrammétrique permet d'obtenir une meilleure précision géométrique qu'avec un report à partir d'un plan ou d'une orthophotographie. La correspondance entre les sources de données et la valeur de la précision escomptée est fournie dans le document de référence (DC_BDTOPO_3-5.pdf). Les données attributaires proviennent de différentes sources. Pour une classe donnée, les sources de l'information sémantique et celles de l'information géométrique ne coïncident pas forcément. C'est pourquoi la notion de source de données a été précisée. 
+
+            Dernières mises à jour : 
+            Téléchargement - BD TOPO® édition Juin 2026 FXX + DROM France entière (FlatGeobuf, GeoParquet, GPKG + SQL), par territoires (GPKG + SQL), par régions (GPKG + SHP), par départements (SHP) + thème transport
+            Téléchargement - Différentiel entre les éditions de Mars et Juin 2026 
+            Flux WFS, WMS-Raster et WMTS - Différentiel entre les éditions de Mars et Juin 2026</dct:description>
+            </dct:ProvenanceStatement>
+        </dct:provenance> -->
+
         /**************************** Propriétés qui ont été mise à la main ***********************************************************/
 
         <dcat:seriesMember rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
@@ -1509,7 +1521,111 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
         <dcat:seriesMember rdf:resource="https://intforout.github.io/outdoorPressure#HedgesLesBauges2020"/>
 
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-27T16:20:32</dct:modified>
+        <dcat:contactPoint>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+                <vcard:fn xml:lang="">INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)</vcard:fn>
+                <vcard:hasEmail rdf:resource="mailto:contact.geoservices@ign.fr"/>
+                <vcard:hasAddress>
+                    <vcard:Address>
+                    <vcard:street-address>IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE</vcard:street-address>
+                    </vcard:Address>
+                </vcard:hasAddress>
+            </rdf:Description>
+        </dcat:contactPoint>
+        <dct:title xml:lang="">BD HAIE</dct:title>
+        <dct:description xml:lang="">Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale.
+            
+            Il existe à ce jour deux versions de la BD Haie :
 
+            •	**Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données :**
+
+            o	Les haies et les bosquets du thème végétation de la base de données topographique de l’IGN, BD TOPO®, obtenus par segmentation automatique d’images aériennes et classés par photo-interprétation sur images de 2004 à 2015, selon les départements ;
+
+            o	Les haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2011 à 2014, selon les départements. Le RPG est un système d’information géographique permettant l’identification des parcelles agricoles, géré par l’ASP (Agence de service et de paiement).
+
+            •	**Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ».** 
+
+            Cette version constitue une version mise à jour et millésimée de la « BD Haie V1 2020 ». Elle n’a pas été élaborée selon la même méthode. Deux sources de données ont été utilisées pour la mise à jour :
+
+            o	Les haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2020 à 2022, selon les départements ;
+
+            o	Les modèles numériques de surface produit par « corrélation des images aériennes » datant de 2020 à 2022, selon les départements.  
+
+            Dans cette version 2 sont présentes : (i) les haies présentes dans la BD Haie V1 confirmées par les données utilisées, (ii) des haies ajoutées à partir des données du RPG utilisées pour la mise à jour.</dct:description>
+
+      <dcat:theme rdf:parseType="Resource">
+         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+         <skos:prefLabel xml:lang="">Habitats et biotopes</skos:prefLabel>
+         <skos:inScheme>
+            <skos:ConceptScheme>
+               <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+            </skos:ConceptScheme>
+         </skos:inScheme>
+      </dcat:theme>
+      <dcat:theme rdf:parseType="Resource">
+         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+         <skos:prefLabel xml:lang="">Sols</skos:prefLabel>
+         <skos:inScheme>
+            <skos:ConceptScheme>
+               <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+            </skos:ConceptScheme>
+         </skos:inScheme>
+      </dcat:theme>
+      <dcat:theme rdf:parseType="Resource">
+         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+         <skos:prefLabel xml:lang="">National</skos:prefLabel>
+         <skos:inScheme>
+            <skos:ConceptScheme>
+               <dct:title xml:lang="">INSPIRE Spatial Scope</dct:title>
+            </skos:ConceptScheme>
+         </skos:inScheme>
+      </dcat:theme>
+
+
+      <dcat:keyword xml:lang="">données ouvertes</dcat:keyword>
+      <dcat:keyword xml:lang="">biodiversité</dcat:keyword>
+      <dcat:keyword xml:lang="">bocages</dcat:keyword>
+      <dcat:keyword xml:lang="">environnement</dcat:keyword>
+      <dcat:keyword xml:lang="">haies</dcat:keyword>
+      <dcat:keyword xml:lang="">bosquets</dcat:keyword>
+      <dcat:keyword xml:lang="">arbres</dcat:keyword>
+
+        <!-- <dct:spatial rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((-5.15 51.1,9.57 51.1,9.57 41.32,-5.15 41.32,-5.15 51.1))]]></locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>-5.15 41.32</gml:lowerCorner><gml:upperCorner>9.57 51.1</gml:upperCorner></gml:Envelope>]]></locn:geometry>
+            <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></locn:geometry>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((-5.15 51.1,9.57 51.1,9.57 41.32,-5.15 41.32,-5.15 51.1))]]></dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>-5.15 41.32</gml:lowerCorner><gml:upperCorner>9.57 51.1</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
+            <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></dcat:bbox>
+        </dct:spatial>
+        <dct:spatial rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+            <skos:prefLabel xml:lang="">FXX</skos:prefLabel>
+        </dct:spatial> -->
+
+      <dct:temporal>
+         <dct:PeriodOfTime>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-01</schema:startDate>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-15</schema:endDate>
+            <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-01</dcat:startDate>
+            <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-15</dcat:endDate>
+         </dct:PeriodOfTime>
+      </dct:temporal>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-01T01:00:00</dct:issued>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-27T02:00:00</dct:modified>
+
+    <dct:provenance>
+         <dct:ProvenanceStatement>
+            <dct:description xml:lang="">BD HAIE  - Une version initiale « BD Haie V1 2020 », Une version 2 mise à jour depuis 2024 « BD Haie V2 »
+				  
+				  	Dernière mise à jour : WFS, WMS Vecteur et WMTS (Edition Mars 2026)</dct:description>
+         </dct:ProvenanceStatement>
+      </dct:provenance>
 
     </owl:NamedIndividual>
     
