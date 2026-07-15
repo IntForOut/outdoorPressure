@@ -922,6 +922,8 @@ For example the footprint of a population of hikers is represented as their agre
             </rdf:Description>
         </dcat:contactPoint>
 
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGNF_BD-TOPO</dct:identifier>
+
         <dct:title xml:lang="">BD TOPO®</dct:title>
         <dct:description xml:lang="">La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.
 
@@ -1143,6 +1145,8 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-03T02:00:00</dct:modified>
 
         /**************************** Propriétés qui ont été mise à la main ***********************************************************/
+
+        <dcat:seriesMember rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
 
         <schema:encodingFormat>GPKG</schema:encodingFormat>
         <schema:encodingFormat>PostGreSQL</schema:encodingFormat>
@@ -1504,6 +1508,9 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
         <dcat:seriesMember rdf:resource="https://intforout.github.io/outdoorPressure#HedgesLesBauges2020"/>
+
+
+
     </owl:NamedIndividual>
     
 
