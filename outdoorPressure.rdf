@@ -4,6 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:geodcatap="http://data.europa.eu/930/"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -21,6 +22,8 @@
      xmlns:dcam1="http://purl.org/dc/dcam/"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:locn="http://www.w3.org/ns/locn#"
      xmlns:schema="http://schema.org/"
      xmlns:geodata="http://purl.org/www.umr-lastig.fr/geodata#"
      xmlns:datacite="http://purl.org/spar/datacite/"
@@ -903,33 +906,244 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DatasetSeries"/>
-        <schema:alternateName>BD TOPO® description vectorielle 3D (</schema:alternateName>
-        <schema:creator rdf:resource="http://njh.me/contact.geoservices@ign.fr"/>
-        <schema:dateCreated rdf:datatype="http://schema.org/Date">2002-12-15</schema:dateCreated>
-        <schema:datePublished rdf:datatype="http://schema.org/Date">2025-06-15</schema:datePublished>
-        <schema:description>La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.
 
-	    Les objets de la BD TOPO® sont structurés en thèmes : 
-	     - l&apos;administratif ; 
-	     - le bâti ; 
-	     - l&apos;hydrographie ; 
-	     - les lieux nommés ; 
-	     - l&apos;occupation du sol ; 
-	     - les services et activités ; 
-	     - le transport ; 
-	     - les zones réglementées. 
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-03T11:26:44</dct:modified>
 
-	    Le processus de production 3D permet de fournir l&apos;altimétrie des objets, ainsi que la hauteur des bâtiments. 
+        <dcat:contactPoint>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+                <vcard:fn xml:lang="">INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)</vcard:fn>
+                <vcard:hasEmail rdf:resource="mailto:contact.geoservices@ign.fr"/>
+                <vcard:hasAddress>
+                    <vcard:Address>
+                    <vcard:street-address>IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE</vcard:street-address>
+                    </vcard:Address>
+                </vcard:hasAddress>
+            </rdf:Description>
+        </dcat:contactPoint>
 
-	    Le relief est décrit sous forme de modèles numériques de terrain (MNT). 
+        <dct:title xml:lang="">BD TOPO®</dct:title>
+        <dct:description xml:lang="">La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.
 
-	    Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.
+        Les objets de la BD TOPO® sont structurés en thèmes : 
+        - l'administratif ; 
+        - le bâti ; 
+        - l'hydrographie ; 
+        - les lieux nommés ; 
+        - l'occupation du sol ; 
+        - les services et activités ; 
+        - le transport ; 
+        - les zones réglementées. 
 
-	    Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). 
+        Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. 
 
-	    Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l&apos;ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. 
+        Le relief est décrit sous forme de modèles numériques de terrain (MNT). 
 
-	    Plus précisément, l&apos;édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l&apos;IGN d&apos;une durée de 3 mois.</schema:description>
+        Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.
+
+        Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). 
+
+        Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. 
+
+        Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois.</dct:description>
+
+
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Altitude</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Bâtiments</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Dénominations géographiques</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Hydrographie</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Installations agricoles et aquacoles</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Lieux de production et sites industriels</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Occupation des terres</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Référentiels de coordonnées</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Répartition de la population - démographie</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Réseaux de transport</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Services d'utilité publique et services publics</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Unités administratives</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Usage des sols</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">GEMET - INSPIRE themes, version 1.0</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">National</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">INSPIRE Spatial Scope</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Géospatiales</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">High-value dataset categories</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Observation de la terre et environnement</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">High-value dataset categories</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:theme rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <skos:prefLabel xml:lang="">Mobilité</skos:prefLabel>
+            <skos:inScheme>
+                <skos:ConceptScheme>
+                <dct:title xml:lang="">High-value dataset categories</dct:title>
+                </skos:ConceptScheme>
+            </skos:inScheme>
+        </dcat:theme>
+        <dcat:keyword xml:lang="">hvd</dcat:keyword>
+        <dcat:keyword xml:lang="">Géospatiales</dcat:keyword>
+        <dcat:keyword xml:lang="">Observation de la terre et environnement</dcat:keyword>
+        <dcat:keyword xml:lang="">Mobilité</dcat:keyword>
+        <dcat:keyword xml:lang="">activités</dcat:keyword>
+        <dcat:keyword xml:lang="">aspects militaires</dcat:keyword>
+        <dcat:keyword xml:lang="">données ouvertes</dcat:keyword>
+        <dcat:keyword xml:lang="">eau</dcat:keyword>
+        <dcat:keyword xml:lang="">énergies</dcat:keyword>
+        <dcat:keyword xml:lang="">forêts</dcat:keyword>
+        <dcat:keyword xml:lang="">haies</dcat:keyword>
+        <dcat:keyword xml:lang="">historique</dcat:keyword>
+        <dcat:keyword xml:lang="">routes</dcat:keyword>
+        <dcat:keyword xml:lang="">toponymie</dcat:keyword>
+        <dcat:keyword xml:lang="">transports</dcat:keyword>
+        <dcat:keyword xml:lang="">végétation</dcat:keyword>
+
+        <!-- <dct:spatial rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((-5.15 51.1,9.57 51.1,9.57 41.32,-5.15 41.32,-5.15 51.1))]]></locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>-5.15 41.32</gml:lowerCorner><gml:upperCorner>9.57 51.1</gml:upperCorner></gml:Envelope>]]></locn:geometry>
+            <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></locn:geometry>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((-5.15 51.1,9.57 51.1,9.57 41.32,-5.15 41.32,-5.15 51.1))]]></dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>-5.15 41.32</gml:lowerCorner><gml:upperCorner>9.57 51.1</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
+            <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[-5.15,51.1],[9.57,51.1],[9.57,41.32],[-5.15,41.32],[-5.15,51.1]]]}]]></dcat:bbox>
+        </dct:spatial> -->
+
+        <dct:temporal>
+            <dct:PeriodOfTime>
+                <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-03-18</schema:startDate>
+                <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-15</schema:endDate>
+                <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-03-18</dcat:startDate>
+                <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-15</dcat:endDate>
+            </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-12-15T01:00:00</dct:created>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-15T02:00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-03T02:00:00</dct:modified>
+
+        /**************************** Propriétés qui ont été mise à la main ***********************************************************/
+
         <schema:encodingFormat>GPKG</schema:encodingFormat>
         <schema:encodingFormat>PostGreSQL</schema:encodingFormat>
         <schema:encodingFormat>SHP</schema:encodingFormat>
@@ -937,22 +1151,7 @@ For example the footprint of a population of hikers is represented as their agre
         <schema:encodingFormat>WFS</schema:encodingFormat>
         <schema:encodingFormat>WMS</schema:encodingFormat>
         <schema:encodingFormat>WMTS</schema:encodingFormat>
-        <schema:keywords>Altitude</schema:keywords>
-        <schema:keywords>Bâtiments</schema:keywords>
-        <schema:keywords>Dénominations géographiques</schema:keywords>
-        <schema:keywords>Hydrographie</schema:keywords>
-        <schema:keywords>Mobilité</schema:keywords>
-        <schema:keywords>Réseaux de transport</schema:keywords>
-        <schema:keywords>activités</schema:keywords>
-        <schema:keywords>données ouvertes</schema:keywords>
-        <schema:keywords>eau</schema:keywords>
-        <schema:keywords>forêts</schema:keywords>
-        <schema:keywords>haies</schema:keywords>
-        <schema:keywords>routes</schema:keywords>
-        <schema:keywords>toponymie</schema:keywords>
-        <schema:keywords>transports</schema:keywords>
-        <schema:keywords>végétation</schema:keywords>
-        <schema:name>BD TOPO®</schema:name>
+        
         <rdfs:comment xml:lang="en">BD TOPO covers whole French territory, is captured at scale 1/ 10 000, exists since 1990 and aims to provide reference data for mapping and spatial analysis.</rdfs:comment>
         <rdfs:comment xml:lang="fr">BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l&apos;ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l&apos;aménagement et de l&apos;observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique</rdfs:comment>
         <rdfs:label xml:lang="en">BD TOPO® V3.</rdfs:label>
