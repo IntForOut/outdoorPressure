@@ -943,9 +943,9 @@ For example the footprint of a population of hikers is represented as their agre
 
         Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.
 
-        Le produit **BDTOPO® Express** est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). 
+        Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). 
 
-        Le produit **Différentiel BD TOPO®** contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. 
+        Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. 
 
         Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois.</dct:description>
 
@@ -1539,13 +1539,13 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
             
             Il existe à ce jour deux versions de la BD Haie :
 
-            •	**Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données :**
+            •	 Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données : 
 
             o	Les haies et les bosquets du thème végétation de la base de données topographique de l’IGN, BD TOPO®, obtenus par segmentation automatique d’images aériennes et classés par photo-interprétation sur images de 2004 à 2015, selon les départements ;
 
             o	Les haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2011 à 2014, selon les départements. Le RPG est un système d’information géographique permettant l’identification des parcelles agricoles, géré par l’ASP (Agence de service et de paiement).
 
-            •	**Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ».** 
+            •	 Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ». 
 
             Cette version constitue une version mise à jour et millésimée de la « BD Haie V1 2020 ». Elle n’a pas été élaborée selon la même méthode. Deux sources de données ont été utilisées pour la mise à jour :
 
