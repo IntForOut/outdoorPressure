@@ -1511,17 +1511,28 @@ For example the footprint of a population of hikers is represented as their agre
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
 		<prov:used rdf:resource="https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023"/>
 		<prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
+		<dct:isReferencedBy rdf:resource="https://doi.org/10.1234/your-article-doi"/>
     </owl:NamedIndividual>
     
 
 
     <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
         <dct:description>Workflow for identifying Human-Wildlife Encounter Area From GNSS Tracks</dct:description>
     </owl:NamedIndividual>
-    
+
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+		    <dct:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories </dct:title>
+
+   <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+ 
+        <datacite:relatedIdentifier rdf:resource="https://agile-giss.copernicus.org/articles/7/2/2026/"/>
+		  <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
+    </owl:NamedIndividual>
 
 
     <!-- https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph -->
