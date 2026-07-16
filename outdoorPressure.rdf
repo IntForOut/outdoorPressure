@@ -1482,7 +1482,7 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection -->
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
@@ -1508,7 +1508,7 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
         <dct:description>
         Pipeline of Python scripts for detecting Human-Chamois Encounter Areas from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
-
+		
 		The pipeline integrates several components:
 
 			- Trajectory management using the Tracklib library
@@ -1527,7 +1527,7 @@ For example the footprint of a population of hikers is represented as their agre
 
         GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection
     </dct:description>
-        <dct:isReferencedBy rdf:resource="https://doi.org/10.1234/your-article-doi"/>
+        <dct:isReferencedBy rdf:resource="https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-22T09:59:00</dct:modified>
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
