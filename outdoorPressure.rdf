@@ -181,9 +181,21 @@
     
 
 
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy"/>
+    
+
+
     <!-- http://purl.org/dc/terms/provenance -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/provenance"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
     
 
 
@@ -532,6 +544,12 @@
     <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
     
 
 
@@ -1466,6 +1484,15 @@ For example the footprint of a population of hikers is represented as their agre
 
     <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection -->
 
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <dct:description>Workflow for identifying Human-Wildlife Encounter Areas from GNSS tracks</dct:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection -->
+
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
         <dct:description>Specialized workflow for identifying Human-Chamois Encounter Areas</dct:description>
@@ -1478,6 +1505,7 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts">
         <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Software"/>
+        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
         <dct:description>
         Pipeline of Python scripts for detecting Human-Chamois Encounter Areas from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
 
@@ -1499,40 +1527,20 @@ For example the footprint of a population of hikers is represented as their agre
 
         GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection
     </dct:description>
+        <dct:isReferencedBy rdf:resource="https://doi.org/10.1234/your-article-doi"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-22T09:59:00</dct:modified>
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
         <dct:requires>PostgreSQL</dct:requires>
-		<dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-22T09:59:00</dct:modified>
         <schema:codeRepository>https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</schema:codeRepository>
         <schema:programmingLanguage>Python 3.10</schema:programmingLanguage>
+        <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
         <prov:implements rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
-		<prov:used rdf:resource="https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023"/>
-		<prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
-		<dct:isReferencedBy rdf:resource="https://doi.org/10.1234/your-article-doi"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
-        <dct:description>Workflow for identifying Human-Wildlife Encounter Area From GNSS Tracks</dct:description>
-    </owl:NamedIndividual>
-
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE">
-        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-		    <dct:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories </dct:title>
-
-   <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
- 
-        <datacite:relatedIdentifier rdf:resource="https://agile-giss.copernicus.org/articles/7/2/2026/"/>
-		  <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
-    </owl:NamedIndividual>
 
 
     <!-- https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph -->
@@ -1561,6 +1569,26 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#ofb"/>
+        <dct:description>
+        CSV dataset containing GNSS trajectories of chamois monitored in the Bauges Massif in 2026.
+		This dataset contains 82,685 trajectories for 257 recorded animals (218 females and 39 males), where each trajectory represents a single day’s record. The data originate from a long-term Capture–Mark–Recapture monitoring program and hosted on Movebank, with the id: &quot;3336284355&quot;
+    </dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+		2023-09-15T17:00:09
+	</dct:issued>
+        <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
+        <dct:title>Chamois GNSS Trajectories - Bauges Massif (2023)</dct:title>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#MovebankChamoisDistribution"/>
+        <prov:wasDerivedFrom rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo">
@@ -1578,6 +1606,19 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
         <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
         <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAl.SpatializingDisturbanceByDectectingHumanWildlifeEncounters.2026.AGILE">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+        <dct:description>Workflow for identifying Human-Wildlife Encounter Area From GNSS Tracks</dct:description>
+        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
+        <dct:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories </dct:title>
+        <datacite:relatedIdentifier rdf:resource="https://agile-giss.copernicus.org/articles/7/2/2026/"/>
     </owl:NamedIndividual>
     
 
@@ -1704,7 +1745,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdfs:comment xml:lang="en">718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates.</rdfs:comment>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-		<prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
+        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
     </owl:NamedIndividual>
     
 
@@ -2037,34 +2078,17 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdfs:comment xml:lang="en">Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. </rdfs:comment>
         <rdfs:label xml:lang="en">Movebank is a free, online database of animal tracking data</rdfs:label>
     </owl:NamedIndividual>
+    
 
-	<owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MovebankChamoisDistribution">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
-    <dct:description>Distribution of the chamois trajectories dataset stored in the Movebank data warehouse. This dataset is not available for download</dct:description>
-	<dcat:identifier>3336284355</dcat:identifier>
-	<!-- <dcat:accessURL>https://www.movebank.org/cms/webapp?gwt_fragment=page=studies,path=study3336284355</dcat:identifier> -->
-	</owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#MovebankChamoisDistribution"/>
+    <!-- https://intforout.github.io/outdoorPressure#MovebankChamoisDistribution -->
 
-	<dct:title>Chamois GNSS Trajectories - Bauges Massif (2023)</dct:title>
-
-    <dct:description>
-        CSV dataset containing GNSS trajectories of chamois monitored in the Bauges Massif in 2026.
-		This dataset contains 82,685 trajectories for 257 recorded animals (218 females and 39 males), where each trajectory represents a single day’s record. The data originate from a long-term Capture–Mark–Recapture monitoring program and hosted on Movebank, with the id: "3336284355"
-    </dct:description>
-
-	<dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
-	<dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#ofb"/>
-	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-		2023-09-15T17:00:09
-	</dct:issued>
-	<prov:wasDerivedFrom rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
-</owl:NamedIndividual>
-
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#MovebankChamoisDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <dct:description>Distribution of the chamois trajectories dataset stored in the Movebank data warehouse. This dataset is not available for download</dct:description>
+        <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
+        <dcat:identifier>3336284355</dcat:identifier>
+    </owl:NamedIndividual>
     
 
 
@@ -2805,12 +2829,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <foaf:homePage rdf:resource="https://parcdesbauges.com"/>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ofb">
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <rdf:label xml:lang="fr">Office Français de la Biodiversité</rdf:label>
-        <foaf:homePage rdf:resource="https://ofb.gouv.fr/"/>
-    </owl:NamedIndividual>
-    
 
 
     <!-- https://intforout.github.io/outdoorPressure#marchandetal-rdata -->
@@ -2829,6 +2847,16 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
         <rdfs:label xml:lang="en">Mathieu Garel</rdfs:label>
         <foaf:name>Mathieu Garel</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ofb -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ofb">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdf:label xml:lang="fr">Office Français de la Biodiversité</rdf:label>
+        <foaf:homePage rdf:resource="https://ofb.gouv.fr/"/>
     </owl:NamedIndividual>
     
 
