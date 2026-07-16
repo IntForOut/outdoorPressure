@@ -1506,9 +1506,8 @@ For example the footprint of a population of hikers is represented as their agre
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts">
         <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Software"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-        <dct:description>
-        Pipeline of Python scripts for detecting Human-Chamois Encounter Areas from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
-		
+        <dct:description>Pipeline of Python scripts for detecting Human-Chamois Encounter Areas from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
+
 		The pipeline integrates several components:
 
 			- Trajectory management using the Tracklib library
@@ -1533,7 +1532,7 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
         <dct:requires>PostgreSQL</dct:requires>
         <schema:codeRepository>https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</schema:codeRepository>
-        <schema:programmingLanguage>Python 3.10</schema:programmingLanguage>
+        <schema:programmingLanguage>Python</schema:programmingLanguage>
         <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
         <prov:implements rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
