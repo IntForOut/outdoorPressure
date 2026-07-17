@@ -1482,31 +1482,31 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection -->
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterDetection -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterDetection">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
         <dct:description>Workflow for identifying Human-Wildlife Encounter Areas from GNSS tracks</dct:description>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection -->
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetection -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetection">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
-        <dct:description>Specialized workflow for identifying Human-Chamois Encounter Areas</dct:description>
-        <prov:specializationOf rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterAreaDetection"/>
+        <dct:description>Specialized workflow for identifying Human-Chamois Encounters</dct:description>
+        <prov:specializationOf rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncounterDetection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts -->
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetectionScripts -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetectionScripts">
         <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Software"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-        <dct:description>Pipeline of Python scripts for detecting Human-Chamois Encounter Areas from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
+        <dct:description>Pipeline of Python scripts for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
 
 		The pipeline integrates several components:
 
@@ -1530,11 +1530,10 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-22T09:59:00</dct:modified>
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
-        <dct:requires>PostgreSQL</dct:requires>
         <schema:codeRepository>https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</schema:codeRepository>
         <schema:programmingLanguage>Python</schema:programmingLanguage>
         <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
-        <prov:implements rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetection"/>
+        <prov:implements rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetection"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#DataChamoisTrajectoriesBauges2023"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
@@ -1577,9 +1576,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         CSV dataset containing GNSS trajectories of chamois monitored in the Bauges Massif in 2026.
 		This dataset contains 82,685 trajectories for 257 recorded animals (218 females and 39 males), where each trajectory represents a single day’s record. The data originate from a long-term Capture–Mark–Recapture monitoring program and hosted on Movebank, with the id: &quot;3336284355&quot;
     </dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-		2023-09-15T17:00:09
-	</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-15T17:00:09</dct:issued>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
         <dct:title>Chamois GNSS Trajectories - Bauges Massif (2023)</dct:title>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#MovebankChamoisDistribution"/>
@@ -1615,7 +1612,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
         <dct:description>Workflow for identifying Human-Wildlife Encounter Area From GNSS Tracks</dct:description>
-        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
+        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetectionScripts"/>
         <dct:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories </dct:title>
         <datacite:relatedIdentifier rdf:resource="https://agile-giss.copernicus.org/articles/7/2/2026/"/>
     </owl:NamedIndividual>
@@ -1744,7 +1741,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdfs:comment xml:lang="en">718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates.</rdfs:comment>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"/>
         <prov:wasAttributedTo rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterAreaDetectionScripts"/>
+        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanChamoisEncounterDetectionScripts"/>
     </owl:NamedIndividual>
     
 
