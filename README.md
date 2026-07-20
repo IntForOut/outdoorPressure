@@ -12,7 +12,8 @@ Related ressources :
 **Contribute** through github issues in this project : 
 - create a UserFeedbac to share your own expertise, experience, or observations about data, software, or papers you read. Follow the [steps](./docs/new_userfeedback.md)
 - create a Dataset to describe data that is relevant to the scope. A dataset is "a coherent collection of information or resources (data files, explanatory files, APIs, links, etc.) and metadata (description, publication date, keywords, geographical/temporal coverage, etc.)." Follow the [steps](./docs/new_dataset.md)
-- create a Blank issue for everything else of if you are not sure about the categories of instance you wish to insert 
+- create a Blank issue for everything else of if you are not sure about the categories of instance you wish to insert.
+
 ​
 ![Opening the Github Issue tab figure](docs/img/issue_github.png)
 *figure : Opening the Github Issue tab*
