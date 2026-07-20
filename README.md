@@ -1,13 +1,15 @@
-Outdoorpressure Knowledge Graph (KG) encodes into a graph model different information needed to discover and reuse data to study the impact of recreational activities in the french Alps, spanning from data sources, processes to derive new data, to the real world phenomena depicted in data. 
+**Outdoorpressure Knowledge Graph** encodes into a graph model different information needed to discover and reuse data to study the impact of recreational activities in the french Alps, spanning from data sources, processes to derive new data, and other digital assets (see concepts on the right of figure) to the real world phenomena they represent (see concepts on the left part of the figure). Nodes and edges are created manually and gradually to support specific tasks within [INTFOROUT project](https://www.umr-lastig.fr/intforout/). 
 
 Related ressources : 
-[Documentation](https://intforout.github.io/outdoorPressure/index.html) 
-[Sham-Wah application to showcase predefined queries](https://github.com/intForOut/sham-wah)  
+- [Documentation](https://intforout.github.io/outdoorPressure/index.html) 
+- [Sham-Wah application](https://github.com/intForOut/sham-wah) to showcase predefined queries that support specific tasks
+- [Geodata KG](https://github.com/umrlastig/geodata), a more generic ontology reused in outdoorpressure   
 
 ![Overview of the OutdoorPressure KG main concepts](docs/img/schema_modele_kg.png)
 
+The graph and the Sham-Wah software are under open licence. 
 
-Anyone can contribute by creating issues on this git that will be moderated by the KG curators.
+ Anyone can contribute by creating issues on this git that will be moderated by the KG curators. 
 If you wish to contribute specifically with new instances:
 - create one or more **UserFeedback** instances for sharing your expertise, experience, or observations about data or about papers you read. Follow the steps described [here](./docs/new_userfeedback.md)
 - create one or more **Dataset** to describe data that is relevant to the scope. A dataset is "a coherent collection of information or resources (data files, explanatory files, APIs, links, etc.) and metadata (description, publication date, keywords, geographical/temporal coverage, etc.)." Follow the steps described  [here](./docs/new_dataset.md)  
