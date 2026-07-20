@@ -1,15 +1,11 @@
-## A Knowledge Graph to support the study of human recreational activities in the French Alps and their impact
+Outdoorpressure Knowledge Graph (KG) encodes into a graph model different information needed to discover and reuse data to study the impact of recreational activities in the french Alps, spanning from data sources, processes to derive new data, to the real world phenomena depicted in data. 
 
-This Knowledge Graph (KG) supports the discovery and reuse of data, tools and related expertise to study the impact of recreational activities in the french Alps. 
+Related ressources : 
+[Documentation](https://intforout.github.io/outdoorPressure/index.html) 
+[Sham-Wah application to showcase predefined queries](https://github.com/intForOut/sham-wah)  
 
 ![Overview of the OutdoorPressure KG main concepts](docs/img/schema_modele_kg.png)
 
-### Want to explore the Knowledge Graph?
-
-Classical ontology documentation : [OutdoorPressure ontology](https://intforout.github.io/outdoorPressure/index.html). 
-Sham-Wah companion software to explore catalogued assets through predefined queries : [here](https://github.com/intForOut/sham-wah).  
-
-### Contribute  
 
 Anyone can contribute by creating issues on this git that will be moderated by the KG curators.
 If you wish to contribute specifically with new instances:
@@ -29,7 +25,5 @@ Open the Github Issue tab as shown below:
 <p align='left' style="margin-top: 20px;">
 <img src="docs/img/issue_github.png" alt="issue github" width="500">
 </p>
-
-### Acknowledgements
 
 This work was supported by the ANR research project **[IntForOut](https://www.umr-lastig.fr/intforout/)**: Multisource spatial data INTegration FOR the Monitoring of Ecosystems under the pressure of OUTdoor recreation (ANR-23-CE55-0003).
