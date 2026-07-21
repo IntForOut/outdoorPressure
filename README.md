@@ -7,9 +7,9 @@ Outdoor Pressure Knowledge Graph (ODO) encodes into a graph model different info
 
 ODO design is **task-driven**. Nodes and edges are gradually created to support specific tasks within [INTFOROUT project](https://www.umr-lastig.fr/intforout/). These tasks are then showcased through predefined queries in a dedicated software companion. See  [Sham-Wah application](https://github.com/intForOut/sham-wah)  
      
-You are welcome to **contribute** to ODO through github issues in this project : 
-- create a UserFeedback to share your own expertise, experience, or observations about data, software, or papers you read. Follow the [steps](./docs/new_userfeedback.md)
-- create a Dataset to describe data that is relevant to the scope. A dataset is "a coherent collection of information or resources (data files, explanatory files, APIs, links, etc.) and metadata (description, publication date, keywords, geographical/temporal coverage, etc.)." Follow the [steps](./docs/new_dataset.md)
+You are welcome to **contribute** to ODO through github issues in this project, by following the [guides] (./guides/readme.md) : 
+- create a UserFeedback to share your own expertise, experience, or observations about data, software, or papers you read.
+- create a Dataset to describe data that is relevant to the scope. A dataset is "a coherent collection of information or resources (data files, explanatory files, APIs, links, etc.) and metadata (description, publication date, keywords, geographical/temporal coverage, etc.)." 
 - create a Blank issue for everything else of if you are not sure about the categories of instance you wish to insert.
 
 ​

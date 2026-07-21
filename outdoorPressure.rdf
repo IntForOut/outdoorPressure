@@ -2017,7 +2017,7 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#TechnicalDocument"/>
         <dct:creator>ANaciri</dct:creator>
-        <dct:source>https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKerouanton.pdf</dct:source>
+        <dct:source>https://github.com/IntForOut/outdoorPressure/blob/main/technical-documents/ProfilageDataPhDKerouanton.pdf</dct:source>
         <rdf:label xml:lang="fr">Rapport de profilage des données de thèse Kerouanton en PDF</rdf:label>
     </owl:NamedIndividual>
     
@@ -2028,7 +2028,7 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#TechnicalDocument"/>
         <dct:creator>ANaciri</dct:creator>
-        <dct:source>https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf</dct:source>
+        <dct:source>https://github.com/IntForOut/outdoorPressure/blob/main/technical-documents/ProfilageDeepFaune.pdf</dct:source>
         <rdf:label xml:lang="fr">Rapport de profilage du logiciel DeepFaune</rdf:label>
     </owl:NamedIndividual>
     
