@@ -1456,7 +1456,7 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
 :ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
                                          :TechnicalDocument ;
                                 <http://purl.org/dc/terms/creator> "ANaciri" ;
-                                <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDataPhDKerouanton.pdf" ;
+                                <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/technical-documents/ProfilageDataPhDKerouanton.pdf" ;
                                 rdf:label "Rapport de profilage des données de thèse Kerouanton en PDF"@fr .
 
 
@@ -1464,7 +1464,7 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
 :ProfilageDeepFaune.pdf rdf:type owl:NamedIndividual ,
                                  :TechnicalDocument ;
                         <http://purl.org/dc/terms/creator> "ANaciri" ;
-                        <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/expertsfeedback/reports/ProfilageDeepFaune.pdf" ;
+                        <http://purl.org/dc/terms/source> "https://github.com/IntForOut/outdoorPressure/blob/main/technical-documents/ProfilageDeepFaune.pdf" ;
                         rdf:label "Rapport de profilage du logiciel DeepFaune"@fr .
 
 
