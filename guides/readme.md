@@ -2,12 +2,8 @@
 
 - [Create a new instance of dataset](NewDataset)
 - [Create a new instance of userfeedback](NewUserFeedback)
+- [Reminder : how to create a git issue](CreateIssue)
 
-## CreateIssue 
-For any new instance, you can prepare required description items listed in the section below and send it using the form template available through the GitHub “Issue” button. To access the form, open the Issues tab as shown below:
-<p align='left' style="margin-top: 20px;">
-<img src="../docs/img/issue_github.png" alt="Architecture Diagram of Sham-Wah" width="500">
-</p>
 
 ##  NewDataset
 
@@ -33,4 +29,9 @@ If a target is a document, you can upload it to the issue or directly into techn
 If a target is data that is not yet referenced in the Knowledge Graph, please provide the necessary information to create the corresponding node. 
 If your User Feedback is about data that already exists in the Knowledge Graph, you can locate the corresponding IRI in several ways :  1)Consult the Knowledge Graph [raw file](https://intforout.github.io/outdoorPressure/outdoorPressure.rdf), 2) read the [documentation](https://intforout.github.io/outdoorPressure/index.html) 3) Explore the Knowledge Graph Companion [Sham‑Wah](https://github.com/IntForOut/sham-wah) *Note: Sham‑Wah is still under active development. It currently focuses on predefined queries, mainly related to human‑activity data. Because both Sham‑Wah and the Knowledge Graph are evolving, not all data nodes or concepts are fully linked or visible yet. As a result, you may not find every data in the interface for now.*
 
+## CreateIssue 
+For any new instance, you can prepare required description items listed in the section below and send it using the form template available through the GitHub “Issue” button. To access the form, open the Issues tab as shown below:
+<p align='left' style="margin-top: 20px;">
+<img src="../docs/img/issue_github.png" alt="Architecture Diagram of Sham-Wah" width="500">
+</p>
 
