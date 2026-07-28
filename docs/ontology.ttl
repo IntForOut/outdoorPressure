@@ -271,6 +271,10 @@ rdfs:description rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/prov#quotedAs> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/prov#requires
+<http://www.w3.org/ns/prov#requires> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/prov#startedAtTime
 <http://www.w3.org/ns/prov#startedAtTime> rdf:type owl:AnnotationProperty .
 
@@ -380,6 +384,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/ns/dcat#Distribution
 <http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/foaf#Organization
+<http://xmlns.com/foaf/0.1/foaf#Organization> rdf:type owl:Class .
 
 
 ###  https://intforout.github.io/outdoorPressure#Activity
@@ -697,7 +709,7 @@ For example the footprint of a population of hikers is represented as their agre
                                                                                            "énergies" ;
                                                        <http://www.w3.org/ns/dcat#language> "fr-FR" .
 
-_:genid1 rdf:type <http://www.w3.org/2006/vcard/ns#Organization> ;
+_:genid1 rdf:type <http://xmlns.com/foaf/0.1/foaf#Organization> ;
           <http://www.w3.org/2006/vcard/ns#fn> "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)" ;
           <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid2 ;
           <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
@@ -941,6 +953,19 @@ Les paramètres utilisés pour le pipeline sur les différentes zones sont indiq
 Les données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation.""" .
 
 
+###  https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection
+:ComputePopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual ,
+                                                         <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
+                                                <http://www.w3.org/ns/prov#generated> :MergedTracksVincennes2024 ;
+                                                <http://www.w3.org/ns/prov#specializationOf> :ComputePedestrianMobilityGraph ;
+                                                <http://www.w3.org/ns/prov#used> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
+                                                <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
+                                                rdfs:comment "A modular and iterative aggregation algorithm (MIAA)"@en ;
+                                                <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
+                                                <http://www.w3.org/ns/prov#requires> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> ;
+                                                <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
+
+
 ###  https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo
 :DataMarchandEtAl2025MSEPeopleNatureZenodo rdf:type owl:NamedIndividual ,
                                                     <http://www.w3.org/ns/dcat#Dataset> ;
@@ -1118,7 +1143,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
                                                   "environnement" ,
                                                   "haies" .
 
-_:genid38 rdf:type <http://www.w3.org/2006/vcard/ns#Organization> ;
+_:genid38 rdf:type <http://xmlns.com/foaf/0.1/foaf#Organization> ;
            <http://www.w3.org/2006/vcard/ns#fn> "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)" ;
            <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid39 ;
            <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:contact.geoservices@ign.fr> .
@@ -1161,15 +1186,6 @@ _:genid45 rdf:type <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 
 ###  https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess
 :INTFOROUT-ETLProcess rdf:type owl:NamedIndividual .
-
-
-###  https://intforout.github.io/outdoorPressure#IntForOutDB
-:IntForOutDB rdf:type owl:NamedIndividual ,
-                      <http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> ;
-             <http://purl.org/dc/terms/creator> :LIFAT ;
-             <http://purl.org/dc/terms/description> "Datawarehouse associated with INTFOROUT ETL process and to be used for the dissemination prototypes. It is a work in progress. Contact : LIFAT" ;
-             <http://purl.org/dc/terms/language> "English" ;
-             rdfs:label "Datawarehouse designed for INTFOROUT dissemination (work in progress)"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024
@@ -1249,7 +1265,7 @@ _:genid51 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#LIFAT
 :LIFAT rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/ns/prov#Organization> ;
+                <http://xmlns.com/foaf/0.1/foaf#Organization> ;
        <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 
 
@@ -1293,10 +1309,9 @@ _:genid51 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#Movebank
 :Movebank rdf:type owl:NamedIndividual ,
-                   <http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> ;
-          <http://purl.org/dc/terms/language> "English" ;
-          rdfs:comment "Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. "@en ;
-          rdfs:label "Movebank is a free, online database of animal tracking data"@en .
+                   <http://www.w3.org/ns/dcat#Dataset> ;
+          <http://purl.org/dc/elements/1.1/description> "Movebank is a free online database of animal tracking data, coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz."@en ;
+          <http://purl.org/dc/terms/language> "English" .
 
 
 ###  https://intforout.github.io/outdoorPressure#OFNP
@@ -1340,20 +1355,6 @@ _:genid51 rdf:type <http://www.w3.org/ns/prov#Person> ;
                                        <http://www.w3.org/ns/dcat#Distribution> ;
                               <http://www.w3.org/ns/dcat#format> "geopackage" ;
                               <http://www.w3.org/ns/dcat#identifier> "Export_Vallorcine_0.gpkg" .
-
-
-###  https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService
-:OVRecreationalUserMapService rdf:type owl:NamedIndividual ,
-                                       <http://www.w3.org/ns/dcat#DataService> ;
-                              <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2024 ,
-                                                                                     :HumanOutdoorActivitiesMontBlanc2024 ;
-                              <http://purl.org/dc/terms/publisher> :prnsn ;
-                              <http://purl.org/dc/terms/spatial> :RNCFSBauges ,
-                                                                 :ZoneEtudeIntForOutMont-Blanc ;
-                              rdfs:comment "Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier."@fr ,
-                                           "This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes."@en ;
-                              rdfs:label "Recreational User Map Service"@en ,
-                                         "Service diffusant des cartes de flux des pratiquants outdoor"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024
@@ -1439,17 +1440,7 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
 
 
 ###  https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
-:PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual ,
-                                                  <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
-                                         <http://www.w3.org/ns/prov#generated> :MergedTracksVincennes2024 ;
-                                         <http://www.w3.org/ns/prov#specializationOf> :ComputePedestrianMobilityGraph ;
-                                         <http://www.w3.org/ns/prov#used> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
-                                         <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> ;
-                                         <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
-                                         rdfs:comment "A modular and iterative aggregation algorithm (MIAA)"@en ;
-                                         rdfs:label "Population footprint from a tracks collection"@en ;
-                                         <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^xsd:gYearMonth ;
-                                         <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^xsd:gYearMonth .
+:PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual .
 
 
 ###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
@@ -1488,7 +1479,6 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
 ###  https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 :QualityOfOVRecreationalUserMapService rdf:type owl:NamedIndividual ,
                                                 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                       <http://purl.org/www.umr-lastig.fr/geodata#target> :OVRecreationalUserMapService ;
                                        <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ;
                                        rdfs:comment "Artifacts exist in dense urban areas above a certain zoom level. This is because the accuracy of GPS tracks is lower in these areas, making the spatial information displayed less relevant."@en .
 
@@ -1574,7 +1564,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 :SIGSPATIAL24VanDammeEtAl2024 rdf:type owl:NamedIndividual ,
                                        <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
                               <http://purl.org/dc/terms/hasPart> :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
-                              <http://www.w3.org/ns/prov#wasInfluencedBy> :PopulationFootprintFromTracksCollection ;
+                              <http://www.w3.org/ns/prov#wasInfluencedBy> :ComputePopulationFootprintFromTracksCollection ;
                               <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                  <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
                                                                  <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
@@ -1626,7 +1616,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#Strava
 :Strava rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/ns/prov#Organization> ;
+                 <http://xmlns.com/foaf/0.1/foaf#Organization> ;
         rdfs:comment "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"@en ;
         rdfs:seeAlso "https://www.wikidata.org/wiki/Q13884156" ;
         <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
@@ -1634,11 +1624,10 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#StravaMetro
 :StravaMetro rdf:type owl:NamedIndividual ,
-                      <http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> ;
+                      <http://www.w3.org/ns/dcat#Dataset> ;
+             <http://purl.org/dc/terms/description> "Aggregated and de-identified Strava data"@en ;
              <http://purl.org/dc/terms/language> "English" ;
              <http://purl.org/dc/terms/publisher> :Strava ;
-             rdfs:comment "Aggregated and de-identified Strava data"@en ;
-             rdfs:label "Strava Metro data set"@en ;
              rdfs:seeAlso "https://www.wikidata.org/wiki/Q114074281" .
 
 
@@ -1763,7 +1752,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#altituderando
 :altituderando rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/ns/prov#Organization> ;
+                        <http://xmlns.com/foaf/0.1/foaf#Organization> ;
                rdf:label "Altituderando"@fr ;
                <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> .
 
@@ -1776,14 +1765,13 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#api-camptocamp
 :api-camptocamp rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/ns/dcat#DataService> ;
+                         <http://www.w3.org/ns/dcat#Dataset> ;
                 <http://www.w3.org/ns/dcat#accessURL> <https://api.camptocamp.org/> ;
                 <http://www.w3.org/ns/dcat#servesDataset> :CamptocampPoisBauges2025 ,
                                                           :CamptocampRoutesBauges2025 ;
+                <http://purl.org/dc/elements/1.1/description> "Données du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr ;
                 <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
                 <http://purl.org/dc/terms/publisher> :camptocamp ;
-                rdfs:comment "API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr ;
-                rdfs:label "API de Camptocamp.org (routes, waypoints, outings)"@en ;
                 <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
 
 
@@ -1802,13 +1790,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#api-refugesinfo
 :api-refugesinfo rdf:type owl:NamedIndividual ,
-                          <http://www.w3.org/ns/dcat#DataService> ;
+                          <http://www.w3.org/ns/dcat#Dataset> ;
                  <http://www.w3.org/ns/dcat#accessURL> <https://www.refuges.info/api/> ;
                  <http://www.w3.org/ns/dcat#servesDataset> :RefugesInfoPOIBauges2025 ;
+                 <http://purl.org/dc/elements/1.1/description> "Données Refuges.info , à but non commercial, relatives aux hébergements de montagnes destinés aux randonneurs. Propose une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr ;
                  <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> ;
-                 <http://purl.org/dc/terms/publisher> :refugesinfo ;
-                 rdfs:comment "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr ;
-                 rdfs:label "API de Refuges.info (points)"@en .
+                 <http://purl.org/dc/terms/publisher> :refugesinfo .
 
 
 ###  https://intforout.github.io/outdoorPressure#blabbe
@@ -1833,14 +1820,14 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#camptocamp
 :camptocamp rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/ns/prov#Organization> ;
+                     <http://xmlns.com/foaf/0.1/foaf#Organization> ;
             rdf:label "Camptocamp Association"@fr ;
             <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#cirkwi
 :cirkwi rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/ns/prov#Organization> ;
+                 <http://xmlns.com/foaf/0.1/foaf#Organization> ;
         rdf:label "Cirkwi"@fr ;
         <http://xmlns.com/foaf/0.1/homePage> <https://www.cirkwi.com/> .
 
@@ -1853,7 +1840,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#maisonparcdesbauges
 :maisonparcdesbauges rdf:type owl:NamedIndividual ,
-                              <http://www.w3.org/ns/prov#Organization> ;
+                              <http://xmlns.com/foaf/0.1/foaf#Organization> ;
                      rdf:label "Maison du Parc Naturel Régional du Massif des Bauges"@fr ;
                      <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
 
@@ -1874,19 +1861,17 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#openstreetmap
 :openstreetmap rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/ns/prov#Organization> ;
+                        <http://xmlns.com/foaf/0.1/foaf#Organization> ;
                rdf:label "OpenStreetMap (OSM)"@fr ;
                <http://xmlns.com/foaf/0.1/homePage> <https://www.openstreetmap.org> .
 
 
 ###  https://intforout.github.io/outdoorPressure#outdoorvision
 :outdoorvision rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/ns/dcat#DataService> ;
+                        <http://www.w3.org/ns/dcat#Dataset> ;
                <http://www.w3.org/ns/dcat#dataset> :OVTracksMontBlancBauges2024 ;
-               <http://www.w3.org/ns/dcat#service> :OVRecreationalUserMapService ;
+               <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en ;
                <http://purl.org/dc/terms/publisher> :prnsn ;
-               rdfs:comment "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en ;
-               rdfs:label "OutdoorVision"@en ;
                <http://xmlns.com/foaf/0.1/homePage> "https://outdoorvision.fr/" .
 
 
@@ -1926,13 +1911,13 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#prnsn
 :prnsn rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/ns/prov#Organization> ;
+                <http://xmlns.com/foaf/0.1/foaf#Organization> ;
        rdfs:label "Pôle ressources national sports de nature (PRNSN)" .
 
 
 ###  https://intforout.github.io/outdoorPressure#refugesinfo
 :refugesinfo rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/ns/prov#Organization> ;
+                      <http://xmlns.com/foaf/0.1/foaf#Organization> ;
              rdf:label "Refuges.info"@fr ;
              <http://xmlns.com/foaf/0.1/homePage> <https://www.refuges.info/> .
 
@@ -1946,7 +1931,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#visorando
 :visorando rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/ns/prov#Organization> ;
+                    <http://xmlns.com/foaf/0.1/foaf#Organization> ;
            rdf:label "Visorando"@fr ;
            <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
 

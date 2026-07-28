@@ -204,6 +204,9 @@
 # http://www.w3.org/ns/prov#quotedAs
 <http://www.w3.org/ns/prov#quotedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/ns/prov#requires
+<http://www.w3.org/ns/prov#requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/prov#startedAtTime
 <http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -306,6 +309,12 @@
 # 
 # http://www.w3.org/ns/dcat#Distribution
 <http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/foaf#Organization
+<http://xmlns.com/foaf/0.1/foaf#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://intforout.github.io/outdoorPressure#Activity
 <https://intforout.github.io/outdoorPressure#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -518,7 +527,7 @@ _:genid1 <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid2 .
 _:genid2 <http://www.w3.org/2006/vcard/ns#street-address> "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE" .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Address> .
 _:genid1 <http://www.w3.org/2006/vcard/ns#fn> "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)" .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#seriesMember> <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> .
 <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> <http://www.w3.org/ns/dcat#theme> _:genid3 .
 _:genid3 <http://www.w3.org/2004/02/skos/core#prefLabel> "Altitude" .
@@ -751,6 +760,18 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24> <http://www.w3.org/ns/prov#specializationOf> <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph> .
 <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24> <http://purl.org/dc/terms/description> "Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges et de Chammonix sur la période 2020-24. \nLes paramètres utilisés pour le pipeline sur les différentes zones sont indiquées dans les exemples : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation." .
 # 
+# https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#generated> <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#specializationOf> <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#used> <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A modular and iterative aggregation algorithm (MIAA)"@en .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#requires> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> .
+<https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
+# 
 # https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -878,7 +899,7 @@ _:genid38 <http://www.w3.org/2006/vcard/ns#hasAddress> _:genid39 .
 _:genid39 <http://www.w3.org/2006/vcard/ns#street-address> "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE" .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Address> .
 _:genid38 <http://www.w3.org/2006/vcard/ns#fn> "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)" .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#seriesMember> <https://intforout.github.io/outdoorPressure#HedgesLesBauges2020> .
 <https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE> <http://www.w3.org/ns/dcat#theme> _:genid40 .
 _:genid40 <http://www.w3.org/2004/02/skos/core#prefLabel> "Habitats et biotopes" .
@@ -922,14 +943,6 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/
 # 
 # https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess
 <https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://intforout.github.io/outdoorPressure#IntForOutDB
-<https://intforout.github.io/outdoorPressure#IntForOutDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#IntForOutDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> .
-<https://intforout.github.io/outdoorPressure#IntForOutDB> <http://purl.org/dc/terms/creator> <https://intforout.github.io/outdoorPressure#LIFAT> .
-<https://intforout.github.io/outdoorPressure#IntForOutDB> <http://purl.org/dc/terms/description> "Datawarehouse associated with INTFOROUT ETL process and to be used for the dissemination prototypes. It is a work in progress. Contact : LIFAT" .
-<https://intforout.github.io/outdoorPressure#IntForOutDB> <http://purl.org/dc/terms/language> "English" .
-<https://intforout.github.io/outdoorPressure#IntForOutDB> <http://www.w3.org/2000/01/rdf-schema#label> "Datawarehouse designed for INTFOROUT dissemination (work in progress)"@en .
 # 
 # https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024
 <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1001,7 +1014,7 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#LIFAT
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#LIFAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#LIFAT> <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 # 
 # https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals
@@ -1033,16 +1046,16 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> .
+<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/2000/01/rdf-schema#comment> "Merged tracks generated with the Track collection from Vincennes in 2024 by the MIAA algorithm"@en .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/2000/01/rdf-schema#label> "Merged tracks in Vincennes"@en .
 # 
 # https://intforout.github.io/outdoorPressure#Movebank
 <https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> .
+<https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#Movebank> <http://purl.org/dc/elements/1.1/description> "Movebank is a free online database of animal tracking data, coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz."@en .
 <https://intforout.github.io/outdoorPressure#Movebank> <http://purl.org/dc/terms/language> "English" .
-<https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/2000/01/rdf-schema#comment> "Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. "@en .
-<https://intforout.github.io/outdoorPressure#Movebank> <http://www.w3.org/2000/01/rdf-schema#label> "Movebank is a free, online database of animal tracking data"@en .
 # 
 # https://intforout.github.io/outdoorPressure#OFNP
 <https://intforout.github.io/outdoorPressure#OFNP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1080,19 +1093,6 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage> <http://www.w3.org/ns/dcat#format> "geopackage" .
 <https://intforout.github.io/outdoorPressure#OVExportVallorcineGeoPackage> <http://www.w3.org/ns/dcat#identifier> "Export_Vallorcine_0.gpkg" .
-# 
-# https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#prnsn> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc> .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier."@fr .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes."@en .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#label> "Recreational User Map Service"@en .
-<https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#label> "Service diffusant des cartes de flux des pratiquants outdoor"@fr .
 # 
 # https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024
 <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1166,17 +1166,6 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology> <http://purl.org/spar/datacite/relatedIdentifier> <https://doi.org/10.1016/j.gecco.2025.e03994> .
 # 
 # https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#generated> <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#specializationOf> <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#used> <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A modular and iterative aggregation algorithm (MIAA)"@en .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Population footprint from a tracks collection"@en .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#endedAtTime> "2024-06"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
-<https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> <http://www.w3.org/ns/prov#startedAtTime> "2024-05"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 # 
 # https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 <https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1210,7 +1199,6 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> .
-<https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://purl.org/www.umr-lastig.fr/geodata#target> <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> .
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "Artifacts exist in dense urban areas above a certain zoom level. This is because the accuracy of GPS tracks is lower in these areas, making the spatial information displayed less relevant."@en .
 # 
@@ -1279,7 +1267,7 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> .
-<https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection> .
+<https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
@@ -1326,18 +1314,17 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#Strava
 <https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/2000/01/rdf-schema#comment> "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"@en .
 <https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q13884156" .
 <https://intforout.github.io/outdoorPressure#Strava> <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
 # 
 # https://intforout.github.io/outdoorPressure#StravaMetro
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse> .
+<https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/description> "Aggregated and de-identified Strava data"@en .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
-<https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregated and de-identified Strava data"@en .
-<https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/2000/01/rdf-schema#label> "Strava Metro data set"@en .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q114074281" .
 # 
 # https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024
@@ -1448,7 +1435,7 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#altituderando
 <https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#altituderando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Altituderando"@fr .
 <https://intforout.github.io/outdoorPressure#altituderando> <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> .
 # 
@@ -1459,14 +1446,13 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#api-camptocamp
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
+<https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/ns/dcat#accessURL> <https://api.camptocamp.org/> .
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/ns/dcat#servesDataset> <https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025> .
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/ns/dcat#servesDataset> <https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025> .
+<https://intforout.github.io/outdoorPressure#api-camptocamp> <http://purl.org/dc/elements/1.1/description> "Données du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr .
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#camptocamp> .
-<https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/2000/01/rdf-schema#comment> "API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr .
-<https://intforout.github.io/outdoorPressure#api-camptocamp> <http://www.w3.org/2000/01/rdf-schema#label> "API de Camptocamp.org (routes, waypoints, outings)"@en .
 <https://intforout.github.io/outdoorPressure#api-camptocamp> <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
 # 
 # https://intforout.github.io/outdoorPressure#api-parcdesbauges
@@ -1483,13 +1469,12 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#api-refugesinfo
 <https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
+<https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/ns/dcat#accessURL> <https://www.refuges.info/api/> .
 <https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/ns/dcat#servesDataset> <https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025> .
+<https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://purl.org/dc/elements/1.1/description> "Données Refuges.info , à but non commercial, relatives aux hébergements de montagnes destinés aux randonneurs. Propose une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr .
 <https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> .
 <https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#refugesinfo> .
-<https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/2000/01/rdf-schema#comment> "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr .
-<https://intforout.github.io/outdoorPressure#api-refugesinfo> <http://www.w3.org/2000/01/rdf-schema#label> "API de Refuges.info (points)"@en .
 # 
 # https://intforout.github.io/outdoorPressure#blabbe
 <https://intforout.github.io/outdoorPressure#blabbe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1510,13 +1495,13 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#camptocamp
 <https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#camptocamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Camptocamp Association"@fr .
 <https://intforout.github.io/outdoorPressure#camptocamp> <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
 # 
 # https://intforout.github.io/outdoorPressure#cirkwi
 <https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#cirkwi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Cirkwi"@fr .
 <https://intforout.github.io/outdoorPressure#cirkwi> <http://xmlns.com/foaf/0.1/homePage> <https://www.cirkwi.com/> .
 # 
@@ -1527,7 +1512,7 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#maisonparcdesbauges
 <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Maison du Parc Naturel Régional du Massif des Bauges"@fr .
 <https://intforout.github.io/outdoorPressure#maisonparcdesbauges> <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
 # 
@@ -1545,18 +1530,16 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#openstreetmap
 <https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#openstreetmap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "OpenStreetMap (OSM)"@fr .
 <https://intforout.github.io/outdoorPressure#openstreetmap> <http://xmlns.com/foaf/0.1/homePage> <https://www.openstreetmap.org> .
 # 
 # https://intforout.github.io/outdoorPressure#outdoorvision
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
+<https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/ns/dcat#dataset> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
-<https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/ns/dcat#service> <https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService> .
+<https://intforout.github.io/outdoorPressure#outdoorvision> <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en .
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#prnsn> .
-<https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/2000/01/rdf-schema#comment> "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en .
-<https://intforout.github.io/outdoorPressure#outdoorvision> <http://www.w3.org/2000/01/rdf-schema#label> "OutdoorVision"@en .
 <https://intforout.github.io/outdoorPressure#outdoorvision> <http://xmlns.com/foaf/0.1/homePage> "https://outdoorvision.fr/" .
 # 
 # https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson
@@ -1590,12 +1573,12 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#prnsn
 <https://intforout.github.io/outdoorPressure#prnsn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#prnsn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#prnsn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#prnsn> <http://www.w3.org/2000/01/rdf-schema#label> "Pôle ressources national sports de nature (PRNSN)" .
 # 
 # https://intforout.github.io/outdoorPressure#refugesinfo
 <https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#refugesinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Refuges.info"@fr .
 <https://intforout.github.io/outdoorPressure#refugesinfo> <http://xmlns.com/foaf/0.1/homePage> <https://www.refuges.info/> .
 # 
@@ -1607,7 +1590,7 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/n
 # 
 # https://intforout.github.io/outdoorPressure#visorando
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/foaf#Organization> .
 <https://intforout.github.io/outdoorPressure#visorando> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Visorando"@fr .
 <https://intforout.github.io/outdoorPressure#visorando> <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
 # 

@@ -1,7 +1,7 @@
 [ {
   "@id" : "_:genid1",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2006/vcard/ns#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://www.w3.org/2006/vcard/ns#fn" : [ {
     "@value" : "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
@@ -252,7 +252,7 @@
 }, {
   "@id" : "_:genid38",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2006/vcard/ns#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://www.w3.org/2006/vcard/ns#fn" : [ {
     "@value" : "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
@@ -796,6 +796,9 @@
   "@id" : "http://www.w3.org/ns/prov#quotedAs",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/ns/prov#requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/prov#startedAtTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -816,6 +819,12 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasQuotedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/homePage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1055,6 +1064,36 @@
   } ],
   "http://www.w3.org/ns/prov#specializationOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A modular and iterative aggregation algorithm (MIAA)"
+  } ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-06"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
+  } ],
+  "http://www.w3.org/ns/prov#requires" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
+  } ],
+  "http://www.w3.org/ns/prov#specializationOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "@value" : "2024-05"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Cycling",
@@ -1453,22 +1492,6 @@
   "@id" : "https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#IntForOutDB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#LIFAT"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Datawarehouse associated with INTFOROUT ETL process and to be used for the dissemination prototypes. It is a work in progress. Contact : LIFAT"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Datawarehouse designed for INTFOROUT dissemination (work in progress)"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -1609,7 +1632,10 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#LIFAT",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)"
   } ]
@@ -1737,17 +1763,13 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Movebank",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Movebank is a free online database of animal tracking data, coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz."
+  } ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Movebank is coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz. "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Movebank is a free, online database of animal tracking data"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#OFNP",
@@ -1822,36 +1844,6 @@
   } ],
   "http://www.w3.org/ns/dcat#identifier" : [ {
     "@value" : "Export_Vallorcine_0.gpkg"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
-  } ],
-  "http://purl.org/dc/terms/spatial" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutMont-Blanc"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Ce flux de données permet de visualiser dans l’application Outdoorvision les tracés agrégés des traces GPS issus de services et d’objets connectés des pratiquants de sports et loisirs de nature. L’agrégation des flux s’appuie uniquement sur les traces GPS et ne prend pas en compte les contraintes spatiales comme le réseau routier. Cela permet de visualiser de façon précise la pratique sportive, les trajets réalisés qui peuvent être hors sentier."
-  }, {
-    "@language" : "en",
-    "@value" : "This data feed enables visualization in the Outdoorvision application of aggregated GPS tracks obtained from services and connected devices used by outdoor sports and recreational users. The aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Recreational User Map Service"
-  }, {
-    "@language" : "fr",
-    "@value" : "Service diffusant des cartes de flux des pratiquants outdoor"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024",
@@ -2066,38 +2058,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A modular and iterative aggregation algorithm (MIAA)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Population footprint from a tracks collection"
-  } ],
-  "http://www.w3.org/ns/prov#endedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-06"
-  } ],
-  "http://www.w3.org/ns/prov#generated" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
-  } ],
-  "http://www.w3.org/ns/prov#specializationOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"
-  } ],
-  "http://www.w3.org/ns/prov#startedAtTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "@value" : "2024-05"
-  } ],
-  "http://www.w3.org/ns/prov#used" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"
-  } ],
-  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -2161,9 +2122,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2380,7 +2338,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection"
+    "@id" : "https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea",
@@ -2451,7 +2409,10 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Strava",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"
@@ -2464,20 +2425,16 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#StravaMetro",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#DataWarehouse" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Aggregated and de-identified Strava data"
+  } ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Strava"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Aggregated and de-identified Strava data"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Strava Metro data set"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://www.wikidata.org/wiki/Q114074281"
@@ -2798,10 +2755,13 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#altituderando",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "Altituderando"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.altituderando.com"
@@ -2814,20 +2774,16 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "fr",
+    "@value" : "Données du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://opendatacommons.org/licenses/odbl/"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#camptocamp"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "API du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "API de Camptocamp.org (routes, waypoints, outings)"
   } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
     "@id" : "https://api.camptocamp.org/"
@@ -2869,20 +2825,16 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#api-refugesinfo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "fr",
+    "@value" : "Données Refuges.info , à but non commercial, relatives aux hébergements de montagnes destinés aux randonneurs. Propose une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by-sa/2.0/deed.fr"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "L'API de Refuges.info est un service web personnel et non commercial permettant de se renseigner sur les hébergements de montagnes destinés aux randonneurs. Elle permet de recevoir dans de nombreux formats une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "API de Refuges.info (points)"
   } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
     "@id" : "https://www.refuges.info/api/"
@@ -2922,20 +2874,26 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#camptocamp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "Camptocamp Association"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.camptocamp.org/"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#cirkwi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "Cirkwi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.cirkwi.com/"
@@ -2966,10 +2924,13 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#maisonparcdesbauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "Maison du Parc Naturel Régional du Massif des Bauges"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://parcdesbauges.com"
@@ -2999,33 +2960,29 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#openstreetmap",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "OpenStreetMap (OSM)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.openstreetmap.org"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#outdoorvision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#DataService" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Outdoorvision https://outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
+  } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Outdoorvision https://outdoorvision.fr/; is a service to gather GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OutdoorVision"
-  } ],
   "http://www.w3.org/ns/dcat#dataset" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
-  } ],
-  "http://www.w3.org/ns/dcat#service" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#OVRecreationalUserMapService"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@value" : "https://outdoorvision.fr/"
@@ -3084,16 +3041,22 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#prnsn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Pôle ressources national sports de nature (PRNSN)"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "Refuges.info"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.refuges.info/"
@@ -3112,10 +3075,13 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#visorando",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Organization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
     "@language" : "fr",
     "@value" : "Visorando"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.visorando.com/"
