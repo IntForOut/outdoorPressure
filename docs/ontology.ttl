@@ -395,10 +395,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
 
 
-###  http://xmlns.com/foaf/0.1/foaf#Organization
-<http://xmlns.com/foaf/0.1/foaf#Organization> rdf:type owl:Class .
-
-
 ###  https://intforout.github.io/outdoorPressure#Activity
 :Activity rdf:type owl:Class ;
           rdfs:comment "activity of a living creature, or of a group or of a population, different from prov:Activity in the sense that the purpose of the Activity is not to yield an output."@en ;
@@ -428,13 +424,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                 rdfs:subClassOf :Activity .
 
 
-###  https://intforout.github.io/outdoorPressure#AnimalTrack
-:AnimalTrack rdf:type owl:Class ;
-             rdfs:subClassOf :Track ;
-             rdfs:comment "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."@en ,
-                          "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."@fr .
-
-
 ###  https://intforout.github.io/outdoorPressure#Bois
 :Bois rdf:type owl:Class ;
       rdfs:subClassOf :LandEntity .
@@ -462,13 +451,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        "Fast hiking"@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#FilteredTrack
-:FilteredTrack rdf:type owl:Class ;
-               rdfs:subClassOf :Track ;
-               rdfs:comment "Filtered traces represent a set of unstructured traces assumed to follow the network and used for a specific case study. They result from a user-defined filtering process (spatial, temporal, activity type, etc.)."@en ,
-                            "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."@fr .
-
-
 ###  https://intforout.github.io/outdoorPressure#Haie
 :Haie rdf:type owl:Class ;
       rdfs:subClassOf :LandEntity ;
@@ -490,13 +472,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                rdfs:comment "Human activity taking place outdoor"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#HumanTrack
-:HumanTrack rdf:type owl:Class ;
-            rdfs:subClassOf :Track ;
-            rdfs:comment "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."@en ,
-                         "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."@fr .
-
-
 ###  https://intforout.github.io/outdoorPressure#LandEntity
 :LandEntity rdf:type owl:Class ;
             rdfs:comment "An entity located in land : an area, a land, a parcel, a footprint, an observation."@en .
@@ -513,20 +488,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                   rdfs:comment "une montagne ou un massif de manière globale et non un sommet en particulier"@fr ;
                   rdfs:label "Massif montagneux"@fr ,
                              "Mountain Massif"@en .
-
-
-###  https://intforout.github.io/outdoorPressure#MergedAccurateTrack
-:MergedAccurateTrack rdf:type owl:Class ;
-                     rdfs:subClassOf :MergedTrack ;
-                     rdfs:comment "An accurate merged trace is a merged trace that optimizes a quality criterion Q with respect to the ground truth GT (Van Damme et al., 2024)."@en ,
-                                  "La trace fusionnée exacte est une trace fusionnée qui optimise un critère de qualité Q par rapport à la vérité terrain VT (Van Damme et al., 2024)."@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#MergedTrack
-:MergedTrack rdf:type owl:Class ;
-             rdfs:subClassOf :Track ;
-             rdfs:comment "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."@en ,
-                          "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#Observation
@@ -604,12 +565,6 @@ For example the footprint of a population of hikers is represented as their agre
                    rdfs:comment "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#Track
-:Track rdf:type owl:Class ;
-       rdfs:comment "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."@en ,
-                    "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."@fr .
-
-
 ###  https://intforout.github.io/outdoorPressure#Trajectory
 :Trajectory rdf:type owl:Class ;
             rdfs:subClassOf :LandEntity ;
@@ -640,10 +595,6 @@ For example the footprint of a population of hikers is represented as their agre
                                                                         rdfs:label "Camera trap survey from Chamonix Community of Communes in 2024-2025."@en ;
                                                                         <http://www.w3.org/ns/prov#endedAtTime> "2024-02"^^xsd:gYearMonth ;
                                                                         <http://www.w3.org/ns/prov#startedAtTime> "2025-11"^^xsd:gYearMonth .
-
-
-###  http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance
-<http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance> rdf:type owl:NamedIndividual .
 
 
 ###  https://api.camptocamp.org/
@@ -773,7 +724,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
 ###  https://intforout.github.io/outdoorPressure#DeepFaune
 :DeepFaune rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/ns/prov#SoftwareAgent> ;
+                    <http://purl.org/dc/dcmitype/Software> ;
            <http://purl.org/dc/terms/identifier> "DeepFaune" ;
            rdfs:label "DeepFaune"@en .
 
@@ -813,7 +764,8 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
 
 ###  https://intforout.github.io/outdoorPressure#HaiesDesBauges2020
-:HaiesDesBauges2020 rdf:type owl:NamedIndividual ;
+:HaiesDesBauges2020 rdf:type owl:NamedIndividual ,
+                             :Haie ;
                     :affords :AnimalLivingAroundHedgesLesBauges2020 .
 
 
@@ -890,7 +842,8 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
 
 ###  https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess
-:INTFOROUT-ETLProcess rdf:type owl:NamedIndividual .
+:INTFOROUT-ETLProcess rdf:type owl:NamedIndividual ,
+                               <http://purl.org/www.umr-lastig.fr/geodata#Process> .
 
 
 ###  https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024
@@ -970,7 +923,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 
 ###  https://intforout.github.io/outdoorPressure#LIFAT
 :LIFAT rdf:type owl:NamedIndividual ,
-                <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                <http://xmlns.com/foaf/0.1/Organization> ;
        <http://xmlns.com/foaf/0.1/name> "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)" .
 
 
@@ -1006,7 +959,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :MergedTracksVincennes2024 rdf:type owl:NamedIndividual ,
                                     <http://www.w3.org/ns/dcat#Dataset> ;
                            <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikersFootprintBoisVincennes ;
-                           <http://www.w3.org/ns/prov#wasGeneratedBy> :PopulationFootprintFromTracksCollection ;
                            <http://www.w3.org/ns/prov#wasQuotedFrom> :SIGSPATIAL24VanDammeEtAl2024 ;
                            rdfs:comment "Merged tracks generated with the Track collection from Vincennes in 2024 by the MIAA algorithm"@en ;
                            rdfs:label "Merged tracks in Vincennes"@en .
@@ -1017,14 +969,6 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                    <http://www.w3.org/ns/dcat#Dataset> ;
           <http://purl.org/dc/elements/1.1/description> "Movebank is a free online database of animal tracking data, coordinated by the Max Planck Institute of Animal Behavior, the North Carolina Museum of Natural Sciences, the Senckenberg Society for Nature Research, and the University of Konstanz."@en ;
           <http://purl.org/dc/terms/language> "English" .
-
-
-###  https://intforout.github.io/outdoorPressure#OFNP
-:OFNP rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/ns/prov#SoftwareAgent> ;
-      <http://purl.org/dc/terms/identifier> "OFNP" ;
-      rdfs:comment "OFNP is an open-source Python processing pipeline (MIT license) for generating outdoor activity footprint networks from GNSS trajectories, representing, for example, hikers’ or runners’ footprints within a defined spatial and temporal extent."@en ;
-      rdfs:label "OutdoorFootprintNetworkPipeline"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage
@@ -1144,10 +1088,6 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
                                                           <http://purl.org/spar/datacite/relatedIdentifier> <https://doi.org/10.1016/j.gecco.2025.e03994> .
 
 
-###  https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection
-:PopulationFootprintFromTracksCollection rdf:type owl:NamedIndividual .
-
-
 ###  https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf
 :ProfilageDataPhDKerouanton.pdf rdf:type owl:NamedIndividual ,
                                          :TechnicalDocument ;
@@ -1204,7 +1144,6 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
                           <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                           <http://purl.org/dc/terms/language> "fr-FR" ;
                           <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> ;
-                          <http://purl.org/dc/terms/publisher> :refugesinfo ;
                           rdfs:comment "A set of Points issued from Refuges.info."@en ;
                           rdfs:label "Refuges.info - points"@en .
 
@@ -1212,7 +1151,6 @@ Il est en cours de dépôt : Doi sur zenodo : https://zenodo.org/records/2080014
 ###  https://intforout.github.io/outdoorPressure#ReviewExtractionVegetationDepuisLidarHD
 :ReviewExtractionVegetationDepuisLidarHD rdf:type owl:NamedIndividual ,
                                                   <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
-                                         <http://purl.org/www.umr-lastig.fr/geodata#target> <http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance> ;
                                          <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0009-0009-7714-935X> ;
                                          rdfs:comment """LiDAR HD data (see target) contains points classified as vegetation (classes 3, 4, 5).
 Ski lifts typically features pylons, cables and stations at both end. They sometimes cut through vegetation and pylons height is often close to spruce trees found in mountains.
@@ -1234,7 +1172,8 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 
 ###  https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals
-:ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals rdf:type owl:NamedIndividual ;
+:ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals rdf:type owl:NamedIndividual ,
+                                                                       <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
                                                               <http://purl.org/www.umr-lastig.fr/geodata#target> :LongTermEffectHumRecreationOnCommunityWildMammals ;
                                                               <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-6265-710X> ;
                                                               <http://purl.org/dc/terms/description> "Article sur l'effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 \"Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping\"" .
@@ -1321,7 +1260,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#Strava
 :Strava rdf:type owl:NamedIndividual ,
-                 <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                 <http://xmlns.com/foaf/0.1/Organization> ;
         rdfs:comment "american internet service for tracking physical exercise which incorporates social networking features. It tracks outdoor activities using GPS data, and other exercise types, including indoor activities. Strava records data for a user's activities, which can then be shared with the user's followers or shared publicly. If an activity is shared publicly, Strava automatically groups activities that occur at the same time and place (such as taking part in a marathon, sportive or group ride). An activity's recorded information may include a route summary, elevation (net and unidirectional), speed (average and maximum), timing (total and moving time), power and heart rate. Activities can be recorded using the mobile app or from devices manufactured by third parties like Garmin, Google Fit, Suunto, and Wahoo. Activities can also be entered manually via the Strava website and mobile app. (quoted from wikipedia)"@en ;
         rdfs:seeAlso "https://www.wikidata.org/wiki/Q13884156" ;
         <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
@@ -1423,7 +1362,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                            <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                            <http://purl.org/dc/terms/language> "fr-FR" ;
                            <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
-                           <http://purl.org/dc/terms/publisher> :visorando ;
                            rdfs:comment "A set of routes issued from visorando.com."@en ;
                            rdfs:label "Visorando Hiking Routes in the Bauges Massif (2025)"@en .
 
@@ -1451,20 +1389,20 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#aloison
 :aloison rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/ns/prov#Person> ;
+                  <http://xmlns.com/foaf/0.1/Person> ;
          <http://xmlns.com/foaf/0.1/name> "Anne Loison" .
 
 
 ###  https://intforout.github.io/outdoorPressure#altituderando
 :altituderando rdf:type owl:NamedIndividual ,
-                        <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                        <http://xmlns.com/foaf/0.1/Organization> ;
                rdf:label "Altituderando"@fr ;
                <http://xmlns.com/foaf/0.1/homePage> <https://www.altituderando.com> .
 
 
 ###  https://intforout.github.io/outdoorPressure#anaciri
 :anaciri rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/ns/prov#Person> ;
+                  <http://xmlns.com/foaf/0.1/Person> ;
          <http://xmlns.com/foaf/0.1/name> "Abdassalam Naciri" .
 
 
@@ -1499,13 +1437,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                  <http://www.w3.org/ns/dcat#accessURL> <https://www.refuges.info/api/> ;
                  <http://www.w3.org/ns/dcat#servesDataset> :RefugesInfoPOIBauges2025 ;
                  <http://purl.org/dc/elements/1.1/description> "Données Refuges.info , à but non commercial, relatives aux hébergements de montagnes destinés aux randonneurs. Propose une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr ;
-                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> ;
-                 <http://purl.org/dc/terms/publisher> :refugesinfo .
+                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> .
 
 
 ###  https://intforout.github.io/outdoorPressure#blabbe
 :blabbe rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/ns/prov#Person> ;
+                 <http://xmlns.com/foaf/0.1/Person> ;
         <http://xmlns.com/foaf/0.1/name> "Brice Labbé" .
 
 
@@ -1525,27 +1462,27 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#camptocamp
 :camptocamp rdf:type owl:NamedIndividual ,
-                     <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                     <http://xmlns.com/foaf/0.1/Organization> ;
             rdf:label "Camptocamp Association"@fr ;
             <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#cirkwi
 :cirkwi rdf:type owl:NamedIndividual ,
-                 <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                 <http://xmlns.com/foaf/0.1/Organization> ;
         rdf:label "Cirkwi"@fr ;
         <http://xmlns.com/foaf/0.1/homePage> <https://www.cirkwi.com/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#lpeseux
 :lpeseux rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/ns/prov#Person> ;
+                  <http://xmlns.com/foaf/0.1/Person> ;
          <http://xmlns.com/foaf/0.1/name> "Lorine Peseux" .
 
 
 ###  https://intforout.github.io/outdoorPressure#maisonparcdesbauges
 :maisonparcdesbauges rdf:type owl:NamedIndividual ,
-                              <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                              <http://xmlns.com/foaf/0.1/Organization> ;
                      rdf:label "Maison du Parc Naturel Régional du Massif des Bauges"@fr ;
                      <http://xmlns.com/foaf/0.1/homePage> <https://parcdesbauges.com> .
 
@@ -1559,14 +1496,14 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#mgarel
 :mgarel rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/ns/prov#Person> ;
+                 <http://xmlns.com/foaf/0.1/Person> ;
         rdfs:label "Mathieu Garel"@en ;
         <http://xmlns.com/foaf/0.1/name> "Mathieu Garel" .
 
 
 ###  https://intforout.github.io/outdoorPressure#openstreetmap
 :openstreetmap rdf:type owl:NamedIndividual ,
-                        <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                        <http://xmlns.com/foaf/0.1/Organization> ;
                rdf:label "OpenStreetMap (OSM)"@fr ;
                <http://xmlns.com/foaf/0.1/homePage> <https://www.openstreetmap.org> .
 
@@ -1603,28 +1540,21 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#pcalloch
 :pcalloch rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/ns/prov#Person> ;
+                   <http://xmlns.com/foaf/0.1/Person> ;
           <http://xmlns.com/foaf/0.1/name> "Paul Calloch" .
 
 
 ###  https://intforout.github.io/outdoorPressure#pmarchand
 :pmarchand rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/ns/prov#Person> ;
+                    <http://xmlns.com/foaf/0.1/Person> ;
            rdfs:label "Pascal Marchand"@en ;
            <http://xmlns.com/foaf/0.1/name> "Pascal Marchand" .
 
 
 ###  https://intforout.github.io/outdoorPressure#prnsn
 :prnsn rdf:type owl:NamedIndividual ,
-                <http://xmlns.com/foaf/0.1/foaf#Organization> ;
+                <http://xmlns.com/foaf/0.1/Organization> ;
        rdfs:label "Pôle ressources national sports de nature (PRNSN)" .
-
-
-###  https://intforout.github.io/outdoorPressure#refugesinfo
-:refugesinfo rdf:type owl:NamedIndividual ,
-                      <http://xmlns.com/foaf/0.1/foaf#Organization> ;
-             rdf:label "Refuges.info"@fr ;
-             <http://xmlns.com/foaf/0.1/homePage> <https://www.refuges.info/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson
@@ -1632,13 +1562,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                      <http://www.w3.org/ns/dcat#Distribution> ;
                             <http://www.w3.org/ns/dcat#accessService> :api-refugesinfo ;
                             <http://www.w3.org/ns/dcat#format> "GeoJSON" .
-
-
-###  https://intforout.github.io/outdoorPressure#visorando
-:visorando rdf:type owl:NamedIndividual ,
-                    <http://xmlns.com/foaf/0.1/foaf#Organization> ;
-           rdf:label "Visorando"@fr ;
-           <http://xmlns.com/foaf/0.1/homePage> <https://www.visorando.com/> .
 
 
 ###  https://intforout.github.io/outdoorPressure#2020

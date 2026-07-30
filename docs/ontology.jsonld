@@ -149,9 +149,6 @@
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#target",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -305,9 +302,6 @@
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://xmlns.com/foaf/0.1/homePage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -438,19 +432,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#AnimalActivity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#AnimalTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An animal trace is a digital trace corresponding to the path left by an animal tracked using an interoperable connected device and following a defined data collection protocol."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace animale est une trace numérique correspondant à la trace laissée par un animal suivi au moyen d un dispositif connecté interopérable et selon un protocole de collecte défini."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Track"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025",
@@ -629,7 +610,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/dc/dcmitype/Software" ],
   "http://purl.org/dc/terms/identifier" : [ {
     "@value" : "DeepFaune"
   } ],
@@ -720,19 +701,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Hiking"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#FilteredTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Filtered traces represent a set of unstructured traces assumed to follow the network and used for a specific case study. They result from a user-defined filtering process (spatial, temporal, activity type, etc.)."
-  }, {
-    "@language" : "fr",
-    "@value" : "Les traces filtrées représentent un ensemble de traces non structurées, présumées suivre le réseau et utilisées pour un cas d étude spécifique. Elles résultent d un processus de filtrage défini par l utilisateur (spatial, temporel, type d activité, etc.)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Track"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthPathVincennesForest-csv",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -763,6 +731,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HaiesDesBauges2020",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Haie"
+  } ],
   "https://intforout.github.io/outdoorPressure#affords" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020"
   } ]
@@ -908,21 +879,8 @@
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HumanTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A human trace is a digital trace corresponding to the path left by a person during outdoor activities using interoperable connected devices (GPS watches, apps, smartphones)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace humaine est une trace numérique correspondant à la trace laissée par un humain lors d une activité de plein air, à l aide de dispositifs connectés interopérables (montres GPS, applications, smartphones)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Track"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
@@ -1066,7 +1024,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#LIFAT",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Laboratoire d'Informatique Fondamentale et Appliquée de Tours (LIFAT)"
@@ -1148,32 +1106,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MergedAccurateTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An accurate merged trace is a merged trace that optimizes a quality criterion Q with respect to the ground truth GT (Van Damme et al., 2024)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace fusionnée exacte est une trace fusionnée qui optimise un critère de qualité Q par rapport à la vérité terrain VT (Van Damme et al., 2024)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#MergedTrack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A merged trace represents the best geometric representation of a set of traces following exactly the same route, defined from an origin point to a destination (Van Damme et al., 2024)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace fusionnée est la meilleure représentation géométrique d’un ensemble de traces suivant exactement le même trajet, défini d un point d origine à une destination (Van Damme et al., 2024)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Track"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
@@ -1187,9 +1119,6 @@
     "@language" : "en",
     "@value" : "Merged tracks in Vincennes"
   } ],
-  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection"
-  } ],
   "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
   } ]
@@ -1202,20 +1131,6 @@
   } ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#OFNP",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#SoftwareAgent" ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "OFNP"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "OFNP is an open-source Python processing pipeline (MIT license) for generating outdoor activity footprint networks from GNSS trajectories, representing, for example, hikers’ or runners’ footprints within a defined spatial and temporal extent."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "OutdoorFootprintNetworkPipeline"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage",
@@ -1489,9 +1404,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#PopulationFootprintFromTracksCollection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -1591,9 +1503,6 @@
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by-sa/2.0/deed.fr"
   } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A set of Points issued from Refuges.info."
@@ -1624,9 +1533,6 @@
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@id" : "https://orcid.org/0009-0009-7714-935X"
   } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#target" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "LiDAR HD data (see target) contains points classified as vegetation (classes 3, 4, 5).\nSki lifts typically features pylons, cables and stations at both end. They sometimes cut through vegetation and pylons height is often close to spruce trees found in mountains.\n\nFollowing my observation, I found that stations are rather correctly classified as \"buildings\", but some pylons are incorrectly classified as vegetation (instead of \"Sursol pérenne\", class 64, as specified in the LiDAR HD Documentation). It appears to only be the case for cable cars, and not for chair lifts, which might be explained by the time of acquisition of the data. If the cars are not on the cable, there is almost no point between the pylons, which makes the classification algorithm think they are individual trees rather than pylons connected by a cable.\n\nYou can see it by yourself for example in the Gets ski station, where the cable car \"Chavannes\" (on the left) have pylons classified as vegetation, while the chair lift \"Chavannes Express\" (on the right) is correctly classified as \"Sursol pérenne\" (class 64). On the mountain on the other side of the valley (Mont Chéry), the cable car pylons also are classified as vegetation.\n\nhttps://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&pz=4578316.542038901&qx=0.4803727089013424&qy=0.1779330623891262&qz=-0.35281414468716665&qw=0.7830096200943361\n(move the view a little bit to trigger lidar data loading)"
   } ]
@@ -1644,7 +1550,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#UserFeedback" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@id" : "https://orcid.org/0000-0002-6265-710X"
   } ],
@@ -1843,7 +1749,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#Strava",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2041,16 +1947,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#Track",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A track is defined as an ordered set of points, each characterized by a position (x, y) and a timestamp (Van Damme et al., 2024)."
-  }, {
-    "@language" : "fr",
-    "@value" : "La trace est définie par un ensemble de points ordonnés, chaque point étant caractérisé par une position (x, y) et un temps (timestamp) (Van Damme et al., 2024). C'est un résultat d'une procédure : soit d'une Observation par un Sensor, capteur gps porté par un objet mobile (Platform), soit d'un retraitement d'une trace brute, soit d'une simulation."
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2103,9 +1999,6 @@
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://opendatacommons.org/licenses/odbl/"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#visorando"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2181,7 +2074,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#aloison",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Anne Loison"
   } ]
@@ -2193,14 +2086,14 @@
     "@value" : "Altituderando"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.altituderando.com"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#anaciri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Abdassalam Naciri"
   } ]
@@ -2265,9 +2158,6 @@
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by-sa/2.0/deed.fr"
   } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo"
-  } ],
   "http://www.w3.org/ns/dcat#accessURL" : [ {
     "@id" : "https://www.refuges.info/api/"
   } ],
@@ -2276,7 +2166,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#blabbe",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Brice Labbé"
   } ]
@@ -2312,7 +2202,7 @@
     "@value" : "Camptocamp Association"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.camptocamp.org/"
@@ -2325,7 +2215,7 @@
     "@value" : "Cirkwi"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.cirkwi.com/"
@@ -2350,7 +2240,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#lpeseux",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Lorine Peseux"
   } ]
@@ -2362,7 +2252,7 @@
     "@value" : "Maison du Parc Naturel Régional du Massif des Bauges"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://parcdesbauges.com"
@@ -2382,7 +2272,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#mgarel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Mathieu Garel"
@@ -2398,7 +2288,7 @@
     "@value" : "OpenStreetMap (OSM)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://xmlns.com/foaf/0.1/homePage" : [ {
     "@id" : "https://www.openstreetmap.org"
@@ -2457,13 +2347,13 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#pcalloch",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Paul Calloch"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#pmarchand",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Person" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Pascal Marchand"
@@ -2475,23 +2365,10 @@
   "@id" : "https://intforout.github.io/outdoorPressure#prnsn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Pôle ressources national sports de nature (PRNSN)"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
-    "@language" : "fr",
-    "@value" : "Refuges.info"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
-  } ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.refuges.info/"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson",
@@ -2504,19 +2381,6 @@
   } ],
   "http://www.w3.org/ns/dcat#format" : [ {
     "@value" : "GeoJSON"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#visorando",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
-    "@language" : "fr",
-    "@value" : "Visorando"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
-  } ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@id" : "https://www.visorando.com/"
   } ]
 }, {
   "@id" : "https://www.refuges.info/api/",
