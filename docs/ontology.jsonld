@@ -1,414 +1,26 @@
 [ {
   "@id" : "_:genid1",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#fn" : [ {
-    "@value" : "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#hasAddress" : [ {
-    "@id" : "_:genid2"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#hasEmail" : [ {
-    "@id" : "mailto:contact.geoservices@ign.fr"
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid12"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Installations agricoles et aquacoles"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid14"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Lieux de production et sites industriels"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid16"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Occupation des terres"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid18"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Référentiels de coordonnées"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid20"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Répartition de la population - démographie"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2006/vcard/ns#Address"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#street-address" : [ {
-    "@value" : "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE"
-  } ]
-}, {
-  "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid22"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Réseaux de transport"
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid24"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Services d'utilité publique et services publics"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid26"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Unités administratives"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid28"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Usage des sols"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid29",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid30"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "National"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Altitude"
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "INSPIRE Spatial Scope"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid32"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Géospatiales"
-  } ]
-}, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "High-value dataset categories"
-  } ]
-}, {
-  "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid34"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Observation de la terre et environnement"
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "High-value dataset categories"
-  } ]
-}, {
-  "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid36"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Mobilité"
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "High-value dataset categories"
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://purl.org/dc/terms/PeriodOfTime" ],
-  "http://schema.org/endDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-15"
-  } ],
-  "http://schema.org/startDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2008-03-18"
-  } ],
-  "http://www.w3.org/ns/dcat#endDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-15"
-  } ],
-  "http://www.w3.org/ns/dcat#startDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2008-03-18"
-  } ]
-}, {
-  "@id" : "_:genid38",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/foaf#Organization"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#fn" : [ {
-    "@value" : "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#hasAddress" : [ {
-    "@id" : "_:genid39"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#hasEmail" : [ {
-    "@id" : "mailto:contact.geoservices@ign.fr"
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2006/vcard/ns#Address"
-  } ],
-  "http://www.w3.org/2006/vcard/ns#street-address" : [ {
-    "@value" : "IGN - Support utilisateurs, SAINT-MANDÉ CÉDEX, 94165, FRANCE"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid40",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid41"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Habitats et biotopes"
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid42",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid43"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Sols"
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid45"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "National"
-  } ]
-}, {
-  "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "INSPIRE Spatial Scope"
-  } ]
-}, {
-  "@id" : "_:genid46",
-  "@type" : [ "http://purl.org/dc/terms/ProvenanceStatement" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "BD HAIE  - Une version initiale « BD Haie V1 2020 », Une version 2 mise à jour depuis 2024 « BD Haie V2 »\n\t\t\t\t  \n\t\t\t\t  \tDernière mise à jour : WFS, WMS Vecteur et WMTS (Edition Mars 2026)"
-  } ]
-}, {
-  "@id" : "_:genid47",
-  "@type" : [ "http://purl.org/dc/terms/PeriodOfTime" ],
-  "http://schema.org/endDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-03-15"
-  } ],
-  "http://schema.org/startDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-01-01"
-  } ],
-  "http://www.w3.org/ns/dcat#endDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-03-15"
-  } ],
-  "http://www.w3.org/ns/dcat#startDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-01-01"
-  } ]
-}, {
-  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Colin Kerouanton"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Clémence Perrin-Malterre"
   } ]
 }, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid6"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Bâtiments"
-  } ]
-}, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Nolwenn Risser"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/ns/prov#Person" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Elodie Petit"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid8"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Dénominations géographiques"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "GEMET - INSPIRE themes, version 1.0"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Hydrographie"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#licence",
@@ -442,7 +54,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/dct/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/dct/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -495,142 +107,6 @@
   "@id" : "http://purl.org/spar/datacite/volume",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2002-12-15T01:00:00"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique.\n\n        Les objets de la BD TOPO® sont structurés en thèmes : \n        - l'administratif ; \n        - le bâti ; \n        - l'hydrographie ; \n        - les lieux nommés ; \n        - l'occupation du sol ; \n        - les services et activités ; \n        - le transport ; \n        - les zones réglementées. \n\n        Le processus de production 3D permet de fournir l'altimétrie des objets, ainsi que la hauteur des bâtiments. \n\n        Le relief est décrit sous forme de modèles numériques de terrain (MNT). \n\n        Depuis la version 3.0, tous les objets possèdent un identifiant unique et stable dans le temps.\n\n        Le produit BDTOPO® Express est l’édition hebdomadaire de la BDTOPO® si vous avez besoin de travailler sur de la donnée topographique à haute fréquence (disponible depuis mai 2025). \n\n        Le produit Différentiel BD TOPO® contient les différences géométriques et sémantiques sur l'ensemble du contenu BD TOPO® entre deux éditions trimestrielles successives BD TOPO®. \n\n        Plus précisément, l'édition N du Différentiel BD TOPO® en vigueur contient tout objet de la BD TOPO® dont la date de modification, la date de création ou la date de suppression en base est postérieure à la date de prédiffusion de la précédente édition trimestrielle (N-1), équivalent à une activité de mise à jour par l'IGN d'une durée de 3 mois."
-  } ],
-  "http://purl.org/dc/terms/identifier" : [ {
-    "@value" : "IGNF_BD-TOPO"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2025-09-15T02:00:00"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2026-07-03T02:00:00"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2026-07-03T11:26:44"
-  } ],
-  "http://purl.org/dc/terms/temporal" : [ {
-    "@id" : "_:genid37"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "BD TOPO®"
-  } ],
-  "http://schema.org/encodingFormat" : [ {
-    "@value" : "GPKG"
-  }, {
-    "@value" : "PostGreSQL"
-  }, {
-    "@value" : "SHP"
-  }, {
-    "@value" : "TMS"
-  }, {
-    "@value" : "WFS"
-  }, {
-    "@value" : "WMS"
-  }, {
-    "@value" : "WMTS"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "BD TOPO covers whole French territory, is captured at scale 1/ 10 000, exists since 1990 and aims to provide reference data for mapping and spatial analysis."
-  }, {
-    "@language" : "fr",
-    "@value" : "BD TOPO® V3. La BD TOPO® permet de couvrir de manière cohérente l'ensemble des entités géographiques et administratives du territoire national. La BD TOPO® fournit une information de référence à tous les acteurs de la gestion, de l'aménagement et de l'observation du territoire pour analyser, situer, représenter des données dans leur réalité géographique"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "BD TOPO® V3."
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@value" : "Géospatiales"
-  }, {
-    "@value" : "Mobilité"
-  }, {
-    "@value" : "Observation de la terre et environnement"
-  }, {
-    "@value" : "activités"
-  }, {
-    "@value" : "aspects militaires"
-  }, {
-    "@value" : "données ouvertes"
-  }, {
-    "@value" : "eau"
-  }, {
-    "@value" : "forêts"
-  }, {
-    "@value" : "haies"
-  }, {
-    "@value" : "historique"
-  }, {
-    "@value" : "hvd"
-  }, {
-    "@value" : "routes"
-  }, {
-    "@value" : "toponymie"
-  }, {
-    "@value" : "transports"
-  }, {
-    "@value" : "végétation"
-  }, {
-    "@value" : "énergies"
-  } ],
-  "http://www.w3.org/ns/dcat#language" : [ {
-    "@value" : "fr-FR"
-  } ],
-  "http://www.w3.org/ns/dcat#seriesMember" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "_:genid3"
-  }, {
-    "@id" : "_:genid5"
-  }, {
-    "@id" : "_:genid7"
-  }, {
-    "@id" : "_:genid9"
-  }, {
-    "@id" : "_:genid11"
-  }, {
-    "@id" : "_:genid13"
-  }, {
-    "@id" : "_:genid15"
-  }, {
-    "@id" : "_:genid17"
-  }, {
-    "@id" : "_:genid19"
-  }, {
-    "@id" : "_:genid21"
-  }, {
-    "@id" : "_:genid23"
-  }, {
-    "@id" : "_:genid25"
-  }, {
-    "@id" : "_:genid27"
-  }, {
-    "@id" : "_:genid29"
-  }, {
-    "@id" : "_:genid31"
-  }, {
-    "@id" : "_:genid33"
-  }, {
-    "@id" : "_:genid35"
-  } ]
-}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -659,6 +135,12 @@
     "@id" : "ttp://purl.org/www.umr-lastig.fr/geodata#PyroEvo"
   } ]
 }, {
+  "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Observation"
+  } ]
+}, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata#has_member",
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -668,7 +150,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/www.umr-lastig.fr/geodata/LidarHDFrance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1268,6 +750,13 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Haie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Haie"
+  }, {
+    "@language" : "en",
+    "@value" : "Hedge"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
   } ]
@@ -1290,7 +779,7 @@
     "@value" : "BDHaie v1 sur les Bauges millésime 2020"
   } ],
   "http://www.w3.org/ns/dcat#inSeries" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE"
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes",
@@ -1432,63 +921,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Track"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#IGNF_BD-HAIE",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Le produit La BD Haie est une couche nationale de référence des haies linéaires en France métropolitaine, élaborée dans le cadre du dispositif de suivi des bocages (DSB), OFB-IGN initié en 2017. Les objets linéaires de la BD Haie ont été obtenus à partir de données existantes sur les haies au format surfacique (polygones). La production de la BD Haie suit une logique départementale.\n            \n            Il existe à ce jour deux versions de la BD Haie :\n\n            •\t Une version initiale « BD Haie V1 2020 » élaborée à partir de deux sources de données : \n\n            o\tLes haies et les bosquets du thème végétation de la base de données topographique de l’IGN, BD TOPO®, obtenus par segmentation automatique d’images aériennes et classés par photo-interprétation sur images de 2004 à 2015, selon les départements ;\n\n            o\tLes haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2011 à 2014, selon les départements. Le RPG est un système d’information géographique permettant l’identification des parcelles agricoles, géré par l’ASP (Agence de service et de paiement).\n\n            •\t Une version 2 mise à jour en 2024 « BD Haie V2 mars 2024 ». \n\n            Cette version constitue une version mise à jour et millésimée de la « BD Haie V1 2020 ». Elle n’a pas été élaborée selon la même méthode. Deux sources de données ont été utilisées pour la mise à jour :\n\n            o\tLes haies arborées ou non, les arbres alignés et les bosquets issus des surfaces non agricoles du Registre Parcellaire Graphique (RPG) photo-interprétées à partir d’images aériennes datant de 2020 à 2022, selon les départements ;\n\n            o\tLes modèles numériques de surface produit par « corrélation des images aériennes » datant de 2020 à 2022, selon les départements.  \n\n            Dans cette version 2 sont présentes : (i) les haies présentes dans la BD Haie V1 confirmées par les données utilisées, (ii) des haies ajoutées à partir des données du RPG utilisées pour la mise à jour."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2020-01-01T01:00:00"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2026-04-27T02:00:00"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2026-04-27T16:20:32"
-  } ],
-  "http://purl.org/dc/terms/provenance" : [ {
-    "@id" : "_:genid46"
-  } ],
-  "http://purl.org/dc/terms/temporal" : [ {
-    "@id" : "_:genid47"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "BD HAIE"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
-  } ],
-  "http://www.w3.org/ns/dcat#contactPoint" : [ {
-    "@id" : "_:genid38"
-  } ],
-  "http://www.w3.org/ns/dcat#keyword" : [ {
-    "@value" : "arbres"
-  }, {
-    "@value" : "biodiversité"
-  }, {
-    "@value" : "bocages"
-  }, {
-    "@value" : "bosquets"
-  }, {
-    "@value" : "données ouvertes"
-  }, {
-    "@value" : "environnement"
-  }, {
-    "@value" : "haies"
-  } ],
-  "http://www.w3.org/ns/dcat#seriesMember" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HedgesLesBauges2020"
-  } ],
-  "http://www.w3.org/ns/dcat#theme" : [ {
-    "@id" : "_:genid40"
-  }, {
-    "@id" : "_:genid42"
-  }, {
-    "@id" : "_:genid44"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -1499,9 +931,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#aloison"
   }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid1"
   }, {
-    "@id" : "_:genid49"
+    "@id" : "_:genid2"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "Journal of Outdoor Recreation and Tourism"
@@ -1545,9 +977,9 @@
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
   }, {
-    "@id" : "_:genid50"
+    "@id" : "_:genid3"
   }, {
-    "@id" : "_:genid51"
+    "@id" : "_:genid4"
   } ],
   "http://purl.org/dc/terms/isPartOf" : [ {
     "@value" : "Journal of People and Nature"
