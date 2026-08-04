@@ -1090,6 +1090,7 @@ For example the footprint of a population of hikers is represented as their agre
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+        <dct:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <dct:description>Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
 
 The pipeline integrates several components:
