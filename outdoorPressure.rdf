@@ -1156,7 +1156,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <rdfs:comment xml:lang="en">A modular and iterative aggregation algorithm (MIAA)</rdfs:comment>
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-06</prov:endedAtTime>
         <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
-        <prov:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
+        <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
         <prov:specializationOf rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"/>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-05</prov:startedAtTime>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
