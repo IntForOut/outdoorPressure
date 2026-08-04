@@ -5,12 +5,10 @@
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:www="http://purl.org/www.umr-lastig.fr/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -1115,9 +1113,11 @@ GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detecti
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-22T09:59:00</dct:modified>
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
+        <dcat:accessURL>https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</dcat:accessURL>
         <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
     </owl:NamedIndividual>
     
 
