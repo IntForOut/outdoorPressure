@@ -5,10 +5,12 @@
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:www="http://purl.org/www.umr-lastig.fr/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -170,9 +172,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
     <!-- http://purl.org/dc/terms/provenance -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/provenance"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial"/>
     
 
 
@@ -916,6 +936,12 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"/>
+    
+
+
     <!-- http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#CameraTrapSurveyCMB20242025">
@@ -927,6 +953,12 @@ For example the footprint of a population of hikers is represented as their agre
         <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-02</prov:endedAtTime>
         <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2025-11</prov:startedAtTime>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/www.umr-lastig.fr/geodata#IGNF_BD-HAIE"/>
     
 
 
@@ -1027,6 +1059,39 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#camptocamp"/>
         <rdfs:comment xml:lang="en">A set of Routes issued from Camptocamp.org API.</rdfs:comment>
         <rdfs:label xml:lang="en">Camptocamp.org-routes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+        <dct:description>Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
+
+The pipeline integrates several components:
+
+ - Trajectory management using the Tracklib library
+ - Encounter detection steps implemented in PostgreSQL/PostGIS
+ - Intervisibility analysis performed with the QGIS Visibility Analysis plugin 
+ - Adapted modules from the ORTEGA package (KG maintainer: no informations about it, need to ask the author)
+
+It uses data from:
+
+ - BD Topo road network data in the Bauges area
+ - The 25 m resolution BD Alti digital elevation model (not within th KG yet)
+- Chamois trajectories hosted on Movebank (dataset ID: 3336284355) originating from a long-term Capture–Mark–Recapture monitoring program
+- Human trajectories are sourced from crowdsourced outdoor activity platforms accessed via API CampToCamp, GPSRando, Strava, Visu and VTTour (not within th KG yet) and from a survey project (Kerouanton, 2020)
+
+Due to privacy constraints on human GNSS data, the full dataset cannot be publicly released.
+
+GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-22T09:59:00</dct:modified>
+        <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
     </owl:NamedIndividual>
     
 
@@ -1311,6 +1376,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo"/>
         <dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
         <dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
         <dct:creator>
@@ -1342,7 +1408,6 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <datacite:subject>trail running</datacite:subject>
         <datacite:volume>7</datacite:volume>
         <rdfs:label xml:lang="en">Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</rdfs:label>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo"/>
     </owl:NamedIndividual>
     
 
@@ -1747,11 +1812,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
+        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
         <prov:wasInfluencedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
         <dct:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</dct:isPartOf>
         <dct:isPartOf>SIGSPATIAL &apos;24</dct:isPartOf>
         <dct:publisher>Association for Computing Machinery</dct:publisher>
@@ -1767,7 +1833,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <datacite:subject>synthetic and real world trajectories</datacite:subject>
         <datacite:subject>trajectory aggregation</datacite:subject>
         <rdfs:label xml:lang="en">A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</rdfs:label>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
     </owl:NamedIndividual>
     
 
