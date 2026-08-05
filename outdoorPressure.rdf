@@ -1526,7 +1526,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"/>
         <rdfs:comment xml:lang="en">Merged tracks generated with the Track collection from Vincennes in 2024 by the MIAA algorithm</rdfs:comment>
         <rdfs:label xml:lang="en">Merged tracks in Vincennes</rdfs:label>
-        <prov:wasQuotedFrom rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
+        <dct:isReferencedBy rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
     </owl:NamedIndividual>
     
 
@@ -1856,7 +1856,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
+        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
         <dct:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</dct:isPartOf>
         <dct:isPartOf>SIGSPATIAL &apos;24</dct:isPartOf>
         <dct:publisher>Association for Computing Machinery</dct:publisher>
@@ -1872,7 +1872,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <datacite:subject>synthetic and real world trajectories</datacite:subject>
         <datacite:subject>trajectory aggregation</datacite:subject>
         <rdfs:label xml:lang="en">A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</rdfs:label>
-        <prov:quotedAs rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
+        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
         <prov:wasInfluencedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputePopulationFootprintFromTracksCollection"/>
     </owl:NamedIndividual>
     
