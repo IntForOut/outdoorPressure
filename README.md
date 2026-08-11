@@ -2,7 +2,7 @@
 
 Outdoor Pressure Knowledge Graph (ODO) encodes into a graph model different information needed to discover and reuse data to study the impact of recreational activities in the french Alps. It reuses classes and properties from the more generic KG [Geodata KG](https://github.com/umrlastig/geodata) and introduces new elements to represent information that spans from digital assets like data sources or processes (see concepts on the right of the figure below) to real world phenomena they represent (see concepts on the left part of the figure). See [Documentation](https://intforout.github.io/outdoorPressure/index.html) 
 
-![Overview of ODO conceptual model](docs/img/schema_modele_kg.png)
+![Overview of ODO conceptual model](docs/img/model_KG_article_long.png)
 *figure : Overview of classes and properties that structure ODOP*
 
 ODO design is **task-driven**. Nodes and edges are gradually created to support specific tasks within [INTFOROUT project](https://www.umr-lastig.fr/intforout/). These tasks are then showcased through predefined queries in a dedicated software companion. See  [Sham-Wah application](https://github.com/intForOut/sham-wah)  
