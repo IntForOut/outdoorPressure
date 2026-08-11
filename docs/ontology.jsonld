@@ -330,7 +330,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://creativecommons.org/ns#licence" : [ {
     "@id" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
@@ -358,6 +358,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure/index.html"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#2020",
@@ -2387,6 +2390,9 @@
   "http://www.w3.org/ns/dcat#format" : [ {
     "@value" : "GeoJSON"
   } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure/index.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.refuges.info/api/",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]

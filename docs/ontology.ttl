@@ -623,6 +623,11 @@ For example the footprint of a population of hikers is represented as their agre
 <https://geotrek.parcdesbauges.com/api/v2/> rdf:type owl:NamedIndividual .
 
 
+###  https://intforout.github.io/outdoorPressure
+<https://intforout.github.io/outdoorPressure> rdf:type owl:NamedIndividual ;
+                                              <http://xmlns.com/foaf/0.1/homepage> <https://intforout.github.io/outdoorPressure/index.html> .
+
+
 ###  https://intforout.github.io/outdoorPressure#AltitudeRandoRoutesBauges2025
 :AltitudeRandoRoutesBauges2025 rdf:type owl:NamedIndividual ,
                                         <http://www.w3.org/ns/dcat#Dataset> ;
@@ -1568,6 +1573,10 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#2020
 <https://intforout.github.io/outdoorPressure#2020> rdf:type owl:NamedIndividual .
+
+
+###  https://intforout.github.io/outdoorPressure/index.html
+<https://intforout.github.io/outdoorPressure/index.html> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.refuges.info/api/

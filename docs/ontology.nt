@@ -512,6 +512,11 @@
 # https://geotrek.parcdesbauges.com/api/v2/
 <https://geotrek.parcdesbauges.com/api/v2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://intforout.github.io/outdoorPressure
+<https://intforout.github.io/outdoorPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure> <http://xmlns.com/foaf/0.1/homepage> <https://intforout.github.io/outdoorPressure/index.html> .
+<https://intforout.github.io/outdoorPressure/index.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
 # https://intforout.github.io/outdoorPressure#AltitudeRandoRoutesBauges2025
 <https://intforout.github.io/outdoorPressure#AltitudeRandoRoutesBauges2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#AltitudeRandoRoutesBauges2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -1329,6 +1334,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#2020
 <https://intforout.github.io/outdoorPressure#2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://intforout.github.io/outdoorPressure/index.html
 # 
 # https://www.refuges.info/api/
 <https://www.refuges.info/api/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
