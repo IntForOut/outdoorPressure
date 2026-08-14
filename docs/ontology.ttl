@@ -98,8 +98,32 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isReferencedBy
+<http://purl.org/dc/terms/isReferencedBy> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/provenance
 <http://purl.org/dc/terms/provenance> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/requires
+<http://purl.org/dc/terms/requires> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/spatial
+<http://purl.org/dc/terms/spatial> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/spar/datacite/firstPage
@@ -954,7 +978,8 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024
 :MergedTracksVincennes2024 rdf:type owl:NamedIndividual ,
                                     <http://www.w3.org/ns/dcat#Dataset> ;
-                           <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikersFootprintBoisVincennes ;
+                           <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikersFootprintBoisVincennes ,
+                                                                                  :HikingInBoisdeVincennes ;
                            <http://purl.org/dc/terms/isReferencedBy> :SIGSPATIAL24VanDammeEtAl2024 ;
                            rdfs:comment "Merged tracks generated with the Track collection from Vincennes in 2024 by the MIAA algorithm"@en ;
                            rdfs:label "Merged tracks in Vincennes"@en .
@@ -1328,6 +1353,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                                                                                        :TracksMultiSensorsVincennesForest-gpkg ;
                                                               <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                                                           <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
+                                                              <http://www.w3.org/ns/prov#wasGeneratedBy> :TopometricSurveyGroundTruthPathVincennes2024 ;
                                                               <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
                                                               <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025). Within the research portal distribution, additional files correspond to standard metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent), some of which are not inserted in this KG"@en ;
                                                               <http://purl.org/dc/terms/isReferencedBy> :SIGSPATIAL24VanDammeEtAl2024 ;
