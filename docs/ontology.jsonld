@@ -272,9 +272,6 @@
   "@id" : "http://www.w3.org/ns/prov#generated",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/ns/prov#quotedAs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/ns/prov#startedAtTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -291,9 +288,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#wasQuotedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
@@ -566,6 +560,9 @@
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@value" : "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197"
   } ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2025-09-04"
@@ -600,9 +597,6 @@
     "@id" : "https://intforout.github.io/outdoorPressure#mgarel"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune",
@@ -1009,6 +1003,9 @@
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Colin Kerouanton"
   } ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2015-08-31"
@@ -1032,9 +1029,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fr",
     "@value" : "Data PhD Kerouanton"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#LIFAT",
@@ -1124,6 +1118,9 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes"
   } ],
@@ -1134,9 +1131,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Merged tracks in Vincennes"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#Movebank",
@@ -1657,6 +1651,8 @@
     "@value" : "Association for Computing Machinery"
   } ],
   "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
+  }, {
     "@id" : "https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"
   } ],
   "http://purl.org/dc/terms/spatial" : [ {
@@ -1694,9 +1690,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories"
-  } ],
-  "http://www.w3.org/ns/prov#quotedAs" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#SensitiveArea",
@@ -1930,6 +1923,9 @@
     "@language" : "en",
     "@value" : "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025). Within the research portal distribution, additional files correspond to standard metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent), some of which are not inserted in this KG"
   } ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2025-01-18"
@@ -1962,9 +1958,6 @@
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#amraimond"
   }, {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"
-  } ],
-  "http://www.w3.org/ns/prov#wasQuotedFrom" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg",

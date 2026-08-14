@@ -204,9 +204,6 @@
 # http://www.w3.org/ns/prov#generated
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.w3.org/ns/prov#quotedAs
-<http://www.w3.org/ns/prov#quotedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/ns/prov#startedAtTime
 <http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -224,9 +221,6 @@
 # 
 # http://www.w3.org/ns/prov#wasInfluencedBy
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#wasQuotedFrom
-<http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/homePage
 <http://xmlns.com/foaf/0.1/homePage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -583,8 +577,8 @@
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#marchandetal-rdata> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#mgarel> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/prov#wasAttributedTo> <https://intforout.github.io/outdoorPressure#pmarchand> .
-<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/bibliographicCitation> "Marchand, P., Risser, N., Petit, E. & Garel, M. (2025). Data from: Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17052197" .
+<https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/isReferencedBy> <https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/issued> "2025-09-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
@@ -766,8 +760,8 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
-<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/creator> "Colin Kerouanton" .
+<https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/isReferencedBy> <https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/issued> "2015-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/language> "French" .
 <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> <http://purl.org/dc/terms/publisher> "LECA et l’EDYTEM" .
@@ -808,7 +802,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikersFootprintBoisVincennes> .
-<https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
+<https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://purl.org/dc/terms/isReferencedBy> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/2000/01/rdf-schema#comment> "Merged tracks generated with the Track collection from Vincennes in 2024 by the MIAA algorithm"@en .
 <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> <http://www.w3.org/2000/01/rdf-schema#label> "Merged tracks in Vincennes"@en .
 # 
@@ -1025,6 +1019,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/isPartOf> "SIGSPATIAL '24" .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" .
+<https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/references> <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/references> <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/spar/datacite/firstPage> "633" .
@@ -1038,7 +1033,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/spar/datacite/subject> "synthetic and real world trajectories" .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://purl.org/spar/datacite/subject> "trajectory aggregation" .
 <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/2000/01/rdf-schema#label> "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories"@en .
-<https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> <http://www.w3.org/ns/prov#quotedAs> <https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024> .
 # 
 # https://intforout.github.io/outdoorPressure#SentierDesBauges
 <https://intforout.github.io/outdoorPressure#SentierDesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1129,9 +1123,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
-<https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/prov#wasQuotedFrom> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025). Within the research portal distribution, additional files correspond to standard metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent), some of which are not inserted in this KG"@en .
+<https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/isReferencedBy> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/issued> "2025-01-18"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" .
