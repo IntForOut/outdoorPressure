@@ -1077,6 +1077,7 @@ It uses data from:
 Due to privacy constraints on human GNSS data, the full dataset cannot be publicly released.
 
 GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</dct:description>
+        <dct:isReferencedBy rdf:resource="https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
         <dct:modified>2026-06-22T09:59:00</dct:modified>
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
@@ -1138,6 +1139,19 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#marchandetal-rdata"/>
         <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
         <prov:wasAttributedTo rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <dct1:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+        <dc:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories</dc:title>
+        <dct:publisher>Association of Geographic Information Laboratories in Europe (AGILE)</dct:publisher>
+        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"/>
+        <datacite:relatedIdentifier>https://doi.org/10.5194/agile-giss-7-2-2026</datacite:relatedIdentifier>
     </owl:NamedIndividual>
     
 
