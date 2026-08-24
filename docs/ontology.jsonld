@@ -534,6 +534,41 @@
     "@id" : "https://intforout.github.io/outdoorPressure#c2c-route-geojson"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.\n\nThe pipeline integrates several components:\n\n - Trajectory management using the Tracklib library\n - Encounter detection steps implemented in PostgreSQL/PostGIS\n - Intervisibility analysis performed with the QGIS Visibility Analysis plugin \n - Adapted modules from the ORTEGA package (KG maintainer: no informations about it, need to ask the author)\n\nIt uses data from:\n\n - BD Topo road network data in the Bauges area\n - The 25 m resolution BD Alti digital elevation model (not within th KG yet)\n- Chamois trajectories hosted on Movebank (dataset ID: 3336284355) originating from a long-term Capture–Mark–Recapture monitoring program\n- Human trajectories are sourced from crowdsourced outdoor activity platforms accessed via API CampToCamp, GPSRando, Strava, Visu and VTTour (not within th KG yet) and from a survey project (Kerouanton, 2020)\n\nDue to privacy constraints on human GNSS data, the full dataset cannot be publicly released.\n\nGitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection"
+  } ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-12-19T18:01:00"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2026-06-22T09:59:00"
+  } ],
+  "http://purl.org/dc/terms/requires" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#Tracklib"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
+  } ],
+  "http://www.w3.org/ns/dcat#accessURL" : [ {
+    "@value" : "https://github.com/IntForOut/Human_Wildlife_Encounter_Detection"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#Movebank"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -571,6 +606,51 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-05-07"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "English"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Licence Ouverte v2.0 (Etalab)"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Distribution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. "
+  } ],
+  "http://www.w3.org/ns/dcat#format" : [ {
+    "@value" : "csv"
+  } ],
+  "http://www.w3.org/ns/dcat#identifier" : [ {
+    "@value" : "human_chamois_real_encounters.csv"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo",
@@ -615,6 +695,24 @@
     "@id" : "https://intforout.github.io/outdoorPressure#mgarel"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#pmarchand"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper" ],
+  "http://purl.org/dc/dct/creator" : [ {
+    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Association of Geographic Information Laboratories in Europe (AGILE)"
+  } ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"
+  } ],
+  "http://purl.org/spar/datacite/relatedIdentifier" : [ {
+    "@value" : "https://doi.org/10.5194/agile-giss-7-2-2026"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#DeepFaune",
@@ -842,51 +940,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Activity"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-05-07"
-  } ],
-  "http://purl.org/dc/terms/language" : [ {
-    "@value" : "English"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@value" : "Licence Ouverte v2.0 (Etalab)"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#LASTIG"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HikingInLesBauges"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."
-  } ],
-  "http://www.w3.org/ns/dcat#distribution" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://purl.org/www.umr-lastig.fr/geodata#jadawson"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Distribution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. "
-  } ],
-  "http://www.w3.org/ns/dcat#format" : [ {
-    "@value" : "csv"
-  } ],
-  "http://www.w3.org/ns/dcat#identifier" : [ {
-    "@value" : "human_chamois_real_encounters.csv"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014",

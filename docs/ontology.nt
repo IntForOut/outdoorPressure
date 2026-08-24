@@ -572,6 +572,21 @@
 <https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of Routes issued from Camptocamp.org API."@en .
 <https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Camptocamp.org-routes"@en .
 # 
+# https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://www.w3.org/ns/prov#used> <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://www.w3.org/ns/prov#used> <https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://www.w3.org/ns/prov#used> <https://intforout.github.io/outdoorPressure#Movebank> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/description> "Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.\n\nThe pipeline integrates several components:\n\n - Trajectory management using the Tracklib library\n - Encounter detection steps implemented in PostgreSQL/PostGIS\n - Intervisibility analysis performed with the QGIS Visibility Analysis plugin \n - Adapted modules from the ORTEGA package (KG maintainer: no informations about it, need to ask the author)\n\nIt uses data from:\n\n - BD Topo road network data in the Bauges area\n - The 25 m resolution BD Alti digital elevation model (not within th KG yet)\n- Chamois trajectories hosted on Movebank (dataset ID: 3336284355) originating from a long-term Capture–Mark–Recapture monitoring program\n- Human trajectories are sourced from crowdsourced outdoor activity platforms accessed via API CampToCamp, GPSRando, Strava, Visu and VTTour (not within th KG yet) and from a survey project (Kerouanton, 2020)\n\nDue to privacy constraints on human GNSS data, the full dataset cannot be publicly released.\n\nGitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection" .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/isReferencedBy> <https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/issued> "2020-12-19T18:01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/modified> "2026-06-22T09:59:00" .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/requires> <http://purl.org/www.umr-lastig.fr/geodata#Tracklib> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#RNCFSBauges> .
+<https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> <http://www.w3.org/ns/dcat#accessURL> "https://github.com/IntForOut/Human_Wildlife_Encounter_Detection" .
+# 
 # https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph
 <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#Process> .
@@ -589,6 +604,25 @@
 <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24> <http://purl.org/dc/terms/description> "Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges et de Chammonix sur la période 2020-24. \nLes paramètres utilisés pour le pipeline sur les différentes zones sont indiquées dans les exemples : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation." .
 <https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24> <http://purl.org/dc/terms/requires> <https://intforout.github.io/outdoorPressure#Footprint2graph> .
 # 
+# https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/dc/terms/description> "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."@en .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/dc/terms/issued> "2026-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/dc/terms/language> "English" .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters> <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
+# 
+# https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv> <http://www.w3.org/2000/01/rdf-schema#comment> "Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. "@en .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv> <http://www.w3.org/ns/dcat#format> "csv" .
+<https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv> <http://www.w3.org/ns/dcat#identifier> "human_chamois_real_encounters.csv" .
+# 
 # https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -605,6 +639,15 @@
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5281/zenodo.17052197" .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/2000/01/rdf-schema#comment> "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en .
 <https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo> <http://www.w3.org/2000/01/rdf-schema#label> "Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)"@en .
+# 
+# https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> .
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://purl.org/dc/dct/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://purl.org/dc/elements/1.1/title> "A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories" .
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://purl.org/dc/terms/publisher> "Association of Geographic Information Laboratories in Europe (AGILE)" .
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://purl.org/dc/terms/references> <https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026> .
+<https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5194/agile-giss-7-2-2026" .
 # 
 # https://intforout.github.io/outdoorPressure#DeepFaune
 <https://intforout.github.io/outdoorPressure#DeepFaune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -683,25 +726,6 @@
 # https://intforout.github.io/outdoorPressure#HikingInLesBauges
 <https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HikingInLesBauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#Hiking> .
-# 
-# https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HikingInLesBauges> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/ns/dcat#distribution> <https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/issued> "2026-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/language> "English" .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters> <http://www.w3.org/2000/01/rdf-schema#comment> "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."@en .
-# 
-# https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/2000/01/rdf-schema#comment> "Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. "@en .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/ns/dcat#format> "csv" .
-<https://intforout.github.io/outdoorPressure#HumanChamoisRealEncounters-csv> <http://www.w3.org/ns/dcat#identifier> "human_chamois_real_encounters.csv" .
 # 
 # https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
