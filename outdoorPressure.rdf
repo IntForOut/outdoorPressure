@@ -1053,6 +1053,42 @@ For example the footprint of a population of hikers is represented as their agre
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026">
+        <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Process"/>
+        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+        <dct:description>Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
+
+The pipeline integrates several components:
+
+ - Trajectory management using the Tracklib library
+ - Encounter detection steps implemented in PostgreSQL/PostGIS
+ - Intervisibility analysis performed with the QGIS Visibility Analysis plugin 
+ - Adapted modules from the ORTEGA package (KG maintainer: no informations about it, need to ask the author)
+
+It uses data from:
+
+ - BD Topo road network data in the Bauges area
+ - The 25 m resolution BD Alti digital elevation model (not within th KG yet)
+- Chamois trajectories hosted on Movebank (dataset ID: 3336284355) originating from a long-term Capture–Mark–Recapture monitoring program
+- Human trajectories are sourced from crowdsourced outdoor activity platforms accessed via API CampToCamp, GPSRando, Strava, Visu and VTTour (not within th KG yet) and from a survey project (Kerouanton, 2020)
+
+Due to privacy constraints on human GNSS data, the full dataset cannot be publicly released.
+
+GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-19T18:01:00</dct:issued>
+        <dct:modified>2026-06-22T09:59:00</dct:modified>
+        <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
+        <dct:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
+        <dcat:accessURL>https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</dcat:accessURL>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph">
@@ -1636,9 +1672,9 @@ Ce jeu de données est construit à partir d&apos;un ensemble de traces observé
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDeepFauneANaciri">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <dct:creator>Abdessalam Naciri</dct:creator>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#DeepFaune"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDeepFaune.pdf"/>
+        <dct:creator>Abdessalam Naciri</dct:creator>
     </owl:NamedIndividual>
     
 
@@ -1647,9 +1683,9 @@ Ce jeu de données est construit à partir d&apos;un ensemble de traces observé
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ProfilageDonneesKerouantonANaciri">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <dct:creator>ANaciri</dct:creator>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf"/>
+        <dct:creator>ANaciri</dct:creator>
         <rdfs:comment xml:lang="fr">Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l&apos;analyse est partagé dans un rapport (target 2)</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1713,8 +1749,8 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperHuntingAndWildlifeResponseToRecreationalActivities">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0001-6491-9487"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-6491-9487"/>
         <rdfs:comment>Effet de différentes intensités d&apos;activités récréatives et de la chasse sur la probabilité de détecter certaines espèces (cerf, chevreuil, sanglier, renard, lynx).</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1724,9 +1760,9 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperLongTermEffectHumRecreationOnCommunityWildMammals">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals"/>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-6265-710X"/>
         <dct:description>Article sur l&apos;effet des activités récréatives sur mammifères étudié à partir de pièges-photos, en Italie. de Marco Salvatori et al publié en 2023 &quot;Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping&quot;</dct:description>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals"/>
     </owl:NamedIndividual>
     
 
@@ -1735,8 +1771,8 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperOnStravaData">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-1101-1333"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#VenterEtAl.BiasActivityDataFromStrava.2022.LandUrbanPlan"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-1101-1333"/>
         <rdfs:comment>An interesting paper which can be used as baseline for comparison in IntForOut project</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1756,9 +1792,9 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#ReviewPaperVanDammeEtAlMergeTracks2024SIGSpatial">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#UserFeedback"/>
-        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024"/>
+        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <rdfs:comment>An interesting paper which can be used as baseline for comparison in IntForOut project</rdfs:comment>
         <rdfs:comment xml:lang="en">The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input</rdfs:comment>
     </owl:NamedIndividual>
@@ -1769,6 +1805,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
@@ -1788,7 +1825,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
         <datacite:subject>metrological analysis</datacite:subject>
         <datacite:subject>synthetic and real world trajectories</datacite:subject>
         <datacite:subject>trajectory aggregation</datacite:subject>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"/>
         <rdfs:label xml:lang="en">A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2268,5 +2304,5 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
