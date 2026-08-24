@@ -1083,9 +1083,12 @@ GitHub repository: https://github.com/IntForOut/Human_Wildlife_Encounter_Detecti
         <dct:requires rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#Tracklib"/>
         <dct:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <dcat:accessURL>https://github.com/IntForOut/Human_Wildlife_Encounter_Detection</dcat:accessURL>
+        <prov:generated rdf:resource="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"/>
         <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#Movebank"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#StravaTracksBauges2014"/>
+        <prov:used rdf:resource="https://intforout.github.io/outdoorPressure#api-camptocamp"/>
     </owl:NamedIndividual>
     
 
@@ -1122,6 +1125,35 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
+        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
+        <dct:description xml:lang="en">718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates.</dct:description>
+        <dct:isReferencedBy rdf:resource="https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-07</dct:issued>
+        <dct:language>English</dct:language>
+        <dct:license>Licence Ouverte v2.0 (Etalab)</dct:license>
+        <dct:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
+        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv"/>
+        <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:comment xml:lang="en">Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. </rdfs:comment>
+        <dcat:format>csv</dcat:format>
+        <dcat:identifier>human_chamois_real_encounters.csv</dcat:identifier>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo">
@@ -1151,6 +1183,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <dc:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories</dc:title>
         <dct:publisher>Association of Geographic Information Laboratories in Europe (AGILE)</dct:publisher>
         <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"/>
+        <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters"/>
         <datacite:relatedIdentifier>https://doi.org/10.5194/agile-giss-7-2-2026</datacite:relatedIdentifier>
     </owl:NamedIndividual>
     
@@ -1278,33 +1311,6 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HikingInLesBauges">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#Hiking"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-07</dct:issued>
-        <dct:language>English</dct:language>
-        <dct:license>Licence Ouverte v2.0 (Etalab)</dct:license>
-        <dct:publisher rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#LASTIG"/>
-        <dct:description xml:lang="en">718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates.</dct:description>
-        <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv"/>
-        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv -->
-
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-        <rdfs:comment xml:lang="en">Waiting for the file to be available on a research data platform, it is on the project dedicated ftp. </rdfs:comment>
-        <dcat:format>csv</dcat:format>
-        <dcat:identifier>human_chamois_real_encounters.csv</dcat:identifier>
     </owl:NamedIndividual>
     
 
