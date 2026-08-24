@@ -561,12 +561,19 @@
   "http://www.w3.org/ns/dcat#accessURL" : [ {
     "@value" : "https://github.com/IntForOut/Human_Wildlife_Encounter_Detection"
   } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters"
+  } ],
   "http://www.w3.org/ns/prov#used" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#KerouantonSurveyFieldCampaignTracksGNSS20142015"
   }, {
     "@id" : "https://intforout.github.io/outdoorPressure#Movebank"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#StravaTracksBauges2014"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#api-camptocamp"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph",
@@ -617,6 +624,9 @@
     "@language" : "en",
     "@value" : "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."
   } ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2026-05-07"
@@ -635,6 +645,9 @@
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv",
@@ -710,6 +723,8 @@
   } ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters"
   } ],
   "http://purl.org/spar/datacite/relatedIdentifier" : [ {
     "@value" : "https://doi.org/10.5194/agile-giss-7-2-2026"

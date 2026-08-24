@@ -694,9 +694,12 @@ For example the footprint of a population of hikers is represented as their agre
 ###  https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026
 :ComputeHumanWildlifeEncountersBauges2026 rdf:type owl:NamedIndividual ,
                                                    <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
+                                          <http://www.w3.org/ns/prov#generated> :DataHumanChamoisEncounters ;
                                           <http://www.w3.org/ns/prov#used> :BDTOPOSentiersBauges2025 ,
                                                                            :KerouantonSurveyFieldCampaignTracksGNSS20142015 ,
-                                                                           :Movebank ;
+                                                                           :Movebank ,
+                                                                           :StravaTracksBauges2014 ,
+                                                                           :api-camptocamp ;
                                           <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                                           <http://purl.org/dc/terms/description> """Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
 
@@ -756,8 +759,10 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
                                      <http://www.w3.org/ns/dcat#Dataset> ;
                             <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
                             <http://www.w3.org/ns/dcat#distribution> :DataHumanChamoisEncounters-csv ;
+                            <http://www.w3.org/ns/prov#wasGeneratedBy> :ComputeHumanWildlifeEncountersBauges2026 ;
                             <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                             <http://purl.org/dc/terms/description> "718 real encounters. The geometries are saved as WKT (CRS 2154). Only included real encounters as they are likely enough to work with and potential encounters drastically increase amount of data, also they may need some explanation for why they have 2 different dates."@en ;
+                            <http://purl.org/dc/terms/isReferencedBy> :DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026 ;
                             <http://purl.org/dc/terms/issued> "2026-05-07"^^xsd:date ;
                             <http://purl.org/dc/terms/language> "English" ;
                             <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" ;
@@ -796,7 +801,8 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
                                                      <http://purl.org/dc/dct/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                                                      <http://purl.org/dc/elements/1.1/title> "A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories" ;
                                                      <http://purl.org/dc/terms/publisher> "Association of Geographic Information Laboratories in Europe (AGILE)" ;
-                                                     <http://purl.org/dc/terms/references> :ComputeHumanWildlifeEncountersBauges2026 ;
+                                                     <http://purl.org/dc/terms/references> :ComputeHumanWildlifeEncountersBauges2026 ,
+                                                                                           :DataHumanChamoisEncounters ;
                                                      <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5194/agile-giss-7-2-2026" .
 
 
