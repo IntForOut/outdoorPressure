@@ -358,23 +358,6 @@
         <mxCell id="bjEmxF1Juf7OZtVhogDA-105" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Les relations et leurs inverses&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;dct:refenreces / dct:isReferencedBy&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;dct:requires / dc:isRequiredBy&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;prov:generated&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;prov:used&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;geodata:represents / geodata:isRepresentedBy&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;geodata:target / geodata:hasUserFeedback&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="250" width="450" x="-1610" y="-440" as="geometry" />
         </mxCell>
-        <mxCell id="AtnBwoS_w-Si_FAXFZ1x-109" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;Trajectory&lt;/b&gt;" vertex="1">
-          <mxGeometry height="64" width="99.92" x="-2370" y="-853.2" as="geometry" />
-        </mxCell>
-        <mxCell id="AtnBwoS_w-Si_FAXFZ1x-110" edge="1" parent="1" source="AtnBwoS_w-Si_FAXFZ1x-109" style="edgeStyle=none;html=1;rounded=0;curved=1;dashed=1;endArrow=block;endFill=0;endSize=12;entryX=0.239;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" target="16" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-2320" y="-860" />
-            </Array>
-            <mxPoint x="-2130" y="-731" as="sourcePoint" />
-            <mxPoint x="-2270" y="-900" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="AtnBwoS_w-Si_FAXFZ1x-111" connectable="0" parent="AtnBwoS_w-Si_FAXFZ1x-110" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" value="&lt;font&gt;rdfs:subClassof&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.03" y="2" as="geometry">
-            <mxPoint x="-1" y="15" as="offset" />
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
