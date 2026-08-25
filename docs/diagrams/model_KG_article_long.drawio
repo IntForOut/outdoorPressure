@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" pages="6">
   <diagram id="7OUjOVS5ksEaDqb_jHe9" name="Schema principal">
-    <mxGraphModel dx="4219" dy="2099" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4220" dy="2099" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -340,9 +340,11 @@
         <mxCell id="ZLAmHfGIuX1hc6dZ-YbA-102" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Population&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Footprint&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="64" width="99.92" x="-2250" y="-824" as="geometry" />
         </mxCell>
-        <mxCell id="ZLAmHfGIuX1hc6dZ-YbA-104" edge="1" parent="1" source="19" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;rounded=0;curved=1;exitX=0.007;exitY=0.402;exitDx=0;exitDy=0;exitPerimeter=0;endSize=10;" target="ZLAmHfGIuX1hc6dZ-YbA-102">
+        <mxCell id="ZLAmHfGIuX1hc6dZ-YbA-104" edge="1" parent="1" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;dashed=1;rounded=0;curved=1;exitX=0.007;exitY=0.402;exitDx=0;exitDy=0;exitPerimeter=0;endSize=10;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
+            <mxPoint x="-1987.1299999999999" y="-802.3050400000001" as="sourcePoint" />
+            <mxPoint x="-2180.004897387877" y="-895.5199281715137" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ZLAmHfGIuX1hc6dZ-YbA-107" connectable="0" parent="ZLAmHfGIuX1hc6dZ-YbA-104" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;hasSTfootprint&lt;/font&gt;" vertex="1">
