@@ -2136,6 +2136,37 @@
     "@value" : "https://www.strava.com/about"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#StravaHeatMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Displays the aggregated public activities recorded in Strava over the past year"
+  }, {
+    "@language" : "fr",
+    "@value" : "Montre les activités publiques agrégées au cours de l'année passée dans Strava"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Carte mondiale des activités Strava"
+  }, {
+    "@language" : "en",
+    "@value" : "Strava Global Heatmap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q114074364"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#StravaMetro",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -2168,37 +2199,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Strava MontBlanc 2024"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#Strava"
-  } ],
-  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Displays the aggregated public activities recorded in Strava over the past year"
-  }, {
-    "@language" : "fr",
-    "@value" : "Montre les activités publiques agrégées au cours de l'année passée dans Strava"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fr",
-    "@value" : "Carte mondiale des activités Strava"
-  }, {
-    "@language" : "en",
-    "@value" : "Strava Global Heatmap"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://www.wikidata.org/wiki/Q114074364"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#StravaTracksBauges2014",
