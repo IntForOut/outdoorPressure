@@ -1013,6 +1013,16 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
                                            :HumanActivity .
 
 
+###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past
+:HumanOutdoorActivitiesFrance-Past rdf:type owl:NamedIndividual ,
+                                            :HumanActivity .
+
+
+###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear
+:HumanOutdoorActivitiesFrance-PastYear rdf:type owl:NamedIndividual ,
+                                                :HumanActivity .
+
+
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024
 :HumanOutdoorActivitiesMontBlanc2024 rdf:type owl:NamedIndividual ,
                                               :HumanActivity .
@@ -1206,6 +1216,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 :Outdoorvision rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/ns/dcat#Dataset> ;
                <http://purl.org/dc/terms/hasPart> :OVTracksMontBlancBauges2024 ;
+               <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesFrance-PastYear ;
                <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://Outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en ;
                <http://purl.org/dc/terms/publisher> :Prnsn ;
                <http://xmlns.com/foaf/0.1/homePage> "https://Outdoorvision.fr/" .
@@ -1471,8 +1482,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 ###  https://intforout.github.io/outdoorPressure#StravaHeatMap
 :StravaHeatMap rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/ns/dcat#Dataset> ;
-               <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2024 ,
-                                                                      :HumanOutdoorActivitiesMontBlanc2024 ;
+               <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesFrance-PastYear ;
                <http://purl.org/dc/terms/publisher> :Strava ;
                rdfs:comment "Displays the aggregated public activities recorded in Strava over the past year"@en ,
                             "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr ;
@@ -1482,6 +1492,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 ###  https://intforout.github.io/outdoorPressure#StravaMetro
 :StravaMetro rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/dcat#Dataset> ;
+             <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesFrance-Past ;
              <http://purl.org/dc/terms/description> "Aggregated and anonymized Strava data"@en ;
              <http://purl.org/dc/terms/language> "English" ;
              <http://purl.org/dc/terms/publisher> :Strava ;
