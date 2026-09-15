@@ -2126,12 +2126,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#StravaMetro -->
+    <!-- https://intforout.github.io/outdoorPressure#StravaData -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaMetro">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past"/>
-        <dct:description xml:lang="en">Aggregated and anonymized Strava data</dct:description>
+        <dct:description xml:lang="en">Strava data anonymized, with different agregates that can be specified through a platform </dct:description>
         <dct:language>English</dct:language>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q114074281</rdfs:seeAlso>
