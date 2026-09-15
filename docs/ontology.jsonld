@@ -594,7 +594,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph3ZonesBaugesChamonix2020-24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/www.umr-lastig.fr/geodata#Process" ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges et de Chammonix sur la période 2020-24. \nLes paramètres utilisés pour le pipeline sur les différentes zones sont indiquées dans les exemples : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (PRNSN). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation."
+    "@value" : "Mise en oeuvre du technical Process ComputePedestrainMobilityGraph sur trois zones des Bauges et de Chammonix sur la période 2020-24. \nLes paramètres utilisés pour le pipeline sur les différentes zones sont indiquées dans les exemples : https://github.com/umrlastig/footprint2graph/tree/main/data/config*.yml\n\nLes données GNSS utilisées pour construire ce jeu de données ont été produites et délivrées par la plateforme Outdoorvision (service fournissant des traces partagées volontairement par des utilisateurs lors de leurs activités de plein air), plateforme soutenue par le Pôle Ressources National Sports de Nature (Prnsn). Les traces ont été extraites de la plateforme, après nettoyage, filtrage et anonymisation."
   } ],
   "http://purl.org/dc/terms/requires" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Footprint2graph"
@@ -1294,7 +1294,7 @@
   "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
+    "@id" : "https://intforout.github.io/outdoorPressure#Prnsn"
   } ],
   "http://purl.org/dc/terms/spatial" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#RNCFSBauges"
@@ -1312,7 +1312,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "OutdoorVision export in Bauges and Mont Blanc in 2024"
+    "@value" : "Outdoorvision export in Bauges and Mont Blanc in 2024"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#OVExportBaugesGeoPackage"
@@ -1340,6 +1340,22 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Activity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Outdoorvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Outdoorvision https://Outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#Prnsn"
+  } ],
+  "http://www.w3.org/ns/dcat#dataset" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
+  } ],
+  "http://xmlns.com/foaf/0.1/homePage" : [ {
+    "@value" : "https://Outdoorvision.fr/"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025",
@@ -1504,6 +1520,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#LandEntity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#Prnsn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pôle ressources national sports de nature (Prnsn)"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#ProfilageDataPhDKerouanton.pdf",
@@ -1696,7 +1721,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using OutdoorVision data as an input"
+    "@value" : "The process proposed in this paper can probably be reproduced to generate HikersFootprint in Les Bauges and MontBlanc, using Outdoorvision data as an input"
   }, {
     "@value" : "An interesting paper which can be used as baseline for comparison in IntForOut project"
   } ]
@@ -2398,22 +2423,6 @@
     "@id" : "https://www.openstreetmap.org"
   } ]
 }, {
-  "@id" : "https://intforout.github.io/outdoorPressure#outdoorvision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "Outdoorvision https://outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#prnsn"
-  } ],
-  "http://www.w3.org/ns/dcat#dataset" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"
-  } ],
-  "http://xmlns.com/foaf/0.1/homePage" : [ {
-    "@value" : "https://outdoorvision.fr/"
-  } ]
-}, {
   "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-poi-geojson",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2464,15 +2473,6 @@
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Pascal Marchand"
-  } ]
-}, {
-  "@id" : "https://intforout.github.io/outdoorPressure#prnsn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Pôle ressources national sports de nature (PRNSN)"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson",
