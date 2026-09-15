@@ -102,12 +102,52 @@
 <http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/isReferencedBy
 <http://purl.org/dc/terms/isReferencedBy> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/provenance
 <http://purl.org/dc/terms/provenance> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/references
@@ -124,6 +164,10 @@
 
 ###  http://purl.org/dc/terms/spatial
 <http://purl.org/dc/terms/spatial> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/spar/datacite/firstPage
@@ -156,6 +200,14 @@
 
 ###  http://purl.org/spar/datacite/volume
 <http://purl.org/spar/datacite/volume> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#represents
+<http://purl.org/www.umr-lastig.fr/geodata#represents> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#target
@@ -294,6 +346,10 @@ rdfs:description rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/prov#generated> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/prov#specializationOf
+<http://www.w3.org/ns/prov#specializationOf> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/prov#startedAtTime
 <http://www.w3.org/ns/prov#startedAtTime> rdf:type owl:AnnotationProperty .
 
@@ -320,6 +376,10 @@ rdfs:description rdf:type owl:AnnotationProperty .
 
 ###  http://xmlns.com/foaf/0.1/homePage
 <http://xmlns.com/foaf/0.1/homePage> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/name
@@ -351,7 +411,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://purl.org/www.umr-lastig.fr/geodata#has_member
-<http://purl.org/www.umr-lastig.fr/geodata#has_member> rdfs:range owl:Thing .
+<http://purl.org/www.umr-lastig.fr/geodata#has_member> rdf:type owl:ObjectProperty ;
+                                                       rdfs:range owl:Thing .
 
 
 ###  https://intforout.github.io/outdoorPressure#affords
@@ -377,9 +438,29 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://purl.org/dc/dcmitype/Software
+<http://purl.org/dc/dcmitype/Software> rdf:type owl:Class .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#Collection
+<http://purl.org/www.umr-lastig.fr/geodata#Collection> rdf:type owl:Class .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#Process
+<http://purl.org/www.umr-lastig.fr/geodata#Process> rdf:type owl:Class .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper
+<http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> rdf:type owl:Class .
+
+
 ###  http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey
 <http://purl.org/www.umr-lastig.fr/geodata#ScientificSurvey> rdf:type owl:Class ;
                                                              rdfs:subClassOf :Observation .
+
+
+###  http://purl.org/www.umr-lastig.fr/geodata#UserFeedback
+<http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2006/vcard/ns#Address
@@ -398,6 +479,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/dcat#CatalogRecord> rdf:type owl:Class .
 
 
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/ns/dcat#DatasetSeries
 <http://www.w3.org/ns/dcat#DatasetSeries> rdf:type owl:Class .
 
@@ -406,8 +491,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class .
 
 
+###  http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> rdf:type owl:Class .
+
+
 ###  http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
 
 
 ###  https://intforout.github.io/outdoorPressure#Activity
@@ -667,6 +764,17 @@ For example the footprint of a population of hikers is represented as their agre
                           rdfs:label "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en .
 
 
+###  https://intforout.github.io/outdoorPressure#Camptocamp-Data
+:Camptocamp-Data rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/ns/dcat#Dataset> ;
+                 <http://purl.org/dc/terms/hasPart> :CamptocampPoisBauges2025 ,
+                                                    :CamptocampRoutesBauges2025 ;
+                 <http://purl.org/dc/dct/license> "https://opendatacommons.org/licenses/odbl/" ;
+                 <http://purl.org/dc/elements/1.1/description> "Données du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr ;
+                 <http://www.w3.org/ns/dcat#accessURL> "https://www.camptocamp.org/" ;
+                 <http://www.w3.org/ns/dcat#publisher> "CamptoCamp" .
+
+
 ###  https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025
 :CamptocampPoisBauges2025 rdf:type owl:NamedIndividual ,
                                    <http://www.w3.org/ns/dcat#Dataset> ;
@@ -698,8 +806,7 @@ For example the footprint of a population of hikers is represented as their agre
                                           <http://www.w3.org/ns/prov#used> :BDTOPOSentiersBauges2025 ,
                                                                            :KerouantonSurveyFieldCampaignTracksGNSS20142015 ,
                                                                            :Movebank ,
-                                                                           :StravaTracksBauges2014 ,
-                                                                           :api-camptocamp ;
+                                                                           :StravaTracksBauges2014 ;
                                           <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
                                           <http://purl.org/dc/terms/description> """Workflow for detecting Human-Chamois Encounter from GNSS trajectories stored in a Github Repository. The workflow combines Python processing, PostgreSQL/PostGIS spatial queries, and visibility analysis tools. It has been applied in the  Area of the National Game and Wildlife Reserve of the Bauges Massif.
 
@@ -1098,7 +1205,7 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
 ###  https://intforout.github.io/outdoorPressure#Outdoorvision
 :Outdoorvision rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/ns/dcat#Dataset> ;
-               <http://www.w3.org/ns/dcat#dataset> :OVTracksMontBlancBauges2024 ;
+               <http://purl.org/dc/terms/hasPart> :OVTracksMontBlancBauges2024 ;
                <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://Outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en ;
                <http://purl.org/dc/terms/publisher> :Prnsn ;
                <http://xmlns.com/foaf/0.1/homePage> "https://Outdoorvision.fr/" .
@@ -1223,6 +1330,13 @@ Ce jeu de données est construit à partir d'un ensemble de traces observées lo
              <http://www.opengis.net/ont/geosparql#sfWithin> :MassifDesBauges ;
              rdfs:comment "La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%)."@fr ;
              rdfs:label "Réserve nationale de chasse et de faune sauvage des Bauges" .
+
+
+###  https://intforout.github.io/outdoorPressure#RefugesInfoData
+:RefugesInfoData rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/ns/dcat#Dataset> ;
+                 <http://creativecommons.org/ns#licence> "http://creativecommons.org/licenses/by-sa/2.0/deed.fr" ;
+                 <http://purl.org/dc/elements/1.1/description> "Données Refuges.info , à but non commercial, relatives aux hébergements de montagnes destinés aux randonneurs. Propose une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#RefugesInfoPOIBauges2025
@@ -1357,7 +1471,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 ###  https://intforout.github.io/outdoorPressure#StravaMetro
 :StravaMetro rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/dcat#Dataset> ;
-             <http://purl.org/dc/terms/description> "Aggregated and de-identified Strava data"@en ;
+             <http://purl.org/dc/terms/description> "Aggregated and anonymized Strava data"@en ;
              <http://purl.org/dc/terms/language> "English" ;
              <http://purl.org/dc/terms/publisher> :Strava ;
              rdfs:seeAlso "https://www.wikidata.org/wiki/Q114074281" .
@@ -1373,7 +1487,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 ###  https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService
 :StravaRecreationalUserMapService rdf:type owl:NamedIndividual ,
-                                           <http://www.w3.org/ns/dcat#DataService> ;
+                                           <http://www.w3.org/ns/dcat#Dataset> ;
                                   <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2024 ,
                                                                                          :HumanOutdoorActivitiesMontBlanc2024 ;
                                   <http://purl.org/dc/terms/publisher> :Strava ;
@@ -1495,38 +1609,17 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
          <http://xmlns.com/foaf/0.1/name> "Abdassalam Naciri" .
 
 
-###  https://intforout.github.io/outdoorPressure#api-camptocamp
-:api-camptocamp rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/ns/dcat#Dataset> ;
-                <http://www.w3.org/ns/dcat#accessURL> <https://api.camptocamp.org/> ;
-                <http://www.w3.org/ns/dcat#servesDataset> :CamptocampPoisBauges2025 ,
-                                                          :CamptocampRoutesBauges2025 ;
-                <http://purl.org/dc/elements/1.1/description> "Données du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger."@fr ;
-                <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
-                <http://purl.org/dc/terms/publisher> :camptocamp ;
-                <http://xmlns.com/foaf/0.1/homePage> <https://www.camptocamp.org/> .
-
-
 ###  https://intforout.github.io/outdoorPressure#api-parcdesbauges
 :api-parcdesbauges rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/ns/dcat#DataService> ;
+                            <http://www.w3.org/ns/dcat#Dataset> ;
                    <http://www.w3.org/ns/dcat#accessURL> <https://geotrek.parcdesbauges.com/api/v2/> ;
-                   <http://www.w3.org/ns/dcat#servesDataset> :PNRBPOIBauges2025 ,
-                                                             :PNRBRoutesBauges2025 ,
-                                                             :PNRBSensitiveAreaBauges2025 ;
                    <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
-                   <http://purl.org/dc/terms/publisher> :MassifDesBauges ;
-                   rdfs:comment "L'API du PNR Massif des Bauges met en valeur la randonnée pédestre, sentier et activités touristiques en offrant une pléthore de requêtes pour accéder données."@fr ;
-                   rdfs:label "API du PNR Massif des Bauges"@en .
-
-
-###  https://intforout.github.io/outdoorPressure#api-refugesinfo
-:api-refugesinfo rdf:type owl:NamedIndividual ,
-                          <http://www.w3.org/ns/dcat#Dataset> ;
-                 <http://www.w3.org/ns/dcat#accessURL> <https://www.refuges.info/api/> ;
-                 <http://www.w3.org/ns/dcat#servesDataset> :RefugesInfoPOIBauges2025 ;
-                 <http://purl.org/dc/elements/1.1/description> "Données Refuges.info , à but non commercial, relatives aux hébergements de montagnes destinés aux randonneurs. Propose une liste de points, des informations détaillées sur un point ou encore les résultats de requêtes spéciales telles que la recherche de points."@fr ;
-                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/2.0/deed.fr> .
+                   <http://purl.org/dc/terms/publisher> "Parc Naturel Regional Massif des Bauges" ;
+                   rdfs:comment "Les données du PNR Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"@fr ;
+                   rdfs:label "Data from the protected natural parc Massif des Bauges"@en ;
+                   <http://www.w3.org/ns/dcat#hasPart> :PNRBPOIBauges2025 ,
+                                                       :PNRBRoutesBauges2025 ,
+                                                       :PNRBSensitiveAreaBauges2025 .
 
 
 ###  https://intforout.github.io/outdoorPressure#blabbe
@@ -1538,14 +1631,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 ###  https://intforout.github.io/outdoorPressure#c2c-route-geojson
 :c2c-route-geojson rdf:type owl:NamedIndividual ,
                             <http://www.w3.org/ns/dcat#Distribution> ;
-                   <http://www.w3.org/ns/dcat#accessService> :api-camptocamp ;
                    <http://www.w3.org/ns/dcat#format> "GeoJSON" .
 
 
 ###  https://intforout.github.io/outdoorPressure#c2c-waypoint-geojson
 :c2c-waypoint-geojson rdf:type owl:NamedIndividual ,
                                <http://www.w3.org/ns/dcat#Distribution> ;
-                      <http://www.w3.org/ns/dcat#accessService> :api-camptocamp ;
                       <http://www.w3.org/ns/dcat#format> "GeoJSON" .
 
 
@@ -1634,7 +1725,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 ###  https://intforout.github.io/outdoorPressure#refugesinfo-points-geojson
 :refugesinfo-points-geojson rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Distribution> ;
-                            <http://www.w3.org/ns/dcat#accessService> :api-refugesinfo ;
                             <http://www.w3.org/ns/dcat#format> "GeoJSON" .
 
 
