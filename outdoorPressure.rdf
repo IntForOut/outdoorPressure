@@ -1494,9 +1494,25 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024 -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear">
         <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#HumanActivity"/>
     </owl:NamedIndividual>
     
@@ -1749,6 +1765,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Outdoorvision">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear"/>
         <dc:description xml:lang="en">Outdoorvision https://Outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme.</dc:description>
         <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Prnsn"/>
@@ -2099,8 +2116,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaHeatMap">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
-        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear"/>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
         <rdfs:comment xml:lang="en">Displays the aggregated public activities recorded in Strava over the past year</rdfs:comment>
         <rdfs:comment xml:lang="fr">Montre les activités publiques agrégées au cours de l&apos;année passée dans Strava</rdfs:comment>
@@ -2113,6 +2129,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaMetro">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past"/>
         <dct:description xml:lang="en">Aggregated and anonymized Strava data</dct:description>
         <dct:language>English</dct:language>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Strava"/>
