@@ -2156,13 +2156,6 @@
     "@language" : "fr",
     "@value" : "Montre les activités publiques agrégées au cours de l'année passée dans Strava"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fr",
-    "@value" : "Carte mondiale des activités Strava"
-  }, {
-    "@language" : "en",
-    "@value" : "Strava Global Heatmap"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://www.wikidata.org/wiki/Q114074364"
   } ]

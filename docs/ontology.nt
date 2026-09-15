@@ -1222,8 +1222,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Displays the aggregated public activities recorded in Strava over the past year"@en .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr .
-<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#label> "Carte mondiale des activités Strava"@fr .
-<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#label> "Strava Global Heatmap"@en .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q114074364" .
 # 
 # https://intforout.github.io/outdoorPressure#StravaMetro
