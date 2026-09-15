@@ -2119,9 +2119,9 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService -->
+    <!-- https://intforout.github.io/outdoorPressure#StravaHeatMap -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService">
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaHeatMap">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"/>
