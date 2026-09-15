@@ -759,9 +759,9 @@ For example the footprint of a population of hikers is represented as their agre
                                    <http://www.w3.org/ns/dcat#Dataset> ;
                           <http://purl.org/www.umr-lastig.fr/geodata#represents> :SentierDesBauges ;
                           <http://www.w3.org/ns/dcat#inSeries> <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> ;
+                          <http://purl.org/dc/elements/1.1/description> "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en ;
                           rdfs:comment "Classe=Tronçon de route, Nature=Sentier"@fr ,
-                                       "This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”."@en ;
-                          rdfs:label "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en .
+                                       "This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#Camptocamp-Data
@@ -1258,6 +1258,17 @@ _:genid4 rdf:type <http://www.w3.org/ns/prov#Person> ;
                              rdfs:label "Parcdesbauges.com - sensitivearea"@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#PNRBauges-Data
+:PNRBauges-Data rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/dcat#Dataset> ;
+                <http://purl.org/dc/terms/hasPart> :PNRBPOIBauges2025 ,
+                                                   :PNRBRoutesBauges2025 ,
+                                                   :PNRBSensitiveAreaBauges2025 ;
+                <http://purl.org/dc/elements/1.1/description> "Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"@fr ;
+                <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
+                <http://purl.org/dc/terms/publisher> "Parc Naturel Regional Massif des Bauges" .
+
+
 ###  https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24
 :PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24 rdf:type owl:NamedIndividual ,
                                                               <http://www.w3.org/ns/dcat#Dataset> ;
@@ -1542,6 +1553,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                                               <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
                                                                                                           <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
                                                               <http://www.w3.org/ns/prov#wasGeneratedBy> :TopometricSurveyGroundTruthPathVincennes2024 ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en ;
                                                               <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" ;
                                                               <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025). Within the research portal distribution, additional files correspond to standard metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent), some of which are not inserted in this KG"@en ;
                                                               <http://purl.org/dc/terms/isReferencedBy> :SIGSPATIAL24VanDammeEtAl2024 ;
@@ -1550,8 +1562,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                                               <http://purl.org/dc/terms/license> "Licence Ouverte v2.0 (Etalab)" ;
                                                               <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> ;
                                                               <http://purl.org/dc/terms/spatial> :TestAreaBoisVincennes ;
-                                                              <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" ;
-                                                              rdfs:label "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en .
+                                                              <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" .
 
 
 ###  https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg
@@ -1574,8 +1585,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                            <http://purl.org/dc/terms/issued> "2025-05-01"^^xsd:date ;
                            <http://purl.org/dc/terms/language> "fr-FR" ;
                            <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
-                           rdfs:comment "A set of routes issued from visorando.com."@en ;
-                           rdfs:label "Visorando Hiking Routes in the Bauges Massif (2025)"@en .
+                           rdfs:description "Hiking Routes in the Bauges Massif (2025) from Visorando"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage
@@ -1619,16 +1629,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 
 
 ###  https://intforout.github.io/outdoorPressure#api-parcdesbauges
-:api-parcdesbauges rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/ns/dcat#Dataset> ;
-                   <http://www.w3.org/ns/dcat#accessURL> <https://geotrek.parcdesbauges.com/api/v2/> ;
-                   <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> ;
-                   <http://purl.org/dc/terms/publisher> "Parc Naturel Regional Massif des Bauges" ;
-                   rdfs:comment "Les données du PNR Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"@fr ;
-                   rdfs:label "Data from the protected natural parc Massif des Bauges"@en ;
-                   <http://www.w3.org/ns/dcat#hasPart> :PNRBPOIBauges2025 ,
-                                                       :PNRBRoutesBauges2025 ,
-                                                       :PNRBSensitiveAreaBauges2025 .
+:api-parcdesbauges rdf:type owl:NamedIndividual .
 
 
 ###  https://intforout.github.io/outdoorPressure#blabbe

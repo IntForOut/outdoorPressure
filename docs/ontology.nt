@@ -618,9 +618,9 @@
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#SentierDesBauges> .
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/ns/dcat#inSeries> <http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3> .
+<https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://purl.org/dc/elements/1.1/description> "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en .
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe=Tronçon de route, Nature=Sentier"@fr .
 <https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”."@en .
-<https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"@en .
 # 
 # https://intforout.github.io/outdoorPressure#Camptocamp-Data
 <https://intforout.github.io/outdoorPressure#Camptocamp-Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1039,6 +1039,16 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of sensitive area issued from Parcdesbauges.com."@en .
 <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Parcdesbauges.com - sensitivearea"@fr .
 # 
+# https://intforout.github.io/outdoorPressure#PNRBauges-Data
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://purl.org/dc/elements/1.1/description> "Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"@fr .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
+<https://intforout.github.io/outdoorPressure#PNRBauges-Data> <http://purl.org/dc/terms/publisher> "Parc Naturel Regional Massif des Bauges" .
+# 
 # https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -1280,6 +1290,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://intforout.github.io/outdoorPressure#TopometricSurveyGroundTruthPathVincennes2024> .
+<https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/elements/1.1/description> "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/bibliographicCitation> "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1" .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/description> "The goal of this dataset is to provide in-situ ground truth data to validate an algorithm for fusing GNSS tracks. This dataset is composed of two datasets, each defined by a metadata file. The first was (file tracks_multi_sensors_vincennes_forest.gpkg) contains GNSS tracks and was collected by two researchers using a strict data collection protocol, following the same path at times precisely and at other times with slight deviations. The second (file ground_truth_dense_forest_path.txt) was collected by a group of students and represents ground truth data for the same path in dense forest. English (2025). Within the research portal distribution, additional files correspond to standard metadata (ISO 19115/19139 XML format, includes station details, measurement uncertainties, and spatial extent), some of which are not inserted in this KG"@en .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/isReferencedBy> <https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024> .
@@ -1289,7 +1300,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/publisher> <http://purl.org/www.umr-lastig.fr/geodata#LASTIG> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/dc/terms/spatial> <https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes> .
 <https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.57745/MOUSLS" .
-<https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest> <http://www.w3.org/2000/01/rdf-schema#label> "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"@en .
 # 
 # https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg
 <https://intforout.github.io/outdoorPressure#TracksMultiSensorsVincennesForest-gpkg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1309,8 +1319,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025> <http://purl.org/dc/terms/issued> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025> <http://purl.org/dc/terms/language> "fr-FR" .
 <https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
-<https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of routes issued from visorando.com."@en .
-<https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#label> "Visorando Hiking Routes in the Bauges Massif (2025)"@en .
+<https://intforout.github.io/outdoorPressure#VisorandoRoutesBauges2025> <http://www.w3.org/2000/01/rdf-schema#description> "Hiking Routes in the Bauges Massif (2025) from Visorando"@en .
 # 
 # https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage
 <https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1348,15 +1357,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # 
 # https://intforout.github.io/outdoorPressure#api-parcdesbauges
 <https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#accessURL> <https://geotrek.parcdesbauges.com/api/v2/> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://purl.org/dc/terms/license> <https://www.etalab.gouv.fr/licence-ouverte-open-licence> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://purl.org/dc/terms/publisher> "Parc Naturel Regional Massif des Bauges" .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/2000/01/rdf-schema#comment> "Les données du PNR Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"@fr .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/2000/01/rdf-schema#label> "Data from the protected natural parc Massif des Bauges"@en .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#hasPart> <https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#hasPart> <https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025> .
-<https://intforout.github.io/outdoorPressure#api-parcdesbauges> <http://www.w3.org/ns/dcat#hasPart> <https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025> .
 # 
 # https://intforout.github.io/outdoorPressure#blabbe
 <https://intforout.github.io/outdoorPressure#blabbe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

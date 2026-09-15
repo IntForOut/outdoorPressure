@@ -540,6 +540,10 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#BDTOPOSentiersBauges2025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"
+  } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#SentierDesBauges"
   } ],
@@ -552,10 +556,6 @@
   }, {
     "@language" : "en",
     "@value" : "This dataset is extracted from the BDTOPO database, under the Transportation theme, from the Road Segment feature class, applying a filter on the “nature” attribute corresponding to the value “trail”."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Trails from the BDTOPO dataset in the Bauges Massif (2025 edition)"
   } ],
   "http://www.w3.org/ns/dcat#inSeries" : [ {
     "@id" : "http://purl.org/www.umr-lastig.fr/geodata#BD_TOPO_V3"
@@ -1644,6 +1644,29 @@
     "@id" : "https://intforout.github.io/outdoorPressure#parcdesbauges-sensitivearea-geojson"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#PNRBauges-Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "fr",
+    "@value" : "Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"
+  }, {
+    "@id" : "https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Parc Naturel Regional Massif des Bauges"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -2298,6 +2321,10 @@
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"
+  } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@value" : "Raimond, Ana-Maria; Meneroux, Yann; Calloch, Paul; Labbé, Brice; Peseux, Lorine; Tertre, Franck; Clédat, Emmanuel, 2025, \"Multi-sensors and Ground Truth Tracks\", https://doi.org/10.57745/MOUSLS, Recherche Data Gouv, V1"
   } ],
@@ -2329,10 +2356,6 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Traces acquisition with Multi-sensors and Ground Truth path in Dense Forest (Vincennes 2025) (MOUSLS)"
   } ],
   "http://www.w3.org/ns/dcat#distribution" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#GroundTruthPathVincennesForest-csv"
@@ -2407,13 +2430,9 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
     "@language" : "en",
-    "@value" : "A set of routes issued from visorando.com."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Visorando Hiking Routes in the Bauges Massif (2025)"
+    "@value" : "Hiking Routes in the Bauges Massif (2025) from Visorando"
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#WildlifeMonitoringFromCameraTrapImage",
@@ -2515,34 +2534,7 @@
   } ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#api-parcdesbauges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "Parc Naturel Regional Massif des Bauges"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/dcat#Dataset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fr",
-    "@value" : "Les données du PNR Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Data from the protected natural parc Massif des Bauges"
-  } ],
-  "http://www.w3.org/ns/dcat#accessURL" : [ {
-    "@id" : "https://geotrek.parcdesbauges.com/api/v2/"
-  } ],
-  "http://www.w3.org/ns/dcat#hasPart" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://intforout.github.io/outdoorPressure#blabbe",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
