@@ -1468,6 +1468,19 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
         <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
 
 
+###  https://intforout.github.io/outdoorPressure#StravaHeatMap
+:StravaHeatMap rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/ns/dcat#Dataset> ;
+               <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2024 ,
+                                                                      :HumanOutdoorActivitiesMontBlanc2024 ;
+               <http://purl.org/dc/terms/publisher> :Strava ;
+               rdfs:comment "Displays the aggregated public activities recorded in Strava over the past year"@en ,
+                            "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr ;
+               rdfs:label "Carte mondiale des activités Strava"@fr ,
+                          "Strava Global Heatmap"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q114074364" .
+
+
 ###  https://intforout.github.io/outdoorPressure#StravaMetro
 :StravaMetro rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/dcat#Dataset> ;
@@ -1483,19 +1496,6 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                 <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesMontBlanc2024 ;
                                 <http://purl.org/dc/terms/publisher> :Strava ;
                                 rdfs:label "Strava MontBlanc 2024" .
-
-
-###  https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService
-:StravaRecreationalUserMapService rdf:type owl:NamedIndividual ,
-                                           <http://www.w3.org/ns/dcat#Dataset> ;
-                                  <http://purl.org/www.umr-lastig.fr/geodata#represents> :HumanOutdoorActivitiesBauges2024 ,
-                                                                                         :HumanOutdoorActivitiesMontBlanc2024 ;
-                                  <http://purl.org/dc/terms/publisher> :Strava ;
-                                  rdfs:comment "Displays the aggregated public activities recorded in Strava over the past year"@en ,
-                                               "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr ;
-                                  rdfs:label "Carte mondiale des activités Strava"@fr ,
-                                             "Strava Global Heatmap"@en ;
-                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q114074364" .
 
 
 ###  https://intforout.github.io/outdoorPressure#StravaTracksBauges2014

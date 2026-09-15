@@ -1214,6 +1214,18 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#Strava> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q13884156" .
 <https://intforout.github.io/outdoorPressure#Strava> <http://xmlns.com/foaf/0.1/homePage> "https://www.strava.com/about" .
 # 
+# https://intforout.github.io/outdoorPressure#StravaHeatMap
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Displays the aggregated public activities recorded in Strava over the past year"@en .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#label> "Carte mondiale des activités Strava"@fr .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#label> "Strava Global Heatmap"@en .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q114074364" .
+# 
 # https://intforout.github.io/outdoorPressure#StravaMetro
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
@@ -1228,18 +1240,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
 <https://intforout.github.io/outdoorPressure#StravaMetroTracksMontBlanc2024> <http://www.w3.org/2000/01/rdf-schema#label> "Strava MontBlanc 2024" .
-# 
-# https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "Displays the aggregated public activities recorded in Strava over the past year"@en .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#comment> "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#label> "Carte mondiale des activités Strava"@fr .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#label> "Strava Global Heatmap"@en .
-<https://intforout.github.io/outdoorPressure#StravaRecreationalUserMapService> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q114074364" .
 # 
 # https://intforout.github.io/outdoorPressure#StravaTracksBauges2014
 <https://intforout.github.io/outdoorPressure#StravaTracksBauges2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
