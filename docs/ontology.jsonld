@@ -2200,7 +2200,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Aggregated and anonymized Strava data"
+    "@value" : "Strava data anonymized, with different agregates that can be specified through a platform "
   } ],
   "http://purl.org/dc/terms/language" : [ {
     "@value" : "English"

@@ -1246,7 +1246,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past> .
-<https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/description> "Aggregated and anonymized Strava data"@en .
+<https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/description> "Strava data anonymized, with different agregates that can be specified through a platform "@en .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q114074281" .
