@@ -822,6 +822,14 @@
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
 # 
+# https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past
+<https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
+# 
+# https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear
+<https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
+# 
 # https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://intforout.github.io/outdoorPressure#HumanActivity> .
@@ -993,6 +1001,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 <https://intforout.github.io/outdoorPressure#Outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#Outdoorvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <https://intforout.github.io/outdoorPressure#Outdoorvision> <http://purl.org/dc/terms/hasPart> <https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024> .
+<https://intforout.github.io/outdoorPressure#Outdoorvision> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear> .
 <https://intforout.github.io/outdoorPressure#Outdoorvision> <http://purl.org/dc/elements/1.1/description> "Outdoorvision https://Outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme."@en .
 <https://intforout.github.io/outdoorPressure#Outdoorvision> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Prnsn> .
 <https://intforout.github.io/outdoorPressure#Outdoorvision> <http://xmlns.com/foaf/0.1/homePage> "https://Outdoorvision.fr/" .
@@ -1217,8 +1226,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#StravaHeatMap
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024> .
-<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024> .
+<https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear> .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Displays the aggregated public activities recorded in Strava over the past year"@en .
 <https://intforout.github.io/outdoorPressure#StravaHeatMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Montre les activités publiques agrégées au cours de l'année passée dans Strava"@fr .
@@ -1227,6 +1235,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns
 # https://intforout.github.io/outdoorPressure#StravaMetro
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/www.umr-lastig.fr/geodata#represents> <https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past> .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/description> "Aggregated and anonymized Strava data"@en .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/language> "English" .
 <https://intforout.github.io/outdoorPressure#StravaMetro> <http://purl.org/dc/terms/publisher> <https://intforout.github.io/outdoorPressure#Strava> .

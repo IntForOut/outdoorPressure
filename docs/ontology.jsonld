@@ -1120,6 +1120,18 @@
     "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
   } ]
 }, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
+  "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanActivity"
+  } ]
+}, {
   "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1531,6 +1543,9 @@
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Prnsn"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -2142,9 +2157,7 @@
     "@id" : "https://intforout.github.io/outdoorPressure#Strava"
   } ],
   "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2024"
-  }, {
-    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024"
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -2171,6 +2184,9 @@
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://intforout.github.io/outdoorPressure#Strava"
+  } ],
+  "http://purl.org/www.umr-lastig.fr/geodata#represents" : [ {
+    "@id" : "https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-Past"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/dcat#Dataset"
