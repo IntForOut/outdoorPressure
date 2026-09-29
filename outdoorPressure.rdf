@@ -866,7 +866,7 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment xml:lang="en">Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing.</rdfs:comment>
+        <rdfs:comment xml:lang="en">These are areas used simultaneously by different creatures. Their definition can be more or less detailed considering the granularities of usage, for example if one considers that a hiker uses a side of a road or uses the road and its close neighbour, considering the threshold of simultaneousity, as well as the species of creatures and of their activities. It is an important concept to study to identify potential conflicting land use as well as possible harmonious land sharing situations.</rdfs:comment>
         <rdfs:label xml:lang="en">Encountering zone</rdfs:label>
         <rdfs:label xml:lang="fr">Zone de rencontre</rdfs:label>
     </owl:Class>
