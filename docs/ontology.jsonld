@@ -914,7 +914,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Area where different activities of different creatures take place, which can potentially imply a conflict of land use rather than harmonious land sharing."
+    "@value" : "These are areas used simultaneously by different creatures. Their definition can be more or less detailed considering the granularities of usage, for example if one considers that a hiker uses a side of a road or uses the road and its close neighbour, considering the threshold of simultaneousity, as well as the species of creatures and of their activities. It is an important concept to study to identify potential conflicting land use as well as possible harmonious land sharing situations."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
