@@ -905,9 +905,9 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 ###  https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026
 :DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026 rdf:type owl:NamedIndividual ,
                                                               <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
-                                                     <http://purl.org/dc/dct/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
-                                                     <http://purl.org/dc/elements/1.1/title> "A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories" ;
-                                                     <http://purl.org/dc/terms/publisher> "Association of Geographic Information Laboratories in Europe (AGILE)" ;
+                                                     <http://purl.org/dc/elements/1.1/description> """Dawson, J., Peralta, V., Olteanu-Raimond, A.-M., Devogele, T., and Garel, M.: A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories, AGILE GIScience --- Abstract : A significant source of human pressure on the environment originates from human-wildlife encounters during recreational activities in natural spaces. These events are difficult to study given their short duration, as well as the sparsity and granularity of concurrently tracked human and wildlife data. 
+Wildlife often perceives and reacts to human presence over distances greater than GNSS uncertainty. Thus, we propose a new encounter detection method that incorporates a broader range of human disturbance as opposed to addressing incompleteness, enabling us to identify where and when human-wildlife encounters are most likely to occur, and thus offering a more ecologically realistic assessment of encounter risk. 
+The method was applied on a pilot study in the Bauges massif in the French Alps, leveraging semantically enhanced chamois and human trajectories. A spatio-temporal analysis of human-wildlife encounter results is presented to demonstrate how the method can support ecologists or stakeholders in gaining deeper understanding of wildlife behavior or in taking actions to mitigate human impacts. ---- Reproducibility review available at: https://doi.org/10.17605/OSF.IO/DZT8C""" ;
                                                      <http://purl.org/dc/terms/references> :ComputeHumanWildlifeEncountersBauges2026 ,
                                                                                            :DataHumanChamoisEncounters ;
                                                      <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5194/agile-giss-7-2-2026" .
@@ -1431,27 +1431,10 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
 ###  https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024
 :SIGSPATIAL24VanDammeEtAl2024 rdf:type owl:NamedIndividual ,
                                        <http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper> ;
-                              <http://purl.org/www.umr-lastig.fr/geodata#target> :ComputePedestrianMobilityGraph ;
-                              <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#amraimond> ,
-                                                                 <http://purl.org/www.umr-lastig.fr/geodata#mdvandamme> ,
-                                                                 <http://purl.org/www.umr-lastig.fr/geodata#ymeneroux> ;
-                              <http://purl.org/dc/terms/isPartOf> "Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems" ,
-                                                                  "SIGSPATIAL '24" ;
-                              <http://purl.org/dc/terms/publisher> "Association for Computing Machinery" ;
+                              <http://purl.org/dc/elements/1.1/description> "Marie-Dominique Van Damme, Yann Méneroux, and Ana-Maria Olteanu-Raimond. 2024. A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories. In Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '24). Association for Computing Machinery, New York, NY, USA, pp.633–636  --- Abstract : This paper focuses on GNSS trajectory aggregation, building upon the work of [4], a modular and iterative aggregation algorithm. The last allows to compute aggregated trajectories with high geometric accuracy for a set of trajectories having the same origin/destinations and following the same path. To analyze the performances of the algorithm, we use a metrological perspective, i.e. its ability to reconstruct the accurate aggregated trajectory, from a minimum number of input GNSS trajectory samples to determine an optimal parameterization of the algorithm. We validate our modular framework on two types of data: synthetic and experimental GNSS trajectories collected with multiple sensors under varying canopy conditions." ;
                               <http://purl.org/dc/terms/references> :MergedTracksVincennes2024 ,
                                                                     :TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest ;
-                              <http://purl.org/dc/terms/spatial> "Atlanta, GA, USA" ;
-                              <http://purl.org/spar/datacite/firstPage> "633" ;
-                              <http://purl.org/spar/datacite/lastPage> "636" ;
-                              <http://purl.org/spar/datacite/publicationYear> "2024" ;
-                              <http://purl.org/spar/datacite/relatedIdentifier> "10.1145/3678717.3691325" ,
-                                                                                "https://doi.org/10.1145/3678717.3691325" ;
-                              <http://purl.org/spar/datacite/resourceType> <http://purl.org/spar/datacite/ConferenceProceeding> ;
-                              <http://purl.org/spar/datacite/subject> "global navigation satellite system" ,
-                                                                      "metrological analysis" ,
-                                                                      "synthetic and real world trajectories" ,
-                                                                      "trajectory aggregation" ;
-                              rdfs:label "A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories"@en .
+                              <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.1145/3678717.3691325" .
 
 
 ###  https://intforout.github.io/outdoorPressure#SentierDesBauges
