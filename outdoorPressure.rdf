@@ -1343,9 +1343,9 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <dct1:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
-        <dc:title>A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories</dc:title>
-        <dct:publisher>Association of Geographic Information Laboratories in Europe (AGILE)</dct:publisher>
+        <dc:description>Dawson, J., Peralta, V., Olteanu-Raimond, A.-M., Devogele, T., and Garel, M.: A Method for Spatializing Disturbance by Detecting Human-Wildlife Encounters from GNSS Trajectories, AGILE GIScience --- Abstract : A significant source of human pressure on the environment originates from human-wildlife encounters during recreational activities in natural spaces. These events are difficult to study given their short duration, as well as the sparsity and granularity of concurrently tracked human and wildlife data. 
+Wildlife often perceives and reacts to human presence over distances greater than GNSS uncertainty. Thus, we propose a new encounter detection method that incorporates a broader range of human disturbance as opposed to addressing incompleteness, enabling us to identify where and when human-wildlife encounters are most likely to occur, and thus offering a more ecologically realistic assessment of encounter risk. 
+The method was applied on a pilot study in the Bauges massif in the French Alps, leveraging semantically enhanced chamois and human trajectories. A spatio-temporal analysis of human-wildlife encounter results is presented to demonstrate how the method can support ecologists or stakeholders in gaining deeper understanding of wildlife behavior or in taking actions to mitigate human impacts. ---- Reproducibility review available at: https://doi.org/10.17605/OSF.IO/DZT8C</dc:description>
         <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"/>
         <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters"/>
         <datacite:relatedIdentifier>https://doi.org/10.5194/agile-giss-7-2-2026</datacite:relatedIdentifier>
@@ -1820,6 +1820,20 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#PNRBauges-Data -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRBauges-Data">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"/>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"/>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"/>
+        <dc:description xml:lang="fr">Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes</dc:description>
+        <dct:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
+        <dct:publisher>Parc Naturel Regional Massif des Bauges</dct:publisher>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24 -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PedestrianMobilityGraph3ZonesBaugesChamonix-2020-24">
@@ -2037,27 +2051,10 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#SIGSPATIAL24VanDammeEtAl2024">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <geodata:target rdf:resource="https://intforout.github.io/outdoorPressure#ComputePedestrianMobilityGraph"/>
-        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#amraimond"/>
-        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#mdvandamme"/>
-        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ymeneroux"/>
-        <dct:isPartOf>Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems</dct:isPartOf>
-        <dct:isPartOf>SIGSPATIAL &apos;24</dct:isPartOf>
-        <dct:publisher>Association for Computing Machinery</dct:publisher>
+        <dc:description>Marie-Dominique Van Damme, Yann Méneroux, and Ana-Maria Olteanu-Raimond. 2024. A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories. In Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL &apos;24). Association for Computing Machinery, New York, NY, USA, pp.633–636  --- Abstract : This paper focuses on GNSS trajectory aggregation, building upon the work of [4], a modular and iterative aggregation algorithm. The last allows to compute aggregated trajectories with high geometric accuracy for a set of trajectories having the same origin/destinations and following the same path. To analyze the performances of the algorithm, we use a metrological perspective, i.e. its ability to reconstruct the accurate aggregated trajectory, from a minimum number of input GNSS trajectory samples to determine an optimal parameterization of the algorithm. We validate our modular framework on two types of data: synthetic and experimental GNSS trajectories collected with multiple sensors under varying canopy conditions.</dc:description>
         <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#MergedTracksVincennes2024"/>
         <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#TracesAcquisitionMultiSensorsAndGroundTruthPathInDenseForest"/>
-        <dct:spatial>Atlanta, GA, USA</dct:spatial>
-        <datacite:firstPage>633</datacite:firstPage>
-        <datacite:lastPage>636</datacite:lastPage>
-        <datacite:publicationYear>2024</datacite:publicationYear>
-        <datacite:relatedIdentifier>10.1145/3678717.3691325</datacite:relatedIdentifier>
         <datacite:relatedIdentifier>https://doi.org/10.1145/3678717.3691325</datacite:relatedIdentifier>
-        <datacite:resourceType rdf:resource="http://purl.org/spar/datacite/ConferenceProceeding"/>
-        <datacite:subject>global navigation satellite system</datacite:subject>
-        <datacite:subject>metrological analysis</datacite:subject>
-        <datacite:subject>synthetic and real world trajectories</datacite:subject>
-        <datacite:subject>trajectory aggregation</datacite:subject>
-        <rdfs:label xml:lang="en">A metrological analysis of a modular and iterative aggregation algorithm of GNSS trajectories</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2126,7 +2123,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
     
 
 
-    <!-- https://intforout.github.io/outdoorPressure#StravaData -->
+    <!-- https://intforout.github.io/outdoorPressure#StravaMetro -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#StravaMetro">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
@@ -2301,15 +2298,7 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <!-- https://intforout.github.io/outdoorPressure#api-parcdesbauges -->
 
-    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRBauges-Data">
-        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"/>
-        <dc:description xml:lang="fr">Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes</dc:description>
-        <dct:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
-        <dct:publisher>Parc Naturel Regional Massif des Bauges</dct:publisher>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#api-parcdesbauges"/>
     
 
 
