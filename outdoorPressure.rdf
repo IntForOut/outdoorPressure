@@ -1531,33 +1531,10 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#JournalOfOutdoorRecreationAndTourismKerouantonEtAl2024">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ljolivet"/>
-        <dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#aloison"/>
-        <dct:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
-                <foaf:name>Colin Kerouanton</foaf:name>
-            </rdf:Description>
-        </dct:creator>
-        <dct:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
-                <foaf:name>Clémence Perrin-Malterre</foaf:name>
-            </rdf:Description>
-        </dct:creator>
-        <dct:publisher>Journal of Outdoor Recreation and Tourism</dct:publisher>
-        <datacite:firstPage>100734</datacite:firstPage>
-        <datacite:publicationYear>2024</datacite:publicationYear>
-        <datacite:relatedIdentifier>10.1016/j.jort.2024.100734</datacite:relatedIdentifier>
+        <dc:description>Colin Kerouanton, Laurence Jolivet, Clémence Perrin-Malterre, Anne Loison,
+Eye-catching or breath-catching: Role and landscape attributes of pauses differs among hikers’ profile when rambling in a French mountainous area, in Journal of Outdoor Recreation and Tourism, Vol 46, 2024 ----  Abstract: The trajectory of a hiker can be decomposed in walking sections and pauses. The attributes and possible roles of pauses in a hike has been under-looked in studies of human mobility in nature. In mountains, pauses can have several functionalities, depending on whether they occur by choice or are imposed by the lack of people fitness walking in arduous terrain. We studied the trajectories of mountain hikers from a pause point of view, based on GPS-trackers and questionnaires. We proposed a typology of pauses at the within-trajectory level, defining ”Longest”, “Eye-catching” and “Breath-catching” pauses. We then contrasted their characteristics (duration, number, and landscape variables), and their occurrence, number and duration in hikes depending on hiker groups attributes (size, age and gender structure). Longest pauses occurred most often close to summits, eyes-catching pauses close to passes and breathcatching pauses in steep terrain. Group size, and to a lesser extent, age structure, determined the number and total duration of pauses. Cumulated duration in breath-catching pauses made up one fourth of the pause duration on average. A better assessment of the functionality of pauses should therefore be pursued, especially in the context of hike planning, time budget, group dynamics and satisfaction.
+Keywords: GPS; Spatio-temporal pattern; Outdoor recreation; Pauses; ST-DBSCAN; Time-geography</dc:description>
         <datacite:relatedIdentifier>https://doi.org/10.1016/j.jort.2024.100734</datacite:relatedIdentifier>
-        <datacite:resourceType rdf:resource="http://purl.org/spar/datacite/Journal"/>
-        <datacite:subject>Outdoor recreation</datacite:subject>
-        <datacite:subject>Pauses</datacite:subject>
-        <datacite:subject>ST-DBSCAN</datacite:subject>
-        <datacite:subject>Spatio-temporal pattern</datacite:subject>
-        <datacite:subject>Time-geography</datacite:subject>
-        <datacite:subject>global navigation satellite system</datacite:subject>
-        <rdfs:label xml:lang="en">Kerouanton et al 2024</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1566,37 +1543,10 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#JournalOfPeopleAndNatureMarchandEtAl2025">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#mgarel"/>
-        <dct:creator rdf:resource="https://intforout.github.io/outdoorPressure#pmarchand"/>
-        <dct:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
-                <foaf:name>Nolwenn Risser</foaf:name>
-            </rdf:Description>
-        </dct:creator>
-        <dct:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
-                <foaf:name>Elodie Petit</foaf:name>
-            </rdf:Description>
-        </dct:creator>
-        <dct:isPartOf>Journal of People and Nature</dct:isPartOf>
+        <dc:description>Marchand, P., Risser, N., Petit, E., &amp; Garel, M. (2025). Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex. People and Nature, 7, 3002–3016. --------- Abstract : Despite decades of research on the impacts of nature-based recreational activities, little is known about potential wildlife disturbance by massive sporting events (MSEs) such as trail-running and cycling events. These types of MSEs have recently exploded in developed countries. Here, we analysed the behaviour of the Alpine ibex (Capra ibex, an endemic, emblematic and protected alpine herbivore species). We monitored the ibex with GPS collars, during daytime when MSEs occurred and the following night.  We compared those records with similar data in absence of MSEs. Both in absence and during MSE, we revealed the distribution of ibex, the distance they travelled, and their activity level depended on the distance to the hiking trails and roads used as MSE routes, a phenomenon known as the ‘corridor of fear’. Ibex relocated farther from infrastructure concentrating recreational activities – up to 500m – and those that were within 500m of the route tended to travel longer distances and were more active with decreasing distance from the infrastructure.
+However, trail-running events that crossed the seasonal range of ibex during the spring reproductive period amplified such responses even more: ibex use of the 500m around MSE route decreased by 20% compared to reference data, their movements increased by 14% and their activity pattern was also modified during daytime when the events occurred. By contrast, cycling races that occurred mostly in summer on roads farther from ibex range, only slightly modified ibex behaviour. These contrasting responses suggest the spatial and temporal overlap between MSE and animal seasonal space use and biological cycle is important in determining the intensity of wildlife disturbance. Our study raises concerns about further detrimental consequences for ibex, and provides information for managers to work towards co-existence between recreational activities and biodiversity.</dc:description>
         <dct:references rdf:resource="https://intforout.github.io/outdoorPressure#DataMarchandEtAl2025MSEPeopleNatureZenodo"/>
-        <datacite:firstPage>3002</datacite:firstPage>
-        <datacite:lastPage>3016</datacite:lastPage>
-        <datacite:number>11</datacite:number>
-        <datacite:publicationYear>2025</datacite:publicationYear>
-        <datacite:relatedIdentifier>10.1002/pan3.70151</datacite:relatedIdentifier>
-        <datacite:relatedIdentifier>https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1002/pan3.70151</datacite:relatedIdentifier>
-        <datacite:resourceType rdf:resource="http://purl.org/spar/datacite/Journal"/>
-        <datacite:subject>activity</datacite:subject>
-        <datacite:subject>behaviour</datacite:subject>
-        <datacite:subject>cycling races</datacite:subject>
-        <datacite:subject>disturbance</datacite:subject>
-        <datacite:subject>movements</datacite:subject>
-        <datacite:subject>recreational ecology</datacite:subject>
-        <datacite:subject>trail running</datacite:subject>
-        <datacite:volume>7</datacite:volume>
+        <datacite:relatedIdentifier>https://doi.org/10.1002/pan3.70151</datacite:relatedIdentifier>
         <rdfs:label xml:lang="en">Disturbance by massive sporting events in mountain areas: When and where matters for the protected Alpine ibex Capra ibex</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1632,7 +1582,8 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#LongTermEffectHumRecreationOnCommunityWildMammals">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
-        <datacite:relatedIdentifier rdf:resource="https://link.springer.com/article/10.1007/s13280-022-01825-w"/>
+        <dc:description>Salvatori, M., Oberosler, V., Rinaldi, M. et al. Crowded mountains: Long-term effects of human outdoor recreation on a community of wild mammals monitored with systematic camera trapping. Ambio 52, 1085–1097 (2023).------ Abstract : Outdoor recreation in natural areas has become an increasingly popular activity globally, yet the long-term effects on wildlife are poorly known. Reconciling human access to nature and wildlife conservation requires sound evaluations of how outdoor activities affect biodiversity in space and time. We aimed to contribute to this topic by asking whether tourism in the world-renown Dolomites, Italy, affected wild mammals in the long term, and if it elicited spatial or temporal avoidance. We detected mammals by systematic camera trapping over seven consecutive summers at 60, consistently sampled, sites, and estimated trends in occurrence at community and species levels through a dynamic community occupancy model, combined with site use intensity and an index of nocturnality. Overall, 70% of the 520 000 images obtained depicted humans, whose presence intensified over the 7-year period. Nonetheless, both community and most species-level occurrences increased. However, human activities caused a strong temporal avoidance in the whole community, especially in most disturbed sites, while spatial avoidance was observed only for bigger-sized species.</dc:description>
+        <datacite:relatedIdentifier rdf:resource="https://doi.org/10.1007/s13280-022-01825-w"/>
     </owl:NamedIndividual>
     
 
@@ -1641,6 +1592,8 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#LougesEtAl.QuantifierFrequentationEspacesProteges.2025.OpenEditionTourisme">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <dc:description>Claire Louges, Céline Chadenas, Jade Isidore, Quantifier la fréquentation dans les espaces naturels protégés : comparaison et limites de trois dispositifs de mesure, in Mondes du tourisme, OpenEdition Journals, vol 25, 2024 
+Abstract : La conservation des espaces naturels protégés revêt un intérêt grandissant pour les visiteurs, qui amène les professionnels de l’environnement à redoubler d’efforts pour réduire les pressions avec lesquelles ces milieux fragiles doivent composer. Mission difficile, dans un contexte où ces espaces sont recherchés par les résidents locaux et les touristes. Si l’accueil du public au sein de ces espaces est un incontournable de leur gestion, il est essentiel de veiller à ce qu’il se fasse dans les meilleures conditions possibles, pour les milieux naturels eux-mêmes mais aussi pour l’expérience de nature qu’ils offrent aux visiteurs. Cet article met en lumière les résultats d’une collecte de données réalisée sur des propriétés du Conservatoire du littoral avec l’aide des nouvelles technologies afin de comprendre le phénomène de fréquentation à l’œuvre et la façon dont les flux touristiques s’imbriquent à ces espaces et les composent. Les technologies déployées sont diverses (compteurs de passage, détection par le réseau de téléphonie mobile ou encore questionnaire) et montrent in fine des résultats mitigés. En effet, si elles révèlent des caractéristiques intéressantes du phénomène de fréquentation, les difficultés de leur déploiement sont nombreuses et le manque de précision de certaines données recueillies réduit leur intérêt pour les gestionnaires de ces espaces naturels.</dc:description>
         <datacite:relatedIdentifier>https://doi.org/10.4000/166m2</datacite:relatedIdentifier>
     </owl:NamedIndividual>
     
@@ -1868,6 +1821,8 @@ Ce jeu de données est construit à partir d&apos;un ensemble de traces observé
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PetersEtAlHuntingShapesWilflifeResponse2025GlobalEcology">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <dc:description>Anne Peters, Nicolas Ferry, Carsten F. Dormann, Marco Heurich, Hunting shapes wildlife behavioural responses to non-lethal recreational activities in a protected area, Global Ecology and Conservation, Volume 64, 2025, ---------- Abstract : Abstract: Hunting and non-lethal recreational activities are often conducted in the same or neighbouring areas of natural environments, and both trigger responses in wildlife that resemble anti-predator behaviour. A limited amount of research has assessed the combined effects of non-lethal human activities and hunting on non-target species, although understanding these effects is crucial for wildlife conservation and protected area management. This study examined the effects of different recreation and hunting intensities on the probability of detecting red deer (Cervus elaphus), roe deer (Capreolus capreolus), wild boar (Sus scrofa), red fox (Vulpes vulpes) and Eurasian lynx (Lynx lynx). Data were collected from 61 pairs of camera traps placed in the Bavarian Forest National Park, Germany, with one camera from the pair placed on a trail and the other at a nearby location within the forest. Recurrent event analysis was used to estimate the temporal dynamics of the wildlife event rate within 24 h following a recreation event. Increased hunting intensity led to a significantly increasing avoidance of recreational activities by all species, independent of whether they were subjected to hunting or not (estimate −0.009 – 0.012, depending on species and camera placement). Proximity to recreational activities impacted the spatio-temporal interactions between wildlife and recreationists, with higher levels of recreation leading to a shorter time period during which animals returned to the respective location. Thus, for conservation management, restricting non-lethal recreational activities and improving their management while limiting hunting pressure are crucial to minimise human impacts and preserve ecological integrity.
+Keywords: Recreation; Hunting; Piece wise additive mixed model; Mammals; Protected area management; Wildlife management; Camera traps</dc:description>
         <datacite:relatedIdentifier rdf:resource="https://doi.org/10.1016/j.gecco.2025.e03994"/>
     </owl:NamedIndividual>
     
@@ -2221,6 +2176,8 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#VenterEtAl.BiasActivityDataFromStrava.2022.LandUrbanPlan">
         <rdf:type rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#ScientificPaper"/>
+        <dc:description>Zander S. Venter, Vegard Gundersen, Samantha L. Scott, David N. Barton, Bias and precision of crowdsourced recreational activity data from Strava, in Landscape and Urban Planning, Volume 232, 2023, -------- Abstract : Abstract: Recreational activity is the single most valuable ecosystem service in many developed countries with a range of benefits for public health. Crowdsourced recreational activity data is increasingly being adopted in management and monitoring of urban landscapes, however inherent biases in the data make it difficult to generalize patterns to the total population. We used in-situ observations and questionnaires to quantify accuracy in Strava data - a widely used outdoor activity monitoring app – in Oslo, Norway. The precision with which Strava data captured the spatial (R2 = 0.9) and temporal variation (R2 = 0.51) in observed recreational activity (cyclist and pedestrian) was relatively high for monthly time series during summer, although precision degraded at weekly and daily resolutions and during winter. Despite the precision, Strava exhibits significant biases relative to the total recreationist population. Strava activities represented 2.5 % of total recreationist activity in 2016, a proportion that increased steadily to 5.7 % in 2020 due to a growing usership. Strava users are biased toward cyclists (8 % higher than observed), males (15.7 % higher) and middle-aged people (20.4 % higher for ages 35–54). Strava pedestrians that were able to complete a questionnaire survey (&gt;19 years) were biased to higher income brackets and education levels. Future studies using Strava data need to consider these biases – particularly the under-representation of vulnerable age (children/elderly) and socio-economic (poor/uneducated) groups. The implementation of Strava data in urban planning processes will depend on accuracy requirements of the application purpose and the extent to which biases can be corrected for.
+Keywords: Accuracy; Mobility; GPS tracking; Physical activity; Green space</dc:description>
         <datacite:relatedIdentifier>https://doi.org/10.1016/j.landurbplan.2023.104686</datacite:relatedIdentifier>
     </owl:NamedIndividual>
     
@@ -2471,6 +2428,22 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&amp;py=514087.422101331
     <!-- https://www.refuges.info/api/ -->
 
     <owl:NamedIndividual rdf:about="https://www.refuges.info/api/"/>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Colin Kerouanton</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Clémence Perrin-Malterre</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Nolwenn Risser</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <foaf:name>Elodie Petit</foaf:name>
+    </rdf:Description>
 </rdf:RDF>
 
 
