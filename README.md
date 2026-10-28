@@ -5,9 +5,8 @@ Outdoor Pressure Knowledge Graph (KG) encodes into a graph model different infor
 See [Documentation](https://intforout.github.io/outdoorPressure/index.html) for more information.
 
 <a name="odo-model"></a>
-
 <figure>
-  <img src="docs/img/model_KG_article_long.png" alt="Overview of Outdoor Pressure KG conceptual model">
+  <img src="docs/img/general_model_KG.png" alt="Overview of Outdoor Pressure KG conceptual model">
   <figcaption><em>figure 1: Overview of classes and properties that structure ODO</em></figcaption>
 </figure>
 
