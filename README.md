@@ -7,7 +7,7 @@ See [Documentation](https://intforout.github.io/outdoorPressure/index.html) for 
 <a name="odo-model"></a>
 <figure>
   <img src="docs/img/general_model_KG.png" alt="Overview of Outdoor Pressure KG conceptual model">
-  <figcaption><em>figure 1: Overview of classes and properties that structure ODO</em></figcaption>
+  <figcaption><em>figure 1: Overview of Outdoor Pressure KG main classes and properties.</em></figcaption>
 </figure>
 
 Design is **task-driven**. Nodes and edges are gradually created to support specific tasks within [INTFOROUT project](https://www.umr-lastig.fr/intforout/). These tasks are then showcased through predefined queries in a dedicated software companion. See [Sham-Wah application](https://github.com/intForOut/sham-wah)
