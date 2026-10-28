@@ -1,6 +1,6 @@
 # Outdoor Pressure Knowledge Graph
 
-Outdoor Pressure Knowledge Graph (KG) encodes into a graph model different information needed to discover and reuse data to study the impact of recreational activities in the French Alps. It reuses classes and properties from the more generic [Geodata Knowledge Graph](https://github.com/umrlastig/geodata) and introduces new elements to represent information ranging from digital assets such as data sources and processes (see concepts on the right of the [figure 1](#odo-model)) to real-world phenomena they represent (see concepts on the left part of the [figure 1](#odo-model)).
+Outdoor Pressure Knowledge Graph (KG) encodes into a graph model different information needed to discover and reuse data to study the impact of recreational activities in the French Alps. It reuses classes and properties from the more generic [Geodata Knowledge Graph](https://github.com/umrlastig/geodata) and introduces new elements to represent more specific data sources or processes as well as real-world phenomena that are studied through data.
 
 See [Documentation](https://intforout.github.io/outdoorPressure/index.html) for more information.
 
