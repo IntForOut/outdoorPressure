@@ -659,6 +659,14 @@
     
 
 
+    <!-- http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures -->
+
+    <rdf:Description rdf:about="http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#affords -->
 
     <owl:ObjectProperty rdf:about="https://intforout.github.io/outdoorPressure#affords">
