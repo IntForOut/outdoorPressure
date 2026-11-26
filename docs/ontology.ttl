@@ -415,23 +415,33 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                                        rdfs:range owl:Thing .
 
 
+###  http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures
+<http://purl.org/www.umr-lastig.fr/geodata#typeOfProvidedFeatures> rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
 ###  https://intforout.github.io/outdoorPressure#affords
 :affords rdf:type owl:ObjectProperty ;
-         rdfs:domain :LandEntity ;
+         rdfs:domain :TerritoryEntities ;
          rdfs:range :Activity ;
          rdfs:comment "Capacity of a place, or land, to support a given activity, effectively or potentially"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#entityType
+:entityType rdf:type owl:ObjectProperty ;
+            rdfs:domain :TerritoryEntities ;
+            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
 ###  https://intforout.github.io/outdoorPressure#hasSTFootprint
 :hasSTFootprint rdf:type owl:ObjectProperty ;
                 rdfs:domain :Activity ;
-                rdfs:range :LandEntity .
+                rdfs:range :TerritoryEntities .
 
 
 ###  https://intforout.github.io/outdoorPressure#locatedIn
 :locatedIn rdf:type owl:ObjectProperty ;
            rdfs:domain :Population ;
-           rdfs:range :LandEntity .
+           rdfs:range :TerritoryEntities .
 
 
 #################################################################
@@ -513,45 +523,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           rdfs:label "Activity"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#AireCampingCar
-:AireCampingCar rdf:type owl:Class ;
-                rdfs:subClassOf :LandEntity .
-
-
-###  https://intforout.github.io/outdoorPressure#AireDeDetente
-:AireDeDetente rdf:type owl:Class ;
-               rdfs:subClassOf :LandEntity .
-
-
-###  https://intforout.github.io/outdoorPressure#AireProtegee
-:AireProtegee rdf:type owl:Class ;
-              rdfs:subClassOf :LandEntity ;
-              rdfs:comment "Une Aire Protégée est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés ». "@fr ;
-              rdfs:label "Aire Protégée"@fr ,
-                         "Protected Area"@en .
-
-
 ###  https://intforout.github.io/outdoorPressure#AnimalActivity
 :AnimalActivity rdf:type owl:Class ;
                 rdfs:subClassOf :Activity .
 
 
-###  https://intforout.github.io/outdoorPressure#Bois
-:Bois rdf:type owl:Class ;
-      rdfs:subClassOf :LandEntity .
-
-
 ###  https://intforout.github.io/outdoorPressure#Cycling
 :Cycling rdf:type owl:Class ;
          rdfs:subClassOf :HumanActivity .
-
-
-###  https://intforout.github.io/outdoorPressure#EncounteringZone
-:EncounteringZone rdf:type owl:Class ;
-                  rdfs:subClassOf :LandEntity ;
-                  rdfs:comment "These are areas used simultaneously by different creatures. Their definition can be more or less detailed considering the granularities of usage, for example if one considers that a hiker uses a side of a road or uses the road and its close neighbour, considering the threshold of simultaneousity, as well as the species of creatures and of their activities. It is an important concept to study to identify potential conflicting land use as well as possible harmonious land sharing situations."@en ;
-                  rdfs:label "Encountering zone"@en ,
-                             "Zone de rencontre"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#FastHiking
@@ -561,13 +540,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	        Il s’agit d’une discipline plus sportive et plus dynamique que la randonnée classique."""@fr ;
             rdfs:label "Fast hiking"@en ,
                        "Fast hiking"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#Haie
-:Haie rdf:type owl:Class ;
-      rdfs:subClassOf :LandEntity ;
-      rdfs:label "Haie"@fr ,
-                 "Hedge"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#Hiking
@@ -584,19 +556,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                rdfs:comment "Human activity taking place outdoor"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#LandEntity
-:LandEntity rdf:type owl:Class ;
-            rdfs:comment "An entity located in land : an area, a land, a parcel, a footprint, an observation."@en .
-
-
-###  https://intforout.github.io/outdoorPressure#Landmark
-:Landmark rdf:type owl:Class ;
-          rdfs:subClassOf :LandEntity .
-
-
 ###  https://intforout.github.io/outdoorPressure#MassifMontagneux
 :MassifMontagneux rdf:type owl:Class ;
-                  rdfs:subClassOf :LandEntity ;
+                  rdfs:subClassOf :TerritoryEntities ;
                   rdfs:comment "une montagne ou un massif de manière globale et non un sommet en particulier"@fr ;
                   rdfs:label "Massif montagneux"@fr ,
                              "Mountain Massif"@en .
@@ -609,13 +571,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
              rdfs:label "Observation or SurveyProcess" .
 
 
-###  https://intforout.github.io/outdoorPressure#PlandEau
-:PlandEau rdf:type owl:Class ;
-          rdfs:subClassOf :LandEntity ;
-          rdfs:label "Plan d'eau"@fr ,
-                     "Water Body"@en .
-
-
 ###  https://intforout.github.io/outdoorPressure#Population
 :Population rdf:type owl:Class ;
             rdfs:comment "Ensemble of individuals of a species in an land entity."@en ;
@@ -624,50 +579,31 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###  https://intforout.github.io/outdoorPressure#PopulationFootprint
 :PopulationFootprint rdf:type owl:Class ;
-                     rdfs:subClassOf :LandEntity ;
+                     rdfs:subClassOf :TerritoryEntities ;
                      rdfs:comment """The footprint of a population is the agregation of the footprint of its individual, understood both as the specific traces they left on the different places they went through and were active in. Traces should be understood as impacts on land entities and are a complex notion to approach. We represent them as land entities themselves for the sake of simplicity and because ecological footprint is often represented that way.
 For example the footprint of a population of hikers is represented as their agregated trajectory. More concretely, it is a network defined by:
         • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented
-        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."""@en ;
-                     rdfs:label "Empreinte d'une population"@fr ,
-                                "Population Footprint"@en .
+        • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population."""@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#ResilientRoute
 :ResilientRoute rdf:type owl:Class ;
-                rdfs:subClassOf :Route ;
+                rdfs:subClassOf :Routes ;
                 rdfs:comment "A resilient itinerary is a route that minimizes its environmental impact, exerting no pressure on wildlife or vegetation."@en ,
                              "Un itinéraire résilient est un itinéraire qui n exerce pas de pression sur la faune et la flore."@fr .
 
 
-###  https://intforout.github.io/outdoorPressure#Route
-:Route rdf:type owl:Class ;
-       rdfs:subClassOf :LandEntity ;
-       rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
-                    "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr ;
-       rdfs:label "Itinéraire"@fr ,
-                  "Route"@en .
-
-
-###  https://intforout.github.io/outdoorPressure#SensitiveArea
-:SensitiveArea rdf:type owl:Class ;
-               rdfs:subClassOf :LandEntity ;
-               rdfs:comment "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."@fr ;
-               rdfs:label "Sensitive Area"@en ,
-                          "Zone sensible"@fr .
-
-
-###  https://intforout.github.io/outdoorPressure#Sentier
-:Sentier rdf:type owl:Class ;
-         rdfs:subClassOf :LandEntity .
+###  https://intforout.github.io/outdoorPressure#Routes
+:Routes rdf:type owl:Class ;
+        rdfs:subClassOf :TerritoryEntities ;
+        rdfs:comment "A route represents a path to follow, which may rely (or not) on a physical support such as a road network (Teulade-Denantes et al., 2015). It is characterized by an origin, a destination, a set of waypoints, and a descriptive element."@en ,
+                     "Un itinéraire représente un trajet à suivre qui s appuie (ou non) sur un support physique défini par un réseau routier (Teulade-Denantes et al., 2015). Il est caractérisé par une origine, une destination, un ensemble de points de passage et une description."@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#StudyArea
 :StudyArea rdf:type owl:Class ;
-           rdfs:subClassOf :LandEntity ;
-           rdfs:comment "Study area defined within a specific project"@en ;
-           rdfs:label "Study area"@en ,
-                      "Zone d'étude"@fr .
+           rdfs:subClassOf :TerritoryEntities ;
+           rdfs:comment "Study area defined within a specific project"@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#TechnicalDocument
@@ -677,21 +613,35 @@ For example the footprint of a population of hikers is represented as their agre
                    rdfs:comment "A technical document can be for example a data profiling report, a project deliverable, specifications of a data product or of an API"@en .
 
 
-###  https://intforout.github.io/outdoorPressure#Trajectory
-:Trajectory rdf:type owl:Class ;
-            rdfs:subClassOf :LandEntity ;
-            rdfs:comment "Ligne décrite par un objet en mouvement"@fr ,
-                         "Path of a moving object"@en ;
-            rdfs:label "Trajectoire"@fr ,
-                       "Trajectory"@en .
+###  https://intforout.github.io/outdoorPressure#TerritoryEntities
+:TerritoryEntities rdf:type owl:Class ;
+                   rdfs:comment "All SpatialThings, of the specific type indicated in the properties entityType, fully or partially located in given territory and a given time period."@en .
 
 
-###  https://intforout.github.io/outdoorPressure#WildlifeQuietArea
-:WildlifeQuietArea rdf:type owl:Class ;
-                   rdfs:subClassOf :LandEntity ;
-                   rdfs:comment "Le terme « zone de quiétude » définit un territoire, volontairement aménagé ou réglementé, qui vise à limiter les dérangements humains sur la faune sauvage. Ces zones offrent un refuge aux espèces sensibles, notamment en période critique comme la reproduction, l’hivernage ou l’élevage des jeunes. En réduisant les perturbations liées aux activités humaines (promenades, sports de nature, circulation…), elles favorisent le maintien de comportements naturels et contribuent à la préservation de la biodiversité. Cependant, des sentiers spécialement balisés sont ouverts au public durant ces période et ont été étudiés pour limiter le dérangement et permettent ainsi de concilier les activités de loisirs et la préservation de la faune."@fr ;
-                   rdfs:label "Wildlife Quiet Area"@en ,
-                              "Zone de quiétude"@fr .
+###  https://intforout.github.io/outdoorPressure#TerritoryHedges
+:TerritoryHedges rdf:type owl:Class ;
+                 rdfs:subClassOf :TerritoryEntities .
+
+
+###  https://intforout.github.io/outdoorPressure#TerritoryProtectedArea
+:TerritoryProtectedArea rdf:type owl:Class ;
+                        rdfs:subClassOf :TerritoryEntities ;
+                        rdfs:comment "Une Aire Protégée est, selon la définition de l'Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d'assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés ». "@fr .
+
+
+###  https://intforout.github.io/outdoorPressure#TerritorySharedZones
+:TerritorySharedZones rdf:type owl:Class ;
+                      rdfs:subClassOf :TerritoryEntities .
+
+
+###  https://intforout.github.io/outdoorPressure#TerritoryTrails
+:TerritoryTrails rdf:type owl:Class ;
+                 rdfs:subClassOf :TerritoryEntities .
+
+
+###  https://intforout.github.io/outdoorPressure#WildlifeQuietAreas
+:WildlifeQuietAreas rdf:type owl:Class ;
+                    rdfs:subClassOf :TerritoryEntities .
 
 
 #################################################################
@@ -745,8 +695,7 @@ For example the footprint of a population of hikers is represented as their agre
                                <http://purl.org/dc/terms/language> "fr-FR" ;
                                <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> ;
                                <http://purl.org/dc/terms/publisher> :altituderando ;
-                               rdfs:comment "A set of routes issued from altituderando.com in 2025 in the Bauges area."@en ;
-                               rdfs:label "AltitudeRando Hiking Routes in the Bauges Massif (2025)"@en .
+                               rdfs:comment "A set of routes issued from altituderando.com in 2025 in the Bauges area."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#AnimalLivingAroundHedgesLesBauges2020
@@ -864,7 +813,8 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
 ###  https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters
 :DataHumanChamoisEncounters rdf:type owl:NamedIndividual ,
                                      <http://www.w3.org/ns/dcat#Dataset> ;
-                            <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ;
+                            <http://purl.org/www.umr-lastig.fr/geodata#represents> :HikingInLesBauges ,
+                                                                                   :HumanChamoisEncounteringAreasLesBauges2026 ;
                             <http://www.w3.org/ns/dcat#distribution> :DataHumanChamoisEncounters-csv ;
                             <http://www.w3.org/ns/prov#wasGeneratedBy> :ComputeHumanWildlifeEncountersBauges2026 ;
                             <http://purl.org/dc/terms/creator> <http://purl.org/www.umr-lastig.fr/geodata#jadawson> ;
@@ -898,8 +848,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
                                            <http://purl.org/dc/terms/publisher> "Office Français de la Biodiversité" ;
                                            <http://purl.org/dc/terms/spatial> :RNCFSBauges ;
                                            <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.5281/zenodo.17052197" ;
-                                           rdfs:comment "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en ;
-                                           rdfs:label "Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)"@en .
+                                           rdfs:comment "These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People & Nature. 'locs_export' contains gps locations, whereas 'act_export' contains activity data from gps collars. See Methods for details."@en .
 
 
 ###  https://intforout.github.io/outdoorPressure#DawsonEtAlDetectingHumanWildlifeEncountersAGILE2026
@@ -968,7 +917,7 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
 
 ###  https://intforout.github.io/outdoorPressure#HaiesDesBauges2020
 :HaiesDesBauges2020 rdf:type owl:NamedIndividual ,
-                             :Haie ;
+                             :TerritoryHedges ;
                     :affords :AnimalLivingAroundHedgesLesBauges2020 .
 
 
@@ -1003,6 +952,11 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
                             :Hiking .
 
 
+###  https://intforout.github.io/outdoorPressure#HumanChamoisEncounteringAreasLesBauges2026
+:HumanChamoisEncounteringAreasLesBauges2026 rdf:type owl:NamedIndividual ,
+                                                     :TerritorySharedZones .
+
+
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014
 :HumanOutdoorActivitiesBauges2014 rdf:type owl:NamedIndividual ,
                                            :HumanActivity .
@@ -1026,6 +980,12 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
 ###  https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesMontBlanc2024
 :HumanOutdoorActivitiesMontBlanc2024 rdf:type owl:NamedIndividual ,
                                               :HumanActivity .
+
+
+###  https://intforout.github.io/outdoorPressure#HumanWildlifeEncounters
+:HumanWildlifeEncounters rdf:type owl:NamedIndividual ,
+                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+                         rdfs:comment "\" Areas where humans are close enough in space and time to likely disturb animals\", after https://doi.org/10.5194/agile-giss-7-2-2026" .
 
 
 ###  https://intforout.github.io/outdoorPressure#INTFOROUT-ETLProcess
@@ -1062,8 +1022,7 @@ However, trail-running events that crossed the seasonal range of ibex during the
                                                  <http://purl.org/dc/terms/language> "French" ;
                                                  <http://purl.org/dc/terms/publisher> "LECA et l’EDYTEM" ;
                                                  <http://purl.org/dc/terms/spatial> :PNRDesBauges ;
-                                                 rdfs:comment "Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges"@fr ;
-                                                 rdfs:label "Data PhD Kerouanton"@fr .
+                                                 rdfs:comment "Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges"@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#LIFAT
@@ -1301,6 +1260,11 @@ Keywords: Recreation; Hunting; Piece wise additive mixed model; Mammals; Protect
                                    rdfs:comment "Analyse -profilage- des données de recherche produites par Colin Kerouanton, notamment de la distribution des valeurs,  (target 1). Le résultat de l'analyse est partagé dans un rapport (target 2)"@fr .
 
 
+###  https://intforout.github.io/outdoorPressure#ProtectedArea
+:ProtectedArea rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
 ###  https://intforout.github.io/outdoorPressure#QualityOfOVRecreationalUserMapService
 :QualityOfOVRecreationalUserMapService rdf:type owl:NamedIndividual ,
                                                 <http://purl.org/www.umr-lastig.fr/geodata#UserFeedback> ;
@@ -1310,7 +1274,7 @@ Keywords: Recreation; Hunting; Piece wise additive mixed model; Mammals; Protect
 
 ###  https://intforout.github.io/outdoorPressure#RNCFSBauges
 :RNCFSBauges rdf:type owl:NamedIndividual ,
-                      :AireProtegee ;
+                      :TerritoryProtectedArea ;
              <http://www.opengis.net/ont/geosparql#sfEquals> :ZoneEtudeIntForOutBauges ;
              <http://www.opengis.net/ont/geosparql#sfWithin> :MassifDesBauges ;
              rdfs:comment "La Réserve de chasse et de faune sauvage des Bauges est située dans la partie Est du massif des Bauges et comprend la plupart de ses plus hauts sommets dont le point culminant de l’Arcalod (2217 m). D’une superficie de 5 200 hectares, elle s’étend sur 12 communes des départements de Haute-Savoie (26%) et de Savoie (74%)."@fr ;
@@ -1400,9 +1364,15 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                               <http://purl.org/spar/datacite/relatedIdentifier> "https://doi.org/10.1145/3678717.3691325" .
 
 
+###  https://intforout.github.io/outdoorPressure#SensitiveArea
+:SensitiveArea rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               rdfs:comment "Zone naturelle sensible où l'environnement est vulnérable à certaines activités humaines. Créé en 2018 et imaginé par la Ligue de Protection des Oiseaux Isère, introduit dans les api des services des parcs régionaux et nationaux. Ce concept permet d'introduire les zones réglementaires et les zones sensibles, de renseigner les zones d’arrêtés de protection du biotope : emplacement, période de régulation, description associée, espèce, typologie de pratique, etc.."@fr .
+
+
 ###  https://intforout.github.io/outdoorPressure#SentierDesBauges
 :SentierDesBauges rdf:type owl:NamedIndividual ,
-                           :Sentier ;
+                           :TerritoryTrails ;
                   :affords :HikingInLesBauges .
 
 
@@ -1412,6 +1382,12 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                                   <http://purl.org/www.umr-lastig.fr/geodata#represents> :SentierDesBauges ;
                                   <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0007-5972> ;
                                   rdfs:comment "Ce dataset est en cours de production et sa publication sera bientôt ajoutée ainsi que sa provenance. Il est créé à partir d'itinéraires de randonnées répertoriés dans des sources ouvertes avec un algorithme implanté dans la librairie tracklib (description à venir). Cet algo a une confiance de 80%" .
+
+
+###  https://intforout.github.io/outdoorPressure#SharedZone
+:SharedZone rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:comment "A specific zone which is used simultaneously by creatures from different species. An important property is the threshold of simultaneity, in terms of spatial and temporal distance between effective usages by indivudals. Another property is the description of conditions under which the zone is the place for harmonious land sharing situations or for land use conflicts." .
 
 
 ###  https://intforout.github.io/outdoorPressure#SkiLiftCountersMontBlanc2008To2024
@@ -1472,9 +1448,13 @@ https://visionneuse-lidarhd.ign.fr/?px=4396789.059743626&py=514087.42210133123&p
                         rdfs:label "Strava Bauges 2014" .
 
 
+###  https://intforout.github.io/outdoorPressure#TerritorySharedZones
+:TerritorySharedZones rdf:type owl:NamedIndividual .
+
+
 ###  https://intforout.github.io/outdoorPressure#TestAreaBoisVincennes
 :TestAreaBoisVincennes rdf:type owl:NamedIndividual ,
-                                :Bois ;
+                                :StudyArea ;
                        rdfs:label "Test area located in the Bois de Vincennes"@en ,
                                   "Zone de test dans le Bois de Vincennes"@fr .
 
@@ -1541,6 +1521,12 @@ Keywords: Accuracy; Mobility; GPS tracking; Physical activity; Green space""" ;
                                                 <http://purl.org/www.umr-lastig.fr/geodata#Process> ;
                                        <http://www.w3.org/ns/prov#wasAssociatedWith> :DeepFaune ;
                                        rdfs:comment "Les données pièges-photos seront actualisées par Marjorie en janvier. A noter que les sorties DeepFaune étaient indiquées dans les données ouvertes et qu’elles ont été décalées dans la partie sous convention (à n’utiliser que dans le cadre du consortium, comme les autres données CREA-partenaires)"@en .
+
+
+###  https://intforout.github.io/outdoorPressure#WildlifeQuietArea
+:WildlifeQuietArea rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   rdfs:comment "Le terme « zone de quiétude » définit un territoire, volontairement aménagé ou réglementé, qui vise à limiter les dérangements humains sur la faune sauvage. Ces zones offrent un refuge aux espèces sensibles, notamment en période critique comme la reproduction, l’hivernage ou l’élevage des jeunes. En réduisant les perturbations liées aux activités humaines (promenades, sports de nature, circulation…), elles favorisent le maintien de comportements naturels et contribuent à la préservation de la biodiversité. Cependant, des sentiers spécialement balisés sont ouverts au public durant ces période et ont été étudiés pour limiter le dérangement et permettent ainsi de concilier les activités de loisirs et la préservation de la faune."@fr .
 
 
 ###  https://intforout.github.io/outdoorPressure#ZoneEtudeIntForOutBauges
@@ -1713,5 +1699,13 @@ Keywords: Accuracy; Mobility; GPS tracking; Physical activity; Green space""" ;
 [ rdf:type <http://www.w3.org/ns/prov#Person> ;
    <http://xmlns.com/foaf/0.1/name> "Elodie Petit"
  ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:TerritorySharedZones rdfs:comment ""@en ,
+                                    "" .
+
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
