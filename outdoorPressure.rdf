@@ -832,8 +832,6 @@
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#AireProtegee">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
         <rdfs:comment xml:lang="fr">Une Aire Protégée est, selon la définition de l&apos;Union internationale pour la conservation de la nature (UICN), « un espace géographique clairement défini, reconnu, consacré et géré, par tout moyen efficace, juridique ou autre, afin d&apos;assurer à long terme la conservation de la nature, des services écosystémiques et des valeurs culturelles qui lui sont associés ». </rdfs:comment>
-        <rdfs:label xml:lang="fr">Aire Protégée</rdfs:label>
-        <rdfs:label xml:lang="en">Protected Area</rdfs:label>
     </owl:Class>
     
 
@@ -866,9 +864,7 @@
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#EncounteringZone">
         <rdfs:subClassOf rdf:resource="https://intforout.github.io/outdoorPressure#LandEntity"/>
-        <rdfs:comment xml:lang="en">These are areas used simultaneously by different creatures. Their definition can be more or less detailed considering the granularities of usage, for example if one considers that a hiker uses a side of a road or uses the road and its close neighbour, considering the threshold of simultaneousity, as well as the species of creatures and of their activities. It is an important concept to study to identify potential conflicting land use as well as possible harmonious land sharing situations.</rdfs:comment>
-        <rdfs:label xml:lang="en">Encountering zone</rdfs:label>
-        <rdfs:label xml:lang="fr">Zone de rencontre</rdfs:label>
+        <rdfs:comment xml:lang="en">A specific zone which is used simultaneously by creatures from different species. An important property is the threshold of simultaneity, in terms of spatial and temporal distance between effective usages by indivudals. Another property is the description of conditions under which the encountering aera is the place for harmonious land sharing situations or for land use conflicts. </rdfs:comment>
     </owl:Class>
     
 
@@ -918,7 +914,7 @@
     <!-- https://intforout.github.io/outdoorPressure#LandEntity -->
 
     <owl:Class rdf:about="https://intforout.github.io/outdoorPressure#LandEntity">
-        <rdfs:comment xml:lang="en">An entity located in land : an area, a land, a parcel, a footprint, an observation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An entity located in land, possibly abstract : an area, a land, a parcel, a footprint, an observation. More specific than geo:SpatialThing (which is defined as anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes) because it does not embrace people.</rdfs:comment>
     </owl:Class>
     
 
@@ -979,8 +975,6 @@
 For example the footprint of a population of hikers is represented as their agregated trajectory. More concretely, it is a network defined by:
         • a topology graph G (V, E) : a set of vertices V and a set of edges E, E ⊆ V x V non oriented
         • a geometry associated with each edge e ∈ E, defined as a sequence of vertices (x,y,z), representing the common path followed by all individual sample trajectories (i.e., aggregated trajectories) of the population.</rdfs:comment>
-        <rdfs:label xml:lang="fr">Empreinte d&apos;une population</rdfs:label>
-        <rdfs:label xml:lang="en">Population Footprint</rdfs:label>
     </owl:Class>
     
 
@@ -1148,7 +1142,6 @@ For example the footprint of a population of hikers is represented as their agre
         <dct:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#altituderando"/>
         <rdfs:comment xml:lang="en">A set of routes issued from altituderando.com in 2025 in the Bauges area.</rdfs:comment>
-        <rdfs:label xml:lang="en">AltitudeRando Hiking Routes in the Bauges Massif (2025)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1178,10 +1171,10 @@ For example the footprint of a population of hikers is represented as their agre
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Camptocamp-Data">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025"/>
         <dct1:license>https://opendatacommons.org/licenses/odbl/</dct1:license>
         <dc:description xml:lang="fr">Données du site collaboratif et interactif camptocamp.org. On peut y trouver des informations sur la montagne : conditions sur le terrain (manteau neigeux par exemple), descriptions de sommets, itinéraires de ski de randonnée ou grandes voies d’escalade par exemple, photographies, articles techniques ou récits de montagne. Certaines de ces informations sont modifiables par tout contributeur enregistré . Vous y trouverez aussi un forum qui vous permet d’échanger.</dc:description>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#CamptocampPoisBauges2025"/>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#CamptocampRoutesBauges2025"/>
         <dcat:accessURL>https://www.camptocamp.org/</dcat:accessURL>
         <dcat:publisher>CamptoCamp</dcat:publisher>
     </owl:NamedIndividual>
@@ -1294,6 +1287,7 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HikingInLesBauges"/>
+        <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanChamoisEncounteringAreasLesBauges2026"/>
         <dcat:distribution rdf:resource="https://intforout.github.io/outdoorPressure#DataHumanChamoisEncounters-csv"/>
         <prov:wasGeneratedBy rdf:resource="https://intforout.github.io/outdoorPressure#ComputeHumanWildlifeEncountersBauges2026"/>
         <dct:creator rdf:resource="http://purl.org/www.umr-lastig.fr/geodata#jadawson"/>
@@ -1334,7 +1328,6 @@ Les données GNSS utilisées pour construire ce jeu de données ont été produi
         <dct:spatial rdf:resource="https://intforout.github.io/outdoorPressure#RNCFSBauges"/>
         <datacite:relatedIdentifier>https://doi.org/10.5281/zenodo.17052197</datacite:relatedIdentifier>
         <rdfs:comment xml:lang="en">These R data files contains the data needed to replicate the analyses presented in Marchand et al. 2025  - Disturbance by massive sporting events in mountain areas: when and where matters for the protected Alpine ibex Capra ibex, published in People &amp; Nature. &apos;locs_export&apos; contains gps locations, whereas &apos;act_export&apos; contains activity data from gps collars. See Methods for details.</rdfs:comment>
-        <rdfs:label xml:lang="en">Data from scientific paper Marchand et al, 2025 (Disturbance by massive sporting events in mountain areas...)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1479,6 +1472,14 @@ The method was applied on a pilot study in the Bauges massif in the French Alps,
     
 
 
+    <!-- https://intforout.github.io/outdoorPressure#HumanChamoisEncounteringAreasLesBauges2026 -->
+
+    <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanChamoisEncounteringAreasLesBauges2026">
+        <rdf:type rdf:resource="https://intforout.github.io/outdoorPressure#EncounteringZone"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014 -->
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesBauges2014">
@@ -1564,7 +1565,6 @@ However, trail-running events that crossed the seasonal range of ibex during the
         <dct:publisher>LECA et l’EDYTEM</dct:publisher>
         <dct:spatial rdf:resource="https://intforout.github.io/outdoorPressure#PNRDesBauges"/>
         <rdfs:comment xml:lang="fr">Questionnaires de campagnes de terrain et traces GNSS ciblant la pratique de la randonnée dans le PNR du Massif des Bauges</rdfs:comment>
-        <rdfs:label xml:lang="fr">Data PhD Kerouanton</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1719,9 +1719,9 @@ Abstract : La conservation des espaces naturels protégés revêt un intérêt g
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#Outdoorvision">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <geodata:represents rdf:resource="https://intforout.github.io/outdoorPressure#HumanOutdoorActivitiesFrance-PastYear"/>
         <dc:description xml:lang="en">Outdoorvision https://Outdoorvision.fr/; gathers GPS tracks voluntarily shared by human during their outdoor activity through their accounts on their mobile device Garmin Connect™ / Polar Flow / Suunto APP (Appli Suunto) / Decathlon. The data are anonymized and published for a list of authorised users. It also provides aggregated GPS tracks where the aggregation is based exclusively on GPS traces and does not account for spatial constraints, such as the road network. It provides a precise representation of sports activity and the paths taken, including off-trail routes. It is offered by the French National Resource Centre for Ecological Transition and Outdoor Sports, a support mission of the Ministry of Sport. It results from a partnership between local authorities, sports federations and brands united around a non-profit programme.</dc:description>
+        <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#OVTracksMontBlancBauges2024"/>
         <dct:publisher rdf:resource="https://intforout.github.io/outdoorPressure#Prnsn"/>
         <foaf:homePage>https://Outdoorvision.fr/</foaf:homePage>
     </owl:NamedIndividual>
@@ -1777,10 +1777,10 @@ Abstract : La conservation des espaces naturels protégés revêt un intérêt g
 
     <owl:NamedIndividual rdf:about="https://intforout.github.io/outdoorPressure#PNRBauges-Data">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dc:description xml:lang="fr">Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes</dc:description>
         <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBPOIBauges2025"/>
         <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBRoutesBauges2025"/>
         <dct:hasPart rdf:resource="https://intforout.github.io/outdoorPressure#PNRBSensitiveAreaBauges2025"/>
-        <dc:description xml:lang="fr">Les données publiées par le Parc Naturel Regional du Massif des Bauges portent sur la randonnée pédestre, sentier et activités touristiques et sont associées à des services de requêtes</dc:description>
         <dct:license rdf:resource="https://www.etalab.gouv.fr/licence-ouverte-open-licence"/>
         <dct:publisher>Parc Naturel Regional Massif des Bauges</dct:publisher>
     </owl:NamedIndividual>
